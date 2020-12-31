@@ -201,7 +201,7 @@ function Resumen({datos, reset}) {
                             <button onClick={() => pdfExport()} type="button" disabled={Object.keys(data).length < 1}
                                     className="btn btn-outline-secondary mr-2">Exportar pdf
                             </button>
-                            <button onClick={() => reset()} type="button" className="btn btn-outline-danger">Reiniciar
+                            <button onClick={() => {deleteData();reset()}} type="button" className="btn btn-outline-danger">Reiniciar
                             </button>
                         </div>
                     </div>
