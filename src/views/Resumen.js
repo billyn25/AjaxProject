@@ -169,7 +169,7 @@ function Resumen({datos, reset}) {
         const element = document.getElementById("divTable");
 
         html2pdf(element, {
-            margin: 5,
+            margin: 3,
             filename: 'AjaxConfig.pdf',
             image: {type: 'jpg', quality: 0.99},
             html2canvas: {dpi: 192, letterRendering: true, useCORS: true},
@@ -209,7 +209,7 @@ function Resumen({datos, reset}) {
                     <div id='divTable' className="table-responsive-sm">
                         <div className="bg-transparent w-100 mt-4 mb-3">
                             <form id="form" className="row g-3 justify-content-start align-items-center">
-                                <div className="ml-4 mr-3">
+                                <div className=" ml-4 mr-3">
                                     <img className="imgHiper" src={hp} width="140" height="52"/>
                                 </div>
                                 <div className="col-md-3 text-secondary">
@@ -251,9 +251,9 @@ function Resumen({datos, reset}) {
                                                  discountLineal={discountLineal}/>))}
                                 <tr className="bg-white">
                                     <td colSpan="1"></td>
-                                    <td colSpan="3" className="text-right font-weight-bolder"><p>Total {sum(data)}</p></td>
+                                    <td colSpan="3" className="text-right font-weight-bolder"><p className="iva">Total {sum(data)}</p></td>
                                     <td colSpan="3" className="pt-3 pb-3 pr-4 text-right">
-                                        <h5 className="text-dark font-weight-bold">Total {(sum(data)*1.21).toFixed(2)} €</h5>
+                                        <h5 className="text-dark total font-weight-bold">Total {(sum(data)*1.21).toFixed(2)} €</h5>
                                         <p className="float-right">I.V.A incluido.</p>
                                     </td>
                                 </tr>

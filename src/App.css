@@ -322,6 +322,7 @@ button{
 
 .menuImg:hover {
   background-color: rgba(90, 228, 170, 0.61);
+  transform: scale(1.2,1.2);
 }
 
 
@@ -394,6 +395,11 @@ button{
   color: #e9aaab !important;
 }
 
+.iva {
+  font-size: 16px !important;
+}
+
+
 @media only screen
 and (min-width: 0px)
 and (max-width: 1012px)
@@ -412,6 +418,10 @@ and (-webkit-min-device-pixel-ratio: 2) {
     margin: 10px 10px 10px 10px !important;
   }
 
+  #form {
+    justify-content: center !important;
+  }
+
   .custom-control{
     margin: 0 10px 10px 10px !important;
   }
@@ -427,6 +437,7 @@ and (-webkit-min-device-pixel-ratio: 2) {
 
   .card {
     padding: 10px;
+    margin: 10px;
   }
   .card-body {
     flex-direction: column;
@@ -466,5 +477,11 @@ and (-webkit-min-device-pixel-ratio: 2) {
   .col-sm-4 {
     margin: 0;
     padding:0;
+  }
+
+  .resumenEstancia {
+    display: flex;
+    flex-direction: column !important;
+
   }
 }

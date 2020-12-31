@@ -128,7 +128,7 @@ function CaractEstancia({caractEstancia, param, back}) {
                         </div>
                     </div>)}
                 </div>
-                <div className="d-inline-flex">
+                <div className="resumenEstancia d-inline-flex">
                     {(param !== 'Casa/Chalet' && param !== 'Negocio') && (
                         <h5 className="text-white mt-5 mb-0 pr-3">Posición Apartamento: <span
                             className="verdeAj">{position}</span></h5>)}
