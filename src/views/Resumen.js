@@ -146,8 +146,15 @@ function Resumen({datos, reset}) {
 
     //abrir menu lateral
     let openNav = () => {
+        if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+
+            console.log(window.screen.width)
+            document.getElementById("mySidenav").style.width = window.screen.width+'px';
+
+        } else {
         document.getElementById("mySidenav").style.width = "450px"
         document.getElementById("App").style.marginLeft = "450px";
+        }
     }
 
     //borrar datos de la tabla
@@ -181,7 +188,7 @@ function Resumen({datos, reset}) {
         <React.Fragment>
             <h4 className="mt-1 mb-4 text-white">Resumen</h4>
             {loading ? <LoadingSpinner/> : (
-                <div className="estancia">
+                <div id="estanciaId" className="estancia">
                     <div className="buttons pl-0 custom-control custom-checkbox justify-content-between">
                         <div className="d-inline-flex align-items-end text-white">
                             <p>Foto</p>
@@ -191,7 +198,7 @@ function Resumen({datos, reset}) {
                             <input className="discountLineal ml-2 form-control textNum"
                                    onChange={(e) => setDiscountLineal(e.target.value)} type="number" min="0" max="100"/>
                         </div>
-                        <div className="buttonsDivs">
+                        <div id="buttonDiv" className="buttonsDivs">
                             <button onClick={() => openNav()} type="button"
                                     className="btn btn-outline-success mr-2">Añadir
                             </button>

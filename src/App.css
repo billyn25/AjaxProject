@@ -484,4 +484,14 @@ and (-webkit-min-device-pixel-ratio: 2) {
     flex-direction: column !important;
 
   }
+
+  .sidenav {
+    z-index: 2 !important; /* Stay on top */
+  }
+  .imgHiper {
+    margin-bottom: 10px;
+  }
+  hr {
+    margin-bottom: 0;
+  }
 }
