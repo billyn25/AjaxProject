@@ -147,10 +147,7 @@ function Resumen({datos, reset}) {
     //abrir menu lateral
     let openNav = () => {
         if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
-
-            console.log(window.screen.width)
             document.getElementById("mySidenav").style.width = window.screen.width+'px';
-
         } else {
         document.getElementById("mySidenav").style.width = "450px"
         document.getElementById("App").style.marginLeft = "450px";
@@ -176,7 +173,7 @@ function Resumen({datos, reset}) {
         const element = document.getElementById("divTable");
 
         html2pdf(element, {
-            margin: 3,
+            margin: 0,
             filename: 'AjaxConfig.pdf',
             image: {type: 'jpg', quality: 0.99},
             html2canvas: {dpi: 192, letterRendering: true, useCORS: true},

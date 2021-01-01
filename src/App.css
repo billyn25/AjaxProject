@@ -494,4 +494,8 @@ and (-webkit-min-device-pixel-ratio: 2) {
   hr {
     margin-bottom: 0;
   }
+
+  ul.productsBar li {
+    width: 90px !important;
+  }
 }
