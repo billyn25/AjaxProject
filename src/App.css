@@ -497,10 +497,15 @@ and (-webkit-min-device-pixel-ratio: 2) {
   }
 
   ul.productsBar {
-    padding: 20px 2px 0 2px;
+    padding: 20px 12px 0 12px;
+    justify-content: space-between !important;
   }
   ul.productsBar li {
-    width: 100px !important;
+    width: 94px !important;
+  }
+
+  ul.productsBar li p {
+    font-size: 12px;
   }
 
   .selectPosition{
