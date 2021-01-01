@@ -48,7 +48,7 @@ function CaractEstancia({caractEstancia, param, back}) {
                                     <label className="form-check-label mb-3" htmlFor="gridRadios1">
                                         Posicion del Apartamento
                                     </label>
-                                    <select className="form-control" onChange={(e) => setPosition(e.target.value)}>
+                                    <select className="form-control selectPosition" onChange={(e) => setPosition(e.target.value)}>
                                         <option></option>
                                         <option>Bajo o 1º Piso</option>
                                         <option>Ultimo</option>

@@ -173,10 +173,10 @@ function Resumen({datos, reset}) {
         const element = document.getElementById("divTable");
 
         html2pdf(element, {
-            margin: [2,1],
+            margin: 0,
             filename: 'AjaxConfig.pdf',
             image: {type: 'jpg', quality: 0.99},
-            html2canvas: {margin:0,y:0,dpi: 192, letterRendering: true, useCORS: true},
+            html2canvas: {scale: 2, scrollX: 0, scrollY: 0, width: 790,dpi: 192, letterRendering: true, useCORS: true},
             jsPDF: {unit: 'pt', format: 'a4', orientation: 'p'}
         })
     }

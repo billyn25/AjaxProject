@@ -445,6 +445,7 @@ and (-webkit-min-device-pixel-ratio: 2) {
     justify-content: center;
     height: 240px;
     width: 100% !important;
+    padding: 5px;
   }
 
   .card-body label {
@@ -495,7 +496,14 @@ and (-webkit-min-device-pixel-ratio: 2) {
     margin-bottom: 0;
   }
 
+  ul.productsBar {
+    padding: 20px 2px 0 2px;
+  }
   ul.productsBar li {
-    width: 90px !important;
+    width: 100px !important;
+  }
+
+  .selectPosition{
+    margin-bottom: 20px;
   }
 }
