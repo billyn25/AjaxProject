@@ -17,7 +17,7 @@ function Estancia({estancia,backMemory,saltarAsistente}) {
         <React.Fragment>
         <h4 className="mt-1 mb-4 text-white">Elige la estancia</h4>
             <div className="estancia">
-                <div className="row">
+                <div className="row divDer">
                     <div className="col-sm-4">
                         <div className="card">
                             <div className="card-body rounded">
@@ -55,9 +55,11 @@ function Estancia({estancia,backMemory,saltarAsistente}) {
                         </div>
                     </div>
                 </div>
-                {dato && (<h5 className="text-white mt-5">Has elegido <span className="verdeAj">{dato}</span></h5>)}
-                <div className="mt-5">
-                    <button onClick={()=>saltarAsistente()}  type="button" className="btn btn-outline-warning mr-4">Saltar asistente</button>
+                <div className="divIzq">
+                   <h5 className="text-white">Estancia: <span className="verdeAj">{dato}</span></h5>
+                </div>
+                <div className="buttonBottom">
+                    <button onClick={()=>saltarAsistente()}  type="button" className="mb-2 btn btn-outline-warning">Saltar asistente</button>
                     <button onClick={()=>selectionEstancia(dato)} disabled={Object.keys(dato).length <1} type="button" className="btn btn-outline-success">Siguiente</button>
                 </div>
             </div>

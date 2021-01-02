@@ -22,7 +22,7 @@ function Resumen({datos, reset}) {
             setTimeout(() => {
                 setLoad(false)
                 datafilterPiso('initial')
-            }, 1000);
+            }, 0);
         },
         [],
     );
@@ -214,7 +214,7 @@ function Resumen({datos, reset}) {
                         <div className="bg-transparent w-100 mt-4 mb-3">
                             <form id="form" className="row g-3 justify-content-start align-items-center">
                                 <div className=" ml-4 mr-3">
-                                    <img className="imgHiper" src={hp} width="140" height="52"/>
+                                    <img className="imgHiper" src="http://antenaszalla.com/img/hp.png" width="140" height="52"/>
                                 </div>
                                 <div className="col-md-3 text-secondary">
                                     <input type="text" className="inputCustomer form-control" id="inputName"
@@ -254,8 +254,10 @@ function Resumen({datos, reset}) {
                                     <ResumenData data={data[key]} index={index} key={key} token={tokenDisableButton}
                                                  discountLineal={discountLineal}/>))}
                                 <tr className="bg-white">
-                                    <td colSpan="1"></td>
-                                    <td colSpan="3" className="text-right font-weight-bolder"><p className="iva">Total {sum(data)}</p></td>
+                                    <td colSpan="2">
+                                        {discountLineal && (<p className="text-dark pl-3">Oferta con descuento aplicado</p>)}
+                                    </td>
+                                    <td colSpan="2" className="text-right font-weight-bolder"><p className="iva">Total {sum(data)}</p></td>
                                     <td colSpan="3" className="pt-3 pb-3 pr-4 text-right">
                                         <h5 className="text-dark total font-weight-bold">Total {(sum(data)*1.21).toFixed(2)} €</h5>
                                         <p className="float-right">I.V.A incluido.</p>

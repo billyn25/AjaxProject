@@ -40,7 +40,7 @@ function CaractEstancia({caractEstancia, param, back}) {
         <React.Fragment>
             <h4 className="mt-1 mb-4 text-white">Características de la estancia</h4>
             <div className="estancia">
-                <div className="row">
+                <div className="row divDer">
                     {(param !== 'Casa/Chalet' && param !== 'Negocio') && (<div className="col-sm-4">
                         <div className="card">
                             <div className="card-body rounded">
@@ -128,30 +128,29 @@ function CaractEstancia({caractEstancia, param, back}) {
                         </div>
                     </div>)}
                 </div>
-                <div className="resumenEstancia d-inline-flex">
+                <div className="divIzq">
+                    <h5 className="text-white text-left">Estancia: <span className="verdeAj">{param}</span></h5>
                     {(param !== 'Casa/Chalet' && param !== 'Negocio') && (
-                        <h5 className="text-white mt-5 mb-0 pr-3">Posición Apartamento: <span
+                        <h5 className="text-white text-left">Posición Apartamento: <span
                             className="verdeAj">{position}</span></h5>)}
                     {(param === 'Casa/Chalet' || param === 'Negocio') && (
-                        <h5 className="text-white mt-5 mb-0 pr-3">Plantas: <span className="verdeAj">{numPlantas}</span>
+                        <h5 className="text-white text-left">Plantas: <span className="verdeAj">{numPlantas}</span>
                         </h5>)}
-                    <h5 className="text-white mt-5 mb-0 pr-3">Habitaciones: <span className="verdeAj">{numHab}</span>
+                    <h5 className="text-white text-left">Habitaciones: <span className="verdeAj">{numHab}</span>
                     </h5>
                     {(param === 'Casa/Chalet' || param === 'Negocio') && (
-                        <h5 className="text-white mt-5 mb-0 pr-3">Entradas: <span className="verdeAj">{numEntra}</span>
+                        <h5 className="text-white">Entradas: <span className="verdeAj">{numEntra}</span>
                         </h5>)}
                     {(param === 'Casa/Chalet' || param === 'Negocio') && (
-                        <h5 className="text-white mt-5 mb-0 pr-3">Jardin o Zona exterior: <span
+                        <h5 className="text-white text-left">Jardin o Zona exterior: <span
                             className="verdeAj">{jardin ? 'Si' : 'No'}</span></h5>)}
                 </div>
-                <div className="mt-5">
+                <div className="buttonBottom">
                     <button onClick={() => back(param)} type="button" className="btn btn-outline-light">Atras</button>
                     <button onClick={() => sendData()} type="button" className="ml-4 btn btn-outline-success"
                             disabled={statusButton}>Siguiente
                     </button>
                 </div>
-
-                )
             </div>
         </React.Fragment>
     );

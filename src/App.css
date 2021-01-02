@@ -33,12 +33,42 @@ body {
 }
 
 .estancia {
+  display: block;
+  overflow: hidden;
   width: 100%;
+  height:auto;
   padding:10px 60px 50px 60px;
 }
 .row {
   display: flex;
   justify-content: center;
+}
+
+.divDer {
+  float: left;
+  width: 80%;
+  overflow: hidden;
+}
+
+.divIzq {
+  float: right;
+  width: 20%;
+  color: white;
+  height: auto !important;
+  border-left: 1px solid #5AE4AA;
+  display: flex !important;
+  align-items: start;
+  flex-direction: column;
+  padding-left: 30px;
+}
+
+.divIzq h5 {
+  padding-bottom: 18px;
+}
+
+.buttonBottom {
+  width: 100% !important;
+  display: inline-block;
 }
 
 .card {
@@ -480,12 +510,6 @@ and (-webkit-min-device-pixel-ratio: 2) {
     padding:0;
   }
 
-  .resumenEstancia {
-    display: flex;
-    flex-direction: column !important;
-
-  }
-
   .sidenav {
     z-index: 2 !important; /* Stay on top */
   }
@@ -510,5 +534,27 @@ and (-webkit-min-device-pixel-ratio: 2) {
 
   .selectPosition{
     margin-bottom: 20px;
+  }
+
+  .divDer {
+    width: 100%;
+  }
+
+  .divIzq {;
+    margin-top:20px !important;
+    width: 45%;
+    align-items: start;
+    float: left;
+  }
+
+  .buttonBottom {
+    margin-top:20px !important;
+    width: 45% !important;
+    float: right;
+    text-align: start;
+  }
+
+  h5{
+    font-size: 15px !important;
   }
 }
