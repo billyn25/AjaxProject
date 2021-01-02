@@ -225,23 +225,27 @@ function Resumen({datos, reset}) {
                     <div className="table-responsive-sm" id='divTable'>
                         <table className="table table-striped mb-5">
                             <thead>
-                            <tr className="bg-transparen">
-                                <td colSpan="7" className="first pt-3 pb-3">
-                                    <form id="form" className="row g-3 justify-content-start align-items-center">
-                                        <div className="ml-0 mr-3">
-                                            <img className="imgHiper" src="https://cdn.shortpixel.ai/client/q_glossy,ret_img,w_300,h_100/https://hiperantena.com/wp-content/uploads/2017/01/hiperantena-logo-300x138-2017.png" width="150" height="auto"/>
+                            <tr className="bg-transparent">
+                                <td colSpan="7">
+                                    <form id="form" className="row g-3">
+                                        <div className="imgLogo float-left">
+                                            <img className="imgHiper" src={hp} width="90" height="auto"/>
                                         </div>
-                                        <div className="col-md-3">
-                                            <input type="text" className="inputCustomer form-control" id="inputName"
-                                                   placeholder="Cliente/Empresa"/>
-                                        </div>
-                                        <div className="col-md-2">
-                                            <input type="number" className="inputCustomer form-control" id="inputMovil"
-                                                   placeholder="Móvil"/>
-                                        </div>
-                                        <div className="col-md-4">
-                                            <input type="email" className="inputCustomer form-control" id="inputEmail"
-                                                   placeholder="Em@il"/>
+                                        <div className="divForm float-right d-inline-flex align-items-center">
+                                            <div className="col-md-4">
+                                                <input type="text" className="inputCustomer form-control" id="inputName"
+                                                       placeholder="Cliente/Empresa"/>
+                                            </div>
+                                            <div className="col-md-3">
+                                                <input type="number" className="inputCustomer form-control"
+                                                       id="inputMovil"
+                                                       placeholder="Móvil"/>
+                                            </div>
+                                            <div className="col-md-5">
+                                                <input type="email" className="inputCustomer form-control"
+                                                       id="inputEmail"
+                                                       placeholder="Em@il"/>
+                                            </div>
                                         </div>
                                     </form>
                                 </td>
