@@ -224,27 +224,29 @@ function Resumen({datos, reset}) {
                     </div>
                     <hr className="bg-white mb-0"/>
                     <div className="table-responsive-sm" id='divTable'>
-                        <div className="bg-transparent w-100">
-                            <form id="form" className="row g-3 justify-content-around align-items-center">
-                                <div className="ml-3 mr-3">
-                                    <img className="imgHiper" src={hp} width="100" height="40"/>
-                                </div>
-                                <div className="col-md-3">
-                                    <input type="text" className="inputCustomer form-control" id="inputName"
-                                           placeholder="Cliente/Empresa"/>
-                                </div>
-                                <div className="col-md-2">
-                                    <input type="number" className="inputCustomer form-control" id="inputMovil"
-                                           placeholder="Móvil"/>
-                                </div>
-                                <div className="col-md-4">
-                                    <input type="email" className="inputCustomer form-control" id="inputEmail"
-                                           placeholder="Em@il"/>
-                                </div>
-                            </form>
-                        </div>
                         <table className="table table-striped">
                             <thead>
+                            <tr className="bg-transparent">
+                                <td colSpan="7" className="p-0">
+                                <form id="form" className="row g-3 justify-content-around align-items-center">
+                                    <div className="ml-3 mr-3">
+                                        <img className="imgHiper" src={hp} width="100" height="40"/>
+                                    </div>
+                                    <div className="col-md-3">
+                                        <input type="text" className="inputCustomer form-control" id="inputName"
+                                               placeholder="Cliente/Empresa"/>
+                                    </div>
+                                    <div className="col-md-2">
+                                        <input type="number" className="inputCustomer form-control" id="inputMovil"
+                                               placeholder="Móvil"/>
+                                    </div>
+                                    <div className="col-md-4">
+                                        <input type="email" className="inputCustomer form-control" id="inputEmail"
+                                               placeholder="Em@il"/>
+                                    </div>
+                                </form>
+                                </td>
+                            </tr>
                             <tr className="verdeAj">
                                 <th scope="col" className="text-center">Imagen</th>
                                 <th scope="col" className="text-center">Descripcion</th>
