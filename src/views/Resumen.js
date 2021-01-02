@@ -222,12 +222,12 @@ function Resumen({datos, reset}) {
                             </button>
                         </div>
                     </div>
-                    <hr className="bg-white" id='divTable'/>
-                    <div className="table-responsive-sm">
+                    <hr className="bg-white"/>
+                    <div className="table-responsive-sm" id='divTable'>
                         <div className="bg-transparent w-100 mt-4 mb-3">
                             <form id="form" className="row g-3 justify-content-start align-items-center">
                                 <div className=" ml-4 mr-3">
-                                    <img className="imgHiper" src={hp} width="140" height="52"/>
+                                    <img className="imgHiper" src="http://antenaszalla.com/img/hp.png" width="140" height="52"/>
                                 </div>
                                 <div className="col-md-3">
                                     <input type="text" className="inputCustomer form-control" id="inputName"
