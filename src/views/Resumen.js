@@ -183,7 +183,7 @@ function Resumen({datos, reset}) {
         const element = document.getElementById("divTable");
 
         html2pdf(element, {
-            margin: 0,
+            margin: 1,
             filename: 'AjaxConfig.pdf',
             image: {type: 'png', quality: 0.99},
             html2canvas: {scale: 2, scrollX: 0, scrollY: 0, width: 790,dpi: 192, letterRendering: true, useCORS: true},
