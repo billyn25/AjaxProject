@@ -185,7 +185,7 @@ function Resumen({datos, reset}) {
         html2pdf(element, {
             margin: 0,
             filename: 'AjaxConfig.pdf',
-            image: {type: 'jpg', quality: 0.99},
+            image: {type: 'png', quality: 0.99},
             html2canvas: {scale: 2, scrollX: 0, scrollY: 0, width: 790,dpi: 192, letterRendering: true, useCORS: true},
             jsPDF: {unit: 'pt', format: 'a4', orientation: 'p'}
         })
@@ -197,7 +197,7 @@ function Resumen({datos, reset}) {
                 <h4>Resumen</h4>
             </div>
             {loading ? <LoadingSpinner/> : (
-                <div id="estanciaId" className="estancia">
+                <div className="estancia">
                     <div className="buttons pl-0 custom-control custom-checkbox justify-content-between">
                         <div className="d-inline-flex align-items-end text-white">
                             <p>Foto</p>

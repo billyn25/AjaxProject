@@ -41,7 +41,7 @@ body {
 }
 
 .title{
-    padding:10px 0 10px 60px;
+    padding:10px 60px 15px 60px;
     text-align: start;
     color: white;
 }
@@ -448,6 +448,10 @@ button{
 and (min-width: 0px)
 and (max-width: 1012px)
 and (-webkit-min-device-pixel-ratio: 2) {
+
+  .title {
+    text-align: center;
+  }
 
   .estancia {
     width: 100%;
