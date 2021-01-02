@@ -37,7 +37,9 @@ function CaractEstancia({caractEstancia, param, back}) {
 
     return (
         <React.Fragment>
-            <h4 className="mt-1 mb-4 text-white">Características de la estancia</h4>
+            <div className="title">
+                <h4>Características de la estancia</h4>
+            </div>
             <div className="estancia">
                 <div className="row divDer">
                     {(param !== 'Casa/Chalet' && param !== 'Negocio') && (<div className="col-sm-4">

@@ -193,7 +193,9 @@ function Resumen({datos, reset}) {
 
     return (
         <React.Fragment>
-            <h4 className="mt-1 mb-4 text-white">Resumen</h4>
+            <div className="title">
+                <h4>Resumen</h4>
+            </div>
             {loading ? <LoadingSpinner/> : (
                 <div id="estanciaId" className="estancia">
                     <div className="buttons pl-0 custom-control custom-checkbox justify-content-between">

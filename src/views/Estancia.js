@@ -13,7 +13,9 @@ function Estancia({estancia, backMemory, saltarAsistente}) {
 
     return (
         <React.Fragment>
-            <h4 className="mt-1 mb-4 text-white">Elige la estancia</h4>
+            <div className="title">
+                <h4>Elige la estancia</h4>
+            </div>
             <div className="estancia">
                 <div className="row divDer">
                     <div className="col-sm-4">
