@@ -485,13 +485,13 @@ and (-webkit-min-device-pixel-ratio: 2) {
 
   .card {
     padding: 10px;
-    margin: 10px;
+    margin: 7px;
   }
   .card-body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 240px;
+    height: 270px;
     width: 100% !important;
     padding: 5px;
   }
