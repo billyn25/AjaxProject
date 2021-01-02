@@ -222,8 +222,8 @@ function Resumen({datos, reset}) {
                             </button>
                         </div>
                     </div>
-                    <hr className="bg-white"/>
-                    <div id='divTable' className="table-responsive-sm">
+                    <hr className="bg-white" id='divTable'/>
+                    <div className="table-responsive-sm">
                         <div className="bg-transparent w-100 mt-4 mb-3">
                             <form id="form" className="row g-3 justify-content-start align-items-center">
                                 <div className=" ml-4 mr-3">
@@ -268,7 +268,7 @@ function Resumen({datos, reset}) {
                                                  discountLineal={discountLineal}/>))}
                                 <tr className="bg-white">
                                     <td colSpan="2">
-                                        {discountLineal && (<p className="text-dark pl-3">Oferta con descuento aplicado</p>)}
+                                        {discountLineal && (<p className="text-dark pl-3">Oferta con descuento aplicado.</p>)}
                                     </td>
                                     <td colSpan="2" className="text-right font-weight-bolder"><p className="iva">Total {sum(data)}</p></td>
                                     <td colSpan="3" className="pt-3 pb-3 pr-4 text-right">
