@@ -25,11 +25,11 @@ function ResumenData({data, index, discountLineal, token}) {
                 <p className="text-dark">{description}</p></td>
             <td className="text-center">
                 <div className="d-inline-flex flex-row">
-                    <button hidden={token} type="button" id='btnR' className="btn btnR btn-outline-dark"
+                    <button hidden={token} type="button" className="btn btnR btn-outline-dark"
                             onClick={() => dispatch({type: "DECREMENT_AMOUNT", payload: index})}><p>-</p>
                     </button>
                     <input className="form-control textNum" type="number" defaultValue='1' value={amount}/>
-                    <button hidden={token} type="button" id='btnR2' className="btn btnR btn-outline-dark"
+                    <button hidden={token} type="button" className="btn btnR btn-outline-dark"
                             onClick={() => dispatch({type: "INCREMENT_AMOUNT", payload: index})}><p>+</p>
                     </button>
                 </div>

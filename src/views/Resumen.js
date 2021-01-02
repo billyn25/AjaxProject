@@ -3,7 +3,6 @@ import {AjaxkitBasic} from '../data/dataJson'
 import {MyContext} from "../context.js";
 import ResumenData from "./ResumenData";
 import LoadingSpinner from "./LoadingSpinner";
-import hp from '../img/hp.png'
 import html2pdf from 'html2pdf.js'
 
 function Resumen({datos, reset}) {
@@ -11,7 +10,7 @@ function Resumen({datos, reset}) {
     const {dispatch, state} = useContext(MyContext);
     const {data} = state;
 
-    const {numEntra, numHab, estancia, position, numPlantas, jardin} = datos
+    const {numEntra, numHab, estancia, position, numPlantas, jardin, prevencion} = datos
     const [toggle, setToggle] = useState(true)
     const [loading, setLoad] = useState(false);
     const [discountLineal, setDiscountLineal] = useState(false);
@@ -50,7 +49,7 @@ function Resumen({datos, reset}) {
                 case 'Apartamento/Piso':
 
                     if (position === 'Bajo o 1º Piso' || position === 'Ultimo')
-                        filtered[calcIndex(filtered, 'DoorProtect')].amount = 2;
+                        filtered[calcIndex(filtered, 'DoorProtect')].amount = parseInt(numHab)+1;
 
                     filtered[Object.keys(filtered).length] = AjaxkitBasic[calcIndex(AjaxkitBasic, 'HomeSiren')]
                     break;
@@ -68,6 +67,17 @@ function Resumen({datos, reset}) {
 
                     if (estancia === 'Negocio')
                         filtered[Object.keys(filtered).length] = AjaxkitBasic[calcIndex(AjaxkitBasic, 'KeyPad')]
+                    break;
+                default:
+            }
+
+            //prevenciones
+            switch (prevencion) {
+                case 'Inundaciones':
+                    filtered[Object.keys(filtered).length] = AjaxkitBasic[calcIndex(AjaxkitBasic, 'LeaksProtect')]
+                    break;
+                case 'Incendios':
+                    filtered[Object.keys(filtered).length] = AjaxkitBasic[calcIndex(AjaxkitBasic, 'FireProtect')]
                     break;
                 default:
             }

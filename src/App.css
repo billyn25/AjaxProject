@@ -80,7 +80,7 @@ body {
 }
 
 .card-body {
-  padding: 20px;
+  padding: 15px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -95,7 +95,11 @@ body {
   align-items: center;
   font-weight: bold;
   background-color: white;
-  margin: 0 0 10px 0 !important;
+  margin: 0 0 15px 0 !important;
+}
+
+.col-sm-4 {
+  padding: 0 10px;
 }
 
 .col:first-child {
@@ -222,7 +226,9 @@ input {
 .btnR {
   width: 30px;
   height: 28px;
-  align-items: center !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 button{

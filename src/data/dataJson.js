@@ -119,14 +119,14 @@ export const AjaxkitBasic = [{
     "color": 'black',
 }, {
     "title": "MotionCam",
-    "description": "Detector de movimiento con cámara fotográfica. Compatible Hub 2.",
+    "description": "Detector de movimiento con cámara fotográfica. Solo Hub 2.",
     "filename": "https://ajax.systems/wp-content/themes/ajax/assets/images/template/catalog/products/MotionCam_white@2x.png",
     "price": 188.00,
     "amount": 1,
     "discount": ''
 }, {
     "title": "MotionCam B",
-    "description": "Detector de movimiento con cámara fotográfica. Compatible Hub 2.",
+    "description": "Detector de movimiento con cámara fotográfica. Solo Hub 2.",
     "filename": "https://ajax.systems/wp-content/themes/ajax/assets/images/template/catalog/products/MotionCam_black@2x.png",
     "price": 188.00,
     "amount": 1,
@@ -157,7 +157,7 @@ export const AjaxkitBasic = [{
     "color": 'black',
 }, {
     "title": "DoorProtect Plus",
-    "description": "Detector con iman para puerta o ventana. Detectar inclinaciones y vibraciones",
+    "description": "Detector con iman para puerta o ventana. Detecta inclinaciones y vibraciones",
     "filename": "https://ajax.systems/wp-content/themes/ajax/assets/images/template/catalog/products/DoorProtect_white@2x.png",
     "price": 66.00,
     "amount": 1,
