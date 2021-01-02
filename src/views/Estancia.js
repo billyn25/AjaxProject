@@ -64,10 +64,10 @@ function Estancia({estancia, backMemory, saltarAsistente}) {
                 </div>
                 <div className="buttonBottom">
                     <button onClick={() => saltarAsistente()} type="button"
-                            className="mb-2 mr-4 btn btn-outline-warning">Saltar asistente
+                            className="mb-3 mr-4 btn btn-outline-warning">Saltar asistente
                     </button>
                     <button onClick={() => selectionEstancia(dato)} disabled={Object.keys(dato).length < 1}
-                            type="button" className="mb-2 btn btn-outline-success">Siguiente
+                            type="button" className="mb-3 btn btn-outline-success">Siguiente
                     </button>
                 </div>
             </div>
