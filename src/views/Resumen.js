@@ -226,8 +226,8 @@ function Resumen({datos, reset}) {
                     <div className="table-responsive-sm" id='divTable'>
                         <div className="bg-transparent w-100 mt-4 mb-3">
                             <form id="form" className="row g-3 justify-content-start align-items-center">
-                                <div className=" ml-4 mr-3">
-                                    <img className="imgHiper" src="http://antenaszalla.com/img/hp.png" width="140" height="52"/>
+                                <div className="ml-3 mr-3">
+                                    <img className="imgHiper" src="https://antenaszalla.com/img/hp.png" width="140" height="52"/>
                                 </div>
                                 <div className="col-md-3">
                                     <input type="text" className="inputCustomer form-control" id="inputName"
