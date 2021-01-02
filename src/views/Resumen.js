@@ -226,8 +226,8 @@ function Resumen({datos, reset}) {
                     <div className="table-responsive-sm" id='divTable'>
                         <div className="bg-transparent w-100 mt-4 mb-3">
                             <form id="form" className="row g-3 justify-content-start align-items-center">
-                                <div className="ml-3 mr-3">
-                                    <img className="imgHiper" src="https://antenaszalla.com/img/hp.png" width="140" height="52"/>
+                                <div className="mr-3">
+                                    <img className="imgHiper" src="https://cdn.shortpixel.ai/client/to_avif,q_glossy,ret_img,w_300,h_100/https://hiperantena.com/wp-content/uploads/2017/01/hiperantena-logo-300x138-2017.png" width="150" height="65"/>
                                 </div>
                                 <div className="col-md-3">
                                     <input type="text" className="inputCustomer form-control" id="inputName"
