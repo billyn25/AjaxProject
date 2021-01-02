@@ -186,8 +186,8 @@ function Resumen({datos, reset}) {
         html2pdf(element, {
             margin: 0,
             filename: 'AjaxConfig.pdf',
-            image: {type: 'png', quality: 0.9},
-            html2canvas: {dpi: 192, letterRendering: true, useCORS: true},
+            image: {type: 'jpg', quality: 0.9},
+            html2canvas: {scale: 2, scrollX: 0, scrollY: 0, width: 790, dpi: 192, letterRendering: true, useCORS: true},
             jsPDF: {unit: 'pt', format: 'a4', orientation: 'p'}
         })
     }
@@ -199,7 +199,7 @@ function Resumen({datos, reset}) {
             </div>
             {loading ? <LoadingSpinner/> : (
                 <div className="estancia">
-                    <div className="buttons pl-0 custom-control custom-checkbox justify-content-between">
+                    <div className="buttons pl-0 pb-3 custom-control custom-checkbox justify-content-between">
                         <div className="d-inline-flex align-items-end text-white">
                             <p>Foto</p>
                             <input type="checkbox" className="ml-2 flipswitch" id="customCheck1"
@@ -222,29 +222,28 @@ function Resumen({datos, reset}) {
                             </button>
                         </div>
                     </div>
-                    <hr className="bg-white mb-0"/>
-                    <div className="table-responsive-sm mb-5" id='divTable'>
-                        <table className="table table-striped">
+                    <div className="table-responsive-sm" id='divTable'>
+                        <table className="table table-striped mb-5">
                             <thead>
-                            <tr className="bg-transparent">
-                                <td colSpan="7" className="p-0">
-                                <form id="form" className="row g-3 justify-content-around align-items-center">
-                                    <div className="ml-3 mr-3">
-                                        <img className="imgHiper" src={hp} width="100" height="40"/>
-                                    </div>
-                                    <div className="col-md-3">
-                                        <input type="text" className="inputCustomer form-control" id="inputName"
-                                               placeholder="Cliente/Empresa"/>
-                                    </div>
-                                    <div className="col-md-2">
-                                        <input type="number" className="inputCustomer form-control" id="inputMovil"
-                                               placeholder="Móvil"/>
-                                    </div>
-                                    <div className="col-md-4">
-                                        <input type="email" className="inputCustomer form-control" id="inputEmail"
-                                               placeholder="Em@il"/>
-                                    </div>
-                                </form>
+                            <tr className="bg-transparen">
+                                <td colSpan="7" className="first pt-3 pb-3">
+                                    <form id="form" className="row g-3 justify-content-start align-items-center">
+                                        <div className="ml-0 mr-3">
+                                            <img className="imgHiper" src="https://cdn.shortpixel.ai/client/q_glossy,ret_img,w_300,h_100/https://hiperantena.com/wp-content/uploads/2017/01/hiperantena-logo-300x138-2017.png" width="150" height="auto"/>
+                                        </div>
+                                        <div className="col-md-3">
+                                            <input type="text" className="inputCustomer form-control" id="inputName"
+                                                   placeholder="Cliente/Empresa"/>
+                                        </div>
+                                        <div className="col-md-2">
+                                            <input type="number" className="inputCustomer form-control" id="inputMovil"
+                                                   placeholder="Móvil"/>
+                                        </div>
+                                        <div className="col-md-4">
+                                            <input type="email" className="inputCustomer form-control" id="inputEmail"
+                                                   placeholder="Em@il"/>
+                                        </div>
+                                    </form>
                                 </td>
                             </tr>
                             <tr className="verdeAj">

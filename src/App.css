@@ -570,4 +570,13 @@ and (-webkit-min-device-pixel-ratio: 2) {
   h5{
     font-size: 16px !important;
   }
+
+.first {
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+  }
+  input {
+   margin: 0 !important;
+    padding: 0;
+  }
 }
