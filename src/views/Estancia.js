@@ -59,8 +59,8 @@ function Estancia({estancia,backMemory,saltarAsistente}) {
                    <h5 className="text-white">Estancia: <span className="verdeAj">{dato}</span></h5>
                 </div>
                 <div className="buttonBottom">
-                    <button onClick={()=>saltarAsistente()}  type="button" className="mb-2 btn btn-outline-warning">Saltar asistente</button>
-                    <button onClick={()=>selectionEstancia(dato)} disabled={Object.keys(dato).length <1} type="button" className="btn btn-outline-success">Siguiente</button>
+                    <button onClick={()=>saltarAsistente()}  type="button" className="mb-2 mr-4 btn btn-outline-warning">Saltar asistente</button>
+                    <button onClick={()=>selectionEstancia(dato)} disabled={Object.keys(dato).length <1} type="button" className="mb-2 btn btn-outline-success">Siguiente</button>
                 </div>
             </div>
         </React.Fragment>
