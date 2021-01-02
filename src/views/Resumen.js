@@ -4,6 +4,7 @@ import {MyContext} from "../context.js";
 import ResumenData from "./ResumenData";
 import LoadingSpinner from "./LoadingSpinner";
 import html2pdf from 'html2pdf.js'
+import hp from '../img/hp.png'
 
 function Resumen({datos, reset}) {
 
@@ -183,7 +184,7 @@ function Resumen({datos, reset}) {
         const element = document.getElementById("divTable");
 
         html2pdf(element, {
-            margin: 1,
+            margin: 0,
             filename: 'AjaxConfig.pdf',
             image: {type: 'png', quality: 0.99},
             html2canvas: {scale: 2, scrollX: 0, scrollY: 0, width: 790,dpi: 192, letterRendering: true, useCORS: true},
@@ -226,7 +227,7 @@ function Resumen({datos, reset}) {
                         <div className="bg-transparent w-100 mt-4 mb-3">
                             <form id="form" className="row g-3 justify-content-start align-items-center">
                                 <div className=" ml-4 mr-3">
-                                    <img className="imgHiper" src="https://antenaszalla.com/img/hp.png" width="140" height="52"/>
+                                    <img className="imgHiper" src={hp} width="140" height="52"/>
                                 </div>
                                 <div className="col-md-3">
                                     <input type="text" className="inputCustomer form-control" id="inputName"
