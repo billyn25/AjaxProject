@@ -49,6 +49,8 @@ body {
 .row {
   display: flex;
   justify-content: center;
+  padding:0;
+  margin:0;
 }
 
 .divDer {
@@ -443,7 +445,6 @@ button{
   font-size: 14px !important;
 }
 
-
 @media only screen
 and (min-width: 0px)
 and (max-width: 1012px)
@@ -464,10 +465,6 @@ and (-webkit-min-device-pixel-ratio: 2) {
     font-weight: bold;
     background-color: white;
     margin: 10px 10px 10px 10px !important;
-  }
-
-  #form {
-    justify-content: center !important;
   }
 
   .custom-control{
