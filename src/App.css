@@ -579,4 +579,12 @@ and (-webkit-min-device-pixel-ratio: 2) {
     font-size: 16px !important;
   }
 
+  .imgLogo {
+    width: 17%;
+  }
+
+  .divForm {
+    width: 80%;
+  }
+
 }
