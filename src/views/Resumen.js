@@ -186,8 +186,8 @@ function Resumen({datos, reset}) {
         html2pdf(element, {
             margin: 0,
             filename: 'AjaxConfig.pdf',
-            image: {type: 'jpg', quality: 0.9},
-            html2canvas: {scrollX: 0, scrollY: 0, dpi: 192, letterRendering: true, useCORS: true},
+            image: {type: 'png', quality: 0.9},
+            html2canvas: {dpi: 192, letterRendering: true, useCORS: true},
             jsPDF: {unit: 'pt', format: 'a4', orientation: 'p'}
         })
     }
@@ -223,7 +223,7 @@ function Resumen({datos, reset}) {
                         </div>
                     </div>
                     <hr className="bg-white mb-0"/>
-                    <div className="table-responsive-sm" id='divTable'>
+                    <div className="table-responsive-sm mb-5" id='divTable'>
                         <table className="table table-striped">
                             <thead>
                             <tr className="bg-transparent">
