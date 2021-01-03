@@ -256,7 +256,7 @@ function Resumen({datos, reset}) {
                             {Object.keys(data).length < 1 && (<tbody>
                             <tr className="bg-transparent">
                                 <td colSpan="7">
-                                    <h5 className="text-white text-center mt-4">No hay productos seleccionados</h5>
+                                    <p className="text-white text-center mt-4">No hay productos seleccionados</p>
                                 </td>
                             </tr>
                             </tbody>)}
