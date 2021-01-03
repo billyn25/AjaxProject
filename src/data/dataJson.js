@@ -63,6 +63,14 @@ export const AjaxkitBasic = [{
     "discount": '',
     "edit": ''
 }, {
+    "title": "Hub 2 Plus",
+    "description": "Comunicación Ethernet, Wifi y 4G dual SIM, inalámbrico 868 MHz Jeweller. Admite verificación visual de alarmas.",
+    "filename": "https://ajax.systems/wp-content/themes/ajax/assets/images/template/catalog/products/Hub_white@2x.png",
+    "price": 482.00,
+    "amount": 1,
+    "discount": '',
+    "edit": ''
+}, {
     "title": "Hub 2 B",
     "description": "Comunicación Ethernet y dual SIM GPRS, inalámbrico 868 MHz Jeweller. Admite verificación visual de alarmas.",
     "filename": "https://ajax.systems/wp-content/themes/ajax/assets/images/template/catalog/products/Hub_black@2x.png",
@@ -72,6 +80,15 @@ export const AjaxkitBasic = [{
     "edit": '',
     "color": 'black',
 }, {
+    "title": "Hub 2 B Plus",
+    "description": "Comunicación Ethernet, Wifi y 4G dual SIM, inalámbrico 868 MHz Jeweller. Admite verificación visual de alarmas.",
+    "filename": "https://ajax.systems/wp-content/themes/ajax/assets/images/template/catalog/products/Hub_black@2x.png",
+    "price": 482.00,
+    "amount": 1,
+    "discount": '',
+    "edit": '',
+    "color": 'black',
+},{
     "title": "MotionProtect",
     "description": "Detector de movimiento para interiores inmune a mascotas.",
     "filename": "https://ajax.systems/wp-content/themes/ajax/assets/images/template/catalog/products/MotionProtect_white@2x.png",
@@ -193,6 +210,14 @@ export const AjaxkitBasic = [{
     "amount": 1,
     "discount": '',
 }, {
+    "title": "MotionProtect Curtain B",
+    "description": "Detector de movimiento para interiores con zona de detección reducida. Alcance de detección configurable desde 6 a 15 m.",
+    "filename": "https://d1x12lhh8s9nlj.cloudfront.net/images/productos/products/AJ-CURTAINPROTECT-B/AJ-CURTAINPROTECT-B.png",
+    "price": 88.00,
+    "amount": 1,
+    "discount": '',
+    "color": 'black'
+}, {
     "title": "SpaceControl",
     "description": "Mando para manejar el sistema de seguridad.",
     "filename": "https://ajax.systems/wp-content/themes/ajax/assets/images/template/catalog/products/SpaceControl_white@2x.png",
@@ -275,6 +300,14 @@ export const AjaxkitBasic = [{
     "price": 150.00,
     "amount": 1,
     "discount": ''
+}, {
+    "title": "ReX B",
+    "description": "Repetidor de la señal de radio que duplica el alcance de comunicación de los dispositivos con un hub.",
+    "filename": "https://ajax.systems/wp-content/themes/ajax/assets/images/template/catalog/products/Hub_black@2x.png",
+    "price": 150.00,
+    "amount": 1,
+    "discount": '',
+    "color": 'black'
 }, {
     "title": "FireProtect",
     "description": "Detector para interiores que reacciona al humo y al rápido aumento de la temperatura.",
