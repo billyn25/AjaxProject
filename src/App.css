@@ -32,16 +32,21 @@ body {
   background-color: #1e2027;
 }
 
+section {
+  padding:10px 60px 30px 60px;
+  width: 100%;
+  height:auto;
+
+}
 .estancia {
   display: block;
   overflow: hidden;
   width: 100%;
   height:auto;
-  padding:10px 60px 50px 60px;
 }
 
 .title{
-    padding:10px 60px 15px 60px;
+    padding:10px 0 15px 0;
     text-align: start;
     color: white;
 }
@@ -77,8 +82,11 @@ body {
 
 .buttonBottom {
   width: 100% !important;
-  display: inline-block;
-  margin-top: 30px;
+  bottom: 0;
+  position: fixed;
+  justify-content: center;
+  padding:50px;
+  left: 0;
 }
 
 .card {
@@ -153,7 +161,7 @@ label {
 }
 
 ul.statusBar {
-  padding: 25px 0 10px 60px;
+  padding: 25px 0 10px 0;
   width: 100%;
   display: flex;
   justify-content: start;
@@ -457,9 +465,9 @@ and (-webkit-min-device-pixel-ratio: 2) {
     text-align: center;
   }
 
-  .estancia {
+  section {
     width: 100%;
-    padding: 10px 0px 50px 0px;
+    padding: 10px 0 20px 0;
   }
 
   .form-row {
@@ -470,7 +478,7 @@ and (-webkit-min-device-pixel-ratio: 2) {
     margin: 10px 10px 10px 10px !important;
   }
 
-  .custom-control{
+  .custom-control {
     margin: 0 10px 10px 10px !important;
   }
 
@@ -487,6 +495,7 @@ and (-webkit-min-device-pixel-ratio: 2) {
     padding: 10px;
     margin: 7px;
   }
+
   .card-body {
     flex-direction: column;
     align-items: center;
@@ -519,13 +528,13 @@ and (-webkit-min-device-pixel-ratio: 2) {
     align-items: center;
   }
 
-  .buttonsDivs{
+  .buttonsDivs {
     margin-top: 20px;
   }
 
   .col-sm-4 {
     margin: 0;
-    padding:0;
+    padding: 0;
   }
 
   .sidenav {
@@ -540,6 +549,7 @@ and (-webkit-min-device-pixel-ratio: 2) {
     padding: 20px 12px 0 12px;
     justify-content: space-between !important;
   }
+
   ul.productsBar li {
     width: 94px !important;
   }
@@ -548,7 +558,7 @@ and (-webkit-min-device-pixel-ratio: 2) {
     font-size: 12px;
   }
 
-  .selectPosition{
+  .selectPosition {
     margin-bottom: 20px;
   }
 
@@ -557,20 +567,13 @@ and (-webkit-min-device-pixel-ratio: 2) {
   }
 
   .divIzq {;
-    margin-top:20px !important;
+    margin-top: 20px !important;
     width: 45%;
     align-items: start;
     float: left;
   }
 
-  .buttonBottom {
-    margin-top:20px !important;
-    width: 45% !important;
-    float: right;
-    text-align: start;
-  }
-
-  h5{
+  h5 {
     font-size: 16px !important;
   }
 
@@ -584,8 +587,19 @@ and (-webkit-min-device-pixel-ratio: 2) {
   }
 
   .imgTable:hover {
-    transform: scale(6,6);
+    transform: scale(6, 6);
     left: 100px !important;
   }
 
+  .buttonBottom {
+    width: 50% !important;
+    float: right;
+    position: relative;
+    padding: 20px 20px 0 0;
+    text-align: right;
+  }
+
+  .buttonBottom button:first-child {
+    margin-right:0  !important;
+  }
 }

@@ -59,19 +59,22 @@ function App() {
                         className="App-logo" alt="logo"/></a>
                     <h5 className="text-white">Panel Configurador</h5>
                 </header>
-                <ul className="statusBar">
-                    <li className={estancia ? "verdeAj" : "text-white"}>1. Estancia</li>
-                    <li className={estancia && caractEstancia ? "verdeAj" : "text-white"}>2. Características de la
-                        estancia
-                    </li>
-                    <li className="text-white">3. Resumen</li>
-                </ul>
-                {!estancia && (
-                    <Estancia estancia={estanciaFun} backMemory={memoryData} saltarAsistente={saltarAsistente}/>)}
-                {(estancia && resumen === '') && (
-                    <CaractEstancia caractEstancia={caracEstanciaFun} param={estancia} back={back}/>)}
-                {caractEstancia && (<Resumen datos={resumen} reset={reset}/>)}
+                <section>
+                    <ul className="statusBar">
+                        <li className={estancia ? "verdeAj" : "text-white"}>1. Estancia</li>
+                        <li className={estancia && caractEstancia ? "verdeAj" : "text-white"}>2. Características de la
+                            estancia
+                        </li>
+                        <li className="text-white">3. Resumen</li>
+                    </ul>
+                    {!estancia && (
+                        <Estancia estancia={estanciaFun} backMemory={memoryData} saltarAsistente={saltarAsistente}/>)}
+                    {(estancia && resumen === '') && (
+                        <CaractEstancia caractEstancia={caracEstanciaFun} param={estancia} back={back}/>)}
+                    {caractEstancia && (<Resumen datos={resumen} reset={reset}/>)}
+                </section>
             </div>
+
             <MenuProducts/>
         </MyContext.Provider>
     );
