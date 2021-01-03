@@ -66,8 +66,10 @@ function Resumen({datos, reset}) {
                     if (jardin === true)
                         filtered[Object.keys(filtered).length] = AjaxkitBasic[calcIndex(AjaxkitBasic, 'MotionProtect Outdoor')]
 
-                    if (estancia === 'Negocio')
+                    if (estancia === 'Negocio') {
                         filtered[Object.keys(filtered).length] = AjaxkitBasic[calcIndex(AjaxkitBasic, 'KeyPad')]
+                        filtered[(calcIndex(filtered, 'KeyPad'))].amount = numEntra
+                    }
                     break;
                 default:
             }
@@ -79,6 +81,9 @@ function Resumen({datos, reset}) {
                     break;
                 case 'Incendios':
                     filtered[Object.keys(filtered).length] = AjaxkitBasic[calcIndex(AjaxkitBasic, 'FireProtect')]
+                    break;
+                case 'IncendiosCO':
+                    filtered[Object.keys(filtered).length] = AjaxkitBasic[calcIndex(AjaxkitBasic, 'FireProtect Plus')]
                     break;
                 default:
             }

@@ -116,13 +116,13 @@ function CaractEstancia({caractEstancia, param, back}) {
                                                    id="gridRadios1"
                                                    onChange={() => setJardin(true)}/>
                                             <label className="mr-3 small form-check-label" htmlFor="gridRadios1">
-                                                Si tengo.
+                                                Si hay.
                                             </label>
                                             <input className="form-check-input" type="radio" name="gridRadios"
                                                    defaultChecked id="gridRadios2"
                                                    onClick={() => setJardin(false)}/>
                                             <label className="small form-check-label" htmlFor="gridRadios2">
-                                                No tengo.
+                                                No hay.
                                             </label>
                                         </div>
                                     </div>
@@ -148,13 +148,19 @@ function CaractEstancia({caractEstancia, param, back}) {
                                                id="gridRadios4"
                                                onClick={() => setPrevencion('Inundaciones')}/>
                                         <label className="small form-check-label" htmlFor="gridRadios4">
-                                            Inundaciones.
+                                            Inundacion.
                                         </label>
                                         <input className="form-check-input" type="radio" name="gridRadiosPre"
                                                id="gridRadios5"
                                                onClick={() => setPrevencion('Incendios')}/>
-                                        <label className="ml-2 small form-check-label" htmlFor="gridRadios5">
-                                            Incendios.
+                                        <label className="ml-2 mr-1 small form-check-label" htmlFor="gridRadios5">
+                                            Incendio.
+                                        </label>
+                                        <input className="form-check-input" type="radio" name="gridRadiosPre"
+                                               id="gridRadios6"
+                                               onClick={() => setPrevencion('IncendiosCO')}/>
+                                        <label className="ml-2 small form-check-label" htmlFor="gridRadios6">
+                                            Incendio y CO.
                                         </label>
                                     </div>
                                 </div>

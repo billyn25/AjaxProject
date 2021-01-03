@@ -349,5 +349,19 @@ export const AjaxkitBasic = [{
     "price": 54.00,
     "amount": 1,
     "discount": ''
+}, {
+    "title": "Transmitter",
+    "description": "Transmisor vía radio. Compatible con detectores de terceros con salida cableada de alarma.",
+    "filename": "https://d1x12lhh8s9nlj.cloudfront.net/images/productos/products/AJ-TRANSMITTER/AJ-TRANSMITTER.png",
+    "price":60.00,
+    "amount": 1,
+    "discount": ''
+}, {
+    "title": "Hood for MotionProtect Outdoor",
+    "description": "Visor que protege de la nieve y la lluvia.",
+    "filename": "https://ajax.systems/wp-content/themes/ajax/assets/images/template/catalog/products/hood_white@2x.png",
+    "price": 14.80,
+    "amount": 1,
+    "discount": ''
 }
 ];
