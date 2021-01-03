@@ -224,23 +224,9 @@ function Resumen({datos, reset}) {
                     </div>
                     <div className="table-responsive-sm" id='divTable'>
                         <hr className="bg-white mb-0"/>
-                        <form id="form" className="row g-3 justify-content-start align-items-center">
-                            <div className="ml-0 mr-3">
-                                <img id="imgHiperId" className="imgHiper" src={hp}/>
-                            </div>
-                            <div className="col-md-3">
-                                <input type="text" className="inputCustomer form-control" id="inputName"
-                                       placeholder="Cliente/Empresa"/>
-                            </div>
-                            <div className="col-md-2">
-                                <input type="number" className="inputCustomer form-control" id="inputMovil"
-                                       placeholder="Móvil"/>
-                            </div>
-                            <div className="col-md-4">
-                                <input type="email" className="inputCustomer form-control" id="inputEmail"
-                                       placeholder="Em@il"/>
-                            </div>
-                        </form>
+                        <div className="ml-0 mr-3">
+                            <img id="imgHiperId" className="imgHiper" src={hp}/>
+                        </div>
                         <table className="table table-striped mb-5">
                             <thead>
                             <tr className="verdeAj">
