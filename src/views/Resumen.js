@@ -223,7 +223,7 @@ function Resumen({datos, reset}) {
                         </div>
                     </div>
                     <div className="table-responsive-sm" id='divTable'>
-                        <table className="table table-striped mb-5">
+                        <table className="table table-striped mb-5 mt-5">
                             <thead>
                             <tr className="bg-transparent">
                                 <td colSpan="7">
