@@ -355,7 +355,7 @@ button{
 }
 
 .imgTable:hover {
-  position: relative;
+  position: absolute;
   cursor: pointer;
   transform: scale(6,6);
   object-fit: cover;
@@ -581,6 +581,11 @@ and (-webkit-min-device-pixel-ratio: 2) {
 
   #imgHiperId {
     padding-bottom: 8px;
+  }
+
+  .imgTable:hover {
+    transform: scale(6,6);
+    left: 100px !important;
   }
 
 }
