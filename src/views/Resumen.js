@@ -223,13 +223,12 @@ function Resumen({datos, reset}) {
                         </div>
                     </div>
                     <div className="table-responsive-sm" id='divTable'>
-                        <table className="table table-striped mb-5 mt-5">
+                        <table className="table table-striped mb-5">
                             <thead>
                             <tr className="bg-transparent">
                                 <td colSpan="7">
                                     <form id="form" className="row g-3">
                                         <div className="imgLogo float-left">
-                                            <img className="imgHiper" src={hp} width="90" height="auto"/>
                                         </div>
                                         <div className="divForm float-right d-inline-flex align-items-center">
                                             <div className="col-md-4">

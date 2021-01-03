@@ -359,11 +359,19 @@ button{
 }
 
 .imgLogo {
-  width: 13%;
+  background-image: url("https://hiperantena.com/wp-content/uploads/2017/01/hiperantena-logo-2017.png");
+  background-repeat: no-repeat;
+  background-size: 125px 55px;
+  width: 15%;
+  height:55px
+}
+
+#form{
+  margin: 5px !important;
 }
 
 .divForm {
-  width: 87%;
+  width: 84%;
 }
 
 .imgHiper{
