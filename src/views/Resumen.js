@@ -224,7 +224,7 @@ function Resumen({datos, reset}) {
                     </div>
                     <div className="table-responsive-sm" id='divTable'>
                         <hr className="bg-white mb-0 mt-0"/>
-                        <form id="form" className="pt-2 pb-2 row g-3 justify-content-between align-items-center">
+                        <form id="form" className="pt-4 pb-4 row g-3 justify-content-between align-items-center">
                             <div className="ml-3 mr-4">
                                 <img id="imgHiperId" className="imgHiper" src={hp}/>
                             </div>
