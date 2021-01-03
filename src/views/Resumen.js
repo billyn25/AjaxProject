@@ -222,8 +222,8 @@ function Resumen({datos, reset}) {
                             </button>
                         </div>
                     </div>
+                    <hr className="bg-white mb-0 mt-0"/>
                     <div className="table-responsive-sm" id='divTable'>
-                        <hr className="bg-white mb-0"/>
                         <div className="ml-0 mr-3">
                             <img id="imgHiperId" className="imgHiper" src={hp}/>
                         </div>
