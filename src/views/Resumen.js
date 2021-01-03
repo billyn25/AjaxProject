@@ -199,7 +199,7 @@ function Resumen({datos, reset}) {
             </div>
             {loading ? <LoadingSpinner/> : (
                 <div className="estancia">
-                    <div className="buttons pl-0 pb-3 custom-control custom-checkbox justify-content-between">
+                    <div className="buttons pl-0 pb-2 custom-control custom-checkbox justify-content-between">
                         <div className="d-inline-flex align-items-end text-white">
                             <p>Foto</p>
                             <input type="checkbox" className="ml-2 flipswitch" id="customCheck1"
@@ -223,7 +223,7 @@ function Resumen({datos, reset}) {
                         </div>
                     </div>
                     <div className="table-responsive-sm" id='divTable'>
-                        <hr className="bg-white mb-0 mt-0"/>
+                        <hr className="bg-white mb-2 mt-0"/>
                         <form id="form" className="pt-4 pb-4 row g-3 justify-content-between align-items-center">
                             <div className="ml-3 mr-4">
                                 <img id="imgHiperId" className="imgHiper" src={hp}/>
