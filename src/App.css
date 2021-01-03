@@ -368,7 +368,7 @@ button{
 }
 
 #imgHiperId {
-  width: 50px;
+  width: 60px;
 }
 
 .flipswitch {
@@ -568,6 +568,10 @@ and (-webkit-min-device-pixel-ratio: 2) {
 
   h5{
     font-size: 16px !important;
+  }
+
+  #form {
+    justify-content: center !important;
   }
 
 }
