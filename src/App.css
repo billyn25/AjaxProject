@@ -568,8 +568,8 @@ and (-webkit-min-device-pixel-ratio: 2) {
 
   .divIzq {;
     margin-top: 20px !important;
-    width: 45%;
-    align-items: start;
+    width: 58%;
+    align-items: start !important;
     float: left;
   }
 
@@ -592,14 +592,18 @@ and (-webkit-min-device-pixel-ratio: 2) {
   }
 
   .buttonBottom {
-    width: 50% !important;
+    width: 42% !important;
     float: right;
     position: relative;
-    padding: 20px 20px 0 0;
-    text-align: right;
+    padding: 20px 20px 0 20px;
+    display: flex;
+    flex-direction: column !important;
+    align-items: flex-end;
   }
 
-  .buttonBottom button:first-child {
+  .buttonBottom button {
     margin-right:0  !important;
+    margin-bottom: 20px;
+    margin-left: 0 !important;
   }
 }
