@@ -358,26 +358,6 @@ button{
   z-index: 2 !important;
 }
 
-.imgLogo {
-  background-image: url("https://hiperantena.com/wp-content/uploads/2017/01/hiperantena-logo-2017.png");
-  background-repeat: no-repeat;
-  background-size: 125px 55px;
-  width: 15%;
-  height:55px
-}
-
-#form{
-  margin: 5px !important;
-}
-
-.divForm {
-  width: 84%;
-}
-
-.imgHiper{
-  height: auto;
-}
-
 .menuImg {
   object-fit: cover;
 }
@@ -387,6 +367,9 @@ button{
   transform: scale(1.2,1.2);
 }
 
+#imgHiperId {
+  width: 120px;
+}
 
 .flipswitch {
   position: relative;
@@ -585,14 +568,6 @@ and (-webkit-min-device-pixel-ratio: 2) {
 
   h5{
     font-size: 16px !important;
-  }
-
-  .imgLogo {
-    width: 17%;
-  }
-
-  .divForm {
-    width: 80%;
   }
 
 }
