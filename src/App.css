@@ -467,7 +467,7 @@ and (-webkit-min-device-pixel-ratio: 2) {
 
   section {
     width: 100%;
-    padding: 10px 0 20px 0;
+    padding: 10px 0 30px 0;
   }
 
   .form-row {
@@ -571,6 +571,7 @@ and (-webkit-min-device-pixel-ratio: 2) {
     width: 58%;
     align-items: start !important;
     float: left;
+    padding-left: 15px;
   }
 
   h5 {
@@ -597,13 +598,13 @@ and (-webkit-min-device-pixel-ratio: 2) {
     position: relative;
     padding: 20px 20px 0 20px;
     display: flex;
-    flex-direction: column !important;
+    flex-direction: column-reverse !important;
     align-items: flex-end;
   }
 
   .buttonBottom button {
     margin-right:0  !important;
-    margin-bottom: 20px;
     margin-left: 0 !important;
+    margin-bottom: 20px !important;
   }
 }
