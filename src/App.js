@@ -43,6 +43,8 @@ function App() {
         setResumen('')
         setMemoryData(d)
 
+        console.log(memoryCaract)
+
         let arrayEdit = [];
         dispatch({type: "ADD", payload: arrayEdit});
 
