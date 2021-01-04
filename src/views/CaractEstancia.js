@@ -13,6 +13,8 @@ function CaractEstancia({caractEstancia, param, back, resumen}) {
     const [statusButton, setStatusButton] = useState('')
     const [prevencion, setPrevencion] = useState(resumen.prevencion?resumen.prevencion:'Nada')
 
+    console.log(resumen)
+
     let sendData = () => {
 
         const objeto = {

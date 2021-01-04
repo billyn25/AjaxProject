@@ -63,6 +63,7 @@ function App() {
 
         //memoria si vuelves desde resumen
         setMemoryCaract(resumen)
+        setCaractEstancia(resumen?resumen:'')
         setResumen('')
         let arrayEdit = [];
         dispatch({type: "ADD", payload: arrayEdit});
@@ -81,13 +82,13 @@ function App() {
                     <h5 className="text-white">Panel Configurador</h5>
                 </header>
                 <section>
-                    <ul className="statusBar">
+                    {estancia!=='vacio' && (<ul className="statusBar">
                         <li onClick={()=>back(estancia)} className={estancia || memoryData ? "verdeAj" : "text-white"}>1. Estancia</li>
-                        <li  onClick={()=>backToCarEstancia()} className={estancia && caractEstancia ? "verdeAj" : "text-white"}>2. Características de la
+                        <li  onClick={resumen?()=>backToCarEstancia():''} className={estancia && caractEstancia ? "verdeAj" : "text-white"}>2. Características de la
                             estancia
                         </li>
                         <li className="text-white">3. Resumen</li>
-                    </ul>
+                    </ul>)}
                     {!estancia && (
                         <Estancia estancia={estanciaFun} backMemory={memoryData} saltarAsistente={saltarAsistente}/>)}
                     {(estancia && resumen === '') && (
