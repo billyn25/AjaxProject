@@ -43,9 +43,6 @@ function Resumen({datos, reset}) {
             let filtered = JSON.parse(JSON.stringify(AjaxkitBasic))
             filtered = (filtered).filter(({status}) => status === i || status === 'piso');
 
-            //change numHab
-            filtered[calcIndex(filtered, 'MotionProtect')].amount = parseInt(numHab)
-
             switch (estancia) {
                 case 'Apartamento/Piso':
 
@@ -56,11 +53,13 @@ function Resumen({datos, reset}) {
                     break;
                 case 'Casa/Chalet':
                 case 'Negocio':
+                    //change numHab
+                    filtered[calcIndex(filtered, 'MotionProtect')].amount = parseInt(numHab)
 
                     filtered[calcIndex(filtered, 'DoorProtect')].amount = parseInt(numEntra);
                     filtered[Object.keys(filtered).length] = AjaxkitBasic[calcIndex(AjaxkitBasic, 'StreetSiren')]
 
-                    if (numPlantas > 3)
+                    if (numPlantas >= 3)
                         filtered[Object.keys(filtered).length] = AjaxkitBasic[calcIndex(AjaxkitBasic, 'ReX')]
 
                     if (jardin === true)
