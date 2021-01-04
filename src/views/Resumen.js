@@ -219,7 +219,7 @@ function Resumen({datos, reset}) {
                                     className="btn btn-outline-success mr-2">Añadir
                             </button>
                             <button onClick={() => deleteData()} type="button"
-                                    className="btn btn-outline-secondary mr-2">Limpiar
+                                    className="btn btn-outline-warning mr-2">Limpiar
                             </button>
                             <button onClick={() => pdfExport()} type="button" disabled={Object.keys(data).length < 1}
                                     className="btn btn-outline-secondary mr-2">Exportar pdf
