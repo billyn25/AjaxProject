@@ -124,6 +124,10 @@ section {
   padding: 0 10px;
 }
 
+#form .col-md-4 {
+  padding-right: 0;
+}
+
 .col:first-child {
   max-width: 13%;
 }

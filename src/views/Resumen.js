@@ -76,13 +76,13 @@ function Resumen({datos, reset}) {
 
             //prevenciones
             switch (prevencion) {
-                case 'Inundaciones':
+                case 'Inundación':
                     filtered[Object.keys(filtered).length] = AjaxkitBasic[calcIndex(AjaxkitBasic, 'LeaksProtect')]
                     break;
-                case 'Incendios':
+                case 'Incendio':
                     filtered[Object.keys(filtered).length] = AjaxkitBasic[calcIndex(AjaxkitBasic, 'FireProtect')]
                     break;
-                case 'IncendiosCO':
+                case 'Incendio y CO':
                     filtered[Object.keys(filtered).length] = AjaxkitBasic[calcIndex(AjaxkitBasic, 'FireProtect Plus')]
                     break;
                 default:

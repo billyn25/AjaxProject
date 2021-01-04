@@ -146,19 +146,19 @@ function CaractEstancia({caractEstancia, param, back}) {
                                         </label>
                                         <input className="form-check-input" type="radio" name="gridRadiosPre"
                                                id="gridRadios4"
-                                               onClick={() => setPrevencion('Inundaciones')}/>
+                                               onClick={() => setPrevencion('Inundación')}/>
                                         <label className="small form-check-label" htmlFor="gridRadios4">
-                                            Inundacion.
+                                            Inundación.
                                         </label>
                                         <input className="form-check-input" type="radio" name="gridRadiosPre"
                                                id="gridRadios5"
-                                               onClick={() => setPrevencion('Incendios')}/>
+                                               onClick={() => setPrevencion('Incendio')}/>
                                         <label className="ml-2 mr-1 small form-check-label" htmlFor="gridRadios5">
                                             Incendio.
                                         </label>
                                         <input className="form-check-input" type="radio" name="gridRadiosPre"
                                                id="gridRadios6"
-                                               onClick={() => setPrevencion('IncendiosCO')}/>
+                                               onClick={() => setPrevencion('Incendio y CO')}/>
                                         <label className="ml-2 small form-check-label" htmlFor="gridRadios6">
                                             Incendio y CO.
                                         </label>

@@ -15,8 +15,6 @@ function App() {
     const [resumen, setResumen] = useState('')
     const [memoryData, setMemoryData] = useState('')
 
-    window.scrollTo(0, 0);
-
     let estanciaFun = (d) => {
         setEstancia(d)
     }
