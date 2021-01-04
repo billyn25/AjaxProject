@@ -45,6 +45,9 @@ function App() {
 
         let arrayEdit = [];
         dispatch({type: "ADD", payload: arrayEdit});
+
+        document.getElementById("mySidenav").style.width = "0";
+        document.getElementById("App").style.marginLeft = "0";
     }
 
     let saltarAsistente = () => {
@@ -63,6 +66,9 @@ function App() {
         setResumen('')
         let arrayEdit = [];
         dispatch({type: "ADD", payload: arrayEdit});
+
+        document.getElementById("mySidenav").style.width = "0";
+        document.getElementById("App").style.marginLeft = "0";
     }
 
     return (

@@ -396,5 +396,13 @@ export const AjaxkitBasic = [{
     "price": 14.80,
     "amount": 1,
     "discount": ''
+}, {
+    "title": "SF-IPCU180-WIDE-3PW",
+    "description": "Cámara IP Wi-Fi 3 Megapixel. Lente gran angular 180º. Ranura SD.",
+    "filename": "https://d1x12lhh8s9nlj.cloudfront.net/images/productos/products/SF-IPCU180-WIDE-3PW/SF-IPCU180-WIDE-3PW.png",
+    "price": 100.00,
+    "amount": 1,
+    "discount": '',
+    "cat":'otros'
 }
 ];
