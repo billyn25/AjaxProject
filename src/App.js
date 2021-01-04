@@ -82,7 +82,7 @@ function App() {
                 </header>
                 <section>
                     <ul className="statusBar">
-                        <li onClick={()=>back(estancia)} className={estancia ? "verdeAj" : "text-white"}>1. Estancia</li>
+                        <li onClick={()=>back(estancia)} className={estancia || memoryData ? "verdeAj" : "text-white"}>1. Estancia</li>
                         <li  onClick={()=>backToCarEstancia()} className={estancia && caractEstancia ? "verdeAj" : "text-white"}>2. Características de la
                             estancia
                         </li>

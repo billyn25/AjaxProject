@@ -11,8 +11,6 @@ function MenuProducts() {
     const [toggle, setToggle] = useState(false)
     const [toggleAjax, setToggleAjax] = useState(true)
 
-    console.log(toggleAjax)
-
     //calcular indices auto
     let calcIndex = (arr, text) => {
         return arr.findIndex(function (item, i) {

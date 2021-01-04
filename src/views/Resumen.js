@@ -12,7 +12,7 @@ function Resumen({datos, reset}) {
     const {data} = state;
 
     const {numEntra, numHab, estancia, position, numPlantas, jardin, prevencion} = datos
-    const [toggle, setToggle] = useState(true)
+    const [toggle, setToggle] = useState(false)
     const [loading, setLoad] = useState(false);
     const [discountLineal, setDiscountLineal] = useState(false);
     const [tokenDisableButton, setTokenDisableButton] = useState(false);
@@ -96,9 +96,9 @@ function Resumen({datos, reset}) {
         setToggle(i)
 
         if (toggle === true) {
-            ChangeKit('2')
-        } else {
             ChangeKit('1')
+        } else {
+            ChangeKit('2')
         }
     }
 
@@ -174,6 +174,8 @@ function Resumen({datos, reset}) {
         let arrayEdit = [];
         dispatch({type: "ADD", payload: arrayEdit});
         document.getElementById("form").reset();
+
+        setToggle(false)
     }
 
     //change size table for export pdf
@@ -206,7 +208,7 @@ function Resumen({datos, reset}) {
                     <div className="buttons pl-0 pb-2 custom-control custom-checkbox justify-content-between">
                         <div className="d-inline-flex align-items-end text-white">
                             <p>Foto</p>
-                            <input type="checkbox" className="ml-2 flipswitch" id="customCheck1"
+                            <input type="checkbox" checked={toggle} className="ml-2 flipswitch" id="customCheck1"
                                    onChange={() => toggleF(!toggle)}/>
                             <p className="ml-4 text-white">% Lineal</p>
                             <input className="discountLineal ml-2 form-control textNum"
