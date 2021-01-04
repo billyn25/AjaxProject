@@ -30,6 +30,7 @@ function App() {
         setResumen('')
         setCaractEstancia('')
         setMemoryData('')
+        setCaractEstancia('')
 
         document.getElementById("mySidenav").style.width = "0";
         document.getElementById("App").style.marginLeft = "0";
