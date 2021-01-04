@@ -14,6 +14,7 @@ function App() {
     const [caractEstancia, setCaractEstancia] = useState('')
     const [resumen, setResumen] = useState('')
     const [memoryData, setMemoryData] = useState('')
+    const [memoryCaract, setMemoryCaract] = useState('')
 
     let estanciaFun = (d) => {
         setEstancia(d)
@@ -38,7 +39,12 @@ function App() {
     let back = (d) => {
 
         setEstancia('')
+        setMemoryCaract(caractEstancia)
+        setResumen('')
         setMemoryData(d)
+
+        let arrayEdit = [];
+        dispatch({type: "ADD", payload: arrayEdit});
     }
 
     let saltarAsistente = () => {
@@ -46,6 +52,15 @@ function App() {
         setEstancia('vacio')
         setCaractEstancia('vacio')
         setResumen('vacio')
+        let arrayEdit = [];
+        dispatch({type: "ADD", payload: arrayEdit});
+    }
+
+    let backToCarEstancia = () => {
+
+        //memoria si vuelves desde resumen
+        setMemoryCaract(resumen)
+        setResumen('')
         let arrayEdit = [];
         dispatch({type: "ADD", payload: arrayEdit});
     }
@@ -61,8 +76,8 @@ function App() {
                 </header>
                 <section>
                     <ul className="statusBar">
-                        <li className={estancia ? "verdeAj" : "text-white"}>1. Estancia</li>
-                        <li className={estancia && caractEstancia ? "verdeAj" : "text-white"}>2. Características de la
+                        <li onClick={()=>back(estancia)} className={estancia ? "verdeAj" : "text-white"}>1. Estancia</li>
+                        <li  onClick={()=>backToCarEstancia()} className={estancia && caractEstancia ? "verdeAj" : "text-white"}>2. Características de la
                             estancia
                         </li>
                         <li className="text-white">3. Resumen</li>
@@ -70,8 +85,8 @@ function App() {
                     {!estancia && (
                         <Estancia estancia={estanciaFun} backMemory={memoryData} saltarAsistente={saltarAsistente}/>)}
                     {(estancia && resumen === '') && (
-                        <CaractEstancia caractEstancia={caracEstanciaFun} param={estancia} back={back}/>)}
-                    {caractEstancia && (<Resumen datos={resumen} reset={reset}/>)}
+                        <CaractEstancia caractEstancia={caracEstanciaFun} resumen={memoryCaract} param={estancia} back={back}/>)}
+                    {(caractEstancia && resumen && estancia) !== '' && (<Resumen datos={resumen} reset={reset}/>)}
                 </section>
             </div>
 

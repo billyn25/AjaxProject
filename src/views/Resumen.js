@@ -56,7 +56,7 @@ function Resumen({datos, reset}) {
                     //change numHab
                     filtered[calcIndex(filtered, 'MotionProtect')].amount = parseInt(numHab)
 
-                    filtered[calcIndex(filtered, 'DoorProtect')].amount = parseInt(numEntra);
+                    filtered[calcIndex(filtered, 'DoorProtect')].amount = parseInt(numEntra)+parseInt(numHab);
                     filtered[Object.keys(filtered).length] = AjaxkitBasic[calcIndex(AjaxkitBasic, 'StreetSiren')]
 
                     if (numPlantas >= 3)
@@ -222,7 +222,7 @@ function Resumen({datos, reset}) {
                             <button onClick={() => pdfExport()} type="button" disabled={Object.keys(data).length < 1}
                                     className="btn btn-outline-secondary mr-2">Exportar pdf
                             </button>
-                            <button onClick={() => {deleteData();reset()}} type="button" className="btn btn-outline-secondary">Reiniciar
+                            <button onClick={() => {deleteData();reset()}} type="button" className="btn btn-outline-danger">Reiniciar
                             </button>
                         </div>
                     </div>

@@ -3,15 +3,17 @@ import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import {faBuffer} from '@fortawesome/free-brands-svg-icons'
 import {faTree, faFire,faDoorOpen,faBuilding,faBorderNone} from '@fortawesome/free-solid-svg-icons'
 
-function CaractEstancia({caractEstancia, param, back}) {
+function CaractEstancia({caractEstancia, param, back, resumen}) {
 
-    const [position, setPosition] = useState('')
-    const [numHab, setNumHab] = useState(1)
-    const [numEntra, setNumEntra] = useState(1)
-    const [numPlantas, setNumPlantas] = useState(1)
-    const [jardin, setJardin] = useState('')
+    const [position, setPosition] = useState(resumen.position?resumen.position:'')
+    const [numHab, setNumHab] = useState(resumen.numHab?resumen.numHab:1)
+    const [numEntra, setNumEntra] = useState(resumen.numEntra?resumen.numEntra:1)
+    const [numPlantas, setNumPlantas] = useState(resumen.numPlantas?resumen.numPlantas:1)
+    const [jardin, setJardin] = useState(resumen.jardin?resumen.jardin:false)
     const [statusButton, setStatusButton] = useState('')
-    const [prevencion, setPrevencion] = useState('Nada')
+    const [prevencion, setPrevencion] = useState(resumen.prevencion?resumen.prevencion:'Nada')
+
+    console.log(resumen)
 
     let sendData = () => {
 
@@ -49,7 +51,7 @@ function CaractEstancia({caractEstancia, param, back}) {
                                     <label className="form-check-label mb-3" htmlFor="gridRadios1">
                                         Posicion del Apartamento
                                     </label>
-                                    <select className="form-control selectPosition"
+                                    <select className="form-control selectPosition" defaultValue={position}
                                             onChange={(e) => setPosition(e.target.value)}>
                                         <option></option>
                                         <option>Bajo o 1º Piso</option>
@@ -68,7 +70,7 @@ function CaractEstancia({caractEstancia, param, back}) {
                                     <label className="form-check-label mb-3" htmlFor="gridRadios2">
                                         Cantidad de plantas
                                     </label>
-                                    <input className="form-control textNum" type="number" min="1" value={numPlantas}
+                                    <input className="form-control textNum" type="number" min="1" defaultValue={numPlantas}
                                            onChange={(e) => setNumPlantas(e.target.value)}/>
                                 </div>
                                 <FontAwesomeIcon icon={faBuffer} size="4x"/>
@@ -113,13 +115,13 @@ function CaractEstancia({caractEstancia, param, back}) {
                                         </label>
                                         <div>
                                             <input className="form-check-input" type="radio" name="gridRadios"
-                                                   id="gridRadios1"
+                                                   id="gridRadios1" defaultChecked={jardin===true}
                                                    onChange={() => setJardin(true)}/>
                                             <label className="mr-3 small form-check-label" htmlFor="gridRadios1">
                                                 Si hay.
                                             </label>
                                             <input className="form-check-input" type="radio" name="gridRadios"
-                                                   defaultChecked id="gridRadios2"
+                                                   defaultChecked={jardin===false} id="gridRadios2"
                                                    onClick={() => setJardin(false)}/>
                                             <label className="small form-check-label" htmlFor="gridRadios2">
                                                 No hay.
@@ -139,25 +141,25 @@ function CaractEstancia({caractEstancia, param, back}) {
                                     </label>
                                     <div>
                                         <input className="form-check-input" type="radio" name="gridRadiosPre"
-                                               id="gridRadios3" defaultChecked
+                                               id="gridRadios3" defaultChecked={prevencion==='Nada'}
                                                onChange={() => setPrevencion('nada')}/>
                                         <label className="mr-3 small form-check-label" htmlFor="gridRadios3">
                                             Nada.
                                         </label>
                                         <input className="form-check-input" type="radio" name="gridRadiosPre"
-                                               id="gridRadios4"
+                                               id="gridRadios4" defaultChecked={prevencion==='Inundación'}
                                                onClick={() => setPrevencion('Inundación')}/>
                                         <label className="small form-check-label" htmlFor="gridRadios4">
                                             Inundación.
                                         </label>
                                         <input className="form-check-input" type="radio" name="gridRadiosPre"
-                                               id="gridRadios5"
+                                               id="gridRadios5" defaultChecked={prevencion==='Incendio'}
                                                onClick={() => setPrevencion('Incendio')}/>
                                         <label className="ml-2 mr-1 small form-check-label" htmlFor="gridRadios5">
                                             Incendio.
                                         </label>
                                         <input className="form-check-input" type="radio" name="gridRadiosPre"
-                                               id="gridRadios6"
+                                               id="gridRadios6" defaultChecked={prevencion==='Incendio y CO'}
                                                onClick={() => setPrevencion('Incendio y CO')}/>
                                         <label className="ml-2 small form-check-label" htmlFor="gridRadios6">
                                             Incendio y CO.
