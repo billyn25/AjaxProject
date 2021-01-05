@@ -397,6 +397,30 @@ export const AjaxkitBasic = [{
     "amount": 1,
     "discount": ''
 }, {
+    "title": "SF-IPB022A-2EW",
+    "description": "Cámara IP Wi-Fi 2 Megapixel. Lente 2.8 mm Gran angular. Micrófono incorporado.",
+    "filename": "https://d1x12lhh8s9nlj.cloudfront.net/images/productos/products/SF-IPB022A-2EW/SF-IPB022A-2EW.png",
+    "price": 70.00,
+    "amount": 1,
+    "discount": '',
+    "cat":'otros'
+}, {
+    "title": "SF-IPCV220WH-2W",
+    "description": "Cámara IP Wi-Fi 2 Megapixel. Lente 2.8 mm. Ranura SD. PoE IEEE802.3af.",
+    "filename": "https://d1x12lhh8s9nlj.cloudfront.net/images/productos/products/SF-IPCV220WH-2W/SF-IPCV220WH-2W.png",
+    "price": 98.00,
+    "amount": 1,
+    "discount": '',
+    "cat":'otros'
+}, {
+    "title": "SF-IPDM934WH-2W",
+    "description": "Cámara IP Wi-Fi 2 Megapixel. Lente 2.8 mm Gran Angular. Ranura SD. PoE IEEE802.3af.",
+    "filename": "https://d1x12lhh8s9nlj.cloudfront.net/images/productos/products/SF-IPDM934WH-2W/SF-IPDM934WH-2W.png",
+    "price": 100.00,
+    "amount": 1,
+    "discount": '',
+    "cat":'otros'
+}, {
     "title": "SF-IPCU180-WIDE-3PW",
     "description": "Cámara IP Wi-Fi 3 Megapixel. Lente gran angular 180º. Ranura SD.",
     "filename": "https://d1x12lhh8s9nlj.cloudfront.net/images/productos/products/SF-IPCU180-WIDE-3PW/SF-IPCU180-WIDE-3PW.png",
