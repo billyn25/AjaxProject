@@ -390,7 +390,7 @@ button{
 .imgTable:hover {
   position: absolute;
   cursor: pointer;
-  transform: scale(6,6);
+  transform: scale(5,5);
   object-fit: cover;
   z-index: 2 !important;
 }
