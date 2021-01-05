@@ -1,7 +1,10 @@
+import kit1 from '../img/AJ-HUBKIT-W_thumb2.png'
+
+
 export const AjaxkitBasic = [{
     "title": "Hub Kit W",
     "description": "Kit de alarma profesional básico. Comunicación Ethernet y GPRS.",
-    "filename": "https://d1x12lhh8s9nlj.cloudfront.net/images/productos/products/AJ-HUBKIT-W/AJ-HUBKIT-W.png",
+    "filename": kit1,
     "price": 360.00,
     "amount": 1,
     "discount": '',
