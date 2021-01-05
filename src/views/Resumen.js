@@ -200,7 +200,7 @@ function Resumen({datos, reset}) {
             margin: 0,
             filename: 'AjaxConfig.pdf',
             image: {type: 'png', quality: 0.9},
-            html2canvas: {quality:1, scale: 2, scrollX: 0, scrollY: 0, width: 790, dpi: 192, letterRendering: true, useCORS: true},
+            html2canvas: {scale: 2, scrollX: 0, scrollY: 0, width: 790, dpi: 192, letterRendering: true, useCORS: true},
             jsPDF: {unit: 'pt', format: 'a4', orientation: 'p'}
         };
 

@@ -83,7 +83,7 @@ section {
 .buttonBottom {
   width: 100% !important;
   bottom: 0;
-  position: absolute;
+  float: right;
   justify-content: center;
   align-items: end !important;
   padding:60px;
@@ -173,7 +173,7 @@ ul.statusBar li {
 }
 
 ul.productsBar {
-  padding: 15px;
+  padding: 12px;
   display: flex;
   width: 100%;
   justify-content: start;
@@ -191,6 +191,10 @@ ul.productsBar li {
   justify-content: center;
   text-align: center;
   cursor: pointer;
+}
+
+ul.productsBar p {
+  font-size: 12.5px !important;
 }
 
 td,th {
