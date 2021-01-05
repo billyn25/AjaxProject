@@ -79,7 +79,7 @@ function App() {
         <MyContext.Provider value={{state, dispatch}}>
             <div id="App">
                 <header className="App-header">
-                    <a href="https://ajax-home.netlify.app/"><img
+                    <a href="https://hiperajax.netlify.app/"><img
                         src="https://i2.wp.com/stemar.co.za/wp-content/uploads/2020/05/Ajax-Logo-White.png?fit=1024%2C410&ssl=1"
                         className="App-logo" alt="logo"/></a>
                     <h5 className="text-white">Panel Configurador</h5>
