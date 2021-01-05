@@ -1,6 +1,5 @@
 import kit1 from '../img/AJ-HUBKIT-W_thumb2.png'
 
-
 export const AjaxkitBasic = [{
     "title": "Hub Kit W",
     "description": "Kit de alarma profesional básico. Comunicación Ethernet y GPRS.",
