@@ -1,4 +1,7 @@
 import kit1 from '../img/AJ-HUBKIT-W_thumb2.png'
+import kit1b from '../img/AJ-HUBKIT-B_thumb2.png'
+import kit2w from '../img/AJ-STARTERKIT-CAM-W_thumb2.png'
+import kit2b from '../img/AJ-STARTERKIT-CAM-B_thumb2.png'
 
 export const AjaxkitBasic = [{
     "title": "Hub Kit W",
@@ -12,7 +15,7 @@ export const AjaxkitBasic = [{
 }, {
     "title": "Hub Kit B",
     "description": "Kit de alarma profesional básico. Comunicación Ethernet y GPRS.",
-    "filename": "https://d1x12lhh8s9nlj.cloudfront.net/images/productos/products/AJ-HUBKIT-B/AJ-HUBKIT-B.png",
+    "filename": kit1b,
     "price": 360.00,
     "amount": 1,
     "discount": '',
@@ -22,7 +25,7 @@ export const AjaxkitBasic = [{
 }, {
     "title": "StartetKit Cam W",
     "description": "Kit de alarma profesional con verificación visual de alarmas. Comunicación Ethernet y dual SIM GPRS.",
-    "filename": "https://d1x12lhh8s9nlj.cloudfront.net/images/productos/products/AJ-STARTERKIT-CAM-W/AJ-STARTERKIT-CAM-W.png",
+    "filename": kit2w,
     "price": 550.00,
     "amount": 1,
     "discount": '',
@@ -31,7 +34,7 @@ export const AjaxkitBasic = [{
 }, {
     "title": "StartetKit Cam B",
     "description": "Kit de alarma profesional con verificación visual de alarmas. Comunicación Ethernet y dual SIM GPRS.",
-    "filename": "https://d1x12lhh8s9nlj.cloudfront.net/images/productos/products/AJ-STARTERKIT-CAM-B/AJ-STARTERKIT-CAM-B.png",
+    "filename": kit2b,
     "price": 550.00,
     "amount": 1,
     "discount": '',
