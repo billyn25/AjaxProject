@@ -390,6 +390,28 @@ export const AjaxkitBasic = [{
     "amount": 1,
     "discount": ''
 }, {
+    "title": "Multi Transmitter",
+    "description": "Multitransmisor vía radio de múltiples entradas. Hasta 18 Entradas cableadas de alarma y tamper.",
+    "filename": "https://d1x12lhh8s9nlj.cloudfront.net/images/productos/products/AJ-MULTITRANSMITTER-W/AJ-MULTITRANSMITTER-W.png",
+    "price":186.00,
+    "amount": 1,
+    "discount": ''
+}, {
+    "title": "Multi Transmitter B",
+    "description": "Multitransmisor vía radio de múltiples entradas. Hasta 18 Entradas cableadas de alarma y tamper.",
+    "filename": "https://d1x12lhh8s9nlj.cloudfront.net/images/productos/products/AJ-MULTITRANSMITTER-B/AJ-MULTITRANSMITTER-B.png",
+    "price":186.00,
+    "amount": 1,
+    "discount": '',
+    "color": 'black'
+},{
+    "title": "OcBridgePlus",
+    "description": "Módulo de integración. Dispositivos Ajax con central cableada. 8 zonas de alarma para la central cableada",
+    "filename": "https://d1x12lhh8s9nlj.cloudfront.net/images/productos/products/AJ-OCBRIDGEPLUS/AJ-OCBRIDGEPLUS.png",
+    "price":84.00,
+    "amount": 1,
+    "discount": ''
+}, {
     "title": "Hood for MotionProtect Outdoor",
     "description": "Visor que protege de la nieve y la lluvia.",
     "filename": "https://ajax.systems/wp-content/themes/ajax/assets/images/template/catalog/products/hood_white@2x.png",
