@@ -47,7 +47,10 @@ function Resumen({datos, reset}) {
                 case 'Apartamento/Piso':
 
                     if (position === 'Bajo o 1º Piso' || position === 'Ultimo')
-                        filtered[calcIndex(filtered, 'DoorProtect')].amount = parseInt(numHab)+1;
+                        filtered[calcIndex(filtered, 'DoorProtect')].amount = parseInt(numHab) + 1;
+
+                    if (position === 'Otro')
+                        filtered[calcIndex(filtered, 'MotionProtect')].amount = parseInt(numHab);
 
                     filtered[Object.keys(filtered).length] = AjaxkitBasic[calcIndex(AjaxkitBasic, 'HomeSiren')]
                     break;
@@ -56,7 +59,7 @@ function Resumen({datos, reset}) {
                     //change numHab
                     filtered[calcIndex(filtered, 'MotionProtect')].amount = parseInt(numHab)
 
-                    filtered[calcIndex(filtered, 'DoorProtect')].amount = parseInt(numEntra)+parseInt(numHab);
+                    filtered[calcIndex(filtered, 'DoorProtect')].amount = parseInt(numEntra) + parseInt(numHab);
                     filtered[Object.keys(filtered).length] = AjaxkitBasic[calcIndex(AjaxkitBasic, 'StreetSiren')]
 
                     if (numPlantas >= 3)
@@ -161,11 +164,11 @@ function Resumen({datos, reset}) {
 
     //abrir menu lateral
     let openNav = () => {
-        if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
-            document.getElementById("mySidenav").style.width = window.screen.width+'px';
+        if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+            document.getElementById("mySidenav").style.width = window.screen.width + 'px';
         } else {
-        document.getElementById("mySidenav").style.width = "450px"
-        document.getElementById("App").style.marginLeft = "450px";
+            document.getElementById("mySidenav").style.width = "450px"
+            document.getElementById("App").style.marginLeft = "450px";
         }
     }
 
@@ -224,7 +227,10 @@ function Resumen({datos, reset}) {
                             <button onClick={() => pdfExport()} type="button" disabled={Object.keys(data).length < 1}
                                     className="btn btn-outline-secondary mr-2">Exportar pdf
                             </button>
-                            <button onClick={() => {deleteData();reset()}} type="button" className="btn btn-outline-danger">Reiniciar
+                            <button onClick={() => {
+                                deleteData();
+                                reset()
+                            }} type="button" className="btn btn-outline-danger">Reiniciar
                             </button>
                         </div>
                     </div>
@@ -272,11 +278,13 @@ function Resumen({datos, reset}) {
                                                  discountLineal={discountLineal}/>))}
                                 <tr className="bg-white">
                                     <td colSpan="2">
-                                        {discountLineal && (<p className="text-dark pl-3">Oferta con descuento aplicado.</p>)}
+                                        {discountLineal && (
+                                            <p className="text-dark pl-3">Oferta con descuento aplicado.</p>)}
                                     </td>
-                                    <td colSpan="2" className="text-right font-weight-bolder"><p className="iva">Total {sum(data)}</p></td>
+                                    <td colSpan="2" className="text-right font-weight-bolder"><p
+                                        className="iva">Total {sum(data)}</p></td>
                                     <td colSpan="3" className="pt-3 pb-3 pr-4 text-right">
-                                        <h5 className="text-dark total font-weight-bold">Total {(sum(data)*1.21).toFixed(2)} €</h5>
+                                        <h5 className="text-dark total font-weight-bold">Total {(sum(data) * 1.21).toFixed(2)} €</h5>
                                         <p className="float-right">I.V.A incluido.</p>
                                     </td>
                                 </tr>

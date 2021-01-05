@@ -87,7 +87,7 @@ function App() {
                 <section>
                     {estancia!=='vacio' && (<ul className="statusBar">
                         <li onClick={()=>back(estancia)} className={estancia || memoryData ? "verdeAj" : "text-white"}>1. Estancia</li>
-                        <li  onClick={resumen?()=>backToCarEstancia():''} className={estancia && caractEstancia ? "verdeAj" : "text-white"}>2. Características de la
+                        <li  onClick={resumen?()=>backToCarEstancia():{}} className={estancia && caractEstancia ? "verdeAj" : "text-white"}>2. Características de la
                             estancia
                         </li>
                         <li className="text-white">3. Resumen</li>
