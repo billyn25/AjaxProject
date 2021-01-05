@@ -265,6 +265,7 @@ button{
 .textNum {
   width:60px;
   height: 28px;
+  font-weight: bold;
 }
 
 .inputCustomer {
