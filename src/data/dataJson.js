@@ -2,6 +2,10 @@ import kit1 from '../img/AJ-HUBKIT-W_thumb2.png'
 import kit1b from '../img/AJ-HUBKIT-B_thumb2.png'
 import kit2w from '../img/AJ-STARTERKIT-CAM-W_thumb2.png'
 import kit2b from '../img/AJ-STARTERKIT-CAM-B_thumb2.png'
+import ipb022 from '../img/SF-IPB022A-2EW_thumb2.png'
+import ipcu180 from '../img/SF-IPCU180-WIDE-3PW_thumb2.png'
+import ipcv220 from '../img/SF-IPCV220WH-2W_thumb2.png'
+import ipdm934 from '../img/SF-IPDM934WH-2W_thumb2.png'
 
 export const AjaxkitBasic = [{
     "title": "Hub Kit W",
@@ -433,7 +437,7 @@ export const AjaxkitBasic = [{
 }, {
     "title": "SF-IPB022A-2EW",
     "description": "Cámara IP Wi-Fi 2 Megapixel. Lente 2.8 mm Gran angular. Micrófono incorporado.",
-    "filename": "https://d1x12lhh8s9nlj.cloudfront.net/images/productos/products/SF-IPB022A-2EW/SF-IPB022A-2EW.png",
+    "filename": ipb022,
     "price": 70.00,
     "amount": 1,
     "discount": '',
@@ -441,7 +445,7 @@ export const AjaxkitBasic = [{
 }, {
     "title": "SF-IPCV220WH-2W",
     "description": "Cámara IP Wi-Fi 2 Megapixel. Lente 2.8 mm. Ranura SD. PoE IEEE802.3af.",
-    "filename": "https://d1x12lhh8s9nlj.cloudfront.net/images/productos/products/SF-IPCV220WH-2W/SF-IPCV220WH-2W.png",
+    "filename": ipcv220,
     "price": 98.00,
     "amount": 1,
     "discount": '',
@@ -449,7 +453,7 @@ export const AjaxkitBasic = [{
 }, {
     "title": "SF-IPDM934WH-2W",
     "description": "Cámara IP Wi-Fi 2 Megapixel. Lente 2.8 mm Gran Angular. Ranura SD. PoE IEEE802.3af.",
-    "filename": "https://d1x12lhh8s9nlj.cloudfront.net/images/productos/products/SF-IPDM934WH-2W/SF-IPDM934WH-2W.png",
+    "filename": ipdm934,
     "price": 100.00,
     "amount": 1,
     "discount": '',
@@ -457,7 +461,7 @@ export const AjaxkitBasic = [{
 }, {
     "title": "SF-IPCU180-WIDE-3PW",
     "description": "Cámara IP Wi-Fi 3 Megapixel. Lente gran angular 180º. Ranura SD.",
-    "filename": "https://d1x12lhh8s9nlj.cloudfront.net/images/productos/products/SF-IPCU180-WIDE-3PW/SF-IPCU180-WIDE-3PW.png",
+    "filename": ipcu180,
     "price": 100.00,
     "amount": 1,
     "discount": '',
