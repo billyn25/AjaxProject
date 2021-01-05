@@ -173,10 +173,10 @@ ul.statusBar li {
 }
 
 ul.productsBar {
-  padding: 12px;
+  padding: 10px;
   display: flex;
   width: 100%;
-  justify-content: start;
+  justify-content: space-around;
   list-style-type: none;
   color: white;
   flex-wrap: wrap !important;
