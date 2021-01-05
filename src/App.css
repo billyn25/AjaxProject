@@ -367,7 +367,7 @@ button{
 
 .alert {
   z-index: 1;
-  width: 100%;
+  width: inherit;
   position: fixed;
   bottom: 0;
   border: 0;
