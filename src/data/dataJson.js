@@ -88,7 +88,7 @@ export const AjaxkitBasic = [{
     "discount": '',
     "edit": '',
     "color": 'black',
-},{
+}, {
     "title": "MotionProtect",
     "description": "Detector de movimiento para interiores inmune a mascotas.",
     "filename": "https://ajax.systems/wp-content/themes/ajax/assets/images/template/catalog/products/MotionProtect_white@2x.png",
@@ -212,7 +212,7 @@ export const AjaxkitBasic = [{
 }, {
     "title": "MotionProtect Curtain B",
     "description": "Detector de movimiento para interiores con zona de detección reducida. Alcance de detección configurable desde 6 a 15 m.",
-    "filename": "https://d1x12lhh8s9nlj.cloudfront.net/images/productos/products/AJ-CURTAINPROTECT-B/AJ-CURTAINPROTECT-B.png",
+    "filename": "https://ajax.systems/wp-content/themes/ajax/assets/images/template/catalog/products/MotionProtectCurtain_black@2x.png",
     "price": 88.00,
     "amount": 1,
     "discount": '',
@@ -341,14 +341,14 @@ export const AjaxkitBasic = [{
 }, {
     "title": "LeaksProtect",
     "description": "Detector de inundación para interiores.",
-    "filename": "https://d1x12lhh8s9nlj.cloudfront.net/images/productos/products/AJ-LEAKSPROTECT-W/AJ-LEAKSPROTECT-W.png",
+    "filename": "https://ajax.systems/wp-content/themes/ajax/assets/images/template/catalog/products/LeaksProtect_white@2x.png",
     "price": 60.00,
     "amount": 1,
     "discount": ''
 }, {
     "title": "LeaksProtect B",
     "description": "Detector de inundación para interiores.",
-    "filename": "https://d1x12lhh8s9nlj.cloudfront.net/images/productos/products/AJ-LEAKSPROTECT-B/AJ-LEAKSPROTECT-B.png",
+    "filename": "https://ajax.systems/wp-content/themes/ajax/assets/images/template/catalog/products/LeaksProtect_black@2x.png",
     "price": 60.00,
     "amount": 1,
     "discount": '',
@@ -385,30 +385,37 @@ export const AjaxkitBasic = [{
 }, {
     "title": "Transmitter",
     "description": "Transmisor vía radio. Compatible con detectores de terceros con salida cableada de alarma.",
-    "filename": "https://d1x12lhh8s9nlj.cloudfront.net/images/productos/products/AJ-TRANSMITTER/AJ-TRANSMITTER.png",
-    "price":60.00,
+    "filename": "https://ajax.systems/wp-content/themes/ajax/assets/images/template/catalog/products/Transmitter@2x.png",
+    "price": 60.00,
     "amount": 1,
     "discount": ''
 }, {
     "title": "Multi Transmitter",
     "description": "Multitransmisor vía radio de múltiples entradas. Hasta 18 Entradas cableadas de alarma y tamper.",
-    "filename": "https://d1x12lhh8s9nlj.cloudfront.net/images/productos/products/AJ-MULTITRANSMITTER-W/AJ-MULTITRANSMITTER-W.png",
-    "price":186.00,
+    "filename": "https://ajax.systems/wp-content/themes/ajax/assets/images/template/catalog/products/multitransmitter_white@2x.png",
+    "price": 186.00,
     "amount": 1,
     "discount": ''
 }, {
     "title": "Multi Transmitter B",
     "description": "Multitransmisor vía radio de múltiples entradas. Hasta 18 Entradas cableadas de alarma y tamper.",
-    "filename": "https://d1x12lhh8s9nlj.cloudfront.net/images/productos/products/AJ-MULTITRANSMITTER-B/AJ-MULTITRANSMITTER-B.png",
-    "price":186.00,
+    "filename": "https://ajax.systems/wp-content/themes/ajax/assets/images/template/catalog/products/multitransmitter_black@2x.png",
+    "price": 186.00,
     "amount": 1,
     "discount": '',
     "color": 'black'
-},{
+}, {
+    "title": "uartBridge",
+    "description": "Integra detectores Ajax en sistemas de terceros. Transmite mediante uart.",
+    "filename": "https://ajax.systems/wp-content/themes/ajax/assets/images/template/catalog/products/uartBridge@2x.png",
+    "price": 44.00,
+    "amount": 1,
+    "discount": ''
+}, {
     "title": "OcBridgePlus",
-    "description": "Módulo de integración. Dispositivos Ajax con central cableada. 8 zonas de alarma para la central cableada",
-    "filename": "https://d1x12lhh8s9nlj.cloudfront.net/images/productos/products/AJ-OCBRIDGEPLUS/AJ-OCBRIDGEPLUS.png",
-    "price":84.00,
+    "description": "Integra detectores Ajax en sistemas de terceros. Transmite mediante contactos libres de tensión.",
+    "filename": "https://ajax.systems/wp-content/themes/ajax/assets/images/template/catalog/products/ocBridgePlus@2x.png",
+    "price": 84.00,
     "amount": 1,
     "discount": ''
 }, {
@@ -425,7 +432,7 @@ export const AjaxkitBasic = [{
     "price": 70.00,
     "amount": 1,
     "discount": '',
-    "cat":'otros'
+    "cat": 'otros'
 }, {
     "title": "SF-IPCV220WH-2W",
     "description": "Cámara IP Wi-Fi 2 Megapixel. Lente 2.8 mm. Ranura SD. PoE IEEE802.3af.",
@@ -433,7 +440,7 @@ export const AjaxkitBasic = [{
     "price": 98.00,
     "amount": 1,
     "discount": '',
-    "cat":'otros'
+    "cat": 'otros'
 }, {
     "title": "SF-IPDM934WH-2W",
     "description": "Cámara IP Wi-Fi 2 Megapixel. Lente 2.8 mm Gran Angular. Ranura SD. PoE IEEE802.3af.",
@@ -441,7 +448,7 @@ export const AjaxkitBasic = [{
     "price": 100.00,
     "amount": 1,
     "discount": '',
-    "cat":'otros'
+    "cat": 'otros'
 }, {
     "title": "SF-IPCU180-WIDE-3PW",
     "description": "Cámara IP Wi-Fi 3 Megapixel. Lente gran angular 180º. Ranura SD.",
@@ -449,6 +456,6 @@ export const AjaxkitBasic = [{
     "price": 100.00,
     "amount": 1,
     "discount": '',
-    "cat":'otros'
+    "cat": 'otros'
 }
 ];

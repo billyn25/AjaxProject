@@ -11,7 +11,7 @@ function Resumen({datos, reset}) {
     const {dispatch, state} = useContext(MyContext);
     const {data} = state;
 
-    const {numEntra, numHab, estancia, position, numPlantas, jardin, prevencion} = datos
+    const {numEntra, numHab, estancia, position, numPlantas, jardin, prevencion, prevencionIncendio} = datos
     const [toggle, setToggle] = useState(false)
     const [loading, setLoad] = useState(false);
     const [discountLineal, setDiscountLineal] = useState(false);
@@ -78,9 +78,14 @@ function Resumen({datos, reset}) {
 
             //prevenciones
             switch (prevencion) {
-                case 'Inundación':
+                case 'Si':
                     filtered[Object.keys(filtered).length] = AjaxkitBasic[calcIndex(AjaxkitBasic, 'LeaksProtect')]
                     break;
+                default:
+            }
+
+            //prevencion incendio
+            switch (prevencionIncendio) {
                 case 'Incendio':
                     filtered[Object.keys(filtered).length] = AjaxkitBasic[calcIndex(AjaxkitBasic, 'FireProtect')]
                     break;
@@ -191,14 +196,16 @@ function Resumen({datos, reset}) {
         }, 0);
 
         const element = document.getElementById("divTable");
-
-        html2pdf(element, {
+        var opt = {
             margin: 0,
             filename: 'AjaxConfig.pdf',
-            image: {type: 'jpg', quality: 0.9},
-            html2canvas: {scale: 2, scrollX: 0, scrollY: 0, width: 790, dpi: 192, letterRendering: true, useCORS: true},
+            image: {type: 'png', quality: 0.9},
+            html2canvas: {quality:1, scale: 2, scrollX: 0, scrollY: 0, width: 790, dpi: 192, letterRendering: true, useCORS: true},
             jsPDF: {unit: 'pt', format: 'a4', orientation: 'p'}
-        })
+        };
+
+        // New Promise-based usage:
+        html2pdf().set(opt).from(element).save();
     }
 
     return (

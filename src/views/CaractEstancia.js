@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from 'react';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import {faBuffer} from '@fortawesome/free-brands-svg-icons'
-import {faTree, faFire,faDoorOpen,faBuilding,faBorderNone} from '@fortawesome/free-solid-svg-icons'
+import {faTree, faFire,faDoorOpen,faBuilding,faBorderNone,faTint} from '@fortawesome/free-solid-svg-icons'
 
 function CaractEstancia({caractEstancia, param, back, resumen}) {
 
@@ -11,7 +11,8 @@ function CaractEstancia({caractEstancia, param, back, resumen}) {
     const [numPlantas, setNumPlantas] = useState(resumen.numPlantas?resumen.numPlantas:1)
     const [jardin, setJardin] = useState(resumen.jardin?resumen.jardin:false)
     const [statusButton, setStatusButton] = useState('')
-    const [prevencion, setPrevencion] = useState(resumen.prevencion?resumen.prevencion:'Nada')
+    const [prevencion, setPrevencion] = useState(resumen.prevencion?resumen.prevencion:'No')
+    const [prevencionIncendio, setPrevencionIncendio] = useState(resumen.prevencionIncendio?resumen.prevencionIncendio:'No')
 
     console.log(resumen)
 
@@ -24,7 +25,8 @@ function CaractEstancia({caractEstancia, param, back, resumen}) {
             numEntra: numEntra,
             numPlantas: numPlantas,
             jardin: jardin,
-            prevencion: prevencion
+            prevencion: prevencion,
+            prevencionIncendio : prevencionIncendio
         };
         caractEstancia(objeto)
     }
@@ -137,31 +139,51 @@ function CaractEstancia({caractEstancia, param, back, resumen}) {
                             <div className="card-body rounded">
                                 <div>
                                     <label className="form-check-label mb-3">
-                                        Prevención contra:
+                                        Prevención contra Inundación
                                     </label>
                                     <div>
                                         <input className="form-check-input" type="radio" name="gridRadiosPre"
-                                               id="gridRadios3" defaultChecked={prevencion==='Nada'}
-                                               onChange={() => setPrevencion('nada')}/>
+                                               id="gridRadios3" defaultChecked={prevencion==='No'}
+                                               onClick={() => setPrevencion('No')}/>
                                         <label className="mr-3 small form-check-label" htmlFor="gridRadios3">
-                                            Nada.
+                                            No.
                                         </label>
                                         <input className="form-check-input" type="radio" name="gridRadiosPre"
-                                               id="gridRadios4" defaultChecked={prevencion==='Inundación'}
-                                               onClick={() => setPrevencion('Inundación')}/>
+                                               id="gridRadios4" defaultChecked={prevencion==='Si'}
+                                               onClick={() => setPrevencion('Si')}/>
                                         <label className="small form-check-label" htmlFor="gridRadios4">
-                                            Inundación.
+                                            Si.
                                         </label>
-                                        <input className="form-check-input" type="radio" name="gridRadiosPre"
-                                               id="gridRadios5" defaultChecked={prevencion==='Incendio'}
-                                               onClick={() => setPrevencion('Incendio')}/>
-                                        <label className="ml-2 mr-1 small form-check-label" htmlFor="gridRadios5">
+                                    </div>
+                                </div>
+                                <FontAwesomeIcon icon={faTint} size="4x"/>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="col-sm-4">
+                        <div className="card">
+                            <div className="card-body rounded">
+                                <div>
+                                    <label className="form-check-label mb-3">
+                                        Prevención contra Incendio
+                                    </label>
+                                    <div>
+                                        <input className="form-check-input" type="radio" name="gridRadiosPreInc"
+                                               id="gridRadios5" checked={prevencionIncendio==='No'}
+                                               onClick={() => setPrevencionIncendio('No')}/>
+                                        <label className="mr-3 small form-check-label" htmlFor="gridRadios5">
+                                            No.
+                                        </label>
+                                        <input className="form-check-input" type="radio" name="gridRadiosPreInc"
+                                               id="gridRadios6" checked={prevencionIncendio==='Incendio'}
+                                               onClick={() => setPrevencionIncendio('Incendio')}/>
+                                        <label className="ml-2 mr-1 small form-check-label" htmlFor="gridRadios6">
                                             Incendio.
                                         </label>
-                                        <input className="form-check-input" type="radio" name="gridRadiosPre"
-                                               id="gridRadios6" defaultChecked={prevencion==='Incendio y CO'}
-                                               onClick={() => setPrevencion('Incendio y CO')}/>
-                                        <label className="ml-2 small form-check-label" htmlFor="gridRadios6">
+                                        <input className="form-check-input" type="radio" name="gridRadiosPreInc"
+                                               id="gridRadios7" checked={prevencionIncendio==='Incendio y CO'}
+                                               onClick={() => setPrevencionIncendio('Incendio y CO')}/>
+                                        <label className="ml-2 small form-check-label" htmlFor="gridRadios7">
                                             Incendio y CO.
                                         </label>
                                     </div>
@@ -187,8 +209,8 @@ function CaractEstancia({caractEstancia, param, back, resumen}) {
                     {(param === 'Casa/Chalet' || param === 'Negocio') && (
                         <h5 className="text-white text-left">Jardin o Zona exterior: <span
                             className="verdeAj">{jardin ? 'Si' : 'No'}</span></h5>)}
-                    <h5 className="text-white text-left">Prevención contra: <span className="verdeAj">{prevencion}</span>
-                    </h5>
+                    <h5 className="text-white text-left">Prevención Inundación:<span className="verdeAj"> {prevencion}</span></h5>
+                    <h5 className="text-white text-left">Prevención Incendio:<span className="verdeAj"> {prevencionIncendio}</span></h5>
                 </div>
                 <div className="buttonBottom">
                     <button onClick={() => back(param)} type="button" className="btn btn-outline-light">Atras</button>
