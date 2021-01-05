@@ -172,8 +172,8 @@ function Resumen({datos, reset}) {
         if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
             document.getElementById("mySidenav").style.width = window.screen.width + 'px';
         } else {
-            document.getElementById("mySidenav").style.width = "450px"
-            document.getElementById("App").style.marginLeft = "450px";
+            document.getElementById("mySidenav").style.width = "455px"
+            document.getElementById("App").style.marginLeft = "455px";
         }
     }
 
