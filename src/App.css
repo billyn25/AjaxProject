@@ -81,6 +81,10 @@ section {
   padding-bottom: 11.5px;
 }
 
+.divIzq h5:last-child {
+  padding-bottom: 0;
+}
+
 .buttonBottom {
   width: 100% !important;
   bottom: 0;
