@@ -178,6 +178,10 @@ ul.statusBar li {
   cursor: pointer;
 }
 
+ul.statusBar li:last-child {
+  padding-right: 0
+}
+
 ul.productsBar {
   padding: 10px;
   display: flex;

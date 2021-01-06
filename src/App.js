@@ -82,6 +82,7 @@ function App() {
         setCaractEstancia('vacio')
         setMemoryCaract('vacio')
         setResumen('vacio')
+        setMemoryData('vacio')
     }
 
     return (
