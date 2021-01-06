@@ -498,7 +498,7 @@ and (-webkit-min-device-pixel-ratio: 2) {
 
   .title {
     text-align: center;
-    padding-bottom: 5px !important;
+    padding-bottom: 6px !important;
   }
 
   section {
