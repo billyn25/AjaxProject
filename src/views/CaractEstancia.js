@@ -124,16 +124,16 @@ function CaractEstancia({caractEstancia, param, back, resumen}) {
                                         </label>
                                         <div>
                                             <input className="form-check-input" type="radio" name="gridRadios"
-                                                   id="gridRadios1" defaultChecked={jardin===true}
-                                                   onChange={() => setJardin(true)}/>
-                                            <label className="mr-3 small form-check-label" htmlFor="gridRadios1">
-                                                Si hay.
-                                            </label>
-                                            <input className="form-check-input" type="radio" name="gridRadios"
                                                    defaultChecked={jardin===false} id="gridRadios2"
                                                    onClick={() => setJardin(false)}/>
-                                            <label className="small form-check-label" htmlFor="gridRadios2">
+                                            <label className="small mr-3 form-check-label" htmlFor="gridRadios2">
                                                 No hay.
+                                            </label>
+                                            <input className="form-check-input" type="radio" name="gridRadios"
+                                                   id="gridRadios1" defaultChecked={jardin===true}
+                                                   onChange={() => setJardin(true)}/>
+                                            <label className="small form-check-label" htmlFor="gridRadios1">
+                                                Si hay.
                                             </label>
                                         </div>
                                     </div>
