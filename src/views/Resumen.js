@@ -6,7 +6,7 @@ import LoadingSpinner from "./LoadingSpinner";
 import html2pdf from 'html2pdf.js'
 import hp from '../img/hp.png'
 
-function Resumen({datos, reset}) {
+function Resumen({datos, reset,deleteDatos}) {
 
     const {dispatch, state} = useContext(MyContext);
     const {data} = state;
@@ -31,6 +31,7 @@ function Resumen({datos, reset}) {
     useEffect(() => {
         if (datos.toggleImage && Object.keys(data).length>=1)
                 toggleF(datos.toggleImage)
+        console.log(datos)
         },
         [Object.keys(data).length>=1],
     );
@@ -192,6 +193,7 @@ function Resumen({datos, reset}) {
         document.getElementById("form").reset();
 
         setToggle(false)
+        deleteDatos()
     }
 
     //change size table for export pdf

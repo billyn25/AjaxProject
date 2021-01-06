@@ -75,6 +75,15 @@ function App() {
         document.getElementById("App").style.marginLeft = "0";
     }
 
+    //borra datos del asistente desde el resumen, boton limpiar
+    let deleteDatos = () => {
+
+        setEstancia('vacio')
+        setCaractEstancia('vacio')
+        setMemoryCaract('vacio')
+        setResumen('vacio')
+    }
+
     return (
         <MyContext.Provider value={{state, dispatch}}>
             <div id="App">
@@ -97,7 +106,7 @@ function App() {
                         <Estancia estancia={estanciaFun} backMemory={memoryData} saltarAsistente={saltarAsistente}/>)}
                     {(estancia && resumen === '') && (
                         <CaractEstancia caractEstancia={caracEstanciaFun} resumen={memoryCaract} param={estancia} back={back}/>)}
-                    {(caractEstancia && resumen && estancia) !== '' && (<Resumen datos={resumen} reset={reset}/>)}
+                    {(caractEstancia && resumen && estancia) !== '' && (<Resumen deleteDatos={deleteDatos} datos={resumen} reset={reset}/>)}
                 </section>
             </div>
 
