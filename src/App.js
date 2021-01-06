@@ -79,12 +79,11 @@ function App() {
         <MyContext.Provider value={{state, dispatch}}>
             <div id="App">
                 <header className="App-header">
-                    <a href="https://hiperajax.netlify.app/"><img
+                    <a href="https://hiperajax.netlify.app/">
+                        <img
                         src="https://i2.wp.com/stemar.co.za/wp-content/uploads/2020/05/Ajax-Logo-White.png?fit=1024%2C410&ssl=1"
-                        className="App-logo" alt="logo"/></a>
-                    <h5 className="text-white">Panel Configurador</h5>
-                </header>
-                <section>
+                        className="App-logo" alt="logo"/>
+                    </a>
                     {estancia!=='vacio' && (<ul className="statusBar">
                         <li onClick={()=>back(estancia)} className={estancia || memoryData ? "verdeAj" : "text-white"}>1. Estancia</li>
                         <li  onClick={resumen?()=>backToCarEstancia():{}} className={estancia && caractEstancia ? "verdeAj" : "text-white"}>2. Características de la
@@ -92,6 +91,8 @@ function App() {
                         </li>
                         <li className="text-white">3. Resumen</li>
                     </ul>)}
+                </header>
+                <section>
                     {!estancia && (
                         <Estancia estancia={estanciaFun} backMemory={memoryData} saltarAsistente={saltarAsistente}/>)}
                     {(estancia && resumen === '') && (

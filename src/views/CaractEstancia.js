@@ -13,6 +13,7 @@ function CaractEstancia({caractEstancia, param, back, resumen}) {
     const [statusButton, setStatusButton] = useState('')
     const [prevencion, setPrevencion] = useState(resumen.prevencion?resumen.prevencion:'No')
     const [prevencionIncendio, setPrevencionIncendio] = useState(resumen.prevencionIncendio?resumen.prevencionIncendio:'No')
+    const [toggleImage, setToggleImage] = useState(resumen.toggleImage?resumen.toggleImage:false)
 
     console.log(resumen)
 
@@ -26,7 +27,8 @@ function CaractEstancia({caractEstancia, param, back, resumen}) {
             numPlantas: numPlantas,
             jardin: jardin,
             prevencion: prevencion,
-            prevencionIncendio : prevencionIncendio
+            prevencionIncendio : prevencionIncendio,
+            toggleImage:toggleImage,
         };
         caractEstancia(objeto)
     }
@@ -45,6 +47,11 @@ function CaractEstancia({caractEstancia, param, back, resumen}) {
                 <h4>Características de la estancia</h4>
             </div>
             <div className="estancia">
+                <div className="fotoMes text-left w-100 d-flex justify-content-start mb-4">
+                    <p className="text-white">Con verificación de imágen</p>
+                    <input type="checkbox" checked={toggleImage} className="ml-2 flipswitch" id="customCheck1"
+                           onClick={() => setToggleImage(!toggleImage)}/>
+                </div>
                 <div className="row divDer">
                     {(param !== 'Casa/Chalet' && param !== 'Negocio') && (<div className="col-sm-4">
                         <div className="card">

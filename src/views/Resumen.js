@@ -22,9 +22,17 @@ function Resumen({datos, reset}) {
             setTimeout(() => {
                 setLoad(false)
                 datafilterPiso('initial')
-            }, 0);
+            }, 1200);
         },
         [],
+    );
+
+    //si elegimos video en el assitente tenemos que cambiar los sensores y el hub
+    useEffect(() => {
+        if (datos.toggleImage && Object.keys(data).length>=1)
+                toggleF(datos.toggleImage)
+        },
+        [Object.keys(data).length>=1],
     );
 
     //calcular indices auto
@@ -219,7 +227,7 @@ function Resumen({datos, reset}) {
                         <div className="d-inline-flex align-items-end text-white">
                             <p>Foto</p>
                             <input type="checkbox" checked={toggle} className="ml-2 flipswitch" id="customCheck1"
-                                   onChange={() => toggleF(!toggle)}/>
+                                   onClick={() => toggleF(!toggle)}/>
                             <p className="ml-4 text-white">% Lineal</p>
                             <input className="discountLineal ml-2 form-control textNum"
                                    onChange={(e) => setDiscountLineal(e.target.value)} type="number" min="0" max="100"/>

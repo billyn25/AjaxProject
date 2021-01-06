@@ -26,14 +26,14 @@ body {
   height:auto;
   display: flex;
   flex-direction: row;
-  align-items: center;
+  align-items: center !important;
   justify-content: space-between;
   color: white;
   background-color: #1e2027;
 }
 
 section {
-  padding:10px 60px 30px 60px;
+  padding:20px 60px 30px 60px;
   width: 100%;
   height:auto;
 
@@ -43,6 +43,7 @@ section {
   overflow: hidden;
   width: 100%;
   height:auto;
+  margin-top: 14px;
 }
 
 .title{
@@ -160,11 +161,12 @@ label {
 }
 
 ul.statusBar {
-  padding: 25px 0 10px 0;
-  width: 100%;
+  padding: 5px 0 5px 0;
+  width: auto;
   display: flex;
-  justify-content: start;
+  justify-content: end !important;
   list-style-type: none;
+  margin-bottom: 0;
 }
 
 ul.statusBar li {
@@ -486,13 +488,17 @@ and (min-width: 0px)
 and (max-width: 1012px)
 and (-webkit-min-device-pixel-ratio: 2) {
 
+  .App-header {
+    padding: 10px 18px 10px 18px;
+  }
+
   .title {
     text-align: center;
   }
 
   section {
     width: 100%;
-    padding: 10px 0 30px 0;
+    padding: 20px 0 30px 0;
   }
 
   .form-row {
@@ -541,6 +547,7 @@ and (-webkit-min-device-pixel-ratio: 2) {
     margin-top: 15px;
     margin-bottom: 20px;
     padding: 0;
+    text-align: right;
   }
 
   ul.statusBar li {
@@ -641,5 +648,9 @@ and (-webkit-min-device-pixel-ratio: 2) {
   .menuImg:active {
     background-color: rgba(90, 228, 170, 0.61);
     transform: scale(1.2,1.2);
+  }
+
+  .fotoMes{
+    justify-content: center !important;
   }
 }
