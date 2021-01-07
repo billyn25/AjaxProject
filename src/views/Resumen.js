@@ -6,7 +6,7 @@ import LoadingSpinner from "./LoadingSpinner";
 import html2pdf from 'html2pdf.js'
 import hp from '../img/hp.png'
 
-function Resumen({datos, reset,deleteDatos}) {
+function Resumen({datos, reset}) {
 
     const {dispatch, state} = useContext(MyContext);
     const {data} = state;
@@ -21,19 +21,10 @@ function Resumen({datos, reset,deleteDatos}) {
             setLoad(true);
             setTimeout(() => {
                 setLoad(false)
-                datafilterPiso('initial')
+                datafilterPiso()
             }, 1200);
         },
         [],
-    );
-
-    //si elegimos video en el assitente tenemos que cambiar los sensores y el hub
-    useEffect(() => {
-        if (datos.toggleImage && Object.keys(data).length>=1)
-                toggleF(datos.toggleImage)
-        console.log(datos)
-        },
-        [Object.keys(data).length>=1],
     );
 
     //calcular indices auto
@@ -44,13 +35,19 @@ function Resumen({datos, reset,deleteDatos}) {
     }
 
     //filter for initial kit basic
-    let datafilterPiso = (i) => {
+    let datafilterPiso = (i,v) => {
 
         // si esta vacio es por que hemos saltado asistente
         if (datos !== 'vacio') {
 
             let filtered = JSON.parse(JSON.stringify(AjaxkitBasic))
-            filtered = (filtered).filter(({status}) => status === i || status === 'piso');
+
+            if(datos.toggleImage!==true) {
+                filtered = (filtered).filter(({status}) => status === 'initial');
+            } else {
+                filtered = (filtered).filter(({cam}) => cam === 'si');
+                setToggle(true)
+            }
 
             switch (estancia) {
                 case 'Apartamento/Piso':
@@ -65,8 +62,14 @@ function Resumen({datos, reset,deleteDatos}) {
                     break;
                 case 'Casa/Chalet':
                 case 'Negocio':
-                    //change numHab
-                    filtered[calcIndex(filtered, 'MotionProtect')].amount = parseInt(numHab)
+
+                    //change numHab h1
+                    if(datos.toggleImage!==true) {
+                        filtered[calcIndex(filtered, 'MotionProtect')].amount = parseInt(numHab)
+                    } else {
+                        //change numHab h2
+                        filtered[calcIndex(filtered, 'MotionCam')].amount = parseInt(numHab)
+                    }
 
                     filtered[calcIndex(filtered, 'DoorProtect')].amount = parseInt(numEntra) + parseInt(numHab);
                     filtered[Object.keys(filtered).length] = AjaxkitBasic[calcIndex(AjaxkitBasic, 'StreetSiren')]
@@ -151,12 +154,10 @@ function Resumen({datos, reset,deleteDatos}) {
                     (key, index) => index !== calcIndex(newAarryEdit, 'MotionCam')
                 );
             }
-
             //igualar cantidades
             newAarryEdit[calcIndex(newAarryEdit, 'Hub 1')].amount = data[calcIndex(data, 'Hub 2')] ? data[calcIndex(data, 'Hub 2')].amount : 1
             if (calcIndex(newAarryEdit, 'MotionProtect') === -1)
                 newAarryEdit[calcIndex(newAarryEdit, 'MotionProtect')].amount = data[calcIndex(data, 'MotionCam')] ? data[calcIndex(data, 'MotionCam')].amount : 1
-
             dispatch({type: "ADD", payload: newAarryEdit});
         }
     }
@@ -193,7 +194,6 @@ function Resumen({datos, reset,deleteDatos}) {
         document.getElementById("form").reset();
 
         setToggle(false)
-        deleteDatos()
     }
 
     //change size table for export pdf

@@ -1,7 +1,7 @@
 html {
   width: 100% !important;
   box-sizing: content-box !important;
-  font-size: 0.95rem;
+  font-size: 0.90rem;
 }
 
 body {
@@ -47,7 +47,7 @@ section {
 }
 
 .title{
-    padding:10px 0 15px 0;
+    padding:10px 0 4px 0;
     text-align: start;
     color: white;
 }
@@ -91,7 +91,7 @@ section {
   float: right;
   justify-content: center;
   align-items: end !important;
-  padding:60px;
+  padding:40px;
   left: 0;
 }
 

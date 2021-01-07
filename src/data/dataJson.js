@@ -70,7 +70,8 @@ export const AjaxkitBasic = [{
     "price": 280.00,
     "amount": 1,
     "discount": '',
-    "edit": ''
+    "edit": '',
+    "cam": 'si'
 }, {
     "title": "Hub 2 Plus",
     "description": "Comunicación Ethernet, Wifi y 4G dual SIM, inalámbrico 868 MHz Jeweller. Admite verificación visual de alarmas.",
@@ -149,7 +150,8 @@ export const AjaxkitBasic = [{
     "filename": "https://ajax.systems/wp-content/themes/ajax/assets/images/template/catalog/products/MotionCam_white@2x.png",
     "price": 188.00,
     "amount": 1,
-    "discount": ''
+    "discount": '',
+    "cam": 'si'
 }, {
     "title": "MotionCam B",
     "description": "Detector de movimiento con cámara fotográfica. Solo Hub 2.",
@@ -172,7 +174,8 @@ export const AjaxkitBasic = [{
     "price": 44.00,
     "amount": 1,
     "discount": '',
-    "status": "initial"
+    "status": "initial",
+    "cam": 'si'
 }, {
     "title": "DoorProtect B",
     "description": "Detector con iman para puerta o ventana.",
@@ -233,7 +236,8 @@ export const AjaxkitBasic = [{
     "price": 38.00,
     "amount": 1,
     "discount": '',
-    "status": "initial"
+    "status": "initial",
+    "cam": 'si'
 }, {
     "title": "SpaceControl B",
     "description": "Mando para manejar el sistema de seguridad.",
