@@ -55,9 +55,6 @@ function Resumen({datos, reset}) {
                     if (position === 'Bajo o 1º Piso' || position === 'Ultimo')
                         filtered[calcIndex(filtered, 'DoorProtect')].amount = parseInt(numHab) + 1;
 
-                    if (position === 'Otro')
-                        filtered[calcIndex(filtered, 'MotionProtect')].amount = parseInt(numHab);
-
                     filtered[Object.keys(filtered).length] = AjaxkitBasic[calcIndex(AjaxkitBasic, 'HomeSiren')]
                     break;
                 case 'Casa/Chalet':
