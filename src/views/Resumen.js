@@ -62,13 +62,14 @@ function Resumen({datos, reset}) {
                     break;
                 case 'Casa/Chalet':
                 case 'Negocio':
+                    console.log(numPlantas)
 
                     //change numHab h1
                     if(datos.toggleImage!==true) {
-                        filtered[calcIndex(filtered, 'MotionProtect')].amount = parseInt(numHab)
+                        filtered[calcIndex(filtered, 'MotionProtect')].amount = parseInt(numPlantas)
                     } else {
                         //change numHab h2
-                        filtered[calcIndex(filtered, 'MotionCam')].amount = parseInt(numHab)
+                        filtered[calcIndex(filtered, 'MotionCam')].amount = parseInt(numPlantas)
                     }
 
                     filtered[calcIndex(filtered, 'DoorProtect')].amount = parseInt(numEntra) + parseInt(numHab);
@@ -156,8 +157,8 @@ function Resumen({datos, reset}) {
             }
             //igualar cantidades
             newAarryEdit[calcIndex(newAarryEdit, 'Hub 1')].amount = data[calcIndex(data, 'Hub 2')] ? data[calcIndex(data, 'Hub 2')].amount : 1
-            if (calcIndex(newAarryEdit, 'MotionProtect') === -1)
-                newAarryEdit[calcIndex(newAarryEdit, 'MotionProtect')].amount = data[calcIndex(data, 'MotionCam')] ? data[calcIndex(data, 'MotionCam')].amount : 1
+            newAarryEdit[calcIndex(newAarryEdit, 'MotionProtect')].amount = data[calcIndex(data, 'MotionCam')] ? data[calcIndex(data, 'MotionCam')].amount : 1
+
             dispatch({type: "ADD", payload: newAarryEdit});
         }
     }
@@ -210,7 +211,7 @@ function Resumen({datos, reset}) {
             margin: 0,
             filename: 'AjaxConfig.pdf',
             image: {type: 'png', quality: 0.9},
-            html2canvas: {scale: 2, scrollX: 0, scrollY: 0, width: 790, dpi: 192, letterRendering: true, useCORS: true},
+            html2canvas: { scrollX: 0, scrollY: 0, dpi: 192, letterRendering: true, useCORS: true},
             jsPDF: {unit: 'pt', format: 'a4', orientation: 'p'}
         };
 

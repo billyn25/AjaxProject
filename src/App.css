@@ -91,7 +91,7 @@ section {
   float: right;
   justify-content: center;
   align-items: end !important;
-  padding:40px;
+  padding:35px;
   left: 0;
 }
 
@@ -143,9 +143,14 @@ section {
   align-items: flex-end !important;
 }
 
-h5{
+h5 {
   font-weight: bold !important;
-  font-size: 17px !important;
+  font-size: 16px !important;
+}
+
+h4 {
+  font-weight: bold !important;
+  font-size: 19px !important;
 }
 
 p {
@@ -214,7 +219,7 @@ td,th {
 }
 
 tr:first-child {
-  background-color: #1e2027;
+  background-color: transparent;
 }
 
 td p {
