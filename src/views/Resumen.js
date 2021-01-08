@@ -234,18 +234,18 @@ function Resumen({datos, reset}) {
                         </div>
                         <div id="buttonDiv" className="buttonsDivs">
                             <button onClick={() => openNav()} type="button"
-                                    className="btn btn-outline-success mr-2">Añadir
+                                    className="btn btn-sm btn-outline-success mr-2">Añadir
                             </button>
                             <button onClick={() => deleteData()} type="button"
-                                    className="btn btn-outline-warning mr-2">Limpiar
+                                    className="btn btn-sm btn-outline-warning mr-2">Limpiar
                             </button>
                             <button onClick={() => pdfExport()} type="button" disabled={Object.keys(data).length < 1}
-                                    className="btn btn-outline-secondary mr-2">Exportar pdf
+                                    className="btn btn-sm btn-outline-secondary mr-2">Exportar pdf
                             </button>
                             <button onClick={() => {
                                 deleteData();
                                 reset()
-                            }} type="button" className="btn btn-outline-danger">Reiniciar
+                            }} type="button" className="btn btn-sm btn-outline-danger">Reiniciar
                             </button>
                         </div>
                     </div>

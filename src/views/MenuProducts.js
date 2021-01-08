@@ -73,10 +73,10 @@ function MenuProducts() {
                     <li className="closebtn"><span className="pl-2 pr-2" onClick={() => closeNav()}>&times;</span></li>
                 </div>
                 <div className="btn-group btn-group-toggle" data-toggle="buttons">
-                    <label className="btn btn-outline-success">
+                    <label className="btn btn-sm btn-outline-success">
                         <input type="radio" onClick={()=>setToggleAjax(true)} checked={toggleAjax} name="options" id="option2" autoComplete="off"/>Ajax
                     </label>
-                    <label className="btn btn-outline-secondary">
+                    <label className="btn btn-sm btn-outline-secondary">
                         <input type="radio" onClick={()=>setToggleAjax(false)} name="options" id="option3" autoComplete="off"/> Otros
                     </label>
                 </div>
