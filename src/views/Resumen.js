@@ -257,15 +257,15 @@ function Resumen({datos, reset}) {
                             </div>
                             <div className="col-md-3">
                                 <input type="text" className="inputCustomer form-control" id="inputName"
-                                       placeholder="Cliente/Empresa"/>
+                                       aria-label="Small" aria-describedby="inputGroup-sizing-sm" placeholder="Cliente/Empresa"/>
                             </div>
                             <div className="col-md-2">
                                 <input type="number" className="inputCustomer form-control" id="inputMovil"
-                                       placeholder="Móvil"/>
+                                       aria-label="Small" aria-describedby="inputGroup-sizing-sm" placeholder="Móvil"/>
                             </div>
                             <div className="col-md-4">
                                 <input type="email" className="inputCustomer form-control" id="inputEmail"
-                                       placeholder="Em@il"/>
+                                       aria-label="Small" aria-describedby="inputGroup-sizing-sm" placeholder="Em@il"/>
                             </div>
                         </form>
                         <table className="table table-striped mb-5">

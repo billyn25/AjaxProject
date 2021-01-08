@@ -382,7 +382,8 @@ button{
 
 .btn-group .btn {
   border-radius: 3px;
-  width: 70px
+  width: 70px;
+  margin-top:3px !important;
 }
 
 .alert {
@@ -428,7 +429,7 @@ button{
   position: relative;
   background: white;
   width: 52px;
-  height: 26px;
+  height: 25px;
   -webkit-appearance: initial;
   border-radius: 3px;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
@@ -483,7 +484,7 @@ button{
 }
 
 .discountLineal{
-  height: 26px !important;
+  height: 25px !important;
   border-radius: 3px;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   outline: none;
