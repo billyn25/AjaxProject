@@ -124,7 +124,8 @@ section {
   padding: 0 20px 0 0;
 }
 
-#form .col-md-4 {
+#form .col-md-4:last-child {
+  padding-right: 0;
 }
 
 .col:first-child {
