@@ -386,6 +386,10 @@ button{
   margin-top:3px !important;
 }
 
+tr{
+  page-break-inside: avoid !important;
+}
+
 .alert {
   z-index: 1;
   width: inherit;

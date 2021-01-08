@@ -205,10 +205,11 @@ function Resumen({datos, reset}) {
 
         const element = document.getElementById("divTable");
         var opt = {
+            pagebreak: {avoid: 'tr'},
             margin: 0,
             filename: 'AjaxConfig.pdf',
             image: {type: 'png', quality: 0.9},
-            html2canvas: { scale:2, width:845, scrollX: 25, scrollY: 0, dpi: 192, letterRendering: true, useCORS: true},
+            html2canvas: { scrollX: 0, scrollY: 0, dpi: 192, letterRendering: true, useCORS: true},
             jsPDF: {unit: 'pt', format: 'a4', orientation: 'p'}
         };
 
@@ -249,8 +250,8 @@ function Resumen({datos, reset}) {
                             </button>
                         </div>
                     </div>
+                    <hr className="bg-white mb-2 mt-0"/>
                     <div className="table-responsive-sm" id='divTable'>
-                        <hr className="bg-white mb-2 mt-0"/>
                         <form id="form" className="pt-4 pb-4 row g-3 justify-content-between align-items-center">
                             <div className="ml-3 mr-4">
                                 <img id="imgHiperId" className="imgHiper" src={hp}/>
