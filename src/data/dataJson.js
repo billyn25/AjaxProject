@@ -1,4 +1,5 @@
 import kit1 from '../img/AJ-HUBKIT-W_thumb2.png'
+import kit1Cam from '../img/AJ-HUBKIT-W-CAM_thumb2.png'
 import kit1b from '../img/AJ-HUBKIT-B_thumb2.png'
 import kit2w from '../img/AJ-STARTERKIT-CAM-W_thumb2.png'
 import kit2b from '../img/AJ-STARTERKIT-CAM-B_thumb2.png'
@@ -9,7 +10,7 @@ import ipdm934 from '../img/SF-IPDM934WH-2W_thumb2.png'
 
 export const AjaxkitBasic = [{
     "title": "Hub Kit W",
-    "description": "Kit de alarma profesional básico. Comunicación Ethernet y GPRS.",
+    "description": "Kit de alarma profesional básico. Hub 1, Comunicación Ethernet y GPRS.",
     "filename": kit1,
     "price": 360.00,
     "amount": 1,
@@ -17,8 +18,17 @@ export const AjaxkitBasic = [{
     "edit": '',
     "cat": 'kit'
 }, {
+    "title": "Hub Kit W Cam",
+    "description": "Kit de alarma profesional básico, Hub 1 + Cámara IP Safire SF-IPCV220WH-2W.",
+    "filename": kit1Cam,
+    "price": 420.00,
+    "amount": 1,
+    "discount": '',
+    "edit": '',
+    "cat": 'kit'
+}, {
     "title": "Hub Kit B",
-    "description": "Kit de alarma profesional básico. Comunicación Ethernet y GPRS.",
+    "description": "Kit de alarma profesional básico. Hub 1, Comunicación Ethernet y GPRS.",
     "filename": kit1b,
     "price": 360.00,
     "amount": 1,
@@ -28,7 +38,7 @@ export const AjaxkitBasic = [{
     "color": 'black'
 }, {
     "title": "StartetKit Cam W",
-    "description": "Kit de alarma profesional con verificación visual de alarmas. Comunicación Ethernet y dual SIM GPRS.",
+    "description": "Kit de alarma profesional con verificación visual de alarmas. Hub 2, Comunicación Ethernet y dual SIM GPRS.",
     "filename": kit2w,
     "price": 550.00,
     "amount": 1,
@@ -37,7 +47,7 @@ export const AjaxkitBasic = [{
     "cat": 'kit'
 }, {
     "title": "StartetKit Cam B",
-    "description": "Kit de alarma profesional con verificación visual de alarmas. Comunicación Ethernet y dual SIM GPRS.",
+    "description": "Kit de alarma profesional con verificación visual de alarmas. Hub 2, Comunicación Ethernet y dual SIM GPRS.",
     "filename": kit2b,
     "price": 550.00,
     "amount": 1,
