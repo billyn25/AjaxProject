@@ -688,4 +688,9 @@ and (-webkit-min-device-pixel-ratio: 2) {
   .fotoMes{
     justify-content: center !important;
   }
+
+  #form .col-md-4:last-child {
+    padding-right: 15px;
+  }
+
 }
