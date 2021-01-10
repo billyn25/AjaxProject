@@ -1,5 +1,6 @@
 import kit1 from '../img/AJ-HUBKIT-W_thumb2.png'
 import kit1Cam from '../img/AJ-HUBKIT-W-CAM_thumb2.png'
+import kit1Dom from '../img/AJ-HUBKIT-W-DOM_thumb2.png'
 import kit1b from '../img/AJ-HUBKIT-B_thumb2.png'
 import kit2w from '../img/AJ-STARTERKIT-CAM-W_thumb2.png'
 import kit2b from '../img/AJ-STARTERKIT-CAM-B_thumb2.png'
@@ -19,8 +20,17 @@ export const AjaxkitBasic = [{
     "cat": 'kit'
 }, {
     "title": "Hub Kit W Cam",
-    "description": "Kit de alarma profesional básico, Hub 1 + Cámara IP Safire SF-IPCV220WH-2W.",
+    "description": "Kit de alarma profesional básico, Hub 1 + Cámara Bullet IP Safire SF-IPCV220WH-2W.",
     "filename": kit1Cam,
+    "price": 420.00,
+    "amount": 1,
+    "discount": '',
+    "edit": '',
+    "cat": 'kit'
+}, {
+    "title": "Hub Kit W Dom",
+    "description": "Kit de alarma profesional básico, Hub 1 + Cámara Domo IP Safire SF-IPDM934WH-2W.",
+    "filename": kit1Dom,
     "price": 420.00,
     "amount": 1,
     "discount": '',
