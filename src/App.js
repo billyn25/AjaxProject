@@ -80,7 +80,7 @@ function App() {
         <MyContext.Provider value={{state, dispatch}}>
             <div id="App">
                 <header className="App-header">
-                    <div>
+                    <div className='logos'>
                         <img id="imgHiperId" className="imgHiper mr-4" src={hp}/>
                         <a href="https://hiperajax.netlify.app/">
                             <img
