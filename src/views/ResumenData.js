@@ -29,7 +29,7 @@ function ResumenData({data, index, discountLineal, token}) {
                     <button hidden={token} type="button" className="btn btnR btn-outline-dark"
                             onClick={() => dispatch({type: "DECREMENT_AMOUNT", payload: index})}><p>-</p>
                     </button>
-                    <input className="form-control textNum" type="number" defaultValue='1' value={amount}/>
+                    <input className="form-control textNum" type="number" value={amount}/>
                     <button hidden={token} type="button" className="btn btnR btn-outline-dark"
                             onClick={() => dispatch({type: "INCREMENT_AMOUNT", payload: index})}><p>+</p>
                     </button>

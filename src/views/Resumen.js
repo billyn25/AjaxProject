@@ -269,7 +269,7 @@ function Resumen({datos, reset}) {
                                        aria-label="Small" aria-describedby="inputGroup-sizing-sm" placeholder="Em@il"/>
                             </div>
                         </form>
-                        <table className="table table-striped mb-5">
+                        <table id="table-to-xls" className="table table-striped mb-5">
                             <thead>
                             <tr className="verdeAj">
                                 <th scope="col" className="text-center">Imagen</th>
