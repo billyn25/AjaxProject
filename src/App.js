@@ -81,8 +81,8 @@ function App() {
             <div id="App">
                 <header className="App-header">
                     <div className='logos'>
-                        <a href="https://hiperajax.netlify.app/">
                         <img id="imgHiperId" className="imgHiper mr-4" src={hp}/>
+                        <a href="https://hiperajax.netlify.app/">
                             <img
                             src="https://i2.wp.com/stemar.co.za/wp-content/uploads/2020/05/Ajax-Logo-White.png?fit=1024%2C410&ssl=1"
                             className="App-logo" alt="logo"/>
