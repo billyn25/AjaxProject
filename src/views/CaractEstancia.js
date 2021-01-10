@@ -15,7 +15,14 @@ function CaractEstancia({caractEstancia, param, back, resumen}) {
     const [prevencionIncendio, setPrevencionIncendio] = useState(resumen.prevencionIncendio?resumen.prevencionIncendio:'No')
     const [toggleImage, setToggleImage] = useState(resumen.toggleImage?resumen.toggleImage:false)
 
-    console.log(resumen)
+    const [didLoad, setDidLoad] = useState(false);
+
+    useEffect(() => {
+        if (!didLoad) {
+            window.scrollTo(0, 0);
+            setDidLoad(true);
+        }
+    }, [didLoad]);
 
     let sendData = () => {
 
