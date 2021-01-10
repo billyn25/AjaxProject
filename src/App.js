@@ -6,6 +6,7 @@ import Resumen from "./views/Resumen";
 import {initialState, reducer} from "./reducers.js";
 import {MyContext} from "./context.js";
 import MenuProducts from "./views/MenuProducts";
+import hp from "./img/hp.png";
 
 function App() {
     const [state, dispatch] = useReducer(reducer, initialState);
@@ -79,11 +80,14 @@ function App() {
         <MyContext.Provider value={{state, dispatch}}>
             <div id="App">
                 <header className="App-header">
-                    <a href="https://hiperajax.netlify.app/">
-                        <img
-                        src="https://i2.wp.com/stemar.co.za/wp-content/uploads/2020/05/Ajax-Logo-White.png?fit=1024%2C410&ssl=1"
-                        className="App-logo" alt="logo"/>
-                    </a>
+                    <div>
+                        <img id="imgHiperId" className="imgHiper mr-4" src={hp}/>
+                        <a href="https://hiperajax.netlify.app/">
+                            <img
+                            src="https://i2.wp.com/stemar.co.za/wp-content/uploads/2020/05/Ajax-Logo-White.png?fit=1024%2C410&ssl=1"
+                            className="App-logo" alt="logo"/>
+                        </a>
+                    </div>
                     {estancia!=='vacio' && (<ul className="statusBar">
                         <li onClick={()=>back(estancia)} className={estancia || memoryData ? "verdeAj" : "text-white"}>1. Estancia</li>
                         <li  onClick={resumen?()=>backToCarEstancia():{}} className={estancia && caractEstancia ? "verdeAj" : "text-white"}>2. Características de la
