@@ -8,6 +8,8 @@ import ipb022 from '../img/SF-IPB022A-2EW_thumb2.png'
 import ipcu180 from '../img/SF-IPCU180-WIDE-3PW_thumb2.png'
 import ipcv220 from '../img/SF-IPCV220WH-2W_thumb2.png'
 import ipdm934 from '../img/SF-IPDM934WH-2W_thumb2.png'
+import sd128 from '../img/HS-TF-C1STD-128G_thumb2.png'
+
 
 export const AjaxkitBasic = [{
     "title": "Hub Kit W",
@@ -487,6 +489,14 @@ export const AjaxkitBasic = [{
     "description": "Cámara IP Wi-Fi 3 Megapixel. Lente gran angular 180º. Ranura SD.",
     "filename": ipcu180,
     "price": 100.00,
+    "amount": 1,
+    "discount": '',
+    "cat": 'otros'
+}, {
+    "title": "MicroSD 128 SGb",
+    "description": "Tarjeta de memoria microSD, Capacidad 128 Gb.",
+    "filename": sd128,
+    "price": 32.00,
     "amount": 1,
     "discount": '',
     "cat": 'otros'
