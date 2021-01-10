@@ -511,6 +511,11 @@ and (-webkit-min-device-pixel-ratio: 2) {
     padding: 10px 18px 10px 18px;
   }
 
+  .App-logo {
+
+    margin-right: 0 !important;
+  }
+
   .logos {
     display: flex !important;
     flex-direction: column !important;
@@ -518,8 +523,7 @@ and (-webkit-min-device-pixel-ratio: 2) {
   }
 
   .logos .imgHiper{
-    margin-right: 0 !important;
-    margin-bottom: 5px;
+    margin-top: 15px;
   }
 
   .title {
