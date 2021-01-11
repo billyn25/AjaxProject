@@ -14,11 +14,13 @@ function Resumen({datos, reset}) {
     const {numEntra, numHab, estancia, position, numPlantas, jardin, prevencion, prevencionIncendio} = datos
     const [toggle, setToggle] = useState(false)
     const [loading, setLoad] = useState(false);
+    const [loadingMessage, setLoadingMessage] = useState('');
     const [discountLineal, setDiscountLineal] = useState(false);
     const [tokenDisableButton, setTokenDisableButton] = useState(false);
 
     useEffect(() => {
             setLoad(true);
+            setLoadingMessage('Configurando Panel de Ajax')
             setTimeout(() => {
                 setLoad(false)
                 datafilterPiso()
@@ -201,6 +203,8 @@ function Resumen({datos, reset}) {
         setTokenDisableButton(true)
         setTimeout(() => {
             setTokenDisableButton(false)
+            setLoad(true)
+            setLoadingMessage('Exportando pdf')
         }, 0);
 
         const element = document.getElementById("divTable");
@@ -213,8 +217,10 @@ function Resumen({datos, reset}) {
             jsPDF: {unit: 'pt', format: 'a4', orientation: 'p'}
         };
 
-        // New Promise-based usage:
-        html2pdf().set(opt).from(element).save();
+        html2pdf(element, opt).then(function () {
+            setLoad(false)
+        });
+
     }
 
     return (
@@ -222,7 +228,7 @@ function Resumen({datos, reset}) {
             <div className="title">
                 <h4>Resumen</h4>
             </div>
-            {loading ? <LoadingSpinner/> : (
+            {loading ? <LoadingSpinner message={loadingMessage}/> : (
                 <div className="estancia">
                     <div className="buttons pl-0 pb-2 custom-control custom-checkbox justify-content-between">
                         <div className="d-inline-flex align-items-end text-white">
