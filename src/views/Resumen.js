@@ -299,7 +299,7 @@ function Resumen({datos, reset}) {
                                     </td>
                                     <td colSpan="2" className="text-right"><p
                                         className="iva">Total {sum(data)}</p></td>
-                                    <td colSpan="3" className="border-left pt-3 pb-3 pr-4 text-right">
+                                    <td colSpan="3" className="border-left pl-0 pt-3 pb-3 pr-4 text-right">
                                         <h5 className="text-dark total font-weight-bold">Total {(sum(data) * 1.21).toFixed(2)} €</h5>
                                         <p className="float-right">I.V.A incluido.</p>
                                     </td>
