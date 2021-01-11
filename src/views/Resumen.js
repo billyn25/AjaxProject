@@ -206,7 +206,7 @@ function Resumen({datos, reset}) {
         const element = document.getElementById("divTable");
         var opt = {
             pagebreak: {avoid: 'tr'},
-            margin: [0,15,0,15],
+            margin: [0,18,0,18],
             filename: 'AjaxConfig.pdf',
             image: {type: 'png', quality: 0.9},
             html2canvas: { scrollX: 0, scrollY: 0, dpi: 192, letterRendering: true, useCORS: true},
@@ -297,7 +297,7 @@ function Resumen({datos, reset}) {
                                         {discountLineal && (
                                             <p className="text-dark pl-3">Oferta con descuento aplicado.</p>)}
                                     </td>
-                                    <td colSpan="2" className="text-right"><p
+                                    <td colSpan="2" className="text-right border-left"><p
                                         className="iva">Total {sum(data)}</p></td>
                                     <td colSpan="3" className="border-left pl-0 pt-3 pb-3 pr-4 text-right">
                                         <h5 className="text-dark total font-weight-bold">Total {(sum(data) * 1.21).toFixed(2)} €</h5>
