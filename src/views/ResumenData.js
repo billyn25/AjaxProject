@@ -17,7 +17,7 @@ function ResumenData({data, index, discountLineal, token}) {
 
     return (
         <React.Fragment>
-        <tr className="bg-white">
+        <tr className="bg-white border-top border-left">
             <td>
                 <img className="imgTable ml-2" src={filename} width='45' height='45'/>
             </td>

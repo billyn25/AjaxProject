@@ -206,7 +206,7 @@ function Resumen({datos, reset}) {
         const element = document.getElementById("divTable");
         var opt = {
             pagebreak: {avoid: 'tr'},
-            margin: [0,10,0,10],
+            margin: [0,15,0,15],
             filename: 'AjaxConfig.pdf',
             image: {type: 'png', quality: 0.9},
             html2canvas: { scrollX: 0, scrollY: 0, dpi: 192, letterRendering: true, useCORS: true},
@@ -269,7 +269,7 @@ function Resumen({datos, reset}) {
                                        aria-label="Small" aria-describedby="inputGroup-sizing-sm" placeholder="Em@il"/>
                             </div>
                         </form>
-                        <table id="table-to-xls" className="table table-striped mb-5">
+                        <table id="table-to-xls" className="table border mb-5">
                             <thead>
                             <tr className="verdeAj">
                                 <th scope="col" className="text-center">Imagen</th>
@@ -292,14 +292,14 @@ function Resumen({datos, reset}) {
                                 {Object.keys(data).map((key, index) => (
                                     <ResumenData data={data[key]} index={index} key={key} token={tokenDisableButton}
                                                  discountLineal={discountLineal}/>))}
-                                <tr className="bg-white">
+                                <tr className="bg-white border-left">
                                     <td colSpan="2">
                                         {discountLineal && (
                                             <p className="text-dark pl-3">Oferta con descuento aplicado.</p>)}
                                     </td>
-                                    <td colSpan="2" className="text-right font-weight-bolder"><p
+                                    <td colSpan="2" className="text-right"><p
                                         className="iva">Total {sum(data)}</p></td>
-                                    <td colSpan="3" className="pt-3 pb-3 pr-4 text-right">
+                                    <td colSpan="3" className="border-left pt-3 pb-3 pr-4 text-right">
                                         <h5 className="text-dark total font-weight-bold">Total {(sum(data) * 1.21).toFixed(2)} €</h5>
                                         <p className="float-right">I.V.A incluido.</p>
                                     </td>
