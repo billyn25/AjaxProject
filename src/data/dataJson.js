@@ -496,7 +496,7 @@ export const AjaxkitBasic = [{
     "title": "MicroSD 128 SGb",
     "description": "Tarjeta de memoria microSD, Capacidad 128 Gb.",
     "filename": sd128,
-    "price": 32.00,
+    "price": 30.00,
     "amount": 1,
     "discount": '',
     "cat": 'otros'
