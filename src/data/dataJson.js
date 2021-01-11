@@ -9,6 +9,8 @@ import ipcu180 from '../img/SF-IPCU180-WIDE-3PW_thumb2.png'
 import ipcv220 from '../img/SF-IPCV220WH-2W_thumb2.png'
 import ipdm934 from '../img/SF-IPDM934WH-2W_thumb2.png'
 import sd128 from '../img/HS-TF-C1STD-128G_thumb2.png'
+import ab60 from '../img/AB-60_thumb2.png'
+import ab150 from '../img/ABE-150_thumb2.png'
 
 
 export const AjaxkitBasic = [{
@@ -493,10 +495,26 @@ export const AjaxkitBasic = [{
     "discount": '',
     "cat": 'otros'
 }, {
-    "title": "MicroSD 128 SGb",
+    "title": "MicroSD 128 Gb",
     "description": "Tarjeta de memoria microSD, Capacidad 128 Gb.",
     "filename": sd128,
     "price": 30.00,
+    "amount": 1,
+    "discount": '',
+    "cat": 'otros'
+}, {
+    "title": "AB-60",
+    "description": "Detector de barrera por infrarrojos, Cableado | 2 haces. Alcance máx. de detección 60 / 180 m.",
+    "filename": ab60,
+    "price": 48.00,
+    "amount": 1,
+    "discount": '',
+    "cat": 'otros'
+}, {
+    "title": "AB-150",
+    "description": "Detector de barrera por infrarrojos, Cableado | 3 haces. Alcance máx. de detección 150 / 450 m.",
+    "filename": ab150,
+    "price": 78.00,
     "amount": 1,
     "discount": '',
     "cat": 'otros'
