@@ -210,11 +210,11 @@ function Resumen({datos, reset}) {
         const element = document.getElementById("divTable");
         var opt = {
             pagebreak: {avoid: 'tr'},
-            margin: [0],
+            margin: 10,
             filename: 'AjaxConfig.pdf',
             image: {type: 'png', quality: 1},
-            html2canvas: {scrollX: 0.0, scrollY: 0.0, dpi: 192, letterRendering: true, useCORS: true},
-            jsPDF: {unit: 'pt', format: 'a4', orientation: 'p'}
+            html2canvas: {width:1400,scrollX: 0, scrollY: 0, dpi: 192, letterRendering: true, useCORS: true},
+            jsPDF: {unit: 'px', format: 'a4', orientation: 'p'}
         };
 
         html2pdf(element, opt).then(function () {
