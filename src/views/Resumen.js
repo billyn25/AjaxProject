@@ -214,7 +214,7 @@ function Resumen({datos, reset}) {
             filename: 'AjaxConfig.pdf',
             image: {type: 'png', quality: 1},
             html2canvas: {scrollX: 0, scrollY: 0, dpi: 192, letterRendering: true, useCORS: true},
-            jsPDF: {unit: 'px', format: 'a4', orientation: 'p'}
+            jsPDF: {unit: 'pt', format: 'a4', orientation: 'p'}
         };
 
         html2pdf(element, opt).then(function () {
