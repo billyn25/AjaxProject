@@ -6,8 +6,6 @@ function ResumenData({data, index, discountLineal, token}) {
     const {dispatch} = useContext(MyContext);
     const {filename, title, description, edit, amount, price, discount} = data
 
-    console.log(data)
-
     //resetea el descuento de cada casilla por el descuento lineal
     useEffect(() => {
             dispatch({
