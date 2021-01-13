@@ -6,13 +6,15 @@ function ResumenData({data, index, discountLineal, token}) {
     const {dispatch} = useContext(MyContext);
     const {filename, title, description, edit, amount, price, discount} = data
 
+    console.log(data)
+
     //resetea el descuento de cada casilla por el descuento lineal
     useEffect(() => {
             dispatch({
                 type: "DISCOUNT", payload: {index: index, discount: ''}
             })
         },
-        [Object.keys(discountLineal).length>=1],
+        [discountLineal],
     );
 
     return (
@@ -39,13 +41,14 @@ function ResumenData({data, index, discountLineal, token}) {
                 <p className="text-dark text-right">{price.toFixed(2)}</p>
             </td>
             <td className="">
-                <input className="form-control textNum"  type="number" hidden={Object.keys(discountLineal).length>=1} min="0" max="100" value={discount}
+                <input className="form-control textNum"  type="number" min="0" max="100" hidden={discountLineal!==''} value={discountLineal!==''?discountLineal:discount}
                        onChange={(e) => dispatch({
                            type: "DISCOUNT", payload: {index: index, discount: e.target.value}
                        })}/>
             </td>
             <td>
-                <p className="text-dark text-right">{discount ? ((price * ((100 - discount) / 100)) * amount).toFixed(2) : (price * amount).toFixed(2)}</p>
+                {discountLineal==='' && (<p className="text-dark text-right">{discount ? ((price * ((100 - discount) / 100)) * amount).toFixed(2) : (price * amount).toFixed(2)}</p>)}
+                {discountLineal!=='' && (<p className="text-dark text-right">{discountLineal ? ((price * ((100 - discountLineal) / 100)) * amount).toFixed(2) : (price * amount).toFixed(2)}</p>)}
             </td>
             <td id="butdelete" className="text-right">
                 {edit !== false && (
