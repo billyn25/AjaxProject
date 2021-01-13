@@ -312,11 +312,11 @@ function Resumen({datos, reset}) {
                                     </td>
                                     <td colSpan="2" className="text-right">
                                         <h5 className="text-dark total font-weight-bold">PVP {sumPvp(data)} €</h5>
-                                        <p className="float-right">PVP {(sumPvp(data) * 1.21).toFixed(2)} €</p>
+                                        <p className="float-right">PVP iva incl. {(sumPvp(data) * 1.21).toFixed(2)} €</p>
                                     </td>
                                     <td colSpan="3" className="pl-0 pt-3 pb-3 pr-4 text-right">
                                         <h5 className="text-dark total font-weight-bold">Neto {sum(data)} €</h5>
-                                        <p className="float-right">Neto {(sum(data) * 1.21).toFixed(2)} €</p>
+                                        <p className="float-right">Neto iva incl. {(sum(data) * 1.21).toFixed(2)} €</p>
                                     </td>
                                 </tr>
                                 </tbody>
