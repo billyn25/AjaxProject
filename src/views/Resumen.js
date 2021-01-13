@@ -176,6 +176,16 @@ function Resumen({datos, reset}) {
             return (total * ((100 - parseInt(discountLineal)) / 100)).toFixed(2)
         }
     }
+    //suma pvp
+    let sumPvp = (d) => {
+
+        var total = 0;
+        for (var i = 0; i < d.length; i++) {
+            total += (data[i].price * data[i].amount)
+        }
+
+        return total.toFixed(2)
+    }
 
     //abrir menu lateral
     let openNav = () => {
@@ -203,8 +213,6 @@ function Resumen({datos, reset}) {
         setTokenDisableButton(true)
         setTimeout(() => {
             setTokenDisableButton(false)
-            setLoad(true)
-            setLoadingMessage('Exportando pdf')
         }, 0);
 
         const element = document.getElementById("divTable");
@@ -218,7 +226,6 @@ function Resumen({datos, reset}) {
         };
 
         html2pdf(element, opt).then(function () {
-            setLoad(false)
         });
 
     }
@@ -303,11 +310,13 @@ function Resumen({datos, reset}) {
                                         {discountLineal && (
                                             <p className="text-dark pl-3">Oferta con descuento aplicado.</p>)}
                                     </td>
-                                    <td colSpan="2" className="text-right"><p
-                                        className="iva">Total {sum(data)}</p></td>
+                                    <td colSpan="2" className="text-right">
+                                        <h5 className="text-dark total font-weight-bold">PVP {sumPvp(data)} €</h5>
+                                        <p className="float-right">PVP {(sumPvp(data) * 1.21).toFixed(2)} €</p>
+                                    </td>
                                     <td colSpan="3" className="pl-0 pt-3 pb-3 pr-4 text-right">
-                                        <h5 className="text-dark total font-weight-bold">Total {(sum(data) * 1.21).toFixed(2)} €</h5>
-                                        <p className="float-right">I.V.A incluido.</p>
+                                        <h5 className="text-dark total font-weight-bold">Neto {sum(data)} €</h5>
+                                        <p className="float-right">Neto {(sum(data) * 1.21).toFixed(2)} €</p>
                                     </td>
                                 </tr>
                                 </tbody>
