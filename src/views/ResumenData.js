@@ -45,8 +45,8 @@ function ResumenData({data, index, discountLineal, token}) {
                        })}/>
             </td>
             <td>
-                {discountLineal.length<1 && (<p className="text-dark text-right">{discount ? ((price * ((100 - discount) / 100)) * amount).toFixed(2) : (price * amount).toFixed(2)}</p>)}
-                {discountLineal.length>=1 && (<p className="text-dark text-right">{discountLineal ? ((price * ((100 - discountLineal) / 100)) * amount).toFixed(2) : (price * amount).toFixed(2)}</p>)}
+                {!discountLineal && (<p className="text-dark text-right">{discount ? ((price * ((100 - discount) / 100)) * amount).toFixed(2) : (price * amount).toFixed(2)}</p>)}
+                {discountLineal && (<p className="text-dark text-right">{discountLineal ? ((price * ((100 - discountLineal) / 100)) * amount).toFixed(2) : (price * amount).toFixed(2)}</p>)}
             </td>
             <td id="butdelete" className="text-right">
                 {edit !== false && (
