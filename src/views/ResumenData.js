@@ -39,7 +39,7 @@ function ResumenData({data, index, discountLineal, token}) {
                 <p className="text-dark text-right">{price.toFixed(2)}</p>
             </td>
             <td className="">
-                <input className="form-control textNum"  type="number" min="0" max="100" hidden={discountLineal!==''} value={discountLineal!==''?discountLineal:discount}
+                <input className="form-control textNum"  type="number" min="0" max="100" hidden={discountLineal.length>=1} value={discountLineal!==''?discountLineal:discount}
                        onChange={(e) => dispatch({
                            type: "DISCOUNT", payload: {index: index, discount: e.target.value}
                        })}/>
