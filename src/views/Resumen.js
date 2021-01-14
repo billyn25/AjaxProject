@@ -17,6 +17,7 @@ function Resumen({datos, reset}) {
     const [loadingMessage, setLoadingMessage] = useState('');
     const [discountLineal, setDiscountLineal] = useState(false);
     const [tokenDisableButton, setTokenDisableButton] = useState(false);
+    const [loadingPdf, setLoadingPdf] = useState(false);
 
     useEffect(() => {
             setLoad(true);
@@ -213,6 +214,7 @@ function Resumen({datos, reset}) {
         setTokenDisableButton(true)
         setTimeout(() => {
             setTokenDisableButton(false)
+            setLoadingPdf(true)
         }, 0);
 
         const element = document.getElementById("divTable");
@@ -226,6 +228,7 @@ function Resumen({datos, reset}) {
         };
 
         html2pdf(element, opt).then(function () {
+            setLoadingPdf(false)
         });
 
     }
@@ -254,7 +257,8 @@ function Resumen({datos, reset}) {
                                     className="btn btn-sm btn-outline-warning mr-2">Limpiar
                             </button>
                             <button onClick={() => pdfExport()} type="button" disabled={Object.keys(data).length < 1}
-                                    className="btn btn-sm btn-outline-secondary mr-2">Exportar pdf
+                                    className="btn btn-sm btn-outline-secondary mr-2">{!loadingPdf?'Exportar pdf':'Exportando pdf'}
+                                <div className="ml-2 spinner-border text-success" hidden={!loadingPdf} style={{width: "1rem", height: "1rem"}} role="status"></div>
                             </button>
                             <button onClick={() => {
                                 deleteData();
