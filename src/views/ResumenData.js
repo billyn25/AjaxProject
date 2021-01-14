@@ -39,14 +39,14 @@ function ResumenData({data, index, discountLineal, token}) {
                 <p className="text-dark text-right">{price.toFixed(2)}</p>
             </td>
             <td className="">
-                <input className="form-control textNum"  type="number" min="0" max="100" hidden={discountLineal.length>=1} value={discountLineal!==''?discountLineal:discount}
+                <input className="form-control textNum"  type="number" min="0" max="100" hidden={discountLineal.length>=1} value={discountLineal.length>=1?discountLineal:discount}
                        onChange={(e) => dispatch({
                            type: "DISCOUNT", payload: {index: index, discount: e.target.value}
                        })}/>
             </td>
             <td>
-                {discountLineal==='' && (<p className="text-dark text-right">{discount ? ((price * ((100 - discount) / 100)) * amount).toFixed(2) : (price * amount).toFixed(2)}</p>)}
-                {discountLineal!=='' && (<p className="text-dark text-right">{discountLineal ? ((price * ((100 - discountLineal) / 100)) * amount).toFixed(2) : (price * amount).toFixed(2)}</p>)}
+                {discountLineal.length<1 && (<p className="text-dark text-right">{discount ? ((price * ((100 - discount) / 100)) * amount).toFixed(2) : (price * amount).toFixed(2)}</p>)}
+                {discountLineal.length>=1 && (<p className="text-dark text-right">{discountLineal ? ((price * ((100 - discountLineal) / 100)) * amount).toFixed(2) : (price * amount).toFixed(2)}</p>)}
             </td>
             <td id="butdelete" className="text-right">
                 {edit !== false && (
