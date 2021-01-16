@@ -277,6 +277,11 @@ button{
   text-align: start;
 }
 
+.buttonRounded {
+  border-radius: 3px !important;
+  text-align: start;
+}
+
 .textNum {
   width:60px;
   height: 28px;

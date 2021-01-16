@@ -5,6 +5,7 @@ import ResumenData from "./ResumenData";
 import LoadingSpinner from "./LoadingSpinner";
 import html2pdf from 'html2pdf.js'
 import hp from '../img/hp.png'
+import { CSVLink } from "react-csv";
 
 function Resumen({datos, reset}) {
 
@@ -18,6 +19,14 @@ function Resumen({datos, reset}) {
     const [discountLineal, setDiscountLineal] = useState(false);
     const [tokenDisableButton, setTokenDisableButton] = useState(false);
     const [loadingPdf, setLoadingPdf] = useState(false);
+
+    //header para exportar csv
+    const headers = [
+        { label: 'ref. Producto', key: "title" },
+        { label: 'Descripcion', key: "description" },
+        { label: 'Color', key: "color" },
+        { label: 'PVP', key: "price" }
+    ];
 
     useEffect(() => {
             setLoad(true);
@@ -260,6 +269,11 @@ function Resumen({datos, reset}) {
                                     className="btn btn-sm btn-outline-secondary mr-2">{!loadingPdf?'Exportar pdf':'Exportando pdf'}
                                 <div className="ml-2 spinner-border text-success" hidden={!loadingPdf} style={{width: "1rem", height: "1rem"}} role="status"></div>
                             </button>
+                            <CSVLink data={AjaxkitBasic} headers={headers} separator={";"} enclosingCharacter={` `}
+                                filename={"Tarifa_Ajax_PVP.csv"}
+                                className="btn btn-sm btn-outline-secondary mr-2 buttonRounded"
+                                target="_blank">Tarifa csv
+                        </CSVLink>
                             <button onClick={() => {
                                 deleteData();
                                 reset()
