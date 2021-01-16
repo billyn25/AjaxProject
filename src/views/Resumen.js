@@ -262,9 +262,6 @@ function Resumen({datos, reset}) {
                             <button onClick={() => openNav()} type="button"
                                     className="btn btn-sm btn-outline-success mr-2">Añadir
                             </button>
-                            <button onClick={() => deleteData()} type="button"
-                                    className="btn btn-sm btn-outline-warning mr-2">Limpiar
-                            </button>
                             <button onClick={() => pdfExport()} type="button" disabled={Object.keys(data).length < 1}
                                     className="btn btn-sm btn-outline-secondary mr-2">{!loadingPdf?'Exportar pdf':'Exportando pdf'}
                                 <div className="ml-2 spinner-border text-success" hidden={!loadingPdf} style={{width: "1rem", height: "1rem"}} role="status"></div>
@@ -274,6 +271,9 @@ function Resumen({datos, reset}) {
                                 className="btn btn-sm btn-outline-secondary mr-2 buttonRounded"
                                 target="_blank">Tarifa csv
                         </CSVLink>
+                            <button onClick={() => deleteData()} type="button"
+                                    className="btn btn-sm btn-outline-warning mr-2">Limpiar
+                            </button>
                             <button onClick={() => {
                                 deleteData();
                                 reset()
