@@ -266,7 +266,7 @@ function Resumen({datos, reset}) {
                                     className="btn btn-sm btn-outline-secondary mr-2">{!loadingPdf?'Exportar pdf':'Exportando pdf'}
                                 <div className="ml-2 spinner-border text-success" hidden={!loadingPdf} style={{width: "1rem", height: "1rem"}} role="status"></div>
                             </button>
-                            <CSVLink data={AjaxkitBasic} headers={headers} separator={";"} enclosingCharacter={` `}
+                            <CSVLink data={AjaxkitBasic} headers={headers} separator={";"} enclosingCharacter={``}
                                 filename={"Tarifa_Ajax_PVP.csv"}
                                 className="btn btn-sm btn-outline-secondary mr-2 buttonRounded"
                                 target="_blank">Tarifa csv
