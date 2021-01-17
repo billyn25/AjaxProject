@@ -242,6 +242,9 @@ function Resumen({datos, reset}) {
 
     }
 
+    //fecha
+    var f = new Date();
+
     return (
         <React.Fragment>
             <div className="title">
@@ -286,6 +289,7 @@ function Resumen({datos, reset}) {
                         <form id="form" className="pt-4 pb-4 row g-3 justify-content-between align-items-center">
                             <div className="ml-3 mr-4">
                                 <img id="imgHiperId" className="imgHiper" src={hp}/>
+                                <p className="text-dark bg-white text-center mt-2 mb-0 pb-0">{f.getDate() + "-"+ f.getMonth()+1+ "-" +f.getFullYear()}</p>
                             </div>
                             <div className="col-md-3">
                                 <input type="text" className="inputCustomer form-control" id="inputName"
