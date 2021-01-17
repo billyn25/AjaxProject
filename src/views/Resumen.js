@@ -286,7 +286,7 @@ function Resumen({datos, reset}) {
                     </div>
                     <hr className="bg-white mb-2 mt-0"/>
                     <div className="table-responsive-sm" id='divTable'>
-                        <form id="form" className="pt-4 pb-4 row g-3 justify-content-between align-items-center">
+                        <form id="form" className="pt-3 pb-3 row g-3 justify-content-between align-items-center">
                             <div className="ml-3 mr-4">
                                 <img id="imgHiperId" className="imgHiper" src={hp}/>
                                 <p className="text-dark bg-white text-center mt-2 mb-0 pb-0">{f.getDate() + "-"+ f.getMonth()+1+ "-" +f.getFullYear()}</p>
