@@ -227,6 +227,7 @@ function Resumen({datos, reset}) {
         }, 0);
 
         const element = document.getElementById("divTable");
+
         var opt = {
             pagebreak: {avoid: 'tr'},
             margin: [0,4,0,4],
