@@ -289,7 +289,7 @@ function Resumen({datos, reset}) {
                         <form id="form" className="pt-4 pb-4 row g-3 justify-content-between align-items-center">
                             <div className="ml-3 mr-4">
                                 <img id="imgHiperId" className="imgHiper" src={hp}/>
-                                <p className="text-dark bg-white text-center mt-2 mb-0 pb-0">{f.getDate() + "-"+ f.getMonth()+1+ "-" +f.getFullYear()}</p>
+                                <p className="text-dark bg-white text-center mt-2 mb-0 pb-0">{f.getDate() + "-"+ (new Date().getMonth())+ "-" +f.getFullYear()}</p>
                             </div>
                             <div className="col-md-3">
                                 <input type="text" className="inputCustomer form-control" id="inputName"
@@ -339,6 +339,11 @@ function Resumen({datos, reset}) {
                                     <td colSpan="3" className="pl-0 pt-3 pb-3 pr-4 text-right">
                                         <h5 className="text-dark total font-weight-bold">Neto {sum(data)} €</h5>
                                         <p className="float-right">iva incl. {(sum(data) * 1.21).toFixed(2)} €</p>
+                                    </td>
+                                </tr>
+                                <tr className="bg-white">
+                                    <td colSpan="7" className="text-center border-top-0">
+                                        <span className="">Oferta válida hasta final de mes o fin de oferta.</span>
                                     </td>
                                 </tr>
                                 </tbody>
