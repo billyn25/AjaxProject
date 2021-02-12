@@ -84,7 +84,7 @@ function Resumen({datos, reset}) {
                     filtered[calcIndex(filtered, 'DoorProtect')].amount = parseInt(numEntra) + parseInt(numHab);
                     filtered[Object.keys(filtered).length] = AjaxkitBasic[calcIndex(AjaxkitBasic, 'StreetSiren')]
 
-                    if (numPlantas >= 3)
+                    if (numPlantas >= 4)
                         filtered[Object.keys(filtered).length] = AjaxkitBasic[calcIndex(AjaxkitBasic, 'ReX')]
 
                     if (jardin === true)
