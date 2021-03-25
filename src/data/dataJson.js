@@ -304,14 +304,14 @@ export const AjaxkitBasic = [{
     "title": "StreetSiren",
     "description": "Sirena para exteriores. Alimentación 12 VDC/4 pilas.",
     "filename": "https://ajax.systems/wp-content/themes/ajax/assets/images/template/catalog/products/StreetSiren_white@2x.png",
-    "price": 76.00,
+    "price": 148.00,
     "amount": 1,
     "discount": ''
 }, {
     "title": "StreetSiren B",
     "description": "Sirena para exteriores. Alimentación 12 VDC/4 pilas.",
     "filename": "https://ajax.systems/wp-content/themes/ajax/assets/images/template/catalog/products/StreetSiren_black@2x.png",
-    "price": 76.00,
+    "price": 148.00,
     "amount": 1,
     "discount": '',
     "color": 'black'
