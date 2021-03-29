@@ -48,6 +48,14 @@ export function reducer(state, action) {
             return {
                 data: newArrayEditDiscount
             };
+        case "PVP":
+
+                const newArrayEditPVP = JSON.parse(JSON.stringify( state.data ));
+
+            newArrayEditPVP[action.payload.index].price = action.payload.price
+            return {
+                data: newArrayEditPVP
+            };
         default:
             return state;
     }

@@ -1,10 +1,13 @@
 import React, {useContext, useEffect, useState} from 'react';
 import {MyContext} from "../context";
+import $ from 'jquery';
 
 function ResumenData({data, index, discountLineal, token}) {
 
     const {dispatch} = useContext(MyContext);
     const {filename, title, description, edit, amount, price, discount} = data
+
+    const [editar, setEditar] = useState(false)
 
     //resetea el descuento de cada casilla por el descuento lineal
     useEffect(() => {
@@ -14,6 +17,11 @@ function ResumenData({data, index, discountLineal, token}) {
         },
         [discountLineal],
     );
+
+    //calcular indices auto
+    let click = () => {
+        setEditar(!editar)
+    }
 
     return (
         <React.Fragment>
@@ -36,7 +44,10 @@ function ResumenData({data, index, discountLineal, token}) {
                 </div>
             </td>
             <td>
-                <p className="text-dark text-right">{price.toFixed(2)}</p>
+                {editar===false && (<p onDoubleClick={()=>click()} className="text-dark text-right">{parseFloat(price).toFixed(2)}</p>)}
+                {editar===true && (<input autoFocus onBlur={()=>click()} type="text" className="form-control textNum2" width="100" value={price.toString()} onChange={(e) => dispatch({
+                    type: "PVP", payload: {index: index, price:e.target.value}
+                })}/>)}
             </td>
             <td className="">
                 <input className="form-control textNum"  type="number" min="0" max="100" hidden={discountLineal.length>=1} value={discountLineal.length>=1?discountLineal:discount}

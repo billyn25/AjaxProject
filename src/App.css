@@ -288,6 +288,12 @@ button{
   font-weight: bold;
 }
 
+.textNum2 {
+  width:70px;
+  height: 28px;
+  font-weight: bold;
+}
+
 .inputCustomer {
   border: 0;
   border-bottom: 1px solid #5AE4AA !important;
