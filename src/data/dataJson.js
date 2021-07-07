@@ -176,7 +176,7 @@ export const AjaxkitBasic = [{
     "amount": 1,
     "discount": '',
     "cam": 'si'
-}, {
+},  {
     "title": "MotionCam B",
     "description": "Detector de movimiento con cámara fotográfica. Solo Hub 2.",
     "filename": "https://ajax.systems/wp-content/themes/ajax/assets/images/template/catalog/products/MotionCam_black@2x.png",
@@ -184,11 +184,25 @@ export const AjaxkitBasic = [{
     "amount": 1,
     "discount": '',
     "color": 'black',
-}, {
+},  {
     "title": "MotionProtect Outdoor",
     "description": "Detector de movimiento para exteriores con sistema antienmascaramiento e inmune a mascotas. Cobertura de hasta 175 m2.",
     "filename": "https://ajax.systems/wp-content/themes/ajax/assets/images/template/catalog/products/MotionProtectOutdoor_white@2x.png",
     "price": "236.00",
+    "amount": 1,
+    "discount": ''
+},  {
+    "title": "MotionCam Outdoor",
+    "description": "Detector de movimiento con cámara fotográfica para exteriores. Solo Hub 2.",
+    "filename": "https://ajax.systems/wp-content/themes/ajax/assets/images/template/catalog/products/MotionCamOutdoor_white@2x.png",
+    "price": "0",
+    "amount": 1,
+    "discount": ''
+},  {
+    "title": "DualCurtain Outdoor",
+    "description": "Detector PIR tipo cortina dual. Alcance de detección configurable desde 4 a 15 m.",
+    "filename": "https://ajax.systems/wp-content/themes/ajax/assets/images/template/catalog/products/DualCurtainOutdoor_white@2x.png",
+    "price": "264.00",
     "amount": 1,
     "discount": ''
 }, {
@@ -338,6 +352,13 @@ export const AjaxkitBasic = [{
     "amount": 1,
     "discount": ''
 }, {
+    "title": "KeyPad Plus",
+    "description": "Teclado de control con lector RFID de tarjetas/tags para cada entrada.",
+    "filename": "https://ajax.systems/wp-content/themes/ajax/assets/images/template/catalog/products/kpp_white@2x.png",
+    "price": "148.00",
+    "amount": 1,
+    "discount": ''
+},  {
     "title": "KeyPad B",
     "description": "Teclado de control para cada entrada.",
     "filename": "https://ajax.systems/wp-content/themes/ajax/assets/images/template/catalog/products/KeyPad_black@2x.png",
@@ -345,7 +366,30 @@ export const AjaxkitBasic = [{
     "amount": 1,
     "discount": '',
     "color": 'black'
+},  {
+    "title": "KeyPad Plus B",
+    "description": "Teclado de control con lector RFID de tarjetas/tags para cada entrada.",
+    "filename": "https://ajax.systems/wp-content/themes/ajax/assets/images/template/catalog/products/kpp_black@2x.png",
+    "price": "148.00",
+    "amount": 1,
+    "discount": '',
+    "color": 'black'
+},  {
+    "title": "Tag",
+    "description": "Llavero de acceso sin contacto. Tecnología MIFARE DESFire®. Solo para KeyPad Plus.",
+    "filename": "https://ajax.systems/wp-content/themes/ajax/assets/images/template/catalog/products/Tag_white@2x.png",
+    "price": "8.00",
+    "amount": 1,
+    "discount": '',
 }, {
+    "title": "Tag B",
+    "description": "Llavero de acceso sin contacto. Tecnología MIFARE DESFire®. Solo para KeyPad Plus.",
+    "filename": "https://ajax.systems/wp-content/themes/ajax/assets/images/template/catalog/products/Tag_black@2x.png",
+    "price": "8.00",
+    "amount": 1,
+    "discount": '',
+    "color": 'black'
+},  {
     "title": "ReX",
     "description": "Repetidor de la señal de radio que duplica el alcance de comunicación de los dispositivos con un hub.",
     "filename": "https://ajax.systems/wp-content/themes/ajax/assets/images/template/catalog/products/Hub_white@2x.png",
