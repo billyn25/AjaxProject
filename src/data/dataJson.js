@@ -73,7 +73,7 @@ export const AjaxkitBasic = [{
     "title": "Hub 1",
     "description": "Comunicación Ethernet y GPRS, inalámbrico 868 MHz Jeweller.",
     "filename": "https://ajax.systems/wp-content/themes/ajax/assets/images/template/catalog/products/Hub_white@2x.png",
-    "price": "176.00",
+    "price": "180.00",
     "amount": 1,
     "status": "initial",
     "discount": '',
@@ -82,7 +82,7 @@ export const AjaxkitBasic = [{
     "title": "Hub 1 B",
     "description": "Comunicación Ethernet y GPRS, inalámbrico 868 MHz Jeweller.",
     "filename": "https://ajax.systems/wp-content/themes/ajax/assets/images/template/catalog/products/Hub_black@2x.png",
-    "price": "176.00",
+    "price": "180.00",
     "amount": 1,
     "discount": '',
     "color": 'black',
@@ -91,7 +91,7 @@ export const AjaxkitBasic = [{
     "title": "Hub 2",
     "description": "Comunicación Ethernet y dual SIM GPRS, inalámbrico 868 MHz Jeweller. Admite verificación visual de alarmas.",
     "filename": "https://ajax.systems/wp-content/themes/ajax/assets/images/template/catalog/products/Hub_white@2x.png",
-    "price": "256.00",
+    "price": "276.00",
     "amount": 1,
     "discount": '',
     "edit": '',
@@ -108,7 +108,7 @@ export const AjaxkitBasic = [{
     "title": "Hub 2 B",
     "description": "Comunicación Ethernet y dual SIM GPRS, inalámbrico 868 MHz Jeweller. Admite verificación visual de alarmas.",
     "filename": "https://ajax.systems/wp-content/themes/ajax/assets/images/template/catalog/products/Hub_black@2x.png",
-    "price": "256.00",
+    "price": "276.00",
     "amount": 1,
     "discount": '',
     "edit": '',
@@ -271,7 +271,7 @@ export const AjaxkitBasic = [{
     "title": "SpaceControl",
     "description": "Mando para manejar el sistema de seguridad.",
     "filename": "https://ajax.systems/wp-content/themes/ajax/assets/images/template/catalog/products/SpaceControl_white@2x.png",
-    "price": "42.00",
+    "price": "38.00",
     "amount": 1,
     "discount": '',
     "status": "initial",
@@ -280,7 +280,7 @@ export const AjaxkitBasic = [{
     "title": "SpaceControl B",
     "description": "Mando para manejar el sistema de seguridad.",
     "filename": "https://ajax.systems/wp-content/themes/ajax/assets/images/template/catalog/products/SpaceControl_black@2x.png",
-    "price": "42.00",
+    "price": "38.00",
     "amount": 1,
     "discount": '',
     "color": 'black'
@@ -333,14 +333,14 @@ export const AjaxkitBasic = [{
     "title": "StreetSiren",
     "description": "Sirena para exteriores. Alimentación 12 VDC/4 pilas.",
     "filename": "https://ajax.systems/wp-content/themes/ajax/assets/images/template/catalog/products/StreetSiren_white@2x.png",
-    "price": "148.00",
+    "price": "152.00",
     "amount": 1,
     "discount": ''
 }, {
     "title": "StreetSiren B",
     "description": "Sirena para exteriores. Alimentación 12 VDC/4 pilas.",
     "filename": "https://ajax.systems/wp-content/themes/ajax/assets/images/template/catalog/products/StreetSiren_black@2x.png",
-    "price": "148.00",
+    "price": "152.00",
     "amount": 1,
     "discount": '',
     "color": 'black'
@@ -577,5 +577,12 @@ export const AjaxkitBasic = [{
     "amount": 1,
     "discount": '',
     "cat": 'otros'
+}, {
+    "title": "M2M-CARD-ES",
+    "description": "tarjetas SIM M2M, GlobalSIM Multioperador.",
+    "filename": "https://img.lovepik.com/element/45004/4789.png_300.png",
+    "price": "36.00",
+    "amount": 1,
+    "discount": '',
 }
 ];
