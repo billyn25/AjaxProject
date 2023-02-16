@@ -415,14 +415,14 @@ export const AjaxkitBasic = [{
     "title": "FireProtect",
     "description": "Detector para interiores que reacciona al humo y al rápido aumento de la temperatura.",
     "filename": "https://ajax.systems/wp-content/themes/ajax/assets/images/template/catalog/products/FireProtect_white@2x.png",
-    "price": "88.00",
+    "price": "92.00",
     "amount": 1,
     "discount": ''
 }, {
     "title": "FireProtect B",
     "description": "Detector para interiores que reacciona al humo y al rápido aumento de la temperatura.",
     "filename": "https://ajax.systems/wp-content/themes/ajax/assets/images/template/catalog/products/FireProtect_black@2x.png",
-    "price": "88.00",
+    "price": "92.00",
     "amount": 1,
     "discount": '',
     "color": 'black'
@@ -430,14 +430,14 @@ export const AjaxkitBasic = [{
     "title": "FireProtect Plus",
     "description": "Detector para interiores que reacciona al humo y al rápido aumento de la temperatura y a niveles peligrosos de monóxido de carbono.",
     "filename": "https://ajax.systems/wp-content/themes/ajax/assets/images/template/catalog/products/FireProtect_white@2x.png",
-    "price": "134.00",
+    "price": "138.00",
     "amount": 1,
     "discount": ''
 }, {
     "title": "FireProtect Plus B",
     "description": "Detector para interiores que reacciona al humo y al rápido aumento de la temperatura y a niveles peligrosos de monóxido de carbono.",
     "filename": "https://ajax.systems/wp-content/themes/ajax/assets/images/template/catalog/products/FireProtect_black@2x.png",
-    "price": "134.00",
+    "price": "138.00",
     "amount": 1,
     "discount": '',
     "color": 'black'
@@ -445,14 +445,14 @@ export const AjaxkitBasic = [{
     "title": "LeaksProtect",
     "description": "Detector de inundación para interiores.",
     "filename": "https://ajax.systems/wp-content/themes/ajax/assets/images/template/catalog/products/LeaksProtect_white@2x.png",
-    "price": "60.00",
+    "price": "62.00",
     "amount": 1,
     "discount": ''
 }, {
     "title": "LeaksProtect B",
     "description": "Detector de inundación para interiores.",
     "filename": "https://ajax.systems/wp-content/themes/ajax/assets/images/template/catalog/products/LeaksProtect_black@2x.png",
-    "price": "60.00",
+    "price": "62.00",
     "amount": 1,
     "discount": '',
     "color": 'black'
