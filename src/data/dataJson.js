@@ -580,7 +580,7 @@ export const AjaxkitBasic = [{
 }, {
     "title": "M2M-CARD-ES",
     "description": "tarjetas SIM M2M, GlobalSIM Multioperador.",
-    "filename": "https://img.lovepik.com/element/45004/4789.png_300.png",
+    "filename": "https://business.teliacompany.com/mgnl/.imaging/divx/divx-theme/thumbnail_webp/dam/ICONS/General/TC_Simcard_black.png/jcr:content/TC_Simcard_black.webp",
     "price": "36.00",
     "amount": 1,
     "discount": '',
