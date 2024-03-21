@@ -87,15 +87,6 @@ export const AjaxkitBasic = [{
     "discount": '',
     "edit": '',
 },{
-    "title": "Hub 2 B (4G)",
-    "description": "Comunicación Ethernet y dual SIM 4G, inalámbrico 868 MHz Jeweller. Admite verificación visual de alarmas.",
-    "filename": "https://d1x12lhh8s9nlj.cloudfront.net/images/productos/products/AJ-HUB2-4G-B/AJ-HUB2-4G-B_thumb2.png",
-    "price": "370.00",
-    "amount": 1,
-    "discount": '',
-    "edit": '',
-    "color": 'black',
-},{
     "title": "Hub 2 Plus",
     "description": "Comunicación Ethernet, Wifi y 4G dual SIM, inalámbrico 868 MHz Jeweller. Admite verificación visual de alarmas.",
     "filename": "https://ajax.systems/wp-content/themes/ajax/assets/images/template/catalog/products/Hub_white@2x.png",
@@ -108,6 +99,15 @@ export const AjaxkitBasic = [{
     "description": "Comunicación Ethernet y dual SIM GPRS, inalámbrico 868 MHz Jeweller. Admite verificación visual de alarmas.",
     "filename": "https://ajax.systems/wp-content/themes/ajax/assets/images/template/catalog/products/Hub_black@2x.png",
     "price": "276.00",
+    "amount": 1,
+    "discount": '',
+    "edit": '',
+    "color": 'black',
+},{
+    "title": "Hub 2 B (4G)",
+    "description": "Comunicación Ethernet y dual SIM 4G, inalámbrico 868 MHz Jeweller. Admite verificación visual de alarmas.",
+    "filename": "https://d1x12lhh8s9nlj.cloudfront.net/images/productos/products/AJ-HUB2-4G-B/AJ-HUB2-4G-B_thumb2.png",
+    "price": "370.00",
     "amount": 1,
     "discount": '',
     "edit": '',
@@ -571,6 +571,14 @@ export const AjaxkitBasic = [{
     "price": "251.34",
     "amount": 1,
     "filename": "https://d1x12lhh8s9nlj.cloudfront.net/images/productos/products/AJ-NVR108-B/AJ-NVR108-B_thumb2.png",
+    "discount": '',
+    "cat": 'otros'
+}, {
+    "title": "Barrera ABE-150",
+    "description": "Detector de barrera por infrarrojos. Cableado | 3 haces. Alcance máx. de detección 150 / 450 m.",
+    "price": "78.00",
+    "amount": 1,
+    "filename": "https://d1x12lhh8s9nlj.cloudfront.net/images/productos/products/ABE-150/ABE-150_thumb2.png",
     "discount": '',
     "cat": 'otros'
 },{
