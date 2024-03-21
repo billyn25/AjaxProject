@@ -196,6 +196,14 @@ export const AjaxkitBasic = [{
     "amount": 1,
     "discount": ''
 },  {
+    
+    "title": "MotionCam Outdoor PHOD",
+    "description": "Detector de movimiento con cámara fotográfica para exteriores con peticion bajo demanda. Solo Hub 2.",
+    "filename": "https://ajax.systems/wp-content/themes/ajax/assets/images/template/catalog/products/MotionCamOutdoor_white@2x.png",
+    "price": "380.00",
+    "amount": 1,
+    "discount": ''
+},  {
     "title": "DualCurtain Outdoor",
     "description": "Detector PIR tipo cortina dual. Alcance de detección configurable desde 4 a 15 m.",
     "filename": "https://ajax.systems/wp-content/themes/ajax/assets/images/template/catalog/products/DualCurtainOutdoor_white@2x.png",
@@ -360,6 +368,21 @@ export const AjaxkitBasic = [{
     "description": "Teclado con lector RFID y sirena.",
     "filename": "https://d1x12lhh8s9nlj.cloudfront.net/images/productos/products/AJ-KEYPADCOMBI-W/AJ-KEYPADCOMBI-W_thumb2.png",
     "price": "136.00",
+    "amount": 1,
+    "discount": ''
+}, {
+    "title": "KeyPad Combi B",
+    "description": "Teclado con lector RFID y sirena.",
+    "filename": "https://d1x12lhh8s9nlj.cloudfront.net/images/productos/products/AJ-KEYPADCOMBI-B/AJ-KEYPADCOMBI-B_thumb2.png",
+    "price": "136.00",
+    "amount": 1,
+    "color": 'black'
+    "discount": ''
+},  {
+    "title": "KeyPad Touchscreen W",
+    "description": "Teclado con pantalla IPS táctil y lector RFID. Autenticación: códigos, lector RFID o Bluetooth",
+    "filename": "https://d1x12lhh8s9nlj.cloudfront.net/images/productos/products/AJ-KEYPADTOUCHSCREEN-W/AJ-KEYPADTOUCHSCREEN-W_thumb2.png",
+    "price": "357.00",
     "amount": 1,
     "discount": ''
 },  {
