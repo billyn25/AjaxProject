@@ -79,10 +79,18 @@ export const AjaxkitBasic = [{
     "edit": '',
     "cam": 'si'
 }, {
+    "title": "Hub 2 (4G)",
+    "description": "Comunicación Ethernet y dual SIM 4G, inalámbrico 868 MHz Jeweller. Admite verificación visual de alarmas.",
+    "filename": "https://ajax.systems/wp-content/themes/ajax/assets/images/template/catalog/products/Hub_white@2x.png",
+    "price": "370.00",
+    "amount": 1,
+    "discount": '',
+    "edit": '',
+},{
     "title": "Hub 2 Plus",
     "description": "Comunicación Ethernet, Wifi y 4G dual SIM, inalámbrico 868 MHz Jeweller. Admite verificación visual de alarmas.",
     "filename": "https://ajax.systems/wp-content/themes/ajax/assets/images/template/catalog/products/Hub_white@2x.png",
-    "price": "482.00",
+    "price": "460.00",
     "amount": 1,
     "discount": '',
     "edit": ''
@@ -99,7 +107,7 @@ export const AjaxkitBasic = [{
     "title": "Hub 2 B Plus",
     "description": "Comunicación Ethernet, Wifi y 4G dual SIM, inalámbrico 868 MHz Jeweller. Admite verificación visual de alarmas.",
     "filename": "https://ajax.systems/wp-content/themes/ajax/assets/images/template/catalog/products/Hub_black@2x.png",
-    "price": "482.00",
+    "price": "460.00",
     "amount": 1,
     "discount": '',
     "edit": '',
