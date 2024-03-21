@@ -87,6 +87,15 @@ export const AjaxkitBasic = [{
     "discount": '',
     "edit": '',
 },{
+    "title": "Hub 2 B (4G)",
+    "description": "Comunicación Ethernet y dual SIM 4G, inalámbrico 868 MHz Jeweller. Admite verificación visual de alarmas.",
+    "filename": "https://d1x12lhh8s9nlj.cloudfront.net/images/productos/products/AJ-HUB2-4G-B/AJ-HUB2-4G-B_thumb2.png",
+    "price": "370.00",
+    "amount": 1,
+    "discount": '',
+    "edit": '',
+    "color": 'black',
+},{
     "title": "Hub 2 Plus",
     "description": "Comunicación Ethernet, Wifi y 4G dual SIM, inalámbrico 868 MHz Jeweller. Admite verificación visual de alarmas.",
     "filename": "https://ajax.systems/wp-content/themes/ajax/assets/images/template/catalog/products/Hub_white@2x.png",
@@ -549,62 +558,22 @@ export const AjaxkitBasic = [{
     "amount": 1,
     "discount": ''
 }, {
-    "title": "SF-IPB022A-2EW",
-    "description": "Cámara IP Wi-Fi 2 Megapixel. Lente 2.8 mm Gran angular. Micrófono incorporado.",
-    "filename": ipb022,
-    "price": "70.00",
+    "title": "NVR 108 W",
+    "description": "NVR de ajax para camaras IP .Resolución hasta 4K (25/30 FPS).",
+    "price": "251.34",
     "amount": 1,
+    "filename": "https://d1x12lhh8s9nlj.cloudfront.net/images/productos/products/AJ-NVR108-W/AJ-NVR108-W_thumb2.png",
     "discount": '',
     "cat": 'otros'
-}, {
-    "title": "SF-IPCV220WH-2W",
-    "description": "Cámara IP Wi-Fi 2 Megapixel. Lente 2.8 mm. Ranura SD. PoE IEEE802.3af.",
-    "filename": ipcv220,
-    "price": "98.00",
+},{
+    "title": "NVR 108 B",
+    "description": "NVR de ajax para camaras IP .Resolución hasta 4K (25/30 FPS).",
+    "price": "251.34",
     "amount": 1,
+    "filename": "https://d1x12lhh8s9nlj.cloudfront.net/images/productos/products/AJ-NVR108-B/AJ-NVR108-B_thumb2.png",
     "discount": '',
     "cat": 'otros'
-}, {
-    "title": "SF-IPDM934WH-2W",
-    "description": "Cámara IP Wi-Fi 2 Megapixel. Lente 2.8 mm Gran Angular. Ranura SD. PoE IEEE802.3af.",
-    "filename": ipdm934,
-    "price": "100.00",
-    "amount": 1,
-    "discount": '',
-    "cat": 'otros'
-}, {
-    "title": "SF-IPCU180-WIDE-3PW",
-    "description": "Cámara IP Wi-Fi 3 Megapixel. Lente gran angular 180º. Ranura SD.",
-    "filename": ipcu180,
-    "price": "100.00",
-    "amount": 1,
-    "discount": '',
-    "cat": 'otros'
-}, {
-    "title": "MicroSD 128 Gb",
-    "description": "Tarjeta de memoria microSD, Capacidad 128 Gb.",
-    "filename": sd128,
-    "price": "30.00",
-    "amount": 1,
-    "discount": '',
-    "cat": 'otros'
-}, {
-    "title": "AB-60",
-    "description": "Detector de barrera por infrarrojos, Cableado | 2 haces. Alcance máx. de detección 60 / 180 m.",
-    "filename": ab60,
-    "price": "48.00",
-    "amount": 1,
-    "discount": '',
-    "cat": 'otros'
-}, {
-    "title": "AB-150",
-    "description": "Detector de barrera por infrarrojos, Cableado | 3 haces. Alcance máx. de detección 150 / 450 m.",
-    "filename": ab150,
-    "price": "78.00",
-    "amount": 1,
-    "discount": '',
-    "cat": 'otros'
-}, {
+},{
     "title": "M2M-CARD-ES",
     "description": "tarjetas SIM M2M, GlobalSIM Multioperador.",
     "filename": "https://business.teliacompany.com/mgnl/.imaging/divx/divx-theme/thumbnail_webp/dam/ICONS/General/TC_Simcard_black.png/jcr:content/TC_Simcard_black.webp",
