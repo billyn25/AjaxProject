@@ -78,7 +78,7 @@ export const AjaxkitBasic = [{
     "discount": '',
     "edit": '',
     "cam": 'si'
-}, {
+},{
     "title": "Hub 2 (4G)",
     "description": "Comunicación Ethernet y dual SIM 4G, inalámbrico 868 MHz Jeweller. Admite verificación visual de alarmas.",
     "filename": "https://ajax.systems/wp-content/themes/ajax/assets/images/template/catalog/products/Hub_white@2x.png",
@@ -376,7 +376,7 @@ export const AjaxkitBasic = [{
     "filename": "https://d1x12lhh8s9nlj.cloudfront.net/images/productos/products/AJ-KEYPADCOMBI-B/AJ-KEYPADCOMBI-B_thumb2.png",
     "price": "136.00",
     "amount": 1,
-    "color": 'black'
+    "color": 'black',
     "discount": ''
 },  {
     "title": "KeyPad Touchscreen W",
