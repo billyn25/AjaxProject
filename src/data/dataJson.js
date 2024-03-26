@@ -362,14 +362,14 @@ export const AjaxkitBasic = [{
     "title": "KeyPad",
     "description": "Teclado de control para cada entrada.",
     "filename": "https://ajax.systems/wp-content/themes/ajax/assets/images/template/catalog/products/KeyPad_white@2x.png",
-    "price": "120.00",
+    "price": "124.00",
     "amount": 1,
     "discount": ''
 }, {
     "title": "KeyPad Plus",
     "description": "Teclado de control con lector RFID de tarjetas/tags para cada entrada.",
     "filename": "https://ajax.systems/wp-content/themes/ajax/assets/images/template/catalog/products/kpp_white@2x.png",
-    "price": "148.00",
+    "price": "140.00",
     "amount": 1,
     "discount": ''
 },  {
@@ -398,7 +398,7 @@ export const AjaxkitBasic = [{
     "title": "KeyPad B",
     "description": "Teclado de control para cada entrada.",
     "filename": "https://ajax.systems/wp-content/themes/ajax/assets/images/template/catalog/products/KeyPad_black@2x.png",
-    "price": "120.00",
+    "price": "124.00",
     "amount": 1,
     "discount": '',
     "color": 'black'
@@ -406,7 +406,7 @@ export const AjaxkitBasic = [{
     "title": "KeyPad Plus B",
     "description": "Teclado de control con lector RFID de tarjetas/tags para cada entrada.",
     "filename": "https://ajax.systems/wp-content/themes/ajax/assets/images/template/catalog/products/kpp_black@2x.png",
-    "price": "148.00",
+    "price": "140.00",
     "amount": 1,
     "discount": '',
     "color": 'black'
