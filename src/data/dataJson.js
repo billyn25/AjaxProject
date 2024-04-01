@@ -431,14 +431,14 @@ export const AjaxkitBasic = [{
     "title": "Tag",
     "description": "Llavero de acceso sin contacto. Tecnología MIFARE DESFire®. Solo para KeyPad Plus.",
     "filename": "https://ajax.systems/wp-content/themes/ajax/assets/images/template/catalog/products/Tag_white@2x.png",
-    "price": "8.00",
+    "price": "6.60",
     "amount": 1,
     "discount": '',
 }, {
     "title": "Tag B",
     "description": "Llavero de acceso sin contacto. Tecnología MIFARE DESFire®. Solo para KeyPad Plus.",
     "filename": "https://ajax.systems/wp-content/themes/ajax/assets/images/template/catalog/products/Tag_black@2x.png",
-    "price": "8.00",
+    "price": "6.60",
     "amount": 1,
     "discount": '',
     "color": 'black'
@@ -446,18 +446,33 @@ export const AjaxkitBasic = [{
     "title": "ReX",
     "description": "Repetidor de la señal de radio que duplica el alcance de comunicación de los dispositivos con un hub.",
     "filename": "https://ajax.systems/wp-content/themes/ajax/assets/images/template/catalog/products/Hub_white@2x.png",
-    "price": "150.00",
+    "price": "156.00",
+    "amount": 1,
+    "discount": ''
+},{
+    "title": "ReX 2",
+    "description": "Repetidor de la señal de radio que duplica el alcance de comunicación de los dispositivos con un hub.",
+    "filename": "https://ajax.systems/wp-content/themes/ajax/assets/images/template/catalog/products/Hub_white@2x.png",
+    "price": "232.00",
     "amount": 1,
     "discount": ''
 }, {
     "title": "ReX B",
     "description": "Repetidor de la señal de radio que duplica el alcance de comunicación de los dispositivos con un hub.",
     "filename": "https://ajax.systems/wp-content/themes/ajax/assets/images/template/catalog/products/Hub_black@2x.png",
-    "price": "150.00",
+    "price": "156.00",
     "amount": 1,
     "discount": '',
     "color": 'black'
 }, {
+    "title": "ReX 2 B",
+    "description": "Repetidor de la señal de radio que duplica el alcance de comunicación de los dispositivos con un hub.",
+    "filename": "https://ajax.systems/wp-content/themes/ajax/assets/images/template/catalog/products/Hub_black@2x.png",
+    "price": "232.00",
+    "amount": 1,
+    "discount": '',
+    "color": 'black'
+},{
     "title": "FireProtect",
     "description": "Detector para interiores que reacciona al humo y al rápido aumento de la temperatura.",
     "filename": "https://ajax.systems/wp-content/themes/ajax/assets/images/template/catalog/products/FireProtect_white@2x.png",
