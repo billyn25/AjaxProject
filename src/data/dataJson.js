@@ -49,7 +49,8 @@ export const AjaxkitBasic = [{
     "filename": "https://d1x12lhh8s9nlj.cloudfront.net/images/productos/products/AJ-BATTERYKIT-12M/AJ-BATTERYKIT-12M_thumb2.png",
     "discount": '',
     "edit": '',
-},{
+    "cat": 'kit',
+},  {
     "title": "StartetKit Cam B",
     "description": "Kit de alarma profesional con verificación visual de alarmas. Hub 2, Comunicación Ethernet y dual SIM GPRS.",
     "filename": kit2b,
@@ -205,7 +206,7 @@ export const AjaxkitBasic = [{
     "price": "188.00",
     "amount": 1,
     "discount": '',
-}{
+}, {
     "title": "MotionProtect Outdoor",
     "description": "Detector de movimiento para exteriores con sistema antienmascaramiento e inmune a mascotas. Cobertura de hasta 175 m2.",
     "filename": "https://ajax.systems/wp-content/themes/ajax/assets/images/template/catalog/products/MotionProtectOutdoor_white@2x.png",
