@@ -42,6 +42,14 @@ export const AjaxkitBasic = [{
     "edit": '',
     "cat": 'kit'
 }, {
+    "title": "AJ-BATTERYKIT-12M",
+    "description": "Kit de alarma autónomo que incluye Hub 2 de 6V y batería larga duración (12 meses).",
+    "price": "376.00",
+    "amount": 1,
+    "filename": "https://d1x12lhh8s9nlj.cloudfront.net/images/productos/products/AJ-BATTERYKIT-12M/AJ-BATTERYKIT-12M_thumb2.png",
+    "discount": '',
+    "edit": '',
+},{
     "title": "StartetKit Cam B",
     "description": "Kit de alarma profesional con verificación visual de alarmas. Hub 2, Comunicación Ethernet y dual SIM GPRS.",
     "filename": kit2b,
@@ -190,7 +198,14 @@ export const AjaxkitBasic = [{
     "amount": 1,
     "discount": '',
     "color": 'black',
-},  {
+}, {
+    "title": "MotionCam-PHOD-B",
+    "description": "Fotodetector con petición de imagen cuando se desee. Solo Hub 2.",
+    "filename": "https://d1x12lhh8s9nlj.cloudfront.net/images/productos/products/AJ-MOTIONCAM-PHOD-B/AJ-MOTIONCAM-PHOD-B_thumb2.png",
+    "price": "188.00",
+    "amount": 1,
+    "discount": '',
+}{
     "title": "MotionProtect Outdoor",
     "description": "Detector de movimiento para exteriores con sistema antienmascaramiento e inmune a mascotas. Cobertura de hasta 175 m2.",
     "filename": "https://ajax.systems/wp-content/themes/ajax/assets/images/template/catalog/products/MotionProtectOutdoor_white@2x.png",
@@ -588,5 +603,13 @@ export const AjaxkitBasic = [{
     "price": "36.00",
     "amount": 1,
     "discount": '',
+},{
+    "title": "M2M-CARD-ES",
+    "description": "tarjetas SIM M2M, GlobalSIM Multioperador.",
+    "filename": "https://business.teliacompany.com/mgnl/.imaging/divx/divx-theme/thumbnail_webp/dam/ICONS/General/TC_Simcard_black.png/jcr:content/TC_Simcard_black.webp",
+    "price": "36.00",
+    "amount": 1,
+    "discount": '',
+    "color": 'black'
 }
 ];
