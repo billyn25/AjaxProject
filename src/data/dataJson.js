@@ -206,6 +206,7 @@ export const AjaxkitBasic = [{
     "price": "188.00",
     "amount": 1,
     "discount": '',
+    "color": 'black',
 }, {
     "title": "MotionProtect Outdoor",
     "description": "Detector de movimiento para exteriores con sistema antienmascaramiento e inmune a mascotas. Cobertura de hasta 175 m2.",
