@@ -592,7 +592,7 @@ export const AjaxkitBasic = [{
 }, {
     "title": "NVR 108 W",
     "description": "NVR de ajax para camaras IP .Resolución hasta 4K (25/30 FPS).",
-    "price": "251.34",
+    "price": "238.00",
     "amount": 1,
     "filename": "https://d1x12lhh8s9nlj.cloudfront.net/images/productos/products/AJ-NVR108-W/AJ-NVR108-W_thumb2.png",
     "discount": '',
@@ -600,7 +600,7 @@ export const AjaxkitBasic = [{
 },{
     "title": "NVR 108 B",
     "description": "NVR de ajax para camaras IP .Resolución hasta 4K (25/30 FPS).",
-    "price": "251.34",
+    "price": "238.34",
     "amount": 1,
     "filename": "https://d1x12lhh8s9nlj.cloudfront.net/images/productos/products/AJ-NVR108-B/AJ-NVR108-B_thumb2.png",
     "discount": '',
@@ -611,6 +611,14 @@ export const AjaxkitBasic = [{
     "price": "208.00",
     "amount": 1,
     "filename": "https://ajax.systems/api/cdn-img/?img=%2Fupload%2FTurret_Cam_black_ba48836a1f%401.png&1697035541",
+    "discount": '',
+    "cat": 'otros'
+}, {
+    "title": "AJ-BULLETCAM-5-W",
+    "description": "Cámara IP Bullet 5 Megapixel Ajax. Lente 2.8mm",
+    "price": "208.00",
+    "amount": 1,
+    "filename": "https://ajax.systems/api/cdn-img/?img=%2Fupload%2FBullet_Cam_black_fdaf14a78b%401.png&1697096052",
     "discount": '',
     "cat": 'otros'
 },{
