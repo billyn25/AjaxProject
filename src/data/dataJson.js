@@ -606,6 +606,14 @@ export const AjaxkitBasic = [{
     "discount": '',
     "cat": 'otros'
 }, {
+    "title": "AJ-TURRETCAM-5-W",
+    "description": "Cámara IP Turret 5 Megapixel Ajax. Lente 2.8mm",
+    "price": "208.00",
+    "amount": 1,
+    "filename": "https://ajax.systems/api/cdn-img/?img=%2Fupload%2FTurret_Cam_black_ba48836a1f%401.png&1697035541",
+    "discount": '',
+    "cat": 'otros'
+},{
     "title": "Barrera ABE-150",
     "description": "Detector de barrera por infrarrojos. Cableado | 3 haces. Alcance máx. de detección 150 / 450 m.",
     "price": "78.00",
