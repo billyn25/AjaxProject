@@ -630,6 +630,14 @@ export const AjaxkitBasic = [{
     "discount": '',
     "cat": 'otros'
 },{
+    "title": "Mano de obra",
+    "description": "Mano de obra realizada por un instalador autorizado de ajax.",
+    "price": "0.00",
+    "amount": 1,
+    "filename": "https://e7.pngegg.com/pngimages/937/157/png-clipart-computer-icons-laborer-labor-day-labour-miscellaneous-logo-thumbnail.png",
+    "discount": '',
+    "cat": 'otros'
+},{
     "title": "M2M-CARD-ES",
     "description": "tarjetas SIM M2M, GlobalSIM Multioperador.",
     "filename": "https://d1x12lhh8s9nlj.cloudfront.net/images/productos/products/10XM2M-CARD-ES/10XM2M-CARD-ES_thumb2.png",
