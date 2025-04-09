@@ -634,7 +634,7 @@ export const AjaxkitBasic = [{
     "description": "Fuente de alimentacion 12V IP66.",
     "price": "5.00",
     "amount": 1,
-    "filename": "",
+    "filename": "https://www.google.com/search?sca_esv=7c7b298578be5db7&rlz=1C1FHFK_enES1148ES1148&biw=1920&bih=919&sxsrf=AHTn8zp-Sfq0PxjQZwp03b_AjSs9L4ej8Q:1744187131160&q=12v+2a+FUENTE+DE+ALIMENTACI%C3%93N+IP66&uds=ABqPDvztZD_Nu18FR6tNPw2cK_RRGc9uc7VNQ3T0vXamzI5ccrTKgjUot1-rqdjtCKVKyaC_6oOp-SjXTFVlBXNS-LZuyJYl4wyIPvjs4I4gww2yrGfepW-Vit_k-iTLQ_Metn5_uFpVTcPwoWZr_m5US9vwSIn1KDj1n7FqKfcAJblcnbODJ9A&udm=2&sa=X&ved=2ahUKEwituf-yw8qMAxXEVqQEHQP0JhoQxKsJegQIDBAB&ictx=0",
     "discount": '',
     "cat": 'otros'
 },{
