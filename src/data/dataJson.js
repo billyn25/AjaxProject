@@ -652,5 +652,29 @@ export const AjaxkitBasic = [{
     "amount": 1,
     "discount": '',
     "color": 'black'
+},{
+    "title": "LXHD1TB",
+    "description": "Disco duro WD PURPLE 1TB.",
+    "filename": "https://d1x12lhh8s9nlj.cloudfront.net/images/productos/products/HD1TB/HD1TB.png",
+    "price": "90.00",
+    "amount": 1,
+    "discount": '',
+     "cat": 'otros'
+},{
+    "title": "LXHD2TB",
+    "description": "Disco duro WD PURPLE 2TB.",
+    "filename": "https://d1x12lhh8s9nlj.cloudfront.net/images/productos/products/HD2TB/HD2TB.png",
+    "price": "114.00",
+    "amount": 1,
+    "discount": '',
+     "cat": 'otros'
+},{
+    "title": "LXHD4TB",
+    "description": "Disco duro WD PURPLE 4TB.",
+    "filename": "https://d1x12lhh8s9nlj.cloudfront.net/images/productos/products/HD4TB/HD4TB.png",
+    "price": "166.00",
+    "amount": 1,
+    "discount": '',
+     "cat": 'otros'
 }
 ];
