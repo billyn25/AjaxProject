@@ -592,7 +592,7 @@ export const AjaxkitBasic = [{
 }, {
     "title": "NVR 108 W",
     "description": "NVR de ajax para camaras IP .Resolución hasta 4K (25/30 FPS).",
-    "price": "238.00",
+    "price": "256.92",
     "amount": 1,
     "filename": "https://d1x12lhh8s9nlj.cloudfront.net/images/productos/products/AJ-NVR108-W/AJ-NVR108-W_thumb2.png",
     "discount": '',
@@ -600,7 +600,7 @@ export const AjaxkitBasic = [{
 },{
     "title": "NVR 108 B",
     "description": "NVR de ajax para camaras IP .Resolución hasta 4K (25/30 FPS).",
-    "price": "238.34",
+    "price": "256.92",
     "amount": 1,
     "filename": "https://d1x12lhh8s9nlj.cloudfront.net/images/productos/products/AJ-NVR108-B/AJ-NVR108-B_thumb2.png",
     "discount": '',
@@ -644,14 +644,7 @@ export const AjaxkitBasic = [{
     "price": "36.00",
     "amount": 1,
     "discount": '',
-},{
-    "title": "M2M-CARD-ES",
-    "description": "tarjetas SIM M2M, GlobalSIM Multioperador.",
-    "filename": "https://d1x12lhh8s9nlj.cloudfront.net/images/productos/products/10XM2M-CARD-ES/10XM2M-CARD-ES_thumb2.png",
-    "price": "36.00",
-    "amount": 1,
-    "discount": '',
-    "color": 'black'
+    "cat": 'otros'
 },{
     "title": "LXHD1TB",
     "description": "Disco duro WD PURPLE 1TB.",
