@@ -236,6 +236,13 @@ export const AjaxkitBasic = [{
     "price": "264.00",
     "amount": 1,
     "discount": ''
+},{
+    "title": "Curtain Outdoor Jeweller",
+    "description": "Detector exterior tipo cortina, doble PIR tipo cortina y microondas (24 GHz).Alcance detección 8~12 m / Antimasking.",
+    "filename": "https://ajax.systems/api/cdn-img/?img=%2Fupload%2Fsurtain_outdoor_jeweller_c9b2b1bf49%401.png&1731920177",
+    "price": "227.30",
+    "amount": 1,
+    "discount": ''
 }, {
     "title": "DoorProtect",
     "description": "Detector con iman para puerta o ventana.",
