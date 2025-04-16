@@ -608,7 +608,7 @@ export const AjaxkitBasic = [{
 }, {
     "title": "AJ-TURRETCAM-5-W",
     "description": "Cámara IP Turret 5 Megapixel Ajax. Lente 2.8mm",
-    "price": "208.00",
+    "price": "223.28",
     "amount": 1,
     "filename": "https://ajax.systems/api/cdn-img/?img=%2Fupload%2FTurret_Cam_black_ba48836a1f%401.png&1697035541",
     "discount": '',
@@ -616,7 +616,7 @@ export const AjaxkitBasic = [{
 }, {
     "title": "AJ-BULLETCAM-5-W",
     "description": "Cámara IP Bullet 5 Megapixel Ajax. Lente 2.8mm",
-    "price": "208.00",
+    "price": "223.28",
     "amount": 1,
     "filename": "https://ajax.systems/api/cdn-img/?img=%2Fupload%2FBullet_Cam_black_fdaf14a78b%401.png&1697096052",
     "discount": '',
