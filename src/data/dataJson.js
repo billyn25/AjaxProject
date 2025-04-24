@@ -597,19 +597,19 @@ export const AjaxkitBasic = [{
     "amount": 1,
     "discount": ''
 }, {
-    "title": "NVR 108 W",
-    "description": "NVR de ajax para camaras IP .Resolución hasta 4K (25/30 FPS).",
+    "title": "NVR 108 B",
+    "description": "NVR de ajax para camaras IP 8 canales.Resolución hasta 4K (25/30 FPS).",
     "price": "256.92",
     "amount": 1,
-    "filename": "https://d1x12lhh8s9nlj.cloudfront.net/images/productos/products/AJ-NVR108-W/AJ-NVR108-W_thumb2.png",
+    "filename": "https://ajax.systems/api/cdn-img/?img=%2Fupload%2Fnvr_black_453b202dae%401.png&1696595007",
     "discount": '',
     "cat": 'otros'
-},{
-    "title": "NVR 108 B",
-    "description": "NVR de ajax para camaras IP .Resolución hasta 4K (25/30 FPS).",
-    "price": "256.92",
+}, {
+    "title": "NVR 116 B",
+    "description": "NVR de ajax para camaras IP 16 Canales .Resolución hasta 4K (25/30 FPS).",
+    "price": "395.28",
     "amount": 1,
-    "filename": "https://d1x12lhh8s9nlj.cloudfront.net/images/productos/products/AJ-NVR108-B/AJ-NVR108-B_thumb2.png",
+    "filename": "https://ajax.systems/api/cdn-img/?img=%2Fupload%2Fnvr_black_453b202dae%401.png&1696595007",
     "discount": '',
     "cat": 'otros'
 }, {
