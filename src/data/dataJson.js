@@ -593,7 +593,7 @@ export const AjaxkitBasic = [{
     "title": "Hood for MotionProtect Outdoor",
     "description": "Visor que protege de la nieve y la lluvia.",
     "filename": "https://ajax.systems/wp-content/themes/ajax/assets/images/template/catalog/products/hood_white@2x.png",
-    "price": "14.80",
+    "price": "14.00",
     "amount": 1,
     "discount": ''
 }, {
@@ -673,6 +673,14 @@ export const AjaxkitBasic = [{
     "description": "Disco duro WD PURPLE 4TB.",
     "filename": "https://d1x12lhh8s9nlj.cloudfront.net/images/productos/products/HD4TB/HD4TB.png",
     "price": "166.00",
+    "amount": 1,
+    "discount": '',
+     "cat": 'otros'
+},{
+    "title": "POE 48",
+    "description": "PoE injector 48Vdc 10/100/1000Mbps.",
+    "filename": "hhttps://www.ek.plus/wp-content/uploads/products/POE48/images/POE48.png",
+    "price": "27.00",
     "amount": 1,
     "discount": '',
      "cat": 'otros'
