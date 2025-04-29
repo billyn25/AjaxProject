@@ -679,7 +679,7 @@ export const AjaxkitBasic = [{
 },{
     "title": "POE 48",
     "description": "PoE injector 48Vdc 10/100/1000Mbps.",
-    "filename": "hhttps://www.ek.plus/wp-content/uploads/products/POE48/images/POE48.png",
+    "filename": "https://www.ek.plus/wp-content/uploads/products/POE48/images/POE48.png",
     "price": "27.00",
     "amount": 1,
     "discount": '',
