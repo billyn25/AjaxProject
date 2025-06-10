@@ -637,6 +637,22 @@ export const AjaxkitBasic = [{
     "discount": '',
     "cat": 'otros'
 },{
+    "title": "Barrera IBS-SH-60-2 solar",
+    "description": "Detector de barrera solar por infrarrojos. Completamente inalámbrica | 2 haces. Alcance de señal hasta 1000, Alcance máx. de detección 60m.",
+    "price": "140.00",
+    "amount": 1,
+    "filename": "https://d1x12lhh8s9nlj.cloudfront.net/images/productos/products/IBS-SH-60-2/IBS-SH-60-2_thumb.png",
+    "discount": '',
+    "cat": 'otros'
+},{
+    "title": "Receptor IB-SH-REC-2",
+    "description": "Receptor de barreras solares infrarrojas, 2 entradas inalámbricas,2 salidas cableadas.",
+    "price": "44.00",
+    "amount": 1,
+    "filename": "https://d1x12lhh8s9nlj.cloudfront.net/images/productos/products/IB-SH-REC-2/IB-SH-REC-2_thumb.png",
+    "discount": '',
+    "cat": 'otros'
+},{
     "title": "LXDC12V2A-IP66",
     "description": "Fuente de alimentacion 12V IP66.",
     "price": "5.00",
