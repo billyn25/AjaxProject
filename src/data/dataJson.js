@@ -680,7 +680,7 @@ export const AjaxkitBasic = [{
     "title": "M2M-CARD-ES",
     "description": "tarjetas SIM M2M, GlobalSIM Multioperador.",
     "filename": "https://d1x12lhh8s9nlj.cloudfront.net/images/productos/products/10XM2M-CARD-ES/10XM2M-CARD-ES_thumb2.png",
-    "price": "36.00",
+    "price": "39.00",
     "amount": 1,
     "discount": '',
     "cat": 'otros'
