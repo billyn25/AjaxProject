@@ -596,6 +596,14 @@ export const AjaxkitBasic = [{
     "price": "14.00",
     "amount": 1,
     "discount": ''
+},{
+    "title": "AJ-DOORBELL-4",
+    "description": "Vídeo timbre con IA integrada, sensor PIR y control a través de apps.",
+    "price": "367.94",
+    "amount": 1,
+    "filename": "https://ajax.systems/api/cdn-img/?img=%2Fupload%2Fdoor_bell_black_10ac9029f1%401.png&1732028597",
+    "discount": '',
+    "cat": 'otros'
 }, {
     "title": "NVR 108 B",
     "description": "NVR de ajax para camaras IP 8 canales.Resolución hasta 4K (25/30 FPS).",
@@ -621,6 +629,14 @@ export const AjaxkitBasic = [{
     "discount": '',
     "cat": 'otros'
 }, {
+    "title": "AJ-INDOORCAM-4",
+    "description": "Cámara de seguridad Wi-Fi para interiores con sensor de movimiento PIR e IA integrada.",
+    "price": "306.60",
+    "amount": 1,
+    "filename": "https://ajax.systems/api/cdn-img/?img=%2Fupload%2Findoorcam_black_e562685ad8%401.png&1732114433",
+    "discount": '',
+    "cat": 'otros'
+},  {
     "title": "AJ-BULLETCAM-5-W",
     "description": "Cámara IP Bullet 5 Megapixel Ajax. Lente 2.8mm",
     "price": "223.28",
