@@ -716,5 +716,13 @@ export const AjaxkitBasic = [{
     "amount": 1,
     "discount": '',
      "cat": 'otros'
+},{
+    "title": "YALE-LINUS-L2-S",
+    "description": "Cerradura girallaves inteligente BLE y WiFi.",
+    "filename": "https://d1x12lhh8s9nlj.cloudfront.net/images/productos/products/YALE-LINUS-L2-S/YALE-LINUS-L2-S.png",
+    "price": "324.00",
+    "amount": 1,
+    "discount": '',
+     "cat": 'otros'
 }
 ];
