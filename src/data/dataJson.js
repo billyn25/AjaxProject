@@ -630,7 +630,7 @@ export const AjaxkitBasic = [{
     "cat": 'otros'
 },{
     "title": "AJ-NVR116-HAC-W",
-    "description": "NVR de ajax para camaras IP 16 Canales CON HDMI .Resolución hasta 12mpx.",
+    "description": "NVR de ajax para camaras IP 16 Canales con HDMI .Resolución hasta 12mpx.",
     "price": "454.58",
     "amount": 1,
     "filename": "https://ajax.systems/api/cdn-img/?img=%2Fupload%2Fnvr_black_453b202dae%401.png&1696595007",
@@ -701,11 +701,11 @@ export const AjaxkitBasic = [{
     "discount": '',
     "cat": 'otros'
 },{
-    "title": "SWITCH 4 POE MERCUSYS VDMS105GP",
-    "description": "Switch poe 4 Puertos.",
+    "title": "VDMS105GP",
+    "description": "Switch poe 4 Puertos mercusys.",
     "price": "39.37",
     "amount": 1,
-    "filename": "https://static.mercusys.com/product-image/MS105GP_overview_01_thumb20230116023021.jpg",
+    "filename": "https://www.esseshop.it/getimage/products/EsseShop.it-MERCUSYS-MS105GP_0.jpg",
     "discount": '',
     "cat": 'otros'
 },{
