@@ -701,6 +701,13 @@ export const AjaxkitBasic = [{
     "discount": '',
     "cat": 'otros'
 },{
+    "title": "SWITCH 4 POE MERCUSYS VDMS105GP",
+    "description": "Switch poe 4 Puertos.",
+    "price": "39.37",
+    "amount": 1,
+    "filename": "https://static.mercusys.com/product-image/MS105GP_overview_01_thumb20230116023021.jpg",
+    "discount": '',
+},{
     "title": "M2M-CARD-ES",
     "description": "tarjetas SIM M2M, GlobalSIM Multioperador.",
     "filename": "https://d1x12lhh8s9nlj.cloudfront.net/images/productos/products/10XM2M-CARD-ES/10XM2M-CARD-ES_thumb2.png",
