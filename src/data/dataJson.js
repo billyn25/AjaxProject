@@ -613,9 +613,25 @@ export const AjaxkitBasic = [{
     "discount": '',
     "cat": 'otros'
 }, {
+    "title": "AJ-NVR108-HAC-W",
+    "description": "NVR de ajax para camaras IP 8 canales con hdmi.Resolución hasta 4K (25/30 FPS).",
+    "price": "295.44",
+    "amount": 1,
+    "filename": "https://ajax.systems/api/cdn-img/?img=%2Fupload%2Fnvr_black_453b202dae%401.png&1696595007",
+    "discount": '',
+    "cat": 'otros'
+},{
     "title": "NVR 116 B",
     "description": "NVR de ajax para camaras IP 16 Canales .Resolución hasta 4K (25/30 FPS).",
     "price": "395.28",
+    "amount": 1,
+    "filename": "https://ajax.systems/api/cdn-img/?img=%2Fupload%2Fnvr_black_453b202dae%401.png&1696595007",
+    "discount": '',
+    "cat": 'otros'
+},{
+    "title": "AJ-NVR116-HAC-W",
+    "description": "NVR de ajax para camaras IP 16 Canales .Resolución hasta 4K (25/30 FPS).",
+    "price": "454.58",
     "amount": 1,
     "filename": "https://ajax.systems/api/cdn-img/?img=%2Fupload%2Fnvr_black_453b202dae%401.png&1696595007",
     "discount": '',
@@ -636,12 +652,20 @@ export const AjaxkitBasic = [{
     "filename": "https://ajax.systems/api/cdn-img/?img=%2Fupload%2Findoorcam_black_e562685ad8%401.png&1732114433",
     "discount": '',
     "cat": 'otros'
-},  {
+}, {
     "title": "AJ-BULLETCAM-5-W",
     "description": "Cámara IP Bullet 5 Megapixel Ajax. Lente 2.8mm",
     "price": "223.28",
     "amount": 1,
     "filename": "https://ajax.systems/api/cdn-img/?img=%2Fupload%2FBullet_Cam_black_fdaf14a78b%401.png&1697096052",
+    "discount": '',
+    "cat": 'otros'
+},{
+    "title": "AJ-DOMECAM-MINI-5-W",
+    "description": "Cámara mini domo IP 5 Megapixel Ajax. Lente 2.8mm",
+    "price": "223.28",
+    "amount": 1,
+    "filename": "https://ajax.systems/api/cdn-img/?img=%2Fupload%2FDome_Cam_Mini_54a41757df%401.png&1697096385",
     "discount": '',
     "cat": 'otros'
 },{
@@ -688,7 +712,7 @@ export const AjaxkitBasic = [{
     "title": "LXHD1TB",
     "description": "Disco duro WD PURPLE 1TB.",
     "filename": "https://d1x12lhh8s9nlj.cloudfront.net/images/productos/products/HD1TB/HD1TB.png",
-    "price": "90.00",
+    "price": "158.00",
     "amount": 1,
     "discount": '',
      "cat": 'otros'
@@ -696,7 +720,7 @@ export const AjaxkitBasic = [{
     "title": "LXHD2TB",
     "description": "Disco duro WD PURPLE 2TB.",
     "filename": "https://d1x12lhh8s9nlj.cloudfront.net/images/productos/products/HD2TB/HD2TB.png",
-    "price": "114.00",
+    "price": "182.00",
     "amount": 1,
     "discount": '',
      "cat": 'otros'
@@ -704,7 +728,7 @@ export const AjaxkitBasic = [{
     "title": "LXHD4TB",
     "description": "Disco duro WD PURPLE 4TB.",
     "filename": "https://d1x12lhh8s9nlj.cloudfront.net/images/productos/products/HD4TB/HD4TB.png",
-    "price": "166.00",
+    "price": "296.00",
     "amount": 1,
     "discount": '',
      "cat": 'otros'
