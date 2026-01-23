@@ -707,6 +707,7 @@ export const AjaxkitBasic = [{
     "amount": 1,
     "filename": "https://static.mercusys.com/product-image/MS105GP_overview_01_thumb20230116023021.jpg",
     "discount": '',
+    "cat": 'otros'
 },{
     "title": "M2M-CARD-ES",
     "description": "tarjetas SIM M2M, GlobalSIM Multioperador.",
