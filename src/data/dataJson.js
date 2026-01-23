@@ -614,7 +614,7 @@ export const AjaxkitBasic = [{
     "cat": 'otros'
 }, {
     "title": "AJ-NVR108-HAC-W",
-    "description": "NVR de ajax para camaras IP 8 canales con hdmi.Resolución hasta 4K (25/30 FPS).",
+    "description": "NVR de ajax para camaras IP 8 canales con HDMI .Resolución hasta 12mpx.",
     "price": "295.44",
     "amount": 1,
     "filename": "https://ajax.systems/api/cdn-img/?img=%2Fupload%2Fnvr_black_453b202dae%401.png&1696595007",
@@ -630,7 +630,7 @@ export const AjaxkitBasic = [{
     "cat": 'otros'
 },{
     "title": "AJ-NVR116-HAC-W",
-    "description": "NVR de ajax para camaras IP 16 Canales .Resolución hasta 4K (25/30 FPS).",
+    "description": "NVR de ajax para camaras IP 16 Canales CON HDMI .Resolución hasta 12mpx.",
     "price": "454.58",
     "amount": 1,
     "filename": "https://ajax.systems/api/cdn-img/?img=%2Fupload%2Fnvr_black_453b202dae%401.png&1696595007",
