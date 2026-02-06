@@ -177,7 +177,7 @@ export const AjaxkitBasic = [{
     "discount": '',
     "color": 'black',
 }, {
-    "title": "MotionCam",
+    "title": "MotionCam-HDR",
     "description": "Detector de movimiento con cámara fotográfica. Solo Hub 2.",
     "filename": "https://ajax.systems/wp-content/themes/ajax/assets/images/template/catalog/products/MotionCam_white@2x.png",
     "price": "168.00",
@@ -185,14 +185,14 @@ export const AjaxkitBasic = [{
     "discount": '',
     "cam": 'si'
 }, {
-    "title": "MotionCam-PHOD-W",
+    "title": "MotionCam-HDR-PHOD-W",
     "description": "Fotodetector con petición de imagen cuando se desee. Solo Hub 2.",
     "filename": "https://ajax.systems/wp-content/themes/ajax/assets/images/template/catalog/products/MotionCam_white@2x.png",
     "price": "188.00",
     "amount": 1,
     "discount": '',
 }, {
-    "title": "MotionCam B",
+    "title": "MotionCam-HDR B",
     "description": "Detector de movimiento con cámara fotográfica. Solo Hub 2.",
     "filename": "https://ajax.systems/wp-content/themes/ajax/assets/images/template/catalog/products/MotionCam_black@2x.png",
     "price": "168.00",
@@ -200,7 +200,7 @@ export const AjaxkitBasic = [{
     "discount": '',
     "color": 'black',
 }, {
-    "title": "MotionCam-PHOD-B",
+    "title": "MotionCam-HDR-PHOD-B",
     "description": "Fotodetector con petición de imagen cuando se desee. Solo Hub 2.",
     "filename": "https://d1x12lhh8s9nlj.cloudfront.net/images/productos/products/AJ-MOTIONCAM-PHOD-B/AJ-MOTIONCAM-PHOD-B_thumb2.png",
     "price": "188.00",
@@ -720,7 +720,7 @@ export const AjaxkitBasic = [{
     "title": "LXHD1TB",
     "description": "Disco duro WD PURPLE 1TB.",
     "filename": "https://d1x12lhh8s9nlj.cloudfront.net/images/productos/products/HD1TB/HD1TB.png",
-    "price": "158.00",
+    "price": "168.00",
     "amount": 1,
     "discount": '',
      "cat": 'otros'
@@ -728,7 +728,7 @@ export const AjaxkitBasic = [{
     "title": "LXHD2TB",
     "description": "Disco duro WD PURPLE 2TB.",
     "filename": "https://d1x12lhh8s9nlj.cloudfront.net/images/productos/products/HD2TB/HD2TB.png",
-    "price": "182.00",
+    "price": "192.00",
     "amount": 1,
     "discount": '',
      "cat": 'otros'
