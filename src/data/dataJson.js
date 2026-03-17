@@ -294,14 +294,14 @@ export const AjaxkitBasic = [{
     "title": "MotionProtect Curtain",
     "description": "Detector de movimiento para interiores con zona de detección reducida. Alcance de detección configurable desde 6 a 15 m.",
     "filename": "https://ajax.systems/wp-content/themes/ajax/assets/images/template/catalog/products/MotionProtectCurtain_white@2x.png",
-    "price": "92.00",
+    "price": "93.84",
     "amount": 1,
     "discount": '',
 }, {
     "title": "MotionProtect Curtain B",
     "description": "Detector de movimiento para interiores con zona de detección reducida. Alcance de detección configurable desde 6 a 15 m.",
     "filename": "https://ajax.systems/wp-content/themes/ajax/assets/images/template/catalog/products/MotionProtectCurtain_black@2x.png",
-    "price": "92.00",
+    "price": "93.84",
     "amount": 1,
     "discount": '',
     "color": 'black'
@@ -309,7 +309,7 @@ export const AjaxkitBasic = [{
     "title": "SpaceControl",
     "description": "Mando para manejar el sistema de seguridad.",
     "filename": "https://ajax.systems/wp-content/themes/ajax/assets/images/template/catalog/products/SpaceControl_white@2x.png",
-    "price": "38.00",
+    "price": "38.76",
     "amount": 1,
     "discount": '',
     "status": "initial",
@@ -318,7 +318,7 @@ export const AjaxkitBasic = [{
     "title": "SpaceControl B",
     "description": "Mando para manejar el sistema de seguridad.",
     "filename": "https://ajax.systems/wp-content/themes/ajax/assets/images/template/catalog/products/SpaceControl_black@2x.png",
-    "price": "38.00",
+    "price": "38.76",
     "amount": 1,
     "discount": '',
     "color": 'black'
@@ -333,7 +333,7 @@ export const AjaxkitBasic = [{
     "title": "Button B",
     "description": "Botón de pánico.",
     "filename": "https://ajax.systems/wp-content/themes/ajax/assets/images/template/catalog/products/Button_black@2x.png",
-    "price": "38.00",
+    "price": "38.76",
     "amount": 1,
     "discount": '',
     "color": 'black'
@@ -341,14 +341,14 @@ export const AjaxkitBasic = [{
     "title": "DoubleButton",
     "description": "Doble botón de pánico.",
     "filename": "https://ajax.systems/wp-content/themes/ajax/assets/images/template/catalog/products/doublebutton_white@2x.png",
-    "price": "38.00",
+    "price": "38.76",
     "amount": 1,
     "discount": '',
 }, {
     "title": "DoubleButton B",
     "description": "Doble botón de pánico.",
     "filename": "https://ajax.systems/wp-content/themes/ajax/assets/images/template/catalog/products/doublebutton_black@2x.png",
-    "price": "38.00",
+    "price": "38.76",
     "amount": 1,
     "discount": '',
     "color": 'black'
@@ -356,14 +356,14 @@ export const AjaxkitBasic = [{
     "title": "HomeSiren",
     "description": "Sirena compacta para interiores.",
     "filename": "https://ajax.systems/wp-content/themes/ajax/assets/images/template/catalog/products/HomeSiren_white@2x.png",
-    "price": "74.00",
+    "price": "74.72",
     "amount": 1,
     "discount": ''
 }, {
     "title": "HomeSiren B",
     "description": "Sirena compacta para interiores.",
     "filename": "https://ajax.systems/wp-content/themes/ajax/assets/images/template/catalog/products/HomeSiren_black@2x.png",
-    "price": "74.00",
+    "price": "74.72",
     "amount": 1,
     "discount": '',
     "color": 'black'
@@ -371,14 +371,14 @@ export const AjaxkitBasic = [{
     "title": "StreetSiren",
     "description": "Sirena para exteriores. Alimentación 12 VDC/4 pilas.",
     "filename": "https://ajax.systems/wp-content/themes/ajax/assets/images/template/catalog/products/StreetSiren_white@2x.png",
-    "price": "152.00",
+    "price": "155.04",
     "amount": 1,
     "discount": ''
 }, {
     "title": "StreetSiren B",
     "description": "Sirena para exteriores. Alimentación 12 VDC/4 pilas.",
     "filename": "https://ajax.systems/wp-content/themes/ajax/assets/images/template/catalog/products/StreetSiren_black@2x.png",
-    "price": "152.00",
+    "price": "155.04",
     "amount": 1,
     "discount": '',
     "color": 'black'
@@ -386,28 +386,28 @@ export const AjaxkitBasic = [{
     "title": "KeyPad",
     "description": "Teclado de control para cada entrada.",
     "filename": "https://ajax.systems/wp-content/themes/ajax/assets/images/template/catalog/products/KeyPad_white@2x.png",
-    "price": "124.00",
+    "price": "126.48",
     "amount": 1,
     "discount": ''
 }, {
     "title": "KeyPad Plus",
     "description": "Teclado de control con lector RFID de tarjetas/tags para cada entrada.",
     "filename": "https://ajax.systems/wp-content/themes/ajax/assets/images/template/catalog/products/kpp_white@2x.png",
-    "price": "140.00",
+    "price": "141.38",
     "amount": 1,
     "discount": ''
 },  {
     "title": "KeyPad Combi",
     "description": "Teclado con lector RFID y sirena.",
     "filename": "https://d1x12lhh8s9nlj.cloudfront.net/images/productos/products/AJ-KEYPADCOMBI-W/AJ-KEYPADCOMBI-W_thumb2.png",
-    "price": "136.00",
+    "price": "138.72",
     "amount": 1,
     "discount": ''
 }, {
     "title": "KeyPad Combi B",
     "description": "Teclado con lector RFID y sirena.",
     "filename": "https://d1x12lhh8s9nlj.cloudfront.net/images/productos/products/AJ-KEYPADCOMBI-B/AJ-KEYPADCOMBI-B_thumb2.png",
-    "price": "136.00",
+    "price": "138.72",
     "amount": 1,
     "color": 'black',
     "discount": ''
@@ -415,14 +415,14 @@ export const AjaxkitBasic = [{
     "title": "KeyPad Touchscreen W",
     "description": "Teclado con pantalla IPS táctil y lector RFID. Autenticación: códigos, lector RFID o Bluetooth",
     "filename": "https://d1x12lhh8s9nlj.cloudfront.net/images/productos/products/AJ-KEYPADTOUCHSCREEN-W/AJ-KEYPADTOUCHSCREEN-W_thumb2.png",
-    "price": "357.00",
+    "price": "364.14",
     "amount": 1,
     "discount": ''
 },  {
     "title": "KeyPad B",
     "description": "Teclado de control para cada entrada.",
     "filename": "https://ajax.systems/wp-content/themes/ajax/assets/images/template/catalog/products/KeyPad_black@2x.png",
-    "price": "124.00",
+    "price": "126.48",
     "amount": 1,
     "discount": '',
     "color": 'black'
@@ -430,7 +430,7 @@ export const AjaxkitBasic = [{
     "title": "KeyPad Plus B",
     "description": "Teclado de control con lector RFID de tarjetas/tags para cada entrada.",
     "filename": "https://ajax.systems/wp-content/themes/ajax/assets/images/template/catalog/products/kpp_black@2x.png",
-    "price": "140.00",
+    "price": "141.38",
     "amount": 1,
     "discount": '',
     "color": 'black'
@@ -438,14 +438,14 @@ export const AjaxkitBasic = [{
     "title": "Tag",
     "description": "Llavero de acceso sin contacto. Tecnología MIFARE DESFire®. Solo para KeyPad Plus.",
     "filename": "https://ajax.systems/wp-content/themes/ajax/assets/images/template/catalog/products/Tag_white@2x.png",
-    "price": "6.60",
+    "price": "6.62",
     "amount": 1,
     "discount": '',
 }, {
     "title": "Tag B",
     "description": "Llavero de acceso sin contacto. Tecnología MIFARE DESFire®. Solo para KeyPad Plus.",
     "filename": "https://ajax.systems/wp-content/themes/ajax/assets/images/template/catalog/products/Tag_black@2x.png",
-    "price": "6.60",
+    "price": "6.62",
     "amount": 1,
     "discount": '',
     "color": 'black'
@@ -453,21 +453,21 @@ export const AjaxkitBasic = [{
     "title": "ReX",
     "description": "Repetidor de la señal de radio que duplica el alcance de comunicación de los dispositivos con un hub.",
     "filename": "https://ajax.systems/wp-content/themes/ajax/assets/images/template/catalog/products/Hub_white@2x.png",
-    "price": "156.00",
+    "price": "159.12",
     "amount": 1,
     "discount": ''
 },{
     "title": "ReX 2",
     "description": "Repetidor de la señal de radio que duplica el alcance de comunicación de los dispositivos con un hub.",
     "filename": "https://ajax.systems/wp-content/themes/ajax/assets/images/template/catalog/products/Hub_white@2x.png",
-    "price": "232.00",
+    "price": "236.64",
     "amount": 1,
     "discount": ''
 }, {
     "title": "ReX B",
     "description": "Repetidor de la señal de radio que duplica el alcance de comunicación de los dispositivos con un hub.",
     "filename": "https://ajax.systems/wp-content/themes/ajax/assets/images/template/catalog/products/Hub_black@2x.png",
-    "price": "156.00",
+    "price": "159.12",
     "amount": 1,
     "discount": '',
     "color": 'black'
@@ -475,7 +475,7 @@ export const AjaxkitBasic = [{
     "title": "ReX 2 B",
     "description": "Repetidor de la señal de radio que duplica el alcance de comunicación de los dispositivos con un hub.",
     "filename": "https://ajax.systems/wp-content/themes/ajax/assets/images/template/catalog/products/Hub_black@2x.png",
-    "price": "232.00",
+    "price": "236.64",
     "amount": 1,
     "discount": '',
     "color": 'black'
@@ -483,14 +483,14 @@ export const AjaxkitBasic = [{
     "title": "FireProtect",
     "description": "Detector para interiores que reacciona al humo y al rápido aumento de la temperatura.",
     "filename": "https://ajax.systems/wp-content/themes/ajax/assets/images/template/catalog/products/FireProtect_white@2x.png",
-    "price": "92.00",
+    "price": "94.76",
     "amount": 1,
     "discount": ''
 }, {
     "title": "FireProtect B",
     "description": "Detector para interiores que reacciona al humo y al rápido aumento de la temperatura.",
     "filename": "https://ajax.systems/wp-content/themes/ajax/assets/images/template/catalog/products/FireProtect_black@2x.png",
-    "price": "92.00",
+    "price": "94.76",
     "amount": 1,
     "discount": '',
     "color": 'black'
@@ -498,14 +498,14 @@ export const AjaxkitBasic = [{
     "title": "FireProtect Plus",
     "description": "Detector para interiores que reacciona al humo y al rápido aumento de la temperatura y a niveles peligrosos de monóxido de carbono.",
     "filename": "https://ajax.systems/wp-content/themes/ajax/assets/images/template/catalog/products/FireProtect_white@2x.png",
-    "price": "138.00",
+    "price": "142.14",
     "amount": 1,
     "discount": ''
 }, {
     "title": "FireProtect Plus B",
     "description": "Detector para interiores que reacciona al humo y al rápido aumento de la temperatura y a niveles peligrosos de monóxido de carbono.",
     "filename": "https://ajax.systems/wp-content/themes/ajax/assets/images/template/catalog/products/FireProtect_black@2x.png",
-    "price": "138.00",
+    "price": "142.14",
     "amount": 1,
     "discount": '',
     "color": 'black'
@@ -513,14 +513,14 @@ export const AjaxkitBasic = [{
     "title": "LeaksProtect",
     "description": "Detector de inundación para interiores.",
     "filename": "https://ajax.systems/wp-content/themes/ajax/assets/images/template/catalog/products/LeaksProtect_white@2x.png",
-    "price": "62.00",
+    "price": "63.86",
     "amount": 1,
     "discount": ''
 }, {
     "title": "LeaksProtect B",
     "description": "Detector de inundación para interiores.",
     "filename": "https://ajax.systems/wp-content/themes/ajax/assets/images/template/catalog/products/LeaksProtect_black@2x.png",
-    "price": "62.00",
+    "price": "63.86",
     "amount": 1,
     "discount": '',
     "color": 'black'
@@ -528,14 +528,14 @@ export const AjaxkitBasic = [{
     "title": "Socket",
     "description": "Enchufe inteligente con medidor de consumo de energía.",
     "filename": "https://ajax.systems/wp-content/themes/ajax/assets/images/template/catalog/products/Socket_white@2x.png",
-    "price": "92.00",
+    "price": "94.76",
     "amount": 1,
     "discount": ''
 }, {
     "title": "Socket B",
     "description": "Enchufe inteligente con medidor de consumo de energía.",
     "filename": "https://ajax.systems/wp-content/themes/ajax/assets/images/template/catalog/products/Socket_black@2x.png",
-    "price": "92.00",
+    "price": "94.76",
     "amount": 1,
     "discount": '',
     "color": 'black'
@@ -543,35 +543,35 @@ export const AjaxkitBasic = [{
     "title": "WallSwitch",
     "description": "Relé de potencia con medidor de consumo de energía.",
     "filename": "https://ajax.systems/wp-content/themes/ajax/assets/images/template/catalog/products/WallSwitch@2x.png",
-    "price": "54.00",
+    "price": "55.62",
     "amount": 1,
     "discount": ''
 }, {
     "title": "Relay",
     "description": "Relé de contacto seco de baja tensión.",
     "filename": "https://ajax.systems/wp-content/themes/ajax/assets/images/template/catalog/products/WallSwitch@2x.png",
-    "price": "54.00",
+    "price": "55.62",
     "amount": 1,
     "discount": ''
 }, {
     "title": "Transmitter",
     "description": "Transmisor vía radio. Compatible con detectores de terceros con salida cableada de alarma.",
     "filename": "https://ajax.systems/wp-content/themes/ajax/assets/images/template/catalog/products/Transmitter@2x.png",
-    "price": "60.00",
+    "price": "61.20",
     "amount": 1,
     "discount": ''
 }, {
     "title": "Multi Transmitter",
     "description": "Multitransmisor vía radio de múltiples entradas. Hasta 18 Entradas cableadas de alarma y tamper.",
     "filename": "https://ajax.systems/wp-content/themes/ajax/assets/images/template/catalog/products/multitransmitter_white@2x.png",
-    "price": "186.00",
+    "price": "189.72",
     "amount": 1,
     "discount": ''
 }, {
     "title": "Multi Transmitter B",
     "description": "Multitransmisor vía radio de múltiples entradas. Hasta 18 Entradas cableadas de alarma y tamper.",
     "filename": "https://ajax.systems/wp-content/themes/ajax/assets/images/template/catalog/products/multitransmitter_black@2x.png",
-    "price": "186.00",
+    "price": "189.72",
     "amount": 1,
     "discount": '',
     "color": 'black'
@@ -579,21 +579,21 @@ export const AjaxkitBasic = [{
     "title": "uartBridge",
     "description": "Integra detectores Ajax en sistemas de terceros. Transmite mediante uart.",
     "filename": "https://ajax.systems/wp-content/themes/ajax/assets/images/template/catalog/products/uartBridge@2x.png",
-    "price": "44.00",
+    "price": "44.88",
     "amount": 1,
     "discount": ''
 }, {
     "title": "OcBridgePlus",
     "description": "Integra detectores Ajax en sistemas de terceros. Transmite mediante contactos libres de tensión.",
     "filename": "https://ajax.systems/wp-content/themes/ajax/assets/images/template/catalog/products/ocBridgePlus@2x.png",
-    "price": "84.00",
+    "price": "85.68",
     "amount": 1,
     "discount": ''
 }, {
     "title": "Hood for MotionProtect Outdoor",
     "description": "Visor que protege de la nieve y la lluvia.",
     "filename": "https://ajax.systems/wp-content/themes/ajax/assets/images/template/catalog/products/hood_white@2x.png",
-    "price": "14.00",
+    "price": "14.28",
     "amount": 1,
     "discount": ''
 },{
