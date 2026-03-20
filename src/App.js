@@ -83,7 +83,7 @@ function App() {
                     <div className='logos'>
                         <a href="https://hiperajax.netlify.app/">
                             <img
-                            src="https://alarmsec.eu/wp-content/uploads/2023/09/ajax-logo_Transp.png"
+                            src="https://upload.wikimedia.org/wikipedia/commons/2/27/Ajax_system.png"
                             className="App-logo mr-4" alt="logo"/>
                         </a>
                         <img id="imgHiperId" className="imgHiper" src={hp} />
