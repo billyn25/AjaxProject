@@ -61,7 +61,7 @@ export const AjaxkitBasic = [{
     "cat": 'kit',
     "color": 'black'
 }, {
-    "title": "Hub 1 W",
+    "title": "Hub 1",
     "description": "Comunicación Ethernet y GPRS, inalámbrico 868 MHz Jeweller.",
     "filename": "https://ajax.systems/wp-content/themes/ajax/assets/images/template/catalog/products/Hub_white@2x.png",
     "price": "201.96",
@@ -79,7 +79,7 @@ export const AjaxkitBasic = [{
     "color": 'black',
     "edit": ''
 }, {
-    "title": "Hub 2 W",
+    "title": "Hub 2",
     "description": "Comunicación Ethernet y dual SIM GPRS, inalámbrico 868 MHz Jeweller. Admite verificación visual de alarmas.",
     "filename": "https://ajax.systems/wp-content/themes/ajax/assets/images/template/catalog/products/Hub_white@2x.png",
     "price": "281.52",
@@ -177,7 +177,7 @@ export const AjaxkitBasic = [{
     "discount": '',
     "color": 'black',
 }, {
-    "title": "MotionCam-HDR",
+    "title": "MotionCam",
     "description": "Detector de movimiento con cámara fotográfica. Solo Hub 2.",
     "filename": "https://ajax.systems/wp-content/themes/ajax/assets/images/template/catalog/products/MotionCam_white@2x.png",
     "price": "171.36",
