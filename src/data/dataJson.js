@@ -720,7 +720,7 @@ export const AjaxkitBasic = [{
     "title": "LXHD1TB",
     "description": "Disco duro WD PURPLE 1TB.",
     "filename": "https://d1x12lhh8s9nlj.cloudfront.net/images/productos/products/HD1TB/HD1TB.png",
-    "price": "168.00",
+    "price": "174.00",
     "amount": 1,
     "discount": '',
      "cat": 'otros'
@@ -728,7 +728,7 @@ export const AjaxkitBasic = [{
     "title": "LXHD2TB",
     "description": "Disco duro WD PURPLE 2TB.",
     "filename": "https://d1x12lhh8s9nlj.cloudfront.net/images/productos/products/HD2TB/HD2TB.png",
-    "price": "192.00",
+    "price": "256.00",
     "amount": 1,
     "discount": '',
      "cat": 'otros'
@@ -736,11 +736,29 @@ export const AjaxkitBasic = [{
     "title": "LXHD4TB",
     "description": "Disco duro WD PURPLE 4TB.",
     "filename": "https://d1x12lhh8s9nlj.cloudfront.net/images/productos/products/HD4TB/HD4TB.png",
-    "price": "296.00",
+    "price": "304.00",
     "amount": 1,
     "discount": '',
      "cat": 'otros'
 },{
+    ,{
+    "title": "LXHD6TB",
+    "description": "Disco duro WD PURPLE 6TB.",
+    "filename": "https://d1x12lhh8s9nlj.cloudfront.net/images/productos/products/HD4TB/HD4TB.png",
+    "price": "384.00",
+    "amount": 1,
+    "discount": '',
+     "cat": 'otros'
+},{
+    "title": "INJ-POE-30W-V2",
+    "description": "PoE injector 48Vdc 10/100/1000Mbps.",
+    "filename": "https://www.ek.plus/wp-content/uploads/products/POE48/images/POE48.png",
+    "price": "30.00",
+    "amount": 1,
+    "discount": '',
+     "cat": 'otros'
+},{
+    ,{
     "title": "POE 48",
     "description": "PoE injector 48Vdc 10/100/1000Mbps.",
     "filename": "https://www.ek.plus/wp-content/uploads/products/POE48/images/POE48.png",
