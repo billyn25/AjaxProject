@@ -709,6 +709,14 @@ export const AjaxkitBasic = [{
     "discount": '',
     "cat": 'otros'
 },{
+    "title": "VDMS108GP",
+    "description": "Switch poe 8 Puertos mercusys.",
+    "price": "59.80",
+    "amount": 1,
+    "filename": "https://www.esseshop.it/getimage/products/EsseShop.it-MERCUSYS-MS105GP_0.jpg",
+    "discount": '',
+    "cat": 'otros'
+},{
     "title": "M2M-CARD-ES",
     "description": "tarjetas SIM M2M, GlobalSIM Multioperador.",
     "filename": "https://d1x12lhh8s9nlj.cloudfront.net/images/productos/products/10XM2M-CARD-ES/10XM2M-CARD-ES_thumb2.png",
@@ -720,7 +728,7 @@ export const AjaxkitBasic = [{
     "title": "LXHD1TB",
     "description": "Disco duro WD PURPLE 1TB.",
     "filename": "https://d1x12lhh8s9nlj.cloudfront.net/images/productos/products/HD1TB/HD1TB.png",
-    "price": "174.00",
+    "price": "190.00",
     "amount": 1,
     "discount": '',
      "cat": 'otros'
