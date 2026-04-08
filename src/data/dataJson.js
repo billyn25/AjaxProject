@@ -749,7 +749,6 @@ export const AjaxkitBasic = [{
     "discount": '',
      "cat": 'otros'
 },{
-    ,{
     "title": "LXHD6TB",
     "description": "Disco duro WD PURPLE 6TB.",
     "filename": "https://d1x12lhh8s9nlj.cloudfront.net/images/productos/products/HD4TB/HD4TB.png",
