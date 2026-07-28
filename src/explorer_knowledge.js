@@ -22,7 +22,7 @@
     genericAliases: {
       central:['hub','alarma'],
       repetidor:['rex','repetidor señal','amplificador señal'],
-      fotosensor:['motioncam','motcam','mocam','mcam','foto verificacion','detector con foto'],
+      fotosensor:['motioncam','foto verificacion','detector con foto'],
       bajodemanda:['phod','photo on demand','foto bajo demanda'],
       cristal:['glassprotect','combiprotect','rotura cristal'],
       cortina:['curtain','dualcurtain','doublecurtain','pasillo','ventanal'],
@@ -42,11 +42,11 @@
       integracion:['transmitter','sensor terceros','entrada cableada'],
       poe:['switch poe','alimentacion poe'],
       wifi:['wifi','wi fi'],
-      lte:['lte','4g','5g'],
+      lte:['lte','4g'],
       cableado:['hybrid','hibrido']
     },
     intents: [
-      { id:'hub_general', aliases:['hub','central alarma'], prefer:['AJ-HUB2-W','AJ-HUB2-4G-W','AJ-HUB2PLUS-W','AJ-HUB-W'], avoid:['DC6V','PSU','HUBBATT','NOCASE','DUMMY','KIT'], boost:45 },
+      { id:'hub_general', aliases:['hub','central alarma'], prefer:['AJ-HUB2-W','AJ-HUB2-DC6V-W','AJ-HUB2'], boost:45 },
       { id:'hub_basic', aliases:['hub basico','hub normal','central basica','alarma basica'], prefer:['AJ-HUB-W'], avoid:['MOTIONCAM','PHOD','LIGHTCORE','OUTLETCORE'], boost:54 },
       { id:'hub_photo', aliases:['hub con fotos','hub fotos','central con fotos','hub para motioncam','hub compatible phod'], prefer:['AJ-HUB2','AJ-HUB2-4G','HUBPLUS','HUB-HYBRID'], avoid:['AJ-HUB-W'], boost:62 },
       { id:'hub_4g', aliases:['hub 4g','central 4g','lte','sim 4g'], prefer:['HUB2-4G','4G'], boost:70 },
@@ -136,11 +136,6 @@
         const d=editDistance(token,h);
         if(d===1) best=Math.max(best,10);
         else if(d===2 && token.length>=6) best=Math.max(best,5);
-        else {
-          let pos=0;
-          for(const ch of h){ if(pos<token.length && token[pos]===ch) pos++; }
-          if(pos===token.length && token.length/h.length>=0.55) best=Math.max(best,9);
-        }
       }
     }
     return best;
@@ -178,21 +173,14 @@
       asksDome:has('domo','dome','domecam'),
       asksTurret:has('turret','torreta','turretcam'),
       asksBullet:has('bullet','bala','bulletcam'),
-      asksMotionCam:has('motioncam','motcam','mocam','mcam','fotosensor','foto sensor','detector con foto','verificacion fotografica'),
+      asksMotionCam:has('motioncam','fotosensor','foto sensor','detector con foto','verificacion fotografica'),
       asksMotionOnly:has('motionprotect','movimiento sin foto','detector movimiento'),
       asksNvr:has('nvr','grabador','videograbador'),
       asksNoNvr:has('sin nvr','sin grabador','autonoma','autonomas'),
       asksSd:has('sd','micro sd','microsd','tarjeta'),
       asksHdd:has('hdd','disco duro','disco nvr'),
       asks5mp:has('5mp','5 mp','5 megapixel','5 megapixeles'),
-      asks8mp:has('8mp','8 mp','8 megapixel','8 megapixeles'),
-      asksHub:has('hub','central alarma','central'),
-      asks4g:has('4g','lte'),
-      asks5g:has('5g'),
-      asksWifi:has('wifi','wi fi'),
-      asksDc6v:has('dc6v','6v','dc 6v'),
-      asksBp:has('hub bp','hubbp','bateria','battery powered'),
-      asksHybrid:has('hybrid','hibrido','cableado')
+      asks8mp:has('8mp','8 mp','8 megapixel','8 megapixeles')
     };
   }
 
@@ -255,40 +243,6 @@
       }
     }
 
-    // Hubs: el motor reconoce la familia y sus características, incluso en referencias futuras.
-    // Una futura referencia HUB...5G se encontrará y se ordenará sin añadir su referencia exacta.
-    if(a.asksHub){
-      const n=f.name;
-      const isHub=/AJ-HUB|\bHUB/.test(n) && !/BRACKET|HUBBATT|BATTERYKIT|DUMMY|REPAIR|KIT/.test(n);
-      if(isHub){
-        delta+=65; reasons.push('familia Hub');
-        const specialPower=/DC6V|NOCASE|PSU|PCB|HUBBP|\bBP\b/.test(n);
-        const is4g=/4G|LTE/.test(n);
-        const is5g=/5G/.test(n);
-        const isPlus=/PLUS/.test(n);
-        const isHybrid=/HYBRID/.test(n);
-        const isBase=/AJ-HUB-(?:W|B)(?:$|-)/.test(n);
-        const isHub2=/AJ-HUB2-(?:W|B)(?:$|-)/.test(n);
-
-        if(a.asks5g){ if(is5g){delta+=210;reasons.push('5G solicitado');} else delta-=45; }
-        else if(a.asks4g){ if(is4g){delta+=185;reasons.push('4G/LTE solicitado');} else delta-=35; }
-        else if(a.asksWifi){ if(isPlus || /WIFI/.test(n)){delta+=175;reasons.push('Wi-Fi solicitado');} else delta-=25; }
-        else if(a.asksDc6v){ if(/DC6V/.test(n)){delta+=210;reasons.push('alimentación 6 V solicitada');} else delta-=40; }
-        else if(a.asksBp){ if(/HUBBP|\bBP\b/.test(n)){delta+=195;reasons.push('Hub a batería solicitado');} else delta-=30; }
-        else if(a.asksHybrid){ if(isHybrid){delta+=195;reasons.push('Hub híbrido solicitado');} else delta-=30; }
-        else {
-          // Búsqueda genérica: modelos habituales primero; variantes especiales después.
-          if(isHub2) delta+=118;
-          else if(is5g) delta+=170; // futuras generaciones quedan entre los modelos principales sin referencia manual
-          else if(is4g) delta+=104;
-          else if(isPlus) delta+=98;
-          else if(isBase) delta+=72;
-          else if(isHybrid) delta+=68;
-          if(specialPower) delta-=115;
-        }
-      }
-    }
-
     // En búsquedas genéricas de cámara se prioriza 5 MP por uso comercial.
     if((a.asksDome||a.asksTurret||a.asksBullet) && !a.asks5mp && !a.asks8mp){
       if(f.is5mp) delta+=42;
@@ -301,17 +255,7 @@
 
     // Grabación: con NVR/HDD frente a autónomas/MicroSD.
     if(a.asksNoNvr){ if(f.isSd) delta+=125; if(f.isNvr||f.isHdd) delta-=90; }
-    if(a.asksNvr){
-      if(f.isNvr){
-        delta+=90;
-        // Orden comercial actual. Las referencias futuras siguen entrando por familia.
-        if(/AJ-NVR108-HAC-(?:W|B)/.test(f.name)) delta+=125;
-        else if(/AJ-NVR116-HAC-(?:W|B)/.test(f.name)) delta+=96;
-        else if(/AJ-NVR208-HAC/.test(f.name)) delta+=62;
-        else if(/AJ-NVR216-HAC/.test(f.name)) delta+=52;
-      }
-      if(f.isHdd) delta+=35;
-    }
+    if(a.asksNvr){ if(f.isNvr) delta+=90; if(f.isHdd) delta+=35; }
     if(a.asksSd){ if(f.isSd) delta+=120; }
     if(a.asksHdd){ if(f.isHdd) delta+=120; }
 
@@ -400,15 +344,6 @@
       if(focused.length) ranked=focused;
     } else if(a.asksBullet){
       const focused=ranked.filter(p=>productFeatures(p).isBullet);
-      if(focused.length) ranked=focused;
-    } else if(a.asksHdd){
-      const focused=ranked.filter(p=>productFeatures(p).isHdd);
-      if(focused.length) ranked=focused;
-    } else if(a.asksSd){
-      const focused=ranked.filter(p=>productFeatures(p).isSd);
-      if(focused.length) ranked=focused;
-    } else if(a.asksNvr){
-      const focused=ranked.filter(p=>productFeatures(p).isNvr);
       if(focused.length) ranked=focused;
     }
 

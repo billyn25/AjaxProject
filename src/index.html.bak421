@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Presupuestador de AJAX · Hiper Antena</title>
-  <link rel="stylesheet" href="style.css?v=4.2.17">
+  <link rel="stylesheet" href="style.css?v=4.0.16">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.8.4/jspdf.plugin.autotable.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
@@ -174,10 +174,10 @@
 
   <div id="pmModal" class="modal hidden" aria-hidden="true">
     <div class="modal-backdrop" id="pmBackdrop"></div>
-    <div class="modal-card pmx-modal-card explore-wrap" role="dialog" aria-modal="true" aria-labelledby="pmTitle">
+    <div class="modal-card pmx-modal-card" role="dialog" aria-modal="true" aria-labelledby="pmTitle">
       <div class="modal-head pmx-head">
         <div class="pmx-title-block">
-          <h2 id="pmTitle">Mis presupuestos <small class="pm-build-marker">4.2.17</small></h2>
+          <h2 id="pmTitle">Mis presupuestos</h2>
           <p><span id="pmCount" class="pmx-count">0 guardados</span> · Selecciona uno para ver sus detalles.</p>
         </div>
         <button type="button" id="pmClose" class="modal-close" aria-label="Cerrar">×</button>
@@ -197,17 +197,17 @@
           <option value="total">Por importe</option>
         </select>
       </div>
-      <div id="pmFilterNotice" class="pmx-filter-notice explore-breadcrumb" aria-live="polite"><span>📂 Vista: <strong>Recientes</strong></span></div>
+      <div id="pmFilterNotice" class="pmx-filter-notice" aria-live="polite"><span>📂 Vista: <strong>Recientes</strong></span></div>
 
-      <div class="pmx-workspace explore-layout">
-        <nav class="pmx-folders explore-col" aria-label="Carpetas de presupuestos">
+      <div class="pmx-workspace">
+        <nav class="pmx-folders" aria-label="Carpetas de presupuestos">
           <button type="button" class="pmx-folder is-active" data-pm-view="recent">🕒 <span>Recientes</span><b id="pmFolderRecentCount" class="pmx-folder-count">(0)</b></button>
           <button type="button" class="pmx-folder" data-pm-view="all">🌍 <span>Todos</span><b id="pmFolderAllCount" class="pmx-folder-count">(0)</b></button>
           <div class="pmx-folder-group"><strong>TIENDAS</strong><div id="pmStoreFolders"></div></div>
           <div class="pmx-folder-group"><strong>COMERCIALES</strong><div id="pmCommercialFolders"></div></div>
           <div class="pmx-folder-group pmx-pending-group"><strong>PENDIENTES DE ASIGNAR</strong><div id="pmPendingFolders"></div></div>
         </nav>
-        <section class="pmx-browser explore-products" aria-label="Lista de presupuestos">
+        <section class="pmx-browser" aria-label="Lista de presupuestos">
           <div class="pmx-browser-head">
             <button type="button" id="pmMobileBackFilters" class="pmx-mobile-back-filters" aria-label="Volver a filtros">← Atrás</button>
             <span>Presupuestos</span>
@@ -234,10 +234,10 @@
       </div>
 
       <div class="modal-foot pmx-actions">
-        <button type="button" id="pmDuplicate" class="secondary" disabled><span class="pmx-action-icon" aria-hidden="true">⧉</span><span>Duplicar</span></button>
-        <button type="button" id="pmOpen" class="primary pmx-open-visible" disabled><span class="pmx-action-icon" aria-hidden="true">▣</span><span>Recuperar</span></button>
-        <button type="button" id="pmRename" class="secondary" disabled><span class="pmx-action-icon" aria-hidden="true">#</span><span>Identificador</span></button>
-        <button type="button" id="pmDelete" class="danger" disabled><span class="pmx-action-icon" aria-hidden="true">⌫</span><span>Eliminar</span></button>
+        <button type="button" id="pmOpen" class="primary pmx-open-visible" disabled>Recuperar</button>
+        <button type="button" id="pmDuplicate" class="secondary" disabled>Duplicar</button>
+        <button type="button" id="pmRename" class="secondary" disabled>Identificador</button>
+        <button type="button" id="pmDelete" class="danger" disabled>Eliminar</button>
       </div>
     </div>
   </div>
@@ -248,7 +248,7 @@
   <script src="buscar_reglas.js?v=3.7.0"></script>
   <script src="search_intents.js?v=3.8.4"></script>
   <script src="search_engine.js?v=3.8.4"></script>
-  <script src="app.js?v=4.2.17"></script>
+  <script src="app.js?v=4.1.3"></script>
   <script src="search_knowledge_bridge.js?v=4.0.11"></script>
 </body>
 </html>

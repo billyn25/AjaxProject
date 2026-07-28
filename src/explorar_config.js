@@ -23,20 +23,22 @@ window.EXPLORAR_CATEGORIAS = [
     titulo: 'Intrusión',
     icono: '🏠',
     subcategorias: [
-      { titulo: 'Hubs', icono: '🏠', incluye: ['aj-hub', 'hub2plus', 'hubbp'], excluye: ['hubkit', 'starterkit', 'bracket', 'battery', 'hubbatt', 'psu', 'dummy', 'repairkit', 'minihub'] },
+      { titulo: 'Hubs', icono: '🏠', regex: ['^AJ-(?:HUB-(?:W|B)|HUB2-(?:W|B)|HUB2-4G-(?:W|B)|HUB2PLUS-(?:W|B)|HUB2(?:-4G)?-DC6V-W|HUBBP-V2-(?:W|B|NOCASE))(?:\\s|$)'] },
       { titulo: 'Kits', icono: '📦', incluye: ['hubkit', 'hub2kit', 'starterkit'], excluye: ['repairkit'] },
-      { titulo: 'MotionProtect', icono: '🚶', incluye: ['motionprotect', 'outdoorprotect','hood'], excluye: ['dummy', 'lens', 'curtain', 'bracket'] },
-      { titulo: 'MotionCam', icono: '📷', incluye: ['motioncam'], excluye: ['dummy', 'lens', 'hood', 'bracket'] },
-      { titulo: 'DoorProtect', icono: '🚪', incluye: ['doorprotect'], excluye: ['dummy', 'bracket', 'magnet','lens'] },
-      { titulo: 'GlassProtect', icono: '🪟', incluye: ['glassprotect'], excluye: ['dummy', 'bracket'] },
+      { titulo: 'MotionProtect', icono: '🚶',incluye: ['aj-hood'], regex: ['^AJ-(?:MOTIONPROTECT(?:PLUS)?|OUTDOORPROTECT|COMBIPROTECT)-(?:W|B)(?:\\s|$)'],excluye: ['hood-motioncam'] },
+      { titulo: 'MotionCam', icono: '📷', incluye: ['motioncam','AJ-HOOD-MOTIONCAMOUTDOOR'], excluye: ['dummy', 'lens', 'bracket'] },
+      { titulo: 'DoorProtect', icono: '🚪', regex: ['^AJ-DOORPROTECT(?:PLUS)?-(?:W|B)(?:\\s|$)'] },
+      { titulo: 'GlassProtect', icono: '🪟', incluye: ['combiprotect'], regex: ['^AJ-GLASSPROTECT-(?:W|B)(?:\\s|$)'],excluye: ['dummy'] },
       { titulo: 'Curtain', icono: '🟢', incluye: ['curtainprotect', 'curtainoutdoor', 'dualcurtain', 'curtaincam'], excluye: ['dummy', 'bracket'] },
-      { titulo: 'Repetidores', icono: '📡', incluye: ['rex'], excluye: ['psu', 'bracket', 'battery'] },
+      { titulo: 'Repetidores', icono: '📡', regex: ['^AJ-REX2?-(?:W|B)(?:-NF)?(?:\\s|$)'] },
       { titulo: 'Teclados', icono: '⌨️', incluye: ['keypad'], excluye: ['dummy', 'bracket'] },
       { titulo: 'Sirenas', icono: '📢', incluye: ['homesiren', 'streetsiren'], excluye: ['dummy', 'bracket', 'speakerss'] },
-      { titulo: 'Mandos / Botones', icono: '🎛️', incluye: ['spacecontrol', 'button', 'doublebutton','dinholder'], excluye: ['centerbutton', 'sidebutton', 'solobutton', 'dummy']},
+      { titulo: 'Speakers', icono: '🔊', incluye: ['speakerphone'] },
+      { titulo: 'Mandos / Botones', icono: '🎛️', incluye: ['spacecontrol', 'button', 'doublebutton','aj-holder'], excluye: ['centerbutton', 'sidebutton', 'solobutton', 'dummy']},
       { titulo: 'Enchufes inteligentes', icono: '⚡', incluye: ['socket'], excluye: ['sim', 'cover', 'button'] },
       { titulo: 'Transmisores', icono: '🧠', incluye: ['transmitter', 'uartbridge', 'ocbridge', 'vhfbridge'], excluye: ['dummy', 'bracket', 'case'] },
-      { titulo: 'Relés', icono: '⚙️', incluye: ['relay', 'wallswitch', 'multirelay'], excluye: ['dinholder'] },
+      { titulo: 'Relés', icono: '⚙️', incluye: ['relay', 'wallswitch', 'multirelay','dinholder'] },
+      { titulo: 'Tarjetas / Llaveros', icono: '🔐', incluye: ['pass', 'tag'], excluye: ['keypad', 'keymcp','bypass']},
     ]
   },
 
@@ -53,7 +55,7 @@ window.EXPLORAR_CATEGORIAS = [
       { titulo: 'NVR', icono: '🎥', incluye: ['nvr'], excluye: ['nvrkit', 'psu', 'storage'] },
       { titulo: 'Kits NVR', icono: '📦', incluye: ['nvrkit'] },
       { titulo: 'Discos HDD / SD', icono: '💽', incluye: ['hd1tb', 'hd2tb', 'hd4tb', 'hd6tb', 'hd8tb', 'hs-tf'], regex: ['^HD\\d+TB', '^HS[-_ ]?TF'] },
-      { titulo: 'Soporte Cámaras', icono: '🧰', incluye: ['junctionbox'] },
+      { titulo: 'Soporte Cámaras', icono: '🧰', incluye: ['junctionbox','mountcam'] },
     ]
   },
 
@@ -63,7 +65,7 @@ window.EXPLORAR_CATEGORIAS = [
     icono: '💡',
     subcategorias: [
       { titulo: 'Enchufes inteligentes', icono: '⚡', incluye: ['socket'], excluye: ['sim', 'cover', 'button'] },
-      { titulo: 'Interruptores de luz', icono: '💡', incluye: ['lightcore', 'lightswitch'], excluye: ['centerbutton', 'sidebutton', 'solobutton', 'frame', 'cover'] },
+      { titulo: 'Interruptores de luz', icono: '💡', incluye: ['lightcore', 'lightswitch'], excluye: ['centerbutton', 'sidebutton', 'solobutton', 'frame', 'cover','surface'] },
       { titulo: 'Botones LightSwitch', icono: '🎛️', incluye: ['centerbutton', 'sidebutton', 'solobutton'] },
       { titulo: 'Bases de enchufe', icono: '🔌', incluye: ['outletcore', 'outletbasic', 'outletlan', 'outlet'], excluye: ['cover', 'socket'] },
       { titulo: 'Tapas enchufe', icono: '🧩', incluye: ['centercover', 'sidecover', 'solocover', 'coverplate', 'bypass-dimmer', 'bypassdimmer'] },
@@ -75,7 +77,7 @@ window.EXPLORAR_CATEGORIAS = [
 
   {
     id: 'incendio_seguridad',
-    titulo: 'Incendio / seguridad',
+    titulo: 'Incendio / Seguridad',
     icono: '🔥',
     subcategorias: [
       { titulo: 'Detectores', icono: '🔥', incluye: ['fireprotect'], excluye: ['dummy', 'bracket'] },
@@ -86,32 +88,33 @@ window.EXPLORAR_CATEGORIAS = [
     ]
   },
   {
+    id: 'redes',
+    titulo: 'Redes',
+    icono: '🌐',
+    subcategorias: [
+      { titulo: 'Switches', icono: '🔀', incluye: ['switch'], excluye: ['wallswitch', 'reedswitch', 'lightswitch'] },
+      { titulo: 'Routers', icono: '📡', incluye: ['router'] },
+      { titulo: 'Puntos de acceso', icono: '📶', incluye: ['access point', 'punto de acceso', 'wifi ap', 'ap wifi'] },
+      { titulo: 'Inyectores PoE', icono: '⚡', incluye: ['injector poe', 'inyector poe', 'inj-poe'] },
+      { titulo: 'Conversores', icono: '🔄', incluye: ['media converter', 'converter', 'conversor'] },
+      { titulo: 'Rack / Patch panel', icono: '🗄️', incluye: ['rack', 'patch panel', 'patchpanel', 'panel de parcheo'], excluye: ['bracket']},
+    ]
+  },
+
+  {
   id: 'accesorios',
   titulo: 'Accesorios',
   icono: '🧰',
      subcategorias: [
-        {
-  titulo: 'Soportes y Brackets',
-  icono: '🧰',
-  incluye: [
-    'bracket',
-    'junctionbox',
-    'mountcam',
-    'hood',
-    'holder',
-    'magnet',
-    'lens',
-    'reedswitch'
-  ], excluye: ['lens'] },
       { titulo: 'Carcasas / Dummy', icono: '📦', incluye: ['dummy']},
-      { titulo: 'Tapas / Covers / Frame', icono: '🧩', incluye: ['cover', 'coverplate', 'frame', 'surfacebox'], excluye: ['coverholder'] },
-      { titulo: 'Fuentes / Baterías', icono: '🔋', incluye: ['psu', 'battery', 'hubbatt', 'ac220', 'dc12', 'dc6', 'dc1224', 'internalbattery'], regex: ['^CR123A', '^ER14505', '^CR2032', '^AA$', '^AAA$'], excluye: ['bracket'] },
+     { titulo: 'Fuentes / Baterías', icono: '🔋', incluye: ['psu','battery','hubbatt','ac220','dc12','dc6','dc1224','internalbattery','batt-cr123a','cr123a','cr2032','er14505'], excluye: ['bracket','hub2'] },
       { titulo: 'SAI / UPS', icono: '🔌', incluye: ['sai', 'ups'], regex: ['^SAI', '^UPS'] },
-      { titulo: 'Tarjetas / Llaveros', icono: '🔐', incluye: ['pass', 'tag', 'keymcp'] },
-      { titulo: 'SIM / Antenas', icono: '📶', incluye: ['simslot', 'sim', 'm2m', 'externalantenna'], excluye: ['homesiren', 'streetsiren', 'bracket', 'dummy'] },
-      { titulo: 'Recambios', icono: '🧲', incluye: ['magnet', 'reedswitch', 'lens', 'repairkit'], excluye: ['bracket', 'storage'] },
+      { titulo: 'SIM / Antenas', icono: '📶', regex: ['^AJ-(?:SIM|SIMSLOT|EXTERNALANTENNA-B)(?:\\s|$)', '^LXM2M-CARD-ES(?:\\s|$)'] },
+      { titulo: 'Recambios', icono: '🧲', incluye: ['magnet', 'reedswitch', 'lens', 'repairkit','ledstrips','MINIHUB','speakerss','bracket','magnet',], excluye: [ 'storage','doorprotect'] },
       { titulo: 'Storage / Memorias', icono: '💾', incluye: ['storage', 'hstd', 'hdd', 'microsd', 'micro-sd'], regex: ['^HS[-_ ]?TF', '^HD\\d+TB'], excluye: ['bracket', 'mountcam', 'junctionbox', 'hood', 'cover', 'frame'] },
-      { titulo: 'Marketing / Demos', icono: '👕', incluye: ['polo', 'tshirt', 'baseball', 'brandplate', 'cup','totem', 'democase','case','suitcase'] }
+      { titulo: 'Cajas / Canalización', icono: '📦', incluye: ['caja estanca', 'fmcs57', 'fmcs60'] },
+      { titulo: 'Barreras infrarrojas', icono: '🚧', incluye: ['detector de barrera', 'barrera por infrarrojos'], exactos: ['ABE-150'] },
+      { titulo: 'Marketing / Demos', icono: '👕', incluye: ['polo', 'tshirt', 'baseball', 'brandplate', 'cup', 'aj-cap', 'totem', 'democase', 'suitcase'], excluye: ['motion'] },
     ]
   }
 ];

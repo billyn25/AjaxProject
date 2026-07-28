@@ -1,11 +1,26 @@
+
+/* v4.2.8 · feedback único y recuperación inmediata desde caché */
 const CSV_URL = './catalogo_ajax.csv';
 const STORAGE_LISTA = 'presupuestos_ajax_hiperantena_lista';
 const STORAGE_CONTADOR = 'presupuestos_ajax_hiperantena_contador';
 const STORAGE_TEMA = 'presupuestador_ajax_tema';
+const STORAGE_LISTA_BACKUP = 'presupuestos_ajax_hiperantena_lista_backup_v1';
+const STORAGE_LISTA_META = 'presupuestos_ajax_hiperantena_lista_meta_v2';
+const STORAGE_LISTA_SLOT_A = 'presupuestos_ajax_hiperantena_snapshot_a_v2';
+const STORAGE_LISTA_SLOT_B = 'presupuestos_ajax_hiperantena_snapshot_b_v2';
+const STORAGE_LISTA_LEGACY = [
+  'presupuestos_ajax_hiperantena',
+  'presupuestos_ajax_lista',
+  'presupuestos_hiperajax_lista',
+  'hiperajax_presupuestos',
+  STORAGE_LISTA_BACKUP
+];
 const CSV_INTERNO = "name;brand;pvp\n10XAJ-BRANDPLATES-B;AJAX;102\n10XAJ-BRANDPLATES-W;AJAX;102\n10XAJ-KEYMCP;AJAX;12.6\n10XAJ-PASS-B;AJAX;58\n10XAJ-PASS-W;AJAX;58\n10XAJ-TAG-B;AJAX;66.2\n10XAJ-TAG-W;AJAX;66.2\nAJ-AC220V-PCB1;AJAX;34\nAJ-AC220V-PCB2;AJAX;34\nAJ-BASEBALLBAT-B;AJAX;60\nAJ-BATTERYBOX-14M;AJAX;334\nAJ-BATTERYBOX-7M;AJAX;222\nAJ-BATTERYKIT-12M;AJAX;410\nAJ-BRACKETDP-B;AJAX;6\nAJ-BRACKETDP-W;AJAX;6\nAJ-BRACKETFP-B;AJAX;8\nAJ-BRACKETFP-W;AJAX;8\nAJ-BRACKETFP2-W;AJAX;5.94\nAJ-BRACKETHS-B;AJAX;16\nAJ-BRACKETHS-W;AJAX;16\nAJ-BRACKETHUB-B;AJAX;16\nAJ-BRACKETHUB-W;AJAX;16\nAJ-BRACKETKP-B;AJAX;12\nAJ-BRACKETKP-W;AJAX;12\nAJ-BRACKETMAGNETDP-B;AJAX;6\nAJ-BRACKETMAGNETDP-W;AJAX;6\nAJ-BRACKETMC-B;AJAX;7.6\nAJ-BRACKETMC-W;AJAX;7.6\nAJ-BRACKETMCO-W;AJAX;20\nAJ-BRACKETMP-B;AJAX;8\nAJ-BRACKETMP-W;AJAX;8\nAJ-BRACKETMPC-B;AJAX;10\nAJ-BRACKETMPC-W;AJAX;10\nAJ-BRACKETMPO-W;AJAX;8\nAJ-BRACKETSS-B;AJAX;16\nAJ-BRACKETSS-W;AJAX;16\nAJ-BTOTEM2-W-ES;AJAX;1800\nAJ-BULLETCAM-4-HLVF-S-B;AJAX;482.46\nAJ-BULLETCAM-4-HLVF-S-W;AJAX;482.46\nAJ-BULLETCAM-5-0400-B;AJAX;245.6\nAJ-BULLETCAM-5-0400-HL-B;AJAX;254.92\nAJ-BULLETCAM-5-0400-HL-W;AJAX;254.92\nAJ-BULLETCAM-5-0400-W;AJAX;245.6\nAJ-BULLETCAM-5-B;AJAX;245.6\nAJ-BULLETCAM-5-HL-B;AJAX;254.92\nAJ-BULLETCAM-5-HL-W;AJAX;254.92\nAJ-BULLETCAM-5-HLVF-B;AJAX;348.44\nAJ-BULLETCAM-5-HLVF-W;AJAX;348.44\nAJ-BULLETCAM-5-W;AJAX;245.6\nAJ-BULLETCAM-8-0400-B;AJAX;327.5\nAJ-BULLETCAM-8-0400-HL-B;AJAX;339.92\nAJ-BULLETCAM-8-0400-HL-W;AJAX;339.92\nAJ-BULLETCAM-8-0400-W;AJAX;327.5\nAJ-BULLETCAM-8-B;AJAX;327.5\nAJ-BULLETCAM-8-HL-B;AJAX;339.92\nAJ-BULLETCAM-8-HL-W;AJAX;339.92\nAJ-BULLETCAM-8-HLVF-B;AJAX;482.46\nAJ-BULLETCAM-8-HLVF-S-B;AJAX;616.48\nAJ-BULLETCAM-8-HLVF-S-W;AJAX;616.48\nAJ-BULLETCAM-8-HLVF-W;AJAX;482.46\nAJ-BULLETCAM-8-W;AJAX;327.5\nAJ-BUTTON-B;AJAX;38.76\nAJ-BUTTON-W;AJAX;38.76\nAJ-BYPASS-DIMMER;AJAX;19.8\nAJ-CAP-B;AJAX;28\nAJ-CENTERBUTTON-1G2W-B;AJAX;13.44\nAJ-CENTERBUTTON-1G2W-B-VERT;AJAX;13.44\nAJ-CENTERBUTTON-1G2W-FOG;AJAX;13.44\nAJ-CENTERBUTTON-1G2W-GRA;AJAX;13.44\nAJ-CENTERBUTTON-1G2W-GRE;AJAX;13.44\nAJ-CENTERBUTTON-1G2W-IVO;AJAX;13.44\nAJ-CENTERBUTTON-1G2W-OLI;AJAX;13.44\nAJ-CENTERBUTTON-1G2W-OYS;AJAX;13.44\nAJ-CENTERBUTTON-1G2W-W;AJAX;13.44\nAJ-CENTERBUTTON-1G2W-W-VERT;AJAX;13.44\nAJ-CENTERBUTTON-2G-B;AJAX;14.36\nAJ-CENTERBUTTON-2G-B-VERT;AJAX;14.36\nAJ-CENTERBUTTON-2G-FOG;AJAX;14.36\nAJ-CENTERBUTTON-2G-GRA;AJAX;14.36\nAJ-CENTERBUTTON-2G-GRE;AJAX;14.36\nAJ-CENTERBUTTON-2G-IVO;AJAX;14.36\nAJ-CENTERBUTTON-2G-OLI;AJAX;14.36\nAJ-CENTERBUTTON-2G-OYS;AJAX;14.36\nAJ-CENTERBUTTON-2G-W;AJAX;14.36\nAJ-CENTERBUTTON-2G-W-VERT;AJAX;14.36\nAJ-CENTERBUTTON-DIMMER-B;AJAX;44.78\nAJ-CENTERBUTTON-DIMMER-B-VERT;AJAX;44.78\nAJ-CENTERBUTTON-DIMMER-W;AJAX;44.78\nAJ-CENTERBUTTON-DIMMER-W-VERT;AJAX;44.78\nAJ-CENTERCOVER-B;AJAX;13.08\nAJ-CENTERCOVER-CP-W;AJAX;9.3\nAJ-CENTERCOVER-FOG;AJAX;13.08\nAJ-CENTERCOVER-GRA;AJAX;13.08\nAJ-CENTERCOVER-GRE;AJAX;13.08\nAJ-CENTERCOVER-IVO;AJAX;13.08\nAJ-CENTERCOVER-LAN-B;AJAX;6.82\nAJ-CENTERCOVER-LAN-W;AJAX;6.82\nAJ-CENTERCOVER-OLI;AJAX;13.08\nAJ-CENTERCOVER-OYS;AJAX;13.08\nAJ-CENTERCOVER-SMART-B;AJAX;22.04\nAJ-CENTERCOVER-SMART-FOG;AJAX;22.04\nAJ-CENTERCOVER-SMART-GRA;AJAX;22.04\nAJ-CENTERCOVER-SMART-GRE;AJAX;22.04\nAJ-CENTERCOVER-SMART-IVO;AJAX;22.04\nAJ-CENTERCOVER-SMART-OLI;AJAX;22.04\nAJ-CENTERCOVER-SMART-OYS;AJAX;22.04\nAJ-CENTERCOVER-SMART-W;AJAX;22.04\nAJ-CENTERCOVER-W;AJAX;13.08\nAJ-COMBIPROTECT-B;AJAX;108.12\nAJ-COMBIPROTECT-B-DUMMY;AJAX;14\nAJ-COMBIPROTECT-W;AJAX;108.12\nAJ-COMBIPROTECT-W-DUMMY;AJAX;14\nAJ-COVERHOLDER-COVERPLATE;AJAX;10.08\nAJ-CUP;AJAX;20.3\nAJ-CURTAINCAMOUTDOOR-HIGHMOUNT-PHOD-W;AJAX;545.32\nAJ-CURTAINOUTDOOR-MINI-W;AJAX;165.78\nAJ-CURTAINOUTDOOR-W;AJAX;231.84\nAJ-CURTAINPROTECT-B;AJAX;93.84\nAJ-CURTAINPROTECT-B-DUMMY;AJAX;24\nAJ-CURTAINPROTECT-W;AJAX;93.84\nAJ-CURTAINPROTECT-W-DUMMY;AJAX;24\nAJ-DC1224V-PCB1;AJAX;34\nAJ-DC1224V-PCB2;AJAX;34\nAJ-DC12V-PSU-NVR;AJAX;38.32\nAJ-DC6V-PCB2;AJAX;34.68\nAJ-DEMOCASE-B;AJAX;700\nAJ-DEMOCASE-W;AJAX;700\nAJ-DEMOCASE2-B;AJAX;850\nAJ-DEMOCASE2-W;AJAX;850\nAJ-DINHOLDER;AJAX;13.4\nAJ-DOMECAM-4-HLVF-S-B;AJAX;482.46\nAJ-DOMECAM-4-HLVF-S-W;AJAX;482.46\nAJ-DOMECAM-5-HLVF-B;AJAX;348.44\nAJ-DOMECAM-5-HLVF-W;AJAX;348.44\nAJ-DOMECAM-8-HLVF-B;AJAX;482.46\nAJ-DOMECAM-8-HLVF-S-B;AJAX;616.48\nAJ-DOMECAM-8-HLVF-S-W;AJAX;616.48\nAJ-DOMECAM-8-HLVF-W;AJAX;482.46\nAJ-DOMECAM-MINI-5-0400-B;AJAX;245.6\nAJ-DOMECAM-MINI-5-0400-HL-B;AJAX;254.92\nAJ-DOMECAM-MINI-5-0400-HL-W;AJAX;254.92\nAJ-DOMECAM-MINI-5-0400-W;AJAX;245.6\nAJ-DOMECAM-MINI-5-B;AJAX;245.6\nAJ-DOMECAM-MINI-5-HL-B;AJAX;254.92\nAJ-DOMECAM-MINI-5-HL-W;AJAX;254.92\nAJ-DOMECAM-MINI-5-W;AJAX;245.6\nAJ-DOMECAM-MINI-8-0400-B;AJAX;327.5\nAJ-DOMECAM-MINI-8-0400-HL-B;AJAX;339.92\nAJ-DOMECAM-MINI-8-0400-HL-W;AJAX;339.92\nAJ-DOMECAM-MINI-8-0400-W;AJAX;327.5\nAJ-DOMECAM-MINI-8-B;AJAX;327.5\nAJ-DOMECAM-MINI-8-HL-B;AJAX;339.92\nAJ-DOMECAM-MINI-8-HL-W;AJAX;339.92\nAJ-DOMECAM-MINI-8-W;AJAX;327.5\nAJ-DOORBELL-4-B;AJAX;367.94\nAJ-DOORBELL-4-GRA;AJAX;367.94\nAJ-DOORBELL-4-GRE;AJAX;367.94\nAJ-DOORBELL-4-W;AJAX;367.94\nAJ-DOORPROTECT-B;AJAX;44.88\nAJ-DOORPROTECT-B-DUMMY;AJAX;9.78\nAJ-DOORPROTECT-W;AJAX;44.88\nAJ-DOORPROTECT-W-DUMMY;AJAX;2\nAJ-DOORPROTECTPLUS-B;AJAX;71.4\nAJ-DOORPROTECTPLUS-W;AJAX;71.4\nAJ-DOUBLEBUTTON-B;AJAX;38.76\nAJ-DOUBLEBUTTON-W;AJAX;38.76\nAJ-DUALCURTAINOUTDOOR-W;AJAX;269.28\nAJ-DUALCURTAINOUTDOOR-W-DUMMY;AJAX;76\nAJ-EXTERNALANTENNA-B;AJAX;29.8\nAJ-FIREPROTECT-B;AJAX;94.76\nAJ-FIREPROTECT-B-DUMMY;AJAX;24\nAJ-FIREPROTECT-W;AJAX;94.76\nAJ-FIREPROTECT-W-DUMMY;AJAX;24\nAJ-FIREPROTECT2-C-RB-B;AJAX;125.62\nAJ-FIREPROTECT2-C-RB-W;AJAX;125.62\nAJ-FIREPROTECT2-C-SB-B;AJAX;152.98\nAJ-FIREPROTECT2-C-SB-W;AJAX;152.98\nAJ-FIREPROTECT2-H-RB-B;AJAX;84.34\nAJ-FIREPROTECT2-H-RB-W;AJAX;84.34\nAJ-FIREPROTECT2-H-SB-B;AJAX;107.64\nAJ-FIREPROTECT2-H-SB-W;AJAX;107.64\nAJ-FIREPROTECT2-HC-AC-W;AJAX;151.02\nAJ-FIREPROTECT2-HC-RB-B;AJAX;126.74\nAJ-FIREPROTECT2-HC-RB-W;AJAX;126.74\nAJ-FIREPROTECT2-HC-SB-B;AJAX;154.38\nAJ-FIREPROTECT2-HC-SB-W;AJAX;154.38\nAJ-FIREPROTECT2-HS-RB-B;AJAX;99.94\nAJ-FIREPROTECT2-HS-RB-W;AJAX;99.94\nAJ-FIREPROTECT2-HS-SB-B;AJAX;122.06\nAJ-FIREPROTECT2-HS-SB-W;AJAX;122.06\nAJ-FIREPROTECT2-HSC-RB-B;AJAX;140.72\nAJ-FIREPROTECT2-HSC-RB-W;AJAX;140.72\nAJ-FIREPROTECT2-HSC-SB-B;AJAX;175.06\nAJ-FIREPROTECT2-HSC-SB-W;AJAX;175.06\nAJ-FIREPROTECTPLUS-B;AJAX;142.14\nAJ-FIREPROTECTPLUS-W;AJAX;142.14\nAJ-FRAME-2;AJAX;7.5\nAJ-FRAME-2-VERT;AJAX;7.5\nAJ-FRAME-3;AJAX;8.74\nAJ-FRAME-3-VERT;AJAX;8.74\nAJ-FRAME-4;AJAX;10.92\nAJ-FRAME-4-VERT;AJAX;10.92\nAJ-FRAME-5;AJAX;11.56\nAJ-FRAME-5-VERT;AJAX;11.56\nAJ-GLASSPROTECT-B;AJAX;77.52\nAJ-GLASSPROTECT-B-DUMMY;AJAX;8\nAJ-GLASSPROTECT-W;AJAX;77.52\nAJ-GLASSPROTECT-W-DUMMY;AJAX;8\nAJ-HOLDER-B;AJAX;7.14\nAJ-HOLDER-W;AJAX;7.14\nAJ-HOMESIREN-B;AJAX;74.72\nAJ-HOMESIREN-W;AJAX;74.72\nAJ-HOMESIREN-W-DUMMY;AJAX;18\nAJ-HOOD;AJAX;14.28\nAJ-HOOD-MOTIONCAMOUTDOOR;AJAX;14\nAJ-HUB-B;AJAX;201.96\nAJ-HUB-B-DUMMY;AJAX;30\nAJ-HUB-W;AJAX;201.96\nAJ-HUB-W-DUMMY;AJAX;30\nAJ-HUB2-4G-B;AJAX;373.62\nAJ-HUB2-4G-DC6V-W;AJAX;370\nAJ-HUB2-4G-W;AJAX;373.62\nAJ-HUB2-B;AJAX;281.52\nAJ-HUB2-DC6V-W;AJAX;281.52\nAJ-HUB2-W;AJAX;281.52\nAJ-HUB2KIT-DP-PHOD-B;AJAX;958\nAJ-HUB2KIT-DP-PHOD-W;AJAX;958\nAJ-HUB2KIT-DP-PRO-B;AJAX;918\nAJ-HUB2KIT-DP-PRO-W;AJAX;918\nAJ-HUB2KIT-MP-PHOD-B;AJAX;964\nAJ-HUB2KIT-MP-PHOD-W;AJAX;964\nAJ-HUB2KIT-MP-PRO-B;AJAX;924\nAJ-HUB2KIT-MP-PRO-W;AJAX;924\nAJ-HUB2KIT4G-DP-PHOD-B;AJAX;1052\nAJ-HUB2KIT4G-DP-PHOD-W;AJAX;1052\nAJ-HUB2KIT4G-DP-PRO-B;AJAX;1012\nAJ-HUB2KIT4G-DP-PRO-W;AJAX;1012\nAJ-HUB2KIT4G-MP-PHOD-B;AJAX;1058\nAJ-HUB2KIT4G-MP-PHOD-W;AJAX;1058\nAJ-HUB2KIT4G-MP-PRO-B;AJAX;1018\nAJ-HUB2KIT4G-MP-PRO-W;AJAX;1018\nAJ-HUB2PLUS-B;AJAX;464.5\nAJ-HUB2PLUS-W;AJAX;464.5\nAJ-HUBBATT-2W;AJAX;32\nAJ-HUBBATT-3W;AJAX;36\nAJ-HUBBATT-4G;AJAX;34\nAJ-HUBBP-V2-B;AJAX;361.26\nAJ-HUBBP-V2-NOCASE;AJAX;347.86\nAJ-HUBBP-V2-W;AJAX;361.26\nAJ-HUBKIT-B;AJAX;358.66\nAJ-HUBKIT-RENOVE1-B;AJAX;550\nAJ-HUBKIT-RENOVE1-W;AJAX;550\nAJ-HUBKIT-RENOVE2-B;AJAX;520\nAJ-HUBKIT-RENOVE2-W;AJAX;520\nAJ-HUBKIT-W;AJAX;358.66\nAJ-INDOORCAM-4-B;AJAX;306.6\nAJ-INDOORCAM-4-W;AJAX;306.6\nAJ-INTERNALBATTERY-NB-72V95AH;AJAX;185.98\nAJ-INTERNALBATTERY-RB-64V36AH;AJAX;119.14\nAJ-JUNCTIONBOX-B;AJAX;41.7\nAJ-JUNCTIONBOX-W;AJAX;41.7\nAJ-KEYPAD-B;AJAX;126.48\nAJ-KEYPAD-B-DUMMY;AJAX;28\nAJ-KEYPAD-W;AJAX;126.48\nAJ-KEYPAD-W-DUMMY;AJAX;28\nAJ-KEYPADCOMBI-W-DUMMY;AJAX;32\nAJ-KEYPADOUTDOOR-B;AJAX;235.7\nAJ-KEYPADOUTDOOR-GRA;AJAX;235.7\nAJ-KEYPADOUTDOOR-W;AJAX;235.7\nAJ-KEYPADPLUS-B;AJAX;141.38\nAJ-KEYPADPLUS-W;AJAX;141.38\nAJ-KEYPADPLUS-W-DUMMY;AJAX;42.38\nAJ-KEYPADTOUCHSCREEN-B;AJAX;364.14\nAJ-KEYPADTOUCHSCREEN-W;AJAX;364.14\nAJ-LEAKSPROTECT-B;AJAX;63.86\nAJ-LEAKSPROTECT-W;AJAX;63.86\nAJ-LEDSTRIPS;AJAX;16\nAJ-LIFEQUALITY-B;AJAX;324.7\nAJ-LIFEQUALITY-LITE-B;AJAX;96.38\nAJ-LIFEQUALITY-LITE-W;AJAX;96.38\nAJ-LIFEQUALITY-W;AJAX;324.7\nAJ-LIGHTCORE-1G;AJAX;72.74\nAJ-LIGHTCORE-1G-VERT;AJAX;72.74\nAJ-LIGHTCORE-2G;AJAX;83.68\nAJ-LIGHTCORE-2G-VERT;AJAX;83.68\nAJ-LIGHTCORE-2G2W;AJAX;107.48\nAJ-LIGHTCORE-2G2W-VERT;AJAX;107.48\nAJ-LIGHTCORE-2W;AJAX;77.74\nAJ-LIGHTCORE-2W-VERT;AJAX;77.74\nAJ-LIGHTCORE-CROSS;AJAX;109.1\nAJ-LIGHTCORE-CROSS-VERT;AJAX;109.1\nAJ-LIGHTCORE-DIMMER;AJAX;130.52\nAJ-LIGHTCORE-DIMMER-VERT;AJAX;130.52\nAJ-MAGNET-B;AJAX;8\nAJ-MAGNET-W;AJAX;8\nAJ-MANUALCALLPOINT-BLUE;AJAX;112.46\nAJ-MANUALCALLPOINT-GREEN;AJAX;112.46\nAJ-MANUALCALLPOINT-WHITE;AJAX;112.46\nAJ-MANUALCALLPOINT-YELLOW;AJAX;112.46\nAJ-MINIHUB-W;AJAX;8\nAJ-MOTIONCAM-B-DUMMY;AJAX;50\nAJ-MOTIONCAM-HDR-B;AJAX;171.36\nAJ-MOTIONCAM-HDR-PHOD-B;AJAX;191.76\nAJ-MOTIONCAM-HDR-PHOD-W;AJAX;191.76\nAJ-MOTIONCAM-HDR-W;AJAX;171.36\nAJ-MOTIONCAM-W-DUMMY;AJAX;50\nAJ-MOTIONCAMOUTDOOR-HIGHMOUNT-PHOD-W;AJAX;556.22\nAJ-MOTIONCAMOUTDOOR-PHOD-W;AJAX;387.6\nAJ-MOTIONCAMOUTDOOR-W;AJAX;342.72\nAJ-MOTIONCAMOUTDOOR-W-DUMMY;AJAX;68.46\nAJ-MOTIONCAMOUTDOOR-W-LENS;AJAX;8\nAJ-MOTIONPROTECT-B;AJAX;77.52\nAJ-MOTIONPROTECT-B-DUMMY;AJAX;12\nAJ-MOTIONPROTECT-B-LENS;AJAX;2.8\nAJ-MOTIONPROTECT-W;AJAX;77.52\nAJ-MOTIONPROTECT-W-DUMMY;AJAX;12\nAJ-MOTIONPROTECT-W-LENS;AJAX;2.8\nAJ-MOTIONPROTECTPLUS-B;AJAX;106.08\nAJ-MOTIONPROTECTPLUS-W;AJAX;106.08\nAJ-MOUNTCAM-A1-B;AJAX;51.18\nAJ-MOUNTCAM-A1-W;AJAX;51.18\nAJ-MOUNTCAM-A2-B;AJAX;68.22\nAJ-MOUNTCAM-A2-W;AJAX;68.22\nAJ-MOUNTCAM-B1-B;AJAX;73.1\nAJ-MOUNTCAM-B1-W;AJAX;73.1\nAJ-MOUNTCAM-B2-B;AJAX;90.16\nAJ-MOUNTCAM-B2-W;AJAX;90.16\nAJ-MULTITRANSMITTER-3EOL-B;AJAX;189.72\nAJ-MULTITRANSMITTER-3EOL-W-NF;AJAX;186\nAJ-NVR108-B;AJAX;282.6\nAJ-NVR108-DC-B;AJAX;282.6\nAJ-NVR108-DC-W;AJAX;282.6\nAJ-NVR108-HAC-B;AJAX;324.98\nAJ-NVR108-HAC-W;AJAX;324.98\nAJ-NVR108-HDC-B;AJAX;324.98\nAJ-NVR108-HDC-W;AJAX;324.98\nAJ-NVR108-W;AJAX;282.6\nAJ-NVR116-B;AJAX;434.82\nAJ-NVR116-DC-B;AJAX;434.82\nAJ-NVR116-DC-W;AJAX;434.82\nAJ-NVR116-HAC-B;AJAX;500.04\nAJ-NVR116-HAC-W;AJAX;500.04\nAJ-NVR116-HDC-B;AJAX;500.04\nAJ-NVR116-HDC-W;AJAX;500.04\nAJ-NVR116-W;AJAX;434.82\nAJ-NVR208-HAC-8P-B;AJAX;430.98\nAJ-NVR208-HAC-8P-W;AJAX;430.98\nAJ-NVR208-HAC-AI-8P-S-B;AJAX;469.74\nAJ-NVR208-HAC-AI-8P-S-W;AJAX;469.74\nAJ-NVR208-HAC-B;AJAX;296.98\nAJ-NVR208-HAC-W;AJAX;296.98\nAJ-NVR208-HAC2G-AI-S-B;AJAX;335.72\nAJ-NVR208-HAC2G-AI-S-W;AJAX;335.72\nAJ-NVR216-HAC-16P-B;AJAX;724.94\nAJ-NVR216-HAC-16P-W;AJAX;724.94\nAJ-NVR216-HAC-8P-B;AJAX;590.92\nAJ-NVR216-HAC-8P-W;AJAX;590.92\nAJ-NVR216-HAC-AI-16P-S-B;AJAX;784.56\nAJ-NVR216-HAC-AI-16P-S-W;AJAX;784.56\nAJ-NVR216-HAC-AI-8P-S-B;AJAX;650.54\nAJ-NVR216-HAC-AI-8P-S-W;AJAX;650.54\nAJ-NVR216-HAC-B;AJAX;456.92\nAJ-NVR216-HAC-W;AJAX;456.92\nAJ-NVR216-HAC2G-AI-S-B;AJAX;516.52\nAJ-NVR216-HAC2G-AI-S-W;AJAX;516.52\nAJ-NVR232-HAC-AI-16P-S-B;AJAX;1059.12\nAJ-NVR232-HAC-AI-16P-S-W;AJAX;1059.12\nAJ-NVR232-HAC2G-AI-S-B;AJAX;697.3\nAJ-NVR232-HAC2G-AI-S-W;AJAX;697.3\nAJ-NVRKIT108-2XBULLET-W;AJAX;703.48\nAJ-NVRKIT108-2XTURRET-W;AJAX;703.48\nAJ-NVRKIT108B-2W;AJAX;600\nAJ-NVRKIT108T-4;AJAX;510.1\nAJ-OCBRIDGEPLUS;AJAX;85.68\nAJ-OUTDOORPROTECT-W;AJAX;240.72\nAJ-OUTDOORPROTECT-W-DUMMY;AJAX;36\nAJ-OUTDOORPROTECT-W-LENS;AJAX;3\nAJ-OUTLETCORE-BASIC;AJAX;26.04\nAJ-OUTLETCORE-BASIC-VERT;AJAX;26.04\nAJ-OUTLETCORE-LAN-B;AJAX;14.2\nAJ-OUTLETCORE-LAN-W;AJAX;14.2\nAJ-OUTLETCORE-SMART;AJAX;65.04\nAJ-PASS-B;AJAX;5.8\nAJ-PASS-W;AJAX;5.8\nAJ-POLO-L;AJAX;59\nAJ-POLO-M;AJAX;62\nAJ-POLO-S;AJAX;59\nAJ-POLO-XL;AJAX;62\nAJ-POLO-XXL;AJAX;59\nAJ-REEDSWITCH;AJAX;2.22\nAJ-RELAY;AJAX;55.62\nAJ-REPAIRKITHUB-W;AJAX;30\nAJ-REX-B;AJAX;159.12\nAJ-REX-W;AJAX;159.12\nAJ-REX2-B;AJAX;236.64\nAJ-REX2-W-NF;AJAX;232\nAJ-SIDEBUTTON-1G2W-B;AJAX;11.56\nAJ-SIDEBUTTON-1G2W-B-VERT;AJAX;11.56\nAJ-SIDEBUTTON-1G2W-FOG;AJAX;11.56\nAJ-SIDEBUTTON-1G2W-GRA;AJAX;11.56\nAJ-SIDEBUTTON-1G2W-GRE;AJAX;11.56\nAJ-SIDEBUTTON-1G2W-IVO;AJAX;11.56\nAJ-SIDEBUTTON-1G2W-OLI;AJAX;11.56\nAJ-SIDEBUTTON-1G2W-OYS;AJAX;11.56\nAJ-SIDEBUTTON-1G2W-W;AJAX;11.56\nAJ-SIDEBUTTON-1G2W-W-VERT;AJAX;11.56\nAJ-SIDEBUTTON-2G-B;AJAX;12.48\nAJ-SIDEBUTTON-2G-B-VERT;AJAX;12.48\nAJ-SIDEBUTTON-2G-FOG;AJAX;12.48\nAJ-SIDEBUTTON-2G-GRA;AJAX;12.48\nAJ-SIDEBUTTON-2G-GRE;AJAX;12.48\nAJ-SIDEBUTTON-2G-IVO;AJAX;12.48\nAJ-SIDEBUTTON-2G-OLI;AJAX;12.48\nAJ-SIDEBUTTON-2G-OLI-VERT;AJAX;12.48\nAJ-SIDEBUTTON-2G-OYS;AJAX;12.48\nAJ-SIDEBUTTON-2G-W;AJAX;12.48\nAJ-SIDEBUTTON-2G-W-VERT;AJAX;12.48\nAJ-SIDEBUTTON-DIMMER-B;AJAX;44.78\nAJ-SIDEBUTTON-DIMMER-B-VERT;AJAX;44.78\nAJ-SIDEBUTTON-DIMMER-W;AJAX;44.78\nAJ-SIDEBUTTON-DIMMER-W-VERT;AJAX;44.78\nAJ-SIDECOVER-B;AJAX;13.08\nAJ-SIDECOVER-CP-W;AJAX;6.72\nAJ-SIDECOVER-FOG;AJAX;13.08\nAJ-SIDECOVER-GRA;AJAX;13.08\nAJ-SIDECOVER-GRE;AJAX;13.08\nAJ-SIDECOVER-IVO;AJAX;13.08\nAJ-SIDECOVER-LAN-B;AJAX;6.88\nAJ-SIDECOVER-LAN-W;AJAX;6.88\nAJ-SIDECOVER-OLI;AJAX;13.08\nAJ-SIDECOVER-OYS;AJAX;13.08\nAJ-SIDECOVER-SMART-B;AJAX;22.38\nAJ-SIDECOVER-SMART-FOG;AJAX;22.38\nAJ-SIDECOVER-SMART-GRA;AJAX;22.38\nAJ-SIDECOVER-SMART-GRE;AJAX;22.38\nAJ-SIDECOVER-SMART-IVO;AJAX;22.38\nAJ-SIDECOVER-SMART-OLI;AJAX;22.38\nAJ-SIDECOVER-SMART-OYS;AJAX;22.38\nAJ-SIDECOVER-SMART-W;AJAX;22.38\nAJ-SIDECOVER-W;AJAX;13.08\nAJ-SIM;AJAX;0\nAJ-SIMSLOT;AJAX;6\nAJ-SMALLMAGNET-B;AJAX;5.94\nAJ-SOCKET-B;AJAX;94.76\nAJ-SOCKET-G-W;AJAX;87.3\nAJ-SOCKET-W;AJAX;94.76\nAJ-SOLOBUTTON-1G2W-B;AJAX;12.18\nAJ-SOLOBUTTON-1G2W-FOG;AJAX;12.18\nAJ-SOLOBUTTON-1G2W-GRA;AJAX;12.18\nAJ-SOLOBUTTON-1G2W-GRE;AJAX;12.18\nAJ-SOLOBUTTON-1G2W-IVO;AJAX;12.18\nAJ-SOLOBUTTON-1G2W-OLI;AJAX;12.18\nAJ-SOLOBUTTON-1G2W-OYS;AJAX;12.18\nAJ-SOLOBUTTON-1G2W-W;AJAX;12.18\nAJ-SOLOBUTTON-2G-B;AJAX;13.74\nAJ-SOLOBUTTON-2G-FOG;AJAX;13.74\nAJ-SOLOBUTTON-2G-GRA;AJAX;13.74\nAJ-SOLOBUTTON-2G-GRE;AJAX;13.74\nAJ-SOLOBUTTON-2G-IVO;AJAX;13.74\nAJ-SOLOBUTTON-2G-OLI;AJAX;13.74\nAJ-SOLOBUTTON-2G-OYS;AJAX;13.74\nAJ-SOLOBUTTON-2G-W;AJAX;13.74\nAJ-SOLOBUTTON-DIMMER-B;AJAX;48.78\nAJ-SOLOBUTTON-DIMMER-W;AJAX;48.78\nAJ-SOLOCOVER-B;AJAX;14.5\nAJ-SOLOCOVER-CP-W;AJAX;8.32\nAJ-SOLOCOVER-FOG;AJAX;14.5\nAJ-SOLOCOVER-GRA;AJAX;14.5\nAJ-SOLOCOVER-GRE;AJAX;14.5\nAJ-SOLOCOVER-IVO;AJAX;14.5\nAJ-SOLOCOVER-LAN-B;AJAX;9.08\nAJ-SOLOCOVER-LAN-W;AJAX;9.08\nAJ-SOLOCOVER-OLI;AJAX;14.5\nAJ-SOLOCOVER-OYS;AJAX;14.5\nAJ-SOLOCOVER-SMART-B;AJAX;23.66\nAJ-SOLOCOVER-SMART-FOG;AJAX;23.66\nAJ-SOLOCOVER-SMART-GRA;AJAX;23.66\nAJ-SOLOCOVER-SMART-GRE;AJAX;23.66\nAJ-SOLOCOVER-SMART-IVO;AJAX;23.66\nAJ-SOLOCOVER-SMART-OLI;AJAX;23.66\nAJ-SOLOCOVER-SMART-OYS;AJAX;22.96\nAJ-SOLOCOVER-SMART-W;AJAX;23.66\nAJ-SOLOCOVER-W;AJAX;14.5\nAJ-SPACECONTROL-B;AJAX;38.76\nAJ-SPACECONTROL-B-DUMMY;AJAX;6\nAJ-SPACECONTROL-W;AJAX;38.76\nAJ-SPACECONTROL-W-DUMMY;AJAX;6\nAJ-SPEAKERPHONE-B;AJAX;222.24\nAJ-SPEAKERPHONE-W;AJAX;222.24\nAJ-SPEAKERSS-B;AJAX;24\nAJ-STARTERKIT-CAM-HDR-4G-W;AJAX;620\nAJ-STARTERKIT-CAM-HDR-W;AJAX;540.6\nAJ-STARTERKIT-CAM-MP-B;AJAX;558\nAJ-STARTERKIT-CAM-MP-W;AJAX;558\nAJ-STARTERKIT-CAM-W;AJAX;530\nAJ-STARTERKITPLUS-CAM-HDR-W;AJAX;744.6\nAJ-STORAGE-ECONOMY-30DAY;AJAX;0\nAJ-STORAGE-ECONOMY-30DAY-4CAM;AJAX;0\nAJ-STORAGE-ECONOMY-7DAY;AJAX;0\nAJ-STORAGE-ECONOMY-7DAY-4CAM;AJAX;0\nAJ-STORAGE-PREMIUM-30DAY;AJAX;0\nAJ-STORAGE-PREMIUM-30DAY-4CAM;AJAX;0\nAJ-STORAGE-PREMIUM-7DAY;AJAX;0\nAJ-STORAGE-PREMIUM-7DAY-4CAM;AJAX;0\nAJ-STORAGE-STANDARD-30DAY;AJAX;0\nAJ-STORAGE-STANDARD-30DAY-4CAM;AJAX;0\nAJ-STORAGE-STANDARD-7DAY;AJAX;0\nAJ-STORAGE-STANDARD-7DAY-4CAM;AJAX;0\nAJ-STOTEM-W;AJAX;1000\nAJ-STREETSIREN-B;AJAX;155.04\nAJ-STREETSIREN-W;AJAX;155.04\nAJ-STREETSIREN-W-DUMMY;AJAX;56.6\nAJ-STREETSIRENCUSTOM-B;AJAX;155.04\nAJ-STREETSIRENCUSTOM-W;AJAX;155.04\nAJ-STREETSIRENCUSTOMS-W-DUMMY;AJAX;60\nAJ-SUITCASE-INTRUSION-BMC-003;AJAX;272.72\nAJ-SUITCASE-VIDEO-BMC-005;AJAX;272.72\nAJ-SURFACEBOX-W;AJAX;18.4\nAJ-TRANSMITTER;AJAX;61.2\nAJ-TSHIRT-2XL;AJAX;50\nAJ-TSHIRT-L;AJAX;50\nAJ-TSHIRT-M;AJAX;50\nAJ-TSHIRT-S;AJAX;50\nAJ-TSHIRT-XL;AJAX;23\nAJ-TURRETCAM-4-HLVF-S-B;AJAX;482.46\nAJ-TURRETCAM-4-HLVF-S-W;AJAX;482.46\nAJ-TURRETCAM-5-0400-B;AJAX;245.6\nAJ-TURRETCAM-5-0400-HL-B;AJAX;254.92\nAJ-TURRETCAM-5-0400-HL-W;AJAX;254.92\nAJ-TURRETCAM-5-0400-W;AJAX;245.6\nAJ-TURRETCAM-5-B;AJAX;245.6\nAJ-TURRETCAM-5-HL-B;AJAX;254.92\nAJ-TURRETCAM-5-HL-W;AJAX;254.92\nAJ-TURRETCAM-5-HLVF-B;AJAX;348.44\nAJ-TURRETCAM-5-HLVF-W;AJAX;348.44\nAJ-TURRETCAM-5-W;AJAX;245.6\nAJ-TURRETCAM-8-0400-B;AJAX;327.5\nAJ-TURRETCAM-8-0400-HL-B;AJAX;339.92\nAJ-TURRETCAM-8-0400-HL-W;AJAX;339.92\nAJ-TURRETCAM-8-0400-W;AJAX;327.5\nAJ-TURRETCAM-8-B;AJAX;327.5\nAJ-TURRETCAM-8-HL-B;AJAX;339.92\nAJ-TURRETCAM-8-HL-W;AJAX;339.92\nAJ-TURRETCAM-8-HLVF-B;AJAX;482.46\nAJ-TURRETCAM-8-HLVF-S-B;AJAX;616.48\nAJ-TURRETCAM-8-HLVF-S-W;AJAX;616.48\nAJ-TURRETCAM-8-HLVF-W;AJAX;482.46\nAJ-TURRETCAM-8-W;AJAX;327.5\nAJ-UARTBRIDGE;AJAX;44.88\nAJ-VHFBRIDGE-W;AJAX;154.94\nAJ-WALLSWITCH-B;AJAX;55.62\nAJ-WATERSTOP-1-B;AJAX;305.64\nAJ-WATERSTOP-1-W;AJAX;305.64\nAJ-WATERSTOP-1/2-B;AJAX;231.66\nAJ-WATERSTOP-1/2-W;AJAX;231.66\nAJ-WATERSTOP-3/4-B;AJAX;260.38\nAJ-WATERSTOP-3/4-W;AJAX;260.38\nHD1TB;wester;236.00\nHD2TB;wester;360.00\n;;\nHD4TB;wester;430.00\nHD6TB;wester;610.00\nHD8TB;wester;778.00\nVDMS105GP;;39.37\nVDMS108GP;;49.22\nINJ-POE-30W-V2;;21.6\nHS-TF-D3STD/64G/NEO LUX/WW;;39.00\nHS-TF-D3STD/32G/NEO LUX/WW;;26.00\nHS-TF-C1STD-128G;;70.00\nABE-150 BARRERA;;78.00\n";
 let productos = [];
 let lineas = [];
 let seleccionado = null;
+let seleccionadoRef = '';
+let seleccionadoPvp = null;
 let activeIndex = -1;
 let recientesSesion = [];
 let catalogTerm = "";
@@ -62,6 +77,41 @@ function addProductoObj(p, qty=1, dto=null){
   return true;
 }
 
+/* =====================================================
+   NÚCLEO CRÍTICO · INTEGRIDAD DE PRODUCTO
+   La interfaz puede ordenar o filtrar por índices, pero el alta final
+   siempre se resuelve por la referencia exacta mostrada y valida su PVP.
+   ===================================================== */
+function hxRefProducto(value){
+  return String(value||'').trim().toUpperCase();
+}
+function hxPrecioIgual(a,b){
+  const x=Number(a), y=Number(b);
+  return Number.isFinite(x) && Number.isFinite(y) && Math.abs(x-y) < 0.000001;
+}
+function hxResolverProductoExacto(ref, expectedPvp=null){
+  const key=hxRefProducto(ref);
+  if(!key) return {ok:false,error:'Referencia de producto vacía.'};
+  const matches=productos.filter(p=>p && hxRefProducto(p.name)===key);
+  if(matches.length!==1){
+    return {ok:false,error:matches.length ? `La referencia ${key} está duplicada en el catálogo.` : `La referencia ${key} no existe en el catálogo.`};
+  }
+  const product=matches[0];
+  if(expectedPvp!==null && expectedPvp!==undefined && expectedPvp!=='' && !hxPrecioIgual(product.pvp, expectedPvp)){
+    return {ok:false,error:`El precio de ${key} ha cambiado. Operación cancelada para evitar añadir un importe incorrecto.`};
+  }
+  return {ok:true,product};
+}
+function hxAddProductoSeguro(ref, qty=1, dto=null, expectedPvp=null){
+  const resolved=hxResolverProductoExacto(ref, expectedPvp);
+  if(!resolved.ok){
+    hxToastGlobal(resolved.error,'error');
+    console.error('[Hiper Ajax] Alta cancelada por integridad:', {ref,expectedPvp,error:resolved.error});
+    return false;
+  }
+  return addProductoObj(resolved.product, qty, dto);
+}
+
 function normaliza(s){ return String(s||'').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,''); }
 
 function busquedaForzada(term){
@@ -79,15 +129,24 @@ function busquedaForzada(term){
     'soporte':['mountcam','bracket','holder'], 'soportes':['mountcam','bracket','holder'],
     'caja':['junctionbox','surfacebox'], 'cajas':['junctionbox','surfacebox'],
     'fuga':['leaksprotect','waterstop'], 'fugas':['leaksprotect','waterstop'],
-    'inundacion':['leaksprotect','waterstop'], 'inundaciones':['leaksprotect','waterstop']
+    'inundacion':['leaksprotect','waterstop'], 'inundaciones':['leaksprotect','waterstop'],
+    'motion':['motionprotect','motioncam','outdoorprotect','curtainprotect','curtainoutdoor','dualcurtain'],
+    'movimiento':['motionprotect','motioncam','outdoorprotect','curtainprotect','curtainoutdoor','dualcurtain']
   };
   const claves = mapa[t];
   if(!claves) return null;
   return productos
     .map((p,i)=>({p,i,n:normaliza(p.name)}))
     .filter(x=>claves.some(k=>x.n.includes(k)))
+    .filter(x=>!/(dummy|lens|hood|bracket|repairkit)/i.test(x.p.name||''))
     .map(x=>({p:x.p,i:x.i,score:9999}))
-    .sort((a,b)=>a.p.name.localeCompare(b.p.name,'es'));
+    .sort((a,b)=>{
+      if(t==='motion' || t==='movimiento'){
+        const rank=n=> n.includes('motionprotect')&&!n.includes('plus') ? 0 : n.includes('motionprotectplus') ? 1 : n.includes('motioncam-hdr')&&!n.includes('phod') ? 2 : n.includes('motioncam-hdr-phod') ? 3 : n.includes('motioncamoutdoor') ? 4 : n.includes('curtain') ? 5 : 9;
+        const d=rank(a.n)-rank(b.n); if(d) return d;
+      }
+      return a.p.name.localeCompare(b.p.name,'es');
+    });
 }
 
 function numero(v){
@@ -127,7 +186,7 @@ function parseCSV(txt){
   }).filter(p=>p.name && p.pvp>=0).sort((a,b)=>a.name.localeCompare(b.name,'es'));
 }
 
-async function cargarCatalogo(){
+async function cargarCatalogoLegacyInterno(){
   let origen = 'csv';
   try{
     const r = await fetch(`${CSV_URL}?v=${Date.now()}`, {cache:'no-store'});
@@ -579,13 +638,13 @@ function pintarResultados(term){
 
   panel.innerHTML = results.map((x,k)=>{
     const d = descripcionProducto(x.p);
-    return `<div class="result-item" data-index="${x.i}" data-k="${k}"><div><div class="result-name">${escapeHtml(d.icon)} ${escapeHtml(x.p.name)}</div><div class="result-meta">${escapeHtml(d.desc)}</div></div><div class="result-price">${fmt.format(x.p.pvp)}</div></div>`;
+    return `<div class="result-item" data-index="${x.i}" data-ref="${escapeHtml(x.p.name)}" data-pvp="${Number(x.p.pvp)}" data-k="${k}"><div><div class="result-name">${escapeHtml(d.icon)} ${escapeHtml(x.p.name)}</div><div class="result-meta">${escapeHtml(d.desc)}</div></div><div class="result-price">${fmt.format(x.p.pvp)}</div></div>`;
   }).join('');
 
   panel.querySelectorAll('.result-item').forEach(el=>{
     el.addEventListener('mouseenter',()=>{ activeIndex = Number(el.dataset.k); marcarActivo(); });
-    el.addEventListener('click',()=> seleccionarProducto(Number(el.dataset.index), true));
-    el.addEventListener('dblclick',()=>{ seleccionarProducto(Number(el.dataset.index), true); addLinea(); });
+    el.addEventListener('click',()=> seleccionarProductoSeguro(el.dataset.ref, el.dataset.pvp, true));
+    el.addEventListener('dblclick',()=>{ seleccionarProductoSeguro(el.dataset.ref, el.dataset.pvp, true); addLinea(); });
   });
 
   panel.classList.remove('hidden');
@@ -599,9 +658,21 @@ function seleccionarProducto(i, cerrar=false){
   { const d = descripcionProducto(productos[i]); $('#previewProducto').innerHTML = `<b>${escapeHtml(d.icon)} ${escapeHtml(productos[i].name)}</b> · ${escapeHtml(d.desc)} · ${fmt.format(productos[i].pvp)}`; }
   if(cerrar) $('#resultados').classList.add('hidden');
 }
+function seleccionarProductoSeguro(ref, expectedPvp=null, cerrar=false){
+  const resolved=hxResolverProductoExacto(ref, expectedPvp);
+  if(!resolved.ok){ hxToastGlobal(resolved.error,'error'); return false; }
+  const i=productos.indexOf(resolved.product);
+  if(i<0){ hxToastGlobal('No se pudo seleccionar el producto.','error'); return false; }
+  seleccionarProducto(i, cerrar);
+  seleccionadoRef=resolved.product.name;
+  seleccionadoPvp=Number(resolved.product.pvp);
+  return true;
+}
 function resolverDesdeInput(){
   const term = $('#buscador').value;
   seleccionado = null;
+  seleccionadoRef = '';
+  seleccionadoPvp = null;
   $('#producto').value = '';
   pintarResultados(term);
 
@@ -636,6 +707,75 @@ function buscarCatalogo(term=''){
     .filter(x=>x.score>0)
     .sort((a,b)=>b.score-a.score || a.p.name.localeCompare(b.p.name,'es'));
 }
+const HX_MODAL_QTY = { catalog:new Map(), explorer:new Map() };
+const HX_MODAL_LINE = { catalog:new Map(), explorer:new Map() };
+let HX_MODAL_LINE_SEQ = 0;
+function hxModalQtyGet(scope, idx){
+  const map = HX_MODAL_QTY[scope];
+  return Math.max(1, Number(map?.get(Number(idx))) || 1);
+}
+function hxModalQtySet(scope, idx, value){
+  const map = HX_MODAL_QTY[scope];
+  const qty = Math.max(1, Math.min(999, Number(value)||1));
+  map?.set(Number(idx), qty);
+  return qty;
+}
+function hxResetModalQty(scope){ HX_MODAL_QTY[scope]?.clear(); }
+function hxResetModalSession(scope){ HX_MODAL_LINE[scope]?.clear(); }
+function hxAddProductoModal(scope, idx, qty, ref=null, expectedPvp=null){
+  const indexed = productos[Number(idx)];
+  const resolved = hxResolverProductoExacto(ref || indexed?.name, expectedPvp ?? indexed?.pvp);
+  const cantidad = Math.max(1, Number(qty)||1);
+  if(!resolved.ok){ hxToastGlobal(resolved.error,'error'); return false; }
+  const p = resolved.product;
+
+  const map = HX_MODAL_LINE[scope];
+  const key = hxRefProducto(p.name);
+  const lineId = map?.get(key);
+  const existing = lineId ? lineas.find(l=>l && l._hxModalLineId===lineId) : null;
+
+  if(existing){
+    const anterior = Math.max(1, Number(existing.qty)||1);
+    existing.qty = anterior + cantidad;
+    render();
+    hxToastGlobal(`${p.name} · cantidad ${anterior} → ${existing.qty}`, 'ok');
+    return true;
+  }
+
+  if(!hxAddProductoSeguro(p.name, cantidad, null, p.pvp)) return false;
+  const created = lineas[lineas.length-1];
+  if(created){
+    created._hxModalLineId = `hxm-${scope}-${++HX_MODAL_LINE_SEQ}`;
+    map?.set(key, created._hxModalLineId);
+  }
+  render();
+  hxToastGlobal(cantidad > 1 ? `${p.name} · ${cantidad} unidades añadidas` : `${p.name} añadido`, 'ok');
+  return true;
+}
+function hxQtyControlHtml(scope, idx){
+  const qty = hxModalQtyGet(scope, idx);
+  return `<div class="hx-modal-qty" data-scope="${scope}" data-index="${idx}">
+    <button type="button" class="hx-modal-qty-btn hx-modal-qty-minus" aria-label="Restar cantidad">−</button>
+    <span class="hx-modal-qty-value" aria-label="Cantidad">${qty}</span>
+    <button type="button" class="hx-modal-qty-btn hx-modal-qty-plus" aria-label="Sumar cantidad">+</button>
+  </div>`;
+}
+function hxBindQtyControls(root, scope){
+  root.querySelectorAll('.hx-modal-qty').forEach(ctrl=>{
+    ctrl.addEventListener('dblclick',e=>e.stopPropagation());
+    const idx=Number(ctrl.dataset.index);
+    const value=ctrl.querySelector('.hx-modal-qty-value');
+    ctrl.querySelector('.hx-modal-qty-minus')?.addEventListener('click',e=>{
+      e.stopPropagation();
+      value.textContent=String(hxModalQtySet(scope,idx,hxModalQtyGet(scope,idx)-1));
+    });
+    ctrl.querySelector('.hx-modal-qty-plus')?.addEventListener('click',e=>{
+      e.stopPropagation();
+      value.textContent=String(hxModalQtySet(scope,idx,hxModalQtyGet(scope,idx)+1));
+    });
+  });
+}
+
 function pintarCatalogPanel(term=catalogTerm){
   catalogTerm = term || '';
   const itemsWrap = $('#catalogItems');
@@ -646,18 +786,20 @@ function pintarCatalogPanel(term=catalogTerm){
   countWrap.textContent = `${totalList.length} producto${totalList.length===1?'':'s'}`;
   itemsWrap.innerHTML = lista.map(x=>{
     const d = descripcionProducto(x.p);
-    return `<div class="catalog-row" data-index="${x.i}">
+    return `<div class="catalog-row" data-index="${x.i}" data-ref="${escapeHtml(x.p.name)}" data-pvp="${Number(x.p.pvp)}">
       <div class="catalog-main">
         <strong>${escapeHtml(d.icon)} ${escapeHtml(x.p.name)}</strong>
         <span>${escapeHtml(d.desc)}</span>
       </div>
       <b>${fmt.format(x.p.pvp)}</b>
-      <button type="button" class="catalog-add" data-index="${x.i}">Añadir</button>
+      ${hxQtyControlHtml('catalog', x.i)}
+      <button type="button" class="catalog-add" data-index="${x.i}" data-ref="${escapeHtml(x.p.name)}" data-pvp="${Number(x.p.pvp)}">Añadir</button>
     </div>`;
   }).join('') || '<div class="catalog-empty">No hay productos con esa búsqueda.</div>';
   function addCatalogProductPersistent(idx, trigger){
-    seleccionarProducto(Number(idx), true);
-    addLinea();
+    const qty = hxModalQtyGet('catalog', idx);
+    const row = trigger?.closest('.catalog-row') || itemsWrap.querySelector(`.catalog-row[data-index="${Number(idx)}"]`);
+    hxAddProductoModal('catalog', Number(idx), qty, row?.dataset.ref, row?.dataset.pvp);
     if(trigger){
       const original = trigger.textContent;
       trigger.textContent = '✓ Añadido';
@@ -671,9 +813,10 @@ function pintarCatalogPanel(term=catalogTerm){
       setTimeout(()=>{ filter.focus(); filter.select(); }, 0);
     }
   }
+  hxBindQtyControls(itemsWrap, 'catalog');
   itemsWrap.querySelectorAll('.catalog-row').forEach(el=>el.addEventListener('dblclick',()=>{ addCatalogProductPersistent(Number(el.dataset.index), null); }));
   itemsWrap.querySelectorAll('.catalog-add').forEach(btn=>btn.addEventListener('click',e=>{ e.stopPropagation(); addCatalogProductPersistent(Number(btn.dataset.index), btn); }));
-  itemsWrap.querySelectorAll('.catalog-row').forEach(el=>el.addEventListener('click',()=>{ seleccionarProducto(Number(el.dataset.index), true); }));
+  itemsWrap.querySelectorAll('.catalog-row').forEach(el=>el.addEventListener('click',()=>{ seleccionarProductoSeguro(el.dataset.ref, el.dataset.pvp, true); }));
 }
 function abrirCatalogo(){
   const modal = $('#catalogModal');
@@ -688,6 +831,8 @@ function abrirCatalogo(){
   setTimeout(()=>filter?.focus(), 30);
 }
 function cerrarCatalogo(){
+  hxResetModalQty('catalog');
+  hxResetModalSession('catalog');
   const modal = $('#catalogModal');
   if(!modal) return;
   modal.classList.add('hidden');
@@ -731,14 +876,18 @@ function addLinea(){
   }
 
   const p = productos[idx];
+  const refAlta = seleccionadoRef || p.name;
+  const pvpAlta = seleccionadoRef ? seleccionadoPvp : p.pvp;
   const qty = Math.max(1, Number($('#cantidad').value)||1);
-  addProductoObj(p, qty, null);
-  hxToastGlobal(`${p.name} añadido`,'ok');
+  if(!hxAddProductoSeguro(refAlta, qty, null, pvpAlta)) return;
+  hxToastGlobal(`${refAlta} añadido`,'ok');
 
   $('#buscador').value='';
   $('#producto').value='';
   $('#cantidad').value=1;
   seleccionado=null;
+  seleccionadoRef='';
+  seleccionadoPvp=null;
   activeIndex=-1;
   $('#previewProducto').textContent='Selecciona un producto para ver su precio.';
   const btnCat=$('#btnCatalogo'); if(btnCat) btnCat.innerHTML='<span class="btn-ico">📖</span>Catálogo';
@@ -748,7 +897,7 @@ function addLinea(){
   render();
 }
 function addLineaManual(){
-  lineas.push({name:'', brand:'', desc:'', pvp:0, qty:1, dto:descuentoActual(), manual:true});
+  lineas.push({name:'', brand:'', desc:'', pvp:0, qty:1, dto:descuentoActual(), manual:true, separador:false, tipo:'linea-vacia', texto:''});
   render();
   hxBajarUltimaLineaPresupuesto();
 }
@@ -757,7 +906,7 @@ function addSeparador(){
   if(texto === null) return;
   const name = String(texto || '').trim();
   if(!name) return;
-  lineas.push({name:name.toUpperCase(), brand:'', desc:'', pvp:0, qty:1, dto:0, manual:true, separador:true});
+  lineas.push({name:name.toUpperCase(), brand:'', desc:'', pvp:0, qty:1, dto:0, manual:true, separador:true, tipo:'separador', texto:name.toUpperCase()});
   render();
   hxBajarUltimaLineaPresupuesto();
 }
@@ -1052,11 +1201,14 @@ function render(){
   $('#total').textContent=fmt.format(c.total);
   activarArrastreLineas();
 }
+let hxIdentificadorActual = '';
 function datosPresupuesto(){
   return {
     id: Date.now().toString(),
     guardado: new Date().toISOString(),
     tienda: $('#tienda') ? $('#tienda').value : '',
+    comercial: $('#comercial') ? $('#comercial').value : '',
+    identificador: String(hxIdentificadorActual || ''),
     cliente: $('#cliente').value,
     telefono: $('#telefono').value,
     email: $('#email').value,
@@ -1071,15 +1223,186 @@ function datosPresupuesto(){
   };
 }
 function aplicarPresupuesto(d){
-  ['tienda','cliente','telefono','email','numero','fecha','estado','validez','observaciones','dtoGeneral','iva'].forEach(k=>{ if(d[k]!==undefined && $('#'+k)) $('#'+k).value=d[k]; });
-  lineas = Array.isArray(d.lineas) ? d.lineas : [];
+  hxIdentificadorActual = String(d?.identificador || '').trim();
+  ['tienda','comercial','cliente','telefono','email','numero','fecha','estado','validez','observaciones','dtoGeneral','iva'].forEach(k=>{ if(d[k]!==undefined && $('#'+k)) $('#'+k).value=d[k]; });
+  setTimeout(()=>window.dispatchEvent(new CustomEvent('hiperajax:identificador-cambiado')),0);
+  lineas = Array.isArray(d.lineas) ? d.lineas.map(l=>{
+    const x = (l && typeof l==='object') ? {...l} : {};
+    const tipo = String(x.tipo || '').toLowerCase();
+    const esSeparador = x.separador===true || tipo==='separador';
+    const esManual = x.manual===true || esSeparador || tipo==='linea-vacia' || tipo==='linea_vacia' || tipo==='manual';
+    x.separador = esSeparador;
+    x.manual = esManual;
+    if(esSeparador){
+      x.tipo='separador';
+      x.name=String(x.name || x.texto || 'SECCIÓN').toUpperCase();
+      x.texto=String(x.texto || x.name || '');
+      x.pvp=0; x.qty=1; x.dto=0;
+    }else if(tipo==='linea-vacia' || tipo==='linea_vacia'){
+      x.tipo='linea-vacia';
+    }
+    return x;
+  }) : [];
   render();
 }
+function storageHashPresupuestos(lista){
+  const text = JSON.stringify(Array.isArray(lista) ? lista : []);
+  let hash = 2166136261;
+  for(let i=0;i<text.length;i++){
+    hash ^= text.charCodeAt(i);
+    hash = Math.imul(hash, 16777619);
+  }
+  return (hash >>> 0).toString(16).padStart(8,'0');
+}
+function parseListaPresupuestos(raw){
+  try{
+    const data = JSON.parse(raw || '[]');
+    if(Array.isArray(data)) return data.filter(Boolean);
+    if(data && Array.isArray(data.lista)){
+      const lista = data.lista.filter(Boolean);
+      if(!data.hash || data.hash === storageHashPresupuestos(lista)) return lista;
+    }
+    return [];
+  }catch(e){ return []; }
+}
+function parseSnapshotPresupuestos(raw, origen){
+  try{
+    const data = JSON.parse(raw || 'null');
+    if(Array.isArray(data)) return {lista:data.filter(Boolean), revision:0, fecha:'', origen, valida:true};
+    if(!data || !Array.isArray(data.lista)) return null;
+    const lista = data.lista.filter(Boolean);
+    const valida = !data.hash || data.hash === storageHashPresupuestos(lista);
+    return valida ? {lista, revision:Number(data.revision)||0, fecha:String(data.fecha||''), origen, valida:true} : null;
+  }catch(e){ return null; }
+}
+function leerMetaPresupuestos(){
+  try{
+    const meta = JSON.parse(localStorage.getItem(STORAGE_LISTA_META) || '{}');
+    return meta && typeof meta === 'object' ? meta : {};
+  }catch(e){ return {}; }
+}
 function leerListaPresupuestos(){
-  try{ return JSON.parse(localStorage.getItem(STORAGE_LISTA) || '[]'); }catch(e){ return []; }
+  const meta = leerMetaPresupuestos();
+  const candidatos = [];
+  const principal = parseSnapshotPresupuestos(localStorage.getItem(STORAGE_LISTA), 'principal');
+  if(principal){
+    const hash = storageHashPresupuestos(principal.lista);
+    if(!meta.hash || meta.hash === hash){
+      principal.revision = Number(meta.revision)||principal.revision||0;
+      principal.fecha = String(meta.fecha||principal.fecha||'');
+      candidatos.push(principal);
+    }
+  }
+  [
+    [STORAGE_LISTA_SLOT_A,'snapshot-a'],
+    [STORAGE_LISTA_SLOT_B,'snapshot-b'],
+    [STORAGE_LISTA_BACKUP,'backup']
+  ].forEach(([key,origen])=>{
+    const snap = parseSnapshotPresupuestos(localStorage.getItem(key), origen);
+    if(snap) candidatos.push(snap);
+  });
+
+  // Siempre gana la escritura válida más reciente. Nunca la que tenga más elementos,
+  // porque eso podría resucitar presupuestos borrados o ignorar una lista nueva.
+  candidatos.sort((a,b)=>(b.revision-a.revision) || String(b.fecha).localeCompare(String(a.fecha)));
+  let elegida = candidatos[0] || null;
+
+  // Migración de versiones antiguas solo cuando no existe ningún snapshot v2 válido.
+  if(!elegida){
+    for(const key of STORAGE_LISTA_LEGACY){
+      const lista = parseListaPresupuestos(localStorage.getItem(key));
+      if(lista.length){ elegida={lista,revision:1,fecha:new Date().toISOString(),origen:'legacy'}; break; }
+    }
+  }
+  if(!elegida) return [];
+
+  const hash = storageHashPresupuestos(elegida.lista);
+  if(elegida.origen !== 'principal' || meta.hash !== hash){
+    try{
+      localStorage.setItem(STORAGE_LISTA, JSON.stringify(elegida.lista));
+      localStorage.setItem(STORAGE_LISTA_META, JSON.stringify({
+        version:2, revision:elegida.revision||1, fecha:elegida.fecha||new Date().toISOString(),
+        cantidad:elegida.lista.length, hash, recuperadoDe:elegida.origen
+      }));
+    }catch(e){}
+  }
+  return elegida.lista;
 }
 function escribirListaPresupuestos(lista){
-  localStorage.setItem(STORAGE_LISTA, JSON.stringify(lista));
+  const segura = Array.isArray(lista) ? lista.filter(Boolean).slice(0,100) : [];
+  try{
+    const metaAnterior = leerMetaPresupuestos();
+    const revision = Math.max(0, Number(metaAnterior.revision)||0) + 1;
+    const fecha = new Date().toISOString();
+    const hash = storageHashPresupuestos(segura);
+    const snapshot = {version:2, revision, fecha, cantidad:segura.length, hash, lista:segura};
+    const slot = revision % 2 ? STORAGE_LISTA_SLOT_A : STORAGE_LISTA_SLOT_B;
+
+    // Escritura transaccional sencilla: snapshot verificable -> principal -> metadatos.
+    localStorage.setItem(slot, JSON.stringify(snapshot));
+    localStorage.setItem(STORAGE_LISTA, JSON.stringify(segura));
+    localStorage.setItem(STORAGE_LISTA_META, JSON.stringify({version:2,revision,fecha,cantidad:segura.length,hash}));
+    localStorage.setItem(STORAGE_LISTA_BACKUP, JSON.stringify(snapshot));
+
+    // Verificación inmediata para detectar cuota, bloqueo o escritura incompleta.
+    const comprobacion = parseSnapshotPresupuestos(localStorage.getItem(slot), 'verificacion');
+    if(!comprobacion || comprobacion.revision !== revision || storageHashPresupuestos(comprobacion.lista) !== hash){
+      throw new Error('La verificación del almacenamiento no coincide');
+    }
+    return true;
+  }catch(e){
+    console.error('[Hiper Ajax] Error de almacenamiento:', e);
+    alert('No se pudo guardar de forma segura en Chrome. Exporta una copia desde Presupuestos antes de cerrar.');
+    return false;
+  }
+}
+function exportarPresupuestos(){
+  const lista = leerListaPresupuestos();
+  const payload = {
+    tipo:'hiperajax-presupuestos', version:1,
+    exportado:new Date().toISOString(), presupuestos:lista
+  };
+  const blob = new Blob([JSON.stringify(payload,null,2)],{type:'application/json'});
+  const a=document.createElement('a');
+  a.href=URL.createObjectURL(blob);
+  a.download=`hiperajax-presupuestos-${new Date().toISOString().slice(0,10)}.json`;
+  document.body.appendChild(a); a.click(); a.remove();
+  setTimeout(()=>URL.revokeObjectURL(a.href),1000);
+}
+function exportarPresupuestoIndividual(p){
+  if(!p) return;
+  const payload={tipo:'hiperajax-presupuesto',version:1,exportado:new Date().toISOString(),presupuesto:p};
+  const blob=new Blob([JSON.stringify(payload,null,2)],{type:'application/json'});
+  const a=document.createElement('a');
+  a.href=URL.createObjectURL(blob);
+  const base=String(p.identificador||p.cliente||p.numero||'presupuesto').replace(/[^a-z0-9_-]+/gi,'_');
+  a.download=`hiperajax-${base}.json`;
+  document.body.appendChild(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(a.href),1000);
+}
+
+function importarPresupuestosArchivo(file){
+  if(!file) return;
+  const reader=new FileReader();
+  reader.onload=()=>{
+    try{
+      const raw=JSON.parse(String(reader.result||'{}'));
+      const incoming=Array.isArray(raw) ? raw : (Array.isArray(raw.presupuestos) ? raw.presupuestos : (raw.presupuesto ? [raw.presupuesto] : null));
+      if(!Array.isArray(incoming)) throw new Error('Formato no válido');
+      const actuales=leerListaPresupuestos();
+      const map=new Map();
+      [...actuales,...incoming].forEach(p=>{
+        if(!p||typeof p!=='object') return;
+        const key=String(p.id || p.numero || `${p.cliente||''}-${p.fecha||''}-${Math.random()}`);
+        const prev=map.get(key);
+        if(!prev || String(p.guardado||p.fecha||'') >= String(prev.guardado||prev.fecha||'')) map.set(key,p);
+      });
+      escribirListaPresupuestos([...map.values()].sort((a,b)=>String(b.guardado||b.fecha||'').localeCompare(String(a.guardado||a.fecha||''))));
+      refrescarPresupuestosGuardados();
+      window.dispatchEvent(new CustomEvent('hiperajax:presupuestos-importados'));
+      alert(`${incoming.length} presupuestos importados o revisados.`);
+    }catch(e){ alert('No se pudo importar la copia. Selecciona un JSON exportado por Hiper Ajax.'); }
+  };
+  reader.readAsText(file);
 }
 function refrescarPresupuestosGuardados(){
   const sel = $('#presupuestosGuardados');
@@ -1118,7 +1441,12 @@ function borrarPresupuestoGuardado(){
   refrescarPresupuestosGuardados();
 }
 function nuevoPresupuesto(){
+  hxIdentificadorActual = '';
+  const selectorGuardados = $('#presupuestosGuardados');
+  if(selectorGuardados) selectorGuardados.value = '';
+  window.dispatchEvent(new CustomEvent('hiperajax:identificador-cambiado'));
   if($('#tienda')) $('#tienda').value = '';
+  if($('#comercial')) $('#comercial').value = '';
   ['cliente','telefono','email'].forEach(id=>{ const el=$('#'+id); if(el) el.value=''; });
   $('#numero').value = siguienteNumero(true);
   $('#fecha').value = new Date().toISOString().slice(0,10);
@@ -1132,6 +1460,8 @@ function nuevoPresupuesto(){
   $('#cantidad').value = '1';
   $('#resultados').classList.add('hidden');
   seleccionado = null;
+  seleccionadoRef = '';
+  seleccionadoPvp = null;
   lineas = [];
   render();
   refrescarPresupuestosGuardados();
@@ -1180,6 +1510,58 @@ function formatFechaES(valor){
   return valor;
 }
 
+function exportarExcel(){
+  const tieneProductos=Array.isArray(lineas)&&lineas.some(l=>l&&!l.separador&&l.tipo!=='separador');
+  if(!tieneProductos) return;
+  if(!window.XLSX){ alert('No se pudo cargar el generador Excel. Comprueba la conexión a internet.'); return; }
+  const wb=XLSX.utils.book_new();
+  const aoa=[];
+  aoa.push(['PRESUPUESTO AJAX']);
+  aoa.push([]);
+  aoa.push(['Tienda',$('#tienda')?.value||'']);
+  aoa.push(['Cliente',$('#cliente')?.value||'']);
+  aoa.push(['Teléfono',$('#telefono')?.value||'']);
+  aoa.push(['Email',$('#email')?.value||'']);
+  aoa.push(['Nº presupuesto',$('#numero')?.value||'']);
+  aoa.push(['Fecha',$('#fecha')?.value||'']);
+  aoa.push(['Estado',$('#estado')?.value||'']);
+  aoa.push(['Validez (días)',Number($('#validez')?.value||0)]);
+  aoa.push([]);
+  aoa.push(['Producto','Descripción','PVP','Cantidad','Descuento %','Total']);
+  const firstDataRow=aoa.length+1;
+  lineas.forEach(l=>{
+    if(l.separador) aoa.push([String(l.name||'SECCIÓN').toUpperCase(),'','','','','']);
+    else aoa.push([l.name||'',l.desc||'',Number(l.pvp)||0,Number(l.qty)||1,Number(l.dto)||0,null]);
+  });
+  const lastDataRow=aoa.length;
+  aoa.push([]);
+  const subtotalRow=aoa.length+1; aoa.push(['','','','','Subtotal bruto',null]);
+  const discountRow=aoa.length+1; aoa.push(['','','','','Descuento aplicado',null]);
+  const baseRow=aoa.length+1; aoa.push(['','','','','Base imponible',null]);
+  const ivaPct=Number($('#iva')?.value||0);
+  const ivaRow=aoa.length+1; aoa.push(['','','','',`IVA ${ivaPct}%`,null]);
+  const totalRow=aoa.length+1; aoa.push(['','','','','TOTAL',null]);
+  aoa.push([]);
+  aoa.push(['Observaciones',$('#observaciones')?.value||'']);
+  const ws=XLSX.utils.aoa_to_sheet(aoa);
+  for(let r=firstDataRow;r<=lastDataRow;r++){
+    const prod=ws[`A${r}`]?.v||'';
+    if(prod && ws[`C${r}`] && ws[`D${r}`] && ws[`E${r}`]) ws[`F${r}`]={t:'n',f:`C${r}*D${r}*(1-E${r}/100)`};
+  }
+  ws[`F${subtotalRow}`]={t:'n',f:`SUMPRODUCT(C${firstDataRow}:C${lastDataRow},D${firstDataRow}:D${lastDataRow})`};
+  ws[`F${baseRow}`]={t:'n',f:`SUM(F${firstDataRow}:F${lastDataRow})`};
+  ws[`F${discountRow}`]={t:'n',f:`F${subtotalRow}-F${baseRow}`};
+  ws[`F${ivaRow}`]={t:'n',f:`F${baseRow}*${ivaPct}/100`};
+  ws[`F${totalRow}`]={t:'n',f:`F${baseRow}+F${ivaRow}`};
+  ['C','F'].forEach(col=>{ for(let r=firstDataRow;r<=totalRow;r++) if(ws[`${col}${r}`]) ws[`${col}${r}`].z='#,##0.00 [$€-es-ES]'; });
+  for(let r=firstDataRow;r<=lastDataRow;r++) if(ws[`E${r}`]) ws[`E${r}`].z='0.00';
+  ws['!cols']=[{wch:25},{wch:55},{wch:13},{wch:11},{wch:14},{wch:16}];
+  ws['!freeze']={xSplit:0,ySplit:12};
+  XLSX.utils.book_append_sheet(wb,ws,'Presupuesto');
+  const safe=String($('#numero')?.value||'hiper_antena').replace(/[^a-z0-9_-]/gi,'_');
+  XLSX.writeFile(wb,`presupuesto_${safe}.xlsx`);
+}
+
 async function pdf(){
   // Si no hay productos reales, no abre ni genera ningún PDF.
   const tieneProductos = Array.isArray(lineas) && lineas.some(l => l && !l.separador && l.tipo !== 'separador');
@@ -1195,33 +1577,30 @@ async function pdf(){
   const dark = [18,24,30];
   const light = [245,248,246];
 
-  // Cabecera PDF PRO v4: compacta y alineada para dejar más espacio a productos
+  // Cabecera PDF compacta: logos y título centrados verticalmente.
   doc.setFillColor(255,255,255);
-  doc.rect(0,0,pageW,30,'F');
+  doc.rect(0,0,pageW,27,'F');
 
   const logo = await imagenComoDataURL('logo_ajax.jpg');
-  if(logo){
-    try{ doc.addImage(logo, 'JPEG', 14, 7, 27, 13); }catch(e){}
-  }
-  const titleX = logo ? 47 : 14;
+  const logoHiper = await imagenComoDataURL('logo_hiper_antena.png');
+  if(logo){ try{ doc.addImage(logo, 'JPEG', 14, 6.2, 26, 12.4); }catch(e){} }
+  if(logoHiper){ try{ doc.addImage(logoHiper, 'PNG', pageW-48, 5.4, 34, 15.6); }catch(e){} }
   doc.setTextColor(13,77,49);
-  doc.setFont('helvetica','bold'); doc.setFontSize(16);
-  doc.text('Presupuesto de Ajax', titleX, 13);
-  doc.setFont('helvetica','normal'); doc.setFontSize(8.5);
-  doc.setTextColor(85,96,90);
-  doc.text('Hiper Antena - Tienda para los profesionales', titleX, 20);
+  doc.setFont('helvetica','normal'); doc.setFontSize(15.2);
+  doc.text('Presupuesto Ajax', pageW/2, 14.4, {align:'center'});
   doc.setDrawColor(13,77,49);
   doc.setLineWidth(0.22);
-  doc.line(14,26,pageW-14,26);
+  doc.line(14,24,pageW-14,24);
 
   const fechaPdf = formatFechaES($('#fecha').value || '') || '-';
-  const estadoPdf = $('#estado').value || '-';
+  const comercialPdf = $('#comercial') ? ($('#comercial').value || 'Sin asignar') : 'Sin asignar';
   const validezPdf = `${($('#validez').value || '30')} días`;
   const tiendaPdf = $('#tienda') ? ($('#tienda').value || '-') : '-';
   const numeroPdf = $('#numero').value || '-';
   const clientePdf = $('#cliente').value || '-';
   const telefonoPdf = $('#telefono').value || '-';
   const emailPdf = $('#email').value || '-';
+  const identificadorPdf = String(window.HX_GET_IDENTIFICADOR_ACTUAL?.() || '').trim();
 
   const fitPdf = (txt, max) => {
     txt = String(txt || '-');
@@ -1229,15 +1608,15 @@ async function pdf(){
     return txt;
   };
 
-  let y = 31;
+  let y = 28;
   // Datos compactos en dos líneas, mismo ancho visual que la tabla
   doc.setFillColor(255,255,255);
   doc.setDrawColor(224,232,228);
-  doc.roundedRect(14,y,pageW-28,17.5,2.2,2.2,'S');
+  doc.roundedRect(14,y,pageW-28,identificadorPdf?21.6:16.2,2.2,2.2,'S');
 
   doc.setFont('helvetica','bold'); doc.setFontSize(7.2); doc.setTextColor(13,77,49);
   doc.text('Tienda:',18,y+5.5); doc.text('Cliente:',63,y+5.5); doc.text('Tel.:',122,y+5.5); doc.text('Email:',150,y+5.5);
-  doc.text('Nº:',18,y+12.8); doc.text('Fecha:',62,y+12.8); doc.text('Estado:',103,y+12.8); doc.text('Validez:',148,y+12.8);
+  doc.text('Nº:',18,y+12.8); doc.text('Fecha:',62,y+12.8); doc.text('Comercial:',103,y+12.8); doc.text('Validez:',158,y+12.8);
 
   doc.setFont('helvetica','normal'); doc.setFontSize(7.8); doc.setTextColor(25,31,36);
   doc.text(fitPdf(tiendaPdf,34),32,y+5.5);
@@ -1246,14 +1625,20 @@ async function pdf(){
   doc.text(fitPdf(emailPdf,36),161,y+5.5);
   doc.text(fitPdf(numeroPdf,35),25,y+12.8);
   doc.text(fitPdf(fechaPdf,28),75,y+12.8);
-  doc.text(fitPdf(estadoPdf,32),117,y+12.8);
-  doc.text(fitPdf(validezPdf,28),164,y+12.8);
+  doc.text(fitPdf(comercialPdf,34),122,y+12.8);
+  doc.text(fitPdf(validezPdf,25),176,y+12.8);
+  if(identificadorPdf){
+    doc.setFont('helvetica','bold'); doc.setFontSize(7.2); doc.setTextColor(13,77,49);
+    doc.text('Identificador:',18,y+18.1);
+    doc.setFont('helvetica','normal'); doc.setFontSize(7.8); doc.setTextColor(25,31,36);
+    doc.text(fitPdf(identificadorPdf,pageW-62),43,y+18.1);
+  }
 
-  y += 22;
+  y += identificadorPdf ? 24.9 : 19.5;
 
   const rows = lineas.map(l=>{
     if(l.separador){
-      return [{content:String(l.name || 'SECCIÓN').toUpperCase(), colSpan:6, styles:{fillColor:[229,244,236], textColor:green, fontStyle:'bold', halign:'center', fontSize:8.8, cellPadding:2.6}}];
+      return [{content:String(l.name || 'SECCIÓN').toUpperCase(), colSpan:6, styles:{fillColor:[229,244,236], textColor:green, fontStyle:'bold', halign:'center', fontSize:8.6, cellPadding:2.1}}];
     }
     const bruto = (Number(l.pvp)||0)*(Number(l.qty)||0);
     const dto = Number(l.dto)||0;
@@ -1268,7 +1653,7 @@ async function pdf(){
     body: rows.length ? rows : [['Sin productos añadidos','','','','','']],
     margin:{left:14,right:14},
     tableWidth:'wrap',
-    styles:{font:'helvetica',fontSize:7.8,cellPadding:2.1,lineColor:[225,231,228],lineWidth:0.1,textColor:[33,38,43],overflow:'linebreak'},
+    styles:{font:'helvetica',fontSize:7.6,cellPadding:1.75,lineColor:[225,231,228],lineWidth:0.1,textColor:[33,38,43],overflow:'linebreak'},
     headStyles:{fillColor:green,textColor:[255,255,255],fontStyle:'bold',halign:'center'},
     alternateRowStyles:{fillColor:[248,250,249]},
     columnStyles:{0:{cellWidth:48},1:{cellWidth:58},2:{halign:'right',cellWidth:22},3:{halign:'center',cellWidth:12},4:{halign:'right',cellWidth:16},5:{halign:'right',cellWidth:26}},
@@ -1282,7 +1667,7 @@ async function pdf(){
     }
   });
 
-  y = doc.lastAutoTable.finalY + 8;
+  y = doc.lastAutoTable.finalY + 6;
   if(($('#observaciones').value||'').trim()){
     if(y > 220){ doc.addPage(); y = 24; }
     doc.setTextColor(45,55,60); doc.setFont('helvetica','bold'); doc.setFontSize(9);
@@ -1299,7 +1684,12 @@ async function pdf(){
   doc.setFillColor(246,248,247);
   doc.setDrawColor(220,228,224);
   doc.roundedRect(totalBoxX,y-3,totalBoxW,31,3,3,'FD');
-  const resumen = [
+  const hayDescuentoReal = Number(c.dtoLineas||0) > 0.005;
+  const resumen = hayDescuentoReal ? [
+    ['Descuento aplicado', `-${fmt.format(c.dtoLineas)}`],
+    ['Base imponible', fmt.format(c.base)],
+    [`IVA (${c.ivaPct}%)`, fmt.format(c.iva)]
+  ] : [
     ['Subtotal', fmt.format(c.subtotalBruto)],
     ['Base imponible', fmt.format(c.base)],
     [`IVA (${c.ivaPct}%)`, fmt.format(c.iva)]
@@ -1374,6 +1764,8 @@ function abrirFamiliasRapidas(){
   document.body.classList.add('modal-open');
 }
 function cerrarFamiliasRapidas(){
+  hxResetModalQty('explorer');
+  hxResetModalSession('explorer');
   const modal = $('#familiasModal');
   if(!modal) return;
   modal.classList.add('hidden');
@@ -1406,7 +1798,7 @@ document.addEventListener('DOMContentLoaded',()=>{
   $('#familiasBackdrop')?.addEventListener('click',cerrarFamiliasRapidas);
   document.addEventListener('keydown',e=>{ if(e.key==='Escape') cerrarCatalogo(); });
   $('#add').addEventListener('click',addLinea); $('#btnManual').addEventListener('click',addLineaManual); $('#btnSeparador')?.addEventListener('click',addSeparador);
-  $('#btnPDF').addEventListener('click',pdf); $('#btnSave').addEventListener('click',guardar); $('#btnDuplicate').addEventListener('click',duplicarPresupuesto); $('#btnLoadSaved').addEventListener('click',cargarPresupuestoGuardado); $('#btnDeleteSaved').addEventListener('click',borrarPresupuestoGuardado); $('#btnClear').addEventListener('click',limpiar);
+  $('#btnPDF').addEventListener('click',pdf); $('#btnExcel')?.addEventListener('click',exportarExcel); $('#btnSave').addEventListener('click',guardar); $('#btnDuplicate').addEventListener('click',duplicarPresupuesto); $('#btnLoadSaved').addEventListener('click',cargarPresupuestoGuardado); $('#btnDeleteSaved').addEventListener('click',borrarPresupuestoGuardado); $('#btnClear').addEventListener('click',limpiar);
   $('#dtoGeneral').addEventListener('input',aplicarDescuentoGeneralALineas); $('#iva').addEventListener('input',render);
 });
 
@@ -2425,7 +2817,26 @@ buscar = function(term){ const q=normaliza(term).trim(); if(!q) return []; retur
 buscarCatalogo = function(term=''){ const q=String(term||'').trim(); if(!q) return productos.map((p,i)=>({p,i,score:1})).sort((a,b)=>a.p.name.localeCompare(b.p.name,'es')); return buscar(q); };
 let recientesSesion182 = [];
 registrarReciente = function(nombre){ const name=String(nombre||'').trim(); if(!name) return; const idx=recientesSesion182.findIndex(x=>x.name===name); if(idx>=0) recientesSesion182[idx].count+=1; else recientesSesion182.unshift({name,count:1}); recientesSesion182=recientesSesion182.sort((a,b)=>b.count-a.count).slice(0,12); renderRecientes(); };
-renderRecientes = function(){ const wrap=document.querySelector('#recentes'); if(!wrap) return; if(!recientesSesion182.length){wrap.innerHTML='';return;} wrap.innerHTML='<span class="recent-label">Atajos:</span>'+recientesSesion182.map(x=>`<button type="button" class="recent-chip" data-name="${escapeHtml(x.name)}">${escapeHtml(x.name)}${x.count>1?' ×'+x.count:''}</button>`).join(''); wrap.querySelectorAll('.recent-chip').forEach(btn=>btn.addEventListener('click',()=>{ const p=findProductoByQuery(btn.dataset.name); if(p && addProductoObj(p,Number(document.querySelector('#cantidad')?.value)||1)) render(); })); };
+renderRecientes = function(){
+  const wrap=document.querySelector('#recentes');
+  if(!wrap) return;
+  if(!recientesSesion182.length){ wrap.innerHTML=''; return; }
+  wrap.innerHTML='<span class="recent-label">Atajos:</span>'+recientesSesion182.map(x=>`<button type="button" class="recent-chip" data-name="${escapeHtml(x.name)}">${escapeHtml(x.name)}${x.count>1?' ×'+x.count:''}</button>`).join('');
+  wrap.querySelectorAll('.recent-chip').forEach(btn=>btn.addEventListener('click',()=>{
+    const p=findProductoByQuery(btn.dataset.name);
+    const qty=Number(document.querySelector('#cantidad')?.value)||1;
+    if(p && hxAddProductoSeguro(p.name,qty,null,p.pvp)){
+      render();
+      hxToastGlobal(`${p.name} añadido`,'ok');
+      btn.classList.add('added-ok');
+      const original=btn.textContent;
+      btn.textContent='✓ Añadido';
+      setTimeout(()=>{ btn.textContent=original; btn.classList.remove('added-ok'); },700);
+    }else{
+      hxToastGlobal('No se pudo añadir el producto.','error');
+    }
+  }));
+};
 const guardar_PRE182 = guardar;
 guardar = function(){ if(!Array.isArray(lineas)||lineas.length===0){ alert('Añade al menos un producto antes de guardar el presupuesto.'); return; } return guardar_PRE182(); };
 const pintarResultados_PRE182 = pintarResultados;
@@ -3539,7 +3950,7 @@ function familyDesc192(p){
     else if(n.includes('curtainoutdoor')){ official='Curtain Outdoor'; desc='Detector exterior Ajax tipo cortina para protección perimetral'; sub='Cortina exterior'; }
     return {icon:n.includes('cam')?'📷':'🛡️', official, family:`Intrusión Ajax · Detectores tipo cortina · ${sub}`, desc:withColor192(desc,n), tags:['curtain','cortina','tipo cortina','detector cortina','perimetral','perímetro','pir','movimiento','exterior','interior',official.toLowerCase()]};
   }
-  if(n.includes('doorprotect') && !n.includes('doorbell')){
+  if(n.includes('doorprotect') && !n.includes('outdoorprotect') && !n.includes('doorbell')){
     const plus=n.includes('plus');
     return {icon:'🚪', official:plus?'DoorProtect Plus':'DoorProtect', family:'Intrusión Ajax · Contactos magnéticos', desc:withColor192(plus?'Detector magnético Ajax de apertura con impacto e inclinación para puertas y ventanas':'Detector magnético Ajax de apertura para puertas y ventanas',n), tags:['doorprotect','puerta','ventana','apertura','contacto magnético','magnetico','magnético','iman','imán']};
   }
@@ -3806,15 +4217,11 @@ resolverDesdeInput = function(){
   const input = $('#buscador');
   const term = input ? input.value : '';
   seleccionado = null;
+  seleccionadoRef = '';
+  seleccionadoPvp = null;
   const sel = $('#producto'); if(sel) sel.value = '';
-  const panelResultadosAhora = $('#resultados');
-  if(panelResultadosAhora) panelResultadosAhora.scrollTop = 0;
   searchTimer194 = setTimeout(()=>{
     pintarResultados(term);
-    // Cada consulta nueva empieza arriba en el panel de resultados.
-    // No mueve la página ni altera la navegación con flechas.
-    const panelResultados = $('#resultados');
-    if(panelResultados) panelResultados.scrollTop = 0;
     const best = buscar(term)[0];
     if(best){
       const d = descripcionProducto(best.p);
@@ -4242,12 +4649,14 @@ pintarResultados = function(term){
     const d = descripcionProducto(x.p);
     const extra = resumenProducto199(x.p);
     const meta = extra ? `${extra} · ${d.desc}` : d.desc;
-    return `<div class="result-item result-item-pro" data-index="${x.i}" data-k="${k}"><div><div class="result-name">${escapeHtml(d.icon)} ${escapeHtml(x.p.name)}</div><div class="result-meta">${escapeHtml(meta)}</div></div><div class="result-price">${fmt.format(x.p.pvp)}</div></div>`;
+    return `<div class="result-item result-item-pro" data-index="${x.i}" data-ref="${escapeHtml(x.p.name)}" data-pvp="${Number(x.p.pvp)}" data-k="${k}"><div><div class="result-name">${escapeHtml(d.icon)} ${escapeHtml(x.p.name)}</div><div class="result-meta">${escapeHtml(meta)}</div></div><div class="result-price">${fmt.format(x.p.pvp)}</div></div>`;
   }).join('');
+  // Cada consulta nueva empieza arriba; no mueve el scroll de la página.
+  panel.scrollTop = 0;
   panel.querySelectorAll('.result-item').forEach(el=>{
     el.addEventListener('mouseenter',()=>{ activeIndex = Number(el.dataset.k); marcarActivo(); });
-    el.addEventListener('click',()=> seleccionarProducto(Number(el.dataset.index), true));
-    el.addEventListener('dblclick',()=>{ seleccionarProducto(Number(el.dataset.index), true); addLinea(); });
+    el.addEventListener('click',()=> seleccionarProductoSeguro(el.dataset.ref, el.dataset.pvp, true));
+    el.addEventListener('dblclick',()=>{ seleccionarProductoSeguro(el.dataset.ref, el.dataset.pvp, true); addLinea(); });
   });
   panel.classList.remove('hidden');
 };
@@ -4566,7 +4975,7 @@ document.addEventListener('DOMContentLoaded',()=>{
       return r;
     };
   }
-  document.addEventListener('DOMContentLoaded',()=>{ fixCatalogButtons207(); setTimeout(orderCatalogFilters207,50); document.querySelectorAll('.creator').forEach(el=>{ el.textContent='· Creado por David Corregidor · 3.0.0'; }); });
+  document.addEventListener('DOMContentLoaded',()=>{ fixCatalogButtons207(); setTimeout(orderCatalogFilters207,50); document.querySelectorAll('.creator').forEach(el=>{ el.textContent='· Creado por David Corregidor · 4.0.8'; }); });
 })();
 
 /* =====================================================
@@ -4820,7 +5229,7 @@ document.addEventListener('DOMContentLoaded',()=>{
    - Soportes/JunctionBox en Accesorios.
    ===================================================== */
 (function(){
-  const VERSION_EXPLORE_211 = '3.0.0';
+  const VERSION_EXPLORE_211 = '4.0.8';
   function n211(s){ return normaliza(String(s||'')).replace(/[^a-z0-9]+/g,''); }
   function raw211(p){ return n211(p && p.name); }
   function has211(name, parts){ return parts.some(k=>name.includes(k)); }
@@ -4898,13 +5307,26 @@ document.addEventListener('DOMContentLoaded',()=>{
     const exactos = arr211(rule.exactos || rule.referencias).map(n211).filter(Boolean);
     return function(p){
       const rawName = String((p && p.name) || '');
-      const s = n211(rawName);
+      const rawBrand = String((p && p.brand) || '');
+      let rawDesc = '';
+      try{
+        const d = (typeof descripcionProducto === 'function') ? descripcionProducto(p) : null;
+        rawDesc = d && d.desc ? String(d.desc) : '';
+      }catch(e){}
+      // El Explorer clasifica por referencia + segunda columna del CSV + descripción generada.
+      // Así categorías genéricas como Switches o Routers siguen funcionando con productos futuros.
+      const rawSearch = [rawName, rawBrand, rawDesc].filter(Boolean).join(' ');
+      const s = n211(rawSearch);
       // OJO: aquí cada bloque solo cuenta si existe en la regla.
       // Antes, si una subcategoría solo tenía regex, incluye vacío daba TRUE y entraba todo.
+      const ref = n211(rawName);
       const okIncluye = incluye.length ? incluye.some(k=>s.includes(k)) : false;
-      const okEmpieza = empieza.length ? empieza.some(k=>s.startsWith(k)) : false;
+      // Las reglas estructurales se validan contra la referencia, no contra
+      // la descripción. Evita que una categoría capture otra familia porque
+      // su texto comercial menciona Hub, Motion, Sirena, etc.
+      const okEmpieza = empieza.length ? empieza.some(k=>ref.startsWith(k)) : false;
       const okRegex = regex.length ? regex.some(r=>r.test(rawName)) : false;
-      const okExactos = exactos.length ? exactos.includes(s) : false;
+      const okExactos = exactos.length ? exactos.includes(ref) : false;
       const hayCondiciones = incluye.length || empieza.length || regex.length || exactos.length;
       // Fácil de editar: incluye / empieza / regex / exactos funcionan como OR.
       // Ejemplo: incluye:['storage'] + regex:['^HD\\d+TB'] mete Storage O discos HD1TB/HD2TB.
@@ -4934,6 +5356,8 @@ document.addEventListener('DOMContentLoaded',()=>{
   let expCat = null;
   let expSub = null;
   let expQuery = '';
+  let expCatsScroll211 = 0;
+  let expSubsScroll211 = 0;
   let expMobileStep = 'cats';
 
   function currentCat(){ return expCat ? (EXPLORE_211.find(c=>c.id===expCat) || null) : null; }
@@ -5048,14 +5472,15 @@ document.addEventListener('DOMContentLoaded',()=>{
           .map(x=>({p:productos[x._hxaIndex],i:x._hxaIndex,score:x._score,reasons:x._reasons||[]}))
           .filter(x=>x.p);
         if(EXPLORE_SEARCH_CACHE_300.size>120) EXPLORE_SEARCH_CACHE_300.clear();
-        EXPLORE_SEARCH_CACHE_300.set(cacheKey,ranked);
-        return ranked;
+        const ordenados=sortFamilyResults300(ranked,q);
+        EXPLORE_SEARCH_CACHE_300.set(cacheKey,ordenados);
+        return ordenados;
       }
     }catch(e){ console.warn('Knowledge Engine Explorer fallback',e); }
 
     const rawTokens=q.split(/\s+/).filter(Boolean);
     const expanded=expand300(q);
-    return productos.map((p,i)=>{
+    const resultados=productos.map((p,i)=>{
       const name=n211((p&&p.name)||'');
       const text=searchText300(p);
       const words=[...new Set(text.split(/[^a-z0-9]+/).filter(Boolean))];
@@ -5084,22 +5509,87 @@ document.addEventListener('DOMContentLoaded',()=>{
       if(accessory && !accessoryAsked) score-=7000;
       return {p,i,score};
     }).filter(x=>x.score>0).sort((a,b)=>b.score-a.score||a.p.name.localeCompare(b.p.name,'es')).slice(0,300);
+    return sortFamilyResults300(resultados,q);
   }
 
+  // Agrupación automática de variantes del Explorer.
+  // No necesita reglas por familia: elimina únicamente el token de color W/B
+  // de la referencia y mantiene juntas todas las variantes del mismo producto.
+  function exploreFamilyKey300(product){
+    return String((product && product.name) || '')
+      .toUpperCase()
+      .replace(/-(?:W|B)(?=-|$)/g, '')
+      .replace(/--+/g, '-')
+      .replace(/-$/,'')
+      .trim();
+  }
+  function exploreColorOrder300(product){
+    const ref=String((product && product.name) || '').toUpperCase();
+    if(/-W(?:-|$)/.test(ref)) return 0;
+    if(/-B(?:-|$)/.test(ref)) return 1;
+    return 2;
+  }
+  function sortFamilyResults300(items,query=''){
+    const lista=Array.isArray(items)?items.slice():[];
+    const grupos=new Map();
+    lista.forEach((item,pos)=>{
+      const key=exploreFamilyKey300(item.p);
+      if(!grupos.has(key)) grupos.set(key,{key,items:[],bestScore:-Infinity,first:pos});
+      const g=grupos.get(key);
+      g.items.push({...item,__hxPos:pos});
+      g.bestScore=Math.max(g.bestScore,Number(item.score)||0);
+      g.first=Math.min(g.first,pos);
+    });
+    const buscaNegro=/\b(?:negro|black|\-b)\b/i.test(String(query||''));
+    const buscaBlanco=/\b(?:blanco|white|\-w)\b/i.test(String(query||''));
+    return [...grupos.values()]
+      .sort((a,b)=>(b.bestScore-a.bestScore)||(a.first-b.first)||a.key.localeCompare(b.key,'es',{numeric:true,sensitivity:'base'}))
+      .flatMap(g=>g.items.sort((a,b)=>{
+        let ca=exploreColorOrder300(a.p), cb=exploreColorOrder300(b.p);
+        if(buscaNegro){ ca=ca===1?0:ca===0?1:ca; cb=cb===1?0:cb===0?1:cb; }
+        else if(buscaBlanco){ ca=ca===0?0:ca===1?1:ca; cb=cb===0?0:cb===1?1:cb; }
+        return ca-cb || (Number(b.score)||0)-(Number(a.score)||0) || String(a.p.name||'').localeCompare(String(b.p.name||''),'es',{numeric:true,sensitivity:'base'});
+      }).map(({__hxPos,...item})=>item));
+  }
   function filteredProducts(){
     const q=String(expQuery||'').trim();
     if(q) return smartExplore300(q);
     const sub=currentSub();
     if(!sub) return [];
-    return productos.map((p,i)=>({p,i})).filter(x=>sub.pred(x.p)).sort((a,b)=>a.p.name.localeCompare(b.p.name,'es'));
+
+    const lista=productos.map((p,i)=>({p,i})).filter(x=>sub.pred(x.p));
+    // El precio mínimo de cada familia se usa para ordenar familias completas,
+    // nunca productos sueltos. Así W y B permanecen contiguos automáticamente.
+    const familyMinPrice=new Map();
+    lista.forEach(x=>{
+      const key=exploreFamilyKey300(x.p);
+      const price=Number(x.p.pvp)||0;
+      if(!familyMinPrice.has(key) || price<familyMinPrice.get(key)) familyMinPrice.set(key,price);
+    });
+
+    return lista.sort((a,b)=>{
+      const familyA=exploreFamilyKey300(a.p);
+      const familyB=exploreFamilyKey300(b.p);
+      if(familyA!==familyB){
+        const byFamilyPrice=(familyMinPrice.get(familyA)||0)-(familyMinPrice.get(familyB)||0);
+        if(byFamilyPrice) return byFamilyPrice;
+        return familyA.localeCompare(familyB,'es',{numeric:true,sensitivity:'base'});
+      }
+      const byColor=exploreColorOrder300(a.p)-exploreColorOrder300(b.p);
+      if(byColor) return byColor;
+      const byPrice=(Number(a.p.pvp)||0)-(Number(b.p.pvp)||0);
+      if(byPrice) return byPrice;
+      return String(a.p.name||'').localeCompare(String(b.p.name||''),'es',{numeric:true,sensitivity:'base'});
+    });
   }
 
   function productRow(x){
     const d = descripcionProducto(x.p);
-    return `<div class="explore-product" data-index="${x.i}">
+    return `<div class="explore-product" data-index="${x.i}" data-ref="${escapeHtml(x.p.name)}" data-pvp="${Number(x.p.pvp)}">
       <div class="explore-product-main"><strong>${escapeHtml(d.icon)} ${escapeHtml(x.p.name)}</strong><span>${escapeHtml(d.desc)}</span></div>
       <b>${fmt.format(x.p.pvp)}</b>
-      <button type="button" class="catalog-add explore-add" data-index="${x.i}">Añadir</button>
+      ${hxQtyControlHtml('explorer', x.i)}
+      <button type="button" class="catalog-add explore-add" data-index="${x.i}" data-ref="${escapeHtml(x.p.name)}" data-pvp="${Number(x.p.pvp)}">Añadir</button>
     </div>`;
   }
 
@@ -5123,8 +5613,9 @@ document.addEventListener('DOMContentLoaded',()=>{
       function addExplorePersistent(idx, trigger){
         const scrollHost = root.querySelector('.explore-products, .explore-mobile-panel');
         const scrollTop = scrollHost ? scrollHost.scrollTop : 0;
-        seleccionarProducto(Number(idx), true);
-        addLinea();
+        const qty = hxModalQtyGet('explorer', idx);
+        const productEl = trigger?.closest('.explore-product') || root.querySelector(`.explore-product[data-index="${Number(idx)}"]`);
+        hxAddProductoModal('explorer', Number(idx), qty, productEl?.dataset.ref, productEl?.dataset.pvp);
         if(trigger){
           const original = trigger.textContent;
           trigger.textContent = '✓ Añadido';
@@ -5137,9 +5628,31 @@ document.addEventListener('DOMContentLoaded',()=>{
         const input = document.getElementById('exploreFilter210');
         if(input){ setTimeout(()=>{ input.focus(); input.select(); }, 0); }
       }
-      root.querySelectorAll('.explore-product').forEach(el=>el.addEventListener('dblclick',()=>{ addExplorePersistent(Number(el.dataset.index), null); }));
+      hxBindQtyControls(root, 'explorer');
+      const touchUi = !!(window.matchMedia && window.matchMedia('(hover: none), (pointer: coarse)').matches);
+      if(!touchUi){
+        root.querySelectorAll('.explore-product').forEach(el=>el.addEventListener('dblclick',()=>{ addExplorePersistent(Number(el.dataset.index), null); }));
+        root.querySelectorAll('.explore-product').forEach(el=>el.addEventListener('click',()=>{ seleccionarProductoSeguro(el.dataset.ref, el.dataset.pvp, true); }));
+      }
       root.querySelectorAll('.explore-add').forEach(btn=>btn.addEventListener('click',e=>{ e.stopPropagation(); addExplorePersistent(Number(btn.dataset.index), btn); }));
-      root.querySelectorAll('.explore-product').forEach(el=>el.addEventListener('click',()=>{ seleccionarProducto(Number(el.dataset.index), true); }));
+      if(touchUi){
+        root.querySelectorAll('button,.explore-product').forEach(el=>{
+          const clearTouchState=()=>{
+            try{ el.blur(); }catch(_){}
+            try{
+              const active=document.activeElement;
+              if(active && root.contains(active) && typeof active.blur==='function') active.blur();
+            }catch(_){}
+          };
+          el.addEventListener('touchstart',clearTouchState,{passive:true});
+          el.addEventListener('touchend',()=>{
+            clearTouchState();
+            requestAnimationFrame(clearTouchState);
+            setTimeout(clearTouchState,40);
+          },{passive:true});
+          el.addEventListener('pointerup',()=>setTimeout(clearTouchState,0),{passive:true});
+        });
+      }
     }
 
     if(mobile){
@@ -5237,6 +5750,11 @@ document.addEventListener('DOMContentLoaded',()=>{
           <div class="explore-products">${initialHelp ? '<div class="catalog-empty">Selecciona una categoría o escribe en el buscador para encontrar cualquier producto.</div>' : (list.map(productRow).join('') || '<div class="catalog-empty">No hay resultados.</div>')}</div>
         </div>
       </div>`;
+    const catsPanel211 = grid.querySelector('.explore-cats');
+    const subsPanel211 = grid.querySelector('.explore-subs');
+    if(catsPanel211) catsPanel211.scrollTop = expCatsScroll211;
+    if(subsPanel211) subsPanel211.scrollTop = expSubsScroll211;
+
     const input = document.getElementById('exploreFilter210');
     if(input){
       let timer; input.addEventListener('input',e=>{
@@ -5255,8 +5773,31 @@ document.addEventListener('DOMContentLoaded',()=>{
         },360);
       });
     }
-    grid.querySelectorAll('.explore-cat').forEach(btn=>btn.addEventListener('click',()=>{ expCat=btn.dataset.cat; const cc=currentCat(); expSub=firstValidSub(cc); expQuery=''; renderExplore(); }));
-    grid.querySelectorAll('.explore-sub').forEach(btn=>btn.addEventListener('click',()=>{ expSub=btn.dataset.sub; expQuery=''; renderExplore(); }));
+    grid.querySelectorAll('.explore-cat').forEach(btn=>btn.addEventListener('click',()=>{
+      const catsHost=grid.querySelector('.explore-cats');
+      expCatsScroll211=catsHost ? catsHost.scrollTop : expCatsScroll211;
+      expCat=btn.dataset.cat;
+      const cc=currentCat();
+      expSub=firstValidSub(cc);
+      expQuery='';
+      expSubsScroll211=0;
+      renderExplore();
+    }));
+    grid.querySelectorAll('.explore-sub').forEach(btn=>btn.addEventListener('click',()=>{
+      const catsHost=grid.querySelector('.explore-cats');
+      const subsHost=grid.querySelector('.explore-subs');
+      expCatsScroll211=catsHost ? catsHost.scrollTop : expCatsScroll211;
+      expSubsScroll211=subsHost ? subsHost.scrollTop : expSubsScroll211;
+      expSub=btn.dataset.sub;
+      expQuery='';
+      renderExplore();
+      requestAnimationFrame(()=>{
+        const restored=grid.querySelector('.explore-subs');
+        if(restored) restored.scrollTop=expSubsScroll211;
+        const products=grid.querySelector('.explore-products');
+        if(products) products.scrollTop=0;
+      });
+    }));
     bindProductEvents(grid);
   }
 
@@ -5269,7 +5810,10 @@ document.addEventListener('DOMContentLoaded',()=>{
     if(p) p.textContent = 'Navega por categoría y subfamilia para encontrar productos sin escribir referencias.';
     expCat = null;
     expSub = null;
-    expQuery=''; expMobileStep='cats';
+    expQuery='';
+    expCatsScroll211=0;
+    expSubsScroll211=0;
+    expMobileStep='cats';
     renderExplore();
     modal.classList.remove('hidden');
     modal.setAttribute('aria-hidden','false');
@@ -5308,9 +5852,16 @@ function descripcionPdfCorta(linea){
   try{
     const l = linea || {};
     const refOriginal = String(l.name || '').trim();
-    const descOriginal = String(l.desc || '').trim();
-    if(!refOriginal && descOriginal) return descOriginal.slice(0, 54);
+    const brandOriginal = String(l.brand || '').trim();
+    const brandEsAjax = normaliza(brandOriginal) === 'ajax';
+    // En el CSV, la columna brand contiene la descripción de los artículos no AJAX.
+    // El PDF debe conservarla en lugar de fabricar una descripción desde la referencia.
+    const descOriginal = String(l.desc || (!brandEsAjax ? brandOriginal : '') || '').trim();
+    if(!refOriginal && descOriginal) return descOriginal.slice(0, 58);
     if(l.manual){ return (descOriginal || refOriginal || 'Línea manual').slice(0, 58); }
+    if(descOriginal && !brandEsAjax){
+      return descOriginal.length > 58 ? descOriginal.slice(0,55).trim() + '…' : descOriginal;
+    }
 
     const ref = refOriginal.toUpperCase();
 
@@ -5394,7 +5945,7 @@ function descripcionPdfCorta(linea){
    3.0.0 - versión única
    ===================================================== */
 (function(){
-  const APP_VERSION = '3.0.0';
+  const APP_VERSION = '4.0.8';
   function setAppVersion(){
     document.querySelectorAll('.creator').forEach(el=>{
       el.textContent = `· Creado por David Corregidor · ${APP_VERSION}`;
@@ -5414,159 +5965,1660 @@ function descripcionPdfCorta(linea){
 })();
 
 /* =====================================================
-   v3.0.0 - Gestor de presupuestos: lista + vista previa
-   Módulo aislado. No modifica Explorer, PDF ni cálculos.
+   v4.1.5 - Recuperación robusta y gestor móvil espacioso
+   - MongoDB como fuente mediante leerListaPresupuestos().
+   - Carpetas Recientes / Todos / Tiendas / Comerciales.
+   - Filtros combinables y tarjetas adaptativas.
    ===================================================== */
 (function(){
-  let pmSelectedId = '';
-  const byId = id => document.getElementById(id);
-  const pmModal = () => byId('pmModal');
-
-  function pmRows(p){ return Array.isArray(p?.lineas) ? p.lineas.filter(l=>l && !l.separador && l.tipo!=='separador') : []; }
-  function pmQty(l){ return Math.max(0, Number(l?.qty ?? l?.cantidad ?? l?.cant) || 0); }
-  function pmProductName(l){ return String(l?.name ?? l?.nombre ?? l?.producto ?? l?.descripcion ?? l?.ref ?? 'Producto'); }
-  function pmIdentifier(p){ return String(p?.identificador || p?.cliente || p?.numero || 'Sin identificar').trim(); }
-
-  function pmCalc(p){
-    const rows=pmRows(p); let base=0;
-    rows.forEach(l=>{
-      const pvp=Number(l.pvp)||0, qty=pmQty(l), dto=Math.min(100,Math.max(0,Number(l.dto ?? l.descuento)||0));
-      base += pvp*qty*(1-dto/100);
-    });
-    const dtoGlobal=Math.min(100,Math.max(0,Number(p?.dtoGeneral)||0));
-    base *= (1-dtoGlobal/100);
-    const iva=Math.max(0,Number(p?.iva)||0);
-    return {count:rows.length,base,total:base*(1+iva/100)};
+  let pmSelectedId='';
+  let pmView={type:'recent',value:''};
+  const byId=id=>document.getElementById(id);
+  const modal=()=>byId('pmModal');
+  const rows=p=>Array.isArray(p?.lineas)?p.lineas.filter(l=>l&&!l.separador&&l.tipo!=='separador'):[];
+  const qty=l=>Math.max(0,Number(l?.qty??l?.cantidad??l?.cant)||0);
+  const product=l=>String(l?.name??l?.nombre??l?.producto??l?.descripcion??l?.ref??'Producto');
+  const identifier=p=>String(p?.identificador||'').trim();
+  const title=p=>identifier(p)||String(p?.numero||'Sin identificar');
+  const idOf=p=>String(p?.id||p?.mongoId||p?._id||'');
+  const listAll=()=>{try{return typeof leerListaPresupuestos==='function'?(leerListaPresupuestos()||[]):[]}catch(e){return[]}};
+  const modified=p=>String(p?.updatedAt||p?.guardado||p?.createdAt||p?.fecha||'');
+  function calc(p){let base=0;rows(p).forEach(l=>{const price=Number(l.pvp)||0,d= Math.min(100,Math.max(0,Number(l.dto??l.descuento)||0));base+=price*qty(l)*(1-d/100)});base*=1-Math.min(100,Math.max(0,Number(p?.dtoGeneral)||0))/100;return {count:rows(p).length,total:base*(1+Math.max(0,Number(p?.iva)||0)/100)}}
+  function date(v){if(!v)return 'Sin fecha';const d=new Date(v);if(Number.isNaN(d.getTime()))return String(v);return new Intl.DateTimeFormat('es-ES',{day:'2-digit',month:'2-digit',year:'numeric'}).format(d)}
+  function searchText(p){return [identifier(p),p?.numero,p?.cliente,p?.tienda,p?.comercial,p?.telefono,p?.email,...rows(p).map(product)].filter(Boolean).join(' ').toLowerCase()}
+  function selected(){return listAll().find(p=>idOf(p)===String(pmSelectedId))||null}
+  function unique(field){return [...new Set(listAll().map(p=>String(p?.[field]||'').trim()).filter(Boolean))].sort((a,b)=>a.localeCompare(b,'es',{numeric:true}))}
+  function countBy(field,value){return listAll().filter(p=>String(p?.[field]||'').trim()===String(value||'').trim()).length}
+  function syncFilters(){
+    const all=listAll();
+    const store=byId('pmFilterStore'), commercial=byId('pmFilterCommercial');
+    const oldS=store?.value||'',oldC=commercial?.value||'';
+    if(store){store.innerHTML='<option value="">Todas las tiendas</option><option value="__NONE__">Sin tienda</option>'+unique('tienda').map(x=>`<option>${escapeHtml(x)}</option>`).join('');store.value=oldS}
+    if(commercial){commercial.innerHTML='<option value="">Todos los comerciales</option><option value="__NONE__">Sin comercial</option>'+unique('comercial').map(x=>`<option>${escapeHtml(x)}</option>`).join('');commercial.value=oldC}
+    const sf=byId('pmStoreFolders'),cf=byId('pmCommercialFolders');
+    const noStore=all.filter(p=>!String(p?.tienda||'').trim()).length;
+    const noCommercial=all.filter(p=>!String(p?.comercial||'').trim()).length;
+    const noAssignment=all.filter(p=>!String(p?.tienda||'').trim()&&!String(p?.comercial||'').trim()).length;
+    if(sf)sf.innerHTML=[
+      `<button type="button" class="pmx-folder pmx-folder-child pmx-folder-warning" data-pm-view="missing-store">⚠ <span>Sin tienda</span><b class="pmx-folder-count">(${noStore})</b></button>`,
+      ...unique('tienda').map(x=>`<button type="button" class="pmx-folder pmx-folder-child" data-pm-view="store" data-pm-value="${escapeHtml(x)}">🏪 <span>${escapeHtml(x)}</span><b class="pmx-folder-count">(${countBy('tienda',x)})</b></button>`)
+    ].join('');
+    if(cf)cf.innerHTML=[
+      `<button type="button" class="pmx-folder pmx-folder-child pmx-folder-warning" data-pm-view="missing-commercial">⚠ <span>Sin comercial</span><b class="pmx-folder-count">(${noCommercial})</b></button>`,
+      ...unique('comercial').map(x=>`<button type="button" class="pmx-folder pmx-folder-child" data-pm-view="commercial" data-pm-value="${escapeHtml(x)}">👤 <span>${escapeHtml(x)}</span><b class="pmx-folder-count">(${countBy('comercial',x)})</b></button>`)
+    ].join('');
+    const pending=byId('pmPendingFolders');
+    if(pending)pending.innerHTML=`<button type="button" class="pmx-folder pmx-folder-child pmx-folder-warning" data-pm-view="unassigned">⚠ <span>Sin tienda ni comercial</span><b class="pmx-folder-count">(${noAssignment})</b></button>`;
+    const recent=byId('pmFolderRecentCount'),total=byId('pmFolderAllCount');
+    if(recent)recent.textContent=`(${Math.min(20,all.length)})`;
+    if(total)total.textContent=`(${all.length})`;
   }
-
-  function pmDate(value){
-    if(!value) return 'Sin fecha';
-    const d=new Date(value); if(Number.isNaN(d.getTime())) return String(value);
-    return new Intl.DateTimeFormat('es-ES',{day:'2-digit',month:'2-digit',year:'numeric',hour:'2-digit',minute:'2-digit'}).format(d);
-  }
-
-  function pmSearchText(p){
-    return [pmIdentifier(p),p?.numero,p?.cliente,p?.fecha,p?.guardado,p?.estado,p?.tienda,...pmRows(p).map(pmProductName)].filter(Boolean).join(' ').toLowerCase();
-  }
-
-  function pmSorted(){
-    let list=leerListaPresupuestos().slice();
-    const q=String(byId('pmSearch')?.value||'').trim().toLowerCase();
-    if(q) list=list.filter(p=>q.split(/\s+/).every(part=>pmSearchText(p).includes(part)));
+  function filtered(){
+    let list=listAll().slice();
+    if(pmView.type==='store')list=list.filter(p=>String(p.tienda||'').trim()===pmView.value);
+    else if(pmView.type==='commercial')list=list.filter(p=>String(p.comercial||'').trim()===pmView.value);
+    else if(pmView.type==='missing-store')list=list.filter(p=>!String(p.tienda||'').trim());
+    else if(pmView.type==='missing-commercial')list=list.filter(p=>!String(p.comercial||'').trim());
+    else if(pmView.type==='unassigned')list=list.filter(p=>!String(p.tienda||'').trim()&&!String(p.comercial||'').trim());
+    const s=byId('pmFilterStore')?.value||'',c=byId('pmFilterCommercial')?.value||'';
+    if(s==='__NONE__')list=list.filter(p=>!String(p.tienda||'').trim());else if(s)list=list.filter(p=>String(p.tienda||'').trim()===s);
+    if(c==='__NONE__')list=list.filter(p=>!String(p.comercial||'').trim());else if(c)list=list.filter(p=>String(p.comercial||'').trim()===c);
+    const q=String(byId('pmSearch')?.value||'').trim().toLowerCase();if(q)list=list.filter(p=>q.split(/\s+/).every(part=>searchText(p).includes(part)));
     const sort=byId('pmSort')?.value||'recent';
-    if(sort==='identifier') list.sort((a,b)=>pmIdentifier(a).localeCompare(pmIdentifier(b),'es',{numeric:true}));
-    else if(sort==='client') list.sort((a,b)=>String(a.cliente||'').localeCompare(String(b.cliente||''),'es'));
-    else if(sort==='total') list.sort((a,b)=>pmCalc(b).total-pmCalc(a).total);
-    else list.sort((a,b)=>String(b.guardado||b.fecha||'').localeCompare(String(a.guardado||a.fecha||'')));
+    if(sort==='identifier')list.sort((a,b)=>title(a).localeCompare(title(b),'es',{numeric:true}));
+    else if(sort==='client')list.sort((a,b)=>String(a.cliente||'').localeCompare(String(b.cliente||''),'es'));
+    else if(sort==='total')list.sort((a,b)=>calc(b).total-calc(a).total);
+    else list.sort((a,b)=>modified(b).localeCompare(modified(a)));
+    if(pmView.type==='recent')list=list.slice(0,20);
     return list;
   }
+  function markFolder(){
+    document.querySelectorAll('#pmModal .pmx-folder').forEach(b=>{
+      const sameType=b.dataset.pmView===pmView.type;
+      const needsValue=pmView.type==='store'||pmView.type==='commercial';
+      const active=sameType&&(!needsValue||b.dataset.pmValue===pmView.value);
+      b.classList.toggle('is-active',active);
+      b.dataset.pmActive=active?'true':'false';
+      b.setAttribute('aria-current',active?'page':'false');
+      // El estado activo se dibuja con CSS. No insertar un cuarto elemento en
+      // la rejilla: quitaba espacio al nombre de tiendas largas como Valencia.
+      b.querySelector('.pmx-active-mark')?.remove();
+    });
+  }
+  function updateFilterNotice(){
+    const box=byId('pmFilterNotice');if(!box)return;
+    const parts=[];
+    if(pmView.type==='recent')parts.push('Recientes');
+    else if(pmView.type==='all')parts.push('Todos');
+    else if(pmView.type==='store')parts.push(`Tienda: ${pmView.value}`);
+    else if(pmView.type==='commercial')parts.push(`Comercial: ${pmView.value}`);
+    else if(pmView.type==='missing-store')parts.push('Sin tienda');
+    else if(pmView.type==='missing-commercial')parts.push('Sin comercial');
+    else if(pmView.type==='unassigned')parts.push('Sin tienda ni comercial');
+    const store=byId('pmFilterStore')?.value||'',commercial=byId('pmFilterCommercial')?.value||'',q=String(byId('pmSearch')?.value||'').trim();
+    if(store)parts.push(store==='__NONE__'?'Sin tienda':`Tienda: ${store}`);
+    if(commercial)parts.push(commercial==='__NONE__'?'Sin comercial':`Comercial: ${commercial}`);
+    if(q)parts.push(`Búsqueda: “${q}”`);
+    const active=pmView.type!=='recent'||store||commercial||q;
+    box.classList.toggle('is-filtered',!!active);
+    box.innerHTML=`<span>${active?'🔎 Filtrando':'📂 Vista'}: <strong>${escapeHtml(parts.join(' · ')||'Recientes')}</strong></span>${active?'<button type="button" id="pmClearFilters">Quitar filtros</button>':''}`;
+    byId('pmClearFilters')?.addEventListener('click',()=>{pmView={type:'recent',value:''};if(byId('pmFilterStore'))byId('pmFilterStore').value='';if(byId('pmFilterCommercial'))byId('pmFilterCommercial').value='';if(byId('pmSearch'))byId('pmSearch').value='';clearSelection();render()});
+  }
+  function clearMobileInlineState(){
+    const m=modal();if(!m)return;
+    ['.pmx-preview','.pmx-actions','.pmx-browser','.pmx-folders','.pmx-toolbar','.pmx-filter-notice'].forEach(selector=>{
+      const el=m.querySelector(selector);if(!el)return;
+      ['display','visibility','opacity'].forEach(prop=>el.style.removeProperty(prop));
+    });
+  }
+  function clearSelection(){
+    pmSelectedId='';
+    window.HX_PM_SELECTED_ID='';
+    const s=byId('presupuestosGuardados');if(s)s.value='';
+    document.querySelectorAll('#pmModal .pmx-row.is-selected').forEach(r=>r.classList.remove('is-selected'));
+    clearMobileInlineState();
+    modal()?.classList.remove('pm-has-selection','pm-mobile-preview');
+    preview();
+  }
+  function resetManagerView(){
+    pmSelectedId='';
+    window.HX_PM_SELECTED_ID='';
+    pmView={type:'recent',value:''};
+    const m=modal();
+    clearMobileInlineState();
+    m?.classList.remove('pm-mobile-preview','pm-mobile-list','pm-has-selection');
+    const select=byId('presupuestosGuardados');if(select)select.value='';
+    if(byId('pmSearch'))byId('pmSearch').value='';
+    if(byId('pmFilterStore'))byId('pmFilterStore').value='';
+    if(byId('pmFilterCommercial'))byId('pmFilterCommercial').value='';
+    if(byId('pmSort'))byId('pmSort').value='recent';
+    document.querySelectorAll('#pmModal .pmx-row.is-selected').forEach(r=>r.classList.remove('is-selected'));
+    ['pmOpen','pmDuplicate','pmRename','pmDelete'].forEach(id=>{const b=byId(id);if(b)b.disabled=true});
+    const list=byId('pmList');if(list)list.scrollTop=0;
+    const browser=m?.querySelector('.pmx-browser');if(browser)browser.scrollTop=0;
+    preview();
+  }
+  function preview(){
+    const p=selected(),root=byId('pmPreview'),head=byId('pmPreviewTitle'),active=!!p;
+    ['pmOpen','pmDuplicate','pmRename','pmDelete'].forEach(id=>{const e=byId(id);if(e)e.disabled=!active});
+    modal()?.classList.toggle('pm-has-selection',active);
+    if(!root||!head)return;
+    if(!p){head.textContent='Selecciona un presupuesto';root.className='pmx-preview-body pmx-preview-empty';root.innerHTML='<div class="pmx-empty-icon">▤</div><strong>Selecciona un presupuesto</strong><p>Aquí verás sus datos antes de recuperarlo.</p>';return}
+    const c=calc(p),r=rows(p),shown=r.slice(0,5);head.textContent=title(p);
+    root.className='pmx-preview-body';root.innerHTML=`<div class="pmx-identity"><span class="pmx-document-icon">▤</span><div><h4>${escapeHtml(title(p))}</h4><p>${escapeHtml(p.numero||'Sin número')}</p></div></div><dl class="pmx-meta"><div><dt>Cliente</dt><dd>${escapeHtml(p.cliente||'Sin cliente')}</dd></div><div><dt>Tienda</dt><dd>${escapeHtml(p.tienda||'Sin tienda')}</dd></div><div><dt>Comercial</dt><dd>${escapeHtml(p.comercial||'Sin asignar')}</dd></div><div><dt>Fecha</dt><dd>${escapeHtml(date(p.fecha||modified(p)))}</dd></div><div><dt>Productos</dt><dd>${c.count}</dd></div></dl><div class="pmx-total"><span>Total</span><strong>${fmt.format(c.total)}</strong></div><div class="pmx-products"><div class="pmx-products-title"><span>Primeros productos</span>${r.length>5?`<small>+${r.length-5} más</small>`:''}</div><ul>${shown.length?shown.map(l=>`<li><span>${escapeHtml(product(l))}</span><b>x${qty(l)||1}</b></li>`).join(''):'<li class="pmx-no-products">Sin productos</li>'}</ul></div>`;
+  }
+  function render(){
+    syncFilters();markFolder();updateFilterNotice();const all=listAll(),list=filtered(),root=byId('pmList');
+    if(byId('pmCount'))byId('pmCount').textContent=`${all.length} ${all.length===1?'guardado':'guardados'}`;
+    if(byId('pmVisibleCount'))byId('pmVisibleCount').textContent=`${list.length} visibles`;
+    if(!root)return;if(pmSelectedId&&!all.some(p=>idOf(p)===pmSelectedId))pmSelectedId='';
+    if(!list.length){window.HX_PM_SELECTED_ID='';root.innerHTML='<div class="pmx-list-empty"><span>▤</span><strong>No hay presupuestos</strong><small>Cambia la carpeta o los filtros.</small></div>';pmSelectedId='';preview();return}
+    root.innerHTML=list.map(p=>{const c=calc(p),id=idOf(p),sel=id===pmSelectedId;return `<button type="button" class="pmx-row${sel?' is-selected':''}" data-pm-id="${escapeHtml(id)}"><span class="pmx-row-icon">▤</span><span class="pmx-row-main"><strong class="pmx-card-identifier${identifier(p)?'':' is-empty'}">${escapeHtml(identifier(p)||'Sin identificador')}</strong><b class="pmx-card-number">${escapeHtml(p.numero||'Sin número')}</b><small class="pmx-card-client">👤 <span>Cliente:</span> ${escapeHtml(p.cliente||'Sin cliente')}</small><span class="pmx-card-fields"><em>🏪 ${escapeHtml(p.tienda||'Sin tienda')}</em><em>👤 ${escapeHtml(p.comercial||'Sin asignar')}</em><em>📅 ${escapeHtml(date(p.fecha||modified(p)))}</em></span></span><span class="pmx-row-side"><strong>${fmt.format(c.total)}</strong><small>${c.count} productos</small></span></button>`}).join('');
+    root.querySelectorAll('.pmx-row').forEach(row=>row.addEventListener('click',()=>{
+      // En PC selecciona; en móvil abre una vista previa separada antes de recuperar.
+      pmSelectedId=row.dataset.pmId||'';
+      window.HX_PM_SELECTED_ID=pmSelectedId;
+      const s=byId('presupuestosGuardados');if(s)s.value=pmSelectedId;
+      render();
+      if(matchMedia('(max-width:900px)').matches){
+        const m=modal();
+        m?.classList.add('pm-mobile-list','pm-mobile-preview','pm-has-selection');
+        const previewPanel=m?.querySelector('.pmx-preview');
+        const actions=m?.querySelector('.pmx-actions');
+        const browser=m?.querySelector('.pmx-browser');
+        const folders=m?.querySelector('.pmx-folders');
+        const toolbar=m?.querySelector('.pmx-toolbar');
+        const notice=m?.querySelector('.pmx-filter-notice');
+        previewPanel?.style.setProperty('display','flex','important');
+        previewPanel?.style.setProperty('visibility','visible','important');
+        previewPanel?.style.setProperty('opacity','1','important');
+        actions?.style.setProperty('display','grid','important');
+        browser?.style.setProperty('display','none','important');
+        folders?.style.setProperty('display','none','important');
+        toolbar?.style.setProperty('display','none','important');
+        notice?.style.setProperty('display','none','important');
+      }
+    }));preview();
+  }
+  async function show(){
+    const m=modal();if(!m)return;
+    resetManagerView();
+    m.classList.remove('hidden');m.setAttribute('aria-hidden','false');
+    try{window.HX_LOADING_SHOW?.('Cargando presupuestos...');await window.HX_RECARGAR_PRESUPUESTOS?.({silencioso:true})}catch(e){}finally{window.HX_LOADING_HIDE?.()}
+    render();
+    if(!matchMedia('(max-width:900px)').matches) setTimeout(()=>byId('pmSearch')?.focus(),30);
+  }
+  function hide(){
+    const m=modal();if(!m)return;
+    resetManagerView();
+    m.classList.add('hidden');m.setAttribute('aria-hidden','true');
+    render();
+  }
+  document.addEventListener('DOMContentLoaded',()=>{
+    byId('btnBudgets')?.addEventListener('click',show);byId('pmClose')?.addEventListener('click',hide);byId('pmBackdrop')?.addEventListener('click',hide);byId('pmBackMobile')?.addEventListener('click',()=>{
+      clearSelection();
+      const m=modal();
+      m?.classList.remove('pm-mobile-preview','pm-has-selection');
+      m?.classList.add('pm-mobile-list');
+      render();
+    });
+    byId('pmMobileBackFilters')?.addEventListener('click',()=>{
+      const m=modal();
+      m?.classList.remove('pm-mobile-list','pm-mobile-preview','pm-has-selection');
+      pmSelectedId='';
+      window.HX_PM_SELECTED_ID='';
+      const s=byId('presupuestosGuardados');if(s)s.value='';
+      preview();
+    });
+    ['pmSearch','pmFilterStore','pmFilterCommercial','pmSort'].forEach(id=>byId(id)?.addEventListener(id==='pmSearch'?'input':'change',()=>{clearSelection();render();if(matchMedia('(max-width:900px)').matches)modal()?.classList.add('pm-mobile-list')}));
+    byId('pmList')?.addEventListener('dblclick',async e=>{if(matchMedia('(max-width:900px)').matches)return;const r=e.target.closest('.pmx-row');if(r){pmSelectedId=r.dataset.pmId||'';const s=byId('presupuestosGuardados');if(s)s.value=pmSelectedId;await window.HX_ABRIR_PRESUPUESTO?.(pmSelectedId);}});
+    byId('pmModal')?.addEventListener('click',e=>{const b=e.target.closest('.pmx-folder');if(!b)return;pmView={type:b.dataset.pmView||'all',value:b.dataset.pmValue||''};if(pmView.type==='store'&&byId('pmFilterStore'))byId('pmFilterStore').value='';if(pmView.type==='commercial'&&byId('pmFilterCommercial'))byId('pmFilterCommercial').value='';clearSelection();render();if(matchMedia('(max-width:900px)').matches)modal()?.classList.add('pm-mobile-list')});
+    window.addEventListener('hiperajax:presupuestos-importados',render);window.addEventListener('hiperajax:identificador-cambiado',render);
+  });
+  window.HX_PM_RENDER=render;
+})();
 
-  function pmSelected(){ return leerListaPresupuestos().find(p=>String(p.id)===String(pmSelectedId)); }
-  function pmIsMobile(){ return window.matchMedia('(max-width:820px)').matches; }
-  function pmMobileList(){ pmModal()?.classList.remove('pm-mobile-preview'); setTimeout(()=>byId('pmSearch')?.focus(),30); }
-  function pmMobilePreview(){ if(pmIsMobile() && pmSelectedId) pmModal()?.classList.add('pm-mobile-preview'); }
+/* =====================================================
+   CATÁLOGO: CONTROL PROFESIONAL DE PRECIOS
+   - Fuente única: catalogo_ajax.csv, solicitado sin caché.
+   - Revisa catálogo, presupuesto abierto y TODOS los guardados.
+   - Guarda huella y fecha de carga para identificar el catálogo usado.
+   - El estado correcto es discreto; solo las incidencias son pulsables.
+   ===================================================== */
+const HX_CATALOG_DIAG_VERSION = '2.0';
+const HX_CATALOG_META_KEY = 'hiperajax_catalogo_meta_v2';
 
-  function pmRenderPreview(){
-    const p=pmSelected(), preview=byId('pmPreview'), title=byId('pmPreviewTitle');
-    const active=!!p;
-    ['pmOpen','pmDuplicate','pmRename','pmDelete'].forEach(id=>{const el=byId(id);if(el)el.disabled=!active;});
-    if(!preview||!title) return;
-    if(!p){
-      title.textContent='Selecciona un presupuesto';
-      preview.className='pmx-preview-body pmx-preview-empty';
-      preview.innerHTML='<div class="pmx-empty-icon" aria-hidden="true">▤</div><strong>Selecciona un presupuesto</strong><p>Aquí verás el cliente, el total y los primeros productos antes de recuperarlo.</p>';
+function hxCatalogRef(value){
+  return String(value || '').trim().toUpperCase();
+}
+function hxCatalogMoney(value){
+  const n = Number(value);
+  return Number.isFinite(n) ? n : 0;
+}
+function hxCatalogSamePrice(a, b){
+  return Math.abs(hxCatalogMoney(a) - hxCatalogMoney(b)) < 0.005;
+}
+function hxCatalogHash(text){
+  let hash = 2166136261;
+  const value = String(text || '');
+  for(let i=0;i<value.length;i++){
+    hash ^= value.charCodeAt(i);
+    hash = Math.imul(hash, 16777619);
+  }
+  return (hash >>> 0).toString(16).padStart(8,'0');
+}
+function hxCatalogFingerprint(items){
+  const rows = (Array.isArray(items) ? items : [])
+    .map(p=>`${hxCatalogRef(p?.name)}|${hxCatalogMoney(p?.pvp).toFixed(2)}`)
+    .sort();
+  return hxCatalogHash(rows.join('\n'));
+}
+function hxCatalogDate(value){
+  try{
+    return new Intl.DateTimeFormat('es-ES',{dateStyle:'short',timeStyle:'short'}).format(new Date(value));
+  }catch(e){ return String(value || ''); }
+}
+function hxBudgetLabel(p, index){
+  const numero = String(p?.numero || '').trim();
+  const cliente = String(p?.cliente || '').trim();
+  const id = numero || cliente || `Presupuesto ${index + 1}`;
+  return cliente && numero ? `${numero} · ${cliente}` : id;
+}
+function hxGetCatalogMeta(){
+  try{
+    const data = JSON.parse(localStorage.getItem(HX_CATALOG_META_KEY) || '{}');
+    return data && typeof data === 'object' ? data : {};
+  }catch(e){ return {}; }
+}
+function hxSaveCatalogMeta(meta){
+  try{ localStorage.setItem(HX_CATALOG_META_KEY, JSON.stringify(meta || {})); }catch(e){}
+}
+
+function hxEnsureCatalogDiagnosticUI(){
+  let status = document.getElementById('catalogHealth');
+  if(!status){
+    // Se usa un span y no un botón para evitar estilos verdes globales.
+    // Solo se vuelve interactivo cuando existe una incidencia real.
+    status = document.createElement('span');
+    status.id = 'catalogHealth';
+    status.className = 'catalog-health is-checking';
+    status.hidden = true;
+    status.setAttribute('aria-live', 'polite');
+    const abrirDetalle = ()=>{
+      const informe = window.HX_CATALOGO_DIAGNOSTICO;
+      if(informe && informe.totalAvisos > 0) hxOpenCatalogDiagnostic();
+    };
+    status.addEventListener('click', abrirDetalle);
+    status.addEventListener('keydown', e=>{
+      if((e.key === 'Enter' || e.key === ' ') && status.getAttribute('role') === 'button'){
+        e.preventDefault();
+        abrirDetalle();
+      }
+    });
+    const preview = document.getElementById('previewProducto');
+    if(preview && preview.parentNode) preview.insertAdjacentElement('afterend', status);
+  }
+
+  if(!document.getElementById('catalogDiagnosticModal')){
+    const modal = document.createElement('div');
+    modal.id = 'catalogDiagnosticModal';
+    modal.className = 'modal hidden catalog-diagnostic-modal';
+    modal.setAttribute('aria-hidden', 'true');
+    modal.innerHTML = `
+      <div class="modal-backdrop" data-catalog-diagnostic-close></div>
+      <div class="modal-card" role="dialog" aria-modal="true" aria-labelledby="catalogDiagnosticTitle">
+        <div class="modal-head">
+          <div>
+            <h2 id="catalogDiagnosticTitle">Control de precios</h2>
+            <p id="catalogDiagnosticSubtitle">Comprobación del catálogo y presupuestos guardados.</p>
+          </div>
+          <button type="button" class="modal-close" data-catalog-diagnostic-close aria-label="Cerrar">×</button>
+        </div>
+        <div id="catalogDiagnosticBody" class="catalog-diagnostic-body"></div>
+        <div class="modal-foot">
+          <button type="button" class="secondary" data-catalog-diagnostic-close>Entendido</button>
+        </div>
+      </div>`;
+    document.body.appendChild(modal);
+    modal.querySelectorAll('[data-catalog-diagnostic-close]').forEach(el=>el.addEventListener('click', hxCloseCatalogDiagnostic));
+  }
+  return status;
+}
+function hxOpenCatalogDiagnostic(){
+  const modal = document.getElementById('catalogDiagnosticModal');
+  if(!modal) return;
+  modal.classList.remove('hidden');
+  modal.setAttribute('aria-hidden','false');
+  document.body.classList.add('modal-open');
+}
+function hxCloseCatalogDiagnostic(){
+  const modal = document.getElementById('catalogDiagnosticModal');
+  if(!modal) return;
+  modal.classList.add('hidden');
+  modal.setAttribute('aria-hidden','true');
+  if(!document.querySelector('.modal:not(.hidden)')) document.body.classList.remove('modal-open');
+}
+
+function hxCompareLinesWithCatalog(lines, porRef){
+  const diferencias = [];
+  (Array.isArray(lines) ? lines : []).forEach((linea,index)=>{
+    if(!linea || linea.manual || linea.separador) return;
+    const ref = hxCatalogRef(linea.name);
+    if(!ref) return;
+    const vigente = porRef.get(ref);
+    if(!vigente) return;
+    if(!hxCatalogSamePrice(linea.pvp, vigente.pvp)){
+      diferencias.push({
+        ref,
+        linea:index + 1,
+        guardado:hxCatalogMoney(linea.pvp),
+        catalogo:hxCatalogMoney(vigente.pvp),
+        diferencia:hxCatalogMoney(vigente.pvp)-hxCatalogMoney(linea.pvp)
+      });
+    }
+  });
+  return diferencias;
+}
+
+function hxDiagnosticarCatalogo(opciones={}){
+  hxEnsureCatalogDiagnosticUI();
+  const abrirSiHayAvisos = opciones.abrirSiHayAvisos !== false;
+  const avisarToast = opciones.avisarToast !== false;
+  const porRef = new Map();
+  const duplicados = [];
+  const conflictosPrecio = [];
+
+  (Array.isArray(productos) ? productos : []).forEach((p,index)=>{
+    const ref = hxCatalogRef(p?.name);
+    if(!ref) return;
+    const actual={ref,pvp:hxCatalogMoney(p?.pvp),index,producto:p};
+    if(!porRef.has(ref)){ porRef.set(ref,actual); return; }
+    const anterior=porRef.get(ref);
+    duplicados.push({ref,anterior,actual});
+    if(!hxCatalogSamePrice(anterior.pvp,actual.pvp)) conflictosPrecio.push({ref,anterior:anterior.pvp,nuevo:actual.pvp});
+  });
+
+  const presupuestoActual = hxCompareLinesWithCatalog(lineas, porRef);
+  const guardados = [];
+  const listaGuardada = typeof leerListaPresupuestos === 'function' ? leerListaPresupuestos() : [];
+  (Array.isArray(listaGuardada) ? listaGuardada : []).forEach((p,index)=>{
+    const diferencias = hxCompareLinesWithCatalog(p?.lineas, porRef);
+    if(diferencias.length){
+      guardados.push({
+        id:String(p?.id || ''),
+        etiqueta:hxBudgetLabel(p,index),
+        fecha:String(p?.fecha || p?.guardado || ''),
+        diferencias
+      });
+    }
+  });
+
+  const fingerprint = hxCatalogFingerprint(productos);
+  const anteriorMeta = hxGetCatalogMeta();
+  const cargadoEn = new Date().toISOString();
+  const catalogoCambio = Boolean(anteriorMeta.fingerprint && anteriorMeta.fingerprint !== fingerprint);
+  const meta={
+    version:HX_CATALOG_DIAG_VERSION,
+    fuente:'catalogo_ajax.csv',
+    fingerprint,
+    cargadoEn,
+    productos:Array.isArray(productos)?productos.length:0,
+    referencias:porRef.size,
+    anteriorFingerprint:String(anteriorMeta.fingerprint || ''),
+    catalogoCambio
+  };
+  hxSaveCatalogMeta(meta);
+
+  const lineasGuardadasAfectadas = guardados.reduce((n,p)=>n+p.diferencias.length,0);
+  const totalAvisos = conflictosPrecio.length + presupuestoActual.length + lineasGuardadasAfectadas + (productos.length ? 0 : 1);
+  const informe={
+    ...meta,
+    duplicados,
+    conflictosPrecio,
+    presupuestoActual,
+    presupuestosGuardados:guardados,
+    presupuestosGuardadosAfectados:guardados.length,
+    lineasGuardadasAfectadas,
+    totalAvisos
+  };
+  window.HX_CATALOGO_DIAGNOSTICO=informe;
+
+  const status=document.getElementById('catalogHealth');
+  const body=document.getElementById('catalogDiagnosticBody');
+  const subtitle=document.getElementById('catalogDiagnosticSubtitle');
+  if(!status || !body) return informe;
+
+  status.classList.remove('is-checking','is-ok','is-warn','is-error');
+  status.removeAttribute('aria-disabled');
+  status.removeAttribute('title');
+  status.removeAttribute('role');
+  status.removeAttribute('tabindex');
+  status.hidden = false;
+  if(!productos.length){
+    status.classList.add('is-error');
+    status.textContent='Error de catálogo';
+    status.title='Ver el problema';
+    status.setAttribute('role','button');
+    status.tabIndex=0;
+  }else if(totalAvisos){
+    status.classList.add('is-warn');
+    status.textContent=`⚠ Revisar precios (${totalAvisos})`;
+    status.title='Ver diferencias detectadas';
+    status.setAttribute('role','button');
+    status.tabIndex=0;
+  }else{
+    // Si todo está correcto no se añade ruido visual: queda únicamente
+    // el contador normal de productos cargados que ya muestra la app.
+    status.classList.add('is-ok');
+    status.textContent='';
+    status.hidden = true;
+    status.setAttribute('aria-disabled','true');
+  }
+
+  if(subtitle) subtitle.textContent=`${informe.productos} productos · cargado ${hxCatalogDate(cargadoEn)} · control ${fingerprint}`;
+
+  const bloques=[];
+  bloques.push(`<section class="catalog-diag-summary ${totalAvisos?'has-warning':'is-clean'}">
+    <strong>${totalAvisos?'Hay precios que conviene revisar':'Catálogo y presupuestos comprobados'}</strong>
+    <span>${informe.productos} productos · ${informe.referencias} referencias · Fuente: ${escapeHtml(informe.fuente)}</span>
+    <small>Cargado: ${escapeHtml(hxCatalogDate(cargadoEn))} · Identificador: ${escapeHtml(fingerprint)}</small>
+  </section>`);
+
+  if(catalogoCambio){
+    bloques.push(`<section class="catalog-diag-section catalog-diag-info"><h3>Catálogo actualizado</h3>
+      <p>La huella del catálogo ha cambiado desde la última carga. Se han vuelto a comprobar todos los presupuestos guardados.</p>
+    </section>`);
+  }
+  if(conflictosPrecio.length){
+    bloques.push(`<section class="catalog-diag-section"><h3>La misma referencia aparece con dos precios</h3>${conflictosPrecio.map(x=>`
+      <div class="catalog-diag-item is-warning"><b>${escapeHtml(x.ref)}</b><span>${fmt.format(x.anterior)} frente a ${fmt.format(x.nuevo)}</span></div>`).join('')}</section>`);
+  }
+  if(presupuestoActual.length){
+    bloques.push(`<section class="catalog-diag-section"><h3>Presupuesto abierto</h3>${presupuestoActual.map(x=>`
+      <div class="catalog-diag-item is-warning"><b>${escapeHtml(x.ref)}</b><span>Línea ${x.linea}: ${fmt.format(x.guardado)} · Catálogo: ${fmt.format(x.catalogo)}</span></div>`).join('')}
+      <p class="catalog-diag-help">No se cambia ningún precio automáticamente para no alterar un presupuesto sin tu permiso.</p></section>`);
+  }
+  if(guardados.length){
+    bloques.push(`<section class="catalog-diag-section"><h3>Presupuestos guardados con precios distintos</h3>
+      <p><b>${guardados.length}</b> presupuesto${guardados.length===1?'':'s'} · <b>${lineasGuardadasAfectadas}</b> línea${lineasGuardadasAfectadas===1?'':'s'} para revisar.</p>
+      ${guardados.slice(0,30).map(p=>`<details class="catalog-diag-budget"><summary>${escapeHtml(p.etiqueta)} <span>${p.diferencias.length} diferencia${p.diferencias.length===1?'':'s'}</span></summary>
+        ${p.diferencias.map(x=>`<div class="catalog-diag-item is-warning"><b>${escapeHtml(x.ref)}</b><span>${fmt.format(x.guardado)} → ${fmt.format(x.catalogo)}</span></div>`).join('')}
+      </details>`).join('')}
+      ${guardados.length>30?`<p class="catalog-diag-help">Se muestran los primeros 30 presupuestos afectados.</p>`:''}
+    </section>`);
+  }
+  if(duplicados.length && !conflictosPrecio.length){
+    bloques.push(`<section class="catalog-diag-section"><h3>Referencias repetidas</h3><p>${duplicados.length} referencia${duplicados.length===1?'':'s'} repetida${duplicados.length===1?'':'s'}, todas con el mismo precio.</p></section>`);
+  }
+  if(!totalAvisos && !duplicados.length){
+    bloques.push(`<section class="catalog-diag-section"><p>No hay diferencias entre el catálogo actual, el presupuesto abierto y los presupuestos guardados.</p></section>`);
+  }
+  body.innerHTML=bloques.join('');
+
+  if(totalAvisos && avisarToast){
+    try{ hxToastGlobal(`${totalAvisos} precio${totalAvisos===1?'':'s'} para revisar`, 'error'); }catch(e){}
+  }
+  if(totalAvisos && abrirSiHayAvisos) hxOpenCatalogDiagnostic();
+  return informe;
+}
+
+// Único envoltorio final de carga. La petición original ya usa cache:'no-store'
+// y un parámetro temporal; después se registra la huella y se revisa todo.
+const cargarCatalogo_BASE_DIAGNOSTICO = cargarCatalogo;
+cargarCatalogo = async function(){
+  const resultado = await cargarCatalogo_BASE_DIAGNOSTICO.apply(this, arguments);
+  // Al arrancar no se abre ningún modal ni toast. Si existen diferencias,
+  // queda visible el enlace ámbar para revisarlas cuando convenga.
+  hxDiagnosticarCatalogo({abrirSiHayAvisos:false,avisarToast:false});
+  return resultado;
+};
+
+// Mantener el control actualizado tras abrir, guardar, importar o borrar presupuestos.
+function hxRefreshPriceControlSoon(){
+  setTimeout(()=>{
+    if(Array.isArray(productos) && productos.length) hxDiagnosticarCatalogo({abrirSiHayAvisos:false,avisarToast:false});
+  },40);
+}
+['hiperajax:presupuestos-importados'].forEach(evt=>window.addEventListener(evt,hxRefreshPriceControlSoon));
+const aplicarPresupuesto_BASE_DIAGNOSTICO = aplicarPresupuesto;
+aplicarPresupuesto = function(){
+  const r=aplicarPresupuesto_BASE_DIAGNOSTICO.apply(this,arguments);
+  hxRefreshPriceControlSoon();
+  return r;
+};
+const escribirListaPresupuestos_BASE_DIAGNOSTICO = escribirListaPresupuestos;
+escribirListaPresupuestos = function(){
+  const r=escribirListaPresupuestos_BASE_DIAGNOSTICO.apply(this,arguments);
+  hxRefreshPriceControlSoon();
+  return r;
+};
+
+document.addEventListener('DOMContentLoaded', hxEnsureCatalogDiagnosticUI);
+
+
+/* =====================================================
+   4.0.8 - Orden automático compartido de familias (carga corregida)
+   - Buscador inicial y catálogo: variantes W/B contiguas.
+   - Mantiene la relevancia de cada familia y ordena sus variantes.
+   - Si se busca negro/blanco, prioriza el color solicitado.
+   ===================================================== */
+(function(){
+  const HX_APP_VERSION='4.0.8';
+  function hxFamilyKey407(product){
+    return String((product&&product.name)||'').toUpperCase()
+      .replace(/-(?:W|B)(?=-|$)/g,'')
+      .replace(/--+/g,'-').replace(/-$/,'').trim();
+  }
+  function hxColor407(product,query){
+    const ref=String((product&&product.name)||'').toUpperCase();
+    let order=/-W(?:-|$)/.test(ref)?0:/-B(?:-|$)/.test(ref)?1:2;
+    const q=String(query||'').toLowerCase();
+    if(/\b(?:negro|black)\b/.test(q)) order=/-B(?:-|$)/.test(ref)?0:/-W(?:-|$)/.test(ref)?1:2;
+    return order;
+  }
+  function hxOrderFamilies407(items,query=''){
+    if(!Array.isArray(items)||items.length<2) return items;
+    const groups=new Map();
+    items.forEach((item,pos)=>{
+      const p=item&&item.p?item.p:item;
+      const key=hxFamilyKey407(p);
+      if(!groups.has(key)) groups.set(key,{key,items:[],best:-Infinity,first:pos});
+      const g=groups.get(key);
+      g.items.push({item,p,pos});
+      g.best=Math.max(g.best,Number(item&&item.score)||0);
+    });
+    return [...groups.values()]
+      .sort((a,b)=>(b.best-a.best)||(a.first-b.first)||a.key.localeCompare(b.key,'es',{numeric:true,sensitivity:'base'}))
+      .flatMap(g=>g.items.sort((a,b)=>
+        hxColor407(a.p,query)-hxColor407(b.p,query) ||
+        (Number(b.item&&b.item.score)||0)-(Number(a.item&&a.item.score)||0) ||
+        String(a.p&&a.p.name||'').localeCompare(String(b.p&&b.p.name||''),'es',{numeric:true,sensitivity:'base'})
+      ).map(x=>x.item));
+  }
+
+  if(typeof buscar==='function'){
+    const buscarBase407=buscar;
+    buscar=function(term){ return hxOrderFamilies407(buscarBase407.apply(this,arguments),term); };
+  }
+  if(typeof buscarCatalogo==='function'){
+    const buscarCatalogoBase407=buscarCatalogo;
+    buscarCatalogo=function(term=''){ return hxOrderFamilies407(buscarCatalogoBase407.apply(this,arguments),term); };
+  }
+
+  function setVersion407(){
+    document.querySelectorAll('.creator').forEach(el=>{
+      const versionText=`· Creado por David Corregidor · ${HX_APP_VERSION}`;
+      if(el.textContent !== versionText) el.textContent=versionText;
+    });
+  }
+  document.addEventListener('DOMContentLoaded',()=>{ setVersion407(); setTimeout(setVersion407,120); });
+  const observer407=new MutationObserver(setVersion407);
+  document.addEventListener('DOMContentLoaded',()=>{
+    document.querySelectorAll('.creator').forEach(el=>observer407.observe(el,{childList:true,characterData:true,subtree:true}));
+  });
+  window.HX_APP_VERSION=HX_APP_VERSION;
+  window.HX_ORDER_FAMILIES=hxOrderFamilies407;
+})();
+
+/* =====================================================
+   4.0.9 - Recuperación automática de variantes de familia
+   - Si una referencia coincide, incorpora sus variantes W/B del catálogo.
+   - Funciona en buscador principal y Catálogo.
+   - No usa listas manuales por producto.
+   ===================================================== */
+(function(){
+  const HX_APP_VERSION_409='4.0.9';
+
+  function hxFamilyKey409(product){
+    return String((product&&product.name)||'').toUpperCase()
+      .replace(/-(?:W|B)(?=-|$)/g,'')
+      .replace(/--+/g,'-').replace(/-$/,'').trim();
+  }
+  function hxColorOrder409(product,query=''){
+    const ref=String((product&&product.name)||'').toUpperCase();
+    const q=String(query||'').toLowerCase();
+    if(/\b(?:negro|black)\b/.test(q)) return /-B(?:-|$)/.test(ref)?0:/-W(?:-|$)/.test(ref)?1:2;
+    return /-W(?:-|$)/.test(ref)?0:/-B(?:-|$)/.test(ref)?1:2;
+  }
+  function hxExpandFamilyVariants409(items,query=''){
+    if(!Array.isArray(items)||!items.length||!Array.isArray(productos)) return items;
+
+    const familyIndex=new Map();
+    productos.forEach((p,i)=>{
+      const key=hxFamilyKey409(p);
+      if(!key) return;
+      if(!familyIndex.has(key)) familyIndex.set(key,[]);
+      familyIndex.get(key).push({p,i});
+    });
+
+    const present=new Set();
+    items.forEach(item=>{
+      const p=item&&item.p?item.p:item;
+      const idx=item&&Number.isInteger(item.i)?item.i:productos.indexOf(p);
+      present.add(idx>=0?`i:${idx}`:`n:${String(p&&p.name||'')}`);
+    });
+
+    const expanded=[];
+    const processedFamilies=new Set();
+    items.forEach((item,pos)=>{
+      const p=item&&item.p?item.p:item;
+      const key=hxFamilyKey409(p);
+      if(processedFamilies.has(key)) return;
+      processedFamilies.add(key);
+
+      const originalFamily=items.filter(x=>hxFamilyKey409(x&&x.p?x.p:x)===key);
+      originalFamily.forEach(x=>expanded.push(x));
+
+      const baseScore=Math.max(...originalFamily.map(x=>Number(x&&x.score)||0),0);
+      const variants=(familyIndex.get(key)||[])
+        .filter(v=>!present.has(`i:${v.i}`))
+        .sort((a,b)=>hxColorOrder409(a.p,query)-hxColorOrder409(b.p,query)||String(a.p.name||'').localeCompare(String(b.p.name||''),'es',{numeric:true,sensitivity:'base'}));
+
+      variants.forEach((v,n)=>{
+        expanded.push({p:v.p,i:v.i,score:Math.max(1,baseScore-(n+1)*0.001),familyVariant:true});
+        present.add(`i:${v.i}`);
+      });
+    });
+    return expanded;
+  }
+
+  function hxFinalize409(items,term){
+    const expanded=hxExpandFamilyVariants409(items,term);
+    if(typeof window.HX_ORDER_FAMILIES==='function') return window.HX_ORDER_FAMILIES(expanded,term);
+    return expanded;
+  }
+
+  if(typeof buscar==='function'){
+    const buscarBase409=buscar;
+    buscar=function(term){ return hxFinalize409(buscarBase409.apply(this,arguments),term); };
+  }
+  if(typeof buscarCatalogo==='function'){
+    const buscarCatalogoBase409=buscarCatalogo;
+    buscarCatalogo=function(term=''){ return hxFinalize409(buscarCatalogoBase409.apply(this,arguments),term); };
+  }
+
+  function setVersion409(){
+    document.querySelectorAll('.creator').forEach(el=>{
+      const txt=`· Creado por David Corregidor · ${HX_APP_VERSION_409}`;
+      if(el.textContent!==txt) el.textContent=txt;
+    });
+  }
+  document.addEventListener('DOMContentLoaded',()=>{setVersion409();setTimeout(setVersion409,150);});
+  window.HX_APP_VERSION=HX_APP_VERSION_409;
+})();
+
+/* =====================================================
+   Hiper Ajax 4.0.10 - Revisión global del motor de búsqueda
+   - Las referencias exactas tienen prioridad absoluta.
+   - Una búsqueda de familia/referencia no mezcla familias por fragmentos
+     internos (KEYPADCOMBI ya no arrastra COMBIPROTECT).
+   - Expande automáticamente W/B de la misma referencia base.
+   - Se aplica al buscador principal y al Catálogo.
+   ===================================================== */
+(function(){
+  const HX_APP_VERSION_410='4.0.11';
+
+  function hxNorm410(v){
+    return String(v||'').normalize('NFD').replace(/[\u0300-\u036f]/g,'')
+      .toLowerCase().trim();
+  }
+  function hxCompact410(v){ return hxNorm410(v).replace(/[^a-z0-9]+/g,''); }
+  function hxRef410(p){ return String((p&&p.name)||'').trim(); }
+  function hxFamilyKey410(p){
+    return hxRef410(p).toUpperCase()
+      .replace(/-(?:W|B)(?=-|$)/g,'')
+      .replace(/--+/g,'-').replace(/-$/,'').trim();
+  }
+  function hxColor410(p,q=''){
+    const r=hxRef410(p).toUpperCase(), n=hxNorm410(q);
+    const black=/(^|\s)(negro|black)(\s|$)|-b(?:-|$)/i.test(n);
+    if(black) return /-B(?:-|$)/.test(r)?0:/-W(?:-|$)/.test(r)?1:2;
+    return /-W(?:-|$)/.test(r)?0:/-B(?:-|$)/.test(r)?1:2;
+  }
+  function hxDirectReferenceMatches410(term){
+    const q=hxCompact410(term);
+    if(!q || q.length<4 || !Array.isArray(productos)) return [];
+    const matches=productos.map((p,i)=>{
+      const ref=hxRef410(p), c=hxCompact410(ref);
+      let score=0;
+      if(c===q) score=1000000;
+      else if(c.startsWith(q)) score=800000;
+      else if(c.includes(q)) score=650000;
+      else if(q.startsWith(c) && c.length>=6) score=500000;
+      if(score && /(?:dummy|lens|bracket|holder|cover|case)/i.test(ref) && !/(?:dummy|lens|bracket|holder|cover|case)/i.test(String(term||''))) score-=100000;
+      return {p,i,score};
+    }).filter(x=>x.score>0);
+    // Con una referencia exacta, no añadimos accesorios cuyo nombre solo
+    // empieza igual; las variantes W/B se recuperan después por familia.
+    const exact=matches.filter(x=>x.score===1000000);
+    return (exact.length?exact:matches)
+      .sort((a,b)=>b.score-a.score || hxRef410(a.p).localeCompare(hxRef410(b.p),'es',{numeric:true,sensitivity:'base'}));
+  }
+  function hxLooksReferenceLike410(term,direct){
+    const raw=String(term||'').trim();
+    const q=hxCompact410(raw);
+    if(!direct.length) return false;
+    if(/^aj[-_ ]/i.test(raw)) return true;
+    if(/[0-9]/.test(raw) || /[-_]/.test(raw)) return true;
+    // Nombres comerciales suficientemente específicos: keypadcombi,
+    // motioncamoutdoor, hub2plus, etc.
+    return q.length>=7;
+  }
+  function hxExpandAndOrder410(items,term=''){
+    if(!Array.isArray(items)||!items.length) return [];
+    const byFamily=new Map();
+    productos.forEach((p,i)=>{
+      const k=hxFamilyKey410(p);
+      if(!byFamily.has(k)) byFamily.set(k,[]);
+      byFamily.get(k).push({p,i});
+    });
+    const result=[], seen=new Set(), families=[];
+    items.forEach((x,pos)=>{
+      const p=x&&x.p?x.p:x, i=Number.isInteger(x&&x.i)?x.i:productos.indexOf(p);
+      const k=hxFamilyKey410(p);
+      if(!families.includes(k)) families.push(k);
+      const id=i>=0?'i'+i:'n'+hxRef410(p);
+      if(!seen.has(id)){ result.push({p,i,score:Number(x&&x.score)||0,__pos:pos}); seen.add(id); }
+    });
+    families.forEach(k=>{
+      const base=Math.max(0,...result.filter(x=>hxFamilyKey410(x.p)===k).map(x=>x.score));
+      (byFamily.get(k)||[]).forEach((v,n)=>{
+        const id='i'+v.i;
+        if(!seen.has(id)){ result.push({p:v.p,i:v.i,score:Math.max(1,base-(n+1)/1000),__pos:9999}); seen.add(id); }
+      });
+    });
+    const familyRank=new Map();
+    result.forEach((x,pos)=>{
+      const k=hxFamilyKey410(x.p), s=Number(x.score)||0;
+      const old=familyRank.get(k);
+      if(!old || s>old.score) familyRank.set(k,{score:s,pos});
+    });
+    return result.sort((a,b)=>{
+      const ka=hxFamilyKey410(a.p), kb=hxFamilyKey410(b.p);
+      if(ka!==kb){
+        const ra=familyRank.get(ka), rb=familyRank.get(kb);
+        return rb.score-ra.score || ra.pos-rb.pos || ka.localeCompare(kb,'es',{numeric:true,sensitivity:'base'});
+      }
+      return hxColor410(a.p,term)-hxColor410(b.p,term) ||
+        (Number(b.score)||0)-(Number(a.score)||0) ||
+        hxRef410(a.p).localeCompare(hxRef410(b.p),'es',{numeric:true,sensitivity:'base'});
+    }).map(({__pos,...x})=>x);
+  }
+  function hxFinalizeSearch410(baseFn,ctx,args,term){
+    const direct=hxDirectReferenceMatches410(term);
+    if(hxLooksReferenceLike410(term,direct)) return hxExpandAndOrder410(direct,term);
+    const base=baseFn.apply(ctx,args);
+    // Incluso en búsquedas generales, las coincidencias directas quedan delante.
+    const merged=[];
+    const seen=new Set();
+    [...direct,...(Array.isArray(base)?base:[])].forEach(x=>{
+      const p=x&&x.p?x.p:x, i=Number.isInteger(x&&x.i)?x.i:productos.indexOf(p);
+      const id=i>=0?'i'+i:'n'+hxRef410(p);
+      if(!seen.has(id)){ merged.push(x); seen.add(id); }
+    });
+    return hxExpandAndOrder410(merged,term);
+  }
+
+  if(typeof buscar==='function'){
+    const prev=buscar;
+    buscar=function(term){ return hxFinalizeSearch410(prev,this,arguments,term); };
+  }
+  if(typeof buscarCatalogo==='function'){
+    const prev=buscarCatalogo;
+    buscarCatalogo=function(term=''){
+      if(!String(term||'').trim()) return prev.apply(this,arguments);
+      return hxFinalizeSearch410(prev,this,arguments,term);
+    };
+  }
+
+  function setVersion410(){
+    document.querySelectorAll('.creator').forEach(el=>{
+      const t=`· Creado por David Corregidor · ${HX_APP_VERSION_410}`;
+      if(el.textContent!==t) el.textContent=t;
+    });
+  }
+  document.addEventListener('DOMContentLoaded',()=>{ setVersion410(); setTimeout(setVersion410,200); });
+  window.HX_APP_VERSION=HX_APP_VERSION_410;
+})();
+
+/* =====================================================
+   PATCH v4.0.12 · MongoDB + respaldo local
+   - Nuevo: MongoDB genera _id y número.
+   - Editar: conserva mongoId y número.
+   - Duplicar: genera mongoId y número nuevos.
+   - localStorage se mantiene temporalmente como respaldo.
+   ===================================================== */
+(()=>{
+  const HX_MONGO_ENDPOINT = '/.netlify/functions/guardar-presupuesto';
+  const HX_APP_VERSION_MONGO = '4.2.17';
+  let hxDuplicadoDePendiente = null;
+  let hxIdentificadorDuplicadoPendiente = '';
+  let hxGuardandoMongo = false;
+
+  function hxPresupuestoSeleccionado(){
+    const sel = $('#presupuestosGuardados');
+    const id = sel ? String(sel.value || '') : '';
+    if(!id) return null;
+    return leerListaPresupuestos().find(p => String(p.id) === id) || null;
+  }
+
+  async function hxEnviarPresupuestoMongo(data, opciones={}){
+    const payload = {
+      presupuesto: {
+        ...data,
+        mongoId: opciones.mongoId || data.mongoId || null,
+        versionApp: HX_APP_VERSION_MONGO
+      }
+    };
+    if(opciones.mongoId) payload.mongoId = opciones.mongoId;
+    if(opciones.duplicadoDe) payload.duplicadoDe = opciones.duplicadoDe;
+
+    const res = await fetch(HX_MONGO_ENDPOINT, {
+      method: 'POST',
+      headers: {'Content-Type':'application/json'},
+      body: JSON.stringify(payload)
+    });
+
+    let out = null;
+    try{ out = await res.json(); }
+    catch(e){ throw new Error(`Respuesta no válida del servidor (${res.status})`); }
+    if(!res.ok || !out || !out.ok){
+      throw new Error(out?.mensaje || `No se pudo guardar en MongoDB (${res.status})`);
+    }
+    return out;
+  }
+
+  function hxGuardarCopiaLocal(data, selectedId=''){
+    let lista = leerListaPresupuestos();
+    const idx = selectedId ? lista.findIndex(p => String(p.id) === String(selectedId)) : -1;
+    if(idx >= 0){
+      data.id = lista[idx].id;
+      lista[idx] = data;
+    }else{
+      data.id = data.id || Date.now().toString();
+      lista.unshift(data);
+    }
+    escribirListaPresupuestos(lista.slice(0,100));
+    refrescarPresupuestosGuardados();
+    const sel = $('#presupuestosGuardados');
+    if(sel) sel.value = data.id;
+  }
+
+  guardar = async function(){
+    if(hxGuardandoMongo) return;
+    if(!Array.isArray(lineas) || lineas.length === 0){
+      alert('Añade al menos un producto antes de guardar el presupuesto.');
       return;
     }
-    const c=pmCalc(p), rows=pmRows(p), shown=rows.slice(0,5);
-    title.textContent=pmIdentifier(p);
-    const products=shown.length ? shown.map(l=>`<li><span>${escapeHtml(pmProductName(l))}</span><b>x${pmQty(l)||1}</b></li>`).join('') : '<li class="pmx-no-products">Sin productos disponibles</li>';
-    const extra=Math.max(0,rows.length-shown.length);
-    preview.className='pmx-preview-body';
-    preview.innerHTML=`
-      <div class="pmx-identity">
-        <span class="pmx-document-icon" aria-hidden="true">▤</span>
-        <div><h4>${escapeHtml(pmIdentifier(p))}</h4><p>${escapeHtml(p.numero||'Sin número')}</p></div>
-      </div>
-      <dl class="pmx-meta">
-        <div><dt>Cliente</dt><dd>${escapeHtml(p.cliente||'Sin cliente')}</dd></div>
-        <div><dt>Guardado</dt><dd>${escapeHtml(pmDate(p.guardado||p.fecha))}</dd></div>
-        <div><dt>Estado</dt><dd>${escapeHtml(p.estado||'Borrador')}</dd></div>
-        <div><dt>Productos</dt><dd>${c.count}</dd></div>
-      </dl>
-      <div class="pmx-total"><span>Total</span><strong>${fmt.format(c.total)}</strong></div>
-      <div class="pmx-products"><div class="pmx-products-title"><span>Primeros productos</span>${extra?`<small>+${extra} más</small>`:''}</div><ul>${products}</ul></div>`;
-  }
 
-  function pmRender(){
-    const list=pmSorted(), all=leerListaPresupuestos(), root=byId('pmList');
-    if(byId('pmCount')) byId('pmCount').textContent=`${all.length} ${all.length===1?'guardado':'guardados'}`;
-    if(byId('pmVisibleCount')) byId('pmVisibleCount').textContent=`${list.length} visibles`;
-    if(!root) return;
-    if(pmSelectedId && !all.some(p=>String(p.id)===String(pmSelectedId))) pmSelectedId='';
-    if(!list.length){ root.innerHTML='<div class="pmx-list-empty"><span>▤</span><strong>No hay presupuestos</strong><small>Prueba otra búsqueda o guarda el primero.</small></div>'; pmSelectedId=''; pmRenderPreview(); return; }
-    root.innerHTML=list.map(p=>{
-      const c=pmCalc(p), selected=String(p.id)===String(pmSelectedId);
-      return `<button type="button" class="pmx-row${selected?' is-selected':''}" data-pm-id="${escapeHtml(String(p.id))}" role="option" aria-selected="${selected}">
-        <span class="pmx-row-icon" aria-hidden="true">▤</span>
-        <span class="pmx-row-main"><strong>${escapeHtml(pmIdentifier(p))}</strong><small>${escapeHtml(p.cliente||'Sin cliente')} · ${escapeHtml(p.numero||'Sin número')}</small></span>
-        <span class="pmx-row-side"><strong>${fmt.format(c.total)}</strong><small>${c.count} productos</small></span>
-      </button>`;
-    }).join('');
-    root.querySelectorAll('.pmx-row').forEach(row=>{
-      row.addEventListener('click',()=>{pmSelectedId=row.dataset.pmId||'';const sel=byId('presupuestosGuardados');if(sel)sel.value=pmSelectedId;pmRender();pmMobilePreview();});
-      row.addEventListener('dblclick',()=>{pmSelectedId=row.dataset.pmId||'';pmOpenSelected();});
-    });
-    pmRenderPreview();
-  }
+    hxGuardandoMongo = true;
+    const sel = $('#presupuestosGuardados');
+    const selectedId = sel ? String(sel.value || '') : '';
+    const recuperado = hxPresupuestoSeleccionado();
+    const duplicadoDe = hxDuplicadoDePendiente || '';
 
-  function pmShow(){
-    const modal=pmModal(); if(!modal)return;
-    modal.classList.remove('hidden','pm-mobile-preview'); modal.setAttribute('aria-hidden','false');
-    const current=byId('presupuestosGuardados')?.value||''; if(current) pmSelectedId=current;
-    pmRender(); setTimeout(()=>byId('pmSearch')?.focus(),30);
-  }
-  function pmHide(){const modal=pmModal();if(modal){modal.classList.remove('pm-mobile-preview');modal.classList.add('hidden');modal.setAttribute('aria-hidden','true');}}
-  function pmOpenSelected(){const p=pmSelected();if(!p)return;const sel=byId('presupuestosGuardados');if(sel)sel.value=String(p.id);aplicarPresupuesto(p);pmHide();}
-  function pmDuplicateSelected(){
-    const p=pmSelected();if(!p)return;const copy=JSON.parse(JSON.stringify(p));
-    copy.id=Date.now().toString();copy.numero=siguienteNumero(false);copy.identificador=`${pmIdentifier(p)} - copia`;copy.guardado=new Date().toISOString();copy.fecha=new Date().toISOString().slice(0,10);copy.estado='Borrador';
-    const list=leerListaPresupuestos();list.unshift(copy);escribirListaPresupuestos(list.slice(0,100));refrescarPresupuestosGuardados();pmSelectedId=copy.id;pmRender();
-  }
-  function pmRenameSelected(){
-    const p=pmSelected();if(!p)return;const value=prompt('Identificador del presupuesto:',pmIdentifier(p));if(value===null)return;const name=value.trim();if(!name)return;
-    const list=leerListaPresupuestos(),i=list.findIndex(x=>String(x.id)===String(p.id));if(i<0)return;list[i].identificador=name;list[i].guardado=new Date().toISOString();escribirListaPresupuestos(list);refrescarPresupuestosGuardados();pmRender();
-  }
-  function pmDeleteSelected(){
-    const p=pmSelected();if(!p)return;if(!confirm(`¿Eliminar "${pmIdentifier(p)}"?`))return;
-    escribirListaPresupuestos(leerListaPresupuestos().filter(x=>String(x.id)!==String(p.id)));const sel=byId('presupuestosGuardados');if(sel)sel.value='';refrescarPresupuestosGuardados();pmSelectedId='';pmRender();
-  }
-  function pmToast(text){
-    document.querySelector('.pmx-global-toast')?.remove();const t=document.createElement('div');t.className='pmx-global-toast';t.textContent=text;document.body.appendChild(t);requestAnimationFrame(()=>t.classList.add('show'));setTimeout(()=>{t.classList.remove('show');setTimeout(()=>t.remove(),220);},1500);
-  }
+    // El identificador es el nombre interno del presupuesto. En uno nuevo se
+    // solicita antes de enviar nada a MongoDB; al editar se conserva el actual.
+    const esEdicion = Boolean(selectedId && recuperado && !duplicadoDe);
+    let identificador = esEdicion
+      ? String(hxIdentificadorActual || recuperado?.identificador || '').trim()
+      : String(duplicadoDe ? hxIdentificadorDuplicadoPendiente : '').trim();
 
-  const pmGuardarBase=guardar;
-  guardar=function(){
-    if(!Array.isArray(lineas)||!lineas.some(l=>l&&!l.separador&&l.tipo!=='separador')){alert('Añade al menos un producto antes de guardar el presupuesto.');return;}
-    const saved=byId('presupuestosGuardados'),selectedId=String(saved?.value||'');
-    const existing=selectedId?leerListaPresupuestos().find(p=>String(p.id)===selectedId):null;
-    let identifier=existing?.identificador||'';
-    if(!identifier){
-      const suggestion=String(byId('cliente')?.value||'').trim()||String(byId('numero')?.value||'').trim()||'Nuevo presupuesto';
-      const value=prompt('Identificador del presupuesto\nEj.: Casa del pueblo, Oficina Madrid, Chalet García...',suggestion);
-      if(value===null)return;identifier=value.trim()||suggestion;
+    // Un presupuesto nuevo normal pide aquí su identificador. Duplicar ya lo
+    // ha pedido antes de modificar el editor o iniciar cualquier petición.
+    if(!esEdicion && !identificador){
+      const sugerido = String($('#cliente')?.value || '').trim();
+      const respuesta = prompt(
+        'Identificador del presupuesto\nEj.: Casa del pueblo, Oficina Madrid, Chalet García...',
+        sugerido
+      );
+      if(respuesta === null){
+        hxGuardandoMongo = false;
+        hxDuplicadoDePendiente = null;
+        hxIdentificadorDuplicadoPendiente = '';
+        return;
+      }
+      identificador = String(respuesta || '').trim();
+      if(!identificador){
+        alert('Escribe un identificador para guardar el presupuesto.');
+        hxGuardandoMongo = false;
+        hxDuplicadoDePendiente = null;
+        hxIdentificadorDuplicadoPendiente = '';
+        return;
+      }
     }
-    const oldAlert=window.alert;window.alert=function(){};
-    try{pmGuardarBase.apply(this,arguments);}finally{window.alert=oldAlert;}
-    const id=String(saved?.value||'');const list=leerListaPresupuestos(),i=list.findIndex(p=>String(p.id)===id);
-    if(i>=0){list[i].identificador=identifier;list[i].guardado=new Date().toISOString();escribirListaPresupuestos(list);refrescarPresupuestosGuardados();}
-    pmToast(existing?'Presupuesto actualizado':'Presupuesto guardado');
-    nuevoPresupuesto();setTimeout(()=>byId('cliente')?.focus(),30);
+
+    hxIdentificadorActual = identificador;
+    const data = datosPresupuesto();
+    data.identificador = identificador;
+    const mongoId = recuperado && recuperado.mongoId ? String(recuperado.mongoId) : '';
+    let hxLoadingActivo = false;
+
+    try{
+      window.HX_LOADING_SHOW?.(duplicadoDe ? 'Duplicando presupuesto...' : 'Guardando presupuesto...');
+      hxLoadingActivo = true;
+      const resultado = await hxEnviarPresupuestoMongo(data, {
+        mongoId: duplicadoDe ? '' : mongoId,
+        duplicadoDe
+      });
+
+      data.mongoId = resultado.mongoId;
+      data.numero = resultado.numero;
+      data.guardado = new Date().toISOString();
+      data.createdAt = resultado.createdAt || recuperado?.createdAt || data.guardado;
+      data.updatedAt = resultado.updatedAt || data.guardado;
+      if(duplicadoDe) data.duplicadoDe = duplicadoDe;
+
+      const numeroInput = $('#numero');
+      if(numeroInput) numeroInput.value = data.numero;
+
+      hxGuardarCopiaLocal(data, duplicadoDe ? '' : selectedId);
+      hxDuplicadoDePendiente = null;
+      hxIdentificadorDuplicadoPendiente = '';
+      alert(resultado.operacion === 'actualizado'
+        ? `Presupuesto ${data.numero} actualizado.`
+        : `Presupuesto guardado con número ${data.numero}.`);
+
+      // Después de guardar, dejar el presupuestador preparado para uno nuevo.
+      nuevoPresupuesto();
+      setTimeout(()=>$('#cliente')?.focus(),30);
+    }catch(error){
+      console.error('[Hiper Ajax] Error MongoDB:', error);
+      hxDuplicadoDePendiente = null;
+      hxIdentificadorDuplicadoPendiente = '';
+      alert(`No se pudo guardar en la base de datos. No se ha creado ningún número definitivo.\n\n${error.message}`);
+    }finally{
+      if(hxLoadingActivo) window.HX_LOADING_HIDE?.();
+      hxGuardandoMongo = false;
+    }
   };
 
+  duplicarPresupuesto = async function(){
+    if(!Array.isArray(lineas) || lineas.length === 0){
+      alert('Añade al menos un producto antes de duplicar el presupuesto.');
+      return;
+    }
+    const origen = hxPresupuestoSeleccionado();
+    if(!origen?.mongoId){
+      alert('Selecciona primero el presupuesto que quieres duplicar.');
+      return;
+    }
+
+    const sugerido = String(origen.identificador || $('#cliente')?.value || '').trim();
+    const respuesta = prompt(
+      'Nuevo identificador para la copia\nEj.: Casa del pueblo, Oficina Madrid, Chalet García...',
+      sugerido
+    );
+    if(respuesta === null) return;
+    const nuevoIdentificador = String(respuesta || '').trim();
+    if(!nuevoIdentificador){
+      alert('Escribe un identificador para duplicar el presupuesto.');
+      return;
+    }
+
+    // Solo después de validar se prepara la copia.
+    hxDuplicadoDePendiente = String(origen.mongoId);
+    hxIdentificadorDuplicadoPendiente = nuevoIdentificador;
+    const sel = $('#presupuestosGuardados');
+    if(sel) sel.value = '';
+    const numeroInput = $('#numero');
+    if(numeroInput) numeroInput.value = '';
+    $('#estado').value = 'Borrador';
+    $('#fecha').value = new Date().toISOString().slice(0,10);
+    await guardar();
+  };
+
+  const hxNuevoPresupuestoBase = nuevoPresupuesto;
+  nuevoPresupuesto = function(){
+    hxNuevoPresupuestoBase.apply(this, arguments);
+    hxDuplicadoDePendiente = null;
+    hxIdentificadorDuplicadoPendiente = '';
+    const numeroInput = $('#numero');
+    if(numeroInput){
+      numeroInput.value = '';
+      numeroInput.placeholder = 'Se genera al guardar';
+    }
+    const sel = $('#presupuestosGuardados');
+    if(sel) sel.value = '';
+  };
+
+  function hxVersionMongo(){
+    document.querySelectorAll('.creator').forEach(el=>{
+      el.textContent = `· Creado por David Corregidor · ${HX_APP_VERSION_MONGO}`;
+    });
+  }
   document.addEventListener('DOMContentLoaded',()=>{
-    byId('btnBudgets')?.addEventListener('click',pmShow);byId('pmClose')?.addEventListener('click',pmHide);byId('pmCancel')?.addEventListener('click',pmHide);byId('pmBackdrop')?.addEventListener('click',pmHide);byId('pmBackMobile')?.addEventListener('click',pmMobileList);
-    byId('pmSearch')?.addEventListener('input',pmRender);byId('pmSort')?.addEventListener('change',pmRender);byId('pmOpen')?.addEventListener('click',pmOpenSelected);byId('pmDuplicate')?.addEventListener('click',pmDuplicateSelected);byId('pmRename')?.addEventListener('click',pmRenameSelected);byId('pmDelete')?.addEventListener('click',pmDeleteSelected);
-    document.addEventListener('keydown',e=>{const modal=pmModal();if(modal?.classList.contains('hidden'))return;if(e.key==='Escape'){if(pmIsMobile()&&modal?.classList.contains('pm-mobile-preview'))pmMobileList();else pmHide();}});
-    window.addEventListener('resize',()=>{if(!pmIsMobile())pmModal()?.classList.remove('pm-mobile-preview');});
+    hxVersionMongo();
+    setTimeout(hxVersionMongo,250);
+    const numeroInput = $('#numero');
+    const sel = $('#presupuestosGuardados');
+    if(numeroInput && (!sel || !sel.value)){
+      numeroInput.value = '';
+      numeroInput.placeholder = 'Se genera al guardar';
+    }
   });
+  window.HX_APP_VERSION = HX_APP_VERSION_MONGO;
+})();
+
+
+/* =====================================================
+   PATCH v4.0.13 · Presupuestos Cloud: listar + abrir
+   - MongoDB pasa a ser el origen del gestor de presupuestos.
+   - La lista se precarga al iniciar para reducir la espera.
+   - Abrir siempre recupera el documento completo por mongoId.
+   - localStorage se conserva únicamente como respaldo temporal.
+   ===================================================== */
+(()=>{
+  const HX_APP_VERSION_CLOUD_413 = '4.2.17';
+  const HX_LISTAR_ENDPOINT_413 = '/.netlify/functions/listar-presupuestos';
+  const HX_LEER_ENDPOINT_413 = '/.netlify/functions/leer-presupuesto';
+  let hxCloudLista413 = [];
+  let hxCloudCargando413 = null;
+
+  function hxNormalizarResumen413(p){
+    const mongoId = String(p?.mongoId || p?._id || '').trim();
+    return {
+      ...(p || {}),
+      id: mongoId,
+      mongoId,
+      tienda: String(p?.tienda || ''),
+      comercial: String(p?.comercial || ''),
+      identificador: String(p?.identificador || ''),
+      lineas: Array.isArray(p?.lineas) ? p.lineas : [],
+      guardado: p?.updatedAt || p?.guardado || p?.createdAt || p?.fecha || ''
+    };
+  }
+
+  function hxMensajeCloud413(text, error=false){
+    document.querySelector('.hx-cloud-toast-413')?.remove();
+    const el=document.createElement('div');
+    el.className='pmx-global-toast hx-cloud-toast-413';
+    el.textContent=text;
+    if(error) el.style.background='#8f2525';
+    document.body.appendChild(el);
+    requestAnimationFrame(()=>el.classList.add('show'));
+    setTimeout(()=>{el.classList.remove('show');setTimeout(()=>el.remove(),220);},1800);
+  }
+
+  async function hxCargarListaCloud413({silencioso=false}={}){
+    if(hxCloudCargando413) return hxCloudCargando413;
+    hxCloudCargando413=(async()=>{
+      try{
+        const res=await fetch(HX_LISTAR_ENDPOINT_413,{cache:'no-store'});
+        const out=await res.json().catch(()=>null);
+        if(!res.ok || !out?.ok) throw new Error(out?.mensaje || out?.error || `Error ${res.status}`);
+        hxCloudLista413=(Array.isArray(out.presupuestos)?out.presupuestos:[]).map(hxNormalizarResumen413);
+        refrescarPresupuestosGuardados();
+        window.dispatchEvent(new CustomEvent('hiperajax:presupuestos-importados'));
+        return hxCloudLista413;
+      }catch(error){
+        console.error('[Hiper Ajax] No se pudo listar desde MongoDB:',error);
+        if(!silencioso) hxMensajeCloud413(`No se pudieron cargar los presupuestos: ${error.message}`,true);
+        throw error;
+      }finally{
+        hxCloudCargando413=null;
+      }
+    })();
+    return hxCloudCargando413;
+  }
+
+  async function hxAbrirCloud413(mongoId){
+    const id=String(mongoId||'').trim();
+    if(!id){ hxMensajeCloud413('Selecciona un presupuesto.',true); return; }
+
+    const hxRecoveryStarted=Date.now();
+    window.HX_LOADING_SHOW?.('Recuperando presupuesto...');
+    try{
+      // La lista del gestor ya contiene el documento completo, incluidas sus líneas.
+      // Se recupera desde memoria de forma inmediata y solo se consulta MongoDB como respaldo.
+      let presupuesto=hxCloudLista413.find(p=>String(p?.mongoId||p?.id||'')===id)||null;
+
+      if(!presupuesto || !Array.isArray(presupuesto.lineas)){
+        const res=await fetch(`${HX_LEER_ENDPOINT_413}?id=${encodeURIComponent(id)}`,{cache:'no-store'});
+        const out=await res.json().catch(()=>null);
+        if(!res.ok || !out?.ok || !out.presupuesto) throw new Error(out?.mensaje || out?.error || `Error ${res.status}`);
+        presupuesto={...out.presupuesto,id,mongoId:id};
+      }else{
+        presupuesto={...presupuesto,id,mongoId:id};
+      }
+
+      aplicarPresupuesto(presupuesto);
+      const sel=document.getElementById('presupuestosGuardados');
+      if(sel) sel.value=id;
+      const pos=hxCloudLista413.findIndex(p=>p.mongoId===id);
+      if(pos>=0) hxCloudLista413[pos]=hxNormalizarResumen413({...hxCloudLista413[pos],...presupuesto});
+      const modal=document.getElementById('pmModal');
+      if(modal){modal.classList.remove('pm-mobile-preview','pm-mobile-list','pm-has-selection');modal.classList.add('hidden');modal.setAttribute('aria-hidden','true');}
+      hxMensajeCloud413(`Presupuesto ${presupuesto.numero||''} abierto.`);
+      return presupuesto;
+    }catch(error){
+      console.error('[Hiper Ajax] No se pudo abrir desde MongoDB:',error);
+      hxMensajeCloud413(`No se pudo abrir el presupuesto: ${error.message}`,true);
+      return null;
+    }finally{
+      const hxRemaining=Math.max(0,650-(Date.now()-hxRecoveryStarted));
+      if(hxRemaining) await new Promise(resolve=>setTimeout(resolve,hxRemaining));
+      window.HX_LOADING_HIDE?.();
+    }
+  }
+
+  // El gestor existente sigue intacto, pero su fuente pasa a ser esta caché cloud.
+  leerListaPresupuestos=function(){ return hxCloudLista413.slice(); };
+
+  // La caché cloud se carga solo al abrir el gestor. Guardar no vuelve a
+  // descargar toda la colección: la próxima apertura obtiene el estado actual.
+
+  document.addEventListener('click',event=>{
+    const openBtn=event.target.closest?.('#pmOpen,#btnLoadSaved');
+    if(!openBtn) return;
+    event.preventDefault();
+    event.stopImmediatePropagation();
+    hxAbrirCloud413(document.getElementById('presupuestosGuardados')?.value||'');
+  },true);
+
+  document.addEventListener('dblclick',event=>{
+    const row=event.target.closest?.('.pmx-row');
+    if(!row) return;
+    event.preventDefault();
+    event.stopImmediatePropagation();
+    const id=row.dataset.pmId||'';
+    const sel=document.getElementById('presupuestosGuardados');
+    if(sel) sel.value=id;
+    hxAbrirCloud413(id);
+  },true);
+
+  document.addEventListener('DOMContentLoaded',()=>{
+    document.querySelectorAll('.creator').forEach(el=>{
+      el.textContent=`· Creado por David Corregidor · ${HX_APP_VERSION_CLOUD_413}`;
+    });
+  });
+
+  window.HX_RECARGAR_PRESUPUESTOS=hxCargarListaCloud413;
+  window.HX_ABRIR_PRESUPUESTO=hxAbrirCloud413;
+  window.HX_CLOUD_GET_PRESUPUESTO=id=>hxCloudLista413.find(p=>String(p?.mongoId||p?.id||'')===String(id||''))||null;
+  window.HX_CLOUD_UPSERT_PRESUPUESTO=presupuesto=>{
+    const normalizado=hxNormalizarResumen413(presupuesto);
+    const id=normalizado.mongoId;
+    const pos=hxCloudLista413.findIndex(p=>String(p.mongoId)===id);
+    if(pos>=0) hxCloudLista413[pos]=normalizado; else hxCloudLista413.unshift(normalizado);
+    refrescarPresupuestosGuardados();
+    window.dispatchEvent(new CustomEvent('hiperajax:presupuestos-importados'));
+    return normalizado;
+  };
+  window.HX_CLOUD_REMOVE_PRESUPUESTO=id=>{
+    const key=String(id||'');
+    hxCloudLista413=hxCloudLista413.filter(p=>String(p?.mongoId||p?.id||'')!==key);
+    refrescarPresupuestosGuardados();
+    window.dispatchEvent(new CustomEvent('hiperajax:presupuestos-importados'));
+  };
+  window.HX_APP_VERSION=HX_APP_VERSION_CLOUD_413;
+})();
+
+
+/* =====================================================
+   PATCH v4.0.14 · Identificador + Comercial
+   - Renombrar guarda `identificador` en MongoDB.
+   - Número HA-YYYY-XXXX permanece inmutable.
+   - Tienda y Comercial quedan separados.
+   - Comercial: Sin asignar / Luis / Toño.
+   ===================================================== */
+(()=>{
+  const HX_GUARDAR_414='/.netlify/functions/guardar-presupuesto';
+
+  function hxToast414(text,error=false){
+    document.querySelector('.hx-toast-414')?.remove();
+    const el=document.createElement('div');
+    el.className='pmx-global-toast hx-toast-414';
+    el.textContent=text;
+    if(error) el.style.background='#8f2525';
+    document.body.appendChild(el);
+    requestAnimationFrame(()=>el.classList.add('show'));
+    setTimeout(()=>{el.classList.remove('show');setTimeout(()=>el.remove(),220);},1800);
+  }
+
+  async function hxRenombrarCloud414(){
+    const id=String(document.getElementById('presupuestosGuardados')?.value||'').trim();
+    if(!id){hxToast414('Selecciona un presupuesto.',true);return;}
+    try{
+      const actualDoc=window.HX_CLOUD_GET_PRESUPUESTO?.(id);
+      if(!actualDoc) throw new Error('El presupuesto no está cargado. Cierra y abre el gestor.');
+      const actual=String(actualDoc.identificador||'').trim();
+      const sugerido=actual||String(actualDoc.cliente||'').trim()||String(actualDoc.numero||'').trim();
+      const value=prompt('Nombre o identificador del presupuesto:',sugerido);
+      if(value===null)return;
+      const identificador=value.trim();
+      if(!identificador){hxToast414('Escribe un identificador.',true);return;}
+      const presupuesto={...actualDoc,identificador,mongoId:id,versionApp:'4.2.16'};
+      const saveRes=await fetch(HX_GUARDAR_414,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({mongoId:id,presupuesto})});
+      const saveOut=await saveRes.json().catch(()=>null);
+      if(!saveRes.ok||!saveOut?.ok) throw new Error(saveOut?.mensaje||saveOut?.error||`Error ${saveRes.status}`);
+      window.HX_CLOUD_UPSERT_PRESUPUESTO?.({...presupuesto,updatedAt:saveOut.updatedAt||new Date().toISOString()});
+      hxIdentificadorActual=identificador;
+      window.dispatchEvent(new CustomEvent('hiperajax:identificador-cambiado',{detail:{id,identificador}}));
+      window.HX_PM_RENDER?.();
+      hxToast414(`Identificador actualizado: “${identificador}”.`);
+    }catch(error){
+      console.error('[Hiper Ajax] No se pudo renombrar:',error);
+      hxToast414(`No se pudo renombrar: ${error.message}`,true);
+    }
+  }
+
+  document.addEventListener('click',event=>{
+    const btn=event.target.closest?.('#pmRename');
+    if(!btn)return;
+    event.preventDefault();
+    event.stopImmediatePropagation();
+    hxRenombrarCloud414();
+  },true);
+
+  document.addEventListener('DOMContentLoaded',()=>{
+    document.querySelectorAll('.creator').forEach(el=>el.textContent='· Creado por David Corregidor · 4.0.14c');
+  });
+  window.HX_APP_VERSION='4.0.14c';
+})();
+
+
+/* =====================================================
+   PATCH v4.0.15 · Duplicar presupuesto en MongoDB
+   - Nuevo _id y nuevo número automático.
+   - Fecha actual local y estado Borrador.
+   - Conserva contenido, tienda, comercial, cliente, teléfono y email.
+   - El identificador queda vacío.
+   - Intercepta tanto el botón principal como el del gestor.
+   ===================================================== */
+(()=>{
+  const HX_APP_VERSION_DUP_415='4.2.16';
+  const HX_DUP_ENDPOINT_415='/.netlify/functions/guardar-presupuesto';
+  let hxDuplicando415=false;
+
+  function hxFechaLocal415(){
+    const d=new Date();
+    const y=d.getFullYear();
+    const m=String(d.getMonth()+1).padStart(2,'0');
+    const day=String(d.getDate()).padStart(2,'0');
+    return `${y}-${m}-${day}`;
+  }
+
+  function hxToast415(text,error=false){
+    document.querySelector('.hx-dup-toast-415')?.remove();
+    const el=document.createElement('div');
+    el.className='pmx-global-toast hx-dup-toast-415';
+    el.textContent=text;
+    if(error) el.style.background='#8f2525';
+    document.body.appendChild(el);
+    requestAnimationFrame(()=>el.classList.add('show'));
+    setTimeout(()=>{el.classList.remove('show');setTimeout(()=>el.remove(),220);},1900);
+  }
+
+
+  async function hxDuplicar415(){
+    if(hxDuplicando415) return;
+    const sel=document.getElementById('presupuestosGuardados');
+    // Fuente única: la tarjeta activa del gestor. El select oculto se mantiene
+    // solo por compatibilidad con el editor antiguo y puede quedar vacío.
+    const filaActiva=document.querySelector('#pmModal .pmx-row.is-selected[data-pm-id]');
+    const mongoId=String(window.HX_PM_SELECTED_ID || filaActiva?.dataset?.pmId || sel?.value || '').trim();
+    if(!mongoId){
+      hxToast415('Selecciona o abre primero el presupuesto que quieres duplicar.',true);
+      return;
+    }
+
+    const origen=window.HX_CLOUD_GET_PRESUPUESTO?.(mongoId);
+    if(!origen){
+      hxToast415('No se encontró el presupuesto seleccionado en la caché del gestor.',true);
+      return;
+    }
+
+    const baseIdentificador=String(origen.identificador||origen.cliente||origen.numero||'').trim();
+    const sugerido=baseIdentificador ? `${baseIdentificador} - copia` : '';
+    const respuesta=prompt('Identificador para el presupuesto duplicado:',sugerido);
+    if(respuesta===null) return;
+    const nuevoIdentificador=String(respuesta).trim();
+    if(!nuevoIdentificador){
+      hxToast415('Escribe un identificador para duplicar el presupuesto.',true);
+      return;
+    }
+
+    hxDuplicando415=true;
+    const botones=[document.getElementById('btnDuplicate'),document.getElementById('pmDuplicate')].filter(Boolean);
+    botones.forEach(b=>b.disabled=true);
+    window.HX_LOADING_SHOW?.('Duplicando presupuesto...');
+    try{
+      // Duplicar utiliza el mismo guardado estable que los presupuestos nuevos.
+      // Se envía una copia completa SIN mongoId: MongoDB genera solo el número;
+      // el identificador escrito viaja como dato normal y no puede sustituirse.
+      const copiaParaGuardar={
+        ...origen,
+        id:undefined,
+        _id:undefined,
+        mongoId:null,
+        numero:'',
+        identificador:nuevoIdentificador,
+        fecha:hxFechaLocal415(),
+        estado:'Borrador',
+        guardado:new Date().toISOString(),
+        versionApp:HX_APP_VERSION_DUP_415
+      };
+      const res=await fetch(HX_DUP_ENDPOINT_415,{
+        method:'POST',
+        headers:{'Content-Type':'application/json'},
+        body:JSON.stringify({presupuesto:copiaParaGuardar,duplicadoDe:mongoId})
+      });
+      const out=await res.json().catch(()=>null);
+      if(!res.ok || !out?.ok){
+        throw new Error(out?.mensaje || out?.error || `Error ${res.status}`);
+      }
+
+      const nuevoId=String(out.mongoId||out.id||'').trim();
+      const nuevoNumero=String(out.numero||'').trim();
+      if(!nuevoId || !nuevoNumero) throw new Error('El servidor no devolvió el nuevo presupuesto correctamente.');
+
+      // Construimos exactamente la copia enviada y añadimos solo los valores
+      // que pertenecen al servidor: mongoId y número automático.
+      const identificadorConfirmado=nuevoIdentificador;
+      const duplicado={
+        ...copiaParaGuardar,
+        id:nuevoId,
+        mongoId:nuevoId,
+        numero:nuevoNumero,
+        identificador:identificadorConfirmado,
+        duplicadoDe:mongoId,
+        createdAt:out.createdAt||new Date().toISOString(),
+        updatedAt:out.updatedAt||new Date().toISOString()
+      };
+
+      window.HX_CLOUD_UPSERT_PRESUPUESTO?.(duplicado);
+      hxDuplicadoDePendiente=null;
+      aplicarPresupuesto(duplicado);
+      hxIdentificadorActual=identificadorConfirmado;
+      refrescarPresupuestosGuardados();
+      if(sel) sel.value=nuevoId;
+      window.HX_PM_SELECTED_ID=nuevoId;
+      window.dispatchEvent(new CustomEvent('hiperajax:identificador-cambiado',{
+        detail:{id:nuevoId,identificador:identificadorConfirmado}
+      }));
+
+      const modal=document.getElementById('pmModal');
+      if(modal){
+        modal.classList.remove('pm-mobile-preview');
+        modal.classList.add('hidden');
+        modal.setAttribute('aria-hidden','true');
+      }
+      hxToast415(`Duplicado ${duplicado.numero} · ${identificadorConfirmado}`);
+    }catch(error){
+      console.error('[Hiper Ajax] Error al duplicar:',error);
+      hxToast415(`No se pudo duplicar: ${error.message}`,true);
+    }finally{
+      window.HX_LOADING_HIDE?.();
+      hxDuplicando415=false;
+      botones.forEach(b=>b.disabled=false);
+    }
+  }
+
+  document.addEventListener('click',event=>{
+    const btn=event.target.closest?.('#btnDuplicate,#pmDuplicate');
+    if(!btn) return;
+    event.preventDefault();
+    event.stopImmediatePropagation();
+    hxDuplicar415();
+  },true);
+
+  document.addEventListener('DOMContentLoaded',()=>{
+    document.querySelectorAll('.creator').forEach(el=>{
+      el.textContent=`· Creado por David Corregidor · ${HX_APP_VERSION_DUP_415}`;
+    });
+  });
+  window.HX_APP_VERSION=HX_APP_VERSION_DUP_415;
+})();
+
+/* =====================================================
+   PATCH v4.0.16 · Borrar MongoDB + identificador visible
+   - Borrado real en MongoDB con confirmación clara.
+   - Refresca el gestor inmediatamente.
+   - Limpia el presupuesto si se elimina el documento abierto.
+   - Muestra identificador en cabecera y mejora las tarjetas.
+   ===================================================== */
+(()=>{
+  const HX_VERSION_416='4.1.2';
+  const HX_DELETE_416='/.netlify/functions/borrar-presupuesto';
+  let hxDeleting416=false;
+
+  const $416=id=>document.getElementById(id);
+  const hxList416=()=>{
+    try{ return typeof leerListaPresupuestos==='function' ? (leerListaPresupuestos()||[]) : []; }
+    catch(e){ return []; }
+  };
+  const hxSelectedId416=()=>String($416('presupuestosGuardados')?.value||'').trim();
+  const hxSelected416=()=>hxList416().find(p=>String(p.id||p.mongoId||p._id)===hxSelectedId416())||null;
+  const hxIdentifier416=p=>String(p?.identificador||'').trim();
+
+  function hxToast416(text,error=false){
+    document.querySelector('.hx-toast-416')?.remove();
+    const el=document.createElement('div');
+    el.className='pmx-global-toast hx-toast-416';
+    el.textContent=text;
+    if(error) el.style.background='#8f2525';
+    document.body.appendChild(el);
+    requestAnimationFrame(()=>el.classList.add('show'));
+    setTimeout(()=>{el.classList.remove('show');setTimeout(()=>el.remove(),220);},2100);
+  }
+
+  function hxEnsureIdentifier416(){
+    const title=document.querySelector('.section-title-under-actions');
+    if(!title || $416('hxBudgetIdentifier416')) return;
+    const box=document.createElement('div');
+    box.id='hxBudgetIdentifier416';
+    box.className='hx-budget-identifier-416 is-empty';
+    box.innerHTML='<span>Identificador</span><strong>Sin identificador</strong><button type="button" class="hx-id-edit-416" aria-label="Editar identificador" title="Editar identificador">✎</button>';
+    title.appendChild(box);
+  }
+
+  function hxRefreshIdentifier416(){
+    hxEnsureIdentifier416();
+    const box=$416('hxBudgetIdentifier416');
+    if(!box) return;
+    const p=hxSelected416();
+    const value=String(hxIdentificadorActual || hxIdentifier416(p) || '').trim();
+    box.classList.toggle('is-empty',!value);
+    const strong=box.querySelector('strong');
+    if(strong) strong.textContent=value||'Sin identificador';
+    box.title=value ? 'Identificador interno del presupuesto' : 'Asigna un identificador';
+  }
+
+  function hxEnhanceCards416(){
+    const list=hxList416();
+    document.querySelectorAll('#pmList .pmx-row[data-pm-id]').forEach(row=>{
+      const id=String(row.dataset.pmId||'');
+      const p=list.find(x=>String(x.id||x.mongoId||x._id)===id);
+      if(!p) return;
+      const main=row.querySelector('.pmx-row-main');
+      if(!main) return;
+      const identifier=hxIdentifier416(p);
+      const cliente=String(p.cliente||'Sin cliente');
+      const numero=String(p.numero||'Sin número');
+      const tienda=String(p.tienda||'Sin tienda');
+      const comercial=String(p.comercial||'Sin asignar');
+      const fecha=String(p.fecha||'').split('T')[0];
+      const html=`
+        ${identifier?`<strong class="pmx-card-identifier-416">${escapeHtml(identifier)}</strong>`:''}
+        <b class="pmx-card-number-416">${escapeHtml(numero)}</b>
+        <small class="pmx-card-client-416">${escapeHtml(cliente)}</small>
+        <small class="pmx-card-meta-416">${escapeHtml(tienda)} · ${escapeHtml(comercial)}${fecha?` · ${escapeHtml(fecha)}`:''}</small>`;
+      if(main.innerHTML.trim()!==html.trim()) main.innerHTML=html;
+    });
+  }
+
+  function hxClearOpen416(){
+    const sel=$416('presupuestosGuardados');
+    if(sel) sel.value='';
+    try{
+      // Reinicio directo: no llamar a limpiar(), porque abriría una segunda confirmación.
+      if(typeof nuevoPresupuesto==='function') nuevoPresupuesto();
+      else {
+        hxIdentificadorActual='';
+        ['cliente','telefono','email','observaciones'].forEach(id=>{const el=$416(id);if(el)el.value='';});
+        if(Array.isArray(lineas)){ lineas=[]; if(typeof render==='function') render(); }
+      }
+    }catch(e){ console.warn('[Hiper Ajax] No se pudo limpiar tras borrar',e); }
+    hxRefreshIdentifier416();
+  }
+
+  async function hxDelete416(){
+    if(hxDeleting416) return;
+    const id=hxSelectedId416();
+    const p=hxSelected416();
+    if(!id){ hxToast416('Selecciona un presupuesto.',true); return; }
+    const numero=String(p?.numero||'este presupuesto');
+    const identificador=hxIdentifier416(p);
+    const texto=identificador ? `¿Eliminar definitivamente “${identificador}” (${numero})?` : `¿Eliminar definitivamente ${numero}?`;
+    if(!confirm(`${texto}\n\nEsta acción lo borrará de MongoDB y no se puede deshacer.`)) return;
+
+    hxDeleting416=true;
+    window.HX_LOADING_SHOW?.('Eliminando presupuesto...');
+    const btn=$416('pmDelete');
+    if(btn) btn.disabled=true;
+    try{
+      const res=await fetch(HX_DELETE_416,{
+        method:'POST',
+        headers:{'Content-Type':'application/json'},
+        body:JSON.stringify({mongoId:id})
+      });
+      const out=await res.json().catch(()=>null);
+      if(!res.ok || !out?.ok) throw new Error(out?.mensaje||out?.error||`Error ${res.status}`);
+
+      hxClearOpen416();
+      window.HX_CLOUD_REMOVE_PRESUPUESTO?.(id);
+      hxEnhanceCards416();
+      hxToast416(`Presupuesto ${numero} eliminado.`);
+    }catch(error){
+      console.error('[Hiper Ajax] Error al borrar:',error);
+      hxToast416(`No se pudo borrar: ${error.message}`,true);
+    }finally{
+      window.HX_LOADING_HIDE?.();
+      hxDeleting416=false;
+      if(btn) btn.disabled=false;
+    }
+  }
+
+  document.addEventListener('click',event=>{
+    const btn=event.target.closest?.('#pmDelete,#btnDeleteSaved');
+    if(!btn) return;
+    event.preventDefault();
+    event.stopImmediatePropagation();
+    hxDelete416();
+  },true);
+
+  document.addEventListener('change',event=>{
+    if(event.target?.id==='presupuestosGuardados') setTimeout(hxRefreshIdentifier416,0);
+  });
+
+  window.addEventListener('hiperajax:presupuestos-importados',()=>{
+    setTimeout(()=>{hxRefreshIdentifier416();hxEnhanceCards416();},50);
+  });
+  window.addEventListener('hiperajax:identificador-cambiado',()=>setTimeout(hxRefreshIdentifier416,0));
+
+  document.addEventListener('DOMContentLoaded',()=>{
+    hxEnsureIdentifier416();
+    hxRefreshIdentifier416();
+    $416('hxBudgetIdentifier416')?.addEventListener('click',()=>{ if(hxSelectedId416()) $416('pmRename')?.click(); else hxToast416('Guarda o abre primero el presupuesto.',true); });
+    const root=$416('pmList');
+    if(root){
+      new MutationObserver(()=>hxEnhanceCards416()).observe(root,{childList:true,subtree:true});
+    }
+    document.querySelectorAll('.creator').forEach(el=>{
+      el.textContent=`· Creado por David Corregidor · ${HX_VERSION_416}`;
+    });
+  });
+
+  window.HX_GET_IDENTIFICADOR_ACTUAL=()=>String(hxIdentificadorActual || hxIdentifier416(hxSelected416()) || '').trim();
+  window.HX_APP_VERSION=HX_VERSION_416;
+})();
+
+
+/* v4.1.2 · Loading global reutilizable */
+(()=>{
+  let depth=0;
+  let hideTimer=0;
+  function ensure(){
+    let e=document.getElementById('hxGlobalLoading');
+    if(!e){
+      e=document.createElement('div');
+      e.id='hxGlobalLoading';
+      e.className='hx-global-loading hidden';
+      e.innerHTML='<div class="hx-loading-card"><span class="hx-spinner"></span><strong id="hxLoadingText">Procesando...</strong></div>';
+      document.body.appendChild(e);
+    }
+    return e;
+  }
+  window.HX_LOADING_SHOW=(text='Procesando...')=>{
+    depth++;
+    clearTimeout(hideTimer);
+    const e=ensure();
+    const t=e.querySelector('#hxLoadingText');
+    if(t)t.textContent=text;
+    e.classList.remove('hidden');
+  };
+  window.HX_LOADING_HIDE=()=>{
+    depth=Math.max(0,depth-1);
+    if(depth)return;
+    clearTimeout(hideTimer);
+    hideTimer=setTimeout(()=>ensure().classList.add('hidden'),80);
+  };
+  // Cada operación abre y cierra su propio indicador después de validar.
+  // No mostrar carga desde un listener global: los prompt cancelados no deben
+  // dejar mensajes falsos de Guardando, Duplicando o Renombrando.
+  window.addEventListener('hiperajax:presupuestos-importados',()=>{
+    clearTimeout(window.__hxActionFallback428);
+    depth=1;
+    window.HX_LOADING_HIDE();
+  });
+})();
+
+/* =====================================================
+   v4.2.0 · Flujo consolidado del gestor
+   - Un clic: selecciona.
+   - Doble clic PC: recupera.
+   - Botón Recuperar: recupera siempre.
+   - Móvil: filtros -> lista -> selección -> recuperar.
+   ===================================================== */
+(function(){
+  const isMobile=()=>window.matchMedia('(max-width:900px)').matches;
+  const modal=()=>document.getElementById('pmModal');
+  const selectedId=()=>String(document.getElementById('presupuestosGuardados')?.value||'').trim();
+
+  document.addEventListener('click',function(e){
+    const folder=e.target.closest?.('#pmModal .pmx-folder');
+    if(folder&&isMobile()){
+      setTimeout(()=>modal()?.classList.add('pm-mobile-list'),0);
+    }
+  },true);
+
+  document.addEventListener('click',function(e){
+    const back=e.target.closest?.('#pmMobileBackFilters');
+    if(!back)return;
+    e.preventDefault();e.stopPropagation();
+    modal()?.classList.remove('pm-mobile-list','pm-has-selection');
+    const sel=document.getElementById('presupuestosGuardados');if(sel)sel.value='';
+    document.querySelectorAll('#pmModal .pmx-row.is-selected').forEach(r=>r.classList.remove('is-selected'));
+    ['pmOpen','pmDuplicate','pmRename','pmDelete'].forEach(id=>{const b=document.getElementById(id);if(b)b.disabled=true});
+  },true);
+
+  document.addEventListener('dblclick',function(e){
+    if(isMobile())return;
+    const row=e.target.closest?.('#pmModal .pmx-row');if(!row)return;
+    const id=String(row.dataset.pmId||'').trim();if(!id)return;
+    e.preventDefault();e.stopImmediatePropagation();
+    const sel=document.getElementById('presupuestosGuardados');if(sel)sel.value=id;
+    window.HX_ABRIR_PRESUPUESTO?.(id);
+  },true);
+
+  document.addEventListener('click',function(e){
+    const open=e.target.closest?.('#pmOpen');if(!open)return;
+    const id=selectedId();
+    if(!id)return;
+    e.preventDefault();
+    window.HX_ABRIR_PRESUPUESTO?.(id);
+  },false);
+
+  window.HX_APP_VERSION='4.2.9';
 })();
