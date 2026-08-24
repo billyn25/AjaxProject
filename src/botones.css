@@ -18,14 +18,14 @@
 }
 
 /* Acción principal: verde más sobrio, sin efecto fosforito */
-button:not(.secondary):not(.danger):not(.theme-toggle):not(.modal-close):not(.trash):not(.move):not(.line-qty-btn):not(.az-chip):not(.quick-cat-chip){
+button:not([class*="hxp-"]):not(.secondary):not(.danger):not(.theme-toggle):not(.modal-close):not(.trash):not(.move):not(.line-qty-btn):not(.az-chip):not(.quick-cat-chip):not(.header-action):not(.hx-product-thumb){
   background:var(--btn-green)!important;
   border:1px solid var(--btn-green-border)!important;
   color:#fff!important;
   box-shadow:0 5px 12px rgba(20,65,48,.16)!important;
   border-radius:var(--btn-radius)!important;
 }
-button:not(.secondary):not(.danger):not(.theme-toggle):not(.modal-close):not(.trash):not(.move):not(.line-qty-btn):not(.az-chip):not(.quick-cat-chip):hover{
+button:not([class*="hxp-"]):not(.secondary):not(.danger):not(.theme-toggle):not(.modal-close):not(.trash):not(.move):not(.line-qty-btn):not(.az-chip):not(.quick-cat-chip):not(.header-action):hover{
   background:var(--btn-green-hover)!important;
 }
 
@@ -129,4 +129,972 @@ body.light-mode .line-qty-btn{
     max-width:100%!important;
     align-self:flex-end!important;
   }
+}
+
+/* === SISTEMA VISUAL ÚNICO DE ACCIONES UI 5.1 === */
+:root{
+  --ui-control-height:40px;
+  --ui-control-radius:11px;
+  --ui-control-gap:7px;
+  --ui-icon-size:18px;
+  --ui-focus:0 0 0 3px rgba(47,118,92,.16);
+}
+
+.ui-icon,
+.ui-btn-icon,
+.pmx-action-icon,
+.ui-row-icon,
+.pmx-nav-icon,
+.pmx-inline-icon,
+.pmx-document-svg{
+  display:inline-grid;
+  place-items:center;
+  flex:0 0 var(--ui-icon-size);
+  width:var(--ui-icon-size);
+  height:var(--ui-icon-size);
+  line-height:0;
+}
+.ui-icon svg,
+.ui-btn-icon svg,
+.pmx-action-icon svg,
+.ui-row-icon svg,
+.pmx-nav-icon svg,
+.pmx-inline-icon svg,
+.pmx-document-svg svg{
+  display:block;
+  width:100%;
+  height:100%;
+  fill:none;
+  stroke:currentColor;
+  stroke-width:1.9;
+  stroke-linecap:round;
+  stroke-linejoin:round;
+}
+
+/* Zona Añadir producto: una sola métrica visual */
+.add-card .quick-add,
+.add-card .quick-manual,
+.add-card .quick-separator,
+.add-card .explorer-entry-btn{
+  min-height:var(--ui-control-height)!important;
+  display:inline-flex!important;
+  align-items:center!important;
+  justify-content:center!important;
+  gap:var(--ui-control-gap)!important;
+  padding:0 13px!important;
+  border-radius:var(--ui-control-radius)!important;
+  font-family:Inter,Segoe UI,Arial,sans-serif!important;
+  font-size:13px!important;
+  font-weight:650!important;
+  line-height:1!important;
+  letter-spacing:0!important;
+  transition:transform .14s ease,background-color .16s ease,border-color .16s ease,box-shadow .16s ease!important;
+}
+.add-card .quick-add:hover,
+.add-card .quick-manual:hover,
+.add-card .quick-separator:hover,
+.add-card .explorer-entry-btn:hover{transform:translateY(-1px)}
+.add-card .quick-add:active,
+.add-card .quick-manual:active,
+.add-card .quick-separator:active,
+.add-card .explorer-entry-btn:active{transform:translateY(0) scale(.97)}
+
+/* Cerrar modales: icono real, sin carácter × */
+.modal-close{
+  display:inline-grid!important;
+  place-items:center!important;
+  width:34px!important;
+  min-width:34px!important;
+  height:34px!important;
+  padding:0!important;
+  border-radius:11px!important;
+  font-size:0!important;
+}
+.modal-close .ui-icon{width:18px;height:18px;flex-basis:18px}
+.modal-close .ui-icon svg{stroke-width:2}
+
+/* Navegación y metadatos del gestor: sin emojis */
+#pmModal .pmx-folder{
+  display:grid!important;
+  grid-template-columns:20px minmax(0,1fr) auto!important;
+  align-items:center!important;
+  column-gap:8px!important;
+}
+#pmModal .pmx-nav-icon{width:17px;height:17px;flex-basis:17px;color:currentColor}
+#pmModal .pmx-nav-warning{color:#e6a23c}
+#pmModal .pmx-inline-icon{width:14px;height:14px;flex-basis:14px;margin-right:5px;vertical-align:-2px}
+#pmModal .pmx-card-client,
+#pmModal .pmx-card-fields em{display:flex!important;align-items:center!important;gap:4px!important}
+#pmModal .pmx-document-svg{width:22px;height:22px;flex-basis:22px}
+#pmModal .pmx-row-icon .pmx-document-svg{width:24px;height:24px}
+#pmModal .pmx-filter-notice>span{display:flex;align-items:center;gap:5px}
+#pmModal .pmx-search>.ui-icon{width:17px;height:17px;flex-basis:17px}
+#pmModal .pmx-mobile-back,
+#pmModal .pmx-mobile-back-filters{display:inline-flex!important;align-items:center!important;justify-content:center!important;gap:6px!important}
+
+/* Acciones del gestor: misma voz tipográfica y métrica */
+#pmModal .pmx-actions button{
+  min-height:44px!important;
+  display:inline-flex!important;
+  align-items:center!important;
+  justify-content:center!important;
+  gap:8px!important;
+  padding:9px 15px!important;
+  border-radius:11px!important;
+  font-family:Inter,Segoe UI,Arial,sans-serif!important;
+  font-size:13px!important;
+  font-weight:650!important;
+  line-height:1!important;
+  letter-spacing:0!important;
+  transition:transform .14s ease,background-color .16s ease,border-color .16s ease,box-shadow .16s ease!important;
+}
+#pmModal .pmx-actions button:hover:not(:disabled){transform:translateY(-1px)}
+#pmModal .pmx-actions button:active:not(:disabled){transform:translateY(0) scale(.98)}
+#pmModal .pmx-actions .pmx-action-icon{width:18px!important;height:18px!important;flex-basis:18px!important;font-size:0!important}
+#pmModal .pmx-actions .pmx-action-icon svg{width:18px!important;height:18px!important;stroke-width:1.9}
+
+/* Chips y acciones pequeñas */
+.recent-chip,
+.az-chip,
+.quick-cat-chip{
+  font-family:Inter,Segoe UI,Arial,sans-serif!important;
+  font-weight:650!important;
+  transition:transform .14s ease,background-color .16s ease,border-color .16s ease!important;
+}
+.recent-chip:hover,
+.az-chip:hover,
+.quick-cat-chip:hover{transform:translateY(-1px)}
+
+@media(max-width:760px){
+  :root{--ui-control-height:42px;--ui-control-gap:6px;--ui-icon-size:17px}
+  .add-card .quick-add,
+  .add-card .quick-manual,
+  .add-card .quick-separator,
+  .add-card .explorer-entry-btn{font-size:12.5px!important;padding-inline:10px!important}
+  #pmModal .pmx-actions button{min-height:48px!important;font-size:13px!important;padding-inline:9px!important}
+  .budget-card .drag-btn,
+  .budget-card button.trash,
+  .budget-card .line-qty-btn{width:34px!important;min-width:34px!important;height:34px!important;min-height:34px!important}
+}
+
+/* =====================================================
+   PRESUPUESTO UI — implementación única
+   Tabla, cantidad, mover, borrar, separadores y móvil.
+   ===================================================== */
+.budget-card{--budget-gap:8px;--budget-control:36px;--budget-radius:10px}
+.budget-card .table-scroll{max-height:55vh;overflow:auto;border:1px solid rgba(31,143,95,.22);border-radius:14px}
+.budget-card table{width:100%;table-layout:fixed;border-collapse:collapse}
+.budget-card th,.budget-card td{box-sizing:border-box;padding:12px 10px;vertical-align:middle}
+.budget-card th{font-size:11px;line-height:1.2}
+.budget-card td{font-size:13px}
+.budget-card th:nth-child(1),.budget-card td:nth-child(1){width:20%}
+.budget-card th:nth-child(2),.budget-card td:nth-child(2){width:auto}
+.budget-card th:nth-child(3),.budget-card td:nth-child(3){width:96px;text-align:center}
+.budget-card th:nth-child(4),.budget-card td:nth-child(4){width:126px;text-align:center}
+.budget-card th:nth-child(5),.budget-card td:nth-child(5){width:92px;text-align:center}
+.budget-card th:nth-child(6),.budget-card td:nth-child(6){width:112px;text-align:right}
+.budget-card th:nth-child(7),.budget-card td:nth-child(7){width:92px;text-align:center}
+.budget-card .product-cell{padding-left:18px;font-weight:800}
+.budget-card .desc-cell{display:block;max-width:none;white-space:normal;line-height:1.38;color:var(--muted)}
+.budget-card .price-input.editable-pvp,
+.budget-card .dto-input,
+.budget-card .line-qty-input{
+  box-sizing:border-box;height:var(--budget-control);margin:0;border-radius:var(--budget-radius);font:inherit
+}
+.budget-card .price-input.editable-pvp{width:84px;max-width:84px;text-align:center}
+.budget-card .dto-input{width:68px;min-width:68px;max-width:68px;text-align:center}
+.budget-card .qty-cell{white-space:nowrap}
+.budget-card .line-qty-stepper{
+  display:inline-grid;grid-template-columns:var(--budget-control) 52px var(--budget-control);
+  align-items:center;justify-content:center;gap:var(--budget-gap);width:auto;margin:0 auto
+}
+.budget-card .line-qty-input{width:52px;min-width:52px;max-width:52px;padding:0 4px;text-align:center}
+.budget-card .line-qty-btn,
+.budget-card #tbody .drag-btn,
+.budget-card button.trash{
+  box-sizing:border-box;display:inline-grid;place-items:center;
+  width:var(--budget-control);min-width:var(--budget-control);max-width:var(--budget-control);
+  height:var(--budget-control);min-height:var(--budget-control);max-height:var(--budget-control);
+  margin:0;padding:0;border-radius:var(--budget-radius);box-shadow:none;
+  transition:transform .14s ease,background-color .16s ease,border-color .16s ease
+}
+.budget-card .line-qty-btn:hover,
+.budget-card #tbody .drag-btn:hover,
+.budget-card button.trash:hover{transform:translateY(-1px)}
+.budget-card .line-qty-btn:active,
+.budget-card #tbody .drag-btn:active,
+.budget-card button.trash:active{transform:translateY(0) scale(.96)}
+.budget-card td.row-actions{white-space:nowrap;text-align:center}
+.budget-card td.row-actions>*+*{margin-left:var(--budget-gap)!important}
+.budget-card #tbody .drag-btn{
+  display:inline-flex;flex-direction:column;align-items:center;justify-content:center;gap:3px;
+  color:#167c4d;background:rgba(31,143,95,.10);border:1px solid rgba(31,143,95,.34);cursor:grab;touch-action:none;user-select:none
+}
+.budget-card #tbody .drag-btn span{display:block;width:14px;height:2px;border-radius:999px;background:currentColor;pointer-events:none}
+.budget-card #tbody .drag-btn:active{cursor:grabbing}
+.budget-card button.trash{background:#b91c1c!important;color:#fff!important;border:1px solid #991b1b!important}
+.budget-card button.trash:hover{background:#991b1b!important;border-color:#7f1d1d!important}
+.budget-card button.trash .ui-row-icon{width:17px;height:17px;flex-basis:17px}
+.budget-card button.trash .ui-row-icon svg{width:17px;height:17px;stroke-width:2}
+body.light-mode .budget-card #tbody .drag-btn{background:#edf8f1;border-color:#9ed6b3;color:#167c3d}
+.budget-card .section-row td{background:rgba(31,143,95,.10)!important;border-color:rgba(31,143,95,.25)}
+.budget-card .section-row .section-input{text-align:center!important}
+
+/* Estados de arrastre, una sola implementación */
+#tbody tr.row-dragging284{opacity:.82;transform:scale(1.008);filter:drop-shadow(0 9px 14px rgba(0,0,0,.20));position:relative;z-index:20}
+#tbody tr.row-dragging284>td{background:rgba(31,143,95,.18)!important}
+#tbody tr.row-drag-target284>td{box-shadow:inset 0 -2px 0 rgba(72,190,128,.72)!important}
+#tbody tr.row-drop-saved284>td{animation:row-drop-saved284 .62s cubic-bezier(.2,.75,.25,1) both}
+@keyframes row-drop-saved284{0%{transform:scale(.992);background:rgba(31,143,95,.26)}45%{transform:scale(1.004);background:rgba(31,143,95,.15)}100%{transform:scale(1);background:transparent}}
+#tbody .move,#tbody .move-up-mobile284,#tbody .move-down-mobile284{display:none!important}
+
+@media(max-width:760px){
+  .budget-card{--budget-gap:10px;--budget-control:40px;--budget-radius:11px;overflow:hidden}
+  .budget-card .table-scroll{
+    width:100%!important;max-width:100%!important;min-width:0!important;
+    min-height:0!important;max-height:none!important;
+    overflow:visible!important;border:0;border-radius:0
+  }
+  .budget-card table,.budget-card tbody{
+    display:block!important;width:100%!important;max-width:100%!important;min-width:0!important;
+    table-layout:auto!important
+  }
+  .budget-card thead{display:none!important}
+  .budget-card tbody tr[data-linea-index]{
+    display:grid!important;grid-template-columns:minmax(0,1fr) minmax(0,1fr)!important;
+    width:100%!important;max-width:100%!important;min-width:0!important;
+    gap:14px 12px;padding:16px 12px;margin:0;
+    border-bottom:1px solid rgba(31,143,95,.17);overflow:hidden
+  }
+  .budget-card tbody tr[data-linea-index]>td{
+    display:block;width:100%!important;min-width:0!important;max-width:100%!important;
+    padding:0!important;border:0!important;white-space:normal!important;
+    text-align:left!important;overflow:hidden!important;box-sizing:border-box!important
+  }
+  .budget-card tbody tr[data-linea-index]>td:nth-child(1),
+  .budget-card tbody tr[data-linea-index]>td:nth-child(2){grid-column:1/-1}
+  .budget-card tbody tr[data-linea-index]>td:nth-child(3)::before,
+  .budget-card tbody tr[data-linea-index]>td:nth-child(4)::before,
+  .budget-card tbody tr[data-linea-index]>td:nth-child(5)::before,
+  .budget-card tbody tr[data-linea-index]>td:nth-child(6)::before{
+    display:block;margin-bottom:6px;color:var(--muted);font-size:10px;font-weight:800;
+    text-transform:uppercase;letter-spacing:.05em
+  }
+  .budget-card tbody tr[data-linea-index]>td:nth-child(3)::before{content:'PVP'}
+  .budget-card tbody tr[data-linea-index]>td:nth-child(4)::before{content:'Cantidad'}
+  .budget-card tbody tr[data-linea-index]>td:nth-child(5)::before{content:'Desc. %'}
+  .budget-card tbody tr[data-linea-index]>td:nth-child(6)::before{content:'Total'}
+  .budget-card tbody tr[data-linea-index]>td:nth-child(6){display:flex!important;flex-direction:column;justify-content:flex-end}
+  .budget-card tbody tr[data-linea-index]>td.row-actions{
+    grid-column:1/-1;display:flex!important;justify-content:flex-end;align-items:center;
+    gap:var(--budget-gap);padding-top:2px!important;overflow:visible!important
+  }
+  .budget-card td.row-actions>*+*{margin-left:0!important}
+  .budget-card .product-cell{font-size:14px;overflow-wrap:anywhere!important}
+  .budget-card .desc-cell,.budget-card .desc-input{
+    width:100%!important;min-width:0!important;max-width:100%!important;
+    white-space:normal!important;overflow-wrap:anywhere!important;word-break:break-word!important
+  }
+  .budget-card .desc-cell{font-size:11px;line-height:1.42;display:block!important;overflow:visible!important}
+  .budget-card .price-input.editable-pvp,.budget-card .dto-input{
+    width:100%!important;min-width:0!important;max-width:100%!important;height:var(--budget-control)!important
+  }
+  .budget-card .line-qty-stepper{
+    display:grid!important;grid-template-columns:var(--budget-control) minmax(0,1fr) var(--budget-control)!important;
+    width:100%!important;min-width:0!important;max-width:100%!important;gap:var(--budget-gap);margin:0
+  }
+  .budget-card .line-qty-input{
+    width:100%!important;min-width:0!important;max-width:100%!important;height:var(--budget-control)!important
+  }
+  .budget-card .section-row{grid-template-columns:minmax(0,1fr) auto!important;align-items:center}
+  .budget-card .section-row>td:first-child{grid-column:1!important}
+  .budget-card .section-row>td.row-actions{grid-column:2!important;padding-top:0!important}
+  .budget-card .section-row .section-input{text-align:left!important;width:100%!important;min-width:0!important}
+}
+
+
+/* =====================================================
+   PRESUPUESTO MÓVIL PREMIUM — IMPLEMENTACIÓN ÚNICA
+   Tarjetas sin scroll, acciones superiores y rejilla 2×2.
+   ===================================================== */
+@media(max-width:760px){
+  .budget-card{
+    --budget-mobile-gap:12px;
+    overflow:visible!important;
+  }
+  .budget-card .table-scroll{
+    width:100%!important;max-width:100%!important;min-width:0!important;
+    max-height:none!important;overflow:visible!important;border:0!important;border-radius:0!important;
+  }
+  .budget-card table,.budget-card tbody{
+    display:block!important;width:100%!important;max-width:100%!important;min-width:0!important;
+  }
+  .budget-card thead{display:none!important}
+
+  .budget-card tbody tr[data-linea-index]:not(.section-row):not(.hx-drag-placeholder){
+    position:relative!important;
+    display:grid!important;
+    grid-template-columns:repeat(12,minmax(0,1fr))!important;
+    gap:13px 12px!important;
+    width:100%!important;max-width:100%!important;min-width:0!important;
+    margin:0 0 12px!important;
+    padding:15px 14px!important;
+    border:1px solid rgba(31,143,95,.18)!important;
+    border-radius:16px!important;
+    background:rgba(255,255,255,.025)!important;
+    box-shadow:0 7px 18px rgba(0,0,0,.12)!important;
+    overflow:hidden!important;
+  }
+  body.light-mode .budget-card tbody tr[data-linea-index]:not(.section-row):not(.hx-drag-placeholder){
+    background:#fff!important;
+    border-color:#dbe8e0!important;
+    box-shadow:0 7px 18px rgba(31,67,49,.08)!important;
+  }
+  .budget-card tbody tr[data-linea-index]>td{
+    display:block!important;width:100%!important;min-width:0!important;max-width:100%!important;
+    padding:0!important;border:0!important;white-space:normal!important;text-align:left!important;
+    overflow:visible!important;box-sizing:border-box!important;
+  }
+  .budget-card tbody tr[data-linea-index]>td:nth-child(1){grid-column:1/10!important;grid-row:1!important;align-self:center!important}
+  .budget-card tbody tr[data-linea-index]>td.row-actions{grid-column:10/13!important;grid-row:1!important;align-self:center!important}
+  .budget-card tbody tr[data-linea-index]>td:nth-child(2){grid-column:1/-1!important;grid-row:2!important}
+  .budget-card tbody tr[data-linea-index]>td:nth-child(3){grid-column:1/7!important}
+  .budget-card tbody tr[data-linea-index]>td:nth-child(4){grid-column:7/13!important}
+  .budget-card tbody tr[data-linea-index]>td:nth-child(5){grid-column:1/7!important}
+  .budget-card tbody tr[data-linea-index]>td:nth-child(6){grid-column:7/13!important}
+
+  .budget-card tbody tr[data-linea-index]>td:nth-child(3)::before,
+  .budget-card tbody tr[data-linea-index]>td:nth-child(4)::before,
+  .budget-card tbody tr[data-linea-index]>td:nth-child(5)::before,
+  .budget-card tbody tr[data-linea-index]>td:nth-child(6)::before{
+    display:block;margin:0 0 6px;color:var(--muted);font-size:10px;font-weight:850;
+    line-height:1;text-transform:uppercase;letter-spacing:.055em;
+  }
+  .budget-card tbody tr[data-linea-index]>td:nth-child(3)::before{content:'PVP'}
+  .budget-card tbody tr[data-linea-index]>td:nth-child(4)::before{content:'Cantidad'}
+  .budget-card tbody tr[data-linea-index]>td:nth-child(5)::before{content:'Desc. %'}
+  .budget-card tbody tr[data-linea-index]>td:nth-child(6)::before{content:'Total'}
+
+  .budget-card .product-cell{
+    padding-right:0!important;font-size:14px!important;font-weight:850!important;line-height:1.28!important;
+    overflow-wrap:anywhere!important;word-break:break-word!important;
+  }
+  .budget-card .desc-cell,.budget-card .desc-input{
+    width:100%!important;min-width:0!important;max-width:100%!important;
+    white-space:normal!important;overflow-wrap:anywhere!important;word-break:break-word!important;
+  }
+  .budget-card .desc-cell{
+    display:block!important;margin-top:2px!important;margin-bottom:3px!important;color:var(--muted)!important;
+    font-size:11px!important;line-height:1.48!important;
+  }
+  .budget-card .price-input.editable-pvp,.budget-card .dto-input{
+    width:100%!important;min-width:0!important;max-width:100%!important;height:40px!important;
+    margin:0!important;border-radius:10px!important;text-align:center!important;
+  }
+  .budget-card .line-qty-stepper{
+    display:grid!important;grid-template-columns:36px minmax(0,1fr) 36px!important;
+    gap:7px!important;width:100%!important;min-width:0!important;max-width:100%!important;margin:0!important;
+  }
+  .budget-card .line-qty-btn,.budget-card .line-qty-input{
+    height:40px!important;min-height:40px!important;max-height:40px!important;margin:0!important;border-radius:10px!important;
+  }
+  .budget-card .line-qty-input{width:100%!important;min-width:0!important;max-width:100%!important;text-align:center!important}
+  .budget-card tbody tr[data-linea-index]>td:nth-child(6){
+    display:flex!important;flex-direction:column!important;justify-content:flex-end!important;
+  }
+  .budget-card tbody tr[data-linea-index]>td:nth-child(6) b{
+    display:flex;align-items:center;justify-content:center;min-height:40px;padding:7px 9px;
+    border:1px solid rgba(31,143,95,.24);border-radius:10px;
+    background:rgba(31,143,95,.08);color:#35b978;font-size:16px;line-height:1;
+  }
+  body.light-mode .budget-card tbody tr[data-linea-index]>td:nth-child(6) b{
+    background:#edf8f1;color:#17784a;border-color:#b9ddc7;
+  }
+
+  /* Acciones arriba a la derecha: pequeñas visualmente y cómodas al tacto. */
+  .budget-card tbody tr[data-linea-index]>td.row-actions{
+    position:static!important;top:auto!important;right:auto!important;
+    display:flex!important;align-items:center!important;justify-content:flex-end!important;
+    width:100%!important;min-width:0!important;max-width:100%!important;gap:7px!important;
+    padding:0!important;margin:0!important;overflow:visible!important;
+  }
+  .budget-card td.row-actions>*+*{margin-left:0!important}
+  .budget-card #tbody .drag-btn,.budget-card button.trash{
+    width:34px!important;min-width:34px!important;max-width:34px!important;
+    height:34px!important;min-height:34px!important;max-height:34px!important;
+    padding:0!important;border-radius:9px!important;box-shadow:none!important;
+  }
+  .budget-card #tbody .drag-btn{
+    display:inline-flex!important;flex-direction:column!important;align-items:center!important;justify-content:center!important;
+    gap:3px!important;background:rgba(31,143,95,.08)!important;border:1px solid rgba(31,143,95,.25)!important;
+    color:#17804d!important;touch-action:none!important;user-select:none!important;-webkit-touch-callout:none!important;
+  }
+  .budget-card #tbody .drag-btn span{width:14px!important;height:1.5px!important;border-radius:99px!important}
+  .budget-card button.trash{
+    background:rgba(185,28,28,.07)!important;color:#d62f3d!important;border:1px solid rgba(214,47,61,.24)!important;
+  }
+  .budget-card button.trash .ui-row-icon,.budget-card button.trash .ui-row-icon svg{
+    width:15px!important;height:15px!important;flex-basis:15px!important;
+  }
+  body.light-mode .budget-card #tbody .drag-btn{background:#f1f8f4!important;border-color:#bddbc8!important;color:#177647!important}
+  body.light-mode .budget-card button.trash{background:#fff5f5!important;border-color:#efc5c9!important;color:#d32936!important}
+
+  /* Bajo coste: aviso claro sin teñir toda la tarjeta. */
+  #tbody tr.hx-bajo-coste{
+    animation:hxCostePulse .42s ease-in-out 2!important;
+    box-shadow:inset 3px 0 0 #dc2626,0 7px 18px rgba(0,0,0,.12)!important;
+  }
+  #tbody tr.hx-bajo-coste>td{background:transparent!important}
+  #tbody tr.hx-bajo-coste>td:first-child{padding-left:0!important}
+  #tbody tr.hx-bajo-coste .editable-pvp{
+    color:#b91c1c!important;border:1.5px solid #dc2626!important;
+    background:#fff8f8!important;box-shadow:0 0 0 2px rgba(220,38,38,.08)!important;
+  }
+  #tbody tr.hx-bajo-coste>td:nth-child(6) b{
+    color:#c62835!important;background:#fff4f4!important;border-color:#edb5ba!important;
+  }
+  .hx-cost-warning{
+    display:inline-flex!important;width:max-content!important;max-width:100%!important;
+    margin:5px 0 0!important;padding:3px 7px!important;font-size:9px!important;
+    border-radius:999px!important;background:#fff1f2!important;color:#b91c1c!important;border-color:#f0a9b0!important;
+  }
+  body:not(.light-mode) #tbody tr.hx-bajo-coste .editable-pvp{
+    color:#fecaca!important;background:rgba(127,29,29,.22)!important;
+  }
+  body:not(.light-mode) #tbody tr.hx-bajo-coste>td:nth-child(6) b{
+    color:#fecaca!important;background:rgba(127,29,29,.22)!important;border-color:rgba(248,113,113,.45)!important;
+  }
+  body:not(.light-mode) .hx-cost-warning{
+    color:#fecaca!important;background:rgba(127,29,29,.28)!important;border-color:rgba(248,113,113,.55)!important;
+  }
+
+  /* Separador móvil: una sola franja, título y acciones en la misma línea. */
+  .budget-card .section-row{
+    position:relative!important;
+    display:grid!important;
+    grid-template-columns:minmax(0,1fr) auto!important;
+    align-items:center!important;
+    column-gap:10px!important;
+    width:100%!important;max-width:100%!important;min-width:0!important;
+    margin:2px 0 12px!important;padding:10px 12px!important;
+    border:1px solid rgba(31,143,95,.20)!important;border-radius:13px!important;
+    background:rgba(31,143,95,.055)!important;overflow:hidden!important;
+  }
+  body.light-mode .budget-card .section-row{background:#f3faf6!important;border-color:#d0e5d8!important}
+  .budget-card .section-row>td:first-child{
+    display:block!important;grid-column:1!important;width:100%!important;min-width:0!important;
+    padding:0!important;overflow:hidden!important;
+  }
+  .budget-card .section-row>td.row-actions{
+    position:static!important;grid-column:2!important;display:flex!important;align-items:center!important;
+    justify-content:flex-end!important;gap:7px!important;width:auto!important;min-width:0!important;
+    padding:0!important;margin:0!important;overflow:visible!important;
+  }
+  .budget-card .section-row .section-divider{
+    display:grid!important;
+    grid-template-columns:minmax(10px,1fr) minmax(0,auto) minmax(10px,1fr)!important;
+    align-items:center!important;gap:8px!important;width:100%!important;min-width:0!important;
+  }
+  .budget-card .section-row .section-divider-line{
+    display:block!important;width:100%!important;height:1px!important;
+    background:rgba(31,143,95,.42)!important;border:0!important;
+  }
+  .budget-card .section-row .section-input{
+    width:auto!important;min-width:0!important;max-width:42vw!important;height:31px!important;
+    margin:0!important;padding:4px 9px!important;border-radius:999px!important;
+    font-size:10.5px!important;font-weight:850!important;text-align:center!important;
+    white-space:nowrap!important;overflow:hidden!important;text-overflow:ellipsis!important;
+  }
+  .budget-card .section-row .drag-btn,.budget-card .section-row button.trash{
+    flex:0 0 32px!important;width:32px!important;min-width:32px!important;max-width:32px!important;
+    height:32px!important;min-height:32px!important;max-height:32px!important;margin:0!important;
+  }
+
+  /* Destino de arrastre claro y compacto. */
+  #tbody tr.hx-drag-placeholder-mobile{display:table-row!important;height:34px!important;min-height:34px!important}
+  #tbody tr.hx-drag-placeholder-mobile>td{
+    display:table-cell!important;height:34px!important;min-height:34px!important;padding:5px 4px!important;
+    border:0!important;background:transparent!important;box-shadow:none!important;text-align:center!important;overflow:visible!important;
+  }
+  .hx-drop-label{
+    display:flex!important;align-items:center!important;justify-content:center!important;width:100%!important;min-height:25px!important;
+    border:1px dashed rgba(57,184,116,.72)!important;border-radius:9px!important;
+    background:rgba(27,78,52,.20)!important;color:#bff4d4!important;font-size:10.5px!important;font-weight:850!important;
+  }
+  body.light-mode .hx-drop-label{background:#e8f6ed!important;border-color:#63ad7f!important;color:#17663b!important}
+  #tbody tr.row-drag-target284:not(.section-row){
+    background:rgba(34,64,50,.22)!important;box-shadow:inset 0 0 0 1px rgba(74,190,129,.44)!important;
+  }
+  body.light-mode #tbody tr.row-drag-target284:not(.section-row){background:#edf6f0!important;box-shadow:inset 0 0 0 1px #9bcaae!important}
+
+  /* El clon de arrastre conserva exactamente la geometría de la tarjeta. */
+  .hx-drag-ghost{
+    display:block!important;max-width:calc(100vw - 20px)!important;min-width:0!important;
+    contain:layout paint style!important;overflow:hidden!important;
+  }
+  .hx-drag-ghost tbody{display:block!important;width:100%!important;min-width:0!important;max-width:100%!important}
+  .hx-drag-ghost tr[data-linea-index]{
+    width:100%!important;min-width:0!important;max-width:100%!important;margin:0!important;
+    box-sizing:border-box!important;transform:none!important;
+  }
+  .hx-drag-ghost tr[data-linea-index]>td{min-width:0!important;max-width:100%!important;box-sizing:border-box!important}
+
+  /* Resumen final compacto y jerárquico. */
+  .budget-card .totals.totals-v3{
+    display:grid!important;grid-template-columns:1fr!important;gap:0!important;
+    margin-top:14px!important;border:1px solid rgba(31,143,95,.18)!important;
+    border-radius:15px!important;overflow:hidden!important;background:transparent!important;
+  }
+  .budget-card .totals.totals-v3>div{
+    display:flex!important;align-items:center!important;justify-content:space-between!important;
+    min-height:43px!important;padding:10px 13px!important;text-align:left!important;
+    border:0!important;border-bottom:1px solid rgba(31,143,95,.12)!important;background:rgba(255,255,255,.025)!important;
+  }
+  .budget-card .totals.totals-v3>div:last-child{border-bottom:0!important}
+  .budget-card .totals.totals-v3 span{margin:0!important;font-size:11px!important;font-weight:800!important}
+  .budget-card .totals.totals-v3 strong{font-size:14px!important}
+  .budget-card .totals.totals-v3 .total-box{
+    min-height:58px!important;background:linear-gradient(135deg,#daf3e4,#c9ead7)!important;color:#0f623b!important;
+  }
+  .budget-card .totals.totals-v3 .total-box span{font-size:13px!important;color:#17643e!important}
+  .budget-card .totals.totals-v3 .total-box strong{font-size:22px!important;color:#0d663d!important}
+  body:not(.light-mode) .budget-card .totals.totals-v3 .total-box{
+    background:#2f765c!important;color:#d8f7e5!important;
+  }
+  body:not(.light-mode) .budget-card .totals.totals-v3 .total-box span,
+  body:not(.light-mode) .budget-card .totals.totals-v3 .total-box strong{color:#d8f7e5!important}
+}
+
+/* =====================================================
+   CIERRE PRESUPUESTO: línea vacía + separador estable
+   Estructura propia para evitar reglas históricas de tabla.
+   ===================================================== */
+.budget-card .section-row > .section-full-cell{
+  padding:0!important;
+  background:transparent!important;
+  border:0!important;
+}
+.budget-card .section-bar{
+  display:grid;
+  grid-template-columns:minmax(0,1fr) auto;
+  align-items:center;
+  gap:10px;
+  width:100%;
+  min-width:0;
+  padding:9px 13px;
+  border:1px solid rgba(31,143,95,.22);
+  border-radius:13px;
+  background:rgba(31,143,95,.06);
+}
+body.light-mode .budget-card .section-bar{
+  background:#f3faf6;
+  border-color:#cfe4d7;
+}
+.budget-card .section-bar .section-divider{
+  display:grid!important;
+  grid-template-columns:minmax(12px,1fr) minmax(0,auto) minmax(12px,1fr)!important;
+  align-items:center!important;
+  gap:9px!important;
+  min-width:0!important;
+  width:100%!important;
+}
+.budget-card .section-bar .section-divider-line{
+  display:block!important;
+  width:100%!important;
+  height:1px!important;
+  background:rgba(31,143,95,.48)!important;
+  border:0!important;
+}
+.budget-card .section-bar .section-input{
+  width:auto!important;
+  min-width:0!important;
+  max-width:100%!important;
+  height:30px!important;
+  margin:0!important;
+  padding:4px 13px!important;
+  border:0!important;
+  border-radius:999px!important;
+  background:transparent!important;
+  box-shadow:none!important;
+  color:inherit!important;
+  font-size:11px!important;
+  font-weight:850!important;
+  line-height:1!important;
+  text-align:center!important;
+  white-space:nowrap!important;
+  overflow:hidden!important;
+  text-overflow:ellipsis!important;
+}
+.budget-card .section-bar .section-actions{
+  position:static!important;
+  display:flex!important;
+  align-items:center!important;
+  justify-content:flex-end!important;
+  gap:7px!important;
+  width:auto!important;
+  min-width:max-content!important;
+  margin:0!important;
+  padding:0!important;
+}
+
+@media(max-width:760px){
+  /* El separador es siempre una sola franja. */
+  .budget-card .section-row{
+    display:block!important;
+    width:100%!important;
+    min-width:0!important;
+    max-width:100%!important;
+    margin:2px 0 12px!important;
+    padding:0!important;
+    border:0!important;
+    border-radius:0!important;
+    background:transparent!important;
+    box-shadow:none!important;
+    overflow:visible!important;
+  }
+  .budget-card .section-row > .section-full-cell{
+    display:block!important;
+    width:100%!important;
+    min-width:0!important;
+    max-width:100%!important;
+    padding:0!important;
+  }
+  .budget-card .section-bar{
+    grid-template-columns:minmax(0,1fr) auto!important;
+    min-height:52px!important;
+  }
+  .budget-card .section-bar .section-input{
+    max-width:45vw!important;
+  }
+  .budget-card .section-bar .drag-btn,
+  .budget-card .section-bar button.trash{
+    flex:0 0 34px!important;
+    width:34px!important;
+    min-width:34px!important;
+    max-width:34px!important;
+    height:34px!important;
+    min-height:34px!important;
+    max-height:34px!important;
+    margin:0!important;
+    align-self:center!important;
+  }
+
+  /* Línea vacía: cabecera limpia y descripción debajo. */
+  .budget-card tbody tr.manual-row{
+    grid-template-columns:repeat(12,minmax(0,1fr))!important;
+  }
+  .budget-card tbody tr.manual-row > td:nth-child(1){
+    grid-column:1/9!important;
+    grid-row:1!important;
+    align-self:center!important;
+    min-width:0!important;
+    padding-right:2px!important;
+  }
+  .budget-card tbody tr.manual-row > td.row-actions{
+    grid-column:9/13!important;
+    grid-row:1!important;
+    align-self:center!important;
+    justify-content:flex-end!important;
+    min-width:78px!important;
+  }
+  .budget-card tbody tr.manual-row > td:nth-child(2){
+    grid-column:1/-1!important;
+    grid-row:2!important;
+    margin-top:1px!important;
+  }
+  .budget-card tbody tr.manual-row .product-cell .manual-input,
+  .budget-card tbody tr.manual-row .desc-input{
+    display:block!important;
+    width:100%!important;
+    min-width:0!important;
+    max-width:100%!important;
+    margin:0!important;
+    box-sizing:border-box!important;
+  }
+  .budget-card tbody tr.manual-row .product-cell .manual-input{
+    height:38px!important;
+  }
+  .budget-card tbody tr.manual-row .desc-input{
+    height:38px!important;
+  }
+}
+
+
+/* === CIERRE REAL: línea vacía y separador alineados === */
+@media(max-width:760px){
+  .budget-card tbody tr.manual-row > td:nth-child(1){grid-column:1/9!important;min-width:0!important;overflow:hidden!important}
+  .budget-card tbody tr.manual-row > td.row-actions{grid-column:9/13!important;min-width:78px!important;justify-content:flex-end!important}
+  .budget-card tbody tr.manual-row .product-cell .manual-input{width:100%!important;max-width:100%!important;min-width:0!important}
+  .budget-card .section-bar{align-items:center!important;min-height:54px!important}
+  .budget-card .section-bar .section-actions{align-items:center!important}
+  .budget-card .section-bar .drag-btn,
+  .budget-card .section-bar button.trash{width:34px!important;min-width:34px!important;max-width:34px!important;height:34px!important;min-height:34px!important;max-height:34px!important;align-self:center!important}
+}
+
+/* =====================================================
+   INICIO 2.2 — distribución final
+   PC conserva el formulario original.
+   Móvil usa rejilla compacta sin tarjetas por campo.
+   ===================================================== */
+
+.budget-card .budget-head-v2{
+  display:flex!important;flex-direction:row!important;align-items:center!important;
+  justify-content:space-between!important;gap:18px!important;margin:0 0 20px!important;
+  padding:0 0 14px!important;border-bottom:1px solid rgba(31,143,95,.18)!important;
+}
+.budget-card .budget-head-title{display:block!important;min-width:0!important}
+.budget-card .budget-head-title h2{margin:0!important}
+.budget-card .budget-head-hint{display:none!important}
+.budget-card .budget-toolbar.header-toolbar{display:flex!important;align-items:center!important;justify-content:flex-end!important;flex:0 0 auto!important;gap:18px!important;margin:0!important}
+.budget-card .budget-toolbar.header-toolbar > .header-action{
+  appearance:none;box-sizing:border-box;display:inline-flex;align-items:center;justify-content:center;
+  flex:0 0 42px;width:42px;min-width:42px;max-width:42px;height:42px;min-height:42px;max-height:42px;
+  aspect-ratio:1/1;margin:0;padding:0;border:1px solid #435149;border-radius:12px;
+  background:#18211d;color:#f4f8f6;box-shadow:0 4px 12px rgba(0,0,0,.14);cursor:pointer;overflow:hidden;
+  transform-origin:center;transition:transform .14s ease,background-color .16s ease,border-color .16s ease,box-shadow .16s ease,color .16s ease;
+}
+.budget-card .budget-toolbar.header-toolbar > .header-action:not(.header-action-danger){color:#159454}
+.budget-card .budget-toolbar.header-toolbar > .header-action:hover,
+.budget-card .budget-toolbar.header-toolbar > .header-action:focus-visible{
+  background:#223029;border-color:#65a486;color:#fff;transform:translateY(-1px) scale(1.02);
+  box-shadow:0 6px 16px rgba(0,0,0,.19),0 0 0 3px rgba(56,156,111,.12);outline:none;
+}
+.budget-card .budget-toolbar.header-toolbar > .header-action:active{transform:translateY(0) scale(.94)}
+.budget-card .budget-toolbar.header-toolbar > .header-action-danger{color:#ef4444}
+.budget-card .budget-toolbar.header-toolbar > .header-action-danger:hover,
+.budget-card .budget-toolbar.header-toolbar > .header-action-danger:focus-visible{background:#351c20;border-color:#d65761;color:#ff5f69;box-shadow:0 6px 16px rgba(0,0,0,.19),0 0 0 3px rgba(220,38,38,.12)}
+body.light-mode .budget-card .budget-toolbar.header-toolbar > .header-action{background:#fff;border-color:#c9d3ce;color:#159454;box-shadow:0 3px 10px rgba(24,51,39,.06)}
+body.light-mode .budget-card .budget-toolbar.header-toolbar > .header-action:hover,
+body.light-mode .budget-card .budget-toolbar.header-toolbar > .header-action:focus-visible{background:#f1f7f4;border-color:#6caf8e;color:#17271f;box-shadow:0 6px 16px rgba(24,51,39,.10),0 0 0 3px rgba(31,143,95,.09)}
+body.light-mode .budget-card .budget-toolbar.header-toolbar > .header-action-danger{color:#d32936}
+body.light-mode .budget-card .budget-toolbar.header-toolbar > .header-action-danger:hover,
+body.light-mode .budget-card .budget-toolbar.header-toolbar > .header-action-danger:focus-visible{background:#fff2f3;border-color:#df6a73;color:#be1724}
+
+@media(max-width:760px){
+  .top-card .quote-row{display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:10px!important;align-items:end!important}
+  .top-card .quote-row > label{grid-column:auto!important;width:auto!important;min-width:0!important;margin:0!important;padding:0!important;border:0!important;border-radius:0!important;background:transparent!important;text-transform:none!important;letter-spacing:0!important;overflow:visible!important}
+  .top-card .quote-row input,.top-card .quote-row select{width:100%!important;min-width:0!important;max-width:100%!important;box-sizing:border-box!important}
+  .top-card .notes-row{grid-column:1/-1!important;margin-top:10px!important}
+  .top-card .notes-row > label{padding:0!important;border:0!important;background:transparent!important;text-transform:none!important;letter-spacing:0!important}
+  .top-card .notes-row textarea{width:100%!important;min-height:72px!important;margin-top:5px!important}
+
+  .add-card .product-tools-pro{display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:9px!important;align-items:end!important}
+  .add-card .quick-main{grid-column:1/-1!important;min-width:0!important}
+  .add-card .quick-qty{grid-column:1!important;min-width:0!important}
+  .add-card .quick-add{grid-column:2!important;width:100%!important;min-width:0!important}
+  .add-card .quick-manual{grid-column:1!important;width:100%!important;min-width:0!important}
+  .add-card .quick-separator{grid-column:2!important;width:100%!important;min-width:0!important}
+  .add-card .quick-explorer{grid-column:1/-1!important;width:100%!important;min-width:0!important}
+  .add-card .quick-qty input,
+  .add-card .quick-add,
+  .add-card .quick-manual,
+  .add-card .quick-separator{height:42px!important;min-height:42px!important}
+  .add-card .quick-add,
+  .add-card .quick-manual,
+  .add-card .quick-separator{padding-inline:10px!important}
+
+  .section-title-under-actions .hx-budget-identifier-416{margin-top:7px!important;margin-bottom:5px!important}
+
+  .budget-card .budget-head-v2{gap:8px!important;margin-bottom:18px!important;padding-bottom:12px!important}
+  .budget-card .budget-head-title{flex:1 1 auto!important}
+  .budget-card .budget-head-title h2{font-size:17px!important;white-space:nowrap!important}
+  .budget-card .budget-toolbar.header-toolbar{gap:7px!important}
+  .budget-card .budget-toolbar.header-toolbar > .header-action{flex:0 0 39px;width:39px;min-width:39px;max-width:39px;height:39px;min-height:39px;max-height:39px;border-radius:10px;box-shadow:none}
+  .budget-card .budget-toolbar .header-icon{flex-basis:19px;width:19px;height:19px}
+  .budget-card .budget-toolbar .header-icon svg{width:19px;height:19px;max-width:19px;max-height:19px}
+  .budget-card .budget-toolbar .header-format-label{font-size:12px!important;letter-spacing:-.2px!important}
+}
+@media(max-width:390px){
+  .top-card .quote-row{gap:8px!important}
+  .budget-card .budget-head-title h2{font-size:14px!important}
+  .budget-card .budget-toolbar.header-toolbar{gap:5px!important}
+  .budget-card .budget-toolbar.header-toolbar > .header-action{flex-basis:36px;width:36px;min-width:36px;max-width:36px;height:36px;min-height:36px;max-height:36px;border-radius:9px}
+  .budget-card .budget-toolbar .header-format-label{font-size:11px!important}
+}
+
+/* =====================================================
+   INICIO 3.1 — cierre visual barra de acciones
+   Colores explícitos y respiración móvil.
+   ===================================================== */
+.budget-card .budget-toolbar #btnSave,
+.budget-card .budget-toolbar #btnBudgets{
+  color:#159454!important;
+}
+.budget-card .budget-toolbar #btnPDF,
+.budget-card .budget-toolbar #btnPDF .header-format-label{
+  color:#d43a3a!important;
+}
+.budget-card .budget-toolbar #btnExcel,
+.budget-card .budget-toolbar #btnExcel .header-format-label{
+  color:#2f765c!important;
+}
+.budget-card .budget-toolbar #btnClear{
+  color:#d43a3a!important;
+}
+.budget-card .budget-toolbar #btnSave svg,
+.budget-card .budget-toolbar #btnBudgets svg,
+.budget-card .budget-toolbar #btnClear svg{
+  stroke:currentColor!important;
+}
+
+@media(max-width:760px){
+  .budget-card .budget-toolbar.header-toolbar{gap:9px!important}
+}
+@media(max-width:390px){
+  .budget-card .budget-toolbar.header-toolbar{gap:7px!important}
+}
+
+/* =====================================================
+   AJUSTE FINAL SEPARADOR — SOLO PC
+   La pista de acciones replica el ancho de ORDEN.
+   No modifica tamaños de botones ni reglas móviles.
+   ===================================================== */
+@media (min-width:761px){
+
+  .budget-card .section-bar{
+    box-sizing:border-box !important;
+    padding-right:12px !important;
+  }
+
+  .budget-card .section-bar .section-actions{
+    width:92px !important;
+    min-width:92px !important;
+    max-width:92px !important;
+
+    display:flex !important;
+    align-items:center !important;
+    justify-content:center !important;
+
+    gap:8px !important;
+    margin:0 !important;
+    padding:0 !important;
+
+    transform:translateX(12px);
+  }
+
+}
+
+@media (min-width:761px){
+
+  .budget-card .section-bar .section-actions .drag-btn{
+      transform:translateX(8px);
+  }
+
+}
+@media (min-width:761px){
+
+  .budget-card .section-bar .section-actions .drag-btn{
+    transform:translateX(8px) !important;
+  }
+
+  .budget-card .section-bar .section-actions .drag-btn:hover{
+    transform:translateX(8px) translateY(-1px) !important;
+  }
+
+  .budget-card .section-bar .section-actions .drag-btn:active{
+    transform:translateX(8px) scale(.96) !important;
+  }
+
+}
+
+
+/* =====================================================
+   EXPLORER DINÁMICO 2.0 — PC + MÓVIL
+   Aislado: no modifica Inicio, Presupuesto ni Catálogo.
+   ===================================================== */
+
+/* =====================================================
+   EXPLORER PRO 3.0 — filtros CSV y orden
+   ===================================================== */
+
+
+/* Fotos de producto: fondo neutro, nunca estilo de botón */
+button.hx-product-thumb,
+.hx-product-thumb{
+  background:#2a3036!important;
+  background-image:none!important;
+  border:1px solid #515b64!important;
+  color:inherit!important;
+  box-shadow:inset 0 0 0 1px rgba(255,255,255,.04)!important;
+  transform:none!important;
+}
+button.hx-product-thumb:hover,
+.hx-product-thumb:hover{
+  background:#333a41!important;
+  background-image:none!important;
+  border-color:#69747e!important;
+  transform:none!important;
+}
+body.light-mode button.hx-product-thumb,
+body.light-mode .hx-product-thumb,
+body.light button.hx-product-thumb,
+body.light .hx-product-thumb,
+body.claro button.hx-product-thumb,
+body.claro .hx-product-thumb{
+  background:#eef1f3!important;
+  background-image:none!important;
+  border-color:#c4ccd2!important;
+}
+body.light-mode button.hx-product-thumb:hover,
+body.light-mode .hx-product-thumb:hover{
+  background:#e4e9ec!important;
+  border-color:#aeb9c1!important;
+}
+
+/* =====================================================
+   13.4 · CONTROLES COMUNES DE MODAL — CIERRE + PRESUPUESTOS
+   Este archivo carga después del CSS principal: capa final intencionada.
+   ===================================================== */
+.modal-close{
+  box-sizing:border-box!important;
+  width:var(--hx-modal-control)!important;
+  min-width:var(--hx-modal-control)!important;
+  height:var(--hx-modal-control)!important;
+  min-height:var(--hx-modal-control)!important;
+  padding:0!important;
+  border:1px solid var(--hx-modal-border)!important;
+  border-radius:var(--hx-modal-radius)!important;
+  background:var(--hx-modal-control-bg)!important;
+  color:var(--hx-modal-control-text)!important;
+  box-shadow:var(--hx-modal-control-shadow)!important;
+  font-size:0!important;
+}
+.modal-close:hover,.modal-close:focus-visible{
+  background:var(--hx-modal-control-hover)!important;
+  border-color:#9eb3a8!important;
+  outline:none!important;
+}
+.modal-close .ui-icon,.modal-close .ui-icon svg{width:18px!important;height:18px!important;}
+.modal-close .ui-icon svg{stroke-width:1.9!important;}
+
+/* Buscador principal del gestor: misma métrica que Explorer. */
+#pmModal .pmx-search{
+  min-height:38px!important;
+  border-radius:10px!important;
+}
+#pmModal .pmx-search input{min-height:36px!important;}
+#pmModal .pmx-toolbar select{
+  min-height:38px!important;
+  border-radius:10px!important;
+}
+
+@media(max-width:820px){
+  #pmModal.pm-mobile-list #pmMobileBackFilters,
+  #pmModal.pm-mobile-preview #pmBackMobile,
+  #pmModal .pmx-search-mobile-go{
+    box-sizing:border-box!important;
+    min-height:var(--hx-modal-control)!important;
+    height:var(--hx-modal-control)!important;
+    border:1px solid var(--hx-modal-border)!important;
+    border-radius:var(--hx-modal-radius)!important;
+    background:var(--hx-modal-control-bg)!important;
+    color:var(--hx-modal-control-text)!important;
+    box-shadow:var(--hx-modal-control-shadow)!important;
+  }
+  #pmModal .pmx-search-mobile-go{width:var(--hx-modal-control)!important;min-width:var(--hx-modal-control)!important;padding:0!important;}
+  #pmModal.pm-mobile-list #pmMobileBackFilters,
+  #pmModal.pm-mobile-preview #pmBackMobile{padding:0 9px!important;font-size:12px!important;font-weight:750!important;}
+  #pmModal.pm-mobile-list #pmMobileBackFilters:active,
+  #pmModal.pm-mobile-preview #pmBackMobile:active,
+  #pmModal .pmx-search-mobile-go:active{background:var(--hx-modal-control-hover)!important;}
 }

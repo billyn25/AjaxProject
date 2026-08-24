@@ -15,14 +15,12 @@ const STORAGE_LISTA_LEGACY = [
   'hiperajax_presupuestos',
   STORAGE_LISTA_BACKUP
 ];
-const CSV_INTERNO = "name;brand;pvp\n10XAJ-BRANDPLATES-B;AJAX;102\n10XAJ-BRANDPLATES-W;AJAX;102\n10XAJ-KEYMCP;AJAX;12.6\n10XAJ-PASS-B;AJAX;58\n10XAJ-PASS-W;AJAX;58\n10XAJ-TAG-B;AJAX;66.2\n10XAJ-TAG-W;AJAX;66.2\nAJ-AC220V-PCB1;AJAX;34\nAJ-AC220V-PCB2;AJAX;34\nAJ-BASEBALLBAT-B;AJAX;60\nAJ-BATTERYBOX-14M;AJAX;334\nAJ-BATTERYBOX-7M;AJAX;222\nAJ-BATTERYKIT-12M;AJAX;410\nAJ-BRACKETDP-B;AJAX;6\nAJ-BRACKETDP-W;AJAX;6\nAJ-BRACKETFP-B;AJAX;8\nAJ-BRACKETFP-W;AJAX;8\nAJ-BRACKETFP2-W;AJAX;5.94\nAJ-BRACKETHS-B;AJAX;16\nAJ-BRACKETHS-W;AJAX;16\nAJ-BRACKETHUB-B;AJAX;16\nAJ-BRACKETHUB-W;AJAX;16\nAJ-BRACKETKP-B;AJAX;12\nAJ-BRACKETKP-W;AJAX;12\nAJ-BRACKETMAGNETDP-B;AJAX;6\nAJ-BRACKETMAGNETDP-W;AJAX;6\nAJ-BRACKETMC-B;AJAX;7.6\nAJ-BRACKETMC-W;AJAX;7.6\nAJ-BRACKETMCO-W;AJAX;20\nAJ-BRACKETMP-B;AJAX;8\nAJ-BRACKETMP-W;AJAX;8\nAJ-BRACKETMPC-B;AJAX;10\nAJ-BRACKETMPC-W;AJAX;10\nAJ-BRACKETMPO-W;AJAX;8\nAJ-BRACKETSS-B;AJAX;16\nAJ-BRACKETSS-W;AJAX;16\nAJ-BTOTEM2-W-ES;AJAX;1800\nAJ-BULLETCAM-4-HLVF-S-B;AJAX;482.46\nAJ-BULLETCAM-4-HLVF-S-W;AJAX;482.46\nAJ-BULLETCAM-5-0400-B;AJAX;245.6\nAJ-BULLETCAM-5-0400-HL-B;AJAX;254.92\nAJ-BULLETCAM-5-0400-HL-W;AJAX;254.92\nAJ-BULLETCAM-5-0400-W;AJAX;245.6\nAJ-BULLETCAM-5-B;AJAX;245.6\nAJ-BULLETCAM-5-HL-B;AJAX;254.92\nAJ-BULLETCAM-5-HL-W;AJAX;254.92\nAJ-BULLETCAM-5-HLVF-B;AJAX;348.44\nAJ-BULLETCAM-5-HLVF-W;AJAX;348.44\nAJ-BULLETCAM-5-W;AJAX;245.6\nAJ-BULLETCAM-8-0400-B;AJAX;327.5\nAJ-BULLETCAM-8-0400-HL-B;AJAX;339.92\nAJ-BULLETCAM-8-0400-HL-W;AJAX;339.92\nAJ-BULLETCAM-8-0400-W;AJAX;327.5\nAJ-BULLETCAM-8-B;AJAX;327.5\nAJ-BULLETCAM-8-HL-B;AJAX;339.92\nAJ-BULLETCAM-8-HL-W;AJAX;339.92\nAJ-BULLETCAM-8-HLVF-B;AJAX;482.46\nAJ-BULLETCAM-8-HLVF-S-B;AJAX;616.48\nAJ-BULLETCAM-8-HLVF-S-W;AJAX;616.48\nAJ-BULLETCAM-8-HLVF-W;AJAX;482.46\nAJ-BULLETCAM-8-W;AJAX;327.5\nAJ-BUTTON-B;AJAX;38.76\nAJ-BUTTON-W;AJAX;38.76\nAJ-BYPASS-DIMMER;AJAX;19.8\nAJ-CAP-B;AJAX;28\nAJ-CENTERBUTTON-1G2W-B;AJAX;13.44\nAJ-CENTERBUTTON-1G2W-B-VERT;AJAX;13.44\nAJ-CENTERBUTTON-1G2W-FOG;AJAX;13.44\nAJ-CENTERBUTTON-1G2W-GRA;AJAX;13.44\nAJ-CENTERBUTTON-1G2W-GRE;AJAX;13.44\nAJ-CENTERBUTTON-1G2W-IVO;AJAX;13.44\nAJ-CENTERBUTTON-1G2W-OLI;AJAX;13.44\nAJ-CENTERBUTTON-1G2W-OYS;AJAX;13.44\nAJ-CENTERBUTTON-1G2W-W;AJAX;13.44\nAJ-CENTERBUTTON-1G2W-W-VERT;AJAX;13.44\nAJ-CENTERBUTTON-2G-B;AJAX;14.36\nAJ-CENTERBUTTON-2G-B-VERT;AJAX;14.36\nAJ-CENTERBUTTON-2G-FOG;AJAX;14.36\nAJ-CENTERBUTTON-2G-GRA;AJAX;14.36\nAJ-CENTERBUTTON-2G-GRE;AJAX;14.36\nAJ-CENTERBUTTON-2G-IVO;AJAX;14.36\nAJ-CENTERBUTTON-2G-OLI;AJAX;14.36\nAJ-CENTERBUTTON-2G-OYS;AJAX;14.36\nAJ-CENTERBUTTON-2G-W;AJAX;14.36\nAJ-CENTERBUTTON-2G-W-VERT;AJAX;14.36\nAJ-CENTERBUTTON-DIMMER-B;AJAX;44.78\nAJ-CENTERBUTTON-DIMMER-B-VERT;AJAX;44.78\nAJ-CENTERBUTTON-DIMMER-W;AJAX;44.78\nAJ-CENTERBUTTON-DIMMER-W-VERT;AJAX;44.78\nAJ-CENTERCOVER-B;AJAX;13.08\nAJ-CENTERCOVER-CP-W;AJAX;9.3\nAJ-CENTERCOVER-FOG;AJAX;13.08\nAJ-CENTERCOVER-GRA;AJAX;13.08\nAJ-CENTERCOVER-GRE;AJAX;13.08\nAJ-CENTERCOVER-IVO;AJAX;13.08\nAJ-CENTERCOVER-LAN-B;AJAX;6.82\nAJ-CENTERCOVER-LAN-W;AJAX;6.82\nAJ-CENTERCOVER-OLI;AJAX;13.08\nAJ-CENTERCOVER-OYS;AJAX;13.08\nAJ-CENTERCOVER-SMART-B;AJAX;22.04\nAJ-CENTERCOVER-SMART-FOG;AJAX;22.04\nAJ-CENTERCOVER-SMART-GRA;AJAX;22.04\nAJ-CENTERCOVER-SMART-GRE;AJAX;22.04\nAJ-CENTERCOVER-SMART-IVO;AJAX;22.04\nAJ-CENTERCOVER-SMART-OLI;AJAX;22.04\nAJ-CENTERCOVER-SMART-OYS;AJAX;22.04\nAJ-CENTERCOVER-SMART-W;AJAX;22.04\nAJ-CENTERCOVER-W;AJAX;13.08\nAJ-COMBIPROTECT-B;AJAX;108.12\nAJ-COMBIPROTECT-B-DUMMY;AJAX;14\nAJ-COMBIPROTECT-W;AJAX;108.12\nAJ-COMBIPROTECT-W-DUMMY;AJAX;14\nAJ-COVERHOLDER-COVERPLATE;AJAX;10.08\nAJ-CUP;AJAX;20.3\nAJ-CURTAINCAMOUTDOOR-HIGHMOUNT-PHOD-W;AJAX;545.32\nAJ-CURTAINOUTDOOR-MINI-W;AJAX;165.78\nAJ-CURTAINOUTDOOR-W;AJAX;231.84\nAJ-CURTAINPROTECT-B;AJAX;93.84\nAJ-CURTAINPROTECT-B-DUMMY;AJAX;24\nAJ-CURTAINPROTECT-W;AJAX;93.84\nAJ-CURTAINPROTECT-W-DUMMY;AJAX;24\nAJ-DC1224V-PCB1;AJAX;34\nAJ-DC1224V-PCB2;AJAX;34\nAJ-DC12V-PSU-NVR;AJAX;38.32\nAJ-DC6V-PCB2;AJAX;34.68\nAJ-DEMOCASE-B;AJAX;700\nAJ-DEMOCASE-W;AJAX;700\nAJ-DEMOCASE2-B;AJAX;850\nAJ-DEMOCASE2-W;AJAX;850\nAJ-DINHOLDER;AJAX;13.4\nAJ-DOMECAM-4-HLVF-S-B;AJAX;482.46\nAJ-DOMECAM-4-HLVF-S-W;AJAX;482.46\nAJ-DOMECAM-5-HLVF-B;AJAX;348.44\nAJ-DOMECAM-5-HLVF-W;AJAX;348.44\nAJ-DOMECAM-8-HLVF-B;AJAX;482.46\nAJ-DOMECAM-8-HLVF-S-B;AJAX;616.48\nAJ-DOMECAM-8-HLVF-S-W;AJAX;616.48\nAJ-DOMECAM-8-HLVF-W;AJAX;482.46\nAJ-DOMECAM-MINI-5-0400-B;AJAX;245.6\nAJ-DOMECAM-MINI-5-0400-HL-B;AJAX;254.92\nAJ-DOMECAM-MINI-5-0400-HL-W;AJAX;254.92\nAJ-DOMECAM-MINI-5-0400-W;AJAX;245.6\nAJ-DOMECAM-MINI-5-B;AJAX;245.6\nAJ-DOMECAM-MINI-5-HL-B;AJAX;254.92\nAJ-DOMECAM-MINI-5-HL-W;AJAX;254.92\nAJ-DOMECAM-MINI-5-W;AJAX;245.6\nAJ-DOMECAM-MINI-8-0400-B;AJAX;327.5\nAJ-DOMECAM-MINI-8-0400-HL-B;AJAX;339.92\nAJ-DOMECAM-MINI-8-0400-HL-W;AJAX;339.92\nAJ-DOMECAM-MINI-8-0400-W;AJAX;327.5\nAJ-DOMECAM-MINI-8-B;AJAX;327.5\nAJ-DOMECAM-MINI-8-HL-B;AJAX;339.92\nAJ-DOMECAM-MINI-8-HL-W;AJAX;339.92\nAJ-DOMECAM-MINI-8-W;AJAX;327.5\nAJ-DOORBELL-4-B;AJAX;367.94\nAJ-DOORBELL-4-GRA;AJAX;367.94\nAJ-DOORBELL-4-GRE;AJAX;367.94\nAJ-DOORBELL-4-W;AJAX;367.94\nAJ-DOORPROTECT-B;AJAX;44.88\nAJ-DOORPROTECT-B-DUMMY;AJAX;9.78\nAJ-DOORPROTECT-W;AJAX;44.88\nAJ-DOORPROTECT-W-DUMMY;AJAX;2\nAJ-DOORPROTECTPLUS-B;AJAX;71.4\nAJ-DOORPROTECTPLUS-W;AJAX;71.4\nAJ-DOUBLEBUTTON-B;AJAX;38.76\nAJ-DOUBLEBUTTON-W;AJAX;38.76\nAJ-DUALCURTAINOUTDOOR-W;AJAX;269.28\nAJ-DUALCURTAINOUTDOOR-W-DUMMY;AJAX;76\nAJ-EXTERNALANTENNA-B;AJAX;29.8\nAJ-FIREPROTECT-B;AJAX;94.76\nAJ-FIREPROTECT-B-DUMMY;AJAX;24\nAJ-FIREPROTECT-W;AJAX;94.76\nAJ-FIREPROTECT-W-DUMMY;AJAX;24\nAJ-FIREPROTECT2-C-RB-B;AJAX;125.62\nAJ-FIREPROTECT2-C-RB-W;AJAX;125.62\nAJ-FIREPROTECT2-C-SB-B;AJAX;152.98\nAJ-FIREPROTECT2-C-SB-W;AJAX;152.98\nAJ-FIREPROTECT2-H-RB-B;AJAX;84.34\nAJ-FIREPROTECT2-H-RB-W;AJAX;84.34\nAJ-FIREPROTECT2-H-SB-B;AJAX;107.64\nAJ-FIREPROTECT2-H-SB-W;AJAX;107.64\nAJ-FIREPROTECT2-HC-AC-W;AJAX;151.02\nAJ-FIREPROTECT2-HC-RB-B;AJAX;126.74\nAJ-FIREPROTECT2-HC-RB-W;AJAX;126.74\nAJ-FIREPROTECT2-HC-SB-B;AJAX;154.38\nAJ-FIREPROTECT2-HC-SB-W;AJAX;154.38\nAJ-FIREPROTECT2-HS-RB-B;AJAX;99.94\nAJ-FIREPROTECT2-HS-RB-W;AJAX;99.94\nAJ-FIREPROTECT2-HS-SB-B;AJAX;122.06\nAJ-FIREPROTECT2-HS-SB-W;AJAX;122.06\nAJ-FIREPROTECT2-HSC-RB-B;AJAX;140.72\nAJ-FIREPROTECT2-HSC-RB-W;AJAX;140.72\nAJ-FIREPROTECT2-HSC-SB-B;AJAX;175.06\nAJ-FIREPROTECT2-HSC-SB-W;AJAX;175.06\nAJ-FIREPROTECTPLUS-B;AJAX;142.14\nAJ-FIREPROTECTPLUS-W;AJAX;142.14\nAJ-FRAME-2;AJAX;7.5\nAJ-FRAME-2-VERT;AJAX;7.5\nAJ-FRAME-3;AJAX;8.74\nAJ-FRAME-3-VERT;AJAX;8.74\nAJ-FRAME-4;AJAX;10.92\nAJ-FRAME-4-VERT;AJAX;10.92\nAJ-FRAME-5;AJAX;11.56\nAJ-FRAME-5-VERT;AJAX;11.56\nAJ-GLASSPROTECT-B;AJAX;77.52\nAJ-GLASSPROTECT-B-DUMMY;AJAX;8\nAJ-GLASSPROTECT-W;AJAX;77.52\nAJ-GLASSPROTECT-W-DUMMY;AJAX;8\nAJ-HOLDER-B;AJAX;7.14\nAJ-HOLDER-W;AJAX;7.14\nAJ-HOMESIREN-B;AJAX;74.72\nAJ-HOMESIREN-W;AJAX;74.72\nAJ-HOMESIREN-W-DUMMY;AJAX;18\nAJ-HOOD;AJAX;14.28\nAJ-HOOD-MOTIONCAMOUTDOOR;AJAX;14\nAJ-HUB-B;AJAX;201.96\nAJ-HUB-B-DUMMY;AJAX;30\nAJ-HUB-W;AJAX;201.96\nAJ-HUB-W-DUMMY;AJAX;30\nAJ-HUB2-4G-B;AJAX;373.62\nAJ-HUB2-4G-DC6V-W;AJAX;370\nAJ-HUB2-4G-W;AJAX;373.62\nAJ-HUB2-B;AJAX;281.52\nAJ-HUB2-DC6V-W;AJAX;281.52\nAJ-HUB2-W;AJAX;281.52\nAJ-HUB2KIT-DP-PHOD-B;AJAX;958\nAJ-HUB2KIT-DP-PHOD-W;AJAX;958\nAJ-HUB2KIT-DP-PRO-B;AJAX;918\nAJ-HUB2KIT-DP-PRO-W;AJAX;918\nAJ-HUB2KIT-MP-PHOD-B;AJAX;964\nAJ-HUB2KIT-MP-PHOD-W;AJAX;964\nAJ-HUB2KIT-MP-PRO-B;AJAX;924\nAJ-HUB2KIT-MP-PRO-W;AJAX;924\nAJ-HUB2KIT4G-DP-PHOD-B;AJAX;1052\nAJ-HUB2KIT4G-DP-PHOD-W;AJAX;1052\nAJ-HUB2KIT4G-DP-PRO-B;AJAX;1012\nAJ-HUB2KIT4G-DP-PRO-W;AJAX;1012\nAJ-HUB2KIT4G-MP-PHOD-B;AJAX;1058\nAJ-HUB2KIT4G-MP-PHOD-W;AJAX;1058\nAJ-HUB2KIT4G-MP-PRO-B;AJAX;1018\nAJ-HUB2KIT4G-MP-PRO-W;AJAX;1018\nAJ-HUB2PLUS-B;AJAX;464.5\nAJ-HUB2PLUS-W;AJAX;464.5\nAJ-HUBBATT-2W;AJAX;32\nAJ-HUBBATT-3W;AJAX;36\nAJ-HUBBATT-4G;AJAX;34\nAJ-HUBBP-V2-B;AJAX;361.26\nAJ-HUBBP-V2-NOCASE;AJAX;347.86\nAJ-HUBBP-V2-W;AJAX;361.26\nAJ-HUBKIT-B;AJAX;358.66\nAJ-HUBKIT-RENOVE1-B;AJAX;550\nAJ-HUBKIT-RENOVE1-W;AJAX;550\nAJ-HUBKIT-RENOVE2-B;AJAX;520\nAJ-HUBKIT-RENOVE2-W;AJAX;520\nAJ-HUBKIT-W;AJAX;358.66\nAJ-INDOORCAM-4-B;AJAX;306.6\nAJ-INDOORCAM-4-W;AJAX;306.6\nAJ-INTERNALBATTERY-NB-72V95AH;AJAX;185.98\nAJ-INTERNALBATTERY-RB-64V36AH;AJAX;119.14\nAJ-JUNCTIONBOX-B;AJAX;41.7\nAJ-JUNCTIONBOX-W;AJAX;41.7\nAJ-KEYPAD-B;AJAX;126.48\nAJ-KEYPAD-B-DUMMY;AJAX;28\nAJ-KEYPAD-W;AJAX;126.48\nAJ-KEYPAD-W-DUMMY;AJAX;28\nAJ-KEYPADCOMBI-W-DUMMY;AJAX;32\nAJ-KEYPADOUTDOOR-B;AJAX;235.7\nAJ-KEYPADOUTDOOR-GRA;AJAX;235.7\nAJ-KEYPADOUTDOOR-W;AJAX;235.7\nAJ-KEYPADPLUS-B;AJAX;141.38\nAJ-KEYPADPLUS-W;AJAX;141.38\nAJ-KEYPADPLUS-W-DUMMY;AJAX;42.38\nAJ-KEYPADTOUCHSCREEN-B;AJAX;364.14\nAJ-KEYPADTOUCHSCREEN-W;AJAX;364.14\nAJ-LEAKSPROTECT-B;AJAX;63.86\nAJ-LEAKSPROTECT-W;AJAX;63.86\nAJ-LEDSTRIPS;AJAX;16\nAJ-LIFEQUALITY-B;AJAX;324.7\nAJ-LIFEQUALITY-LITE-B;AJAX;96.38\nAJ-LIFEQUALITY-LITE-W;AJAX;96.38\nAJ-LIFEQUALITY-W;AJAX;324.7\nAJ-LIGHTCORE-1G;AJAX;72.74\nAJ-LIGHTCORE-1G-VERT;AJAX;72.74\nAJ-LIGHTCORE-2G;AJAX;83.68\nAJ-LIGHTCORE-2G-VERT;AJAX;83.68\nAJ-LIGHTCORE-2G2W;AJAX;107.48\nAJ-LIGHTCORE-2G2W-VERT;AJAX;107.48\nAJ-LIGHTCORE-2W;AJAX;77.74\nAJ-LIGHTCORE-2W-VERT;AJAX;77.74\nAJ-LIGHTCORE-CROSS;AJAX;109.1\nAJ-LIGHTCORE-CROSS-VERT;AJAX;109.1\nAJ-LIGHTCORE-DIMMER;AJAX;130.52\nAJ-LIGHTCORE-DIMMER-VERT;AJAX;130.52\nAJ-MAGNET-B;AJAX;8\nAJ-MAGNET-W;AJAX;8\nAJ-MANUALCALLPOINT-BLUE;AJAX;112.46\nAJ-MANUALCALLPOINT-GREEN;AJAX;112.46\nAJ-MANUALCALLPOINT-WHITE;AJAX;112.46\nAJ-MANUALCALLPOINT-YELLOW;AJAX;112.46\nAJ-MINIHUB-W;AJAX;8\nAJ-MOTIONCAM-B-DUMMY;AJAX;50\nAJ-MOTIONCAM-HDR-B;AJAX;171.36\nAJ-MOTIONCAM-HDR-PHOD-B;AJAX;191.76\nAJ-MOTIONCAM-HDR-PHOD-W;AJAX;191.76\nAJ-MOTIONCAM-HDR-W;AJAX;171.36\nAJ-MOTIONCAM-W-DUMMY;AJAX;50\nAJ-MOTIONCAMOUTDOOR-HIGHMOUNT-PHOD-W;AJAX;556.22\nAJ-MOTIONCAMOUTDOOR-PHOD-W;AJAX;387.6\nAJ-MOTIONCAMOUTDOOR-W;AJAX;342.72\nAJ-MOTIONCAMOUTDOOR-W-DUMMY;AJAX;68.46\nAJ-MOTIONCAMOUTDOOR-W-LENS;AJAX;8\nAJ-MOTIONPROTECT-B;AJAX;77.52\nAJ-MOTIONPROTECT-B-DUMMY;AJAX;12\nAJ-MOTIONPROTECT-B-LENS;AJAX;2.8\nAJ-MOTIONPROTECT-W;AJAX;77.52\nAJ-MOTIONPROTECT-W-DUMMY;AJAX;12\nAJ-MOTIONPROTECT-W-LENS;AJAX;2.8\nAJ-MOTIONPROTECTPLUS-B;AJAX;106.08\nAJ-MOTIONPROTECTPLUS-W;AJAX;106.08\nAJ-MOUNTCAM-A1-B;AJAX;51.18\nAJ-MOUNTCAM-A1-W;AJAX;51.18\nAJ-MOUNTCAM-A2-B;AJAX;68.22\nAJ-MOUNTCAM-A2-W;AJAX;68.22\nAJ-MOUNTCAM-B1-B;AJAX;73.1\nAJ-MOUNTCAM-B1-W;AJAX;73.1\nAJ-MOUNTCAM-B2-B;AJAX;90.16\nAJ-MOUNTCAM-B2-W;AJAX;90.16\nAJ-MULTITRANSMITTER-3EOL-B;AJAX;189.72\nAJ-MULTITRANSMITTER-3EOL-W-NF;AJAX;186\nAJ-NVR108-B;AJAX;282.6\nAJ-NVR108-DC-B;AJAX;282.6\nAJ-NVR108-DC-W;AJAX;282.6\nAJ-NVR108-HAC-B;AJAX;324.98\nAJ-NVR108-HAC-W;AJAX;324.98\nAJ-NVR108-HDC-B;AJAX;324.98\nAJ-NVR108-HDC-W;AJAX;324.98\nAJ-NVR108-W;AJAX;282.6\nAJ-NVR116-B;AJAX;434.82\nAJ-NVR116-DC-B;AJAX;434.82\nAJ-NVR116-DC-W;AJAX;434.82\nAJ-NVR116-HAC-B;AJAX;500.04\nAJ-NVR116-HAC-W;AJAX;500.04\nAJ-NVR116-HDC-B;AJAX;500.04\nAJ-NVR116-HDC-W;AJAX;500.04\nAJ-NVR116-W;AJAX;434.82\nAJ-NVR208-HAC-8P-B;AJAX;430.98\nAJ-NVR208-HAC-8P-W;AJAX;430.98\nAJ-NVR208-HAC-AI-8P-S-B;AJAX;469.74\nAJ-NVR208-HAC-AI-8P-S-W;AJAX;469.74\nAJ-NVR208-HAC-B;AJAX;296.98\nAJ-NVR208-HAC-W;AJAX;296.98\nAJ-NVR208-HAC2G-AI-S-B;AJAX;335.72\nAJ-NVR208-HAC2G-AI-S-W;AJAX;335.72\nAJ-NVR216-HAC-16P-B;AJAX;724.94\nAJ-NVR216-HAC-16P-W;AJAX;724.94\nAJ-NVR216-HAC-8P-B;AJAX;590.92\nAJ-NVR216-HAC-8P-W;AJAX;590.92\nAJ-NVR216-HAC-AI-16P-S-B;AJAX;784.56\nAJ-NVR216-HAC-AI-16P-S-W;AJAX;784.56\nAJ-NVR216-HAC-AI-8P-S-B;AJAX;650.54\nAJ-NVR216-HAC-AI-8P-S-W;AJAX;650.54\nAJ-NVR216-HAC-B;AJAX;456.92\nAJ-NVR216-HAC-W;AJAX;456.92\nAJ-NVR216-HAC2G-AI-S-B;AJAX;516.52\nAJ-NVR216-HAC2G-AI-S-W;AJAX;516.52\nAJ-NVR232-HAC-AI-16P-S-B;AJAX;1059.12\nAJ-NVR232-HAC-AI-16P-S-W;AJAX;1059.12\nAJ-NVR232-HAC2G-AI-S-B;AJAX;697.3\nAJ-NVR232-HAC2G-AI-S-W;AJAX;697.3\nAJ-NVRKIT108-2XBULLET-W;AJAX;703.48\nAJ-NVRKIT108-2XTURRET-W;AJAX;703.48\nAJ-NVRKIT108B-2W;AJAX;600\nAJ-NVRKIT108T-4;AJAX;510.1\nAJ-OCBRIDGEPLUS;AJAX;85.68\nAJ-OUTDOORPROTECT-W;AJAX;240.72\nAJ-OUTDOORPROTECT-W-DUMMY;AJAX;36\nAJ-OUTDOORPROTECT-W-LENS;AJAX;3\nAJ-OUTLETCORE-BASIC;AJAX;26.04\nAJ-OUTLETCORE-BASIC-VERT;AJAX;26.04\nAJ-OUTLETCORE-LAN-B;AJAX;14.2\nAJ-OUTLETCORE-LAN-W;AJAX;14.2\nAJ-OUTLETCORE-SMART;AJAX;65.04\nAJ-PASS-B;AJAX;5.8\nAJ-PASS-W;AJAX;5.8\nAJ-POLO-L;AJAX;59\nAJ-POLO-M;AJAX;62\nAJ-POLO-S;AJAX;59\nAJ-POLO-XL;AJAX;62\nAJ-POLO-XXL;AJAX;59\nAJ-REEDSWITCH;AJAX;2.22\nAJ-RELAY;AJAX;55.62\nAJ-REPAIRKITHUB-W;AJAX;30\nAJ-REX-B;AJAX;159.12\nAJ-REX-W;AJAX;159.12\nAJ-REX2-B;AJAX;236.64\nAJ-REX2-W-NF;AJAX;232\nAJ-SIDEBUTTON-1G2W-B;AJAX;11.56\nAJ-SIDEBUTTON-1G2W-B-VERT;AJAX;11.56\nAJ-SIDEBUTTON-1G2W-FOG;AJAX;11.56\nAJ-SIDEBUTTON-1G2W-GRA;AJAX;11.56\nAJ-SIDEBUTTON-1G2W-GRE;AJAX;11.56\nAJ-SIDEBUTTON-1G2W-IVO;AJAX;11.56\nAJ-SIDEBUTTON-1G2W-OLI;AJAX;11.56\nAJ-SIDEBUTTON-1G2W-OYS;AJAX;11.56\nAJ-SIDEBUTTON-1G2W-W;AJAX;11.56\nAJ-SIDEBUTTON-1G2W-W-VERT;AJAX;11.56\nAJ-SIDEBUTTON-2G-B;AJAX;12.48\nAJ-SIDEBUTTON-2G-B-VERT;AJAX;12.48\nAJ-SIDEBUTTON-2G-FOG;AJAX;12.48\nAJ-SIDEBUTTON-2G-GRA;AJAX;12.48\nAJ-SIDEBUTTON-2G-GRE;AJAX;12.48\nAJ-SIDEBUTTON-2G-IVO;AJAX;12.48\nAJ-SIDEBUTTON-2G-OLI;AJAX;12.48\nAJ-SIDEBUTTON-2G-OLI-VERT;AJAX;12.48\nAJ-SIDEBUTTON-2G-OYS;AJAX;12.48\nAJ-SIDEBUTTON-2G-W;AJAX;12.48\nAJ-SIDEBUTTON-2G-W-VERT;AJAX;12.48\nAJ-SIDEBUTTON-DIMMER-B;AJAX;44.78\nAJ-SIDEBUTTON-DIMMER-B-VERT;AJAX;44.78\nAJ-SIDEBUTTON-DIMMER-W;AJAX;44.78\nAJ-SIDEBUTTON-DIMMER-W-VERT;AJAX;44.78\nAJ-SIDECOVER-B;AJAX;13.08\nAJ-SIDECOVER-CP-W;AJAX;6.72\nAJ-SIDECOVER-FOG;AJAX;13.08\nAJ-SIDECOVER-GRA;AJAX;13.08\nAJ-SIDECOVER-GRE;AJAX;13.08\nAJ-SIDECOVER-IVO;AJAX;13.08\nAJ-SIDECOVER-LAN-B;AJAX;6.88\nAJ-SIDECOVER-LAN-W;AJAX;6.88\nAJ-SIDECOVER-OLI;AJAX;13.08\nAJ-SIDECOVER-OYS;AJAX;13.08\nAJ-SIDECOVER-SMART-B;AJAX;22.38\nAJ-SIDECOVER-SMART-FOG;AJAX;22.38\nAJ-SIDECOVER-SMART-GRA;AJAX;22.38\nAJ-SIDECOVER-SMART-GRE;AJAX;22.38\nAJ-SIDECOVER-SMART-IVO;AJAX;22.38\nAJ-SIDECOVER-SMART-OLI;AJAX;22.38\nAJ-SIDECOVER-SMART-OYS;AJAX;22.38\nAJ-SIDECOVER-SMART-W;AJAX;22.38\nAJ-SIDECOVER-W;AJAX;13.08\nAJ-SIM;AJAX;0\nAJ-SIMSLOT;AJAX;6\nAJ-SMALLMAGNET-B;AJAX;5.94\nAJ-SOCKET-B;AJAX;94.76\nAJ-SOCKET-G-W;AJAX;87.3\nAJ-SOCKET-W;AJAX;94.76\nAJ-SOLOBUTTON-1G2W-B;AJAX;12.18\nAJ-SOLOBUTTON-1G2W-FOG;AJAX;12.18\nAJ-SOLOBUTTON-1G2W-GRA;AJAX;12.18\nAJ-SOLOBUTTON-1G2W-GRE;AJAX;12.18\nAJ-SOLOBUTTON-1G2W-IVO;AJAX;12.18\nAJ-SOLOBUTTON-1G2W-OLI;AJAX;12.18\nAJ-SOLOBUTTON-1G2W-OYS;AJAX;12.18\nAJ-SOLOBUTTON-1G2W-W;AJAX;12.18\nAJ-SOLOBUTTON-2G-B;AJAX;13.74\nAJ-SOLOBUTTON-2G-FOG;AJAX;13.74\nAJ-SOLOBUTTON-2G-GRA;AJAX;13.74\nAJ-SOLOBUTTON-2G-GRE;AJAX;13.74\nAJ-SOLOBUTTON-2G-IVO;AJAX;13.74\nAJ-SOLOBUTTON-2G-OLI;AJAX;13.74\nAJ-SOLOBUTTON-2G-OYS;AJAX;13.74\nAJ-SOLOBUTTON-2G-W;AJAX;13.74\nAJ-SOLOBUTTON-DIMMER-B;AJAX;48.78\nAJ-SOLOBUTTON-DIMMER-W;AJAX;48.78\nAJ-SOLOCOVER-B;AJAX;14.5\nAJ-SOLOCOVER-CP-W;AJAX;8.32\nAJ-SOLOCOVER-FOG;AJAX;14.5\nAJ-SOLOCOVER-GRA;AJAX;14.5\nAJ-SOLOCOVER-GRE;AJAX;14.5\nAJ-SOLOCOVER-IVO;AJAX;14.5\nAJ-SOLOCOVER-LAN-B;AJAX;9.08\nAJ-SOLOCOVER-LAN-W;AJAX;9.08\nAJ-SOLOCOVER-OLI;AJAX;14.5\nAJ-SOLOCOVER-OYS;AJAX;14.5\nAJ-SOLOCOVER-SMART-B;AJAX;23.66\nAJ-SOLOCOVER-SMART-FOG;AJAX;23.66\nAJ-SOLOCOVER-SMART-GRA;AJAX;23.66\nAJ-SOLOCOVER-SMART-GRE;AJAX;23.66\nAJ-SOLOCOVER-SMART-IVO;AJAX;23.66\nAJ-SOLOCOVER-SMART-OLI;AJAX;23.66\nAJ-SOLOCOVER-SMART-OYS;AJAX;22.96\nAJ-SOLOCOVER-SMART-W;AJAX;23.66\nAJ-SOLOCOVER-W;AJAX;14.5\nAJ-SPACECONTROL-B;AJAX;38.76\nAJ-SPACECONTROL-B-DUMMY;AJAX;6\nAJ-SPACECONTROL-W;AJAX;38.76\nAJ-SPACECONTROL-W-DUMMY;AJAX;6\nAJ-SPEAKERPHONE-B;AJAX;222.24\nAJ-SPEAKERPHONE-W;AJAX;222.24\nAJ-SPEAKERSS-B;AJAX;24\nAJ-STARTERKIT-CAM-HDR-4G-W;AJAX;620\nAJ-STARTERKIT-CAM-HDR-W;AJAX;540.6\nAJ-STARTERKIT-CAM-MP-B;AJAX;558\nAJ-STARTERKIT-CAM-MP-W;AJAX;558\nAJ-STARTERKIT-CAM-W;AJAX;530\nAJ-STARTERKITPLUS-CAM-HDR-W;AJAX;744.6\nAJ-STORAGE-ECONOMY-30DAY;AJAX;0\nAJ-STORAGE-ECONOMY-30DAY-4CAM;AJAX;0\nAJ-STORAGE-ECONOMY-7DAY;AJAX;0\nAJ-STORAGE-ECONOMY-7DAY-4CAM;AJAX;0\nAJ-STORAGE-PREMIUM-30DAY;AJAX;0\nAJ-STORAGE-PREMIUM-30DAY-4CAM;AJAX;0\nAJ-STORAGE-PREMIUM-7DAY;AJAX;0\nAJ-STORAGE-PREMIUM-7DAY-4CAM;AJAX;0\nAJ-STORAGE-STANDARD-30DAY;AJAX;0\nAJ-STORAGE-STANDARD-30DAY-4CAM;AJAX;0\nAJ-STORAGE-STANDARD-7DAY;AJAX;0\nAJ-STORAGE-STANDARD-7DAY-4CAM;AJAX;0\nAJ-STOTEM-W;AJAX;1000\nAJ-STREETSIREN-B;AJAX;155.04\nAJ-STREETSIREN-W;AJAX;155.04\nAJ-STREETSIREN-W-DUMMY;AJAX;56.6\nAJ-STREETSIRENCUSTOM-B;AJAX;155.04\nAJ-STREETSIRENCUSTOM-W;AJAX;155.04\nAJ-STREETSIRENCUSTOMS-W-DUMMY;AJAX;60\nAJ-SUITCASE-INTRUSION-BMC-003;AJAX;272.72\nAJ-SUITCASE-VIDEO-BMC-005;AJAX;272.72\nAJ-SURFACEBOX-W;AJAX;18.4\nAJ-TRANSMITTER;AJAX;61.2\nAJ-TSHIRT-2XL;AJAX;50\nAJ-TSHIRT-L;AJAX;50\nAJ-TSHIRT-M;AJAX;50\nAJ-TSHIRT-S;AJAX;50\nAJ-TSHIRT-XL;AJAX;23\nAJ-TURRETCAM-4-HLVF-S-B;AJAX;482.46\nAJ-TURRETCAM-4-HLVF-S-W;AJAX;482.46\nAJ-TURRETCAM-5-0400-B;AJAX;245.6\nAJ-TURRETCAM-5-0400-HL-B;AJAX;254.92\nAJ-TURRETCAM-5-0400-HL-W;AJAX;254.92\nAJ-TURRETCAM-5-0400-W;AJAX;245.6\nAJ-TURRETCAM-5-B;AJAX;245.6\nAJ-TURRETCAM-5-HL-B;AJAX;254.92\nAJ-TURRETCAM-5-HL-W;AJAX;254.92\nAJ-TURRETCAM-5-HLVF-B;AJAX;348.44\nAJ-TURRETCAM-5-HLVF-W;AJAX;348.44\nAJ-TURRETCAM-5-W;AJAX;245.6\nAJ-TURRETCAM-8-0400-B;AJAX;327.5\nAJ-TURRETCAM-8-0400-HL-B;AJAX;339.92\nAJ-TURRETCAM-8-0400-HL-W;AJAX;339.92\nAJ-TURRETCAM-8-0400-W;AJAX;327.5\nAJ-TURRETCAM-8-B;AJAX;327.5\nAJ-TURRETCAM-8-HL-B;AJAX;339.92\nAJ-TURRETCAM-8-HL-W;AJAX;339.92\nAJ-TURRETCAM-8-HLVF-B;AJAX;482.46\nAJ-TURRETCAM-8-HLVF-S-B;AJAX;616.48\nAJ-TURRETCAM-8-HLVF-S-W;AJAX;616.48\nAJ-TURRETCAM-8-HLVF-W;AJAX;482.46\nAJ-TURRETCAM-8-W;AJAX;327.5\nAJ-UARTBRIDGE;AJAX;44.88\nAJ-VHFBRIDGE-W;AJAX;154.94\nAJ-WALLSWITCH-B;AJAX;55.62\nAJ-WATERSTOP-1-B;AJAX;305.64\nAJ-WATERSTOP-1-W;AJAX;305.64\nAJ-WATERSTOP-1/2-B;AJAX;231.66\nAJ-WATERSTOP-1/2-W;AJAX;231.66\nAJ-WATERSTOP-3/4-B;AJAX;260.38\nAJ-WATERSTOP-3/4-W;AJAX;260.38\nHD1TB;wester;236.00\nHD2TB;wester;360.00\n;;\nHD4TB;wester;430.00\nHD6TB;wester;610.00\nHD8TB;wester;778.00\nVDMS105GP;;39.37\nVDMS108GP;;49.22\nINJ-POE-30W-V2;;21.6\nHS-TF-D3STD/64G/NEO LUX/WW;;39.00\nHS-TF-D3STD/32G/NEO LUX/WW;;26.00\nHS-TF-C1STD-128G;;70.00\nABE-150 BARRERA;;78.00\n";
 let productos = [];
 let lineas = [];
 let seleccionado = null;
 let seleccionadoRef = '';
 let seleccionadoPvp = null;
 let activeIndex = -1;
-let recientesSesion = [];
 let catalogTerm = "";
 const $ = (q) => document.querySelector(q);
 const fmt = new Intl.NumberFormat('es-ES',{style:'currency',currency:'EUR'});
@@ -69,9 +67,34 @@ function hxBajarUltimaLineaPresupuesto(){
   }, 30);
 }
 
+function hxDescripcionCortaProducto(p, fallback=''){
+  const corta = String((p && p.short_description) || '').trim();
+  if(corta) return corta;
+  const alternativa = String(fallback || '').trim();
+  if(alternativa) return alternativa;
+  return String((p && p.description) || '').trim();
+}
+
+function hxEstadoStock(stockRaw){
+  const raw = String(stockRaw ?? '').trim();
+  const key = normaliza(raw).replace(/[^a-z0-9]+/g,'');
+  if(!raw) return {visible:false, clase:'', texto:''};
+  if(['high','alto','mucho','disponible','available','instock','enstock'].includes(key)) return {visible:true, clase:'is-ok', texto:raw};
+  if(['medium','medio','low','bajo','poco','limited','limitado'].includes(key)) return {visible:true, clase:'is-low', texto:raw};
+  if(['none','sinstock','agotado','outofstock','unavailable','nodisponible','zero'].includes(key)) return {visible:true, clase:'is-none', texto:raw};
+  const n = numero(raw);
+  if(Number.isFinite(n)) return {visible:true, clase:n >= 10 ? 'is-ok' : n > 0 ? 'is-low' : 'is-none', texto:raw};
+  return {visible:true, clase:'is-low', texto:raw};
+}
+
 function addProductoObj(p, qty=1, dto=null){
   if(!p) return false;
-  lineas.push({name:p.name, brand:p.brand||'', pvp:p.pvp, qty:Math.max(1,Number(qty)||1), dto:dto===null ? descuentoActual() : (Number(dto)||0)});
+  const descReal = hxDescripcionCortaProducto(p);
+  let descFinal = descReal;
+  if(!descFinal){
+    try{ descFinal = String((descripcionProducto(p) || {}).desc || '').trim(); }catch(e){}
+  }
+  lineas.push({name:p.name, brand:p.brand||'', pvp:p.pvp, desc:descFinal, short_description:String(p.short_description||'').trim(), origen_catalogo:String(p.origen_catalogo||''), stock:p.stock??'', precio_neto_compra:numero(p.precio_neto_compra)||0, qty:Math.max(1,Number(qty)||1), dto:dto===null ? descuentoActual() : (Number(dto)||0)});
   registrarReciente(p.name);
   hxBajarUltimaLineaPresupuesto();
   return true;
@@ -112,43 +135,344 @@ function hxAddProductoSeguro(ref, qty=1, dto=null, expectedPvp=null){
   return addProductoObj(resolved.product, qty, dto);
 }
 
+let hxQuickSessionLines=new Map();
+function hxQuickAddSessionReset(){hxQuickSessionLines=new Map()}
+window.HXQ_RESET_SESSION=hxQuickAddSessionReset;
+
+function hxQuickAddSumar(ref,qty=1,expectedPvp=null){
+  const resolved=hxResolverProductoExacto(ref,expectedPvp);
+  if(!resolved.ok){hxToastGlobal(resolved.error,'error');return {ok:false,totalQty:0}}
+  const product=resolved.product;
+  const cantidad=Math.max(1,Number(qty)||1);
+  const key=hxRefProducto(product.name);
+  let sessionLine=hxQuickSessionLines.get(key);
+
+  if(sessionLine && lineas.includes(sessionLine)){
+    sessionLine.qty=Math.max(1,Number(sessionLine.qty)||1)+cantidad;
+    registrarReciente(product.name);
+    hxBajarUltimaLineaPresupuesto();
+  }else{
+    if(!addProductoObj(product,cantidad,null)) return {ok:false,totalQty:0};
+    sessionLine=lineas[lineas.length-1];
+    hxQuickSessionLines.set(key,sessionLine);
+  }
+
+  try{render()}catch(_error){}
+  const totalQty=Math.max(1,Number(sessionLine?.qty)||cantidad);
+  hxToastGlobal(`${product.name} añadido · ${totalQty} ud${totalQty===1?'':'s'}`,'ok');
+  return {ok:true,totalQty};
+}
+window.HXQ_ADD_PRODUCT=hxQuickAddSumar;
+
 function normaliza(s){ return String(s||'').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,''); }
 
-function busquedaForzada(term){
-  const t = normaliza(term).trim();
-  const mapa = {
-    'rele':['relay'], 'reles':['relay'], 'relé':['relay'], 'relés':['relay'],
-    'sirena':['homesiren','streetsiren'], 'sirenas':['homesiren','streetsiren'],
-    'grabador':['nvr'], 'grabadores':['nvr'], 'videograbador':['nvr'], 'videograbadores':['nvr'],
-    'camara':['bulletcam','domecam','turretcam','indoorcam','doorbell'],
-    'camaras':['bulletcam','domecam','turretcam','indoorcam','doorbell'],
-    'cámara':['bulletcam','domecam','turretcam','indoorcam','doorbell'],
-    'cámaras':['bulletcam','domecam','turretcam','indoorcam','doorbell'],
-    'fuente':['psu','dc12','dc1224','ac220'], 'fuentes':['psu','dc12','dc1224','ac220'],
-    'alimentador':['psu','dc12','dc1224','ac220'], 'alimentadores':['psu','dc12','dc1224','ac220'],
-    'soporte':['mountcam','bracket','holder'], 'soportes':['mountcam','bracket','holder'],
-    'caja':['junctionbox','surfacebox'], 'cajas':['junctionbox','surfacebox'],
-    'fuga':['leaksprotect','waterstop'], 'fugas':['leaksprotect','waterstop'],
-    'inundacion':['leaksprotect','waterstop'], 'inundaciones':['leaksprotect','waterstop'],
-    'motion':['motionprotect','motioncam','outdoorprotect','curtainprotect','curtainoutdoor','dualcurtain'],
-    'movimiento':['motionprotect','motioncam','outdoorprotect','curtainprotect','curtainoutdoor','dualcurtain']
-  };
-  const claves = mapa[t];
-  if(!claves) return null;
-  return productos
-    .map((p,i)=>({p,i,n:normaliza(p.name)}))
-    .filter(x=>claves.some(k=>x.n.includes(k)))
-    .filter(x=>!/(dummy|lens|hood|bracket|repairkit)/i.test(x.p.name||''))
-    .map(x=>({p:x.p,i:x.i,score:9999}))
-    .sort((a,b)=>{
-      if(t==='motion' || t==='movimiento'){
-        const rank=n=> n.includes('motionprotect')&&!n.includes('plus') ? 0 : n.includes('motionprotectplus') ? 1 : n.includes('motioncam-hdr')&&!n.includes('phod') ? 2 : n.includes('motioncam-hdr-phod') ? 3 : n.includes('motioncamoutdoor') ? 4 : n.includes('curtain') ? 5 : 9;
-        const d=rank(a.n)-rank(b.n); if(d) return d;
-      }
-      return a.p.name.localeCompare(b.p.name,'es');
-    });
+/* =====================================================
+   BUSCADOR COMÚN
+   Única entrada de búsqueda de producto para Inicio y Catálogo.
+   Explorer usa el mismo HXA_COMMON_SEARCH.rank() sobre su subconjunto.
+   ===================================================== */
+function hxBuscarComun(term){
+  const engine=window.HXA_COMMON_SEARCH || window.HXA_SEARCH_ENGINE;
+  if(!engine || typeof engine.rows!=='function') return [];
+  return engine.rows(productos,String(term||''),300);
 }
 
+
+/* =====================================================
+   COMPATIBLES OFICIALES (related_products)
+   Prueba: no añade nada automáticamente.
+   ===================================================== */
+function hxRelatedRefs(product){
+  const raw = String(product?.related_products || '').trim();
+  if(!raw) return [];
+  return [...new Set(raw.split(/[,;|]+/).map(v=>v.trim()).filter(Boolean))];
+}
+
+function hxProductByRef(reference){
+  const wanted = String(reference||'').trim().toLowerCase();
+  if(!wanted) return null;
+  return productos.find(p => String(p?.name||'').trim().toLowerCase() === wanted) || null;
+}
+
+function hxResolvedRelated(product){
+  return hxRelatedRefs(product)
+    .map(ref => hxProductByRef(ref))
+    .filter(Boolean)
+    .filter((p,idx,arr) => arr.findIndex(x => String(x.name).toLowerCase() === String(p.name).toLowerCase()) === idx);
+}
+
+function hxRelatedCategory(product){
+  const ref = normaliza(String(product?.name||''));
+  const taxonomy = normaliza([
+    product?.category, product?.category_parent, product?.family,
+    product?.subcategory, product?.product_type
+  ].filter(Boolean).join(' '));
+  const short = normaliza(String(product?.short_description||''));
+
+  const own = `${ref} ${taxonomy} ${short}`;
+
+  // 0 Soportes / montaje: el producto ES físicamente un soporte, holder,
+  // bracket, junction box o elemento de montaje.
+  if(
+    /(?:^|[-_])(bracket|mount|holder|junctionbox|junction|dinholder)(?:[-_]|$)/.test(ref)
+    || /\b(bracket|mount|holder|junction ?box|caja de conexiones|caja conexiones|soporte para|soporte de montaje|soporte pared|soporte techo|soporte poste)\b/.test(own)
+  ) return 0;
+
+  // 1 Alimentación: el producto ES una pila/batería/fuente/adaptador/inyector.
+  // No clasificar equipos que simplemente "se alimentan con" una pila.
+  if(
+    /^(?:\d+x)?batt[-_]/.test(ref)
+    || /(?:^|[-_])(battery|bateria|pila|psu|power|adapter|adaptador|injector|inyector)(?:[-_]|$)/.test(ref)
+    || /\b(pila|bateria|batería|fuente de alimentacion|fuente de alimentación|alimentador|adaptador de corriente|inyector poe|power supply)\b/.test(taxonomy)
+    || /^\s*(pila|bateria|batería|fuente|alimentador|adaptador|inyector)\b/.test(short)
+  ) return 1;
+
+  // 2 Almacenamiento: el producto ES almacenamiento.
+  if(
+    /(?:^|[-_])(hdd|ssd|sd|microsd)(?:[-_]|$)/.test(ref)
+    || /\b(discos? duros?|hdd|ssd|almacenamiento|tarjetas? sd|micro ?sd|storage)\b/.test(taxonomy)
+    || /^\s*(disco|hdd|ssd|tarjeta sd|micro ?sd)\b/.test(short)
+  ) return 2;
+
+  // 4 Repuestos: el producto ES un repuesto/carcasa/dummy/PCB/lente/cubierta.
+  if(
+    /(?:^|[-_])(dummy|pcb|cover|lens|carcasa|repuesto)(?:[-_]|$)/.test(ref)
+    || /\b(repuestos?|recambio|dummy|carcasa|cover|tapa|pcb|lente)\b/.test(taxonomy)
+    || /^\s*(repuesto|recambio|carcasa|tapa|pcb|lente)\b/.test(short)
+  ) return 4;
+
+  // Todo lo demás es un compatible funcional, aunque su ficha mencione
+  // alimentación, montaje o baterías.
+  return 3;
+}
+
+function hxSortedRelated(product){
+  return hxResolvedRelated(product).sort((a,b)=>
+    hxRelatedCategory(a)-hxRelatedCategory(b)
+    || (Number(a?.pvp)||Number(a?.PVP)||0) - (Number(b?.pvp)||Number(b?.PVP)||0)
+    || String(a?.name||'').localeCompare(String(b?.name||''),'es',{numeric:true,sensitivity:'base'})
+  );
+}
+
+function hxCompatImage(product){
+  try{ if(typeof hxImagenProducto==='function') return hxImagenProducto(product)||''; }catch(_e){}
+  return String(product?.image||product?.image_path||'').trim();
+}
+
+function hxCompatStock(product){
+  const raw = product?.stock;
+  try{
+    const state = hxEstadoStock(raw);
+    const text = String(state?.texto || '').trim();
+    if(text && !/^(high|none|low|medium)$/i.test(text)){
+      return {text, cls:String(state?.clase||'')};
+    }
+  }catch(_e){}
+
+  const n = normaliza(String(raw ?? ''));
+  if(!n || n==='none' || n==='0' || n==='sin stock' || n==='out of stock'){
+    return {text:'Sin stock', cls:'is-out'};
+  }
+  if(n==='high' || n==='alto' || n==='available' || n==='disponible'){
+    return {text:'Disponible', cls:'is-ok'};
+  }
+  if(n==='medium' || n==='medio'){
+    return {text:'Stock medio', cls:'is-mid'};
+  }
+  if(n==='low' || n==='bajo'){
+    return {text:'Stock limitado', cls:'is-low'};
+  }
+  const num = Number(String(raw).replace(',','.'));
+  if(Number.isFinite(num)){
+    if(num <= 0) return {text:'Sin stock', cls:'is-out'};
+    if(num <= 3) return {text:'Stock limitado', cls:'is-low'};
+    return {text:'Disponible', cls:'is-ok'};
+  }
+  return {text:'', cls:''};
+}
+
+
+function hxCompatFunctionalType(product){
+  const ref=normaliza(String(product?.name||''));
+  const taxonomy=normaliza([product?.category,product?.category_parent,product?.family,product?.subcategory,product?.product_type].filter(Boolean).join(' '));
+  const short=normaliza(String(product?.short_description||''));
+  const own=`${ref} ${taxonomy} ${short}`;
+
+  if(/^(?:\d+x)?batt[-_]/.test(ref) || /\b(pila|pilas|bateria|baterias|batería|baterías|battery|batteries)\b/.test(taxonomy) || /^\s*(pila|bateria|batería|pack de .*pilas|pack de .*baterias)\b/.test(short))
+    return {key:'baterias',label:'Pilas / Baterías',icon:'▯',tone:'amber'};
+  if(/waterstop|valve|valvula|válvula|electrovalvula|electroválvula/.test(own))
+    return {key:'valvulas',label:'Válvulas',icon:'◉',tone:'blue'};
+  if(/keypad|teclado|touchscreen/.test(own))
+    return {key:'teclados',label:'Teclados',icon:'⌨',tone:'violet'};
+
+  if(/motionprotect|doorprotect|leaksprotect|fireprotect|glassprotect|combiprotect|motioncam|curtain|outdoorprotect|detector|fotodetector|contacto magnetico|contacto magnético|inundacion|inundación/.test(own))
+    return {key:'detectores',label:'Detectores',icon:'◎',tone:'red'};
+  if(/spacecontrol|doublebutton|button|boton|botón|mando/.test(own))
+    return {key:'mandos',label:'Mandos / Botones',icon:'●',tone:'orange'};
+  if(/(?:^|[-_])(bracket|mount|holder|junctionbox|junction|dinholder)(?:[-_]|$)/.test(ref) || /\b(bracket|mount|holder|junction ?box|caja de conexiones|soporte para|soporte de montaje|soporte pared|soporte techo|soporte poste)\b/.test(own))
+    return {key:'soportes',label:'Soportes',icon:'⌘',tone:'slate'};
+  if(/(?:^|[-_])(dummy|pcb|cover|lens|carcasa|repuesto)(?:[-_]|$)/.test(ref) || /\b(repuestos?|recambio|dummy|carcasa|cover|tapa|pcb|lente)\b/.test(taxonomy) || /^\s*(repuesto|recambio|carcasa|tapa|pcb|lente)\b/.test(short))
+    return {key:'repuestos',label:'Repuestos',icon:'↻',tone:'rose'};
+  if(/(?:^|[-_])(hdd|ssd|sd|microsd)(?:[-_]|$)/.test(ref) || /\b(discos? duros?|hdd|ssd|almacenamiento|tarjetas? sd|micro ?sd|storage)\b/.test(taxonomy) || /^\s*(disco|hdd|ssd|tarjeta sd|micro ?sd)\b/.test(short))
+    return {key:'almacenamiento',label:'Almacenamiento',icon:'◇',tone:'cyan'};
+  if(/\b(fuente de alimentacion|fuente de alimentación|alimentador|adaptador de corriente|inyector poe|power supply)\b/.test(taxonomy) || /(?:^|[-_])(psu|power|adapter|adaptador|injector|inyector)(?:[-_]|$)/.test(ref))
+    return {key:'alimentacion',label:'Alimentación',icon:'ϟ',tone:'yellow'};
+  return {key:'otros',label:'Otros',icon:'•••',tone:'neutral'};
+}
+
+function hxCompatCategoryLabel(product){ return hxCompatFunctionalType(product).label; }
+function hxEnsureCompatModal(){
+  let modal=document.getElementById('hxCompatModal');
+  if(modal)return modal;
+  modal=document.createElement('div');modal.id='hxCompatModal';modal.className='hx-compat-modal hidden';
+  modal.innerHTML=`<div class="hx-compat-backdrop" data-hx-compat-close></div><section class="hx-compat-dialog" role="dialog" aria-modal="true">
+  <header class="hx-compat-header"><div class="hx-compat-heading"><span class="hx-compat-heading-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8.5 8.5 5.8 11.2a3.4 3.4 0 0 0 4.8 4.8l2.7-2.7"/><path d="m15.5 15.5 2.7-2.7a3.4 3.4 0 0 0-4.8-4.8l-2.7 2.7"/><path d="m9.5 14.5 5-5"/></svg></span><div class="hx-compat-heading-copy"><strong id="hxCompatTitle">Compatibles</strong><span id="hxCompatOfficial" class="hx-compat-official"></span></div></div><span class="hx-compat-close hx-compat-control" role="button" tabindex="0" data-hx-compat-close aria-label="Cerrar" title="Cerrar"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg></span></header>
+  <div id="hxCompatOrigin" class="hx-compat-origin"></div>
+  <nav id="hxCompatTabs" class="hx-compat-tabs"></nav>
+  <div class="hx-compat-results-head"><strong id="hxCompatCount"></strong></div>
+  <div id="hxCompatAddedNotice" class="hx-compat-added-notice" aria-live="polite"></div>
+  <div id="hxCompatList" class="hx-compat-list"></div>
+  <div class="hx-compat-note"><strong>Relaciones oficiales del catálogo de Visiotech Connect.</strong><span>Mostramos solo compatibles que existen en nuestro catálogo.</span></div></section>`;
+  document.body.appendChild(modal);
+  modal.addEventListener('click',ev=>{if(ev.target.closest('[data-hx-compat-close]'))modal.classList.add('hidden')});
+  modal.addEventListener('keydown',ev=>{
+    if(ev.key!=='Enter' && ev.key!==' ') return;
+    const control=ev.target.closest('.hx-compat-control');
+    if(!control) return;
+    ev.preventDefault();
+    control.click();
+  });
+  return modal;
+}
+function hxOpenCompatibles(product){
+  const all=hxSortedRelated(product);if(!all.length)return;
+  const modal=hxEnsureCompatModal(), title=modal.querySelector('#hxCompatTitle'), official=modal.querySelector('#hxCompatOfficial'), origin=modal.querySelector('#hxCompatOrigin'), tabs=modal.querySelector('#hxCompatTabs'), count=modal.querySelector('#hxCompatCount'), list=modal.querySelector('#hxCompatList');
+  title.textContent=`Compatibles con ${product?.name||''}`;official.textContent=`${all.length} compatible${all.length===1?'':'s'} oficial${all.length===1?'':'es'}`;
+  const oi=hxCompatImage(product),od=(product?.short_description||product?.description||'').trim();
+  origin.innerHTML=`${oi?`<img src="${escapeHtml(oi)}" alt="">`:''}<div class="hx-compat-origin-copy"><div class="hx-compat-origin-title"><strong>${escapeHtml(product?.name||'')}</strong><em>✓ Producto actual</em></div><span>${escapeHtml(od)}</span></div>`;
+const functionalOrder=['detectores','baterias','valvulas','teclados','mandos','soportes','alimentacion','almacenamiento','repuestos','otros'];
+  const discovered=new Map();
+  all.forEach(p=>{ const t=hxCompatFunctionalType(p); if(!discovered.has(t.key)) discovered.set(t.key,t); });
+  const groups=[
+    {key:'todos',label:'Todos',icon:'⊞',tone:'green',count:all.length},
+    ...functionalOrder.filter(key=>discovered.has(key)).map(key=>{
+      const t=discovered.get(key);
+      return {...t,count:all.filter(p=>hxCompatFunctionalType(p).key===key).length};
+    })
+  ];
+  let active='todos';
+  function paint(){
+    const shown=active==='todos'?all:all.filter(p=>hxCompatFunctionalType(p).key===active);
+    tabs.innerHTML=groups.map(group=>`<span class="hx-compat-tab hx-compat-control ${active===group.key?'is-active':''} tone-${group.tone||'neutral'}" role="button" tabindex="0" data-hx-tab="${group.key}"><span class="hx-tab-icon">${group.icon}</span><span>${group.label} <em>(${group.count})</em></span></span>`).join('');
+    count.textContent=`${shown.length} producto${shown.length===1?'':'s'} compatible${shown.length===1?'':'s'}`;
+    list.innerHTML=shown.map((p,i)=>{const image=hxCompatImage(p),desc=(p?.short_description||p?.description||'').trim(),stock=hxCompatStock(p),price=Number(p?.pvp??p?.PVP??p?.precio_venta_cliente_final??0);return `<article class="hx-compat-item" data-hx-compat-row="${i}">
+  <div class="hx-compat-photo">${image?`<img src="${escapeHtml(image)}" alt="">`:''}</div>
+  <div class="hx-compat-main">
+    <div class="hx-compat-refline">
+      <strong>${escapeHtml(p.name||'')}</strong>
+      <span>${escapeHtml(hxCompatCategoryLabel(p))}</span>
+    </div>
+    <p>${escapeHtml(desc)}</p>
+    <div class="hx-compat-meta">
+      <small class="${escapeHtml(stock?.cls||'')}">${escapeHtml(stock?.text||'')}</small>
+      
+    </div>
+  </div>
+  <div class="hx-compat-commerce">
+    <strong>${price?fmt.format(price):''}</strong>
+    <div class="hx-compat-qty" aria-label="Cantidad">
+      <span class="hx-compat-step hx-compat-control" role="button" tabindex="0" data-hx-compat-minus="${i}">−</span>
+      <span data-hx-compat-qty="${i}">1</span>
+      <span class="hx-compat-step hx-compat-control" role="button" tabindex="0" data-hx-compat-plus="${i}">+</span>
+    </div>
+    <span class="hx-compat-add hx-compat-control" role="button" tabindex="0" data-hx-compat-add="${i}">Añadir</span>
+  </div>
+</article>`}).join('');
+    tabs.querySelectorAll('[data-hx-tab]').forEach(b=>b.addEventListener('click',()=>{active=b.dataset.hxTab;paint()}));
+    list.querySelectorAll('[data-hx-compat-minus]').forEach(btn=>btn.addEventListener('click',()=>{
+      const i=Number(btn.dataset.hxCompatMinus);
+      const qtyEl=list.querySelector(`[data-hx-compat-qty="${i}"]`);
+      if(!qtyEl)return;
+      const qty=Math.max(1,Number(qtyEl.textContent||1)-1); qtyEl.textContent=String(qty); const add=list.querySelector(`[data-hx-compat-add="${i}"]`); if(add&&!add.classList.contains('is-added')) add.textContent=qty>1?`Añadir ${qty}`:'Añadir';
+    }));
+    list.querySelectorAll('[data-hx-compat-plus]').forEach(btn=>btn.addEventListener('click',()=>{
+      const i=Number(btn.dataset.hxCompatPlus);
+      const qtyEl=list.querySelector(`[data-hx-compat-qty="${i}"]`);
+      if(!qtyEl)return;
+      const qty=Math.min(99,Number(qtyEl.textContent||1)+1); qtyEl.textContent=String(qty); const add=list.querySelector(`[data-hx-compat-add="${i}"]`); if(add&&!add.classList.contains('is-added')) add.textContent=qty>1?`Añadir ${qty}`:'Añadir';
+    }));
+    list.querySelectorAll('[data-hx-compat-add]').forEach(btn=>btn.addEventListener('click',()=>{
+      const i=Number(btn.dataset.hxCompatAdd);
+      const p=shown[i];
+      if(!p)return;
+      const qtyEl=list.querySelector(`[data-hx-compat-qty="${i}"]`);
+      const qty=Math.max(1,Number(qtyEl?.textContent||1));
+      const ix=productos.indexOf(p);
+      if(ix>=0){
+        hxAddProductoModal('compatibles', ix, qty, p?.name, p?.pvp);
+      }
+      try{
+        window.dispatchEvent(new CustomEvent('hxa:budget-updated',{
+          detail:{source:'compatibles',product:p,quantity:qty}
+        }));
+      }catch(_error){}
+      try{
+        const notice=modal.querySelector('#hxCompatAddedNotice');
+        if(notice){
+          const merged=[...lineas].reverse().find(row=>row && String(row.name||'').trim()===String(p?.name||'').trim());
+          const totalQty=Math.max(qty,Number(merged?.qty)||qty);
+          notice.textContent=`✓ ${String(p?.name||'Producto')} · cantidad ${totalQty}`;
+          notice.classList.add('is-visible');
+          clearTimeout(modal.__hxCompatNoticeTimer);
+          modal.__hxCompatNoticeTimer=setTimeout(()=>notice.classList.remove('is-visible'),1800);
+        }
+      }catch(_error){}
+      const originalText=btn.dataset.hxOriginalText || btn.textContent || 'Añadir';
+      btn.dataset.hxOriginalText=originalText;
+      btn.textContent=qty>1?`✓ ${qty} uds`:'✓ Añadido';
+      btn.classList.add('is-added');
+      clearTimeout(btn.__hxCompatAddedTimer);
+      btn.__hxCompatAddedTimer=setTimeout(()=>{
+        const currentQty=Math.max(1,Number(list.querySelector(`[data-hx-compat-qty=\"${i}\"]`)?.textContent||1));
+        btn.textContent=currentQty>1?`Añadir ${currentQty}`:'Añadir';
+        btn.classList.remove('is-added');
+      },900);
+    }));
+  }
+  paint();
+  list.scrollTop=0;
+  try{ list.scrollTo({top:0,left:0,behavior:'auto'}); }catch(_error){}
+  modal.classList.remove('hidden');
+  requestAnimationFrame(()=>{
+    list.scrollTop=0;
+    try{ list.scrollTo({top:0,left:0,behavior:'auto'}); }catch(_error){}
+  });
+}
+
+let hxSearchInputTimer = null;
+
+function hxProgramarBusquedaInicio(term){
+  clearTimeout(hxSearchInputTimer);
+  hxSearchInputTimer = setTimeout(() => {
+    pintarResultados(term);
+  }, 140);
+}
+
+function resolverDesdeInput(inputOrValue){
+  const term = typeof inputOrValue === 'string'
+    ? inputOrValue
+    : String(inputOrValue?.target?.value ?? inputOrValue?.value ?? '');
+
+  clearTimeout(hxSearchInputTimer);
+
+  // Solo UX mientras se escribe. El motor no cambia.
+  if(String(term||'').trim().length < 3){
+    pintarResultados('');
+    return;
+  }
+
+  hxProgramarBusquedaInicio(term);
+}
 function numero(v){
   if(typeof v === 'number') return v;
   const s = String(v||'').replace(/€/g,'').replace(/\s/g,'').replace(/\.(?=\d{3}(\D|$))/g,'').replace(',', '.');
@@ -186,29 +510,6 @@ function parseCSV(txt){
   }).filter(p=>p.name && p.pvp>=0).sort((a,b)=>a.name.localeCompare(b.name,'es'));
 }
 
-async function cargarCatalogoLegacyInterno(){
-  let origen = 'csv';
-  try{
-    const r = await fetch(`${CSV_URL}?v=${Date.now()}`, {cache:'no-store'});
-    if(!r.ok) throw new Error('HTTP '+r.status);
-    productos = parseCSV(await r.text());
-    if(!productos.length) throw new Error('CSV vacío o columnas no reconocidas');
-  }catch(e){
-    // Si se abre con doble clic, algunos navegadores bloquean fetch().
-    // Para que la herramienta siga funcionando, usamos la copia interna incluida en app.js.
-    productos = parseCSV(CSV_INTERNO);
-    origen = 'interno';
-  }
-  if(!productos.length){
-    $('#previewProducto').textContent = '0 productos cargados.';
-  }else{
-    $('#previewProducto').textContent = `${productos.length} productos cargados.`;
-  }
-  cargarSelect();
-  renderRecientes();
-  pintarResultados('');
-}
-
 function cargarSelect(){
   const sel = $('#producto');
   sel.innerHTML = '<option value="">Elegir desde desplegable...</option>' + productos.map((p,i)=>`<option value="${i}">${escapeHtml(p.name)}</option>`).join('');
@@ -216,7 +517,6 @@ function cargarSelect(){
 }
 
 
-const APP_VERSION = 'v1.9.5 PRO';
 const AJAX_KNOWLEDGE = [{"n":"StarterKit","f":"Kits básicos","d":"Kit con Hub, MotionProtect, DoorProtect y SpaceControl"},{"n":"StarterKit (4G)","f":"Kits básicos","d":"Kit con Hub 2 (4G), MotionProtect, DoorProtect y SpaceControl"},{"n":"StarterKit 2","f":"Kits básicos","d":"Kit con Hub 2 (2G), MotionProtect, DoorProtect y SpaceControl"},{"n":"StarterKit Cam","f":"Kits básicos","d":"Kit con Hub 2 (2G), MotionCam, DoorProtect y SpaceControl"},{"n":"StarterKit Cam Plus","f":"Kits básicos","d":"Kit con Hub 2 Plus, MotionCam, DoorProtect y SpaceControl"},{"n":"StarterKit Plus","f":"Kits básicos","d":"Kit con Hub Plus, MotionProtect, DoorProtect y SpaceControl"},{"n":"EN54 Fire Hub Jeweller","f":"Hubs","d":"ECI inalámbrico para un sistema de alarma contra incendios, que admite dispositivos de protección contra intrusiones"},{"n":"Hub (2G) Jeweller","f":"Hubs","d":"Panel de control inalámbrico. Admite Ethernet y una tarjeta SIM (2G)"},{"n":"Hub (4G) Jeweller","f":"Hubs","d":"Panel de control inalámbrico. Admite Ethernet y una tarjeta SIM (LTE)"},{"n":"Hub 2 (2G) Jeweller","f":"Hubs","d":"Panel de control inalámbrico con soporte para la fotoverificación. Admite Ethernet y dos tarjetas SIM (2G)"},{"n":"Hub 2 (4G) Jeweller","f":"Hubs","d":"Panel de control inalámbrico con soporte para la fotoverificación. Admite Ethernet y dos tarjetas SIM (2G/3G/LTE)"},{"n":"Hub 2 Plus Jeweller","f":"Hubs","d":"Panel de control inalámbrico con soporte para la fotoverificación. Admite Wi-Fi, Ethernet y dos tarjetas SIM (2G/3G/LTE)"},{"n":"Hub BP Jeweller","f":"Hubs","d":"Panel de control inalámbrico alimentado por batería. Admite la verificación fotográfica. Se conecta mediante dos tarjetas SIM (2G/3G/LTE)."},{"n":"Hub BP Jeweller (without casing)","f":"Hubs","d":"Panel de control inalámbrico alimentado por batería diseñado para su instalación en una carcasa Ajax. Admite verificación fotográfica. Se conecta mediante dos tarjetas SIM (2G/3G/LTE)."},{"n":"Superior Hub G3 Jeweller","f":"Hubs","d":"Panel de control inalámbrico con soporte para fotoverificación. Puede conectarse a través de Ethernet, Wi-Fi y dos tarjetas SIM (2G/LTE)."},{"n":"Superior Hub Hybrid (2G)","f":"Hubs","d":"Panel de control híbrido con soporte para la fotoverificación. Funciona con dispositivos Fibra y Jeweller. Admite Ethernet y dos tarjetas SIM (2G)"},{"n":"Superior Hub Hybrid (4G)","f":"Hubs","d":"Panel de control híbrido con soporte para la fotoverificación. Funciona con dispositivos Fibra y Jeweller. Admite Ethernet y dos tarjetas SIM (2G/3G/LTE)"},{"n":"Superior Hub Hybrid (4G) (without casing)","f":"Hubs","d":"Panel de control híbrido diseñado para su instalación en la Case D. Funciona con dispositivos Fibra y Jeweller. Puede conectarse a través de Ethernet y dos tarjetas SIM (2G/3G/LTE)."},{"n":"Superior Hub Hybrid 2","f":"Hubs","d":"Panel de control híbrido para instalaciones medianas y grandes. Funciona con hasta 250 dispositivos Fibra y Jeweller. Puede conectarse a través de Ethernet y dos tarjetas SIM (2G/3G/LTE)."},{"n":"Superior Hub Hybrid 2 (without casing)","f":"Hubs","d":"Panel de control híbrido para instalaciones medianas y grandes. Diseñado para su instalación en una carcasa Ajax compatible. Funciona con hasta 250 dispositivos Fibra y Jeweller. Puede conectarse a través de Ethernet y dos tarjetas SIM (2G/3G/LTE)."},{"n":"Superior MegaHub","f":"Hubs","d":"Panel de control híbrido para los proyectos más grandes. Funciona con hasta 999 dispositivos Fibra y Jeweller. Puede conectarse a través de Ethernet, Wi-Fi y dos tarjetas SIM (2G/LTE)."},{"n":"Superior MegaHub (without casing)","f":"Hubs","d":"Panel de control híbrido para los proyectos más grandes. Diseñado para su instalación en una carcasa Ajax compatible. Funciona con hasta 999 dispositivos Fibra y Jeweller. Puede conectarse a través de Ethernet, Wi-Fi y dos tarjetas SIM (2G/LTE)."},{"n":"EN54 Fire ReX Jeweller","f":"Repetidores de señal","d":"Repetidor de señal de radio inalámbrico direccionable para un sistema de alarma contra incendios. Admite dispositivos de protección contra intrusiones"},{"n":"ReX 2 Jeweller","f":"Repetidores de señal","d":"Repetidor de señal de radio inalámbrico que admite los protocolos Jeweller y Wings"},{"n":"ReX Jeweller","f":"Repetidores de señal","d":"Repetidor de señal de radio inalámbrico"},{"n":"Superior ReX G3 Jeweller","f":"Repetidores de señal","d":"Repetidor de señal de radio inalámbrico con soporte para la fotoverificación y conexión Ethernet"},{"n":"DoorProtect Jeweller","f":"Detectores de apertura","d":"Detector inalámbrico de apertura con relé reed"},{"n":"DoorProtect Plus Jeweller","f":"Detectores de apertura","d":"Detector inalámbrico y combinado de apertura, impacto e inclinación con relé reed y acelerómetro"},{"n":"Superior DoorProtect Fibra","f":"Detectores de apertura","d":"Detector cableado de apertura para interiores"},{"n":"Superior DoorProtect Plus Fibra","f":"Detectores de apertura","d":"Detector cableado de apertura con sensores de impacto e inclinación"},{"n":"Superior DoorProtect G3 Fibra","f":"Detectores de apertura","d":"Detector de apertura con sensores de impacto, inclinación y enmascaramiento magnético"},{"n":"Superior DoorProtect G3 Jeweller","f":"Detectores de apertura","d":"Detector inalámbrico de apertura con relé reed y sensores de impacto, inclinación y enmascaramiento"},{"n":"Superior DoorProtect Jeweller","f":"Detectores de apertura","d":"Detector inalámbrico de apertura con dos relés reed. Versión Superior"},{"n":"Superior DoorProtect Plus Jeweller","f":"Detectores de apertura","d":"Detector inalámbrico y combinado de apertura, impacto e inclinación con dos relés reed y acelerómetro. Versión Superior"},{"n":"GlassProtect Jeweller","f":"Detectores de rotura de cristal","d":"Detector inalámbrico de rotura de cristal con micrófono"},{"n":"Superior GlassProtect Fibra","f":"Detectores de rotura de cristal","d":"Detector cableado de rotura de cristal con micrófono"},{"n":"Superior GlassProtect Jeweller","f":"Detectores de rotura de cristal","d":"Detector inalámbrico de rotura de cristal con micrófono. Versión Superior"},{"n":"CombiProtect Jeweller","f":"Detectores de movimiento","d":"Detector IR e inalámbrico de movimiento y de rotura de cristal con micrófono"},{"n":"Curtain Outdoor Jeweller","f":"Detectores de movimiento","d":"Detector inalámbrico de movimiento tipo cortina de doble tecnología para exteriores e interiores"},{"n":"DualCurtain Outdoor Jeweller","f":"Detectores de movimiento","d":"Detector IR inalámbrico y bidireccional de movimiento tipo cortina"},{"n":"MotionCam (PhOD) Jeweller","f":"Detectores de movimiento","d":"Detector PIR e inalámbrico de movimiento con posibilidades ampliadas de verificación fotográfica"},{"n":"MotionCam Jeweller","f":"Detectores de movimiento","d":"Detector IR e inalámbrico de movimiento que admite la función de foto por alarma"},{"n":"MotionCam Outdoor HighMount (PhOD) Jeweller","f":"Detectores de movimiento","d":"Detector PIR e inalámbrico de movimiento con posibilidades ampliadas de verificación fotográfica. Para instalación en exteriores a una altura de 2–4 m."},{"n":"MotionCam Outdoor Jeweller","f":"Detectores de movimiento","d":"Detector PIR e inalámbrico de movimiento que toma fotos por alarma. Para exteriores e interiores"},{"n":"MotionProtect Curtain Jeweller","f":"Detectores de movimiento","d":"Detector IR e inalámbrico de movimiento tipo cortina"},{"n":"MotionProtect Jeweller","f":"Detectores de movimiento","d":"Detector IR e inalámbrico de movimiento"},{"n":"MotionProtect Plus Jeweller","f":"Detectores de movimiento","d":"Detector IR e inalámbrico de movimiento con sensor de microondas de banda K adicional"},{"n":"Superior CombiProtect Fibra","f":"Detectores de movimiento","d":"Detector IR cableado y combinado de movimiento y de rotura de cristal con micrófono"},{"n":"Superior CombiProtect Jeweller","f":"Detectores de movimiento","d":"Detector IR inalámbrico y combinado de movimiento y de rotura de cristal con micrófono. Versión Superior"},{"n":"Superior MotionCam (PhOD) Fibra","f":"Detectores de movimiento","d":"Detector PIR y cableado de movimiento con posibilidades ampliadas de verificación fotográfica"},{"n":"Superior MotionCam (PhOD) Jeweller","f":"Detectores de movimiento","d":"Detector PIR e inalámbrico de movimiento con posibilidades ampliadas de verificación fotográfica"},{"n":"Superior MotionCam AM (PhOD) Jeweller","f":"Detectores de movimiento","d":"Detector PIR e inalámbrico de movimiento con un sistema antienmascaramiento y posibilidades ampliadas de verificación fotográfica. Admite resolución HD."},{"n":"Superior MotionCam Fibra","f":"Detectores de movimiento","d":"Detector IR y cableado de movimiento que admite la función de foto por alarma"},{"n":"Superior MotionCam HD (PhOD) Jeweller","f":"Detectores de movimiento","d":"Detector PIR e inalámbrico de movimiento con posibilidades ampliadas de verificación fotográfica. Admite resolución HD."},{"n":"Superior MotionProtect Fibra","f":"Detectores de movimiento","d":"Detector IR y cableado de movimiento"},{"n":"Superior MotionProtect G3 Fibra","f":"Detectores de movimiento","d":"Detector PIR y cableado de movimiento con un sistema antienmascaramiento"},{"n":"Superior MotionProtect Jeweller","f":"Detectores de movimiento","d":"Detector IR e inalámbrico de movimiento. Versión Superior"},{"n":"Superior MotionProtect Plus Fibra","f":"Detectores de movimiento","d":"Detector IR y cableado de movimiento con sensor de microondas de banda K adicional"},{"n":"Superior MotionProtect Plus G3 Fibra","f":"Detectores de movimiento","d":"Detector IR y cableado de movimiento con un sensor de microondas de banda K adicional y sistema antienmascaramiento"},{"n":"Superior MotionProtect Plus Jeweller","f":"Detectores de movimiento","d":"Detector IR e inalámbrico de movimiento con sensor de microondas de banda K adicional. Versión Superior"},{"n":"Curtain Outdoor Mini Jeweller","f":"Detectores de movimiento","d":"Detector inalámbrico de movimiento tipo cortina de doble tecnología para exteriores e interiores"},{"n":"CurtainCam Outdoor HighMount (PhOD) Jeweller","f":"Detectores de movimiento","d":"Detector inalámbrico de movimiento tipo cortina de doble tecnología con posibilidades ampliadas de verificación fotográfica. Para instalación en exteriores a una altura de 2–4 m."},{"n":"MotionCam Outdoor (PhOD) Jeweller","f":"Detectores de movimiento","d":"Detector PIR e inalámbrico de movimiento con posibilidades ampliadas de verificación fotográfica. Para exteriores e interiores"},{"n":"MotionProtect Outdoor Jeweller","f":"Detectores de movimiento","d":"Detector IR e inalámbrico de movimiento para exteriores e interiores"},{"n":"Superior MotionCam G3 (PhOD) Jeweller","f":"Detectores de movimiento","d":"Detector PIR e inalámbrico de movimiento con posibilidades ampliadas de verificación fotográfica. Admite resolución HD."},{"n":"Superior MotionProtect G3 Jeweller","f":"Detectores de movimiento","d":"Detector PIR e inalámbrico de movimiento con sistema antienmascaramiento"},{"n":"Superior MotionProtect Plus G3 Jeweller","f":"Detectores de movimiento","d":"Detector PIR e inalámbrico de movimiento con un sensor de microondas de banda K adicional y sistema antienmascaramiento"},{"n":"Superior SeismoProtect G3 Fibra","f":"Detectores sísmicos","d":"Detector sísmico cableado con un sensor de impacto adicional"},{"n":"HomeSiren Jeweller","f":"Sirenas","d":"Sirena inalámbrica"},{"n":"StreetSiren DoubleDeck Jeweller","f":"Sirenas","d":"Sirena inalámbrica con un soporte para un panel frontal personalizable"},{"n":"StreetSiren Jeweller","f":"Sirenas","d":"Sirena inalámbrica para interiores y exteriores"},{"n":"Superior HomeSiren Fibra","f":"Sirenas","d":"Sirena cableada con conector LED"},{"n":"Superior HomeSiren G3 Jeweller","f":"Sirenas","d":"Sirena inalámbrica con protección antisabotaje avanzada y conector LED"},{"n":"Superior HomeSiren Jeweller","f":"Sirenas","d":"Sirena inalámbrica. Versión Superior"},{"n":"Superior StreetSiren DoubleDeck Fibra","f":"Sirenas","d":"Sirena cableada con un soporte para un panel frontal personalizable"},{"n":"Superior StreetSiren DoubleDeck Jeweller","f":"Sirenas","d":"Sirena inalámbrica con un soporte para un panel frontal personalizable. Versión Superior"},{"n":"Superior StreetSiren Fibra","f":"Sirenas","d":"Sirena cableada para interiores y exteriores"},{"n":"Superior StreetSiren Plus Fibra","f":"Sirenas","d":"Sirena cableada con protección antisabotaje avanzada y una lista ampliada de certificados de cumplimiento. Para exteriores e interiores."},{"n":"Superior StreetSiren Plus G3 Jeweller","f":"Sirenas","d":"Sirena inalámbrica con protección antisabotaje avanzada y una lista ampliada de certificados de cumplimiento. Para exteriores e interiores."},{"n":"Superior StreetSiren Plus Jeweller","f":"Sirenas","d":"Sirena inalámbrica con protección antisabotaje avanzada y una lista ampliada de certificados de cumplimiento. Para exteriores e interiores."},{"n":"Ajax SpaceControl Jeweller","f":"Botones y mandos","d":"Mando inalámbrico con botón de pánico y control de los modos de seguridad"},{"n":"Ajax Superior SpaceControl Jeweller","f":"Botones y mandos","d":"Mando inalámbrico con botón de pánico y control de los modos de seguridad. Versión Superior"},{"n":"Button Jeweller","f":"Botones y mandos","d":"Botón de pánico inalámbrico / botón inteligente"},{"n":"DoubleButton Jeweller","f":"Botones y mandos","d":"Botón de emergencia inalámbrico"},{"n":"Superior Button Jeweller","f":"Botones y mandos","d":"Botón de pánico/botón inteligente e inalámbrico. Versión Superior"},{"n":"Superior DoubleButton G3 Jeweller","f":"Botones y mandos","d":"Botón inalámbrico de emergencia para instalaciones de alto riesgo"},{"n":"SpeakerPhone Jeweller","f":"Módulos de voz","d":"Módulo de voz inalámbrico para la verificación de alarmas"},{"n":"KeyPad Jeweller","f":"Teclados","d":"Teclado inalámbrico y táctil"},{"n":"KeyPad Plus Jeweller","f":"Teclados","d":"Teclado inalámbrico y táctil compatible con tarjetas y mandos cifrados sin contacto"},{"n":"Superior KeyPad Fibra","f":"Teclados","d":"Teclado cableado y táctil"},{"n":"KeyPad Outdoor Jeweller","f":"Teclados","d":"Teclado inalámbrico que admite la autenticación mediante Pass, Tag, smartphones y códigos. Para exteriores e interiores."},{"n":"KeyPad TouchScreen Jeweller","f":"Teclados","d":"Teclado inalámbrico con pantalla táctil que admite la autenticación con smartphones, Pass, Tag y códigos"},{"n":"Superior KeyPad Outdoor Fibra","f":"Teclados","d":"Teclado cableado para exteriores e interiores que admite la autenticación mediante Pass, Tag, smartphones y códigos"},{"n":"Superior KeyPad Plus G3 Jeweller","f":"Teclados","d":"Teclado inalámbrico con botones táctiles que admite la autenticación mediante Pass, Tag y códigos"},{"n":"Superior KeyPad Plus Jeweller","f":"Teclados","d":"Teclado inalámbrico y táctil compatible con tarjetas y mandos cifrados sin contacto. Versión Superior"},{"n":"Superior KeyPad TouchScreen Fibra","f":"Teclados","d":"Teclado cableado con pantalla táctil y autorización sin contacto"},{"n":"Superior KeyPad TouchScreen G3 Jeweller","f":"Teclados","d":"Teclado inalámbrico con pantalla táctil que admite la autenticación mediante Pass, Tag, smartphones y códigos"},{"n":"Ajax Superior BulletCam HLVF (4 Mp)","f":"Cámaras cableadas","d":"Cámara IP de seguridad cableada con tecnología IA, un objetivo varifocal P-Iris motorizado de 2.8–12 mm, iluminación híbrida, True WDR, micrófono y altavoz integrados, entradas/salidas de audio y alarma y PoE/12 V. Para exteriores e interiores."},{"n":"Ajax Superior TurretCam HLVF (4 Mp)","f":"Cámaras cableadas","d":"Cámara IP de seguridad cableada con tecnología IA, un objetivo varifocal P-Iris motorizado de 2.8–12 mm, iluminación híbrida, True WDR, micrófono y altavoz integrados, entradas/salidas de audio y alarma y PoE/12 V. Para exteriores e interiores."},{"n":"Ajax Superior TurretCam HLVF (8 Mp)","f":"Cámaras cableadas","d":"Cámara IP de seguridad cableada con tecnología IA, un objetivo varifocal P-Iris motorizado de 2.8–12 mm, iluminación híbrida, True WDR, micrófono y altavoz integrados, entradas/salidas de audio y alarma y PoE/12 V. Para exteriores e interiores."},{"n":"BulletCam HL (5 Mp/2.8 mm)","f":"Cámaras cableadas","d":"Cámara IP de seguridad cableada con tecnología IA, un ángulo de visión de 110°, iluminación híbrida, True WDR, micrófono y PoE/12 V. Para exteriores e interiores."},{"n":"BulletCam HL (5 Mp/4 mm)","f":"Cámaras cableadas","d":"Cámara IP de seguridad cableada con tecnología IA, un ángulo de visión de 85°, iluminación híbrida, True WDR, micrófono y PoE/12 V. Para exteriores e interiores."},{"n":"BulletCam HL (8 Mp/2.8 mm)","f":"Cámaras cableadas","d":"Cámara IP de seguridad cableada con tecnología IA, un ángulo de visión de 110°, iluminación híbrida, True WDR, micrófono y PoE/12 V. Para exteriores e interiores."},{"n":"BulletCam HL (8 Mp/4 mm)","f":"Cámaras cableadas","d":"Cámara IP de seguridad cableada con tecnología IA, un ángulo de visión de 85°, iluminación híbrida, True WDR, micrófono y PoE/12 V. Para exteriores e interiores."},{"n":"DomeCam Mini (5 Mp/2.8 mm)","f":"Cámaras cableadas","d":"Cámara IP de seguridad cableada con tecnología IA, un ángulo de visión de 110°, iluminación IR, True WDR, micrófono y PoE/12 V. Para exteriores e interiores."},{"n":"DomeCam Mini (5 Mp/4 mm)","f":"Cámaras cableadas","d":"Cámara IP de seguridad cableada con tecnología IA, un ángulo de visión de 85°, iluminación IR, True WDR, micrófono y PoE/12 V. Para exteriores e interiores."},{"n":"DomeCam Mini (8 Mp/2.8 mm)","f":"Cámaras cableadas","d":"Cámara IP de seguridad cableada con tecnología IA, un ángulo de visión de 110°, iluminación IR, True WDR, micrófono y PoE/12 V. Para exteriores e interiores."},{"n":"DomeCam Mini (8 Mp/4 mm)","f":"Cámaras cableadas","d":"Cámara IP de seguridad cableada con tecnología IA, un ángulo de visión de 85°, iluminación IR, True WDR, micrófono y PoE/12 V. Para exteriores e interiores."},{"n":"DomeCam Mini HL (5 Mp/2.8 mm)","f":"Cámaras cableadas","d":"Cámara IP de seguridad cableada con tecnología IA, un ángulo de visión de 110°, iluminación híbrida, True WDR, micrófono y PoE/12 V. Para exteriores e interiores."},{"n":"DomeCam Mini HL (5 Mp/4 mm)","f":"Cámaras cableadas","d":"Cámara IP de seguridad cableada con tecnología IA, un ángulo de visión de 85°, iluminación híbrida, True WDR, micrófono y PoE/12 V. Para exteriores e interiores."},{"n":"DomeCam Mini HL (8 Mp/2.8 mm)","f":"Cámaras cableadas","d":"Cámara IP de seguridad cableada con tecnología IA, un ángulo de visión de 110°, iluminación híbrida, True WDR, micrófono y PoE/12 V. Para exteriores e interiores."},{"n":"DomeCam Mini HL (8 Mp/4 mm)","f":"Cámaras cableadas","d":"Cámara IP de seguridad cableada con tecnología IA, un ángulo de visión de 85°, iluminación híbrida, True WDR, micrófono y PoE/12 V. Para exteriores e interiores."},{"n":"TurretCam (5 Mp/2.8 mm)","f":"Cámaras cableadas","d":"Cámara IP de seguridad cableada con tecnología IA, un ángulo de visión de 110°, iluminación IR, True WDR, micrófono y PoE/12 V. Para exteriores e interiores."},{"n":"TurretCam (5 Mp/4 mm)","f":"Cámaras cableadas","d":"Cámara IP de seguridad cableada con tecnología IA, un ángulo de visión de 85°, iluminación IR, True WDR, micrófono y PoE/12 V. Para exteriores e interiores."},{"n":"TurretCam (8 Mp/2.8 mm)","f":"Cámaras cableadas","d":"Cámara IP de seguridad cableada con tecnología IA, un ángulo de visión de 110°, iluminación IR, True WDR, micrófono y PoE/12 V. Para exteriores e interiores."},{"n":"TurretCam (8 Mp/4 mm)","f":"Cámaras cableadas","d":"Cámara IP de seguridad cableada con tecnología IA, un ángulo de visión de 85°, iluminación IR, True WDR, micrófono y PoE/12 V. Para exteriores e interiores."},{"n":"TurretCam HL (5 Mp/2.8 mm)","f":"Cámaras cableadas","d":"Cámara IP de seguridad cableada con tecnología IA, un ángulo de visión de 110°, iluminación híbrida, True WDR, micrófono y PoE/12 V. Para exteriores e interiores."},{"n":"TurretCam HL (5 Mp/4 mm)","f":"Cámaras cableadas","d":"Cámara IP de seguridad cableada con tecnología IA, un ángulo de visión de 85°, iluminación híbrida, True WDR, micrófono y PoE/12 V. Para exteriores e interiores."},{"n":"TurretCam HL (8 Mp/2.8 mm)","f":"Cámaras cableadas","d":"Cámara IP de seguridad cableada con tecnología IA, un ángulo de visión de 110°, iluminación híbrida, True WDR, micrófono y PoE/12 V. Para exteriores e interiores."},{"n":"TurretCam HL (8 Mp/4 mm)","f":"Cámaras cableadas","d":"Cámara IP de seguridad cableada con tecnología IA, un ángulo de visión de 85°, iluminación híbrida, True WDR, micrófono y PoE/12 V. Para exteriores e interiores."},{"n":"Ajax Superior BulletCam HLVF (8 Mp)","f":"Cámaras cableadas","d":"Cámara IP de seguridad cableada con tecnología IA, un objetivo varifocal P-Iris motorizado de 2.8–12 mm, iluminación híbrida, True WDR, micrófono y altavoz integrados, entradas/salidas de audio y alarma y PoE/12 V. Para exteriores e interiores."},{"n":"Ajax Superior DomeCam HLVF (4 Mp)","f":"Cámaras cableadas","d":"Cámara IP de seguridad cableada con tecnología IA, un objetivo varifocal P-Iris motorizado de 2.8–12 mm, iluminación híbrida, True WDR, micrófono y altavoz integrados, entradas/salidas de audio y alarma y PoE/12 V. Para exteriores e interiores."},{"n":"Ajax Superior DomeCam HLVF (8 Mp)","f":"Cámaras cableadas","d":"Cámara IP de seguridad cableada con tecnología IA, un objetivo varifocal P-Iris motorizado de 2.8–12 mm, iluminación híbrida, True WDR, micrófono y altavoz integrados, entradas/salidas de audio y alarma y PoE/12 V. Para exteriores e interiores."},{"n":"BulletCam (5 Mp/2.8 mm)","f":"Cámaras cableadas","d":"Cámara IP de seguridad cableada con tecnología IA, un ángulo de visión de 110°, iluminación IR, True WDR, micrófono y PoE/12 V. Para exteriores e interiores."},{"n":"BulletCam (5 Mp/4 mm)","f":"Cámaras cableadas","d":"Cámara IP de seguridad cableada con tecnología IA, un ángulo de visión de 85°, iluminación IR, True WDR, micrófono y PoE/12 V. Para exteriores e interiores."},{"n":"BulletCam (8 Mp/2.8 mm)","f":"Cámaras cableadas","d":"Cámara IP de seguridad cableada con tecnología IA, un ángulo de visión de 110°, iluminación IR, True WDR, micrófono y PoE/12 V. Para exteriores e interiores."},{"n":"BulletCam (8 Mp/4 mm)","f":"Cámaras cableadas","d":"Cámara IP de seguridad cableada con tecnología IA, un ángulo de visión de 85°, iluminación IR, True WDR, micrófono y PoE/12 V. Para exteriores e interiores."},{"n":"BulletCam HLVF (5 Mp)","f":"Cámaras cableadas","d":"Cámara IP de seguridad cableada con tecnología IA, un objetivo varifocal motorizado de 2.8–12 mm, iluminación híbrida, True WDR, entradas/salidas de audio y alarma, micrófono y PoE/12 V. Para exteriores e interiores."},{"n":"BulletCam HLVF (8 Mp)","f":"Cámaras cableadas","d":"Cámara IP de seguridad cableada con tecnología IA, un objetivo varifocal motorizado de 2.8–12 mm, iluminación híbrida, True WDR, entradas/salidas de audio y alarma, micrófono y PoE/12 V. Para exteriores e interiores."},{"n":"DomeCam HLVF (5 Mp)","f":"Cámaras cableadas","d":"Cámara IP de seguridad cableada con tecnología IA, un objetivo varifocal motorizado de 2.8–12 mm, iluminación híbrida, True WDR, entradas/salidas de audio y alarma, micrófono y PoE/12 V. Para exteriores e interiores."},{"n":"DomeCam HLVF (8 Mp)","f":"Cámaras cableadas","d":"Cámara IP de seguridad cableada con tecnología IA, un objetivo varifocal motorizado de 2.8–12 mm, iluminación híbrida, True WDR, entradas/salidas de audio y alarma, micrófono y PoE/12 V. Para exteriores e interiores."},{"n":"TurretCam HLVF (5 Mp)","f":"Cámaras cableadas","d":"Cámara IP de seguridad cableada con tecnología IA, un objetivo varifocal motorizado de 2.8–12 mm, iluminación híbrida, True WDR, entradas/salidas de audio y alarma, micrófono y PoE/12 V. Para exteriores e interiores."},{"n":"TurretCam HLVF (8 Mp)","f":"Cámaras cableadas","d":"Cámara IP de seguridad cableada con tecnología IA, un objetivo varifocal motorizado de 2.8–12 mm, iluminación híbrida, True WDR, entradas/salidas de audio y alarma, micrófono y PoE/12 V. Para exteriores e interiores."},{"n":"IndoorCam","f":"Cámaras Wi-Fi","d":"Cámara de seguridad Wi-Fi para interiores con sensor de movimiento PIR e IA integrada"},{"n":"DoorBell","f":"Timbres","d":"Vídeo timbre con IA integrada, sensor PIR y control a través de apps"},{"n":"Ajax Superior NVR H2DAI16PAC (16-ch)","f":"Grabadores de vídeo en red","d":"Grabador de vídeo en red de 16 canales con IA, salida HDMI 4K, interfaz Gigabit Ethernet, 16 puertos PoE y soporte para 2 discos duros sustituibles en caliente"},{"n":"Ajax Superior NVR H2DAI16PAC (32-ch)","f":"Grabadores de vídeo en red","d":"Grabador de vídeo en red de 32 canales con IA, salida HDMI 4K, interfaz Gigabit Ethernet, 16 puertos PoE y soporte para 2 discos duros sustituibles en caliente"},{"n":"Ajax Superior NVR H2DAI8PAC (16-ch)","f":"Grabadores de vídeo en red","d":"Grabador de vídeo en red de 16 canales con IA, salida HDMI 4K, interfaz Gigabit Ethernet, ocho puertos PoE y soporte para dos discos duros sustituibles en caliente"},{"n":"Ajax Superior NVR H2DAI8PAC (8-ch)","f":"Grabadores de vídeo en red","d":"Grabador de vídeo en red de 8 canales con IA, salida HDMI 4K, interfaz Gigabit Ethernet, ocho puertos PoE y soporte para dos discos duros sustituibles en caliente"},{"n":"NVR (16-ch)","f":"Grabadores de vídeo en red","d":"Grabador de vídeo en red de 16 canales"},{"n":"NVR (8-ch)","f":"Grabadores de vídeo en red","d":"Grabador de vídeo en red de 8 canales"},{"n":"NVR DC (16-ch)","f":"Grabadores de vídeo en red","d":"Grabador de vídeo en red para 16 canales alimentado por una fuente de energía de baja tensión"},{"n":"NVR DC (8-ch)","f":"Grabadores de vídeo en red","d":"Grabador de vídeo en red para 8 canales alimentado por una fuente de energía de baja tensión"},{"n":"NVR H2D16PAC (16-ch)","f":"Grabadores de vídeo en red","d":"Grabador de vídeo en red de 16 canales con salida HDMI 4K, 16 puertos PoE y soporte para 2 discos duros sustituibles en caliente"},{"n":"NVR H2D8PAC (16-ch)","f":"Grabadores de vídeo en red","d":"Grabador de vídeo en red de 16 canales con salida HDMI 4K, ocho puertos PoE y soporte para 2 discos duros sustituibles en caliente"},{"n":"NVR H2D8PAC (8-ch)","f":"Grabadores de vídeo en red","d":"Grabador de vídeo en red de 8 canales con salida HDMI 4K, ocho puertos PoE y soporte para 2 discos duros sustituibles en caliente"},{"n":"NVR H2DAC (16-ch)","f":"Grabadores de vídeo en red","d":"Grabador de vídeo en red de 16 canales con salida HDMI 4K y soporte para 2 discos duros sustituibles en caliente"},{"n":"NVR H2DAC (8-ch)","f":"Grabadores de vídeo en red","d":"Grabador de vídeo en red de 8 canales con salida HDMI 4K y soporte para 2 discos duros sustituibles en caliente"},{"n":"NVR HAC (16-ch)","f":"Grabadores de vídeo en red","d":"Grabador de vídeo en red de 16 canales con salida HDMI"},{"n":"NVR HAC (8-ch)","f":"Grabadores de vídeo en red","d":"Grabador de vídeo en red de 8 canales con salida HDMI"},{"n":"Ajax Superior NVR H2DAI2GAC (16-ch)","f":"Grabadores de vídeo en red","d":"Grabador de vídeo en red de 16 canales con IA, salida HDMI 4K, 2 puertos Gigabit Ethernet y soporte para 2 discos duros sustituibles en caliente"},{"n":"Ajax Superior NVR H2DAI2GAC (32-ch)","f":"Grabadores de vídeo en red","d":"Grabador de vídeo en red de 32 canales con IA, salida HDMI 4K, 2 puertos Gigabit Ethernet y soporte para 2 discos duros sustituibles en caliente"},{"n":"Ajax Superior NVR H2DAI2GAC (8-ch)","f":"Grabadores de vídeo en red","d":"Grabador de vídeo en red de 8 canales con IA, salida HDMI 4K, 2 puertos Gigabit Ethernet y soporte para 2 discos duros sustituibles en caliente"},{"n":"NVR HDC (16-ch)","f":"Grabadores de vídeo en red","d":"Grabador de vídeo en red de 16 canales con salida HDMI, alimentado por una fuente de energía de baja tensión"},{"n":"NVR HDC (8-ch)","f":"Grabadores de vídeo en red","d":"Grabador de vídeo en red de 8 canales con salida HDMI, alimentado por una fuente de energía de baja tensión"},{"n":"EN54 FireProtect (Heat) Jeweller","f":"Detectores de incendio","d":"Detector de calor puntual inalámbrico direccionable"},{"n":"EN54 FireProtect (Heat/Smoke) Jeweller","f":"Detectores de incendio","d":"Detector de calor y de humo puntual inalámbrico direccionable"},{"n":"EN54 FireProtect (Heat/Sounder) Jeweller","f":"Detectores de incendio","d":"Detector de calor puntual inalámbrico direccionable combinado con una sirena de alarma de incendio"},{"n":"EN54 FireProtect (Smoke) Jeweller","f":"Detectores de incendio","d":"Detector de humo puntual inalámbrico direccionable"},{"n":"FireProtect 2 AC (CO) Jeweller","f":"Detectores de incendio","d":"Detector inalámbrico de incendio monóxido de carbono alimentado por la red eléctrica"},{"n":"FireProtect 2 AC (Heat) Jeweller","f":"Detectores de incendio","d":"Detector inalámbrico de incendio de calor alimentado por la red eléctrica"},{"n":"FireProtect 2 AC (Heat/CO) Jeweller","f":"Detectores de incendio","d":"Detector inalámbrico de incendio de calor y monóxido de carbono alimentado por la red eléctrica"},{"n":"FireProtect 2 AC (Heat/Smoke) Jeweller","f":"Detectores de incendio","d":"Detector inalámbrico de incendio de humo y calor alimentado por la red eléctrica"},{"n":"FireProtect 2 AC (Heat/Smoke/CO) Jeweller","f":"Detectores de incendio","d":"Detector inalámbrico de incendio de humo, calor y monóxido de carbono alimentado por la red eléctrica"},{"n":"FireProtect 2 RB (CO) Jeweller","f":"Detectores de incendio","d":"Detector inalámbrico de CO con baterías reemplazables"},{"n":"FireProtect 2 RB (CO) UL Jeweller","f":"Detectores de incendio","d":"Detector inalámbrico de incendio con sensor de CO. Versión con baterías reemplazables"},{"n":"FireProtect 2 RB (Heat) Jeweller","f":"Detectores de incendio","d":"Detector inalámbrico de calor con baterías reemplazables"},{"n":"FireProtect 2 RB (Heat) UL Jeweller","f":"Detectores de incendio","d":"Detector inalámbrico de incendio con sensor de calor. Versión con baterías reemplazables"},{"n":"FireProtect 2 RB (Heat/CO) Jeweller","f":"Detectores de incendio","d":"Detector inalámbrico y combinado de calor y CO con baterías reemplazables"},{"n":"FireProtect 2 RB (Heat/Smoke) Jeweller","f":"Detectores de incendio","d":"Detector inalámbrico y combinado de calor y humo con baterías reemplazables"},{"n":"FireProtect 2 RB (Heat/Smoke) UL Jeweller","f":"Detectores de incendio","d":"Detector inalámbrico y combinado de calor y humo con baterías reemplazables"},{"n":"FireProtect 2 RB (Heat/Smoke/CO) Jeweller","f":"Detectores de incendio","d":"Detector inalámbrico y combinado de calor, humo y CO con baterías reemplazables"},{"n":"FireProtect 2 RB (Heat/Smoke/CO) UL Jeweller","f":"Detectores de incendio","d":"Detector inalámbrico y combinado de calor y humo con baterías reemplazables"},{"n":"FireProtect 2 SB (CO) Jeweller","f":"Detectores de incendio","d":"Detector inalámbrico de CO con baterías integradas"},{"n":"FireProtect 2 SB (Heat) Jeweller","f":"Detectores de incendio","d":"Detector inalámbrico de calor con baterías integradas"},{"n":"FireProtect 2 SB (Heat/CO) Jeweller","f":"Detectores de incendio","d":"Detector inalámbrico y combinado de calor y CO con baterías integradas"},{"n":"FireProtect 2 SB (Heat/Smoke) Jeweller","f":"Detectores de incendio","d":"Detector inalámbrico y combinado de calor y humo con baterías integradas"},{"n":"FireProtect 2 SB (Heat/Smoke/CO) Jeweller","f":"Detectores de incendio","d":"Detector inalámbrico y combinado de calor, humo y CO con baterías integradas"},{"n":"FireProtect Jeweller","f":"Detectores de incendio","d":"Detector inalámbrico de incendio con sensores de calor y humo. Versión con baterías reemplazables"},{"n":"FireProtect Plus Jeweller","f":"Detectores de incendio","d":"Detector inalámbrico y combinado de calor, humo y CO con baterías reemplazables"},{"n":"EN54 FireProtect (Smoke/Sounder) Jeweller","f":"Detectores de incendio","d":"Detector de humo puntual inalámbrico direccionable combinado con una sirena de alarma de incendio"},{"n":"EN54 FireProtect (Sounder) Jeweller","f":"Dispositivos de alarma de incendio","d":"Sirena de alarma de incendio inalámbrica direccionable"},{"n":"EN54 FireProtect (Sounder/VAD) Jeweller","f":"Dispositivos de alarma de incendio","d":"Sirena de alarma de incendio inalámbrica direccionable combinada con un Flash-dispositivo de alarma visual (DAV)"},{"n":"EN54 FireProtect (VAD) Jeweller","f":"Dispositivos de alarma de incendio","d":"Flash-dispositivo de alarma de incendio visual (DAV) inalámbrico y direccionable"},{"n":"ManualCallPoint (Blue) Jeweller","f":"Pulsadores manuales de alarma","d":"Botón inalámbrico reajustable y programable de color azul"},{"n":"ManualCallPoint (Green) Jeweller","f":"Pulsadores manuales de alarma","d":"Botón inalámbrico reajustable con escenarios programables. Versión de color verde."},{"n":"ManualCallPoint (Red) Jeweller","f":"Pulsadores manuales de alarma","d":"Botón inalámbrico reajustable para la activación manual de la alarma de incendio con escenarios programables. Versión de color rojo"},{"n":"ManualCallPoint (White) Jeweller","f":"Pulsadores manuales de alarma","d":"Botón inalámbrico reajustable con escenarios programables. Versión de color blanco."},{"n":"ManualCallPoint (Yellow) Jeweller","f":"Pulsadores manuales de alarma","d":"Botón inalámbrico reajustable con escenarios programables. Versión de color amarillo."},{"n":"LightSwitch (1-gang) [120] Jeweller","f":"Interruptores de luz","d":"Interruptor de luz inteligente y táctil de 1 banda"},{"n":"LightSwitch (1-gang) Jeweller","f":"Interruptores de luz","d":"Interruptor de luz inteligente y táctil de 1 banda"},{"n":"LightSwitch (2-gang) Jeweller","f":"Interruptores de luz","d":"Interruptor de luz inteligente y táctil de 2 bandas"},{"n":"LightSwitch (2-gang/2-way) Jeweller","f":"Interruptores de luz","d":"Interruptor de luz inteligente y táctil de 2 bandas y de 2 vías"},{"n":"LightSwitch (2-way) Jeweller","f":"Interruptores de luz","d":"Interruptor de luz inteligente y táctil de 2 vías"},{"n":"LightSwitch (3-way) [120] Jeweller","f":"Interruptores de luz","d":"Interruptor de luz inteligente y táctil de 3 vías"},{"n":"LightSwitch (4-way) [120] Jeweller","f":"Interruptores de luz","d":"Interruptor de luz inteligente y táctil de 4 vías"},{"n":"LightSwitch (Crossover) Jeweller","f":"Interruptores de luz","d":"Interruptor de luz inteligente y táctil de cruce"},{"n":"LightSwitch (Dimmer) Jeweller","f":"Interruptores de luz","d":"Dimmer inteligente y táctil"},{"n":"CoverPlate","f":"Bases de enchufe","d":"Tapa de la caja de montaje"},{"n":"Outlet (basic) [type E]","f":"Bases de enchufe","d":"Base de enchufe con conexión a tierra"},{"n":"Outlet (basic) [type F]","f":"Bases de enchufe","d":"Base de enchufe con conexión a tierra"},{"n":"Outlet (LAN)","f":"Bases de enchufe","d":"Base de enchufe Ethernet con dos puertos"},{"n":"Outlet [type E] Jeweller","f":"Bases de enchufe","d":"Base de enchufe inteligente con monitor de consumo eléctrico"},{"n":"Outlet [type F] Jeweller","f":"Bases de enchufe","d":"Base de enchufe inteligente con monitor de consumo eléctrico"},{"n":"Socket (type B) Jeweller","f":"Enchufes inteligentes","d":"Enchufe inteligente con monitor de consumo eléctrico"},{"n":"Socket (type F) Jeweller","f":"Enchufes inteligentes","d":"Enchufe inteligente con monitor de consumo eléctrico"},{"n":"Socket (type G) Jeweller","f":"Enchufes inteligentes","d":"Enchufe inteligente con monitor de consumo eléctrico"},{"n":"Relay Jeweller","f":"Relés","d":"Relé inalámbrico de contacto seco"},{"n":"Superior MultiRelay Fibra","f":"Relés","d":"Relé de cuatro canales de control remoto"},{"n":"WallSwitch Jeweller","f":"Relés","d":"Relé de potencia para controlar la alimentación de 110/230 V~ en remoto"},{"n":"LifeQuality Jeweller","f":"Detectores de calidad del aire","d":"Monitor inalámbrico de temperatura, humedad y CO₂"},{"n":"LifeQuality Lite Jeweller","f":"Detectores de calidad del aire","d":"Monitor inalámbrico de temperatura y de humedad"},{"n":"LeaksProtect Jeweller","f":"Detectores de inundación","d":"Detector inalámbrico de inundación"},{"n":"Ajax WaterStop 1\" (DN 25) Jeweller","f":"Válvulas de cierre","d":"Válvula de cierre de agua inalámbrica de control remoto"},{"n":"Ajax WaterStop ½\" (DN 15) Jeweller","f":"Válvulas de cierre","d":"Válvula de cierre de agua inalámbrica de control remoto"},{"n":"Ajax WaterStop ¾\" (DN 20) Jeweller","f":"Válvulas de cierre","d":"Válvula de cierre de agua inalámbrica de control remoto"},{"n":"EN54 I/O Module (2X2) Jeweller","f":"Módulos de integración","d":"Módulo inalámbrico direccionable con dos entradas y dos salidas para un sistema de alarma contra incendios"},{"n":"MultiTransmitter Jeweller","f":"Módulos de integración","d":"Módulo inalámbrico para integrar hasta 18 dispositivos de terceros en el sistema Ajax"},{"n":"Superior MultiTransmitter Fibra","f":"Módulos de integración","d":"Módulo cableado para integrar hasta 18 dispositivos de terceros en un sistema Ajax"},{"n":"Superior MultiTransmitter Fibra (without casing)","f":"Módulos de integración","d":"Módulo cableado para integrar hasta 18 dispositivos de terceros en un sistema Ajax"},{"n":"Superior MultiTransmitter G3 Jeweller","f":"Módulos de integración","d":"Módulo inalámbrico para integrar hasta 18 dispositivos de terceros en un sistema Ajax"},{"n":"Superior MultiTransmitter G3 Jeweller (without casing)","f":"Módulos de integración","d":"Módulo inalámbrico para integrar hasta 18 dispositivos de terceros en un sistema Ajax. Diseñado para su instalación en una carcasa Ajax."},{"n":"Superior MultiTransmitter IO (4X4) Fibra","f":"Módulos de integración","d":"Módulo cableado con 4 entradas y 4 salidas. Diseñado para integrar dispositivos de terceros en un sistema Ajax"},{"n":"Superior Transmitter Fibra","f":"Módulos de integración","d":"Módulo cableado para integrar un dispositivo de terceros en el sistema Ajax"},{"n":"Transmitter Jeweller","f":"Módulos de integración","d":"Módulo inalámbrico para integrar un dispositivo de terceros en el sistema Ajax"},{"n":"vhfBridge Jeweller","f":"Módulos de integración","d":"Módulo inalámbrico para conectar un sistema Ajax a transmisores VHF de terceros"},{"n":"vhfBridge Jeweller (without casing)","f":"Módulos de integración","d":"Módulo inalámbrico para conectar un sistema Ajax a transmisores VHF de terceros"},{"n":"Superior LineProtect Fibra","f":"Accesorios Fibra","d":"Módulo de protección de los dispositivos en la línea Fibra contra el cortocircuito y el sabotaje"},{"n":"Superior LineSplit Fibra","f":"Accesorios Fibra","d":"Módulo para dividir una línea Fibra en cuatro líneas"},{"n":"Superior LineSupply (45 W) Fibra","f":"Accesorios Fibra","d":"Módulo para la alimentación adicional con una potencia de 45 W y una línea de salida Fibra"},{"n":"Superior LineSupply (75 W) Fibra","f":"Accesorios Fibra","d":"Módulo para la alimentación adicional con una potencia de 75 W y dos líneas de salida Fibra"},{"n":"Case A (106)","f":"Carcasas","d":"Carcasa para un módulo Ajax"},{"n":"Case B (175)","f":"Carcasas","d":"Carcasa para uno o dos módulos Fibra"},{"n":"Case C (260)","f":"Carcasas","d":"Carcasa para un módulo Ajax y una batería de 7 Ah"},{"n":"Case D (430)","f":"Carcasas","d":"Carcasa para hasta ocho módulos Ajax y dos baterías de 18 Ah"},{"n":"Case E (395)","f":"Carcasas","d":"Carcasa impermeable para un hub Ajax con batería interna. Para exteriores e interiores."},{"n":"12-24V PSU (type A)","f":"Fuentes de alimentación","d":"Fuente de alimentación para el funcionamiento del dispositivo con una alimentación de baja tensión"},{"n":"12V PSU for Hub/Hub Plus/ReX","f":"Fuentes de alimentación","d":"Fuente de alimentación para el funcionamiento del dispositivo con una alimentación de baja tensión"},{"n":"12V PSU for NVR","f":"Fuentes de alimentación","d":"Fuente de alimentación para el funcionamiento del NVR con una alimentación de baja tensión"},{"n":"6V PSU (type A)","f":"Fuentes de alimentación","d":"Fuente de alimentación para el funcionamiento del dispositivo con una batería portátil"}];
 const KNOWLEDGE_STOPWORDS = new Set(['ajax','jeweller','fibra','superior','nuevo','proximamente','próximamente','type','dn','mp','ch','w','b','black','white','color','sin','casing','without','case','plus']);
 const knowledgeCache = new Map();
@@ -331,147 +631,6 @@ function iconoPorFamilia(info, p){
   if(f.includes('kits')) return '📦';
   return '📦';
 }
-function textoKnowledgeProducto(p){
-  const info = conocimientoProducto(p);
-  if(!info) return '';
-  return [info.n, info.f, info.d, etiquetasFamiliaKnowledge(info, p).join(' ')].join(' ');
-}
-function etiquetasFamiliaKnowledge(info, p){
-  const f = normaliza((info && info.f)||'');
-  const n = normaliza(((info && info.n)||'') + ' ' + ((info && info.d)||'') + ' ' + ((p && p.name)||''));
-  const out=[]; const add=(...xs)=>xs.forEach(x=>out.push(normaliza(x)));
-  if(f.includes('kits')) add('kit','starter','pack alarma','alarma completa','kit basico','kit básico');
-  if(f.includes('hubs')) add('hub','central','panel','central alarma','alarma','sim','ethernet','wifi','lte','4g','2g','fotoverificacion','fotoverificación');
-  if(f.includes('repetidores')) add('rex','repetidor','ampliar cobertura','alcance','señal','senal','radio','wings','jeweller');
-  if(f.includes('apertura')) add('puerta','ventana','apertura','contacto magnetico','contacto magnético','reed','impacto','inclinacion','inclinación');
-  if(f.includes('cristal')) add('cristal','vidrio','rotura','escaparate','microfono','micrófono');
-  if(f.includes('movimiento')) add('movimiento','pir','detector','presencia','volumetrico','volumétrico','perimetral','cortina','exterior','interior','fotoverificacion','fotoverificación');
-  if(f.includes('sirenas')) add('sirena','alarma sonora','aviso','sonido','interior','exterior','antisabotaje');
-  if(f.includes('botones')) add('boton','botón','mando','panico','pánico','emergencia','atraco','spacecontrol','llavero','control remoto');
-  if(f.includes('teclados')) add('teclado','codigo','código','armar','desarmar','pantalla','tactil','táctil','pass','tag','smartphone');
-  if(f.includes('camara') || f.includes('timbres') || f.includes('video')) add('camara','cámara','camaras','cámaras','video','videovigilancia','cctv','ip','poe','ia','wdr','microfono','micrófono','interior','exterior');
-  if(f.includes('grabadores')) add('nvr','grabador','grabadores','videograbador','video','camaras','cámaras','canales','hdmi','4k','poe','disco duro','hdd','almacenamiento');
-  if(f.includes('incendio')) add('incendio','fuego','humo','calor','temperatura','co','monoxido','monóxido','alarma incendio','en54','pulsador');
-  if(f.includes('interruptores')) add('interruptor','luz','iluminacion','iluminación','mecanismo','pared','tactil','táctil','dimmer','cruce','conmutado','dos vias','2 vias');
-  if(f.includes('bases')) add('enchufe','base enchufe','toma corriente','ethernet','lan','mecanismo','pared','surfacebox');
-  if(f.includes('enchufes')) add('socket','enchufe inteligente','consumo','monitor consumo','domotica','domótica');
-  if(f.includes('reles')) add('relay','rele','relé','contacto seco','automatizacion','automatización','control remoto','230v','garaje','motor','cerradura');
-  if(f.includes('aire')) add('aire','calidad aire','co2','temperatura','humedad','ambiente','sensor ambiental');
-  if(f.includes('inundacion')) add('agua','inundacion','inundación','fuga','fugas','humedad','detector agua','sensor agua');
-  if(f.includes('valvulas')) add('waterstop','agua','valvula','válvula','corte agua','llave agua','fuga','inundacion','fontaneria');
-  if(f.includes('integracion')) add('integracion','integración','modulo','módulo','cableado','terceros','entrada','salida','vhf');
-  if(f.includes('fibra')) add('fibra','linea','línea','cableado','proteccion linea','alimentacion linea');
-  if(f.includes('carcasas')) add('carcasa','caja','case','montaje','modulo','módulo','bateria','batería');
-  if(f.includes('alimentacion')) add('fuente','alimentacion','alimentación','psu','12v','24v','6v','baja tension','baja tensión','nvr','hub','rex');
-  if(n.includes('hlvf')) add('varifocal','2.8-12','motorizado','p iris','audio alarma');
-  if(n.includes('hl')) add('iluminacion hibrida','iluminación híbrida','hybrid light');
-  if(n.includes('8 mp') || n.includes('8mp')) add('8mp','8 mp','ocho megapixeles');
-  if(n.includes('5 mp') || n.includes('5mp')) add('5mp','5 mp','cinco megapixeles');
-  if(n.includes('4 mp') || n.includes('4mp')) add('4mp','4 mp','cuatro megapixeles');
-  if(n.includes('2.8')) add('2.8mm','110 grados','gran angular');
-  if(n.includes('4 mm') || n.includes('4mm')) add('4mm','85 grados');
-  if(n.includes('16 canales') || n.includes('16-ch')) add('16 canales','dieciseis canales','dieciséis canales');
-  if(n.includes('32 canales') || n.includes('32-ch')) add('32 canales','treinta y dos canales');
-  if(n.includes('8 canales') || n.includes('8-ch')) add('8 canales','ocho canales');
-  return [...new Set(out)].filter(Boolean);
-}
-
-function etiquetasProducto(p){
-  const raw = normaliza(((p && p.name) || '') + ' ' + ((p && p.brand) || ''));
-  const tags = [];
-  const add = (...xs) => xs.forEach(x => tags.push(normaliza(x)));
-
-  // Agua / inundación
-  if(raw.includes('leak') || raw.includes('waterstop')) add('agua','inundacion','fuga','fugas','humedad','detector de agua','sensor agua','anti inundacion','anti fugas','corte agua','llave agua','valvula agua','válvula agua','cierre agua');
-  if(raw.includes('waterstop')) add('valvula','válvula','electrovalvula','electroválvula','corte automatico','corte automático','cerrar agua','llave de paso');
-
-  // Intrusión / detectores
-  if(raw.includes('motion')) add('movimiento','movimientos','detector','detectores','presencia','pir','sensor movimiento','volumetrico','volumétrico','intrusion','intrusión','alarma interior');
-  if(raw.includes('motioncam')) add('camara','cámara','foto','verificacion','verificación','detector con camara','detector con cámara','fotodetector');
-  if(raw.includes('outdoor') || raw.includes('curtain') || raw.includes('dualcurtain') || raw.includes('outdoorprotect')) add('exterior','intemperie','perimetral','jardin','jardín','calle','terraza','barrera','barrera movimiento','proteccion exterior','protección exterior');
-  if(raw.includes('curtain')) add('cortina','barrera cortina','barrera inalambrica','barrera inalámbrica','perimetro','perímetro');
-  if(raw.includes('doorprotect') || raw.includes('door')) add('puerta','puertas','ventana','ventanas','contacto','magnetico','magnético','apertura','sensor puerta','sensor ventana','contacto magnetico','contacto magnético');
-  if(raw.includes('glass')) add('cristal','vidrio','rotura','rotura cristal','rotura vidrio','escaparate','detector cristal');
-
-  // Incendio y seguridad vital
-  if(raw.includes('fire')) add('incendio','incendios','humo','humos','fuego','temperatura','calor','co','monoxido','monóxido','detector humo','detector incendio','seguridad vida','vida','alarma incendio');
-  if(raw.includes('manualcallpoint')) add('pulsador incendio','pulsador emergencia','boton incendio','botón incendio','evacuacion','evacuación','manual call point');
-  if(raw.includes('lifequality')) add('calidad aire','aire','co2','temperatura','humedad','ambiente','sensor ambiente','calidad ambiental');
-
-  // Sirenas, control y mandos
-  if(raw.includes('siren')) add('sirena','sirenas','alarma sonora','sonora','aviso','acustica','acústica','alerta','avisador');
-  if(raw.includes('keypad')) add('teclado','teclados','codigo','codigos','código','control','armar','desarmar','pantalla','touchscreen','lector','control alarma');
-  if(raw.includes('button') || raw.includes('doublebutton')) add('boton','botón','panico','pánico','pulsador','emergencia','atraco','alarma silenciosa');
-  if(raw.includes('tag') || raw.includes('pass') || raw.includes('spacecontrol')) add('mando','mandos','llavero','llaveros','tarjeta','tag','acceso','control remoto','proximidad','desarmar');
-
-  // Centrales, comunicación y repetidores
-  if(raw.includes('hub')) add('central','alarma','panel','comunicador','wifi','4g','ethernet','hub','central alarma','cerebro alarma','panel alarma');
-  if(raw.includes('rex')) add('repetidor','extensor','amplificador','cobertura','alcance','radio');
-  if(raw.includes('ocbridge') || raw.includes('uartbridge') || raw.includes('vhfbridge') || raw.includes('transmitter') || raw.includes('multitransmitter')) add('integracion','integración','cableado','cableada','modulo cableado','módulo cableado','entrada cableada','transmisor');
-
-  // Vídeo / cámaras / NVR
-  if(raw.includes('nvr')) add('nvr','grabador','grabadores','videograbador','videograbadores','grabador camaras','grabador cámaras','grabador de camaras','grabador de cámaras','disco duro','hdd','hd','almacenamiento','cctv','videovigilancia','video vigilancia','camaras','cámaras','poe','switch poe','8 canales','16 canales','32 canales');
-  if(raw.includes('bullet') || raw.includes('dome') || raw.includes('turret') || raw.includes('indoorcam') || raw.includes('doorbell') || raw.includes('cam')) add('camara','camaras','cámara','cámaras','video','vídeo','vigilancia','cctv','ip','vision nocturna','visión nocturna','exterior','interior','domo','bullet','torreta','turret','dome','onvif','rtsp');
-  if(raw.includes('doorbell')) add('videoportero','timbre','portero','llamada puerta','puerta');
-  if(raw.includes('storage')) add('almacenamiento','cloud','nube','grabacion','grabación','video','camaras','cámaras');
-
-  // Automatización / confort / electricidad
-  if(raw.includes('relay') || raw.includes('wallswitch')) add('rele','reles','relé','relés','automatizacion','automatización','domotica','domótica','contacto seco','salida rele','salida relé','control electrico','control eléctrico');
-  if(raw.includes('socket') || raw.includes('outlet')) add('enchufe','toma corriente','corriente','smart plug','consumo','domotica','domótica');
-  if(raw.includes('switch') || raw.includes('lightcore') || raw.includes('dimmer') || raw.includes('button') || raw.includes('centerbutton') || raw.includes('sidebutton') || raw.includes('solobutton')) add('interruptor','pulsador','luz','iluminacion','iluminación','dimmer','regulador','domotica','domótica','mecanismo');
-  if(raw.includes('ledstrip')) add('led','tira led','iluminacion','iluminación','luz');
-
-  // Alimentación / baterías / red / accesorios de futuro
-  if(raw.includes('battery') || raw.includes('batt')) add('bateria','baterias','batería','baterías','alimentacion','alimentación','pila','backup','respaldo','sai');
-  if(raw.includes('dc12') || raw.includes('dc1224') || raw.includes('ac220') || raw.includes('psu')) add('alimentador','alimentadores','fuente','fuentes','fuente alimentacion','fuente alimentación','transformador','12v','12 voltios','24v','220v','corriente','alimentacion');
-  if(raw.includes('poe')) add('poe','switch poe','inyector poe','48v','48 voltios','alimentar camaras','alimentar cámaras','red poe');
-  if(raw.includes('lan') || raw.includes('ethernet')) add('red','ethernet','lan','switch normal','switch red','conector red','cable red');
-  if(raw.includes('storage') || raw.includes('hdd') || raw.includes('hd')) add('disco duro','hdd','hd','almacenamiento','memoria','grabacion','grabación');
-  if(raw.includes('sd') || raw.includes('microsd')) add('micro sd','microsd','tarjeta memoria','tarjeta de memoria','memoria camara','memoria cámara');
-
-  // Montajes, soportes y accesorios
-  if(raw.includes('bracket') || raw.includes('holder') || raw.includes('frame') || raw.includes('cover') || raw.includes('magnet') || raw.includes('junctionbox') || raw.includes('mount') || raw.includes('hood') || raw.includes('surfacebox')) add('soporte','soportes','montaje','base','bracket','tapa','marco','caja','cajas','caja conexiones','imán','iman','recambio','accesorio','accesorios','protector','visera');
-  if(raw.includes('kit')) add('kit','pack','conjunto','starter','arranque');
-  if(raw.includes('dummy') || raw.includes('demo') || raw.includes('democase') || raw.includes('suitcase')) add('demo','muestra','dummy','expositor','maleta','demo case');
-
-  // Material adicional que podrá entrar al CSV más adelante
-  add('ajax','seguridad','alarma profesional');
-  if(raw.includes('hdd') || raw.includes('nvr')) add('disco duro hd','disco duro nvr');
-  if(raw.includes('switch')) add('switch normal','switch poe','switch de red');
-  if(raw.includes('injector') || raw.includes('inyector')) add('inyector poe','48 voltios');
-  if(raw.includes('solar')) add('solar','inalambrica solar','inalámbrica solar');
-
-  // Colores y variantes útiles
-  if(/-b(\b|-|$)/.test(raw)) add('negro','black');
-  if(/-w(\b|-|$)/.test(raw)) add('blanco','white');
-  if(raw.includes('gra')) add('grafito','gris');
-  if(raw.includes('gre')) add('verde');
-  if(raw.includes('rb')) add('bateria reemplazable','batería reemplazable');
-  if(raw.includes('sb')) add('bateria sellada','batería sellada');
-  if(raw.includes('hac')) add('disco incluido','hdd incluido','con disco duro');
-  if(raw.includes('8p') || raw.includes('16p')) add('poe','puertos poe','switch poe integrado');
-
-
-  // Plurales y sinónimos directos v18.4: búsqueda rápida
-  if(raw.includes('relay')) add('reles','relés','relays');
-  if(raw.includes('siren')) add('sirenas');
-  if(raw.includes('nvr')) add('grabadores','videograbadores');
-  if(raw.includes('bullet') || raw.includes('dome') || raw.includes('turret') || raw.includes('indoorcam') || raw.includes('doorbell')) add('camaras','cámaras');
-  if(raw.includes('motion')) add('movimientos','detectores');
-  if(raw.includes('doorprotect') || raw.includes('door')) add('puertas','ventanas');
-  if(raw.includes('fire')) add('incendios','humos');
-  if(raw.includes('leak') || raw.includes('waterstop')) add('fugas','inundaciones');
-  if(raw.includes('keypad')) add('teclados');
-  if(raw.includes('spacecontrol') || raw.includes('button') || raw.includes('tag') || raw.includes('pass')) add('mandos');
-  if(raw.includes('battery') || raw.includes('batt')) add('baterias','baterías');
-  if(raw.includes('psu') || raw.includes('dc12') || raw.includes('dc1224') || raw.includes('ac220')) add('alimentadores','fuentes');
-  if(raw.includes('bracket') || raw.includes('holder') || raw.includes('junctionbox') || raw.includes('mount') || raw.includes('surfacebox')) add('soportes','cajas','accesorios');
-
-  return [...new Set(tags)].filter(Boolean);
-}
-function textoBusquedaProducto(p){
-  return normaliza([p.name, p.brand, descripcionProducto(p).desc, textoKnowledgeProducto(p), etiquetasProducto(p).join(' ')].join(' '));
-}
 function descripcionProductoBase(p){
   const n = normaliza((p && p.name) || '');
 
@@ -556,15 +715,22 @@ function descripcionProducto(p){
   }
   return descripcionProductoBase(p);
 }
-function productoTitulo(p){
-  const d = descripcionProducto(p);
-  return `${d.icon} ${p.name}`;
+function hxInicioArriba(){
+  try{ if('scrollRestoration' in history) history.scrollRestoration='manual'; }catch(_error){}
+  const subir=()=>{ try{ window.scrollTo(0,0); document.documentElement.scrollTop=0; document.body.scrollTop=0; }catch(_error){} };
+  subir();
+  requestAnimationFrame(()=>{ subir(); requestAnimationFrame(subir); });
 }
 function aplicarTemaGuardado(){
-  const tema = localStorage.getItem(STORAGE_TEMA) || 'dark';
+  const tema = localStorage.getItem(STORAGE_TEMA) || 'light';
   document.body.classList.toggle('light-mode', tema === 'light');
   const btn = $('#themeToggle');
-  if(btn) btn.textContent = tema === 'light' ? '🌙 Modo oscuro' : '☀️ Modo claro';
+  if(btn){
+    btn.classList.toggle('is-light-theme', tema === 'light');
+    const destino = tema === 'light' ? 'oscuro' : 'claro';
+    btn.setAttribute('aria-label', `Cambiar a modo ${destino}`);
+    btn.title = `Cambiar a modo ${destino}`;
+  }
 }
 function alternarTema(){
   const esClaro = !document.body.classList.contains('light-mode');
@@ -573,58 +739,12 @@ function alternarTema(){
 }
 
 function escapeHtml(s){ return String(s).replace(/[&<>"]/g, m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[m])); }
-function scoreProducto(p, term){
-  const t = normaliza(term);
-  if(!t) return 0;
-  const n = normaliza(p.name), b = normaliza(p.brand), indice = textoBusquedaProducto(p);
-  const tokensNombre = n.split(/[^a-z0-9]+/).filter(Boolean);
-  let score = 0;
-  const parts = t.split(/\s+/).filter(Boolean);
-  for(const part of parts){
-    // Prioridad alta para coincidencias reales en nombre/referencia.
-    // Ejemplo: al escribir "nvr" deben salir todos los AJ-NVR..., antes que cámaras relacionadas por etiquetas.
-    if(tokensNombre.includes(part)) score += 520;
-    else if(n === part) score += 500;
-    else if(n.startsWith(part)) score += 260;
-    else if(n.includes(part)) score += 180;
-    if(b.includes(part)) score += 12;
-    if(indice.includes(part)) score += 55;
-  }
-  if(n === t) score += 600;
-  if(tokensNombre.includes(t)) score += 520;
-  if(n.includes(t)) score += 220;
-  if(indice.includes(t)) score += 80;
-  return score;
-}
-function buscar(term){
-  const forzada = busquedaForzada(term);
-  if(forzada) return forzada;
-  const t = normaliza(term);
-  if(!t) return [];
-  const base = productos
-    .map((p,i)=>({p,i,score:scoreProducto(p,term), n:normaliza(p.name), b:normaliza(p.brand)}))
-    .filter(x=>x.score>0);
+function buscar(term){ return hxBuscarComun(term); }
+function buscarCatalogo(term=''){ return hxBuscarComun(term); }
 
-  // PRO: si el texto aparece literalmente en referencia/nombre, esos productos van SIEMPRE primero.
-  // Corrige casos como "nvr" o "motion", donde antes podían quedar mezclados con resultados semánticos.
-  const exactos = base
-    .filter(x=>x.n.includes(t) || x.b.includes(t))
-    .sort((a,b)=>{
-      const ap = a.n.startsWith(t) ? 0 : 1;
-      const bp = b.n.startsWith(t) ? 0 : 1;
-      return ap-bp || a.p.name.localeCompare(b.p.name,'es');
-    });
-  const resto = base
-    .filter(x=>!(x.n.includes(t) || x.b.includes(t)))
-    .sort((a,b)=>b.score-a.score || a.p.name.localeCompare(b.p.name,'es'));
-
-  // Para búsquedas cortas de familias (nvr, hub, rex, poe, etc.) no recortamos demasiado.
-  const limite = t.length <= 6 ? 160 : 90;
-  return [...exactos, ...resto].slice(0, limite);
-}
 function pintarResultados(term){
   const panel = $('#resultados');
-  const results = buscar(term);
+  const results = hxBuscarComun(term);
   activeIndex = -1;
   if(!term.trim() || !results.length){
     panel.classList.add('hidden');
@@ -638,7 +758,7 @@ function pintarResultados(term){
 
   panel.innerHTML = results.map((x,k)=>{
     const d = descripcionProducto(x.p);
-    return `<div class="result-item" data-index="${x.i}" data-ref="${escapeHtml(x.p.name)}" data-pvp="${Number(x.p.pvp)}" data-k="${k}"><div><div class="result-name">${escapeHtml(d.icon)} ${escapeHtml(x.p.name)}</div><div class="result-meta">${escapeHtml(d.desc)}</div></div><div class="result-price">${fmt.format(x.p.pvp)}</div></div>`;
+    return `<div class="result-item" data-index="${x.i}" data-ref="${escapeHtml(x.p.name)}" data-pvp="${Number(x.p.pvp)}" data-k="${k}"><div><div class="result-name">${escapeHtml(x.p.name)}</div><div class="result-meta">${escapeHtml(d.desc)}</div></div><div class="result-price">${fmt.format(x.p.pvp)}</div></div>`;
   }).join('');
 
   panel.querySelectorAll('.result-item').forEach(el=>{
@@ -653,9 +773,8 @@ function seleccionarProducto(i, cerrar=false){
   seleccionado = productos[i] ? i : null;
   if(seleccionado===null) return;
   $('#producto').value = String(i);
-  const btnCat=$('#btnCatalogo'); if(btnCat) btnCat.innerHTML = '<span class="btn-ico">📖</span>Catálogo';
   $('#buscador').value = productos[i].name;
-  { const d = descripcionProducto(productos[i]); $('#previewProducto').innerHTML = `<b>${escapeHtml(d.icon)} ${escapeHtml(productos[i].name)}</b> · ${escapeHtml(d.desc)} · ${fmt.format(productos[i].pvp)}`; }
+  { const d = descripcionProducto(productos[i]); $('#previewProducto').innerHTML = `<b>${escapeHtml(productos[i].name)}</b> · ${escapeHtml(d.desc)} · ${fmt.format(productos[i].pvp)}`; }
   if(cerrar) $('#resultados').classList.add('hidden');
 }
 function seleccionarProductoSeguro(ref, expectedPvp=null, cerrar=false){
@@ -668,22 +787,6 @@ function seleccionarProductoSeguro(ref, expectedPvp=null, cerrar=false){
   seleccionadoPvp=Number(resolved.product.pvp);
   return true;
 }
-function resolverDesdeInput(){
-  const term = $('#buscador').value;
-  seleccionado = null;
-  seleccionadoRef = '';
-  seleccionadoPvp = null;
-  $('#producto').value = '';
-  pintarResultados(term);
-
-  const best = buscar(term)[0];
-  if(best){
-    const d = descripcionProducto(best.p);
-    $('#previewProducto').innerHTML = `<b>${escapeHtml(d.icon)} ${escapeHtml(best.p.name)}</b> · ${escapeHtml(d.desc)} · ${fmt.format(best.p.pvp)}`;
-  }else{
-    $('#previewProducto').textContent='Selecciona un producto para ver su precio.';
-  }
-}
 function moverActivo(dir){
   const items = [...document.querySelectorAll('.result-item')]; if(!items.length) return;
   activeIndex = (activeIndex + dir + items.length) % items.length;
@@ -691,22 +794,8 @@ function moverActivo(dir){
   items[activeIndex].classList.add('active'); items[activeIndex].scrollIntoView({block:'nearest'});
 }
 
-function registrarReciente(nombre){ /* desactivado para no arrastrar productos en búsquedas */ }
 
-function renderRecientes(){ const wrap=$('#recentes'); if(wrap) wrap.innerHTML=''; }
 
-function buscarCatalogo(term=''){
-  const limpio = String(term||'').trim();
-  if(!limpio){
-    return productos.map((p,i)=>({p,i,score:1})).sort((a,b)=>a.p.name.localeCompare(b.p.name,'es'));
-  }
-  const forzada = busquedaForzada(limpio);
-  if(forzada) return forzada;
-  return productos
-    .map((p,i)=>({p,i,score:scoreProducto(p,limpio)}))
-    .filter(x=>x.score>0)
-    .sort((a,b)=>b.score-a.score || a.p.name.localeCompare(b.p.name,'es'));
-}
 const HX_MODAL_QTY = { catalog:new Map(), explorer:new Map() };
 const HX_MODAL_LINE = { catalog:new Map(), explorer:new Map() };
 let HX_MODAL_LINE_SEQ = 0;
@@ -729,7 +818,7 @@ function hxAddProductoModal(scope, idx, qty, ref=null, expectedPvp=null){
   if(!resolved.ok){ hxToastGlobal(resolved.error,'error'); return false; }
   const p = resolved.product;
 
-  const map = HX_MODAL_LINE[scope];
+  const map = HX_MODAL_LINE[scope] || (HX_MODAL_LINE[scope]=new Map());
   const key = hxRefProducto(p.name);
   const lineId = map?.get(key);
   const existing = lineId ? lineas.find(l=>l && l._hxModalLineId===lineId) : null;
@@ -738,7 +827,7 @@ function hxAddProductoModal(scope, idx, qty, ref=null, expectedPvp=null){
     const anterior = Math.max(1, Number(existing.qty)||1);
     existing.qty = anterior + cantidad;
     render();
-    hxToastGlobal(`${p.name} · cantidad ${anterior} → ${existing.qty}`, 'ok');
+    if(scope!=='compatibles') hxToastGlobal(`${p.name} · cantidad ${anterior} → ${existing.qty}`, 'ok');
     return true;
   }
 
@@ -749,7 +838,7 @@ function hxAddProductoModal(scope, idx, qty, ref=null, expectedPvp=null){
     map?.set(key, created._hxModalLineId);
   }
   render();
-  hxToastGlobal(cantidad > 1 ? `${p.name} · ${cantidad} unidades añadidas` : `${p.name} añadido`, 'ok');
+  if(scope!=='compatibles') hxToastGlobal(cantidad > 1 ? `${p.name} · ${cantidad} unidades añadidas` : `${p.name} añadido`, 'ok');
   return true;
 }
 function hxQtyControlHtml(scope, idx){
@@ -761,19 +850,57 @@ function hxQtyControlHtml(scope, idx){
   </div>`;
 }
 function hxBindQtyControls(root, scope){
+  const syncAddLabel=(ctrl,qty)=>{
+    const card=ctrl.closest('.hxp-product');
+    const add=card?.querySelector('.hxp-add');
+    if(add && !add.classList.contains('is-added')) add.textContent=qty>1?`Añadir ${qty}`:'Añadir';
+  };
   root.querySelectorAll('.hx-modal-qty').forEach(ctrl=>{
     ctrl.addEventListener('dblclick',e=>e.stopPropagation());
     const idx=Number(ctrl.dataset.index);
     const value=ctrl.querySelector('.hx-modal-qty-value');
+    syncAddLabel(ctrl,hxModalQtyGet(scope,idx));
     ctrl.querySelector('.hx-modal-qty-minus')?.addEventListener('click',e=>{
       e.stopPropagation();
-      value.textContent=String(hxModalQtySet(scope,idx,hxModalQtyGet(scope,idx)-1));
+      const qty=hxModalQtySet(scope,idx,hxModalQtyGet(scope,idx)-1);
+      value.textContent=String(qty); syncAddLabel(ctrl,qty);
     });
     ctrl.querySelector('.hx-modal-qty-plus')?.addEventListener('click',e=>{
       e.stopPropagation();
-      value.textContent=String(hxModalQtySet(scope,idx,hxModalQtyGet(scope,idx)+1));
+      const qty=hxModalQtySet(scope,idx,hxModalQtyGet(scope,idx)+1);
+      value.textContent=String(qty); syncAddLabel(ctrl,qty);
     });
   });
+}
+
+function hxProductVisualHtml(p, d, context){
+  const image = String((p && p.image) || '').trim();
+  const description = hxDescripcionCortaProducto(p, (d && d.desc) || '');
+  const img = image
+    ? `<button type="button" class="hx-product-thumb" data-image="${escapeHtml(image)}" aria-label="Ampliar imagen de ${escapeHtml(p.name)}"><img src="${escapeHtml(image)}" alt="" loading="lazy" onerror="this.closest('.hx-product-thumb').classList.add('hx-image-error')"></button>`
+    : '';
+  const title = context === 'search'
+    ? escapeHtml(p.name)
+    : `${escapeHtml(d.icon)} ${escapeHtml(p.name)}`;
+  return `<div class="hx-product-info ${image ? 'has-image' : 'no-image'}">${img}<div class="hx-product-copy"><strong>${title}</strong><span>${escapeHtml(description)}</span></div></div>`;
+}
+function hxBindProductImages(root){
+  root.querySelectorAll('.hx-product-thumb').forEach(btn=>btn.addEventListener('click',e=>{
+    e.stopPropagation();
+    const url=btn.dataset.image;
+    if(!url) return;
+    let modal=document.getElementById('hxImagePreview');
+    if(!modal){
+      modal=document.createElement('div');
+      modal.id='hxImagePreview';
+      modal.className='hx-image-preview hidden';
+      modal.innerHTML='<button type="button" class="hx-image-preview-close" aria-label="Cerrar">×</button><img alt="Vista ampliada del producto">';
+      document.body.appendChild(modal);
+      modal.addEventListener('click',ev=>{ if(ev.target===modal || ev.target.closest('.hx-image-preview-close')) modal.classList.add('hidden'); });
+    }
+    modal.querySelector('img').src=url;
+    modal.classList.remove('hidden');
+  }));
 }
 
 function pintarCatalogPanel(term=catalogTerm){
@@ -787,10 +914,7 @@ function pintarCatalogPanel(term=catalogTerm){
   itemsWrap.innerHTML = lista.map(x=>{
     const d = descripcionProducto(x.p);
     return `<div class="catalog-row" data-index="${x.i}" data-ref="${escapeHtml(x.p.name)}" data-pvp="${Number(x.p.pvp)}">
-      <div class="catalog-main">
-        <strong>${escapeHtml(d.icon)} ${escapeHtml(x.p.name)}</strong>
-        <span>${escapeHtml(d.desc)}</span>
-      </div>
+      ${hxProductVisualHtml(x.p, d, 'catalog')}
       <b>${fmt.format(x.p.pvp)}</b>
       ${hxQtyControlHtml('catalog', x.i)}
       <button type="button" class="catalog-add" data-index="${x.i}" data-ref="${escapeHtml(x.p.name)}" data-pvp="${Number(x.p.pvp)}">Añadir</button>
@@ -814,6 +938,7 @@ function pintarCatalogPanel(term=catalogTerm){
     }
   }
   hxBindQtyControls(itemsWrap, 'catalog');
+  hxBindProductImages(itemsWrap);
   itemsWrap.querySelectorAll('.catalog-row').forEach(el=>el.addEventListener('dblclick',()=>{ addCatalogProductPersistent(Number(el.dataset.index), null); }));
   itemsWrap.querySelectorAll('.catalog-add').forEach(btn=>btn.addEventListener('click',e=>{ e.stopPropagation(); addCatalogProductPersistent(Number(btn.dataset.index), btn); }));
   itemsWrap.querySelectorAll('.catalog-row').forEach(el=>el.addEventListener('click',()=>{ seleccionarProductoSeguro(el.dataset.ref, el.dataset.pvp, true); }));
@@ -890,7 +1015,6 @@ function addLinea(){
   seleccionadoPvp=null;
   activeIndex=-1;
   $('#previewProducto').textContent='Selecciona un producto para ver su precio.';
-  const btnCat=$('#btnCatalogo'); if(btnCat) btnCat.innerHTML='<span class="btn-ico">📖</span>Catálogo';
   const panel=$('#resultados'); if(panel){panel.classList.add('hidden'); panel.innerHTML='';}
   /* No reconstruir el catálogo completo después de cada alta.
      Era la principal causa de lentitud al elegir el siguiente producto. */
@@ -935,7 +1059,20 @@ function cambiarQtyLinea(i, delta){
     }
   }catch(e){}
 }
-function delLinea(i){ lineas.splice(i,1); render(); }
+function delLinea(i){
+  const l = Array.isArray(lineas) ? lineas[i] : null;
+  if(!l) return;
+  const ref = String(l.name || l.producto || l.descripcion || '').trim();
+  const esSeparador = !!(l.separador || l.tipo === 'separador');
+  const texto = esSeparador
+    ? '¿Eliminar este separador del presupuesto?'
+    : ref
+      ? `¿Eliminar “${ref}” del presupuesto?`
+      : '¿Eliminar esta línea del presupuesto?';
+  if(!confirm(texto)) return;
+  lineas.splice(i,1);
+  render();
+}
 try{ window.cambiarQtyLinea = cambiarQtyLinea; }catch(e){}
 function calc(){
   const subtotalBruto = lineas.reduce((s,l)=> l.separador ? s : s + (Number(l.pvp)||0)*(Number(l.qty)||0),0);
@@ -986,27 +1123,36 @@ function activarArrastreLineas(){
     const rect = row.getBoundingClientRect();
     const srcCells = Array.from(row.children);
 
+    const mobileGhost = esMovilArrastre();
     const ghostTable = document.createElement('table');
     ghostTable.className = 'hx-drag-ghost';
     ghostTable.style.position = 'fixed';
-    ghostTable.style.left = rect.left + 'px';
+    const ghostWidth = mobileGhost ? Math.min(rect.width, window.innerWidth - 20) : rect.width;
+    const ghostLeft = mobileGhost ? Math.max(10, Math.min(rect.left, window.innerWidth - ghostWidth - 10)) : rect.left;
+    ghostTable.style.left = ghostLeft + 'px';
     ghostTable.style.top = rect.top + 'px';
-    ghostTable.style.width = rect.width + 'px';
+    ghostTable.style.width = ghostWidth + 'px';
+    ghostTable.style.minWidth = ghostWidth + 'px';
+    ghostTable.style.maxWidth = ghostWidth + 'px';
     ghostTable.style.height = rect.height + 'px';
     ghostTable.style.zIndex = '100000';
     ghostTable.style.pointerEvents = 'none';
     ghostTable.style.margin = '0';
+    ghostTable.style.overflow = 'hidden';
+    ghostTable.style.boxSizing = 'border-box';
     ghostTable.style.tableLayout = 'fixed';
     ghostTable.style.borderCollapse = 'collapse';
     ghostTable.style.borderSpacing = '0';
 
-    const colgroup = document.createElement('colgroup');
-    srcCells.forEach(cell => {
-      const col = document.createElement('col');
-      col.style.width = cell.getBoundingClientRect().width + 'px';
-      colgroup.appendChild(col);
-    });
-    ghostTable.appendChild(colgroup);
+    if(!mobileGhost){
+      const colgroup = document.createElement('colgroup');
+      srcCells.forEach(cell => {
+        const col = document.createElement('col');
+        col.style.width = cell.getBoundingClientRect().width + 'px';
+        colgroup.appendChild(col);
+      });
+      ghostTable.appendChild(colgroup);
+    }
 
     const ghostBody = document.createElement('tbody');
     const ghostRow = row.cloneNode(true);
@@ -1041,20 +1187,42 @@ function activarArrastreLineas(){
     }
     copiarEstiloCalculado(row, ghostRow);
 
-    ghostRow.style.setProperty('display','table-row','important');
     ghostRow.style.setProperty('height',rect.height+'px','important');
-    ghostRow.style.setProperty('width',rect.width+'px','important');
+    ghostRow.style.setProperty('width','100%','important');
+    ghostRow.style.setProperty('min-width','0','important');
+    ghostRow.style.setProperty('max-width','100%','important');
+    ghostRow.style.setProperty('box-sizing','border-box','important');
 
-    Array.from(ghostRow.children).forEach((cell, i) => {
-      const src = srcCells[i];
-      if(!src) return;
-      const width = src.getBoundingClientRect().width;
-      cell.style.setProperty('display','table-cell','important');
-      cell.style.setProperty('width',width+'px','important');
-      cell.style.setProperty('min-width',width+'px','important');
-      cell.style.setProperty('max-width',width+'px','important');
-      cell.style.setProperty('box-sizing','border-box','important');
-    });
+    if(mobileGhost){
+      ghostTable.style.setProperty('display','block','important');
+      ghostBody.style.setProperty('display','block','important');
+      ghostBody.style.setProperty('width','100%','important');
+      ghostRow.style.setProperty('display','grid','important');
+      ghostRow.style.setProperty('grid-template-columns',getComputedStyle(row).gridTemplateColumns,'important');
+      ghostRow.style.setProperty('grid-template-rows',getComputedStyle(row).gridTemplateRows,'important');
+      ghostRow.style.setProperty('position','relative','important');
+      ghostRow.style.setProperty('overflow','hidden','important');
+      ghostRow.style.setProperty('margin','0','important');
+      Array.from(ghostRow.children).forEach(cell => {
+        cell.style.setProperty('display','block','important');
+        cell.style.setProperty('width','auto','important');
+        cell.style.setProperty('min-width','0','important');
+        cell.style.setProperty('max-width','100%','important');
+        cell.style.setProperty('box-sizing','border-box','important');
+      });
+    }else{
+      ghostRow.style.setProperty('display','table-row','important');
+      Array.from(ghostRow.children).forEach((cell, i) => {
+        const src = srcCells[i];
+        if(!src) return;
+        const width = src.getBoundingClientRect().width;
+        cell.style.setProperty('display','table-cell','important');
+        cell.style.setProperty('width',width+'px','important');
+        cell.style.setProperty('min-width',width+'px','important');
+        cell.style.setProperty('max-width',width+'px','important');
+        cell.style.setProperty('box-sizing','border-box','important');
+      });
+    }
 
     // cloneNode no refleja el valor actual escrito en inputs/selects.
     const srcFields = row.querySelectorAll('input,select,textarea');
@@ -1065,9 +1233,15 @@ function activarArrastreLineas(){
       if('value' in field) field.value = src.value;
       field.setAttribute('tabindex', '-1');
       const fieldRect = src.getBoundingClientRect();
-      field.style.setProperty('width',fieldRect.width+'px','important');
-      field.style.setProperty('min-width',fieldRect.width+'px','important');
-      field.style.setProperty('max-width',fieldRect.width+'px','important');
+      if(mobileGhost){
+        field.style.setProperty('width','100%','important');
+        field.style.setProperty('min-width','0','important');
+        field.style.setProperty('max-width','100%','important');
+      }else{
+        field.style.setProperty('width',fieldRect.width+'px','important');
+        field.style.setProperty('min-width',fieldRect.width+'px','important');
+        field.style.setProperty('max-width',fieldRect.width+'px','important');
+      }
       field.style.setProperty('height',fieldRect.height+'px','important');
       field.style.setProperty('box-sizing','border-box','important');
     });
@@ -1079,16 +1253,34 @@ function activarArrastreLineas(){
     return ghostTable;
   }
 
+  function esMovilArrastre(){
+    return window.matchMedia('(max-width:760px)').matches;
+  }
+
   function crearHueco(row){
     const ph = document.createElement('tr');
     ph.className='hx-drag-placeholder';
+    if(esMovilArrastre()) ph.classList.add('hx-drag-placeholder-mobile');
     const td=document.createElement('td');
     td.colSpan=7;
-    td.style.height=row.getBoundingClientRect().height+'px';
+    // En móvil usamos una zona de destino compacta y claramente identificable.
+    // No replica la tarjeta completa, por lo que las filas vecinas apenas saltan.
+    if(esMovilArrastre()){
+      td.style.height='34px';
+      td.innerHTML='<span class="hx-drop-label">Suelta aquí para colocar</span>';
+      ph.setAttribute('aria-label','Suelta aquí para colocar');
+    }else{
+      td.style.height=row.getBoundingClientRect().height+'px';
+    }
     ph.appendChild(td);
     row.parentNode.insertBefore(ph,row);
     row.style.display='none';
     return ph;
+  }
+
+  function marcarDestino(row){
+    tbody.querySelectorAll('.row-drag-target284').forEach(x=>x.classList.remove('row-drag-target284'));
+    if(row) row.classList.add('row-drag-target284');
   }
 
   function moverHueco(clientY){
@@ -1096,22 +1288,36 @@ function activarArrastreLineas(){
     let colocado=false;
     for(const row of rows){
       const rect=row.getBoundingClientRect();
+      // El destino cambia únicamente al cruzar el centro de la tarjeta.
+      // Así no oscila al mover el dedo unos pocos píxeles.
       if(clientY < rect.top + rect.height/2){
         if(hueco.nextSibling!==row) tbody.insertBefore(hueco,row);
+        marcarDestino(row);
         colocado=true;
         break;
       }
     }
-    if(!colocado) tbody.appendChild(hueco);
+    if(!colocado){
+      tbody.appendChild(hueco);
+      marcarDestino(null);
+    }
   }
 
   function autoscroll(clientY){
+    const margen=86;
+    if(esMovilArrastre()){
+      const alto=window.innerHeight || document.documentElement.clientHeight;
+      let delta=0;
+      if(clientY < margen) delta=-Math.ceil((margen-clientY)/7);
+      else if(clientY > alto-margen) delta=Math.ceil((clientY-(alto-margen))/7);
+      if(delta) window.scrollBy(0,Math.max(-18,Math.min(18,delta)));
+      return;
+    }
     const box=document.querySelector('.budget-card .table-scroll') || document.querySelector('.table-scroll');
     if(!box) return;
     const r=box.getBoundingClientRect();
-    const margen=55;
-    if(clientY < r.top + margen) box.scrollTop -= 14;
-    else if(clientY > r.bottom - margen) box.scrollTop += 14;
+    if(clientY < r.top + 55) box.scrollTop -= 14;
+    else if(clientY > r.bottom - 55) box.scrollTop += 14;
   }
 
   function finalizar(){
@@ -1174,24 +1380,84 @@ function activarArrastreLineas(){
   });
 }
 
+
+window.HX_COMPATIBLES = Object.freeze({
+  count(product){ return hxResolvedRelated(product).length; },
+  open(product){ return hxOpenCompatibles(product); },
+  list(product){ return hxSortedRelated(product).slice(); }
+});
+
+function hxDecorateCompatButtons(){
+  document.querySelectorAll('[data-linea-index]').forEach(row=>{
+    if(row.querySelector('.hx-compat-btn')) return;
+
+    const indexRaw = row.getAttribute('data-linea-index');
+    const index = Number(indexRaw);
+    const line = Number.isFinite(index) ? lineas?.[index] : null;
+    const ref = line?.ref || line?.name || line?.referencia || '';
+    const product = hxProductByRef(ref);
+    if(!product) return;
+
+    const count = hxResolvedRelated(product).length;
+    if(!count) return;
+
+    const target = row.querySelector('.desc-cell')
+      || row.querySelector('td:nth-child(2)')
+      || row;
+
+    const button = document.createElement('button');
+    button.type='button';
+    button.className='hx-compat-btn';
+    button.textContent=`Compatibles (${count})`;
+    button.addEventListener('click',event=>{
+      event.preventDefault();
+      event.stopPropagation();
+      hxOpenCompatibles(product);
+    });
+    target.appendChild(button);
+  });
+
+  requestAnimationFrame(hxDecorateCompatButtons);
+}
+
 function render(){
   const body=$('#tbody');
   if(!lineas.length){ body.innerHTML='<tr><td colspan="7" class="empty">Añade productos para crear el presupuesto.</td></tr>'; }
   else body.innerHTML=lineas.map((l,i)=>{
     if(l.separador){
       const titulo = escapeHtml(String(l.name || 'SECCIÓN').toUpperCase());
-      return `<tr class="section-row" data-linea-index="${i}"><td colspan="6"><input class="manual-input section-input" value="${titulo}" placeholder="Título de sección" onchange="setLinea(${i},'name',this.value)"></td><td class="num row-actions"><button type="button" class="drag-btn" draggable="true" title="Mantén y arrastra para mover" aria-label="Mover línea"><span></span><span></span><span></span></button><button class="trash" onclick="delLinea(${i})">×</button></td></tr>`;
+      return `<tr class="section-row" data-linea-index="${i}"><td colspan="7" class="section-full-cell"><div class="section-bar"><div class="section-divider"><span class="section-divider-line" aria-hidden="true"></span><input class="manual-input section-input" value="${titulo}" placeholder="Título de sección" onchange="setLinea(${i},'name',this.value)"><span class="section-divider-line" aria-hidden="true"></span></div><div class="row-actions section-actions"><button type="button" class="drag-btn" title="Mantén y arrastra para mover" aria-label="Mover línea"><span></span><span></span><span></span></button><button class="trash" onclick="delLinea(${i})" title="Eliminar línea" aria-label="Eliminar línea"><span class="ui-row-icon" aria-hidden="true"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M9 7V4h6v3M7 7l1 14h8l1-14M10 11v6M14 11v6"/></svg></span></button></div></div></td></tr>`;
     }
     const bruto=(Number(l.pvp)||0)*(Number(l.qty)||0), total=bruto*(1-(Number(l.dto)||0)/100);
     const producto = l.manual
       ? `<input class="manual-input" value="${escapeHtml(l.name||'')}" placeholder="Producto / concepto" onchange="setLinea(${i},'name',this.value)">`
       : escapeHtml(l.name);
-    const descAuto = descripcionProducto({name:l.name, brand:l.brand||'AJAX'}).desc;
+    const productoCatalogo = productos.find(p=>hxRefProducto(p && p.name)===hxRefProducto(l.name));
+    let descAuto = '';
+    try{
+      descAuto = hxDescripcionCortaProducto(productoCatalogo, (descripcionProducto(productoCatalogo || {name:l.name, brand:l.brand||'AJAX'}) || {}).desc || '');
+    }catch(e){}
     const descripcion = l.manual
       ? `<input class="manual-input desc-input" value="${escapeHtml(l.desc||'')}" placeholder="Descripción" onchange="setLinea(${i},'desc',this.value)">`
-      : `<span class="desc-cell">${escapeHtml(l.desc || descAuto)}</span>`;
+      : `<span class="desc-cell">${escapeHtml((productoCatalogo && productoCatalogo.short_description) || l.short_description || descAuto || l.desc || '')}</span>`;
     const pvp = `<input class="price-input editable-pvp" type="number" min="0" step="0.01" value="${Number(l.pvp)||0}" title="Editar PVP solo para este presupuesto. No modifica el CSV." onchange="setLinea(${i},'pvp',this.value)">`;
-    return `<tr data-linea-index="${i}"><td class="product-cell">${producto}</td><td>${descripcion}</td><td class="num">${pvp}</td><td class="num qty-cell"><div class="line-qty-stepper"><button type="button" class="line-qty-btn" onclick="cambiarQtyLinea(${i},-1)" title="Bajar cantidad">−</button><input class="qty-input line-qty-input" type="number" min="1" value="${l.qty}" onchange="setLinea(${i},'qty',this.value)"><button type="button" class="line-qty-btn" onclick="cambiarQtyLinea(${i},1)" title="Subir cantidad">+</button></div></td><td class="num"><input class="dto-input" type="number" min="0" max="100" step="0.01" value="${l.dto||0}" onchange="setLinea(${i},'dto',this.value)"></td><td class="num"><b>${fmt.format(total)}</b></td><td class="num row-actions"><button type="button" class="drag-btn" draggable="true" title="Mantén y arrastra para mover" aria-label="Mover línea"><span></span><span></span><span></span></button><button class="trash" onclick="delLinea(${i})">×</button></td></tr>`;
+    const stockRaw = String((productoCatalogo && productoCatalogo.stock) ?? l.stock ?? '').trim();
+    const estadoStock = hxEstadoStock(stockRaw);
+    const stockHtml = estadoStock.visible ? `<span class="hx-stock-dot ${estadoStock.clase}" title="Stock: ${escapeHtml(estadoStock.texto)}" aria-label="Stock: ${escapeHtml(estadoStock.texto)}"></span>` : '';
+    const costeLinea = numero(l.precio_neto_compra);
+    const costeCatalogo = numero(productoCatalogo?.precio_neto_compra);
+    // Única referencia: precio_neto_compra del CSV, conservada con el mismo nombre en todo el flujo.
+    const costeUnitario = costeLinea > 0 ? costeLinea : costeCatalogo;
+    const cantidad = Math.max(1, numero(l.qty) || 1);
+    const descuentoLinea = Math.max(0, Math.min(100, numero(l.dto) || 0));
+    const precioFinalUnitario = numero(l.pvp) * (1 - descuentoLinea / 100);
+    const costeTotalLinea = costeUnitario * cantidad;
+    // Se compara exactamente lo que muestra el total de la línea contra el coste total de esas unidades.
+    const bajoCoste = costeUnitario > 0 && total < costeTotalLinea;
+    const avisoCoste = bajoCoste
+      ? `<span class="hx-cost-warning" title="Precio final unitario ${fmt.format(precioFinalUnitario)} inferior al coste ${fmt.format(costeUnitario)}">⚠ Venta bajo coste</span>`
+      : '';
+    return `<tr class="${[l.manual?'manual-row':'',bajoCoste?'hx-bajo-coste':''].filter(Boolean).join(' ')}" data-linea-index="${i}" data-coste-unitario="${costeUnitario}" data-precio-final-unitario="${precioFinalUnitario}"${bajoCoste?` title="Aviso: total de línea ${fmt.format(total)} inferior al coste total ${fmt.format(costeTotalLinea)}"`:''}><td class="product-cell"><span class="hx-product-ref">${producto}</span>${stockHtml}${avisoCoste}</td><td>${descripcion}</td><td class="num">${pvp}</td><td class="num qty-cell"><div class="line-qty-stepper"><button type="button" class="line-qty-btn" onclick="cambiarQtyLinea(${i},-1)" title="Bajar cantidad">−</button><input class="qty-input line-qty-input" type="number" min="1" value="${l.qty}" onchange="setLinea(${i},'qty',this.value)"><button type="button" class="line-qty-btn" onclick="cambiarQtyLinea(${i},1)" title="Subir cantidad">+</button></div></td><td class="num"><input class="dto-input" type="number" min="0" max="100" step="0.01" value="${l.dto||0}" onchange="setLinea(${i},'dto',this.value)"></td><td class="num"><b>${fmt.format(total)}</b></td><td class="num row-actions"><button type="button" class="drag-btn" title="Mantén y arrastra para mover" aria-label="Mover línea"><span></span><span></span><span></span></button><button class="trash" onclick="delLinea(${i})" title="Eliminar línea" aria-label="Eliminar línea"><span class="ui-row-icon" aria-hidden="true"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M9 7V4h6v3M7 7l1 14h8l1-14M10 11v6M14 11v6"/></svg></span></button></td></tr>`;
   }).join('');
   const c=calc();
   $('#subtotalBruto').textContent=fmt.format(c.subtotalBruto);
@@ -1484,7 +1750,7 @@ function duplicarPresupuesto(){
 }
 
 function limpiar(){
-  if(confirm('¿Vaciar presupuesto?')){
+  if(confirm('¿Vaciar todo el presupuesto?\n\nSe eliminarán todas las líneas actuales.')){
     const contador = $('#previewProducto').textContent;
     nuevoPresupuesto();
     if(contador.includes('productos cargados')) $('#previewProducto').textContent = contador;
@@ -1562,12 +1828,136 @@ function exportarExcel(){
   XLSX.writeFile(wb,`presupuesto_${safe}.xlsx`);
 }
 
+function descripcionPdfCorta(linea){
+  try{
+    const l = linea || {};
+    const refOriginal = String(l.name || '').trim();
+
+    // PDF estable: usar siempre short_description cuando exista.
+    // Los presupuestos antiguos pueden no llevarla guardada, por eso se recupera
+    // del catálogo actual por referencia. AutoTable la muestra en una sola línea
+    // mediante overflow:'ellipsize' en la columna Descripción.
+    const productoPdf = (Array.isArray(productos) ? productos : []).find(
+      p => String(p?.name || '').trim().toUpperCase() === refOriginal.toUpperCase()
+    );
+    const shortPdf = String(l.short_description || productoPdf?.short_description || '')
+      .replace(/\s+/g,' ')
+      .trim();
+    if(shortPdf) return shortPdf;
+    const brandOriginal = String(l.brand || '').trim();
+    const brandEsAjax = normaliza(brandOriginal) === 'ajax';
+    // En el CSV, la columna brand contiene la descripción de los artículos no AJAX.
+    // El PDF debe conservarla en lugar de fabricar una descripción desde la referencia.
+    const descOriginal = String(l.desc || (!brandEsAjax ? brandOriginal : '') || '').trim();
+    if(!refOriginal && descOriginal) return descOriginal.slice(0, 58);
+    if(l.manual){ return (descOriginal || refOriginal || 'Línea manual').slice(0, 58); }
+    if(descOriginal && !brandEsAjax){
+      return descOriginal.length > 58 ? descOriginal.slice(0,55).trim() + '…' : descOriginal;
+    }
+
+    const ref = refOriginal.toUpperCase();
+
+    function colorRef(r){
+      if(/(^|[-_])W($|[-_])/.test(r)) return 'Blanco';
+      if(/(^|[-_])B($|[-_])/.test(r)) return 'Negro';
+      if(/(^|[-_])GRA($|[-_])/.test(r)) return 'Grafito';
+      if(/(^|[-_])GRE($|[-_])/.test(r)) return 'Verde';
+      if(/(^|[-_])IVO($|[-_])/.test(r)) return 'Marfil';
+      if(/(^|[-_])OLI($|[-_])/.test(r)) return 'Oliva';
+      if(/(^|[-_])FOG($|[-_])/.test(r)) return 'Niebla';
+      if(/(^|[-_])OYS($|[-_])/.test(r)) return 'Ostra';
+      return '';
+    }
+
+    const color = colorRef(ref);
+    let base = ref.replace(/^AJ-/, '');
+
+    const exactos = [
+      [/^HUB2PLUS/, 'Hub 2 Plus'], [/^HUB2-4G/, 'Hub 2 4G'], [/^HUB2/, 'Hub 2'], [/^HUBBP/, 'Hub BP'], [/^HUB($|-)/, 'Hub'],
+      [/^REX2/, 'ReX 2'], [/^REX($|-)/, 'ReX'],
+      [/^MOTIONCAM-HDR-PHOD/, 'MotionCam HDR PhOD'], [/^MOTIONCAM-HDR/, 'MotionCam HDR'], [/^MOTIONCAMOUTDOOR.*PHOD/, 'MotionCam Outdoor PhOD'], [/^MOTIONCAMOUTDOOR/, 'MotionCam Outdoor'], [/^MOTIONCAM/, 'MotionCam'],
+      [/^MOTIONPROTECTPLUS/, 'MotionProtect Plus'], [/^MOTIONPROTECT/, 'MotionProtect'], [/^OUTDOORPROTECT/, 'OutdoorProtect'],
+      [/^DOORPROTECTPLUS/, 'DoorProtect Plus'], [/^DOORPROTECT/, 'DoorProtect'], [/^GLASSPROTECT/, 'GlassProtect'],
+      [/^CURTAINCAM/, 'CurtainCam'], [/^DUALCURTAIN/, 'DualCurtain Outdoor'], [/^CURTAINOUTDOOR/, 'Curtain Outdoor'], [/^CURTAINPROTECT/, 'CurtainProtect'],
+      [/^KEYPADTOUCHSCREEN/, 'KeyPad TouchScreen'], [/^KEYPADPLUS/, 'KeyPad Plus'], [/^KEYPADOUTDOOR/, 'KeyPad Outdoor'], [/^KEYPAD/, 'KeyPad'],
+      [/^HOMESIREN/, 'HomeSiren'], [/^STREETSIRENCUSTOM/, 'StreetSiren Custom'], [/^STREETSIREN/, 'StreetSiren'],
+      [/^FIREPROTECT2-HSC/, 'FireProtect 2 HSC'], [/^FIREPROTECT2-HS/, 'FireProtect 2 HS'], [/^FIREPROTECT2-HC/, 'FireProtect 2 HC'], [/^FIREPROTECT2-H/, 'FireProtect 2 H'], [/^FIREPROTECT2-C/, 'FireProtect 2 C'], [/^FIREPROTECTPLUS/, 'FireProtect Plus'], [/^FIREPROTECT/, 'FireProtect'],
+      [/^LEAKSPROTECT/, 'LeaksProtect'], [/^WATERSTOP/, 'WaterStop'], [/^LIFEQUALITY-LITE/, 'LifeQuality Lite'], [/^LIFEQUALITY/, 'LifeQuality'],
+      [/^BULLETCAM-(\d+)/, 'BulletCam $1 MP'], [/^DOMECAM-MINI-(\d+)/, 'DomeCam Mini $1 MP'], [/^DOMECAM-(\d+)/, 'DomeCam $1 MP'], [/^TURRETCAM-(\d+)/, 'TurretCam $1 MP'], [/^INDOORCAM-(\d+)/, 'IndoorCam $1 MP'], [/^DOORBELL-(\d+)/, 'DoorBell $1 MP'],
+      [/^NVRKIT/, 'Kit NVR'], [/^NVR(\d+)/, 'NVR $1'],
+      [/^LIGHTCORE-1G/, 'LightSwitch 1 tecla'], [/^LIGHTCORE-2G2W/, 'LightSwitch 2 teclas/2 vías'], [/^LIGHTCORE-2G/, 'LightSwitch 2 teclas'], [/^LIGHTCORE-2W/, 'LightSwitch 2 vías'], [/^LIGHTCORE-CROSS/, 'LightSwitch cruzamiento'], [/^LIGHTCORE-DIMMER/, 'Dimmer LightSwitch'],
+      [/^SOCKET/, 'Socket'], [/^OUTLETCORE-SMART/, 'Outlet Core Smart'], [/^OUTLETCORE-LAN/, 'Outlet Core LAN'], [/^OUTLETCORE-BASIC/, 'Outlet Core Basic'], [/^RELAY/, 'Relay'], [/^WALLSWITCH/, 'WallSwitch'],
+      [/^TRANSMITTER/, 'Transmitter'], [/^MULTITRANSMITTER/, 'MultiTransmitter'], [/^UARTBRIDGE/, 'uartBridge'], [/^OCBRIDGE/, 'ocBridge'], [/^VHFBRIDGE/, 'vhfBridge'],
+      [/^SPACECONTROL/, 'SpaceControl'], [/^DOUBLEBUTTON/, 'DoubleButton'], [/^BUTTON/, 'Button'], [/^TAG/, 'Tag'], [/^PASS/, 'Pass'],
+      [/^HD(\d+)TB/, 'Disco HDD $1 TB'], [/^HS[-_ ]?TF.*(128G)/, 'MicroSD 128 GB'], [/^HS[-_ ]?TF.*(64G)/, 'MicroSD 64 GB'], [/^HS[-_ ]?TF.*(32G)/, 'MicroSD 32 GB']
+    ];
+
+    let nombre = '';
+    for(const [rx, val] of exactos){
+      const m = ref.match(rx);
+      if(m){ nombre = val.replace('$1', m[1] || ''); break; }
+    }
+
+    if(!nombre){
+      nombre = base
+        .replace(/-(B|W|GRA|GRE|IVO|OLI|FOG|OYS)(-|$)/g, '-')
+        .replace(/-(DUMMY|BRACKET|LENS)$/g, '')
+        .replace(/[-_]+/g, ' ')
+        .replace(/\s+/g, ' ')
+        .trim()
+        .toLowerCase()
+        .replace(/\b\w/g, c => c.toUpperCase());
+    }
+
+    const extras = [];
+    if(/PHOD/.test(ref) && !/PHOD/i.test(nombre)) extras.push('PhOD');
+    if(/HDR/.test(ref) && !/HDR/i.test(nombre)) extras.push('HDR');
+    if(/HLVF/.test(ref)) extras.push('HLVF');
+    if(/HL($|-)/.test(ref)) extras.push('HL');
+    if(/4G/.test(ref) && !/4G/.test(nombre)) extras.push('4G');
+    if(/POE/.test(ref)) extras.push('PoE');
+    if(/AC($|-)/.test(ref)) extras.push('AC');
+
+    let out = [nombre, ...extras, color].filter(Boolean).join(' ').replace(/\s+/g,' ').trim();
+    if(!out) out = descOriginal || refOriginal;
+
+    // Mantiene PDF compacto sin cortar referencias comerciales importantes.
+    if(out.length > 52){
+      out = out.replace(/\b(Jeweller|inalámbrico|inteligente|compatible|para sistemas Ajax)\b/gi,'').replace(/\s+/g,' ').trim();
+    }
+    if(out.length > 58) out = out.slice(0,55).trim() + '…';
+    return out;
+  }catch(e){
+    return String((linea && (linea.desc || linea.name)) || 'Producto').slice(0,58);
+  }
+}
+
 async function pdf(){
   // Si no hay productos reales, no abre ni genera ningún PDF.
   const tieneProductos = Array.isArray(lineas) && lineas.some(l => l && !l.separador && l.tipo !== 'separador');
-  if(!tieneProductos) return;
+  if(!tieneProductos){
+    alert('Añade al menos un producto antes de generar el PDF.');
+    return;
+  }
+
+  // Safari/iOS puede bloquear una descarga iniciada después de await().
+  // Se reserva una pestaña en el mismo gesto del usuario y se usa al final.
+  const esIOS = /iPad|iPhone|iPod/.test(navigator.userAgent)
+    || (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
+  const pdfWindow = esIOS ? window.open('', '_blank') : null;
+  if(pdfWindow){
+    try{
+      pdfWindow.document.write('<!doctype html><title>Generando PDF…</title><meta name="viewport" content="width=device-width,initial-scale=1"><body style="font-family:system-ui;padding:24px">Generando presupuesto…</body>');
+      pdfWindow.document.close();
+    }catch(_error){}
+  }
+
   const { jsPDF } = window.jspdf || {};
-  if(!jsPDF || !window.jspdf.jsPDF.API.autoTable){ alert('No se pudo cargar el generador PDF. Comprueba la conexión a internet para las librerías jsPDF.'); return; }
+  if(!jsPDF || typeof jsPDF !== 'function' || typeof jsPDF.API?.autoTable !== 'function'){
+    try{ pdfWindow?.close(); }catch(_error){}
+    alert('No se pudo cargar el generador PDF. Comprueba la conexión a internet para las librerías jsPDF.');
+    return;
+  }
   const doc = new jsPDF({unit:'mm',format:'a4'});
   const c = calc();
   const pageW = doc.internal.pageSize.getWidth();
@@ -1656,7 +2046,7 @@ async function pdf(){
     styles:{font:'helvetica',fontSize:7.6,cellPadding:1.75,lineColor:[225,231,228],lineWidth:0.1,textColor:[33,38,43],overflow:'linebreak'},
     headStyles:{fillColor:green,textColor:[255,255,255],fontStyle:'bold',halign:'center'},
     alternateRowStyles:{fillColor:[248,250,249]},
-    columnStyles:{0:{cellWidth:48},1:{cellWidth:58},2:{halign:'right',cellWidth:22},3:{halign:'center',cellWidth:12},4:{halign:'right',cellWidth:16},5:{halign:'right',cellWidth:26}},
+    columnStyles:{0:{cellWidth:48},1:{cellWidth:58,overflow:'ellipsize'},2:{halign:'right',cellWidth:22},3:{halign:'center',cellWidth:12},4:{halign:'right',cellWidth:16},5:{halign:'right',cellWidth:26}},
     didParseCell:function(data){
       if(data.section==='body' && data.cell.raw && data.cell.raw.colSpan===6){
         data.cell.styles.fillColor=[229,244,236];
@@ -1717,65 +2107,30 @@ async function pdf(){
     doc.text(`Página ${i} de ${pages}`,pageW-14,pageH-9,{align:'right'});
   }
 
-  doc.save(`presupuesto_${($('#numero').value||'hiper_antena').replace(/[^a-z0-9_-]/gi,'_')}.pdf`);
+  const nombrePdf = `presupuesto_${($('#numero').value||'hiper_antena').replace(/[^a-z0-9_-]/gi,'_')}.pdf`;
+
+  if(pdfWindow && !pdfWindow.closed){
+    try{
+      const blob = doc.output('blob');
+      const blobUrl = URL.createObjectURL(blob);
+      pdfWindow.location.replace(blobUrl);
+      setTimeout(()=>URL.revokeObjectURL(blobUrl), 120000);
+      return;
+    }catch(error){
+      try{ pdfWindow.close(); }catch(_error){}
+      console.warn('Vista PDF móvil no disponible; se usa descarga estándar.', error);
+    }
+  }
+  doc.save(nombrePdf);
 }
 
 
-
-/* =====================================================
-   FAMILIAS RÁPIDAS PRO
-   Abre el catálogo filtrado por familias sin tocar CSV.
-   ===================================================== */
-const FAMILIAS_RAPIDAS = [
-  {icon:'📹', title:'Cámaras', desc:'Bullet, Dome, Turret, Indoor', term:'camara vigilancia video bullet dome turret'},
-  {icon:'💾', title:'Grabadores NVR', desc:'NVR, HDMI, canales, HDD', term:'nvr grabador videograbador camaras'},
-  {icon:'🏠', title:'Hubs / centrales', desc:'Hub, 2G, 4G, SIM, WiFi', term:'hub central alarma panel'},
-  {icon:'🚶', title:'Movimiento', desc:'Motion, PIR, cortina, exterior', term:'movimiento motion pir presencia'},
-  {icon:'🚪', title:'Puertas / ventanas', desc:'DoorProtect, magnético', term:'puerta ventana doorprotect magnetico'},
-  {icon:'🔥', title:'Incendio / CO', desc:'FireProtect, humo, calor, CO', term:'incendio humo fuego temperatura co'},
-  {icon:'💧', title:'Agua / fugas', desc:'LeakProtect, WaterStop', term:'inundacion agua fuga humedad'},
-  {icon:'🔔', title:'Sirenas', desc:'HomeSiren, StreetSiren', term:'sirena alarma sonora'},
-  {icon:'⌨️', title:'Teclados / mandos', desc:'KeyPad, Tag, Pass, Button', term:'teclado mando tag pass boton'},
-  {icon:'🔌', title:'Automatización', desc:'Relay, WallSwitch, Socket', term:'rele automatizacion enchufe domotica'},
-  {icon:'🔋', title:'Alimentación', desc:'PSU, 12V, baterías', term:'alimentador fuente 12v bateria psu'},
-  {icon:'🧩', title:'Soportes / accesorios', desc:'Mount, bracket, holder, cajas', term:'soporte bracket montaje holder junctionbox'},
-  {icon:'🌐', title:'Red / PoE', desc:'Switch PoE, inyector, LAN', term:'switch poe inyector ethernet red 48v'},
-  {icon:'🧱', title:'Barreras', desc:'Perimetral, solar, exterior', term:'barrera movimiento perimetral solar exterior'}
-];
-function renderFamiliasRapidas(){
-  const grid = $('#familiasGrid');
-  if(!grid) return;
-  grid.innerHTML = FAMILIAS_RAPIDAS.map((f,i)=>`<button type="button" class="family-chip" data-i="${i}"><strong>${escapeHtml(f.icon)} ${escapeHtml(f.title)}</strong><span>${escapeHtml(f.desc)}</span></button>`).join('');
-  grid.querySelectorAll('.family-chip').forEach(btn=>btn.addEventListener('click',()=>{
-    const f = FAMILIAS_RAPIDAS[Number(btn.dataset.i)];
-    cerrarFamiliasRapidas();
-    abrirCatalogo();
-    const filter = $('#catalogFilter');
-    if(filter){ filter.value = f.term; }
-    pintarCatalogPanel(f.term);
-  }));
-}
-function abrirFamiliasRapidas(){
-  const modal = $('#familiasModal');
-  if(!modal) return;
-  renderFamiliasRapidas();
-  modal.classList.remove('hidden');
-  modal.setAttribute('aria-hidden','false');
-  document.body.classList.add('modal-open');
-}
-function cerrarFamiliasRapidas(){
-  hxResetModalQty('explorer');
-  hxResetModalSession('explorer');
-  const modal = $('#familiasModal');
-  if(!modal) return;
-  modal.classList.add('hidden');
-  modal.setAttribute('aria-hidden','true');
-  document.body.classList.remove('modal-open');
-}
+/* Explorer Pro vive en explorer.js.
+   Se retiró el selector rápido histórico para no mantener dos navegaciones. */
 
 window.setLinea=setLinea; window.delLinea=delLinea; window.addLineaManual=addLineaManual; window.addSeparador=addSeparador; window.moverLinea=moverLinea;
 document.addEventListener('DOMContentLoaded',()=>{
-  aplicarTemaGuardado();
+  aplicarTemaGuardado(); hxInicioArriba();
   $('#themeToggle')?.addEventListener('click',alternarTema);
   cargarLocal(); render(); cargarCatalogo();
   $('#buscador').addEventListener('input',resolverDesdeInput);
@@ -1792,17 +2147,24 @@ document.addEventListener('DOMContentLoaded',()=>{
   $('#catalogCancel')?.addEventListener('click',cerrarCatalogo);
   $('#catalogBackdrop')?.addEventListener('click',cerrarCatalogo);
   $('#catalogFilter')?.addEventListener('input',e=>{ pintarCatalogPanel(e.target.value); });
-  $('#btnFamilias')?.addEventListener('click',abrirFamiliasRapidas);
-  $('#familiasClose')?.addEventListener('click',cerrarFamiliasRapidas);
-  $('#familiasCancel')?.addEventListener('click',cerrarFamiliasRapidas);
-  $('#familiasBackdrop')?.addEventListener('click',cerrarFamiliasRapidas);
   document.addEventListener('keydown',e=>{ if(e.key==='Escape') cerrarCatalogo(); });
   $('#add').addEventListener('click',addLinea); $('#btnManual').addEventListener('click',addLineaManual); $('#btnSeparador')?.addEventListener('click',addSeparador);
-  $('#btnPDF').addEventListener('click',pdf); $('#btnExcel')?.addEventListener('click',exportarExcel); $('#btnSave').addEventListener('click',guardar); $('#btnDuplicate').addEventListener('click',duplicarPresupuesto); $('#btnLoadSaved').addEventListener('click',cargarPresupuestoGuardado); $('#btnDeleteSaved').addEventListener('click',borrarPresupuestoGuardado); $('#btnClear').addEventListener('click',limpiar);
+  $('#btnPDF')?.addEventListener('click',()=>{
+    const btn=$('#btnPDF');
+    const label=btn?.querySelector('.header-format-label');
+    if(btn?.dataset.generating==='1') return;
+    if(btn) btn.dataset.generating='1';
+    if(label) label.textContent='…';
+    Promise.resolve(pdf()).catch(error=>{
+      console.error('[PDF] Error al generar el presupuesto', error);
+      alert(`No se pudo generar el PDF. ${error?.message || 'Revisa la consola para más detalles.'}`);
+    }).finally(()=>{
+      if(btn) delete btn.dataset.generating;
+      if(label) label.textContent='PDF';
+    });
+  }); $('#btnExcel')?.addEventListener('click',exportarExcel); $('#btnSave').addEventListener('click',guardar); $('#btnDuplicate').addEventListener('click',duplicarPresupuesto); $('#btnLoadSaved').addEventListener('click',cargarPresupuestoGuardado); $('#btnDeleteSaved').addEventListener('click',borrarPresupuestoGuardado); $('#btnClear').addEventListener('click',limpiar);
   $('#dtoGeneral').addEventListener('input',aplicarDescuentoGeneralALineas); $('#iva').addEventListener('input',render);
 });
-
-
 
 
 /* =====================================================
@@ -1810,66 +2172,6 @@ document.addEventListener('DOMContentLoaded',()=>{
    Regla principal: TODO lo que esté en el CSV debe salir.
    El conocimiento mejora familia/descripción, pero nunca oculta.
    ===================================================== */
-function textoBusquedaEstable(p){
-  const desc = (typeof descripcionProducto === 'function') ? descripcionProducto(p).desc : '';
-  let extra = '';
-  try{ extra = [textoKnowledgeProducto(p), etiquetasProducto(p).join(' ')].join(' '); }catch(e){ extra=''; }
-  return normaliza([p.name,p.brand,desc,extra].join(' '));
-}
-function esNvrReal(p){ const n=normaliza(p.name); return n.startsWith('aj-nvr') || n.startsWith('nvr') || n.includes('nvrkit'); }
-function esFuenteNvr(p){ const n=normaliza(p.name); return n.includes('psu-nvr') || (n.includes('psu') && n.includes('nvr')) || n.includes('dc12v-psu-nvr'); }
-function esNvrHdmi(p){ const n=normaliza(p.name); if(!esNvrReal(p)) return false; return n.includes('hac') || n.includes('hdc') || n.includes('h2d') || n.includes('hdmi'); }
-function esProductoWifi(p){ const n=normaliza(p.name); return n.includes('hub2plus') || n.includes('superior-hub-g3') || n.includes('megahub') || n.includes('indoorcam') || n.includes('doorbell'); }
-function esSwitchPoe(p){ const n=normaliza(p.name); return n.includes('vdms105gp') || n.includes('vdms108gp') || (n.includes('switch') && n.includes('poe')); }
-function esInyectorPoe(p){ const n=normaliza(p.name); return n.includes('inj-poe') || n.includes('injector-poe') || n.includes('inyector-poe'); }
-function esDiscoDuro(p){ const n=normaliza(p.name); return /^hd\d+tb/.test(n) || n.includes('disco') || n.includes('hdd'); }
-function esTarjetaSD(p){ const n=normaliza(p.name); return n.includes('hs-tf') || n.includes('microsd') || n.includes('micro-sd') || n.includes('tarjeta-sd'); }
-function esBarrera(p){ const n=normaliza(p.name); return n.includes('abe-150') || n.includes('barrera'); }
-function scoreProducto(p, term){
-  const q = normaliza(term).trim(); if(!q) return 0;
-  const n = normaliza(p.name), b = normaliza(p.brand), texto = textoBusquedaEstable(p);
-  const parts = q.split(/\s+/).filter(Boolean); let score = 0;
-  if(q === 'nvr' || q === 'grabador' || q === 'grabadores' || q === 'videograbador') return esNvrReal(p) ? 10000 + ((n.includes('hac')||n.includes('hdc'))?500:0) : 0;
-  if(q.includes('fuente nvr') || q.includes('psu nvr') || q.includes('alimentacion nvr') || q.includes('alimentación nvr')) return esFuenteNvr(p) ? 10000 : 0;
-  if(q === 'hdmi') return esNvrHdmi(p) ? 10000 : 0;
-  if(q === 'wifi' || q === 'wi-fi' || q === 'wi fi') return esProductoWifi(p) ? 10000 : 0;
-  if(q.includes('switch poe')) return esSwitchPoe(p) ? 10000 : 0;
-  if(q.includes('inyector poe') || q.includes('injector poe')) return esInyectorPoe(p) ? 10000 : 0;
-  if(q === 'disco' || q === 'discos' || q === 'hdd' || q.includes('disco duro')) return esDiscoDuro(p) ? 10000 : 0;
-  if(q === 'tarjeta sd' || q === 'microsd' || q === 'micro sd' || q === 'sd') return esTarjetaSD(p) ? 10000 : 0;
-  if(q === 'barrera' || q.includes('abe') || q.includes('perimetral')) return esBarrera(p) ? 10000 : (texto.includes(q)?100:0);
-  if(n === q) score += 20000;
-  if(n.startsWith(q)) score += 12000;
-  if(n.includes(q)) score += 9000;
-  if(b.includes(q)) score += 200;
-  for(const part of parts){
-    if(n.split(/[^a-z0-9]+/).includes(part)) score += 5000;
-    else if(n.includes(part)) score += 3000;
-    if(texto.includes(part)) score += 450;
-  }
-  if(texto.includes(q)) score += 800;
-  return score;
-}
-function buscar(term){
-  const q = normaliza(term).trim(); if(!q) return [];
-  const arr = productos.map((p,i)=>({p,i,score:scoreProducto(p, q)})).filter(x=>x.score>0);
-  arr.sort((a,b)=>b.score-a.score || a.p.name.localeCompare(b.p.name,'es'));
-  return arr.slice(0,300);
-}
-function buscarCatalogo(term=''){
-  const q=String(term||'').trim();
-  if(!q) return productos.map((p,i)=>({p,i,score:1})).sort((a,b)=>a.p.name.localeCompare(b.p.name,'es'));
-  return buscar(q);
-}
-// fuerza version visible
-try{ document.addEventListener('DOMContentLoaded',()=>{ document.querySelectorAll('.creator').forEach(el=>{ el.textContent = el.textContent.replace(/v\d+\.\d+(?:\.\d+)?(?:\.\d+)?\s*PRO/,'v1.6.3.1 PRO'); }); }); }catch(e){}
-
-/* =====================================================
-   MOTOR PRO v1.6.4 - Automatización, mecanismos, red/PoE y almacenamiento
-   CSV siempre manda: el conocimiento solo suma, nunca oculta.
-   ===================================================== */
-const APP_VERSION_164 = 'v1.6.4 PRO';
-
 function metaProducto164(p){
   const raw = String((p && p.name) || '');
   const n = normaliza(raw);
@@ -1987,59 +2289,6 @@ descripcionProducto = function(p){
   if(meta) return {icon:meta.icon, desc:meta.desc, family:meta.family, official:meta.sub};
   return descripcionProductoAnterior_164(p);
 };
-function textoBusqueda164(p){
-  const meta = metaProducto164(p);
-  const base = [p.name, p.brand, descripcionProducto(p).desc];
-  if(meta) base.push(meta.family, meta.sub, meta.tags.join(' '));
-  try{ base.push(textoKnowledgeProducto(p), etiquetasProducto(p).join(' ')); }catch(e){}
-  return normaliza(base.join(' '));
-}
-function esMecanismo164(p){ const m=metaProducto164(p); return !!(m && m.family.includes('Confort') && (m.sub.includes('Mecanismos') || m.sub.includes('Tapas') || m.sub.includes('Marcos') || m.sub.includes('LightSwitch') || m.sub.includes('Outlet') || m.sub.includes('Cajas'))); }
-function esRedPoe164(p){ const m=metaProducto164(p); return !!(m && m.family === 'Red / PoE'); }
-function esAlmacenamiento164(p){ const m=metaProducto164(p); return !!(m && m.family === 'Almacenamiento'); }
-const scoreProductoAnterior_164 = scoreProducto;
-scoreProducto = function(p, term){
-  const q = normaliza(term).trim();
-  if(!q) return 0;
-  const texto = textoBusqueda164(p);
-  const n = normaliza(p.name);
-  const meta = metaProducto164(p);
-  if(['mecanismo','mecanismos','tapa','tapas','panel','paneles','embellecedor','embellecedores'].includes(q)) return esMecanismo164(p) ? 12000 : 0;
-  if(q.includes('solocover') || q.includes('solo cover')) return n.includes('solocover') ? 15000 : 0;
-  if(q.includes('centercover') || q.includes('center cover')) return n.includes('centercover') ? 15000 : 0;
-  if(q.includes('sidecover') || q.includes('side cover')) return n.includes('sidecover') ? 15000 : 0;
-  if(q.includes('solobutton') || q.includes('solo button')) return n.includes('solobutton') ? 15000 : 0;
-  if(q.includes('centerbutton') || q.includes('center button')) return n.includes('centerbutton') ? 15000 : 0;
-  if(q.includes('sidebutton') || q.includes('side button')) return n.includes('sidebutton') ? 15000 : 0;
-  if(q.includes('outletcore') || q.includes('outlet core')) return n.includes('outletcore') || n.includes('solocover') || n.includes('centercover') || n.includes('sidecover') ? 12000 : 0;
-  if(q.includes('lightcore') || q.includes('light core')) return n.includes('lightcore') || n.includes('solobutton') || n.includes('centerbutton') || n.includes('sidebutton') ? 12000 : 0;
-  if(['poe','switch poe','switch','inyector poe','injector poe','red poe'].some(x=>q===x || q.includes(x))){
-    if(q.includes('inyector') || q.includes('injector')) return meta && meta.sub === 'Inyectores PoE' ? 15000 : 0;
-    if(q.includes('switch')) return meta && meta.sub === 'Switches PoE' ? 15000 : 0;
-    return esRedPoe164(p) ? 13000 : scoreProductoAnterior_164(p, q);
-  }
-  if(['almacenamiento','memoria','memorias'].includes(q)) return esAlmacenamiento164(p) ? 13000 : 0;
-  if(q.includes('disco') || q==='hdd') return meta && meta.sub === 'Discos duros' ? 15000 : 0;
-  if(q.includes('tarjeta') || q.includes('microsd') || q === 'sd' || q.includes('micro sd')) return meta && meta.sub === 'Tarjetas microSD' ? 15000 : 0;
-  if(q.includes('automatismo') || q.includes('automatizacion') || q.includes('automatización') || q.includes('domotica') || q.includes('domótica')) return meta && meta.family === 'Confort y automatización' ? 12000 : 0;
-  if(q.includes('panico') || q.includes('pánico') || q.includes('emergencia')){ if(n.includes('solobutton') || n.includes('centerbutton') || n.includes('sidebutton')) return 0; }
-  let score = scoreProductoAnterior_164(p, q);
-  if(texto.includes(q)) score += meta ? 1800 : 300;
-  const parts = q.split(/\s+/).filter(Boolean);
-  for(const part of parts){ if(texto.includes(part)) score += meta ? 550 : 120; }
-  return score;
-};
-try{ document.addEventListener('DOMContentLoaded',()=>{ document.querySelectorAll('.creator').forEach(el=>{ el.textContent = el.textContent.replace(/v\d+\.\d+(?:\.\d+)?(?:\.\d+)?\s*PRO/g, APP_VERSION_164); }); }); }catch(e){}
-
-
-/* =====================================================
-   MOTOR PRO v1.6.5 - Familias corregidas
-   - Red / PoE muestra switches e inyector juntos en familia.
-   - Almacenamiento muestra discos y tarjetas microSD.
-   - CSV siempre manda: producto nuevo sale por referencia/nombre.
-   ===================================================== */
-const APP_VERSION_165 = 'v1.6.5 PRO';
-
 function esSwitchPoe165(p){
   const n = normaliza((p && p.name) || '');
   return n.includes('vdms105gp') || n.includes('vdms108gp') || (n.includes('switch') && n.includes('poe'));
@@ -2048,7 +2297,6 @@ function esInyectorPoe165(p){
   const n = normaliza((p && p.name) || '');
   return n.includes('inj-poe') || n.includes('injector-poe') || n.includes('inyector-poe');
 }
-function esRedPoe165(p){ return esSwitchPoe165(p) || esInyectorPoe165(p); }
 function esDiscoDuro165(p){
   const n = normaliza((p && p.name) || '');
   return /^hd\d+tb/.test(n) || n.includes('disco') || n.includes('hdd');
@@ -2057,7 +2305,6 @@ function esTarjetaSD165(p){
   const n = normaliza((p && p.name) || '');
   return n.includes('hs-tf') || n.includes('microsd') || n.includes('micro-sd') || n.includes('tarjeta-sd') || n.includes('tarjeta sd');
 }
-function esAlmacenamiento165(p){ return esDiscoDuro165(p) || esTarjetaSD165(p); }
 
 const metaProductoAnterior_165 = typeof metaProducto164 === 'function' ? metaProducto164 : null;
 metaProducto164 = function(p){
@@ -2087,77 +2334,6 @@ metaProducto164 = function(p){
   }
   return metaProductoAnterior_165 ? metaProductoAnterior_165(p) : null;
 };
-
-const scoreProductoAnterior_165 = scoreProducto;
-scoreProducto = function(p, term){
-  const q = normaliza(term).trim();
-  if(!q) return 0;
-  const n = normaliza((p && p.name) || '');
-
-  // Familias completas: aquí se corrige el problema de Red / PoE.
-  if(q === 'red poe' || q === 'red / poe' || q === 'poe' || q === 'red' || q === 'ethernet'){
-    return esRedPoe165(p) ? 20000 : scoreProductoAnterior_165(p, q);
-  }
-  if(q === 'switch poe' || q === 'switch' || q === 'switches poe'){
-    return esSwitchPoe165(p) ? 22000 : 0;
-  }
-  if(q === 'inyector poe' || q === 'injector poe' || q === 'inyector' || q === 'injector'){
-    return esInyectorPoe165(p) ? 22000 : 0;
-  }
-  if(q === 'almacenamiento' || q === 'memoria' || q === 'memorias' || q === 'grabacion' || q === 'grabación'){
-    return esAlmacenamiento165(p) ? 20000 : scoreProductoAnterior_165(p, q);
-  }
-  if(q === 'disco' || q === 'discos' || q === 'hdd' || q.includes('disco duro')){
-    return esDiscoDuro165(p) ? 22000 : 0;
-  }
-  if(q === 'sd' || q === 'tarjeta sd' || q === 'microsd' || q === 'micro sd' || q.includes('tarjeta memoria')){
-    return esTarjetaSD165(p) ? 22000 : 0;
-  }
-
-  // Fallback obligatorio al CSV: referencia/nombre siempre puntúa aunque no exista conocimiento.
-  let score = scoreProductoAnterior_165(p, q);
-  if(n === q) score += 30000;
-  if(n.startsWith(q)) score += 18000;
-  if(n.includes(q)) score += 12000;
-  return score;
-};
-
-// Familias rápidas añadidas/corregidas sin tocar la UI existente.
-try{
-  const existeRed = FAMILIAS_RAPIDAS.some(f=>normaliza(f.title).includes('red'));
-  const existeAlm = FAMILIAS_RAPIDAS.some(f=>normaliza(f.title).includes('almacenamiento'));
-  const red = FAMILIAS_RAPIDAS.find(f=>normaliza(f.title).includes('red'));
-  if(red){ red.term = 'poe'; red.desc = 'Switches PoE e inyector'; }
-  if(!existeRed) FAMILIAS_RAPIDAS.push({icon:'🌐', title:'Red / PoE', desc:'Switches PoE e inyector', term:'poe'});
-  if(!existeAlm) FAMILIAS_RAPIDAS.push({icon:'💾', title:'Almacenamiento', desc:'Discos duros y tarjetas SD', term:'almacenamiento'});
-}catch(e){}
-
-try{
-  document.addEventListener('DOMContentLoaded',()=>{
-    document.querySelectorAll('.creator').forEach(el=>{
-      el.textContent = el.textContent.replace(/v\d+\.\d+(?:\.\d+)?(?:\.\d+)?\s*PRO/g, APP_VERSION_165);
-    });
-  });
-}catch(e){}
-
-/* =====================================================
-   MOTOR PRO v1.6.6 - Fix Incendio/CO y Baterías rápidas
-   - Evita falsos positivos tipo CenterCover al buscar CO/incendio.
-   - Baterías aparecen rápido por bateria/battery/pila.
-   - Mantiene CSV como fuente principal y no oculta productos nuevos.
-   ===================================================== */
-const APP_VERSION_166 = 'v1.6.6 PRO';
-
-function esProductoIncendio166(p){
-  const n = normaliza((p && p.name) || '');
-  return n.includes('fireprotect') || n.includes('manualcallpoint') || n.includes('en54') || n.includes('fire');
-}
-function esProductoCO166(p){
-  const n = normaliza((p && p.name) || '');
-  // CO real en Ajax suele venir marcado con C dentro de FireProtect 2 o Plus.
-  if(!esProductoIncendio166(p)) return false;
-  return n.includes('fireprotectplus') || n.includes('-c-') || n.includes('-hc-') || n.includes('-hsc-') || n.includes('(co)') || n.includes('co');
-}
 function esProductoBateria166(p){
   const n = normaliza((p && p.name) || '');
   return n.includes('battery') || n.includes('batt') || n.includes('internalbattery') || n.includes('batterybox') || n.includes('batterykit') || n.includes('hubbatt');
@@ -2178,52 +2354,6 @@ metaProducto164 = function(p){
   return metaProductoAnterior_166 ? metaProductoAnterior_166(p) : null;
 };
 
-const scoreProductoAnterior_166 = scoreProducto;
-scoreProducto = function(p, term){
-  const q = normaliza(term).trim();
-  if(!q) return 0;
-
-  // Incendio / CO: no permitir que palabras cortas como "co" arrastren CenterCover, SoloCover, etc.
-  const pideIncendio = q.includes('incendio') || q.includes('humo') || q.includes('fuego') || q.includes('calor') || q.includes('temperatura') || q.includes('fireprotect') || q.includes('en54') || q.includes('alarma incendio');
-  const pideCO = q === 'co' || q.includes(' co ') || q.includes('monoxido') || q.includes('monóxido') || q.includes('carbono');
-  if(pideIncendio || pideCO){
-    if(pideCO && !pideIncendio) return esProductoCO166(p) ? 25000 : 0;
-    if(pideCO && pideIncendio) return esProductoCO166(p) ? 26000 : (esProductoIncendio166(p) ? 18000 : 0);
-    return esProductoIncendio166(p) ? 22000 : 0;
-  }
-
-  // Baterías: búsqueda rápida y limpia.
-  if(q === 'bateria' || q === 'batería' || q === 'baterias' || q === 'baterías' || q === 'battery' || q === 'batteries' || q === 'pila' || q === 'pilas'){
-    return esProductoBateria166(p) ? 25000 : 0;
-  }
-  if(q.includes('batterybox') || q.includes('battery box')){
-    return normaliza((p && p.name) || '').includes('batterybox') ? 26000 : 0;
-  }
-  if(q.includes('batterykit') || q.includes('battery kit')){
-    return normaliza((p && p.name) || '').includes('batterykit') ? 26000 : 0;
-  }
-
-  return scoreProductoAnterior_166(p, q);
-};
-
-try{
-  const inc = FAMILIAS_RAPIDAS.find(f=>normaliza(f.title).includes('incendio'));
-  if(inc){ inc.term = 'incendio'; inc.desc = 'FireProtect, humo, calor y CO'; }
-  const ali = FAMILIAS_RAPIDAS.find(f=>normaliza(f.title).includes('alimentacion') || normaliza(f.title).includes('alimentación'));
-  if(ali){ ali.term = 'bateria'; ali.desc = 'Baterías, PSU y alimentación'; }
-  const existeBat = FAMILIAS_RAPIDAS.some(f=>normaliza(f.title).includes('bateria') || normaliza(f.title).includes('batería'));
-  if(!existeBat) FAMILIAS_RAPIDAS.push({icon:'🔋', title:'Baterías', desc:'BatteryBox, BatteryKit e internas', term:'bateria'});
-}catch(e){}
-
-try{
-  document.addEventListener('DOMContentLoaded',()=>{
-    document.querySelectorAll('.creator').forEach(el=>{
-      el.textContent = el.textContent.replace(/v\d+\.\d+(?:\.\d+)?(?:\.\d+)?\s*PRO/g, APP_VERSION_166);
-    });
-  });
-}catch(e){}
-
-
 
 /* =====================================================
    PRO v1.7.5 - CARGA CSV EXTERNO ROBUSTA + BÚSQUEDA ESTABLE
@@ -2234,8 +2364,6 @@ try{
    - Parser acepta ;, tabuladores, columnas extra y líneas pegadas simples.
    - Descripciones existentes se mantienen.
    ===================================================== */
-const APP_VERSION_175 = 'v1.7.5 PRO';
-
 function parseCSVRobusto175(txt){
   txt = String(txt || '').replace(/^\uFEFF/, '').replace(/\r/g, '').trim();
   if(!txt) return [];
@@ -2250,38 +2378,115 @@ function parseCSVRobusto175(txt){
     // Fallback para líneas pegadas tipo: "RACK-WALL        168.00"
     const m = line.match(/^(.+?)\s+([0-9]+(?:[.,][0-9]+)?)$/);
     if(m) return [m[1].trim(), '', m[2].trim()];
-
     return [line.trim(), '', '0'];
   };
 
   const first = splitLine(rawLines[0]);
-  const headerNorm = first.map(h => normaliza(h).replace(/[^a-z0-9]/g,''));
+  const headers = first.map(h => String(h || '').trim());
+  const headerNorm = headers.map(h => normaliza(h).replace(/[^a-z0-9]/g,''));
   const hasHeader = headerNorm.some(h => ['name','nombre','producto','descripcion','referencia','codigo','brand','marca','fabricante','pvp','precio','price','importe'].includes(h));
+  const start = hasHeader ? 1 : 0;
+  const find = aliases => headerNorm.findIndex(h => aliases.includes(h));
 
-  let start = hasHeader ? 1 : 0;
-  let idxName = 0, idxBrand = 1, idxPvp = 2;
+  let idxName = 0;
+  let idxBrand = 1;
+  let idxPvp = 2;
+  let idxDescription = -1;
+  let idxShortDescription = -1;
+  let idxImage = -1;
+  let idxStock = -1;
+  let idxCost = -1;
+  let idxCategory = -1;
+  let idxFamily = -1;
+  let idxSubcategory = -1;
+  let idxProductType = -1;
+  let idxSeries = -1;
+  let idxTechnology = -1;
+  let idxProtocol = -1;
+  let idxColor = -1;
+  let idxConnectivity = -1;
+  let idxResolution = -1;
+  let idxEnvironment = -1;
+  let idxPhoto = -1;
+  let idxPoe = -1;
+  let idxWifi = -1;
+  let idxLte4g = -1;
+  let idxCompatibility = -1;
+  let idxChannels = -1;
+  let idxLens = -1;
+  let idxMounting = -1;
+  let idxPower = -1;
+  let idxAttributes = -1;
+  let idxOrder = -1;
+  let idxRelatedProducts = -1;
 
   if(hasHeader){
-    idxName = headerNorm.findIndex(h => ['name','nombre','producto','descripcion','referencia','codigo','ref'].includes(h));
-    idxBrand = headerNorm.findIndex(h => ['brand','marca','fabricante'].includes(h));
-    idxPvp = headerNorm.findIndex(h => ['pvp','precio','price','importe'].includes(h));
+    idxName = find(['name','nombre','producto','referencia','codigo','ref','sku']);
+    idxBrand = find(['brand','marca','fabricante','manufacturer']);
+    idxPvp = find(['pvp','precio','price','importe','tarifa','retailprice']);
+    idxDescription = find(['description','descripcion','detalle','texto']);
+    idxShortDescription = find(['shortdescription','descripcioncorta','shortdesc','desccorta','descriptionshort']);
+    idxImage = find(['image','imagen','foto','photourl','imageurl','urlimagen','imagepath']);
+    idxStock = find(['stock','stocklabel','existencias','disponible','quantity','cantidadstock','availablestock','stockavailable']);
+    idxCost = find(['precionetocompra']);
+    idxCategory = find(['category','categoria','categoryname','nombrecategoria','maincategory','categoria1','nivel1','department','departamento']);
+
+    // "family" y "subcategory" son niveles distintos en la salida de Netlify.
+    // Si un CSV antiguo solo trae category + subcategory, esa subcategory actúa como familia.
+    const idxExplicitFamily = find(['family','familia','category2','categoria2','nivel2','productfamily']);
+    const idxGenericSubcategory = find(['subcategory','subcategoria','subcategoryname','subcategorianame']);
+    const idxExplicitSubfamily = find(['subfamily','subfamilia','subcategory2','subcategoria2','category3','categoria3','nivel3','productsubfamily']);
+    idxFamily = idxExplicitFamily >= 0 ? idxExplicitFamily : idxGenericSubcategory;
+    idxSubcategory = idxExplicitSubfamily >= 0
+      ? idxExplicitSubfamily
+      : (idxExplicitFamily >= 0 ? idxGenericSubcategory : -1);
+    idxProductType = find(['producttype','tipoproducto','tipo','type','productgroup','grupoproducto']);
+    idxSeries = find(['series','serie','productseries','seriefamilia']);
+    idxTechnology = find(['technology','tecnologia','range','gama']);
+    idxProtocol = find(['protocol','protocolo','communicationprotocol','protocolocomunicacion']);
+    idxColor = find(['color','colour','finish','acabado']);
+    idxConnectivity = find(['connectivity','conectividad','connection','conexion','communications','comunicaciones']);
+    idxResolution = find(['resolution','resolucion','megapixels','megapixeles','mp']);
+    idxEnvironment = find(['environment','entorno','installation','instalacion','indooroutdoor','interiorexterior','useenvironment']);
+    idxPhoto = find(['photo','foto','imagecapture','capturaimagen','photosensor','fotosensor']);
+    idxPoe = find(['poe','poweroverethernet']);
+    idxWifi = find(['wifi','wirelesslan','wlan']);
+    idxLte4g = find(['lte4g','4glte','lte','4g','gsm']);
+    idxCompatibility = find(['compatibility','compatibilidad','compatiblewith','compatiblecon']);
+    idxChannels = find(['channels','canales','ports','puertos']);
+    idxLens = find(['lens','lente','focallength','distanciafocal','optics','optica']);
+    idxMounting = find(['mounting','montaje','mount','soporte','installationtype','tipoinstalacion']);
+    idxPower = find(['power','alimentacion','voltage','voltaje','powersupply','fuentealimentacion']);
+    idxAttributes = find(['attributes','attributesjson','filterattributes','atributos','atributosjson']);
+    idxOrder = find(['order','orden','sortorder','priority','prioridad']);
+    idxRelatedProducts = find([
+      'relatedproducts','related','productosrelacionados','productosrelacionados'
+    ]);
     if(idxName < 0) idxName = 0;
   }
+
+  const reservedIndexes = new Set([
+    idxName,idxBrand,idxPvp,idxDescription,idxShortDescription,idxImage,idxStock,idxCost,
+    idxCategory,idxFamily,idxSubcategory,idxProductType,idxSeries,idxTechnology,idxProtocol,
+    idxColor,idxConnectivity,idxResolution,idxEnvironment,idxPhoto,idxPoe,idxWifi,idxLte4g,
+    idxCompatibility,idxChannels,idxLens,idxMounting,idxPower,idxAttributes,idxOrder,idxRelatedProducts
+  ].filter(i => i >= 0));
+
+  const isUsefulDynamicHeader = key => {
+    if(!key || ['ean','upc','isbn','weight','peso','height','alto','width','ancho','depth','profundidad'].includes(key)) return false;
+    return /(color|colour|finish|acabado|technology|tecnologia|protocol|protocolo|connect|conect|wifi|wlan|wireless|lte|4g|gsm|poe|resolution|resolucion|megapixel|lens|lente|focal|indoor|outdoor|interior|exterior|environment|entorno|uso|use|aplicacion|deteccion|detection|pir|compat|channel|canal|port|puerto|hdmi|mount|montaje|power|alimentacion|voltage|voltaje|battery|bateria|autonomia|audio|video|iprating|proteccionip|protection|proteccion|grado|sensor|detector|format|formato|type|tipo|series|serie|range|gama|frequency|frecuencia|alcance|distancia|angle|angulo|tamper|mascota|pet|sensitivity|sensibilidad|certification|certificacion|temperature|temperatura|humidity|humedad|wdr|onvif|infrared|night|noche|radio|jeweller|wings|fibra|ethernet|sim|memory|memoria|storage|almacenamiento)/.test(key);
+  };
 
   const rows = [];
   for(const line of rawLines.slice(start)){
     const cols = splitLine(line).map(c => String(c || '').trim());
     if(!cols.length) continue;
 
-    let name = (cols[idxName] || cols[0] || '').trim();
+    const name = (cols[idxName] || cols[0] || '').trim();
     if(!name) continue;
 
-    let brand = idxBrand >= 0 ? (cols[idxBrand] || '') : '';
-    brand = String(brand || '').trim();
-
+    const brand = idxBrand >= 0 ? String(cols[idxBrand] || '').trim() : '';
     let pvpRaw = idxPvp >= 0 ? cols[idxPvp] : '';
-
-    // Si el PVP no está donde debería, buscar el último valor numérico de la línea.
     if(!pvpRaw || !String(pvpRaw).match(/[0-9]/)){
       for(let i=cols.length-1; i>=0; i--){
         if(String(cols[i]).match(/^[€\s]*[0-9]+(?:[.,][0-9]+)?\s*€?$/)){
@@ -2290,19 +2495,62 @@ function parseCSVRobusto175(txt){
         }
       }
     }
-
     let pvp = numero(pvpRaw);
     if(!Number.isFinite(pvp)) pvp = 0;
+
+    const read = index => index >= 0 ? String(cols[index] || '').trim() : '';
+    let attributes = {};
+    const attributesRaw = read(idxAttributes);
+    if(attributesRaw){
+      try{
+        const parsed = JSON.parse(attributesRaw);
+        if(parsed && typeof parsed === 'object' && !Array.isArray(parsed)) attributes = parsed;
+      }catch(_error){}
+    }
+    if(hasHeader){
+      headerNorm.forEach((key,index) => {
+        if(reservedIndexes.has(index) || !isUsefulDynamicHeader(key)) return;
+        const value = String(cols[index] || '').trim();
+        if(value && value.length <= 180) attributes[key] = value;
+      });
+    }
 
     rows.push({
       name,
       brand,
       pvp,
-      raw: cols
+      description:read(idxDescription),
+      short_description:read(idxShortDescription),
+      image:read(idxImage),
+      stock:read(idxStock),
+      precio_neto_compra:idxCost >= 0 ? numero(cols[idxCost]) : 0,
+      category:read(idxCategory),
+      family:read(idxFamily),
+      subcategory:read(idxSubcategory),
+      product_type:read(idxProductType),
+      series:read(idxSeries),
+      technology:read(idxTechnology),
+      protocol:read(idxProtocol),
+      color:read(idxColor),
+      connectivity:read(idxConnectivity),
+      resolution:read(idxResolution),
+      environment:read(idxEnvironment),
+      photo:read(idxPhoto),
+      poe:read(idxPoe),
+      wifi:read(idxWifi),
+      lte_4g:read(idxLte4g),
+      compatibility:read(idxCompatibility),
+      channels:read(idxChannels),
+      lens:read(idxLens),
+      mounting:read(idxMounting),
+      power:read(idxPower),
+      related_products:read(idxRelatedProducts),
+      attributes,
+      order:idxOrder >= 0 ? numero(cols[idxOrder]) : 0,
+      raw:cols
     });
   }
 
-  // Dejar orden estable por nombre, como venía haciendo el proyecto.
   return rows
     .filter(p => p.name)
     .sort((a,b)=>a.name.localeCompare(b.name,'es'));
@@ -2363,51 +2611,381 @@ function extraTagsCSV175(p){
 }
 
 function prepararIndiceBusqueda175(){
+  const camposFiltro = [
+    'category','family','subcategory','product_type','series','technology','protocol','color',
+    'connectivity','resolution','environment','photo','poe','wifi','lte_4g','compatibility',
+    'channels','lens','mounting','power'
+  ];
   productos.forEach((p)=>{
     let d = {desc:'', family:'', official:''};
     try{ d = descripcionProducto(p) || d; }catch(e){}
     p._desc = d.desc || '';
     p._family = d.family || '';
     p._official = d.official || '';
+    const atributos = p?.attributes && typeof p.attributes === 'object' && !Array.isArray(p.attributes)
+      ? Object.values(p.attributes)
+      : [];
     p._search175 = normaliza([
       p.name,
       p.brand,
+      p.description,
+      p.short_description,
       p._desc,
       p._family,
       p._official,
+      ...camposFiltro.map(campo => p?.[campo]),
+      ...atributos,
       extraTagsCSV175(p)
-    ].join(' '));
+    ].filter(Boolean).join(' '));
   });
 }
 
-async function cargarCatalogo(){
-  let origen = 'externo';
+function hxEsProductoAjax(p){
+  const ref = String(p?.name || '').trim().toUpperCase();
+  const marca = normaliza(p?.brand || '');
+  return marca === 'ajax' || ref.startsWith('AJ-') || ref.startsWith('10XAJ-');
+}
+
+function hxTextoProveedor(p){
+  return normaliza([
+    p?.category, p?.family, p?.subcategory, p?.product_type,
+    p?.short_description, p?.description, p?.name
+  ].filter(Boolean).join(' '));
+}
+
+function hxEsAlmacenamientoSurveillance(p){
+  const texto = hxTextoProveedor(p);
+  return /almacenamiento|storage/.test(texto)
+    && /disco duro|discos duros|surveillance|hard drive|hdd/.test(texto);
+}
+
+function hxEsTarjetaSDOriginal(p){
+  const texto = hxTextoProveedor(p);
+  return /almacenamiento|storage/.test(texto)
+    && /tarjetas? sd|micro ?sd|microsd|sd card|memory card/.test(texto);
+}
+
+function hxEsPilaAlimentacion(p){
+  const texto = hxTextoProveedor(p);
+  const compact = texto.replace(/[^a-z0-9]/g,'');
+  if(!/baterias y pilas/.test(texto)) return false;
+
+  const excluded = /batterybox|batterykit|batterypack|batteryholder|batterycase|powerbank|acumulador|accumulator|modulobateria|batterymodule/.test(compact);
+  const cell = /pila|pilas|batterycell|coincell|buttoncell|battcr|cr\d{3,4}[a-z]?|lr\d+[a-z]?|er\d+[a-z]?|batt(?:aa|aaa|aaaa|9v)/.test(compact);
+  return cell && !excluded;
+}
+
+function hxEsFuenteAlimentador(p){
+  const texto = hxTextoProveedor(p);
+  return /fuentes y alimentadores|fuente alimentador|power supply|power supplies/.test(texto);
+}
+
+function hxEsSAI(p){
+  const niveles = [p?.category,p?.family,p?.subcategory]
+    .map(value=>normaliza(value).trim())
+    .filter(Boolean);
+
+  return niveles.some(value =>
+    value === 'sai' || value === 'sais' || value === 'ups'
+    || value.endsWith('sais') || value.endsWith('ups')
+    || /sistemas de alimentacion ininterrumpida/.test(value)
+  );
+}
+
+function hxEsSwitchNoGestionable(p){
+  const texto = hxTextoProveedor(p);
+  return /switching|switches/.test(texto)
+    && /no gestionable|unmanaged/.test(texto);
+}
+
+function hxEsRackPared(p){
+  const texto = hxTextoProveedor(p);
+  if(!/racks?|armario rack/.test(texto)) return false;
+
+  const ref = String(p?.name || '').trim().toUpperCase();
+  return /RACK-WALL/.test(ref) || /LOCKBOX-\d+U-SL(?:-|$)/.test(ref);
+}
+
+function hxEsBarreraInfrarroja(p){
+  const texto = hxTextoProveedor(p);
+  return /intrusion/.test(texto)
+    && /barrera infrarroja|barreras infrarrojas|infrared barrier|photobeam/.test(texto);
+}
+
+function hxEsInyectorPoE(p){
+  const texto = hxTextoProveedor(p);
+  return /networking|accesorios/.test(texto)
+    && /poe/.test(texto)
+    && /inyector poe|poe injector|injector poe/.test(texto);
+}
+
+function hxEsRouterMovil(p){
+  const texto = hxTextoProveedor(p);
+  return /networking|routing/.test(texto)
+    && /routers? 3g\/4g\/5g|routers? 3g|routers? 4g|routers? 5g|3g\/4g\/5g/.test(texto);
+}
+
+function hxEsSoporteCCTVSeleccionado(p){
+  const ref = String(p?.name || '').trim().toUpperCase();
+  return ref === 'DS-1280ZJ-XS'
+    || ref === 'DS-1280ZJ-XS-B';
+}
+
+function hxEsProductoProveedorExtra(p){
+  return hxEsAlmacenamientoSurveillance(p)
+    || hxEsTarjetaSDOriginal(p)
+    || hxEsPilaAlimentacion(p)
+    || hxEsFuenteAlimentador(p)
+    || hxEsSAI(p)
+    || hxEsSwitchNoGestionable(p)
+    || hxEsRackPared(p)
+    || hxEsBarreraInfrarroja(p)
+    || hxEsInyectorPoE(p)
+    || hxEsRouterMovil(p)
+    || hxEsSoporteCCTVSeleccionado(p);
+}
+
+function hxEsProductoBasePermitido(p){
+  return hxEsProductoAjax(p) || hxEsProductoProveedorExtra(p);
+}
+
+
+function hxUnirCatalogos(base, manual){
+  const mapa = new Map();
+  const tieneValor = valor => valor !== undefined && valor !== null && (typeof valor !== 'string' || valor.trim() !== '');
+  const atributosValidos = atributos => {
+    if(!atributos || typeof atributos !== 'object' || Array.isArray(atributos)) return {};
+    return Object.fromEntries(Object.entries(atributos).filter(([,valor]) => tieneValor(valor)));
+  };
+
+  (Array.isArray(base) ? base : []).filter(hxEsProductoBasePermitido).forEach(p=>{
+    const ref = String(p?.name || '').trim().toUpperCase();
+    if(ref) mapa.set(ref, {...p, attributes:atributosValidos(p?.attributes), origen_catalogo:'visio'});
+  });
+
+  // El CSV manual manda únicamente en los campos que realmente trae informados.
+  // Los campos vacíos nunca borran clasificación, stock ni atributos recibidos desde Netlify.
+  (Array.isArray(manual) ? manual : []).forEach(p=>{
+    const ref = String(p?.name || '').trim().toUpperCase();
+    if(!ref) return;
+    const anterior = mapa.get(ref) || {};
+    const esProveedorOriginal = hxEsProductoProveedorExtra(anterior);
+    const camposProveedorOriginal = new Set([
+      'brand','description','short_description','image','stock',
+      'category','family','subcategory','product_type','series','technology','color'
+    ]);
+    const informados = Object.fromEntries(
+      Object.entries(p || {}).filter(([clave,valor]) => {
+        if(clave === 'attributes' || clave === 'raw' || !tieneValor(valor)) return false;
+        if(esProveedorOriginal && camposProveedorOriginal.has(clave)) return false;
+        return true;
+      })
+    );
+    const pvpManual = numero(p?.pvp);
+    const costeManual = numero(p?.precio_neto_compra);
+    const ordenManual = numero(p?.order);
+    const merged = {
+      ...anterior,
+      ...informados,
+      name: p.name || anterior.name,
+      brand: p.brand || anterior.brand || 'Ajax',
+      pvp: pvpManual > 0 ? pvpManual : (numero(anterior.pvp) || 0),
+      precio_neto_compra: costeManual > 0 ? costeManual : (numero(anterior.precio_neto_compra) || 0),
+      order: ordenManual > 0 ? ordenManual : (numero(anterior.order) || 0),
+      attributes: {
+        ...atributosValidos(anterior.attributes),
+        ...atributosValidos(p.attributes)
+      },
+      origen_catalogo: esProveedorOriginal ? 'visio+manual' : 'manual'
+    };
+    mapa.set(ref, merged);
+  });
+  return [...mapa.values()].sort((a,b)=>a.name.localeCompare(b.name,'es'));
+}
+
+const HX_CATALOGO_LOCAL_KEY='hx_catalogo_remoto_csv_v5_related';
+const HX_CATALOGO_LOCAL_OLD_KEYS=['hx_catalogo_remoto_csv_v1','hx_catalogo_remoto_csv_v2','hx_catalogo_remoto_csv_v3','hx_catalogo_remoto_csv_v4'];
+const HX_CATALOGO_LOCAL_TTL=48*60*60*1000;
+
+const HX_CATALOGO_BASELINE_KEY='hx_catalogo_refs_baseline_v1';
+const HX_CATALOGO_NEW_KEY='hx_catalogo_nuevos_v1';
+const HX_CATALOGO_NEW_DAYS=15;
+
+function hxCatalogoRefs(lista){
+  return [...new Set((Array.isArray(lista)?lista:[])
+    .map(p=>String(p?.name||'').trim().toUpperCase())
+    .filter(Boolean))].sort();
+}
+
+function hxActualizarProductosNuevos(lista){
   try{
-    const r = await fetch(`${CSV_URL}?v=${Date.now()}`, {cache:'no-store'});
-    if(!r.ok) throw new Error('HTTP '+r.status);
-    const txt = await r.text();
-    productos = parseCSVRobusto175(txt);
-    if(!productos.length) throw new Error('CSV vacío o columnas no reconocidas');
+    const ahora=Date.now();
+    const refs=hxCatalogoRefs(lista);
+    const baselineRaw=localStorage.getItem(HX_CATALOGO_BASELINE_KEY);
+    if(!baselineRaw){
+      localStorage.setItem(HX_CATALOGO_BASELINE_KEY,JSON.stringify(refs));
+      localStorage.setItem(HX_CATALOGO_NEW_KEY,JSON.stringify({}));
+      window.HX_PRODUCTOS_NUEVOS={};
+      return {};
+    }
+    const prev=new Set(JSON.parse(baselineRaw)||[]);
+    let nuevos={};
+    try{ nuevos=JSON.parse(localStorage.getItem(HX_CATALOGO_NEW_KEY)||'{}')||{}; }catch(_e){}
+    refs.forEach(ref=>{ if(!prev.has(ref) && !nuevos[ref]) nuevos[ref]=ahora; });
+    const limite=HX_CATALOGO_NEW_DAYS*24*60*60*1000;
+    Object.keys(nuevos).forEach(ref=>{
+      if(!refs.includes(ref) || (ahora-Number(nuevos[ref]||0))>limite) delete nuevos[ref];
+    });
+    localStorage.setItem(HX_CATALOGO_BASELINE_KEY,JSON.stringify(refs));
+    localStorage.setItem(HX_CATALOGO_NEW_KEY,JSON.stringify(nuevos));
+    window.HX_PRODUCTOS_NUEVOS=nuevos;
+    return nuevos;
+  }catch(_error){
+    window.HX_PRODUCTOS_NUEVOS={};
+    return {};
+  }
+}
+
+
+function hxCatalogoLocalLeer(){
+  try{
+    const raw=localStorage.getItem(HX_CATALOGO_LOCAL_KEY);
+    if(!raw) return null;
+    const data=JSON.parse(raw);
+    const ts=Number(data?.ts)||0;
+    const csv=String(data?.csv||'');
+    if(!ts || !csv || (Date.now()-ts)>=HX_CATALOGO_LOCAL_TTL){
+      localStorage.removeItem(HX_CATALOGO_LOCAL_KEY);
+      return null;
+    }
+    return {ts,csv};
+  }catch(_error){ return null; }
+}
+
+function hxCatalogoLocalGuardar(csv){
+  try{
+    HX_CATALOGO_LOCAL_OLD_KEYS.forEach(key=>localStorage.removeItem(key));
+    localStorage.setItem(HX_CATALOGO_LOCAL_KEY,JSON.stringify({ts:Date.now(),csv:String(csv||'')}));
+  }catch(_error){}
+}
+
+async function hxLeerCSV(url){
+  const esFuncionCatalogo = String(url || '').includes('/.netlify/functions/catalogo-remoto');
+
+  if(esFuncionCatalogo){
+    const local=hxCatalogoLocalLeer();
+    if(local){
+      const ageSeconds=Math.floor((Date.now()-local.ts)/1000);
+      window.HX_CATALOGO_CACHE={
+        age:ageSeconds,
+        cacheStatus:'browser-local',
+        generatedAt:new Date(local.ts).toISOString(),
+        productsWithCost:0,
+        costField:'',
+        cached:true,
+        local:true
+      };
+      return local.csv;
+    }
+  }
+
+  const finalUrl = esFuncionCatalogo ? url : `${url}${url.includes('?') ? '&' : '?'}v=${Date.now()}`;
+  const r = await fetch(finalUrl, {cache: esFuncionCatalogo ? 'default' : 'no-store'});
+  if(!r.ok) throw new Error(`HTTP ${r.status} en ${url}`);
+
+  const text=await r.text();
+
+  if(esFuncionCatalogo){
+    const age = Number(r.headers.get('age') || 0);
+    const cacheStatus = String(r.headers.get('cache-status') || r.headers.get('x-nf-cache') || '').trim();
+    const generatedAt = String(r.headers.get('x-hiperajax-generated-at') || '').trim();
+    const productsWithCost = Number(r.headers.get('x-hiperajax-products-with-cost') || 0);
+    const costField = String(r.headers.get('x-hiperajax-cost-field') || '').trim();
+    window.HX_CATALOGO_CACHE = {
+      age: Number.isFinite(age) ? age : 0,
+      cacheStatus,
+      generatedAt,
+      productsWithCost,
+      costField,
+      cached: age > 0 || /hit/i.test(cacheStatus),
+      local:false
+    };
+    hxCatalogoLocalGuardar(text);
+    console.info('[Catálogo Netlify]', window.HX_CATALOGO_CACHE);
+  }
+  return text;
+}
+
+async function cargarCatalogo(){
+  let origen = 'remoto + manual';
+  const prev = $('#previewProducto');
+  let avisoLento = null;
+
+  if(prev){
+    prev.textContent = '⏳ Comprobando catálogo…';
+    avisoLento = setTimeout(()=>{
+      if(prev.textContent.includes('Comprobando')) prev.textContent = '📥 Descargando catálogo Ajax…';
+    }, 2500);
+  }
+
+  try{
+    let baseTxt = '';
+    try{
+      baseTxt = await hxLeerCSV('/.netlify/functions/catalogo-remoto?v=213-related');
+    }catch(errorRemoto){
+      console.warn('Catálogo remoto no disponible; se usa la copia local.', errorRemoto);
+      baseTxt = await hxLeerCSV(CSV_URL);
+      origen = 'copia local + manual';
+    }
+
+    let manualTxt = '';
+    try{ manualTxt = await hxLeerCSV('./catalogo_manual.csv'); }
+    catch(errorManual){ console.warn('No se pudo cargar catalogo_manual.csv.', errorManual); }
+
+    const base = parseCSVRobusto175(baseTxt);
+    const manual = manualTxt ? parseCSVRobusto175(manualTxt) : [];
+    productos = hxUnirCatalogos(base, manual);
+    try{
+      const conRelacionados = productos.filter(p=>String(p?.related_products||'').trim()).length;
+      window.HX_RELATED_DIAGNOSTIC = {
+        total: productos.length,
+        conRelacionados,
+        ejemplo: productos.find(p=>String(p?.related_products||'').trim())?.name || ''
+      };
+      console.info('[Compatibles] related_products cargados:', window.HX_RELATED_DIAGNOSTIC);
+    }catch(_error){}
+    hxActualizarProductosNuevos(productos);
+    if(!productos.length) throw new Error('Catálogo vacío o columnas no reconocidas');
+    try{
+      window.HX_EXPLORER_PRO?.resetCache?.();
+      window.dispatchEvent(new CustomEvent('hx:catalogo-cargado', {detail:{count:productos.length}}));
+    }catch(_error){}
   }catch(e){
-    // CSV externo obligatorio. El interno ya no debe tapar errores ni ocultar cambios nuevos.
     productos = [];
-    origen = 'error';
-    const msg = 'No se pudo cargar catalogo_ajax.csv. Ejecuta con INICIAR_WINDOWS/INICIAR_MAC_LINUX o súbelo junto al index.html.';
-    const prev = $('#previewProducto');
+    const msg = 'No se pudo cargar el catálogo remoto ni la copia local.';
     if(prev) prev.textContent = msg;
-    console.error('Error cargando catálogo externo:', e);
+    console.error('Error cargando catálogo:', e);
     cargarSelect();
     renderRecientes();
     pintarResultados('');
     return;
+  }finally{
+    if(avisoLento) clearTimeout(avisoLento);
   }
 
   prepararIndiceBusqueda175();
-
-  const prev = $('#previewProducto');
   if(prev){
-    prev.textContent = `${productos.length} productos cargados desde catalogo_ajax.csv.`;
+    if(origen === 'remoto + manual'){
+      const c = window.HX_CATALOGO_CACHE || {};
+      const minutos = Math.max(0, Math.floor((Number(c.age)||0) / 60));
+      const cacheTxt = c.cached ? `caché Netlify · ${minutos} min` : 'actualizado ahora · caché iniciada';
+      prev.textContent = `✅ ${productos.length} productos · ${cacheTxt}.`;
+      prev.title = c.generatedAt ? `CSV generado: ${c.generatedAt}` : 'La caché del catálogo se conserva hasta 48 horas.';
+    }else{
+      prev.textContent = `⚠️ ${productos.length} productos cargados (copia local + manual).`;
+    }
   }
+  window.HX_CATALOGO_ORIGEN = origen;
 
   cargarSelect();
   renderRecientes();
@@ -2451,91 +3029,15 @@ descripcionProducto = function(p){
 
   return descripcionProductoAnterior_175(p);
 };
-
-const scoreProductoAnterior_175 = scoreProducto;
-scoreProducto = function(p, term){
-  const q = normaliza(term).trim();
-  if(!q) return 0;
-
-  const n = normaliza((p && p.name) || '');
-  const b = normaliza((p && p.brand) || '');
-  const search = p._search175 || normaliza([p.name, p.brand, extraTagsCSV175(p)].join(' '));
-  const parts = q.split(/\s+/).filter(Boolean);
-
-  // CO: evitar falsos positivos como CenterCover, SoloCover, etc.
-  if(q === 'co' || q === 'monoxido' || q === 'monóxido' || q.includes('monoxido') || q.includes('monóxido')){
-    return (n.includes('fireprotectplus') || n.includes('-c-') || n.includes('-hc-') || n.includes('-hsc-')) ? 30000 : 0;
-  }
-
-  let score = 0;
-
-  // CSV manda siempre: referencia/nombre nunca queda oculto.
-  if(n === q) score += 50000;
-  if(n.startsWith(q)) score += 35000;
-  if(n.includes(q)) score += 26000;
-  if(b.includes(q)) score += 1000;
-
-  // Palabras separadas.
-  for(const part of parts){
-    if(!part) continue;
-    if(n.split(/[^a-z0-9]+/).includes(part)) score += 12000;
-    else if(n.includes(part)) score += 8000;
-    if(search.includes(part)) score += 1500;
-  }
-
-  if(search.includes(q)) score += 5000;
-
-  // Mantener el motor anterior, pero que no pueda cargarse el fallback del CSV.
-  try{
-    score += Math.max(0, scoreProductoAnterior_175(p, q));
-  }catch(e){}
-
-  return score;
-};
-
-buscar = function(term){
-  const q = normaliza(term).trim();
-  if(!q) return [];
-  const arr = productos
-    .map((p,i)=>({p,i,score:scoreProducto(p,q), n:normaliza(p.name)}))
-    .filter(x=>x.score>0)
-    .sort((a,b)=>{
-      const aExact = a.n === q ? 0 : (a.n.startsWith(q) ? 1 : (a.n.includes(q) ? 2 : 3));
-      const bExact = b.n === q ? 0 : (b.n.startsWith(q) ? 1 : (b.n.includes(q) ? 2 : 3));
-      return aExact-bExact || b.score-a.score || a.p.name.localeCompare(b.p.name,'es');
-    });
-  return arr.slice(0, 220);
-};
-
-buscarCatalogo = function(term=''){
-  const q = String(term||'').trim();
-  if(!q) return productos.map((p,i)=>({p,i,score:1})).sort((a,b)=>a.p.name.localeCompare(b.p.name,'es'));
-  return buscar(q);
-};
-
 try{
   const setVersion = ()=>{
-    document.querySelectorAll('.creator').forEach(el=>{
-      el.textContent = el.textContent.replace(/v\d+\.\d+(?:\.\d+)?(?:\.\d+)?\s*PRO/g, APP_VERSION_175);
-    });
   };
   document.addEventListener('DOMContentLoaded', setVersion);
 }catch(e){}
 
 
-/* =====================================================
-   MOTOR PRO v1.8.1 - Normalizador técnico real
-   - CSV manda siempre: referencia/nombre aparecen aunque no haya ficha.
-   - DUMMY = carcasa vacía, con icono propio.
-   - Bracket/Holder/Mount = accesorios de instalación, no armarios.
-   - Covers/Frames/Buttons/Core clasificados como mecanismos.
-   ===================================================== */
-const APP_VERSION_181 = 'v1.8.1 PRO';
 const descripcionProductoAnterior_181 = descripcionProducto;
-const scoreProductoAnterior_181 = scoreProducto;
-
 function ref181(p){ return String((p && p.name) || '').trim(); }
-function n181(p){ return normaliza(ref181(p)); }
 function has181(n, ...xs){ return xs.some(x => n.includes(normaliza(x))); }
 function cap181(s){ return String(s||'').replace(/^AJ-/i,'').replace(/-DUMMY$/i,'').replace(/-/g,' '); }
 function modelDummy181(n, original){
@@ -2659,86 +3161,13 @@ function meta181(p){
   return null;
 }
 
-function textoBusqueda181(p){
-  const m = meta181(p);
-  const prev = (()=>{ try{ const d = descripcionProductoAnterior_181(p); return [d.desc,d.family,d.official].join(' '); }catch(e){ return ''; }})();
-  return normaliza([ref181(p), p && p.brand, m && m.family, m && m.sub, m && m.desc, m && m.official, m && (m.tags||[]).join(' '), prev].join(' '));
-}
 
 descripcionProducto = function(p){
   const m = meta181(p);
   if(m) return {icon:m.icon, desc:m.desc, family:m.sub ? `${m.family} · ${m.sub}` : m.family, official:m.official};
   return descripcionProductoAnterior_181(p);
 };
-
-scoreProducto = function(p, term){
-  const q = normaliza(term).trim(); if(!q) return 0;
-  const n = n181(p), brand = normaliza((p && p.brand)||'');
-  const search = textoBusqueda181(p);
-  const parts = q.split(/\s+/).filter(Boolean);
-  let score = 0;
-
-  // CSV manda siempre.
-  if(n === q) score += 60000;
-  if(n.startsWith(q)) score += 42000;
-  if(n.includes(q)) score += 32000;
-  if(brand.includes(q)) score += 1000;
-  for(const part of parts){
-    if(n.split(/[^a-z0-9]+/).includes(part)) score += 16000;
-    else if(n.includes(part)) score += 10000;
-    if(search.includes(part)) score += 2500;
-  }
-  if(search.includes(q)) score += 9000;
-
-  // Sinónimos técnicos fuertes.
-  if(['carcasa','carcasa vacia','carcasa vacía','maqueta','dummy'].includes(q)) score += n.includes('dummy') ? 50000 : 0;
-  if(['tapa','embellecedor','cover'].includes(q)) score += has181(n,'cover','coverplate') ? 45000 : 0;
-  if(['marco','frame'].includes(q)) score += has181(n,'frame') ? 45000 : 0;
-  if(['soporte','bracket','holder','mount'].includes(q)) score += has181(n,'bracket','holder','mountcam','hood') ? 45000 : 0;
-  if(q.includes('soporte camara') || q.includes('soporte cámara')) score += has181(n,'mountcam') ? 50000 : 0;
-  if(q.includes('caja conexiones')) score += has181(n,'junctionbox') ? 50000 : 0;
-  if(q.includes('rack') || q.includes('armario') || q.includes('mural')) score += has181(n,'rack') ? 50000 : 0;
-  if(q.includes('switch poe') || q==='poe') score += has181(n,'sw1008poe','vdms108gp','vdms105gp','inj-poe') ? 30000 : 0;
-  if(q.includes('inyector')) score += has181(n,'inj-poe','injector') ? 50000 : 0;
-  if(q.includes('keypad') || q.includes('teclado') || q.includes('sirena')) score += has181(n,'keypadcombi') ? 12000 : 0;
-
-  try{ score += Math.max(0, scoreProductoAnterior_181(p, q)); }catch(e){}
-  return score;
-};
-
-buscar = function(term){
-  const q = normaliza(term).trim(); if(!q) return [];
-  return productos
-    .map((p,i)=>({p,i,score:scoreProducto(p,q), n:n181(p)}))
-    .filter(x=>x.score>0)
-    .sort((a,b)=>{
-      const ae = a.n===q?0:(a.n.startsWith(q)?1:(a.n.includes(q)?2:3));
-      const be = b.n===q?0:(b.n.startsWith(q)?1:(b.n.includes(q)?2:3));
-      return ae-be || b.score-a.score || a.p.name.localeCompare(b.p.name,'es');
-    })
-    .slice(0,260);
-};
-
-buscarCatalogo = function(term=''){
-  const q = String(term||'').trim();
-  if(!q) return productos.map((p,i)=>({p,i,score:1})).sort((a,b)=>a.p.name.localeCompare(b.p.name,'es'));
-  return buscar(q);
-};
-
-try{
-  document.addEventListener('DOMContentLoaded', ()=>{
-    document.querySelectorAll('.creator').forEach(el=>{
-      el.textContent = el.textContent.replace(/v\d+\.\d+(?:\.\d+)?(?:\.\d+)?\s*PRO/g, APP_VERSION_181);
-    });
-  });
-}catch(e){}
-
-/* =====================================================
-   Hiper AJAX v1.8.2 PRO - Motor de catálogo estable
-   ===================================================== */
-const APP_VERSION_182 = 'v1.8.2 PRO';
 function ref182(p){ return String((p && p.name) || '').trim(); }
-function n182(p){ return normaliza(ref182(p)); }
 function has182(n,...xs){ return xs.some(x => n.includes(normaliza(x))); }
 function dummyTarget182(n){
   if(has182(n,'combiprotect')) return 'detector combinado de movimiento y rotura de cristal CombiProtect';
@@ -2791,37 +3220,31 @@ function meta182(p){
 }
 const descripcionProducto_PRE182 = descripcionProducto;
 descripcionProducto = function(p){ const m = meta182(p); if(m) return {icon:m.icon,desc:m.desc,family:m.sub?`${m.family} · ${m.sub}`:m.family,official:m.official}; try{return descripcionProducto_PRE182(p);}catch(e){return {icon:'📦',desc:'Producto del catálogo',family:'Producto nuevo',official:ref182(p)};} };
-function textoBusqueda182(p){ const m=meta182(p)||{}; let prev=''; try{const d=descripcionProducto_PRE182(p); prev=[d.desc,d.family,d.official].join(' ');}catch(e){} return normaliza([ref182(p),p&&p.brand,m.family,m.sub,m.desc,m.official,(m.tags||[]).join(' '),prev,p&&p._search175].join(' ')); }
-const scoreProducto_PRE182 = scoreProducto;
-scoreProducto = function(p, term){
-  const q=normaliza(term).trim(); if(!q) return 0; const n=n182(p), search=textoBusqueda182(p); const parts=q.split(/\s+/).filter(Boolean); let score=0;
-  if(n===q) score+=100000; if(n.startsWith(q)) score+=70000; if(n.includes(q)) score+=55000; for(const part of parts){ if(n.split(/[^a-z0-9]+/).includes(part)) score+=26000; else if(n.includes(part)) score+=18000; if(search.includes(part)) score+=5000; } if(search.includes(q)) score+=14000;
-  const boost=(cond,val)=>{if(cond) score+=val;};
-  boost(['enchufe','base enchufe','toma corriente','schuko','toma'].includes(q), has182(n,'socket','outlet','outletcore')?70000:0);
-  boost(['carcasa','carcasa vacia','carcasa vacía','maqueta','dummy'].includes(q), has182(n,'dummy','case')?70000:0);
-  boost(['tapa','embellecedor','cover'].includes(q), has182(n,'cover','coverplate')?65000:0);
-  boost(['marco','frame'].includes(q), has182(n,'frame')?65000:0);
-  boost(['soporte','bracket','holder','mount','montaje'].includes(q), has182(n,'bracket','holder','mountcam','hood')?65000:0);
-  boost(q.includes('soporte camara') || q.includes('soporte cámara'), has182(n,'mountcam')?75000:0);
-  boost(q.includes('caja') || q.includes('ip66'), has182(n,'junctionbox','surfacebox','ip66')?52000:0);
-  boost(q.includes('rack') || q.includes('armario') || q.includes('mural'), has182(n,'rack')?70000:0);
-  boost(q.includes('switch poe') || q==='poe', has182(n,'sw1008poe','vdms108gp','vdms105gp','inj-poe')?55000:0);
-  boost(q.includes('inyector'), has182(n,'inj-poe','injector')?75000:0);
-  boost(q.includes('fuente') || q.includes('alimentacion') || q.includes('alimentación') || q.includes('dc12'), has182(n,'dc12','dc1224','psu','ac220','dc6')?70000:0);
-  boost(q.includes('bateria') || q.includes('batería') || q.includes('battery') || q.includes('pila'), has182(n,'battery','batt')?70000:0);
-  boost(q.includes('teclado') || q.includes('keypad'), has182(n,'keypad')?55000:0);
-  boost(q.includes('sirena'), has182(n,'siren','keypadcombi')?50000:0);
-  try{score+=Math.max(0,scoreProducto_PRE182(p,q));}catch(e){} return score;
-};
-buscar = function(term){ const q=normaliza(term).trim(); if(!q) return []; return productos.map((p,i)=>({p,i,score:scoreProducto(p,q),n:n182(p)})).filter(x=>x.score>0).sort((a,b)=>{const ae=a.n===q?0:(a.n.startsWith(q)?1:(a.n.includes(q)?2:3)); const be=b.n===q?0:(b.n.startsWith(q)?1:(b.n.includes(q)?2:3)); return ae-be||b.score-a.score||a.p.name.localeCompare(b.p.name,'es');}).slice(0,260); };
-buscarCatalogo = function(term=''){ const q=String(term||'').trim(); if(!q) return productos.map((p,i)=>({p,i,score:1})).sort((a,b)=>a.p.name.localeCompare(b.p.name,'es')); return buscar(q); };
-let recientesSesion182 = [];
-registrarReciente = function(nombre){ const name=String(nombre||'').trim(); if(!name) return; const idx=recientesSesion182.findIndex(x=>x.name===name); if(idx>=0) recientesSesion182[idx].count+=1; else recientesSesion182.unshift({name,count:1}); recientesSesion182=recientesSesion182.sort((a,b)=>b.count-a.count).slice(0,12); renderRecientes(); };
-renderRecientes = function(){
+const HX_RECIENTES_KEY='hiperajax_productos_recientes_v1';
+function leerRecientes(){
+  try{
+    const refs=JSON.parse(localStorage.getItem(HX_RECIENTES_KEY)||'[]');
+    return Array.isArray(refs)?refs.filter(Boolean):[];
+  }catch(_e){ return []; }
+}
+function registrarReciente(nombre){
+  const name=String(nombre||'').trim();
+  if(!name) return;
+  const refs=leerRecientes().filter(ref=>String(ref).toUpperCase()!==name.toUpperCase());
+  refs.unshift(name);
+  try{ localStorage.setItem(HX_RECIENTES_KEY,JSON.stringify(refs.slice(0,12))); }catch(_e){}
+  renderRecientes();
+}
+function renderRecientes(){
   const wrap=document.querySelector('#recentes');
   if(!wrap) return;
-  if(!recientesSesion182.length){ wrap.innerHTML=''; return; }
-  wrap.innerHTML='<span class="recent-label">Atajos:</span>'+recientesSesion182.map(x=>`<button type="button" class="recent-chip" data-name="${escapeHtml(x.name)}">${escapeHtml(x.name)}${x.count>1?' ×'+x.count:''}</button>`).join('');
+  const limite=window.matchMedia('(max-width:760px)').matches?3:8;
+  const refs=leerRecientes()
+    .filter(ref=>findProductoByQuery(ref))
+    .slice(0,limite);
+  if(!refs.length){ wrap.innerHTML=''; wrap.hidden=true; return; }
+  wrap.hidden=false;
+  wrap.innerHTML='<span class="recent-label">Recientes</span>'+refs.map(ref=>`<button type="button" class="recent-chip" data-name="${escapeHtml(ref)}">${escapeHtml(ref)}</button>`).join('');
   wrap.querySelectorAll('.recent-chip').forEach(btn=>btn.addEventListener('click',()=>{
     const p=findProductoByQuery(btn.dataset.name);
     const qty=Number(document.querySelector('#cantidad')?.value)||1;
@@ -2836,22 +3259,15 @@ renderRecientes = function(){
       hxToastGlobal('No se pudo añadir el producto.','error');
     }
   }));
-};
+}
 const guardar_PRE182 = guardar;
 guardar = function(){ if(!Array.isArray(lineas)||lineas.length===0){ alert('Añade al menos un producto antes de guardar el presupuesto.'); return; } return guardar_PRE182(); };
 const pintarResultados_PRE182 = pintarResultados;
 pintarResultados = function(term){ const r=pintarResultados_PRE182(term); const panel=document.querySelector('#resultados'); if(panel) panel.scrollTop=0; return r; };
 const pintarCatalogPanel_PRE182 = (typeof pintarCatalogPanel==='function') ? pintarCatalogPanel : null;
 if(pintarCatalogPanel_PRE182){ pintarCatalogPanel=function(term){ const r=pintarCatalogPanel_PRE182(term); const items=document.querySelector('#catalogItems'); if(items) items.scrollTop=0; const card=document.querySelector('#catalogModal .modal-card'); if(card) card.scrollTop=0; return r; }; }
-document.addEventListener('DOMContentLoaded',()=>{ document.querySelectorAll('.creator').forEach(el=>{ el.textContent=`· Creado por David Corregidor · ${APP_VERSION_182}`; }); ['#btnCatalogo','#btnFamilias'].forEach(sel=>document.querySelector(sel)?.addEventListener('click',()=>setTimeout(()=>{ document.querySelectorAll('.modal-card,#catalogItems,#resultados').forEach(x=>{try{x.scrollTop=0;}catch(e){}}); },30))); });
+document.addEventListener('DOMContentLoaded',()=>{ ['#btnCatalogo','#btnFamilias'].forEach(sel=>document.querySelector(sel)?.addEventListener('click',()=>setTimeout(()=>{ document.querySelectorAll('.modal-card,#catalogItems,#resultados').forEach(x=>{try{x.scrollTop=0;}catch(e){}}); },30))); });
 
-/* =====================================================
-   PATCH v1.8.3 PRO - Familias rápidas + índice sin tocar descripciones
-   - NO sustituye descripciones existentes.
-   - Solo mejora familias, etiquetas y velocidad de búsqueda.
-   - Fuente DC / PSU / AC clasificado como Alimentación.
-   ===================================================== */
-const APP_VERSION_183 = 'v1.8.3 PRO';
 
 function ref183(p){ return String((p && p.name) || '').trim(); }
 function n183(p){ return normaliza(ref183(p)); }
@@ -3002,77 +3418,6 @@ cargarCatalogo = async function(){
   return r;
 };
 
-function scoreProducto183(p, term){
-  const q = normaliza(term).trim();
-  if(!q) return 0;
-  if(!p._search183) { p._n183 = n183(p); p._tokens183 = p._n183.split(/[^a-z0-9]+/).filter(Boolean); p._search183 = textoIndex183(p); }
-  const n = p._n183 || n183(p);
-  const search = p._search183 || '';
-  const parts = q.split(/\s+/).filter(Boolean);
-  let score = 0;
-  if(n === q) score += 100000;
-  if(n.startsWith(q)) score += 70000;
-  if(n.includes(q)) score += 52000;
-  if(search.includes(q)) score += 15000;
-  for(const part of parts){
-    if((p._tokens183||[]).includes(part)) score += 26000;
-    else if(n.includes(part)) score += 17000;
-    if(search.includes(part)) score += 6000;
-  }
-  const boost = (cond,val)=>{ if(cond) score += val; };
-  boost(['enchufe','base enchufe','toma corriente','schuko','toma'].includes(q), has183(n,'socket','outlet','outletcore') ? 70000 : 0);
-  boost(['fuente','fuente dc','alimentacion','alimentación','alimentador','dc','dc12','dc12v','dc12v2a','12v'].some(x=>q.includes(x)), has183(n,'dc12','dc1224','dc6','psu','ac220') ? 72000 : 0);
-  boost(['bateria','batería','battery','pila'].some(x=>q.includes(x)), has183(n,'battery','batt','batterybox','batterykit','hubbatt') ? 70000 : 0);
-  boost(q.includes('switch') || q === 'poe' || q.includes('switch poe'), has183(n,'sw1008poe','sw1005poe','vdms105gp','vdms108gp') ? 70000 : 0);
-  boost(q.includes('inyector') || q.includes('injector'), has183(n,'inj-poe','injector') ? 75000 : 0);
-  boost(q.includes('rack') || q.includes('armario') || q.includes('mural'), has183(n,'rack') ? 70000 : 0);
-  boost(q.includes('ip66') || q.includes('estanca'), has183(n,'ip66') ? 70000 : 0);
-  boost(q.includes('sd') || q.includes('micro sd') || q.includes('microsd') || q.includes('tarjeta'), has183(n,'hs-tf','microsd','tarjeta') ? 65000 : 0);
-  boost(q.includes('disco') || q.includes('hdd') || q.includes('almacenamiento'), /^hd\d+tb/.test(n) || has183(n,'hdd') ? 65000 : 0);
-  return score;
-}
-
-buscar = function(term){
-  const q = normaliza(term).trim();
-  if(!q) return [];
-  return productos.map((p,i)=>({p,i,score:scoreProducto183(p,q),n:p._n183 || n183(p)}))
-    .filter(x=>x.score>0)
-    .sort((a,b)=>{
-      const ae = a.n===q ? 0 : (a.n.startsWith(q)?1:(a.n.includes(q)?2:3));
-      const be = b.n===q ? 0 : (b.n.startsWith(q)?1:(b.n.includes(q)?2:3));
-      return ae-be || b.score-a.score || a.p.name.localeCompare(b.p.name,'es');
-    })
-    .slice(0,180);
-};
-buscarCatalogo = function(term=''){
-  const q = String(term||'').trim();
-  if(!q) return productos.map((p,i)=>({p,i,score:1})).sort((a,b)=>a.p.name.localeCompare(b.p.name,'es'));
-  return buscar(q);
-};
-
-// Ajustar familias rápidas sin cambiar diseño.
-try{
-  const ali = FAMILIAS_RAPIDAS.find(f=>normaliza(f.title).includes('alimentacion') || normaliza(f.title).includes('alimentación'));
-  if(ali){ ali.term = 'fuente dc bateria psu alimentacion'; ali.desc = 'Fuentes DC, PSU y baterías'; }
-  const red = FAMILIAS_RAPIDAS.find(f=>normaliza(f.title).includes('red'));
-  if(red){ red.term = 'switch poe inyector red ethernet'; red.desc = 'Switches PoE e inyectores'; }
-  const acc = FAMILIAS_RAPIDAS.find(f=>normaliza(f.title).includes('soportes') || normaliza(f.title).includes('accesorios'));
-  if(acc){ acc.term = 'soporte bracket holder mount junctionbox ip66 caja'; acc.desc = 'Soportes, cajas y montaje'; }
-}catch(e){}
-
-document.addEventListener('DOMContentLoaded',()=>{
-  document.querySelectorAll('.creator').forEach(el=>{ el.textContent = `· Creado por David Corregidor · ${APP_VERSION_183}`; });
-});
-
-/* =====================================================
-   PATCH v1.8.6 PRO - Marca como conocimiento SIN tocar descripciones AJAX
-   Objetivo:
-   - Si brand/marca == AJAX: comportamiento anterior intacto.
-   - Si brand/marca != AJAX: usar ese texto como conocimiento de búsqueda,
-     descripción y clasificación SOLO para productos nuevos/no AJAX.
-   - No sustituye las descripciones PRO existentes de AJAX_KNOWLEDGE.
-   ===================================================== */
-const APP_VERSION_186 = 'v1.8.6 PRO';
 
 function brandInfo186(p){
   const b = String((p && p.brand) || '').trim();
@@ -3084,7 +3429,6 @@ function brandInfo186(p){
   return b;
 }
 function rawText186(p){ return [String((p&&p.name)||''), String((p&&p.brand)||'')].join(' '); }
-function nText186(p){ return normaliza(rawText186(p)); }
 function has186(txt,...keys){ return keys.some(k => txt.includes(normaliza(k))); }
 
 function metaMarca186(p){
@@ -3186,144 +3530,6 @@ cargarCatalogo = async function(){
   construirIndice186();
   return r;
 };
-
-const scoreProducto_PRE186 = (typeof scoreProducto183 === 'function') ? scoreProducto183 : scoreProducto;
-function scoreProducto186(p, term){
-  const q = normaliza(term).trim();
-  if(!q) return 0;
-  if(!p._search186){ p._n186 = normaliza(String((p&&p.name)||'')); p._tokens186 = p._n186.split(/[^a-z0-9]+/).filter(Boolean); p._search186 = textoIndex186(p); }
-  const n = p._n186 || '';
-  const search = p._search186 || '';
-  const parts = q.split(/\s+/).filter(Boolean);
-  let score = 0;
-  try{ score += Math.max(0, scoreProducto_PRE186(p,q)); }catch(e){}
-  if(n === q) score += 130000;
-  if(n.startsWith(q)) score += 90000;
-  if(n.includes(q)) score += 70000;
-  if(search.includes(q)) score += 28000;
-  for(const part of parts){
-    if((p._tokens186||[]).includes(part)) score += 42000;
-    else if(n.includes(part)) score += 26000;
-    if(search.includes(part)) score += 12000;
-  }
-  const boost=(cond,val)=>{ if(cond) score+=val; };
-  boost(['enchufe','base enchufe','toma corriente','schuko','toma'].includes(q), has186(nText186(p),'socket','outlet','outletcore') ? 90000 : 0);
-  boost(q.includes('fuente') || q.includes('alimentacion') || q.includes('alimentación') || q.includes('dc12') || q.includes('12v'), has186(nText186(p),'dc12','dc1224','dc6','psu','ac220','fuente dc') ? 95000 : 0);
-  boost(q.includes('switch') || q === 'poe' || q.includes('switch poe'), has186(nText186(p),'sw1008','sw1005','vdms105','vdms108','switch poe') ? 90000 : 0);
-  boost(q.includes('inyector') || q.includes('injector'), has186(nText186(p),'inj-poe','injector poe','inyector poe') ? 90000 : 0);
-  boost(q.includes('rack') || q.includes('armario') || q.includes('mural'), has186(nText186(p),'rack') ? 90000 : 0);
-  boost(q.includes('ip66') || q.includes('estanca'), has186(nText186(p),'ip66') ? 90000 : 0);
-  boost(q.includes('sd') || q.includes('microsd') || q.includes('micro sd') || q.includes('tarjeta'), has186(nText186(p),'hs-tf','microsd','tarjeta sd') ? 82000 : 0);
-  boost(q.includes('disco') || q.includes('hdd') || q.includes('almacenamiento'), /^hd\d+tb/.test(n) || has186(nText186(p),'hdd','disco duro') ? 82000 : 0);
-  return score;
-}
-buscar = function(term){
-  const q = normaliza(term).trim();
-  if(!q) return [];
-  return productos.map((p,i)=>({p,i,score:scoreProducto186(p,q),n:p._n186 || normaliza(String((p&&p.name)||''))}))
-    .filter(x=>x.score>0)
-    .sort((a,b)=>{
-      const ae = a.n===q ? 0 : (a.n.startsWith(q)?1:(a.n.includes(q)?2:3));
-      const be = b.n===q ? 0 : (b.n.startsWith(q)?1:(b.n.includes(q)?2:3));
-      return ae-be || b.score-a.score || a.p.name.localeCompare(b.p.name,'es');
-    })
-    .slice(0,180);
-};
-buscarCatalogo = function(term=''){
-  const q = String(term||'').trim();
-  if(!q) return productos.map((p,i)=>({p,i,score:1})).sort((a,b)=>a.p.name.localeCompare(b.p.name,'es'));
-  return buscar(q);
-};
-
-// Familias rápidas: ampliar términos sin tocar las existentes.
-try{
-  if(typeof FAMILIAS_RAPIDAS !== 'undefined'){
-    const ali = FAMILIAS_RAPIDAS.find(f=>normaliza(f.title).includes('alimentacion') || normaliza(f.title).includes('alimentación') || normaliza(f.title).includes('bateria'));
-    if(ali){ ali.term = 'fuente dc dc12v psu ac220 bateria battery alimentacion 12v'; ali.desc = 'Fuentes DC, PSU y baterías'; }
-    const red = FAMILIAS_RAPIDAS.find(f=>normaliza(f.title).includes('red') || normaliza(f.title).includes('poe'));
-    if(red){ red.term = 'switch poe inyector poe injector poe red ethernet'; red.desc = 'Switches PoE e inyectores'; }
-  }
-}catch(e){}
-
-document.addEventListener('DOMContentLoaded',()=>{
-  try{ document.querySelectorAll('.creator').forEach(el=>{ el.textContent = `· Creado por David Corregidor · ${APP_VERSION_186}`; }); }catch(e){}
-});
-
-
-/* =====================================================
-   PATCH v1.8.7 PRO - Búsqueda limpia WiFi / LTE / 4G / Hub Plus
-   - wifi / wi-fi / wi fi => SOLO AJ-HUB2PLUS.
-   - hubplus / hub plus / hub 2 plus => SOLO AJ-HUB2PLUS.
-   - lte se trata igual que 4g.
-   - 4g/lte evita falsos positivos tipo 64G, baterías o accesorios.
-   - Mantiene CSV como fuente principal para el resto de búsquedas.
-   ===================================================== */
-const APP_VERSION_187 = 'v1.8.7 PRO';
-
-function q187(term){
-  const q = normaliza(term).trim();
-  if(q === 'wi fi' || q === 'wi-fi') return 'wifi';
-  if(q === 'lte') return '4g';
-  if(q === 'hubplus' || q === 'hub plus' || q === 'hub 2 plus' || q === 'hub2 plus') return 'hub2plus';
-  return q;
-}
-function n187(p){ return normaliza(String((p && p.name) || '')); }
-function isHub2Plus187(p){
-  const n = n187(p);
-  return n === 'aj-hub2plus-b' || n === 'aj-hub2plus-w';
-}
-function isHub4G187(p){
-  const n = n187(p);
-  // Centrales/kits con comunicación LTE/4G real. Evita tarjetas 64G, baterías y soportes.
-  if(n.includes('hubbatt') || n.includes('battery') || n.includes('batt') || n.includes('bracket') || n.includes('repairkit')) return false;
-  if(n.includes('hub2-4g') || n.includes('hub2kit4g')) return true;
-  if(n.includes('hub2plus') || n.includes('hubbp')) return true;
-  if(n.includes('starterkit') && n.includes('4g')) return true;
-  return false;
-}
-function specialResults187(term){
-  const q = q187(term);
-  if(q === 'wifi' || q === 'hub2plus'){
-    return productos
-      .map((p,i)=>({p,i,score:isHub2Plus187(p) ? 1000000 : 0,n:n187(p)}))
-      .filter(x=>x.score>0)
-      .sort((a,b)=>a.p.name.localeCompare(b.p.name,'es'));
-  }
-  if(q === '4g'){
-    return productos
-      .map((p,i)=>({p,i,score:isHub4G187(p) ? 900000 + (isHub2Plus187(p) ? 50000 : 0) : 0,n:n187(p)}))
-      .filter(x=>x.score>0)
-      .sort((a,b)=>b.score-a.score || a.p.name.localeCompare(b.p.name,'es'));
-  }
-  return null;
-}
-
-const buscar_PRE187 = buscar;
-buscar = function(term){
-  const forced = specialResults187(term);
-  if(forced) return forced.slice(0, 40);
-  return buscar_PRE187(term);
-};
-
-const buscarCatalogo_PRE187 = buscarCatalogo;
-buscarCatalogo = function(term=''){
-  const forced = specialResults187(term);
-  if(forced) return forced.slice(0, 40);
-  return buscarCatalogo_PRE187(term);
-};
-
-document.addEventListener('DOMContentLoaded',()=>{
-  try{ document.querySelectorAll('.creator').forEach(el=>{ el.textContent = `· Creado por David Corregidor · ${APP_VERSION_187}`; }); }catch(e){}
-});
-
-/* =====================================================
-   PATCH v1.8.8 PRO - Descripciones precisas para KIT Ajax
-   - Las referencias AJ-HUB2KIT... dejan de describirse como "kit básico".
-   - Interpreta HUB2 / 4G / MP / DP / PHOD / PRO / color.
-   - Ajusta búsqueda para que "kit", "kit alarma", "kit 4g" y variantes prioricen kits reales.
-   ===================================================== */
-const APP_VERSION_188 = 'v1.8.8 PRO';
-
 function ref188(p){ return String((p && p.name) || '').trim(); }
 function n188(p){ return normaliza(ref188(p)); }
 function isAjaxKit188(p){
@@ -3373,83 +3579,6 @@ descripcionProducto = function(p){
   if(k) return k;
   return descripcionProducto_PRE188(p);
 };
-
-const scoreProducto_PRE188 = (typeof scoreProducto186 === 'function') ? scoreProducto186 : scoreProducto;
-function scoreProducto188(p, term){
-  const q = q187 ? q187(term) : normaliza(term).trim();
-  if(!q) return 0;
-  const n = n188(p);
-  const isKit = isAjaxKit188(p);
-  let score = 0;
-  try{ score += Math.max(0, scoreProducto_PRE188(p, q)); }catch(e){}
-
-  // Intención clara de kit: prioriza kits reales y baja centrales sueltas.
-  const wantsKit = q === 'kit' || q.includes('kit ') || q.includes(' kit') || q.includes('kit alarma') || q.includes('kit ajax') || q.includes('starter') || q.includes('pack alarma');
-  if(wantsKit){
-    score += isKit ? 350000 : -80000;
-    if(isKit && q.includes('4g')) score += n.includes('kit4g') ? 160000 : -50000;
-    if(isKit && (q.includes('motion') || q.includes('mp'))) score += /(^|-)mp($|-)/.test(n) ? 90000 : 0;
-    if(isKit && (q.includes('door') || q.includes('dp') || q.includes('puerta'))) score += /(^|-)dp($|-)/.test(n) ? 90000 : 0;
-    if(isKit && (q.includes('phod') || q.includes('foto') || q.includes('photo'))) score += /(^|-)phod($|-)/.test(n) ? 90000 : 0;
-    if(isKit && (q.includes('pro') || q.includes('professional'))) score += /(^|-)pro($|-)/.test(n) ? 70000 : 0;
-  }
-
-  // Consulta "hub 4g" o "central 4g": primero centrales, después kits.
-  const wantsHub4g = (q.includes('hub') || q.includes('central')) && q.includes('4g');
-  if(wantsHub4g && isKit) score -= 60000;
-
-  // Búsqueda por la propia referencia del kit.
-  if(isKit && n.includes(q)) score += 240000;
-
-  return score;
-}
-
-function ordenar188(arr, q){
-  return arr.filter(x=>x.score>0).sort((a,b)=>{
-    const an = n188(a.p), bn = n188(b.p);
-    const ak = isAjaxKit188(a.p), bk = isAjaxKit188(b.p);
-    const wantsKit = q === 'kit' || q.includes('kit ') || q.includes(' kit') || q.includes('kit alarma') || q.includes('kit ajax') || q.includes('starter') || q.includes('pack alarma');
-    if(wantsKit && ak !== bk) return ak ? -1 : 1;
-    const ae = an===q ? 0 : (an.startsWith(q)?1:(an.includes(q)?2:3));
-    const be = bn===q ? 0 : (bn.startsWith(q)?1:(bn.includes(q)?2:3));
-    return ae-be || b.score-a.score || a.p.name.localeCompare(b.p.name,'es');
-  });
-}
-
-const buscar_PRE188 = buscar;
-buscar = function(term){
-  const q = q187 ? q187(term) : normaliza(term).trim();
-  if(!q) return [];
-  const wantsKit = q === 'kit' || q.includes('kit ') || q.includes(' kit') || q.includes('kit alarma') || q.includes('kit ajax') || q.includes('starter') || q.includes('pack alarma');
-  if(wantsKit){
-    return ordenar188(productos.map((p,i)=>({p,i,score:scoreProducto188(p,q)})), q).slice(0,80);
-  }
-  return buscar_PRE188(term);
-};
-
-const buscarCatalogo_PRE188 = buscarCatalogo;
-buscarCatalogo = function(term=''){
-  const q = q187 ? q187(term) : normaliza(term).trim();
-  if(!q) return productos.map((p,i)=>({p,i,score:1})).sort((a,b)=>a.p.name.localeCompare(b.p.name,'es'));
-  const wantsKit = q === 'kit' || q.includes('kit ') || q.includes(' kit') || q.includes('kit alarma') || q.includes('kit ajax') || q.includes('starter') || q.includes('pack alarma');
-  if(wantsKit){
-    return ordenar188(productos.map((p,i)=>({p,i,score:scoreProducto188(p,q)})), q).slice(0,120);
-  }
-  return buscarCatalogo_PRE188(term);
-};
-
-document.addEventListener('DOMContentLoaded',()=>{
-  try{ document.querySelectorAll('.creator').forEach(el=>{ el.textContent = `· Creado por David Corregidor · ${APP_VERSION_188}`; }); }catch(e){}
-});
-
-/* =====================================================
-   PATCH v1.8.9 PRO - NVR canales precisos
-   - Corrige referencias Ajax NVR 108/208 = 8 canales.
-   - 116/216 = 16 canales, 232 = 32 canales.
-   - Evita deducir canales por coincidencias falsas dentro del código.
-   ===================================================== */
-const APP_VERSION_189 = 'v1.8.9 PRO';
-
 function ref189(p){ return String((p && p.name) || '').trim(); }
 function n189(p){ return normaliza(ref189(p)); }
 function isNvrAjax189(p){
@@ -3507,40 +3636,6 @@ descripcionProducto = function(p){
   if(nvr) return nvr;
   return descripcionProducto_PRE189(p);
 };
-
-const scoreProducto_PRE189 = scoreProducto;
-scoreProducto = function(p, term){
-  const q = q187 ? q187(term) : normaliza(term).trim();
-  if(!q) return 0;
-  let score = 0;
-  try{ score += Math.max(0, scoreProducto_PRE189(p, q)); }catch(e){}
-  if(isNvrAjax189(p)){
-    const ch = nvrChannels189(p);
-    const poe = nvrPoePorts189(p);
-    if(q.includes('nvr') || q.includes('grabador') || q.includes('videograbador')) score += 120000;
-    if(ch && (q.includes(`${ch} canales`) || q.includes(`${ch} canal`) || q.includes(`${ch}ch`))) score += 160000;
-    if(q.includes('8 canales') || q.includes('8ch') || q.includes('ocho canales')) score += ch === 8 ? 180000 : -90000;
-    if(q.includes('16 canales') || q.includes('16ch') || q.includes('dieciseis') || q.includes('dieciséis')) score += ch === 16 ? 180000 : -90000;
-    if(q.includes('32 canales') || q.includes('32ch')) score += ch === 32 ? 180000 : -90000;
-    if(q.includes('poe')) score += poe ? 120000 : -30000;
-    if(q.includes('hdmi')) score += (n189(p).includes('hac') || n189(p).includes('hdc')) ? 90000 : 0;
-    if(q.includes('ia') || q.includes('ai')) score += n189(p).includes('ai') ? 90000 : 0;
-  }
-  return score;
-};
-
-document.addEventListener('DOMContentLoaded',()=>{
-  try{ document.querySelectorAll('.creator').forEach(el=>{ el.textContent = `· Creado por David Corregidor · ${APP_VERSION_189}`; }); }catch(e){}
-});
-
-/* =====================================================
-   PATCH v1.9.0 PRO - CurtainProtect / detectores cortina
-   - Corrige CurtainProtect, CurtainOutdoor, DualCurtainOutdoor y CurtainCamOutdoor.
-   - Nunca los clasifica como puerta/ventana.
-   - Añade búsqueda precisa para "cortina", "curtain", "perimetral".
-   ===================================================== */
-const APP_VERSION_190 = 'v1.9.0 PRO';
-
 function ref190(p){ return String((p && p.name) || '').trim(); }
 function n190(p){ return normaliza(ref190(p)); }
 function color190(n){
@@ -3633,70 +3728,6 @@ descripcionProducto = function(p){
   if(door) return door;
   return descripcionProducto_PRE190(p);
 };
-
-const scoreProducto_PRE190 = scoreProducto;
-scoreProducto = function(p, term){
-  const q = q187 ? q187(term) : normaliza(term).trim();
-  if(!q) return 0;
-  let score = 0;
-  try{ score += Math.max(0, scoreProducto_PRE190(p, q)); }catch(e){}
-  const isCurtain = isCurtainAjax190(p);
-  const isDoor = isDoorAjax190(p);
-  const n = n190(p);
-
-  const wantsCurtain = q.includes('curtain') || q.includes('cortina') || q.includes('barrera cortina') || q.includes('tipo cortina');
-  if(wantsCurtain){
-    score += isCurtain ? 260000 : -120000;
-    if(isCurtain && n.includes(q.replace(/\s+/g,''))) score += 90000;
-    if(isCurtain && q.includes('outdoor')) score += n.includes('outdoor') ? 80000 : -30000;
-    if(isCurtain && (q.includes('exterior') || q.includes('perimetral'))) score += n.includes('outdoor') || n.includes('dualcurtain') || n.includes('curtaincamoutdoor') ? 70000 : 10000;
-    if(isCurtain && (q.includes('cam') || q.includes('camara') || q.includes('cámara') || q.includes('phod') || q.includes('foto'))) score += n.includes('cam') || n.includes('phod') ? 80000 : -20000;
-  }
-
-  const wantsDoorWindow = q.includes('doorprotect') || q.includes('puerta') || q.includes('ventana') || q.includes('apertura') || q.includes('magnetico') || q.includes('magnético');
-  if(wantsDoorWindow){
-    if(isCurtain) score -= 220000; // evita que Curtain salga como puerta/ventana
-    if(isDoor) score += 180000;
-  }
-
-  return score;
-};
-
-function specialResults190(term){
-  const q = q187 ? q187(term) : normaliza(term).trim();
-  const wantsCurtain = q && (q.includes('curtain') || q.includes('cortina') || q.includes('barrera cortina') || q.includes('tipo cortina'));
-  if(!wantsCurtain) return null;
-  return productos
-    .map((p,i)=>({p,i,score:scoreProducto(p,q)}))
-    .filter(x=>x.score>0 && isCurtainAjax190(x.p))
-    .sort((a,b)=>b.score-a.score || a.p.name.localeCompare(b.p.name,'es'));
-}
-
-const buscar_PRE190 = buscar;
-buscar = function(term){
-  const forced = specialResults190(term);
-  if(forced) return forced.slice(0,80);
-  return buscar_PRE190(term);
-};
-
-const buscarCatalogo_PRE190 = buscarCatalogo;
-buscarCatalogo = function(term=''){
-  const forced = specialResults190(term);
-  if(forced) return forced.slice(0,120);
-  return buscarCatalogo_PRE190(term);
-};
-
-document.addEventListener('DOMContentLoaded',()=>{
-  try{ document.querySelectorAll('.creator').forEach(el=>{ el.textContent = `· Creado por David Corregidor · ${APP_VERSION_190}`; }); }catch(e){}
-});
-
-/* =====================================================
-   PATCH v1.9.1 PRO - Descripciones Ajax afinadas desde catálogo oficial pegado
-   - Usa textos reales del catálogo pegado por David para familias nuevas.
-   - Corrige cámaras, timbre, teclados, incendio, NVR, relés, enchufes, LifeQuality, WaterStop, módulos.
-   - Mantiene prioridad de parches anteriores: kits, NVR canales y Curtain.
-   ===================================================== */
-const APP_VERSION_191 = 'v1.9.1 PRO';
 function ref191(p){ return String((p && p.name) || '').trim(); }
 function n191(p){ return normaliza(ref191(p)); }
 function color191(n){
@@ -3849,35 +3880,6 @@ descripcionProducto = function(p){
   const m = preciseDesc191(p); if(m) return m;
   return descripcionProducto_PRE191(p);
 };
-const scoreProducto_PRE191 = scoreProducto;
-scoreProducto = function(p,term){
-  const q = q187 ? q187(term) : normaliza(term).trim();
-  let score = 0;
-  try{ score += Math.max(0, scoreProducto_PRE191(p,q)); }catch(e){}
-  const m = preciseDesc191(p);
-  if(m && q){
-    const hay = normaliza([m.desc,m.family,m.official,(m.tags||[]).join(' '),ref191(p)].join(' '));
-    for(const t of q.split(/\s+/).filter(Boolean)){ if(hay.includes(t)) score += 8000; }
-    if(q.includes('curtain') || q.includes('cortina')){ if(n191(p).includes('curtain')) score += 240000; }
-    if(q.includes('wifi') || q.includes('wi fi')){ if(n191(p).includes('indoorcam') || n191(p).includes('hub2plus')) score += 120000; }
-    if(q.includes('teclado') || q.includes('keypad')){ if(n191(p).includes('keypad')) score += 100000; }
-    if(q.includes('incendio') || q.includes('humo') || q.includes('co') || q.includes('calor')){ if(n191(p).includes('fireprotect')) score += 100000; }
-    if(q.includes('camara') || q.includes('cámara') || q.includes('camera')){ if(isCamera191(n191(p))) score += 100000; }
-  }
-  return score;
-};
-document.addEventListener('DOMContentLoaded',()=>{
-  try{ document.querySelectorAll('.creator').forEach(el=>{ el.textContent = `· Creado por David Corregidor · ${APP_VERSION_191}`; }); }catch(e){}
-});
-
-/* =====================================================
-   PATCH v1.9.2 PRO - Familias Ajax estables
-   - Añade una capa de familias/categorías sin reescribir la app.
-   - Corrige Dummy como carcasas/maquetas, no dispositivos reales.
-   - Refuerza Curtain como familia propia.
-   - Potencia intrusión, sirenas, mandos, botones, carcasas y accesorios.
-   ===================================================== */
-const APP_VERSION_192 = 'v1.9.2 PRO';
 function ref192(p){ return String((p && p.name) || '').trim(); }
 function n192(p){ return normaliza(ref192(p)); }
 function color192(n){
@@ -3990,144 +3992,7 @@ descripcionProducto = function(p){
   const m=familyDesc192(p); if(m) return m;
   return descripcionProducto_PRE192(p);
 };
-const scoreProducto_PRE192 = scoreProducto;
-scoreProducto = function(p,term){
-  const q = q187 ? q187(term) : normaliza(term).trim();
-  let score=0;
-  try{ score += Math.max(0, scoreProducto_PRE192(p,q)); }catch(e){}
-  const n=n192(p), m=familyDesc192(p);
-  if(!q) return score;
-  if(m){
-    const hay=normaliza([m.official,m.family,m.desc,(m.tags||[]).join(' '),ref192(p)].join(' '));
-    q.split(/\s+/).filter(Boolean).forEach(t=>{ if(hay.includes(t)) score += 9000; });
-  }
-  const wantsDummy = q.includes('dummy') || q.includes('maqueta') || q.includes('carcasa') || q.includes('demo');
-  if(wantsDummy){ score += isDummy192(n) ? 260000 : -50000; }
-  else if(isDummy192(n) && (q.includes('detector') || q.includes('sirena') || q.includes('hub') || q.includes('teclado') || q.includes('motion') || q.includes('door') || q.includes('curtain'))){
-    score -= 140000; // no mezclar maquetas con producto real salvo búsqueda explícita
-  }
-  if(q.includes('cortina') || q.includes('curtain')) score += n.includes('curtain') ? 250000 : -60000;
-  if(q.includes('sirena') || q.includes('siren')) score += (n.includes('homesiren') || n.includes('streetsiren')) ? 170000 : 0;
-  if(q.includes('mando') || q.includes('spacecontrol') || q.includes('llavero')) score += n.includes('spacecontrol') ? 170000 : 0;
-  if(q.includes('pulsador') || q.includes('panico') || q.includes('pánico')) score += (n.includes('button') || n.includes('manualcallpoint')) ? 150000 : 0;
-  if(q.includes('detector') && (q.includes('movimiento') || q.includes('pir') || q.includes('volumetrico') || q.includes('volumétrico'))) score += (n.includes('motionprotect') || n.includes('motioncam') || n.includes('outdoorprotect') || n.includes('curtain')) ? 120000 : 0;
-  return score;
-};
-
-document.addEventListener('DOMContentLoaded',()=>{
-  try{ document.querySelectorAll('.creator').forEach(el=>{ el.textContent = `· Creado por David Corregidor · ${APP_VERSION_192}`; }); }catch(e){}
-});
-
-/* =====================================================
-   PATCH v1.9.3 LIGERO - Domo/Turret + A-Z catálogo
-   Base conservadora sobre el código que mejor funcionaba.
-   - No reescribe la app ni el PDF.
-   - Domo encuentra DomeCam + TurretCam sin tocar domótica.
-   - Turret encuentra solo TurretCam.
-   - Bullet/Bala encuentra solo BulletCam.
-   - Añade filtro A-Z en catálogo; en referencias AJ- usa la letra tras AJ-.
-   ===================================================== */
-const APP_VERSION_193 = 'v1.9.3 PRO';
 let catalogLetter193 = '';
-
-function norm193(s){
-  return normaliza(String(s || '')).replace(/[^a-z0-9]+/g, ' ').trim();
-}
-function tokens193(s){
-  return norm193(s).split(/\s+/).filter(Boolean);
-}
-function ref193(p){ return String((p && p.name) || '').trim(); }
-function n193(p){ return norm193(ref193(p)); }
-function hasTok193(term, word){ return tokens193(term).includes(word); }
-function isAjaxRef193(name){ return /^AJ-/i.test(String(name || '').trim()); }
-function catalogLetterOf193(p){
-  let r = ref193(p).toUpperCase().trim();
-  if(r.startsWith('AJ-')) r = r.slice(3);
-  const m = r.match(/[A-ZÑ]/);
-  return m ? m[0] : '#';
-}
-function setCatalogLetter193(letter){
-  catalogLetter193 = letter || '';
-  document.querySelectorAll('.az-chip').forEach(b => b.classList.toggle('active', b.dataset.letter === catalogLetter193));
-  pintarCatalogPanel($('#catalogFilter')?.value || catalogTerm || '');
-}
-function ensureAlphabet193(){
-  const modal = $('#catalogModal');
-  const row = modal ? modal.querySelector('.modal-search-row') : null;
-  if(!row || document.getElementById('catalogAZ')) return;
-  const az = document.createElement('div');
-  az.id = 'catalogAZ';
-  az.className = 'catalog-az';
-  const letters = ['','A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z','#'];
-  az.innerHTML = letters.map(l => `<button type="button" class="az-chip${l===''?' active':''}" data-letter="${l}">${l || 'Todos'}</button>`).join('');
-  row.insertAdjacentElement('afterend', az);
-  az.addEventListener('click', e => {
-    const btn = e.target.closest('.az-chip');
-    if(!btn) return;
-    setCatalogLetter193(btn.dataset.letter || '');
-  });
-}
-
-const buscar_PRE193 = buscar;
-function busquedaIntencion193(term){
-  const tks = tokens193(term);
-  const exact = (w) => tks.includes(w);
-  let predicate = null;
-  let strong = false;
-
-  // Coincidencias por palabra completa para evitar domo dentro de domótica.
-  if(exact('domo') || exact('dome')){
-    predicate = p => { const n=n193(p); return n.includes('domecam') || n.includes('turretcam'); };
-    strong = true;
-  }else if(exact('turret')){
-    predicate = p => n193(p).includes('turretcam');
-    strong = true;
-  }else if(exact('bullet') || exact('bala')){
-    predicate = p => n193(p).includes('bulletcam');
-    strong = true;
-  }else if(exact('street')){
-    predicate = p => n193(p).includes('streetsiren');
-    strong = true;
-  }else if(exact('homesiren')){
-    predicate = p => n193(p).includes('homesiren');
-    strong = true;
-  }else if(exact('fotosensor') || (exact('foto') && exact('detector')) || exact('fotodetector') || exact('fotoverificacion') || exact('fotoverificacion') || exact('phod')){
-    predicate = p => { const n=n193(p); return n.includes('motioncam') || n.includes('curtaincam') || n.includes('phod'); };
-    strong = true;
-  }
-
-  if(!predicate) return null;
-  const rows = productos
-    .map((p,i)=>({p,i,score:scoreProducto(p, term)}))
-    .filter(x => predicate(x.p))
-    .map(x => ({...x, score: Math.max(x.score, 1000000)}))
-    .sort((a,b)=>b.score-a.score || a.p.name.localeCompare(b.p.name,'es'));
-  return strong ? rows : null;
-}
-
-buscar = function(term){
-  const q = String(term || '').trim();
-  if(!q) return [];
-  const forced = busquedaIntencion193(q);
-  if(forced) return forced.slice(0,300);
-  return buscar_PRE193(q);
-};
-
-buscarCatalogo = function(term=''){
-  const q = String(term || '').trim();
-  let lista;
-  if(q){
-    const forced = busquedaIntencion193(q);
-    lista = forced || buscar(q);
-  }else{
-    lista = productos.map((p,i)=>({p,i,score:1})).sort((a,b)=>a.p.name.localeCompare(b.p.name,'es'));
-  }
-  if(catalogLetter193){
-    lista = lista.filter(x => catalogLetterOf193(x.p) === catalogLetter193);
-  }
-  return lista;
-};
-
 const pintarCatalogPanel_PRE193 = pintarCatalogPanel;
 pintarCatalogPanel = function(term=catalogTerm){
   ensureAlphabet193();
@@ -4135,26 +4000,6 @@ pintarCatalogPanel = function(term=catalogTerm){
 };
 
 // Pequeños refuerzos de puntuación sin filtrar de forma agresiva.
-const scoreProducto_PRE193 = scoreProducto;
-scoreProducto = function(p, term){
-  let score = 0;
-  try{ score = scoreProducto_PRE193(p, term); }catch(e){}
-  const q = norm193(term), n = n193(p);
-  if(!q) return score;
-  const tks = tokens193(q);
-  if(tks.includes('domo') || tks.includes('dome')){
-    if(n.includes('domecam')) score += 250000;
-    if(n.includes('turretcam')) score += 180000;
-    if(n.includes('domotica')) score -= 500000;
-  }
-  if(tks.includes('turret')) score += n.includes('turretcam') ? 260000 : -100000;
-  if(tks.includes('bullet') || tks.includes('bala')) score += n.includes('bulletcam') ? 260000 : -100000;
-  if(tks.includes('street')) score += n.includes('streetsiren') ? 260000 : -120000;
-  if(tks.includes('homesiren')) score += n.includes('homesiren') ? 260000 : -120000;
-  if(tks.includes('fotosensor') || tks.includes('fotodetector') || (tks.includes('foto') && tks.includes('detector'))) score += (n.includes('motioncam') || n.includes('curtaincam') || n.includes('phod')) ? 240000 : -80000;
-  return score;
-};
-
 // Reinicia A-Z al abrir catálogo desde botón para que no parezca que faltan productos.
 const abrirCatalogo_PRE193 = typeof abrirCatalogo === 'function' ? abrirCatalogo : null;
 if(abrirCatalogo_PRE193){
@@ -4169,90 +4014,17 @@ if(abrirCatalogo_PRE193){
 document.addEventListener('DOMContentLoaded',()=>{
   try{
     ensureAlphabet193();
-    document.querySelectorAll('.creator').forEach(el=>{ el.textContent = `· Creado por David Corregidor · ${APP_VERSION_193}`; });
   }catch(e){}
 });
-
-
-/* =====================================================
-   PATCH v1.9.4 PRO - Ajustes seguros + búsqueda más ágil
-   Base: v1.9.3 PRO.
-   - Mantiene A-Z, domo/turret/bullet/street.
-   - Tienda sin seleccionar por defecto se aplica desde HTML.
-   - Cache de búsquedas para evitar recalcular dos veces.
-   - Resolver de búsqueda con pequeño debounce conservador.
-   ===================================================== */
-const APP_VERSION_194 = 'v1.9.4 PRO';
-const SEARCH_CACHE_194 = new Map();
-const CATALOG_CACHE_194 = new Map();
-function key194(term){ return norm193(String(term || '')).slice(0, 120); }
-
-const buscar_BASE194 = buscar;
-buscar = function(term){
-  const raw = String(term || '');
-  if(!raw.trim()) return [];
-  const k = key194(raw) + '|' + (productos ? productos.length : 0);
-  if(SEARCH_CACHE_194.has(k)) return SEARCH_CACHE_194.get(k);
-  const out = buscar_BASE194(raw);
-  if(SEARCH_CACHE_194.size > 120) SEARCH_CACHE_194.clear();
-  SEARCH_CACHE_194.set(k, out);
-  return out;
-};
-
-const buscarCatalogo_BASE194 = buscarCatalogo;
-buscarCatalogo = function(term=''){
-  const raw = String(term || '');
-  const k = key194(raw) + '|' + (catalogLetter193 || '') + '|' + (productos ? productos.length : 0);
-  if(CATALOG_CACHE_194.has(k)) return CATALOG_CACHE_194.get(k);
-  const out = buscarCatalogo_BASE194(raw);
-  if(CATALOG_CACHE_194.size > 80) CATALOG_CACHE_194.clear();
-  CATALOG_CACHE_194.set(k, out);
-  return out;
-};
-
 const resolverDesdeInput_BASE194 = resolverDesdeInput;
 let searchTimer194 = null;
-resolverDesdeInput = function(){
-  clearTimeout(searchTimer194);
-  const input = $('#buscador');
-  const term = input ? input.value : '';
-  seleccionado = null;
-  seleccionadoRef = '';
-  seleccionadoPvp = null;
-  const sel = $('#producto'); if(sel) sel.value = '';
-  searchTimer194 = setTimeout(()=>{
-    pintarResultados(term);
-    const best = buscar(term)[0];
-    if(best){
-      const d = descripcionProducto(best.p);
-      $('#previewProducto').innerHTML = `<b>${escapeHtml(d.icon)} ${escapeHtml(best.p.name)}</b> · ${escapeHtml(d.desc)} · ${fmt.format(best.p.pvp)}`;
-    }else{
-      $('#previewProducto').textContent='Selecciona un producto para ver su precio.';
-    }
-  }, 55);
-};
 
 // Limpia caches al recargar catálogo y mantiene versión visible simple.
 const cargarCatalogo_BASE194 = cargarCatalogo;
 cargarCatalogo = async function(){
-  SEARCH_CACHE_194.clear();
-  CATALOG_CACHE_194.clear();
   return cargarCatalogo_BASE194.apply(this, arguments);
 };
 
-document.addEventListener('DOMContentLoaded',()=>{
-  try{
-    document.querySelectorAll('.creator').forEach(el=>{ el.textContent = `· Creado por David Corregidor · ${APP_VERSION_194}`; });
-  }catch(e){}
-});
-
-/* =====================================================
-   PATCH v1.9.6 PRO - Numeración de presupuestos segura
-   - No sobrescribe un presupuesto guardado por reutilizar el mismo número.
-   - Al guardar uno nuevo, si el número ya existe, asigna automáticamente el siguiente.
-   - Al recuperar un presupuesto y guardar, sí actualiza ese mismo presupuesto.
-   ===================================================== */
-const APP_VERSION_196 = 'v1.9.6 PRO';
 
 function parseNumeroHA196(num){
   const m = String(num || '').trim().match(/^HA-(\d{4})-(\d+)$/i);
@@ -4367,47 +4139,11 @@ duplicarPresupuesto = function(){
 
 document.addEventListener('DOMContentLoaded',()=>{
   try{
-    document.querySelectorAll('.creator').forEach(el=>{ el.textContent = `· Creado por David Corregidor · ${APP_VERSION_196}`; });
     const num = $('#numero');
     if(num && !String(num.value || '').trim()) num.value = siguienteNumero(true);
   }catch(e){}
 });
 
-/* =====================================================
-   PATCH v1.9.7 PRO - Búsqueda exterior = Outdoor
-   - Cambio pequeño y seguro sobre v1.9.6.
-   - Si se escribe exterior/intemperie/perimetral, prioriza referencias Outdoor.
-   ===================================================== */
-const APP_VERSION_197 = 'v1.9.7 PRO';
-
-const busquedaForzada_BASE197 = busquedaForzada;
-busquedaForzada = function(term){
-  const t = normaliza(term).trim();
-  if(['exterior','exteriores','outdoor','intemperie','perimetral'].includes(t)){
-    return productos
-      .map((p,i)=>({p,i,n:normaliza(p.name)}))
-      .filter(x => x.n.includes('outdoor'))
-      .map(x=>({p:x.p,i:x.i,score:9999}))
-      .sort((a,b)=>a.p.name.localeCompare(b.p.name,'es'));
-  }
-  return busquedaForzada_BASE197.apply(this, arguments);
-};
-
-document.addEventListener('DOMContentLoaded',()=>{
-  try{
-    document.querySelectorAll('.creator').forEach(el=>{ el.textContent = `· Creado por David Corregidor · ${APP_VERSION_197}`; });
-  }catch(e){}
-});
-
-/* =====================================================
-   PATCH v1.9.8 PRO - Cámaras + búsqueda presupuestos
-   - Bullet/Dome/Turret: lente 4 mm si referencia contiene 0400.
-   - Bullet/Dome/Turret: lente fija 2,8 mm si no contiene 0400 ni VF/HLVF.
-   - VF/HLVF: objetivo varifocal 2,8–12 mm.
-   - Buscador de presupuestos guardados por nº, cliente, fecha, tienda o estado.
-   - Pequeños alias seguros para cámaras: 4mm, 2.8, varifocal, vf.
-   ===================================================== */
-const APP_VERSION_198 = 'v1.9.8 PRO';
 
 function camaraDesc198(p, base){
   const n = normaliza((p && p.name) || '');
@@ -4429,23 +4165,6 @@ descripcionProducto = function(p){
   const cam = camaraDesc198(p, base);
   return cam || base;
 };
-
-const scoreProducto_BASE198 = scoreProducto;
-scoreProducto = function(p, term){
-  let score = 0;
-  try{ score = scoreProducto_BASE198(p, term); }catch(e){}
-  const q = normaliza(term).trim();
-  const n = normaliza((p && p.name) || '');
-  if(!q) return score;
-  const isCam = n.includes('bulletcam') || n.includes('domecam') || n.includes('turretcam');
-  if(isCam){
-    if(['4mm','4 mm','lente 4','lente 4mm'].includes(q)) score += n.includes('0400') ? 220000 : -60000;
-    if(['2.8','2,8','2.8mm','2,8mm','2.8 mm','2,8 mm'].includes(q)) score += (!n.includes('0400') && !n.includes('hlvf') && !n.includes('-vf') && !n.includes('vf-')) ? 220000 : -60000;
-    if(['vf','varifocal','varifocales'].includes(q)) score += (n.includes('hlvf') || n.includes('-vf') || n.includes('vf-')) ? 220000 : -60000;
-  }
-  return score;
-};
-
 function presupuestoTexto198(p){
   return normaliza([
     p && p.numero,
@@ -4500,98 +4219,11 @@ document.addEventListener('DOMContentLoaded',()=>{
   try{
     ensureBudgetSearch198();
     refrescarPresupuestosGuardados();
-    document.querySelectorAll('.creator').forEach(el=>{ el.textContent = `· Creado por David Corregidor · ${APP_VERSION_198}`; });
   }catch(e){}
 });
 
-/* =====================================================
-   PATCH v1.9.9 PRO - Búsqueda rápida segura
-   - Arregla A-Z en modo claro vía CSS.
-   - Añade abreviaturas profesionales exactas.
-   - Resultados con segunda línea más útil sin cambiar el motor general.
-   ===================================================== */
-const APP_VERSION_199 = 'v2.0.1 PRO Limpia';
 
 function ref199(p){ return normaliza((p && p.name) || ''); }
-function contiene199(n, arr){ return arr.some(k => n.includes(k)); }
-
-function resultadoForzado199(term){
-  const q = normaliza(term).trim().replace(/\s+/g,'');
-  const rules = {
-    // Centrales
-    'h2p': n => n.includes('hub2plus'),
-    'h2plus': n => n.includes('hub2plus'),
-    'h2': n => n.includes('hub2') && !n.includes('hub2plus') && !n.includes('hub2kit'),
-    'h24g': n => n.includes('hub2') && n.includes('4g') && !n.includes('kit'),
-    'hbp': n => n.includes('hubbp'),
-    'bp': n => n.includes('hubbp'),
-    'kit': n => n.includes('kit') && (n.includes('hub') || n.includes('starter')),
-    'hubkit': n => n.includes('hubkit') || n.includes('hub2kit'),
-
-    // Intrusión
-    'mp': n => n.includes('motionprotect') && !n.includes('motioncam'),
-    'mpp': n => n.includes('motionprotectplus'),
-    'mc': n => n.includes('motioncam'),
-    'mco': n => n.includes('motioncamoutdoor') || n.includes('curtaincamoutdoor'),
-    'phod': n => n.includes('phod'),
-    'dp': n => n.includes('doorprotect') && !n.includes('doorprotectplus'),
-    'dpp': n => n.includes('doorprotectplus'),
-    'gp': n => n.includes('glassprotect'),
-    'cp': n => n.includes('combiprotect'),
-    'cur': n => n.includes('curtain'),
-
-    // Incendio / agua / aire
-    'fp': n => n.includes('fireprotect'),
-    'fp2': n => n.includes('fireprotect2'),
-    'lq': n => n.includes('lifequality'),
-    'lp': n => n.includes('leaksprotect'),
-    'ws': n => n.includes('waterstop'),
-
-    // Sirenas / mandos / teclados
-    'ss': n => n.includes('streetsiren'),
-    'hs': n => n.includes('homesiren'),
-    'kp': n => n.includes('keypad'),
-    'kpt': n => n.includes('keypadtouchscreen'),
-    'sc': n => n.includes('spacecontrol'),
-    'db': n => n.includes('doublebutton') || n.includes('doorbell'),
-
-    // Vídeo
-    'bc': n => n.includes('bulletcam'),
-    'bc5': n => n.includes('bulletcam') && n.includes('-5'),
-    'bc8': n => n.includes('bulletcam') && n.includes('-8'),
-    'dc': n => n.includes('domecam'),
-    'dc5': n => n.includes('domecam') && n.includes('-5'),
-    'dc8': n => n.includes('domecam') && n.includes('-8'),
-    'tc': n => n.includes('turretcam'),
-    'tc5': n => n.includes('turretcam') && n.includes('-5'),
-    'tc8': n => n.includes('turretcam') && n.includes('-8'),
-    'ic': n => n.includes('indoorcam'),
-    'nvr8': n => n.includes('nvr108') || n.includes('nvr208') || n.includes('8-ch') || n.includes('8p'),
-    'nvr16': n => n.includes('nvr116') || n.includes('nvr216') || n.includes('16-ch') || n.includes('16p'),
-    'nvr32': n => n.includes('nvr232') || n.includes('32-ch'),
-
-    // Domótica / módulos
-    'rl': n => n.includes('relay') || n.includes('wallswitch') || n.includes('multirelay'),
-    'sw': n => n.includes('switch') || n.includes('lightcore') || n.includes('button') || n.includes('cover'),
-    'sk': n => n.includes('socket'),
-    'psu': n => n.includes('psu') || n.includes('pcb') || n.includes('dc12') || n.includes('ac220'),
-    'rex': n => n.includes('rex')
-  };
-  const rule = rules[q];
-  if(!rule) return null;
-  return productos
-    .map((p,i)=>({p,i,n:ref199(p)}))
-    .filter(x => rule(x.n))
-    .map(x=>({p:x.p,i:x.i,score:999999}))
-    .sort((a,b)=>a.p.name.localeCompare(b.p.name,'es'));
-}
-
-const busquedaForzada_BASE199 = busquedaForzada;
-busquedaForzada = function(term){
-  const forced = resultadoForzado199(term);
-  if(forced) return forced;
-  return busquedaForzada_BASE199.apply(this, arguments);
-};
 
 function resumenProducto199(p){
   const n = ref199(p);
@@ -4632,11 +4264,9 @@ function resumenProducto199(p){
   if(n.endsWith('-b') || n.includes('-b-')) tags.push('negro');
   return [...new Set(tags)].slice(0,5).join(' · ');
 }
-
-const pintarResultados_BASE199 = pintarResultados;
 pintarResultados = function(term){
   const panel = $('#resultados');
-  const results = buscar(term);
+  const results = hxBuscarComun(term);
   activeIndex = -1;
   if(!term.trim() || !results.length){
     panel.classList.add('hidden');
@@ -4649,7 +4279,7 @@ pintarResultados = function(term){
     const d = descripcionProducto(x.p);
     const extra = resumenProducto199(x.p);
     const meta = extra ? `${extra} · ${d.desc}` : d.desc;
-    return `<div class="result-item result-item-pro" data-index="${x.i}" data-ref="${escapeHtml(x.p.name)}" data-pvp="${Number(x.p.pvp)}" data-k="${k}"><div><div class="result-name">${escapeHtml(d.icon)} ${escapeHtml(x.p.name)}</div><div class="result-meta">${escapeHtml(meta)}</div></div><div class="result-price">${fmt.format(x.p.pvp)}</div></div>`;
+    return `<div class="result-item result-item-pro" data-index="${x.i}" data-ref="${escapeHtml(x.p.name)}" data-pvp="${Number(x.p.pvp)}" data-k="${k}"><div><div class="result-name">${escapeHtml(x.p.name)}</div><div class="result-meta">${escapeHtml(meta)}</div></div><div class="result-price">${fmt.format(x.p.pvp)}</div></div>`;
   }).join('');
   // Cada consulta nueva empieza arriba; no mueve el scroll de la página.
   panel.scrollTop = 0;
@@ -4661,19 +4291,7 @@ pintarResultados = function(term){
   panel.classList.remove('hidden');
 };
 
-document.addEventListener('DOMContentLoaded',()=>{
-  try{
-    document.querySelectorAll('.creator').forEach(el=>{ el.textContent = `· Creado por David Corregidor · ${APP_VERSION_199}`; });
-  }catch(e){}
-});
 
-/* =====================================================
-   PATCH v2.0.3 PRO - Corrección segura Hubs / fuentes
-   - Evita que AJ-HUB-W / AJ-HUB2... tomen descripción de PSU.
-   - BracketHub queda como soporte/accesorio.
-   - Solo PSU/PCB/DC/AC se describen como fuente de alimentación.
-   ===================================================== */
-const APP_VERSION_203 = 'v2.0.3 PRO';
 function ref203(p){ return normaliza((p && p.name) || ''); }
 function color203(n){
   if(/-w(\b|-|$)/.test(n)) return ' Blanco';
@@ -4739,35 +4357,6 @@ descripcionProducto = function(p){
   if(hub) return hub;
   return descripcionProducto_BASE203.apply(this, arguments);
 };
-
-const scoreProducto_BASE203 = scoreProducto;
-scoreProducto = function(p, term){
-  let score = 0;
-  try{ score = scoreProducto_BASE203.apply(this, arguments); }catch(e){}
-  const q = normaliza(term || '').trim();
-  const n = ref203(p);
-  if(!q) return score;
-  const hub = descHubSeguro203(p);
-  if(hub){
-    const hay = normaliza([n, hub.desc, hub.family, hub.official].join(' '));
-    for(const t of q.split(/\s+/).filter(Boolean)) if(hay.includes(t)) score += 50000;
-    if((q === 'fuente' || q === 'psu' || q.includes('alimentacion')) && /^aj-hub(?:2|bp|-|$)/.test(n) && !n.includes('batt')) score -= 300000;
-  }
-  return score;
-};
-
-document.addEventListener('DOMContentLoaded',()=>{
-  try{ document.querySelectorAll('.creator').forEach(el=>{ el.textContent = `· Creado por David Corregidor · ${APP_VERSION_203}`; }); }catch(e){}
-});
-
-
-/* =====================================================
-   PATCH v2.0.4 PRO - Acciones rápidas en catálogo
-   - Panel compacto de filtros dentro del catálogo.
-   - No toca descripciones ni motor principal.
-   - En modo claro queda visible qué filtro está seleccionado.
-   ===================================================== */
-const APP_VERSION_205 = 'v2.0.5 PRO';
 let catalogQuick204 = '';
 
 const QUICK_CATALOG_204 = [
@@ -4783,7 +4372,6 @@ const QUICK_CATALOG_204 = [
   {id:'fire', label:'🔥 Incendio', test:n=>/fireprotect|manualcallpoint|en54/.test(n)},
   {id:'used', label:'🕒 Más usados', test:n=>/hub2plus|hub2-4g|motioncam|motionprotect|doorprotect|streetsiren|homesiren|keypad|nvr108|nvr116|bulletcam|domecam|turretcam/.test(n)}
 ];
-function quickDef204(id){ return QUICK_CATALOG_204.find(x=>x.id===id); }
 function ensureQuickCatalog204(){
   const modal = document.getElementById('catalogModal');
   const row = modal ? modal.querySelector('.modal-search-row') : null;
@@ -4805,19 +4393,6 @@ function ensureQuickCatalog204(){
     pintarCatalogPanel(document.getElementById('catalogFilter')?.value || catalogTerm || '');
   });
 }
-
-const buscarCatalogo_BASE204 = buscarCatalogo;
-buscarCatalogo = function(term=''){
-  let lista = buscarCatalogo_BASE204.apply(this, arguments);
-  if(catalogQuick204){
-    const def = quickDef204(catalogQuick204);
-    if(def){
-      lista = lista.filter(x => def.test(normaliza((x.p && x.p.name) || '')));
-    }
-  }
-  return lista;
-};
-
 const pintarCatalogPanel_BASE204 = pintarCatalogPanel;
 pintarCatalogPanel = function(term=catalogTerm){
   ensureQuickCatalog204();
@@ -4842,17 +4417,10 @@ if(abrirCatalogo_BASE204){
 document.addEventListener('DOMContentLoaded',()=>{
   try{
     ensureQuickCatalog204();
-    document.querySelectorAll('.creator').forEach(el=>{ el.textContent = `· Creado por David Corregidor · ${APP_VERSION_205}`; });
   }catch(e){}
 });
 
-/* =====================================================
-   PATCH v2.0.6 PRO - Más usados con aprendizaje real
-   - Aprende automáticamente cada producto añadido.
-   - El botón 🕒 Más usados ya no usa lista fija: ordena por contador real.
-   - No toca descripciones ni motor general.
-   ===================================================== */
-const APP_VERSION_206 = 'v2.0.6 PRO';
+
 const STORAGE_USO_PRODUCTOS_206 = 'hiperajax_productos_mas_usados_v206';
 
 function leerUsoProductos206(){
@@ -4862,6 +4430,20 @@ function leerUsoProductos206(){
 function guardarUsoProductos206(data){
   try{ localStorage.setItem(STORAGE_USO_PRODUCTOS_206, JSON.stringify(data || {})); }
   catch(e){}
+}
+const HX_MAS_USADOS_DIAS=30;
+function limpiarUsoProductosInexistentes206(lista=productos){
+  try{
+    const validas=new Set((Array.isArray(lista)?lista:[]).map(p=>String(p?.name||'').trim().toUpperCase()).filter(Boolean));
+    const data=leerUsoProductos206(), ahora=Date.now(), limite=HX_MAS_USADOS_DIAS*24*60*60*1000;
+    let cambio=false;
+    Object.keys(data).forEach(ref=>{
+      const last=Date.parse(String(data[ref]?.last||''))||0;
+      if(!validas.has(String(ref).trim().toUpperCase()) || !last || (ahora-last)>limite){ delete data[ref]; cambio=true; }
+    });
+    if(cambio) guardarUsoProductos206(data);
+    return data;
+  }catch(e){ return leerUsoProductos206(); }
 }
 function registrarUsoProducto206(p){
   if(!p || !p.name) return;
@@ -4875,7 +4457,7 @@ function registrarUsoProducto206(p){
   guardarUsoProductos206(data);
 }
 function listaMasUsados206(term=''){
-  const data = leerUsoProductos206();
+  const data = limpiarUsoProductosInexistentes206(productos);
   const q = normaliza(term||'').trim();
   const rows = productos
     .map((p,i)=>({p,i,u:data[p.name]||null,n:normaliza(p.name)}))
@@ -4893,15 +4475,6 @@ addProductoObj = function(p, qty=1, dto=null){
   if(ok) registrarUsoProducto206(p);
   return ok;
 };
-
-const buscarCatalogo_BASE206 = buscarCatalogo;
-buscarCatalogo = function(term=''){
-  if(typeof catalogQuick204 !== 'undefined' && catalogQuick204 === 'used'){
-    return listaMasUsados206(term);
-  }
-  return buscarCatalogo_BASE206.apply(this, arguments);
-};
-
 const pintarCatalogPanel_BASE206 = pintarCatalogPanel;
 pintarCatalogPanel = function(term=catalogTerm){
   pintarCatalogPanel_BASE206.apply(this, arguments);
@@ -4915,27 +4488,11 @@ pintarCatalogPanel = function(term=catalogTerm){
         itemsWrap.innerHTML = '<div class="catalog-empty">Todavía no hay estadísticas. Añade productos y este filtro aprenderá tus más usados.</div>';
       }
     }
-    document.querySelectorAll('.creator').forEach(el=>{ el.textContent = `· Creado por David Corregidor · ${APP_VERSION_206}`; });
   }catch(e){}
 };
 
-document.addEventListener('DOMContentLoaded',()=>{
-  try{
-    document.querySelectorAll('.creator').forEach(el=>{ el.textContent = `· Creado por David Corregidor · ${APP_VERSION_206}`; });
-  }catch(e){}
-});
 
-
-/* =====================================================
-   PATCH v2.0.7 PRO - UI catálogo uniforme + orden filtros
-   - Botones Catálogo/Familias con texto corto.
-   - Acciones rápidas debajo del buscador y encima del A-Z.
-   ===================================================== */
 (function(){
-  function fixCatalogButtons207(){
-    const c=document.getElementById('btnCatalogo'); if(c) c.innerHTML='<span class="btn-ico">📖</span>Catálogo';
-    const f=document.getElementById('btnFamilias'); if(f) f.innerHTML='<span class="btn-ico">🧭</span>Explorar';
-  }
   function orderCatalogFilters207(){
     const row=document.querySelector('#catalogModal .modal-search-row');
     const quick=document.getElementById('catalogQuick204');
@@ -4954,7 +4511,6 @@ document.addEventListener('DOMContentLoaded',()=>{
   if(_ensureQuick){
     ensureQuickCatalog204 = function(){
       const r=_ensureQuick.apply(this, arguments);
-      fixCatalogButtons207();
       orderCatalogFilters207();
       return r;
     };
@@ -4971,23 +4527,15 @@ document.addEventListener('DOMContentLoaded',()=>{
   if(_pintar){
     pintarCatalogPanel = function(){
       const r=_pintar.apply(this, arguments);
-      setTimeout(()=>{ fixCatalogButtons207(); orderCatalogFilters207(); },0);
+      setTimeout(orderCatalogFilters207,0);
       return r;
     };
   }
-  document.addEventListener('DOMContentLoaded',()=>{ fixCatalogButtons207(); setTimeout(orderCatalogFilters207,50); document.querySelectorAll('.creator').forEach(el=>{ el.textContent='· Creado por David Corregidor · 4.0.8'; }); });
+  document.addEventListener('DOMContentLoaded',()=>{ setTimeout(orderCatalogFilters207,50); });
 })();
 
-/* =====================================================
-   PATCH v2.0.8 PRO - filtros del catálogo bien colocados
-   - En Catálogo: buscador -> acciones rápidas -> A-Z -> productos.
-   - En Familias: buscador -> A-Z -> productos, sin acciones rápidas.
-   - No toca descripciones ni motor de búsqueda.
-   ===================================================== */
-(function(){
-  const APP_VERSION_208 = 'v2.0.8 PRO';
-  let catalogOpenedFromFamily208 = false;
 
+(function(){
   function ensureCatalogHosts208(){
     const modal = document.getElementById('catalogModal');
     const row = modal ? modal.querySelector('.modal-search-row') : null;
@@ -5025,33 +4573,13 @@ document.addEventListener('DOMContentLoaded',()=>{
       azHost.appendChild(az);
     }
 
-    // Si vienes desde Familias, las acciones rápidas no aportan nada.
-    if(quickHost){
-      quickHost.style.display = catalogOpenedFromFamily208 ? 'none' : '';
-    }
+    if(quickHost) quickHost.style.display = '';
   }
 
-  function setVersion208(){
-    try{
-      document.querySelectorAll('.creator').forEach(el=>{ el.textContent = `· Creado por David Corregidor · ${APP_VERSION_208}`; });
-    }catch(e){}
-  }
-
-  // Click normal en Catálogo: mostrar acciones rápidas.
   document.addEventListener('click', (e)=>{
     if(e.target.closest('#btnCatalogo')){
-      catalogOpenedFromFamily208 = false;
       setTimeout(placeCatalogFilters208, 0);
       setTimeout(placeCatalogFilters208, 40);
-    }
-  }, true);
-
-  // Click desde Familias: ocultar acciones rápidas en el catálogo que se abre después.
-  document.addEventListener('click', (e)=>{
-    if(e.target.closest('#familiasGrid .family-chip')){
-      catalogOpenedFromFamily208 = true;
-      setTimeout(placeCatalogFilters208, 0);
-      setTimeout(placeCatalogFilters208, 80);
     }
   }, true);
 
@@ -5078,7 +4606,6 @@ document.addEventListener('DOMContentLoaded',()=>{
     pintarCatalogPanel = function(){
       const r = _pintar208.apply(this, arguments);
       placeCatalogFilters208();
-      setVersion208();
       return r;
     };
   }
@@ -5089,35 +4616,17 @@ document.addEventListener('DOMContentLoaded',()=>{
       const r = _abrirCatalogo208.apply(this, arguments);
       setTimeout(placeCatalogFilters208, 0);
       setTimeout(placeCatalogFilters208, 40);
-      setVersion208();
       return r;
     };
   }
 
   document.addEventListener('DOMContentLoaded',()=>{
-    setVersion208();
     setTimeout(placeCatalogFilters208, 60);
   });
 })();
 
-/* =====================================================
-   PATCH v2.0.16 PRO - filtros del modal estables
-   - Evita que acciones rápidas / A-Z salten abajo al seleccionar un atajo.
-   - En Catálogo: buscador -> acciones rápidas -> A-Z -> productos.
-   - En Familias: buscador -> A-Z -> productos.
-   ===================================================== */
+
 (function(){
-  const APP_VERSION_2016 = 'v2.0.16 PRO';
-  let openedFromFamilies2016 = false;
-
-  function setVersion2016(){
-    try{
-      document.querySelectorAll('.creator').forEach(el=>{
-        el.textContent = `· Creado por David Corregidor · ${APP_VERSION_2016}`;
-      });
-    }catch(e){}
-  }
-
   function ensureTopFilterHost2016(){
     const modal = document.getElementById('catalogModal');
     const row = modal ? modal.querySelector('.modal-search-row') : null;
@@ -5164,9 +4673,7 @@ document.addEventListener('DOMContentLoaded',()=>{
       azHost.appendChild(az);
     }
 
-    if(quickHost){
-      quickHost.style.display = openedFromFamilies2016 ? 'none' : '';
-    }
+    if(quickHost) quickHost.style.display = '';
   }
 
   function placeFiltersSoon2016(){
@@ -5177,14 +4684,7 @@ document.addEventListener('DOMContentLoaded',()=>{
   }
 
   document.addEventListener('click', (e)=>{
-    if(e.target.closest('#btnCatalogo')){
-      openedFromFamilies2016 = false;
-      placeFiltersSoon2016();
-    }
-    if(e.target.closest('#btnFamilias') || e.target.closest('#familiasGrid .family-chip')){
-      openedFromFamilies2016 = true;
-      placeFiltersSoon2016();
-    }
+    if(e.target.closest('#btnCatalogo')) placeFiltersSoon2016();
     if(e.target.closest('.quick-cat-chip') || e.target.closest('.az-chip')){
       placeFiltersSoon2016();
     }
@@ -5199,7 +4699,6 @@ document.addEventListener('DOMContentLoaded',()=>{
     pintarCatalogPanel = function(){
       const r = _pintar2016.apply(this, arguments);
       placeFiltersSoon2016();
-      setVersion2016();
       return r;
     };
   }
@@ -5209,760 +4708,19 @@ document.addEventListener('DOMContentLoaded',()=>{
     abrirCatalogo = function(){
       const r = _abrirCatalogo2016.apply(this, arguments);
       placeFiltersSoon2016();
-      setVersion2016();
       return r;
     };
   }
 
   document.addEventListener('DOMContentLoaded',()=>{
-    setVersion2016();
     setTimeout(placeFilters2016, 80);
   });
 })();
 
 /* =====================================================
-   v2.1.1 PRO - Explorar afinado
-   - Un solo scroll: productos.
-   - Reorganiza subfamilias para evitar listas enormes.
-   - HubKit/StarterKit separados como Kits.
-   - Videovigilancia sin brackets/covers/storage.
-   - Soportes/JunctionBox en Accesorios.
+   EXPLORER PRO
+   La interfaz y navegación viven en explorer.js.
    ===================================================== */
-(function(){
-  const VERSION_EXPLORE_211 = '4.0.8';
-  function n211(s){ return normaliza(String(s||'')).replace(/[^a-z0-9]+/g,''); }
-  function raw211(p){ return n211(p && p.name); }
-  function has211(name, parts){ return parts.some(k=>name.includes(k)); }
-  function not211(name, parts){ return !parts.some(k=>name.includes(k)); }
-  function countPred(pred){ try{return productos.filter(pred).length;}catch(e){return 0;} }
-  function isVideoAcc(s){ return has211(s,['bracket','mountcam','junctionbox','hood','cover','frame','storage','hstd','tf','psu','dc12','dc6','ac220','pcb']); }
-
-  const DEFAULT_EXPLORE_211 = [
-    {id:'intrusion', icon:'🏠', title:'Intrusión', subs:[
-      {icon:'🏠', title:'Hubs', pred:p=>{const s=raw211(p); return has211(s,['ajhub','hub2plus','hubbp']) && not211(s,['hubkit','hub2kit','starterkit','bracket','battery','hubbatt','psu','dummy','repairkit','minihub','brackethub']);}},
-      {icon:'📦', title:'Kits alarma', pred:p=>{const s=raw211(p); return (has211(s,['hubkit','hub2kit','starterkit']) && !has211(s,['repairkit'])) || has211(s,['starterkitplus']);}},
-      {icon:'📡', title:'ReX', pred:p=>{const s=raw211(p); return has211(s,['rex']) && !has211(s,['psu','bracket','battery']);}},
-      {icon:'🚶', title:'Motion / Outdoor', pred:p=>{const s=raw211(p); return has211(s,['motionprotect','outdoorprotect']) && !has211(s,['dummy','lens','curtain','bracket']);}},
-      {icon:'📷', title:'MotionCam / PhOD', pred:p=>{const s=raw211(p); return has211(s,['motioncam']) && !has211(s,['dummy','lens','hood','bracket']);}},
-      {icon:'🚪', title:'DoorProtect', pred:p=>{const s=raw211(p); return has211(s,['doorprotect']) && !has211(s,['dummy','bracket','magnet']);}},
-      {icon:'🪟', title:'GlassProtect', pred:p=>{const s=raw211(p); return has211(s,['glassprotect']) && !has211(s,['dummy','bracket']);}},
-      {icon:'🟢', title:'Curtain', pred:p=>{const s=raw211(p); return has211(s,['curtainprotect','curtainoutdoor','dualcurtain','curtaincam']) && !has211(s,['dummy','bracket']);}},
-      {icon:'⌨️', title:'Teclados', pred:p=>{const s=raw211(p); return has211(s,['keypad']) && !has211(s,['dummy','bracket']);}},
-      {icon:'📢', title:'Sirenas', pred:p=>{const s=raw211(p); return has211(s,['homesiren','streetsiren']) && !has211(s,['dummy','bracket','speakerss']);}},
-      {icon:'🎛️', title:'Mandos / botones', pred:p=>{const s=raw211(p); return has211(s,['spacecontrol','button','doublebutton']) && !has211(s,['centerbutton','sidebutton','solobutton','dummy']);}},
-      {icon:'🧠', title:'Transmisores', pred:p=>{const s=raw211(p); return has211(s,['transmitter','uartbridge','ocbridge','vhfbridge']) && !has211(s,['dummy','bracket','case']);}}
-    ]},
-    {id:'video', icon:'📷', title:'Videovigilancia', subs:[
-      {icon:'📷', title:'BulletCam', pred:p=>{const s=raw211(p); return has211(s,['bulletcam']) && !isVideoAcc(s);}},
-      {icon:'📷', title:'DomeCam', pred:p=>{const s=raw211(p); return has211(s,['domecam']) && !isVideoAcc(s);}},
-      {icon:'📷', title:'TurretCam', pred:p=>{const s=raw211(p); return has211(s,['turretcam']) && !isVideoAcc(s);}},
-      {icon:'🏠', title:'IndoorCam', pred:p=>{const s=raw211(p); return has211(s,['indoorcam']) && !isVideoAcc(s);}},
-      {icon:'🚪', title:'DoorBell', pred:p=>{const s=raw211(p); return has211(s,['doorbell']) && !isVideoAcc(s);}},
-      {icon:'🎥', title:'NVR', pred:p=>{const s=raw211(p); return has211(s,['nvr']) && !has211(s,['nvrkit','psu','storage']);}},
-      {icon:'📦', title:'Kits NVR', pred:p=>{const s=raw211(p); return has211(s,['nvrkit']);}},
-      {icon:'💽', title:'Discos HDD', pred:p=>/^hd\d+tb/i.test(p.name||'')}
-    ]},
-    {id:'domotica', icon:'💡', title:'Domótica', subs:[
-      {icon:'💡', title:'Interruptores de luz', pred:p=>{const s=raw211(p); return has211(s,['lightcore','lightswitch']) && !has211(s,['centerbutton','sidebutton','solobutton','frame','cover']);}},
-      {icon:'🔌', title:'Bases de enchufe', pred:p=>{const s=raw211(p); return has211(s,['outletcore','outletbasic','outletlan','outlet']) && !has211(s,['cover','socket']);}},
-      {icon:'⚡', title:'Enchufes inteligentes', pred:p=>{const s=raw211(p); return has211(s,['socket']) && !has211(s,['sim','cover','button']);}},
-      {icon:'🧩', title:'Tapas y acabados', pred:p=>{const s=raw211(p); return has211(s,['centercove','sidecove','solocove','coverplate','bypassdimmer']);}},
-      {icon:'🖼️', title:'Marcos', pred:p=>{const s=raw211(p); return has211(s,['frame']) && !has211(s,['case']);}},
-      {icon:'🎛️', title:'Botones LightSwitch', pred:p=>{const s=raw211(p); return has211(s,['centerbutton','sidebutton','solobutton']);}},
-      {icon:'📦', title:'SurfaceBox', pred:p=>{const s=raw211(p); return has211(s,['surfacebox']);}},
-      {icon:'⚙️', title:'Relés', pred:p=>{const s=raw211(p); return has211(s,['relay','wallswitch','multirelay']) && !has211(s,['dinholder']);}}
-    ]},
-    {id:'seguridad', icon:'🔥', title:'Incendio / seguridad', subs:[
-      {icon:'🔥', title:'FireProtect', pred:p=>{const s=raw211(p); return has211(s,['fireprotect']) && !has211(s,['dummy','bracket']);}},
-      {icon:'🚨', title:'ManualCallPoint', pred:p=>{const s=raw211(p); return has211(s,['manualcallpoint','keymcp']);}},
-      {icon:'💧', title:'LeaksProtect', pred:p=>{const s=raw211(p); return has211(s,['leaksprotect']);}},
-      {icon:'🚰', title:'WaterStop', pred:p=>{const s=raw211(p); return has211(s,['waterstop']);}},
-      {icon:'🌡️', title:'LifeQuality', pred:p=>{const s=raw211(p); return has211(s,['lifequality']);}}
-    ]},
-    {id:'accesorios', icon:'🧩', title:'Accesorios', subs:[
-      {icon:'🧰', title:'JunctionBox', pred:p=>{const s=raw211(p); return has211(s,['junctionbox']);}},
-      {icon:'🛠️', title:'Bracket / soportes', pred:p=>{const s=raw211(p); return has211(s,['bracket','mountcam','hood','dinholder']) && !has211(s,['junctionbox']);}},
-      {icon:'📦', title:'Carcasas / Dummy', pred:p=>{const s=raw211(p); return has211(s,['dummy','case','democase','suitcase','totem']);}},
-      {icon:'🧩', title:'Tapas / covers', pred:p=>{const s=raw211(p); return has211(s,['cover','coverplate','frame','surfacebox']) && !has211(s,['coverholder']);}},
-      {icon:'🔋', title:'Fuentes / baterías', pred:p=>{const s=raw211(p); return has211(s,['psu','battery','batt','pcb','ac220','dc12','dc6','dc1224','internalbattery']);}},
-      {icon:'🔐', title:'Pass / Tag', pred:p=>{const s=raw211(p); return has211(s,['pass','tag']);}},
-      {icon:'📶', title:'SIM / antenas', pred:p=>{const s=raw211(p); return (has211(s,['simslot','sim','m2m','externalantenna']) || /(^|-)SIM($|-)/i.test(p.name||'')) && !has211(s,['homesiren','streetsiren','bracket','dummy']);}},
-      {icon:'🧲', title:'Recambios', pred:p=>{const s=raw211(p); return has211(s,['magnet','reedswitch','lens','repairkit']) && !has211(s,['bracket','storage']);}},
-      {icon:'💾', title:'Storage / memoria', pred:p=>{const s=raw211(p); const raw=String((p&&p.name)||''); return (has211(s,['storage','hstd','hdd']) || /^HS[-_ ]?TF/i.test(raw) || /^HD\d+TB/i.test(raw)) && !has211(s,['bracket','mountcam','junctionbox','hood','cover','frame']);}},
-      {icon:'👕', title:'Marketing / demo', pred:p=>{const s=raw211(p); return has211(s,['polo','tshirt','baseball','brandplate','cup']);}}
-    ]}
-  ];
-
-  /*
-     EXPLORADOR EDITABLE
-     Si existe window.EXPLORAR_CATEGORIAS en explorar_config.js, el explorador se pinta desde ahí.
-     Si no existe, usa DEFAULT_EXPLORE_211 para que la app nunca se rompa.
-  */
-  function arr211(v){ return Array.isArray(v) ? v : (v ? [v] : []); }
-  function rulePred211(rule){
-    const incluye = arr211(rule.incluye || rule.filtros || rule.palabras).map(n211).filter(Boolean);
-    const excluye = arr211(rule.excluye || rule.excluir).map(n211).filter(Boolean);
-    const empieza = arr211(rule.empieza || rule.empiezaPor).map(n211).filter(Boolean);
-    const regex = arr211(rule.regex).map(r=>{ try{return new RegExp(r,'i');}catch(e){return null;} }).filter(Boolean);
-    const exactos = arr211(rule.exactos || rule.referencias).map(n211).filter(Boolean);
-    return function(p){
-      const rawName = String((p && p.name) || '');
-      const rawBrand = String((p && p.brand) || '');
-      let rawDesc = '';
-      try{
-        const d = (typeof descripcionProducto === 'function') ? descripcionProducto(p) : null;
-        rawDesc = d && d.desc ? String(d.desc) : '';
-      }catch(e){}
-      // El Explorer clasifica por referencia + segunda columna del CSV + descripción generada.
-      // Así categorías genéricas como Switches o Routers siguen funcionando con productos futuros.
-      const rawSearch = [rawName, rawBrand, rawDesc].filter(Boolean).join(' ');
-      const s = n211(rawSearch);
-      // OJO: aquí cada bloque solo cuenta si existe en la regla.
-      // Antes, si una subcategoría solo tenía regex, incluye vacío daba TRUE y entraba todo.
-      const ref = n211(rawName);
-      const okIncluye = incluye.length ? incluye.some(k=>s.includes(k)) : false;
-      // Las reglas estructurales se validan contra la referencia, no contra
-      // la descripción. Evita que una categoría capture otra familia porque
-      // su texto comercial menciona Hub, Motion, Sirena, etc.
-      const okEmpieza = empieza.length ? empieza.some(k=>ref.startsWith(k)) : false;
-      const okRegex = regex.length ? regex.some(r=>r.test(rawName)) : false;
-      const okExactos = exactos.length ? exactos.includes(ref) : false;
-      const hayCondiciones = incluye.length || empieza.length || regex.length || exactos.length;
-      // Fácil de editar: incluye / empieza / regex / exactos funcionan como OR.
-      // Ejemplo: incluye:['storage'] + regex:['^HD\\d+TB'] mete Storage O discos HD1TB/HD2TB.
-      const okBase = hayCondiciones ? (okIncluye || okEmpieza || okRegex || okExactos) : false;
-      const okExcluye = !excluye.length || !excluye.some(k=>s.includes(k));
-      return okBase && okExcluye;
-    };
-  }
-  function buildExternalExplore211(){
-    const cfg = window.EXPLORAR_CATEGORIAS || window.EXPLORAR_CONFIG || null;
-    const cats = Array.isArray(cfg) ? cfg : (cfg && Array.isArray(cfg.categorias) ? cfg.categorias : null);
-    if(!cats || !cats.length) return null;
-    return cats.filter(c=>c && c.visible !== false).map((c,ci)=>({
-      id: c.id || ('cat_'+ci),
-      icon: c.icono || c.icon || '📁',
-      title: c.titulo || c.nombre || c.title || ('Categoría '+(ci+1)),
-      subs: arr211(c.subcategorias || c.subs || c.familias).filter(s=>s && s.visible !== false).map((sub,si)=>({
-        icon: sub.icono || sub.icon || c.icono || c.icon || '•',
-        title: sub.titulo || sub.nombre || sub.title || ('Subfamilia '+(si+1)),
-        pred: rulePred211(sub)
-      }))
-    })).filter(c=>c.subs && c.subs.length);
-  }
-  const EXPLORE_211 = buildExternalExplore211() || DEFAULT_EXPLORE_211;
-
-
-  let expCat = null;
-  let expSub = null;
-  let expQuery = '';
-  let expCatsScroll211 = 0;
-  let expSubsScroll211 = 0;
-  let expMobileStep = 'cats';
-
-  function currentCat(){ return expCat ? (EXPLORE_211.find(c=>c.id===expCat) || null) : null; }
-  function currentSub(){ const c=currentCat(); return c && expSub ? ((c.subs||[]).find(s=>s.title===expSub) || null) : null; }
-  /* Búsqueda global inteligente del Explorador.
-     Sin texto: respeta la categoría/subfamilia elegida.
-     Con texto: busca en TODO el catálogo, con sinónimos, intención y errores leves. */
-  const EXPLORE_ALIASES_300 = {
-    wifi:['wi fi','inalambrico','wireless','wlan'],
-    lte:['4g','sim','movil','datos'],
-    '4g':['lte','sim','movil'],
-    inundacion:['fuga','agua','leaksprotect','leak'],
-    fuga:['inundacion','agua','leaksprotect'],
-    humo:['incendio','fireprotect','fuego'],
-    incendio:['humo','fireprotect','fuego'],
-    llavero:['mando','spacecontrol','control remoto'],
-    mando:['llavero','spacecontrol','control remoto'],
-    enchufe:['socket','toma'],
-    rele:['relay','automatizacion'],
-    interruptor:['lightswitch','luz'],
-    teclado:['keypad'],
-    sirena:['homesiren','streetsiren'],
-    exterior:['outdoor','calle','jardin'],
-    interior:['indoor'],
-    domo:['dome','domecam'],
-    torreta:['turret','turretcam'],
-    bala:['bullet','bulletcam'],
-    grabador:['nvr','videograbador'],
-    disco:['hdd','storage','memoria'],
-    fotosensor:['photo on demand','photoondemand','foto bajo demanda'],
-    cortina:['curtain','curtainprotect'],
-    movimiento:['motion','motionprotect'],
-    puerta:['doorprotect','contacto magnetico'],
-    ventana:['doorprotect','contacto magnetico'],
-    cristal:['glassprotect','rotura'],
-    co:['monoxido','carbon monoxide'],
-    poe:['power over ethernet','ethernet'],
-    fibra:['fiber','fibra optica']
-  };
-
-  function lev300(a,b){
-    a=String(a||''); b=String(b||'');
-    if(a===b) return 0;
-    if(!a.length) return b.length;
-    if(!b.length) return a.length;
-    const prev=Array.from({length:b.length+1},(_,i)=>i), cur=new Array(b.length+1);
-    for(let i=1;i<=a.length;i++){
-      cur[0]=i;
-      let rowMin=cur[0];
-      for(let j=1;j<=b.length;j++){
-        cur[j]=Math.min(cur[j-1]+1,prev[j]+1,prev[j-1]+(a[i-1]===b[j-1]?0:1));
-        rowMin=Math.min(rowMin,cur[j]);
-      }
-      if(rowMin>2 && Math.abs(a.length-b.length)>2) return rowMin;
-      for(let j=0;j<=b.length;j++) prev[j]=cur[j];
-    }
-    return prev[b.length];
-  }
-
-  function expand300(query){
-    const base=n211(query).split(/\s+/).filter(Boolean);
-    const out=[];
-    base.forEach(t=>{
-      out.push(t);
-      (EXPLORE_ALIASES_300[t]||[]).forEach(x=>n211(x).split(/\s+/).forEach(y=>y&&out.push(y)));
-    });
-    return [...new Set(out)];
-  }
-
-  function searchText300(p){
-    let d={};
-    try{ d=descripcionProducto(p)||{}; }catch(e){}
-    const meta=p&&p.meta?p.meta:{};
-    return n211([
-      p&&p.name,p&&p.brand,p&&p.ref,p&&p.reference,p&&p.sku,
-      d.desc,d.family,d.official,d.icon,
-      meta.family,meta.sub,meta.desc,meta.official,
-      Array.isArray(meta.tags)?meta.tags.join(' '):meta.tags,
-      p&&p._search175,p&&p._search183,p&&p._search186
-    ].filter(Boolean).join(' '));
-  }
-
-  let EXPLORE_INDEX_300 = [];
-  let EXPLORE_INDEX_LEN_300 = -1;
-  function getExploreIndex300(){
-    if(EXPLORE_INDEX_LEN_300 === productos.length && EXPLORE_INDEX_300.length) return EXPLORE_INDEX_300;
-    EXPLORE_INDEX_LEN_300 = productos.length;
-    EXPLORE_INDEX_300 = productos.map((p,i)=>{
-      let d={};
-      try{ d=descripcionProducto(p)||{}; }catch(e){}
-      return {
-        ...p,
-        name:p.name,
-        description:[d.desc,d.family,d.official,p._search175,p._search183,p._search186].filter(Boolean).join(' '),
-        _hxaIndex:i
-      };
-    });
-    return EXPLORE_INDEX_300;
-  }
-  const EXPLORE_SEARCH_CACHE_300 = new Map();
-
-  function smartExplore300(query){
-    const q=n211(query).trim();
-    if(!q) return [];
-    /* Motor compartido: CSV completo + conocimiento opcional.
-       Si el módulo no carga, conserva el buscador anterior como fallback. */
-    try{
-      if(window.HXA_KNOWLEDGE_ENGINE && typeof window.HXA_KNOWLEDGE_ENGINE.rank === 'function'){
-        const cacheKey=q+'|'+productos.length;
-        if(EXPLORE_SEARCH_CACHE_300.has(cacheKey)) return EXPLORE_SEARCH_CACHE_300.get(cacheKey);
-        const ranked = window.HXA_KNOWLEDGE_ENGINE.rank(getExploreIndex300(), query, 300)
-          .map(x=>({p:productos[x._hxaIndex],i:x._hxaIndex,score:x._score,reasons:x._reasons||[]}))
-          .filter(x=>x.p);
-        if(EXPLORE_SEARCH_CACHE_300.size>120) EXPLORE_SEARCH_CACHE_300.clear();
-        const ordenados=sortFamilyResults300(ranked,q);
-        EXPLORE_SEARCH_CACHE_300.set(cacheKey,ordenados);
-        return ordenados;
-      }
-    }catch(e){ console.warn('Knowledge Engine Explorer fallback',e); }
-
-    const rawTokens=q.split(/\s+/).filter(Boolean);
-    const expanded=expand300(q);
-    const resultados=productos.map((p,i)=>{
-      const name=n211((p&&p.name)||'');
-      const text=searchText300(p);
-      const words=[...new Set(text.split(/[^a-z0-9]+/).filter(Boolean))];
-      let score=0, matched=0;
-      if(name===q) score+=150000;
-      if(name.startsWith(q)) score+=90000;
-      if(name.includes(q)) score+=65000;
-      if(text.includes(q)) score+=30000;
-      rawTokens.forEach(token=>{
-        let ok=false;
-        if(name.split(/[^a-z0-9]+/).includes(token)){score+=30000;ok=true;}
-        else if(name.includes(token)){score+=22000;ok=true;}
-        else if(text.includes(token)){score+=9000;ok=true;}
-        if(!ok && token.length>=4){
-          const near=words.some(w=>Math.abs(w.length-token.length)<=1 && lev300(token,w)<=1);
-          if(near){score+=4500;ok=true;}
-        }
-        if(ok) matched++;
-      });
-      expanded.forEach(token=>{
-        if(!rawTokens.includes(token) && text.includes(token)) score+=3500;
-      });
-      if(matched===rawTokens.length) score+=18000;
-      const accessory=/cover|bracket|mount|holder|box|dummy|case|tapa|soporte|carcasa/.test(name);
-      const accessoryAsked=rawTokens.some(t=>['cover','bracket','mount','holder','box','tapa','soporte','carcasa','accesorio'].includes(t));
-      if(accessory && !accessoryAsked) score-=7000;
-      return {p,i,score};
-    }).filter(x=>x.score>0).sort((a,b)=>b.score-a.score||a.p.name.localeCompare(b.p.name,'es')).slice(0,300);
-    return sortFamilyResults300(resultados,q);
-  }
-
-  // Agrupación automática de variantes del Explorer.
-  // No necesita reglas por familia: elimina únicamente el token de color W/B
-  // de la referencia y mantiene juntas todas las variantes del mismo producto.
-  function exploreFamilyKey300(product){
-    return String((product && product.name) || '')
-      .toUpperCase()
-      .replace(/-(?:W|B)(?=-|$)/g, '')
-      .replace(/--+/g, '-')
-      .replace(/-$/,'')
-      .trim();
-  }
-  function exploreColorOrder300(product){
-    const ref=String((product && product.name) || '').toUpperCase();
-    if(/-W(?:-|$)/.test(ref)) return 0;
-    if(/-B(?:-|$)/.test(ref)) return 1;
-    return 2;
-  }
-  function sortFamilyResults300(items,query=''){
-    const lista=Array.isArray(items)?items.slice():[];
-    const grupos=new Map();
-    lista.forEach((item,pos)=>{
-      const key=exploreFamilyKey300(item.p);
-      if(!grupos.has(key)) grupos.set(key,{key,items:[],bestScore:-Infinity,first:pos});
-      const g=grupos.get(key);
-      g.items.push({...item,__hxPos:pos});
-      g.bestScore=Math.max(g.bestScore,Number(item.score)||0);
-      g.first=Math.min(g.first,pos);
-    });
-    const buscaNegro=/\b(?:negro|black|\-b)\b/i.test(String(query||''));
-    const buscaBlanco=/\b(?:blanco|white|\-w)\b/i.test(String(query||''));
-    return [...grupos.values()]
-      .sort((a,b)=>(b.bestScore-a.bestScore)||(a.first-b.first)||a.key.localeCompare(b.key,'es',{numeric:true,sensitivity:'base'}))
-      .flatMap(g=>g.items.sort((a,b)=>{
-        let ca=exploreColorOrder300(a.p), cb=exploreColorOrder300(b.p);
-        if(buscaNegro){ ca=ca===1?0:ca===0?1:ca; cb=cb===1?0:cb===0?1:cb; }
-        else if(buscaBlanco){ ca=ca===0?0:ca===1?1:ca; cb=cb===0?0:cb===1?1:cb; }
-        return ca-cb || (Number(b.score)||0)-(Number(a.score)||0) || String(a.p.name||'').localeCompare(String(b.p.name||''),'es',{numeric:true,sensitivity:'base'});
-      }).map(({__hxPos,...item})=>item));
-  }
-  function filteredProducts(){
-    const q=String(expQuery||'').trim();
-    if(q) return smartExplore300(q);
-    const sub=currentSub();
-    if(!sub) return [];
-
-    const lista=productos.map((p,i)=>({p,i})).filter(x=>sub.pred(x.p));
-    // El precio mínimo de cada familia se usa para ordenar familias completas,
-    // nunca productos sueltos. Así W y B permanecen contiguos automáticamente.
-    const familyMinPrice=new Map();
-    lista.forEach(x=>{
-      const key=exploreFamilyKey300(x.p);
-      const price=Number(x.p.pvp)||0;
-      if(!familyMinPrice.has(key) || price<familyMinPrice.get(key)) familyMinPrice.set(key,price);
-    });
-
-    return lista.sort((a,b)=>{
-      const familyA=exploreFamilyKey300(a.p);
-      const familyB=exploreFamilyKey300(b.p);
-      if(familyA!==familyB){
-        const byFamilyPrice=(familyMinPrice.get(familyA)||0)-(familyMinPrice.get(familyB)||0);
-        if(byFamilyPrice) return byFamilyPrice;
-        return familyA.localeCompare(familyB,'es',{numeric:true,sensitivity:'base'});
-      }
-      const byColor=exploreColorOrder300(a.p)-exploreColorOrder300(b.p);
-      if(byColor) return byColor;
-      const byPrice=(Number(a.p.pvp)||0)-(Number(b.p.pvp)||0);
-      if(byPrice) return byPrice;
-      return String(a.p.name||'').localeCompare(String(b.p.name||''),'es',{numeric:true,sensitivity:'base'});
-    });
-  }
-
-  function productRow(x){
-    const d = descripcionProducto(x.p);
-    return `<div class="explore-product" data-index="${x.i}" data-ref="${escapeHtml(x.p.name)}" data-pvp="${Number(x.p.pvp)}">
-      <div class="explore-product-main"><strong>${escapeHtml(d.icon)} ${escapeHtml(x.p.name)}</strong><span>${escapeHtml(d.desc)}</span></div>
-      <b>${fmt.format(x.p.pvp)}</b>
-      ${hxQtyControlHtml('explorer', x.i)}
-      <button type="button" class="catalog-add explore-add" data-index="${x.i}" data-ref="${escapeHtml(x.p.name)}" data-pvp="${Number(x.p.pvp)}">Añadir</button>
-    </div>`;
-  }
-
-  function isMobileExplore(){
-    return window.matchMedia && window.matchMedia('(max-width: 760px)').matches;
-  }
-
-  function firstValidSub(cat){
-    return cat.subs?.find(s=>countPred(s.pred)>0)?.title || cat.subs?.[0]?.title || null;
-  }
-
-  function renderExplore(){
-    const grid = document.getElementById('familiasGrid');
-    if(!grid) return;
-    const mobile = isMobileExplore();
-    const c = currentCat();
-    const sub = currentSub();
-    const list = filteredProducts();
-
-    function bindProductEvents(root){
-      function addExplorePersistent(idx, trigger){
-        const scrollHost = root.querySelector('.explore-products, .explore-mobile-panel');
-        const scrollTop = scrollHost ? scrollHost.scrollTop : 0;
-        const qty = hxModalQtyGet('explorer', idx);
-        const productEl = trigger?.closest('.explore-product') || root.querySelector(`.explore-product[data-index="${Number(idx)}"]`);
-        hxAddProductoModal('explorer', Number(idx), qty, productEl?.dataset.ref, productEl?.dataset.pvp);
-        if(trigger){
-          const original = trigger.textContent;
-          trigger.textContent = '✓ Añadido';
-          trigger.classList.add('added-ok');
-          setTimeout(()=>{ trigger.textContent = original || 'Añadir'; trigger.classList.remove('added-ok'); }, 750);
-        }
-        /* No volver a renderizar todo el Explorador: conserva DOM,
-           categoría, filtro y scroll para que el siguiente producto sea inmediato. */
-        if(scrollHost) scrollHost.scrollTop = scrollTop;
-        const input = document.getElementById('exploreFilter210');
-        if(input){ setTimeout(()=>{ input.focus(); input.select(); }, 0); }
-      }
-      hxBindQtyControls(root, 'explorer');
-      const touchUi = !!(window.matchMedia && window.matchMedia('(hover: none), (pointer: coarse)').matches);
-      if(!touchUi){
-        root.querySelectorAll('.explore-product').forEach(el=>el.addEventListener('dblclick',()=>{ addExplorePersistent(Number(el.dataset.index), null); }));
-        root.querySelectorAll('.explore-product').forEach(el=>el.addEventListener('click',()=>{ seleccionarProductoSeguro(el.dataset.ref, el.dataset.pvp, true); }));
-      }
-      root.querySelectorAll('.explore-add').forEach(btn=>btn.addEventListener('click',e=>{ e.stopPropagation(); addExplorePersistent(Number(btn.dataset.index), btn); }));
-      if(touchUi){
-        root.querySelectorAll('button,.explore-product').forEach(el=>{
-          const clearTouchState=()=>{
-            try{ el.blur(); }catch(_){}
-            try{
-              const active=document.activeElement;
-              if(active && root.contains(active) && typeof active.blur==='function') active.blur();
-            }catch(_){}
-          };
-          el.addEventListener('touchstart',clearTouchState,{passive:true});
-          el.addEventListener('touchend',()=>{
-            clearTouchState();
-            requestAnimationFrame(clearTouchState);
-            setTimeout(clearTouchState,40);
-          },{passive:true});
-          el.addEventListener('pointerup',()=>setTimeout(clearTouchState,0),{passive:true});
-        });
-      }
-    }
-
-    if(mobile){
-      const catsHtml = EXPLORE_211.map(cat=>{
-        const fams = (cat.subs||[]).length;
-        return `<button type="button" class="explore-cat ${cat.id===expCat?'active':''}" data-cat="${cat.id}"><span>${cat.icon} ${cat.title}</span><em>${fams}</em></button>`;
-      }).join('');
-      const subsHtml = ((c&&c.subs)||[]).map(s=>{
-        const total = countPred(s.pred);
-        return `<button type="button" class="explore-sub ${s.title===expSub?'active':''}" data-sub="${escapeHtml(s.title)}"><span>${s.icon} ${escapeHtml(s.title)}</span><em>${total}</em></button>`;
-      }).join('');
-      let body='';
-      let title='Categorías';
-      if(expMobileStep === 'subs'){
-        title = c ? `${c.icon} ${c.title}` : 'Subcategorías';
-        body = `<div class="explore-mobile-list explore-mobile-subs">${subsHtml}</div>`;
-      }else if(expMobileStep === 'products'){
-        title = `${sub ? sub.icon+' '+sub.title : (c ? c.icon+' '+c.title : 'Resultados')}`;
-        body = `<div class="explore-products explore-mobile-products">${list.map(productRow).join('') || '<div class="catalog-empty">No hay productos en esta subfamilia.</div>'}</div>`;
-      }else{
-        expMobileStep = 'cats';
-        title = 'Categorías';
-        body = `<div class="explore-mobile-list explore-mobile-cats">${catsHtml}</div>`;
-      }
-      grid.innerHTML = `
-        <div class="explore-wrap explore-mobile-wrap">
-          <div class="explore-search"><input id="exploreFilter210" autocomplete="off" placeholder="Buscar en todo el catálogo AJAX..." value="${escapeHtml(expQuery)}"><span>${list.length} productos</span></div>
-          <div class="explore-mobile-head">
-            ${expMobileStep==='cats' ? '' : '<button type="button" class="explore-back">← Atrás</button>'}
-            <div class="explore-breadcrumb">🧭 Explorar ${expMobileStep!=='cats' && c ? '<b>›</b> '+escapeHtml(c.icon)+' '+escapeHtml(c.title) : ''} ${expMobileStep==='products' && sub ? '<b>›</b> '+escapeHtml(sub.icon)+' '+escapeHtml(sub.title) : ''}</div>
-          </div>
-          <div class="explore-mobile-title">${escapeHtml(title)}</div>
-          <div class="explore-mobile-panel">${body}</div>
-        </div>`;
-      const input = document.getElementById('exploreFilter210');
-      if(input){
-        let timer; input.addEventListener('input',e=>{
-          /* La escritura manda: solo guardamos el valor aquí. El render pesado
-             se ejecuta cuando el usuario lleva un instante sin pulsar. */
-          expQuery=e.target.value;
-          clearTimeout(timer);
-          timer=setTimeout(()=>{
-            const latest=String(expQuery||'');
-            requestAnimationFrame(()=>{
-              if(latest.trim()) expMobileStep='products';
-              renderExplore();
-              requestAnimationFrame(()=>{
-                const i=document.getElementById('exploreFilter210');
-                if(i){ i.focus({preventScroll:true}); i.setSelectionRange(i.value.length,i.value.length); }
-              });
-            });
-          },360);
-        });
-      }
-      grid.querySelector('.explore-back')?.addEventListener('click',()=>{
-        if(expMobileStep === 'products') expMobileStep = 'subs';
-        else expMobileStep = 'cats';
-        expQuery='';
-        renderExplore();
-      });
-      grid.querySelectorAll('.explore-cat').forEach(btn=>btn.addEventListener('click',()=>{
-        expCat=btn.dataset.cat;
-        const cc=currentCat();
-        expSub=cc ? firstValidSub(cc) : null;
-        expQuery='';
-        expMobileStep='subs';
-        renderExplore();
-      }));
-      grid.querySelectorAll('.explore-sub').forEach(btn=>btn.addEventListener('click',()=>{
-        expSub=btn.dataset.sub;
-        expQuery='';
-        expMobileStep='products';
-        renderExplore();
-      }));
-      bindProductEvents(grid);
-      return;
-    }
-
-    const catsHtml = EXPLORE_211.map(cat=>{
-      const fams = (cat.subs||[]).length;
-      return `<button type="button" class="explore-cat ${cat.id===expCat?'active':''}" data-cat="${cat.id}"><span>${cat.icon} ${cat.title}</span><em>${fams}</em></button>`;
-    }).join('');
-    const subsHtml = ((c&&c.subs)||[]).map(s=>{
-      const total = countPred(s.pred);
-      return `<button type="button" class="explore-sub ${s.title===expSub?'active':''}" data-sub="${escapeHtml(s.title)}"><span>${s.icon} ${escapeHtml(s.title)}</span><em>${total}</em></button>`;
-    }).join('');
-    const initialHelp = !expQuery.trim() && !c;
-    grid.innerHTML = `
-      <div class="explore-wrap">
-        <div class="explore-search"><input id="exploreFilter210" autocomplete="off" placeholder="Buscar en todo el catálogo AJAX..." value="${escapeHtml(expQuery)}"><span>${list.length} productos</span></div>
-        <div class="explore-breadcrumb">🧭 ${c ? 'Explorar <b>›</b> '+escapeHtml(c.icon)+' '+escapeHtml(c.title)+(sub ? ' <b>›</b> '+escapeHtml(sub.icon)+' '+escapeHtml(sub.title) : '') : 'Selecciona una categoría o escribe en el buscador'}</div>
-        <div class="explore-layout">
-          <div class="explore-col explore-cats">${catsHtml}</div>
-          <div class="explore-col explore-subs">${subsHtml || '<div class="catalog-empty">Selecciona una categoría.</div>'}</div>
-          <div class="explore-products">${initialHelp ? '<div class="catalog-empty">Selecciona una categoría o escribe en el buscador para encontrar cualquier producto.</div>' : (list.map(productRow).join('') || '<div class="catalog-empty">No hay resultados.</div>')}</div>
-        </div>
-      </div>`;
-    const catsPanel211 = grid.querySelector('.explore-cats');
-    const subsPanel211 = grid.querySelector('.explore-subs');
-    if(catsPanel211) catsPanel211.scrollTop = expCatsScroll211;
-    if(subsPanel211) subsPanel211.scrollTop = expSubsScroll211;
-
-    const input = document.getElementById('exploreFilter210');
-    if(input){
-      let timer; input.addEventListener('input',e=>{
-        /* No reconstruir el modal entre pulsaciones: evita perder letras como
-           'home' -> 'hmo' en equipos lentos. */
-        expQuery=e.target.value;
-        clearTimeout(timer);
-        timer=setTimeout(()=>{
-          requestAnimationFrame(()=>{
-            renderExplore();
-            requestAnimationFrame(()=>{
-              const i=document.getElementById('exploreFilter210');
-              if(i){ i.focus({preventScroll:true}); i.setSelectionRange(i.value.length,i.value.length); }
-            });
-          });
-        },360);
-      });
-    }
-    grid.querySelectorAll('.explore-cat').forEach(btn=>btn.addEventListener('click',()=>{
-      const catsHost=grid.querySelector('.explore-cats');
-      expCatsScroll211=catsHost ? catsHost.scrollTop : expCatsScroll211;
-      expCat=btn.dataset.cat;
-      const cc=currentCat();
-      expSub=firstValidSub(cc);
-      expQuery='';
-      expSubsScroll211=0;
-      renderExplore();
-    }));
-    grid.querySelectorAll('.explore-sub').forEach(btn=>btn.addEventListener('click',()=>{
-      const catsHost=grid.querySelector('.explore-cats');
-      const subsHost=grid.querySelector('.explore-subs');
-      expCatsScroll211=catsHost ? catsHost.scrollTop : expCatsScroll211;
-      expSubsScroll211=subsHost ? subsHost.scrollTop : expSubsScroll211;
-      expSub=btn.dataset.sub;
-      expQuery='';
-      renderExplore();
-      requestAnimationFrame(()=>{
-        const restored=grid.querySelector('.explore-subs');
-        if(restored) restored.scrollTop=expSubsScroll211;
-        const products=grid.querySelector('.explore-products');
-        if(products) products.scrollTop=0;
-      });
-    }));
-    bindProductEvents(grid);
-  }
-
-  function abrirExplorar211(){
-    const modal = document.getElementById('familiasModal');
-    if(!modal) return;
-    const title = document.getElementById('familiasTitle');
-    if(title) title.textContent = 'Explorar catálogo';
-    const p = modal.querySelector('.modal-head p');
-    if(p) p.textContent = 'Navega por categoría y subfamilia para encontrar productos sin escribir referencias.';
-    expCat = null;
-    expSub = null;
-    expQuery='';
-    expCatsScroll211=0;
-    expSubsScroll211=0;
-    expMobileStep='cats';
-    renderExplore();
-    modal.classList.remove('hidden');
-    modal.setAttribute('aria-hidden','false');
-    document.body.classList.add('modal-open');
-  }
-
-  document.addEventListener('DOMContentLoaded',()=>{
-    const btn = document.getElementById('btnFamilias');
-    if(btn){
-      btn.dataset.explorarPro='1'; btn.innerHTML = '<span class="btn-ico">🧭</span>Explorar';
-      btn.addEventListener('click', function(e){ e.preventDefault(); e.stopPropagation(); e.stopImmediatePropagation(); abrirExplorar211(); }, true);
-    }
-    document.querySelectorAll('.creator').forEach(el=>{ el.textContent = `· Creado por David Corregidor · ${VERSION_EXPLORE_211}`; });
-  });
-})();
-
-
-/* =====================================================
-   v2.1.3 PRO - Ajuste fino Explorador
-   - Integración pasa a Intrusión.
-   - SIM / antenas a Accesorios.
-   - Storage/memoria ya no captura Bracket por el texto TF.
-   - Botón y pie fijados como v2.1.3 PRO.
-   ===================================================== */
-(function(){
-  function fixVersion213(){
-    try{
-      const b=document.getElementById('btnFamilias');
-      if(b) b.innerHTML='<span class="btn-ico">🧭</span>Explorar';
-    }catch(e){}
-  }
-  document.addEventListener('DOMContentLoaded',()=>{ fixVersion213(); setTimeout(fixVersion213,150); setTimeout(fixVersion213,700); });
-})();
-
-function descripcionPdfCorta(linea){
-  try{
-    const l = linea || {};
-    const refOriginal = String(l.name || '').trim();
-    const brandOriginal = String(l.brand || '').trim();
-    const brandEsAjax = normaliza(brandOriginal) === 'ajax';
-    // En el CSV, la columna brand contiene la descripción de los artículos no AJAX.
-    // El PDF debe conservarla en lugar de fabricar una descripción desde la referencia.
-    const descOriginal = String(l.desc || (!brandEsAjax ? brandOriginal : '') || '').trim();
-    if(!refOriginal && descOriginal) return descOriginal.slice(0, 58);
-    if(l.manual){ return (descOriginal || refOriginal || 'Línea manual').slice(0, 58); }
-    if(descOriginal && !brandEsAjax){
-      return descOriginal.length > 58 ? descOriginal.slice(0,55).trim() + '…' : descOriginal;
-    }
-
-    const ref = refOriginal.toUpperCase();
-
-    function colorRef(r){
-      if(/(^|[-_])W($|[-_])/.test(r)) return 'Blanco';
-      if(/(^|[-_])B($|[-_])/.test(r)) return 'Negro';
-      if(/(^|[-_])GRA($|[-_])/.test(r)) return 'Grafito';
-      if(/(^|[-_])GRE($|[-_])/.test(r)) return 'Verde';
-      if(/(^|[-_])IVO($|[-_])/.test(r)) return 'Marfil';
-      if(/(^|[-_])OLI($|[-_])/.test(r)) return 'Oliva';
-      if(/(^|[-_])FOG($|[-_])/.test(r)) return 'Niebla';
-      if(/(^|[-_])OYS($|[-_])/.test(r)) return 'Ostra';
-      return '';
-    }
-
-    const color = colorRef(ref);
-    let base = ref.replace(/^AJ-/, '');
-
-    const exactos = [
-      [/^HUB2PLUS/, 'Hub 2 Plus'], [/^HUB2-4G/, 'Hub 2 4G'], [/^HUB2/, 'Hub 2'], [/^HUBBP/, 'Hub BP'], [/^HUB($|-)/, 'Hub'],
-      [/^REX2/, 'ReX 2'], [/^REX($|-)/, 'ReX'],
-      [/^MOTIONCAM-HDR-PHOD/, 'MotionCam HDR PhOD'], [/^MOTIONCAM-HDR/, 'MotionCam HDR'], [/^MOTIONCAMOUTDOOR.*PHOD/, 'MotionCam Outdoor PhOD'], [/^MOTIONCAMOUTDOOR/, 'MotionCam Outdoor'], [/^MOTIONCAM/, 'MotionCam'],
-      [/^MOTIONPROTECTPLUS/, 'MotionProtect Plus'], [/^MOTIONPROTECT/, 'MotionProtect'], [/^OUTDOORPROTECT/, 'OutdoorProtect'],
-      [/^DOORPROTECTPLUS/, 'DoorProtect Plus'], [/^DOORPROTECT/, 'DoorProtect'], [/^GLASSPROTECT/, 'GlassProtect'],
-      [/^CURTAINCAM/, 'CurtainCam'], [/^DUALCURTAIN/, 'DualCurtain Outdoor'], [/^CURTAINOUTDOOR/, 'Curtain Outdoor'], [/^CURTAINPROTECT/, 'CurtainProtect'],
-      [/^KEYPADTOUCHSCREEN/, 'KeyPad TouchScreen'], [/^KEYPADPLUS/, 'KeyPad Plus'], [/^KEYPADOUTDOOR/, 'KeyPad Outdoor'], [/^KEYPAD/, 'KeyPad'],
-      [/^HOMESIREN/, 'HomeSiren'], [/^STREETSIRENCUSTOM/, 'StreetSiren Custom'], [/^STREETSIREN/, 'StreetSiren'],
-      [/^FIREPROTECT2-HSC/, 'FireProtect 2 HSC'], [/^FIREPROTECT2-HS/, 'FireProtect 2 HS'], [/^FIREPROTECT2-HC/, 'FireProtect 2 HC'], [/^FIREPROTECT2-H/, 'FireProtect 2 H'], [/^FIREPROTECT2-C/, 'FireProtect 2 C'], [/^FIREPROTECTPLUS/, 'FireProtect Plus'], [/^FIREPROTECT/, 'FireProtect'],
-      [/^LEAKSPROTECT/, 'LeaksProtect'], [/^WATERSTOP/, 'WaterStop'], [/^LIFEQUALITY-LITE/, 'LifeQuality Lite'], [/^LIFEQUALITY/, 'LifeQuality'],
-      [/^BULLETCAM-(\d+)/, 'BulletCam $1 MP'], [/^DOMECAM-MINI-(\d+)/, 'DomeCam Mini $1 MP'], [/^DOMECAM-(\d+)/, 'DomeCam $1 MP'], [/^TURRETCAM-(\d+)/, 'TurretCam $1 MP'], [/^INDOORCAM-(\d+)/, 'IndoorCam $1 MP'], [/^DOORBELL-(\d+)/, 'DoorBell $1 MP'],
-      [/^NVRKIT/, 'Kit NVR'], [/^NVR(\d+)/, 'NVR $1'],
-      [/^LIGHTCORE-1G/, 'LightSwitch 1 tecla'], [/^LIGHTCORE-2G2W/, 'LightSwitch 2 teclas/2 vías'], [/^LIGHTCORE-2G/, 'LightSwitch 2 teclas'], [/^LIGHTCORE-2W/, 'LightSwitch 2 vías'], [/^LIGHTCORE-CROSS/, 'LightSwitch cruzamiento'], [/^LIGHTCORE-DIMMER/, 'Dimmer LightSwitch'],
-      [/^SOCKET/, 'Socket'], [/^OUTLETCORE-SMART/, 'Outlet Core Smart'], [/^OUTLETCORE-LAN/, 'Outlet Core LAN'], [/^OUTLETCORE-BASIC/, 'Outlet Core Basic'], [/^RELAY/, 'Relay'], [/^WALLSWITCH/, 'WallSwitch'],
-      [/^TRANSMITTER/, 'Transmitter'], [/^MULTITRANSMITTER/, 'MultiTransmitter'], [/^UARTBRIDGE/, 'uartBridge'], [/^OCBRIDGE/, 'ocBridge'], [/^VHFBRIDGE/, 'vhfBridge'],
-      [/^SPACECONTROL/, 'SpaceControl'], [/^DOUBLEBUTTON/, 'DoubleButton'], [/^BUTTON/, 'Button'], [/^TAG/, 'Tag'], [/^PASS/, 'Pass'],
-      [/^HD(\d+)TB/, 'Disco HDD $1 TB'], [/^HS[-_ ]?TF.*(128G)/, 'MicroSD 128 GB'], [/^HS[-_ ]?TF.*(64G)/, 'MicroSD 64 GB'], [/^HS[-_ ]?TF.*(32G)/, 'MicroSD 32 GB']
-    ];
-
-    let nombre = '';
-    for(const [rx, val] of exactos){
-      const m = ref.match(rx);
-      if(m){ nombre = val.replace('$1', m[1] || ''); break; }
-    }
-
-    if(!nombre){
-      nombre = base
-        .replace(/-(B|W|GRA|GRE|IVO|OLI|FOG|OYS)(-|$)/g, '-')
-        .replace(/-(DUMMY|BRACKET|LENS)$/g, '')
-        .replace(/[-_]+/g, ' ')
-        .replace(/\s+/g, ' ')
-        .trim()
-        .toLowerCase()
-        .replace(/\b\w/g, c => c.toUpperCase());
-    }
-
-    const extras = [];
-    if(/PHOD/.test(ref) && !/PHOD/i.test(nombre)) extras.push('PhOD');
-    if(/HDR/.test(ref) && !/HDR/i.test(nombre)) extras.push('HDR');
-    if(/HLVF/.test(ref)) extras.push('HLVF');
-    if(/HL($|-)/.test(ref)) extras.push('HL');
-    if(/4G/.test(ref) && !/4G/.test(nombre)) extras.push('4G');
-    if(/POE/.test(ref)) extras.push('PoE');
-    if(/AC($|-)/.test(ref)) extras.push('AC');
-
-    let out = [nombre, ...extras, color].filter(Boolean).join(' ').replace(/\s+/g,' ').trim();
-    if(!out) out = descOriginal || refOriginal;
-
-    // Mantiene PDF compacto sin cortar referencias comerciales importantes.
-    if(out.length > 52){
-      out = out.replace(/\b(Jeweller|inalámbrico|inteligente|compatible|para sistemas Ajax)\b/gi,'').replace(/\s+/g,' ').trim();
-    }
-    if(out.length > 58) out = out.slice(0,55).trim() + '…';
-    return out;
-  }catch(e){
-    return String((linea && (linea.desc || linea.name)) || 'Producto').slice(0,58);
-  }
-}
-
-
-/* =====================================================
-   3.0.0 - versión única
-   ===================================================== */
-(function(){
-  const APP_VERSION = '4.0.8';
-  function setAppVersion(){
-    document.querySelectorAll('.creator').forEach(el=>{
-      el.textContent = `· Creado por David Corregidor · ${APP_VERSION}`;
-    });
-  }
-  window.actualizarVersionApp = setAppVersion;
-  document.addEventListener('DOMContentLoaded', ()=>{
-    setAppVersion();
-    const target = document.querySelector('.creator');
-    if(target){
-      const observer = new MutationObserver(()=>{
-        if(target.textContent !== `· Creado por David Corregidor · ${APP_VERSION}`) setAppVersion();
-      });
-      observer.observe(target,{childList:true,characterData:true,subtree:true});
-    }
-  }, {once:true});
-})();
 
 /* =====================================================
    v4.1.5 - Recuperación robusta y gestor móvil espacioso
@@ -5974,6 +4732,16 @@ function descripcionPdfCorta(linea){
   let pmSelectedId='';
   let pmView={type:'recent',value:''};
   const byId=id=>document.getElementById(id);
+  const PM_ICON={
+    warning:'<span class="pmx-nav-icon pmx-nav-warning" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 3 2.8 20h18.4z"/><path d="M12 9v5M12 17.3v.2"/></svg></span>',
+    store:'<span class="pmx-nav-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 9h16v11H4zM3 9l2-5h14l2 5"/><path d="M8 20v-6h4v6M3 9c0 2 3 2 3 0 0 2 3 2 3 0 0 2 3 2 3 0 0 2 3 2 3 0 0 2 3 2 3 0"/></svg></span>',
+    person:'<span class="pmx-nav-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21c.7-4.3 3.3-7 8-7s7.3 2.7 8 7"/></svg></span>',
+    calendar:'<span class="pmx-inline-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M8 3v4M16 3v4M3 10h18"/></svg></span>',
+    folder:'<span class="pmx-inline-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M3 6h7l2 2h9v11H3z"/></svg></span>',
+    search:'<span class="pmx-inline-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg></span>',
+    document:'<span class="pmx-document-svg" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M6 3h8l4 4v14H6z"/><path d="M14 3v5h5M9 12h6M9 16h6"/></svg></span>',
+    package:'<span class="pmx-nav-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="m4 7 8-4 8 4-8 4z"/><path d="M4 7v10l8 4 8-4V7M12 11v10"/></svg></span>'
+  };
   const modal=()=>byId('pmModal');
   const rows=p=>Array.isArray(p?.lineas)?p.lineas.filter(l=>l&&!l.separador&&l.tipo!=='separador'):[];
   const qty=l=>Math.max(0,Number(l?.qty??l?.cantidad??l?.cant)||0);
@@ -5985,30 +4753,82 @@ function descripcionPdfCorta(linea){
   const modified=p=>String(p?.updatedAt||p?.guardado||p?.createdAt||p?.fecha||'');
   function calc(p){let base=0;rows(p).forEach(l=>{const price=Number(l.pvp)||0,d= Math.min(100,Math.max(0,Number(l.dto??l.descuento)||0));base+=price*qty(l)*(1-d/100)});base*=1-Math.min(100,Math.max(0,Number(p?.dtoGeneral)||0))/100;return {count:rows(p).length,total:base*(1+Math.max(0,Number(p?.iva)||0)/100)}}
   function date(v){if(!v)return 'Sin fecha';const d=new Date(v);if(Number.isNaN(d.getTime()))return String(v);return new Intl.DateTimeFormat('es-ES',{day:'2-digit',month:'2-digit',year:'numeric'}).format(d)}
-  function searchText(p){return [identifier(p),p?.numero,p?.cliente,p?.tienda,p?.comercial,p?.telefono,p?.email,...rows(p).map(product)].filter(Boolean).join(' ').toLowerCase()}
+  function searchText(p){
+    const rawDate=String(p?.fecha||modified(p)||'');
+    const shownDate=date(rawDate);
+    const productText=rows(p).map(product).join(' ');
+    return [identifier(p),p?.numero,p?.cliente,p?.telefono,p?.email,p?.tienda,p?.comercial,rawDate,shownDate,productText].filter(Boolean).join(' ').toLowerCase();
+  }
+  function pmDateValue(p){
+    const raw=String(p?.fecha||modified(p)||'').trim();
+    if(!raw)return null;
+    const iso=raw.match(/^(\d{4})-(\d{2})-(\d{2})/);
+    if(iso)return new Date(Number(iso[1]),Number(iso[2])-1,Number(iso[3]));
+    const es=raw.match(/^(\d{1,2})[\/.-](\d{1,2})[\/.-](\d{4})/);
+    if(es)return new Date(Number(es[3]),Number(es[2])-1,Number(es[1]));
+    const d=new Date(raw);return Number.isNaN(d.getTime())?null:new Date(d.getFullYear(),d.getMonth(),d.getDate());
+  }
+  function pmDayStart(d){return new Date(d.getFullYear(),d.getMonth(),d.getDate())}
+  function pmDateBounds(mode){
+    const today=pmDayStart(new Date());
+    if(mode==='today')return [today,today];
+    if(mode==='7days'){const from=new Date(today);from.setDate(from.getDate()-6);return [from,today]}
+    if(mode==='month')return [new Date(today.getFullYear(),today.getMonth(),1),today];
+    if(mode==='prevmonth')return [new Date(today.getFullYear(),today.getMonth()-1,1),new Date(today.getFullYear(),today.getMonth(),0)];
+    if(mode==='custom'){
+      const from=byId('pmDateFrom')?.value,to=byId('pmDateTo')?.value;
+      return [from?pmDayStart(new Date(from+'T00:00:00')):null,to?pmDayStart(new Date(to+'T00:00:00')):null];
+    }
+    return [null,null];
+  }
+  function pmMatchesDate(p){
+    const mode=byId('pmFilterDate')?.value||'';if(!mode)return true;
+    const d=pmDateValue(p);if(!d)return false;
+    const [from,to]=pmDateBounds(mode);if(from&&d<from)return false;if(to&&d>to)return false;return true;
+  }
+  function pmDateLabel(){
+    const mode=byId('pmFilterDate')?.value||'';
+    if(mode==='today')return 'Hoy';if(mode==='7days')return 'Últimos 7 días';if(mode==='month')return 'Este mes';if(mode==='prevmonth')return 'Mes anterior';
+    if(mode==='custom'){
+      const f=byId('pmDateFrom')?.value,t=byId('pmDateTo')?.value;
+      return f||t?`Fecha: ${f?date(f):'…'} – ${t?date(t):'…'}`:'Rango personalizado';
+    }
+    return '';
+  }
+  function pmSyncDateRange(){const range=byId('pmDateRange');if(range)range.hidden=(byId('pmFilterDate')?.value!=='custom')}
+  function pmActiveFilterCount(){
+    const store=byId('pmFilterStore')?.value||'', commercial=byId('pmFilterCommercial')?.value||'', mode=byId('pmFilterDate')?.value||'';
+    const dateActive=mode==='custom' ? !!(byId('pmDateFrom')?.value||byId('pmDateTo')?.value) : !!mode;
+    return (store?1:0)+(commercial?1:0)+(dateActive?1:0);
+  }
+  function pmSyncFiltersUI(){
+    const panel=byId('pmAdvancedFilters'),toggle=byId('pmFiltersToggle'),badge=byId('pmFiltersBadge'),toolbar=modal()?.querySelector('.pmx-toolbar');
+    const count=pmActiveFilterCount();
+    if(badge){badge.textContent=String(count);badge.hidden=!count}
+    const open=!!panel && !panel.hidden;
+    toggle?.classList.toggle('is-active',!!count || open);
+    toggle?.setAttribute('aria-expanded',open?'true':'false');
+    toolbar?.classList.toggle('pmx-filters-open',open);
+  }
   function selected(){return listAll().find(p=>idOf(p)===String(pmSelectedId))||null}
   function unique(field){return [...new Set(listAll().map(p=>String(p?.[field]||'').trim()).filter(Boolean))].sort((a,b)=>a.localeCompare(b,'es',{numeric:true}))}
   function countBy(field,value){return listAll().filter(p=>String(p?.[field]||'').trim()===String(value||'').trim()).length}
   function syncFilters(){
     const all=listAll();
     const store=byId('pmFilterStore'), commercial=byId('pmFilterCommercial');
-    const oldS=store?.value||'',oldC=commercial?.value||'';
-    if(store){store.innerHTML='<option value="">Todas las tiendas</option><option value="__NONE__">Sin tienda</option>'+unique('tienda').map(x=>`<option>${escapeHtml(x)}</option>`).join('');store.value=oldS}
-    if(commercial){commercial.innerHTML='<option value="">Todos los comerciales</option><option value="__NONE__">Sin comercial</option>'+unique('comercial').map(x=>`<option>${escapeHtml(x)}</option>`).join('');commercial.value=oldC}
+    const oldS=store?.value||'',oldC=(commercial?.value==='__NONE__'?'':(commercial?.value||''));
+    if(store){store.innerHTML='<option value="">Todas las tiendas</option>'+unique('tienda').map(x=>`<option>${escapeHtml(x)}</option>`).join('');store.value=oldS}
+    if(commercial){commercial.innerHTML='<option value="">Todos los comerciales</option>'+unique('comercial').map(x=>`<option>${escapeHtml(x)}</option>`).join('');commercial.value=oldC}
     const sf=byId('pmStoreFolders'),cf=byId('pmCommercialFolders');
-    const noStore=all.filter(p=>!String(p?.tienda||'').trim()).length;
-    const noCommercial=all.filter(p=>!String(p?.comercial||'').trim()).length;
-    const noAssignment=all.filter(p=>!String(p?.tienda||'').trim()&&!String(p?.comercial||'').trim()).length;
-    if(sf)sf.innerHTML=[
-      `<button type="button" class="pmx-folder pmx-folder-child pmx-folder-warning" data-pm-view="missing-store">⚠ <span>Sin tienda</span><b class="pmx-folder-count">(${noStore})</b></button>`,
-      ...unique('tienda').map(x=>`<button type="button" class="pmx-folder pmx-folder-child" data-pm-view="store" data-pm-value="${escapeHtml(x)}">🏪 <span>${escapeHtml(x)}</span><b class="pmx-folder-count">(${countBy('tienda',x)})</b></button>`)
-    ].join('');
-    if(cf)cf.innerHTML=[
-      `<button type="button" class="pmx-folder pmx-folder-child pmx-folder-warning" data-pm-view="missing-commercial">⚠ <span>Sin comercial</span><b class="pmx-folder-count">(${noCommercial})</b></button>`,
-      ...unique('comercial').map(x=>`<button type="button" class="pmx-folder pmx-folder-child" data-pm-view="commercial" data-pm-value="${escapeHtml(x)}">👤 <span>${escapeHtml(x)}</span><b class="pmx-folder-count">(${countBy('comercial',x)})</b></button>`)
-    ].join('');
+    if(sf)sf.innerHTML=unique('tienda').map(x=>`<button type="button" class="pmx-folder pmx-folder-child" data-pm-view="store" data-pm-value="${escapeHtml(x)}">${PM_ICON.store}<span>${escapeHtml(x)}</span><b class="pmx-folder-count">(${countBy('tienda',x)})</b></button>`).join('');
+    if(cf)cf.innerHTML=unique('comercial').map(x=>`<button type="button" class="pmx-folder pmx-folder-child" data-pm-view="commercial" data-pm-value="${escapeHtml(x)}">${PM_ICON.person}<span>${escapeHtml(x)}</span><b class="pmx-folder-count">(${countBy('comercial',x)})</b></button>`).join('');
     const pending=byId('pmPendingFolders');
-    if(pending)pending.innerHTML=`<button type="button" class="pmx-folder pmx-folder-child pmx-folder-warning" data-pm-view="unassigned">⚠ <span>Sin tienda ni comercial</span><b class="pmx-folder-count">(${noAssignment})</b></button>`;
+    if(pending){
+      const missingStore=all.filter(p=>!String(p.tienda||'').trim()).length;
+      pending.innerHTML=missingStore
+        ? `<button type="button" class="pmx-folder pmx-folder-child" data-pm-view="missing-store">${PM_ICON.folder}<span>Sin tienda</span><b class="pmx-folder-count">(${missingStore})</b></button>`
+        : '';
+    }
     const recent=byId('pmFolderRecentCount'),total=byId('pmFolderAllCount');
     if(recent)recent.textContent=`(${Math.min(20,all.length)})`;
     if(total)total.textContent=`(${all.length})`;
@@ -6018,12 +4838,11 @@ function descripcionPdfCorta(linea){
     if(pmView.type==='store')list=list.filter(p=>String(p.tienda||'').trim()===pmView.value);
     else if(pmView.type==='commercial')list=list.filter(p=>String(p.comercial||'').trim()===pmView.value);
     else if(pmView.type==='missing-store')list=list.filter(p=>!String(p.tienda||'').trim());
-    else if(pmView.type==='missing-commercial')list=list.filter(p=>!String(p.comercial||'').trim());
-    else if(pmView.type==='unassigned')list=list.filter(p=>!String(p.tienda||'').trim()&&!String(p.comercial||'').trim());
     const s=byId('pmFilterStore')?.value||'',c=byId('pmFilterCommercial')?.value||'';
     if(s==='__NONE__')list=list.filter(p=>!String(p.tienda||'').trim());else if(s)list=list.filter(p=>String(p.tienda||'').trim()===s);
     if(c==='__NONE__')list=list.filter(p=>!String(p.comercial||'').trim());else if(c)list=list.filter(p=>String(p.comercial||'').trim()===c);
-    const q=String(byId('pmSearch')?.value||'').trim().toLowerCase();if(q)list=list.filter(p=>q.split(/\s+/).every(part=>searchText(p).includes(part)));
+    list=list.filter(pmMatchesDate);
+    const q=String(byId('pmSearch')?.value||'').trim().toLowerCase();if(q.length>=2)list=list.filter(p=>q.split(/\s+/).every(part=>searchText(p).includes(part)));
     const sort=byId('pmSort')?.value||'recent';
     if(sort==='identifier')list.sort((a,b)=>title(a).localeCompare(title(b),'es',{numeric:true}));
     else if(sort==='client')list.sort((a,b)=>String(a.cliente||'').localeCompare(String(b.cliente||''),'es'));
@@ -6046,6 +4865,7 @@ function descripcionPdfCorta(linea){
     });
   }
   function updateFilterNotice(){
+    pmSyncFiltersUI();
     const box=byId('pmFilterNotice');if(!box)return;
     const parts=[];
     if(pmView.type==='recent')parts.push('Recientes');
@@ -6053,16 +4873,18 @@ function descripcionPdfCorta(linea){
     else if(pmView.type==='store')parts.push(`Tienda: ${pmView.value}`);
     else if(pmView.type==='commercial')parts.push(`Comercial: ${pmView.value}`);
     else if(pmView.type==='missing-store')parts.push('Sin tienda');
-    else if(pmView.type==='missing-commercial')parts.push('Sin comercial');
-    else if(pmView.type==='unassigned')parts.push('Sin tienda ni comercial');
-    const store=byId('pmFilterStore')?.value||'',commercial=byId('pmFilterCommercial')?.value||'',q=String(byId('pmSearch')?.value||'').trim();
+    const store=byId('pmFilterStore')?.value||'',commercial=byId('pmFilterCommercial')?.value||'',q=String(byId('pmSearch')?.value||'').trim(),dateMode=byId('pmFilterDate')?.value||'';
+    const validQuery=q.length>=2;
     if(store)parts.push(store==='__NONE__'?'Sin tienda':`Tienda: ${store}`);
     if(commercial)parts.push(commercial==='__NONE__'?'Sin comercial':`Comercial: ${commercial}`);
-    if(q)parts.push(`Búsqueda: “${q}”`);
-    const active=pmView.type!=='recent'||store||commercial||q;
+    if(dateMode && (dateMode!=='custom' || byId('pmDateFrom')?.value || byId('pmDateTo')?.value))parts.push(pmDateLabel());
+    if(validQuery)parts.push(`Búsqueda: “${q}”`);
+    const active=pmView.type!=='recent'||store||commercial||dateMode||validQuery;
     box.classList.toggle('is-filtered',!!active);
-    box.innerHTML=`<span>${active?'🔎 Filtrando':'📂 Vista'}: <strong>${escapeHtml(parts.join(' · ')||'Recientes')}</strong></span>${active?'<button type="button" id="pmClearFilters">Quitar filtros</button>':''}`;
-    byId('pmClearFilters')?.addEventListener('click',()=>{pmView={type:'recent',value:''};if(byId('pmFilterStore'))byId('pmFilterStore').value='';if(byId('pmFilterCommercial'))byId('pmFilterCommercial').value='';if(byId('pmSearch'))byId('pmSearch').value='';clearSelection();render()});
+    box.hidden=!active;
+    if(!active){box.innerHTML='';return}
+    box.innerHTML=`<span>${PM_ICON.search} Filtrando: <strong>${escapeHtml(parts.join(' · ')||'Recientes')}</strong></span><button type="button" id="pmClearFilters">Limpiar filtros</button>`;
+    byId('pmClearFilters')?.addEventListener('click',()=>{pmView={type:'recent',value:''};if(byId('pmFilterStore'))byId('pmFilterStore').value='';if(byId('pmFilterCommercial'))byId('pmFilterCommercial').value='';if(byId('pmFilterDate'))byId('pmFilterDate').value='';if(byId('pmDateFrom'))byId('pmDateFrom').value='';if(byId('pmDateTo'))byId('pmDateTo').value='';if(byId('pmSearch'))byId('pmSearch').value='';pmSyncDateRange();clearSelection();render()});
   }
   function clearMobileInlineState(){
     const m=modal();if(!m)return;
@@ -6080,7 +4902,7 @@ function descripcionPdfCorta(linea){
     modal()?.classList.remove('pm-has-selection','pm-mobile-preview');
     preview();
   }
-  function resetManagerView(){
+  function resetManagerView({preserveSearch=false}={}){
     pmSelectedId='';
     window.HX_PM_SELECTED_ID='';
     pmView={type:'recent',value:''};
@@ -6088,32 +4910,36 @@ function descripcionPdfCorta(linea){
     clearMobileInlineState();
     m?.classList.remove('pm-mobile-preview','pm-mobile-list','pm-has-selection');
     const select=byId('presupuestosGuardados');if(select)select.value='';
-    if(byId('pmSearch'))byId('pmSearch').value='';
+    if(!preserveSearch && byId('pmSearch'))byId('pmSearch').value='';
     if(byId('pmFilterStore'))byId('pmFilterStore').value='';
     if(byId('pmFilterCommercial'))byId('pmFilterCommercial').value='';
+    if(byId('pmFilterDate'))byId('pmFilterDate').value='';
+    if(byId('pmDateFrom'))byId('pmDateFrom').value='';
+    if(byId('pmDateTo'))byId('pmDateTo').value='';
+    pmSyncDateRange();
     if(byId('pmSort'))byId('pmSort').value='recent';
     document.querySelectorAll('#pmModal .pmx-row.is-selected').forEach(r=>r.classList.remove('is-selected'));
-    ['pmOpen','pmDuplicate','pmRename','pmDelete'].forEach(id=>{const b=byId(id);if(b)b.disabled=true});
+    ['pmOpen','pmDuplicate','pmPdf','pmRename','pmDelete'].forEach(id=>{const b=byId(id);if(b)b.disabled=true});
     const list=byId('pmList');if(list)list.scrollTop=0;
     const browser=m?.querySelector('.pmx-browser');if(browser)browser.scrollTop=0;
     preview();
   }
   function preview(){
     const p=selected(),root=byId('pmPreview'),head=byId('pmPreviewTitle'),active=!!p;
-    ['pmOpen','pmDuplicate','pmRename','pmDelete'].forEach(id=>{const e=byId(id);if(e)e.disabled=!active});
+    ['pmOpen','pmDuplicate','pmPdf','pmRename','pmDelete'].forEach(id=>{const e=byId(id);if(e)e.disabled=!active});
     modal()?.classList.toggle('pm-has-selection',active);
     if(!root||!head)return;
-    if(!p){head.textContent='Selecciona un presupuesto';root.className='pmx-preview-body pmx-preview-empty';root.innerHTML='<div class="pmx-empty-icon">▤</div><strong>Selecciona un presupuesto</strong><p>Aquí verás sus datos antes de recuperarlo.</p>';return}
+    if(!p){head.textContent='Selecciona un presupuesto';root.className='pmx-preview-body pmx-preview-empty';root.innerHTML=`<div class="pmx-empty-icon">${PM_ICON.document}</div><strong>Selecciona un presupuesto</strong><p>Aquí verás sus datos antes de recuperarlo.</p>`;return}
     const c=calc(p),r=rows(p),shown=r.slice(0,5);head.textContent=title(p);
-    root.className='pmx-preview-body';root.innerHTML=`<div class="pmx-identity"><span class="pmx-document-icon">▤</span><div><h4>${escapeHtml(title(p))}</h4><p>${escapeHtml(p.numero||'Sin número')}</p></div></div><dl class="pmx-meta"><div><dt>Cliente</dt><dd>${escapeHtml(p.cliente||'Sin cliente')}</dd></div><div><dt>Tienda</dt><dd>${escapeHtml(p.tienda||'Sin tienda')}</dd></div><div><dt>Comercial</dt><dd>${escapeHtml(p.comercial||'Sin asignar')}</dd></div><div><dt>Fecha</dt><dd>${escapeHtml(date(p.fecha||modified(p)))}</dd></div><div><dt>Productos</dt><dd>${c.count}</dd></div></dl><div class="pmx-total"><span>Total</span><strong>${fmt.format(c.total)}</strong></div><div class="pmx-products"><div class="pmx-products-title"><span>Primeros productos</span>${r.length>5?`<small>+${r.length-5} más</small>`:''}</div><ul>${shown.length?shown.map(l=>`<li><span>${escapeHtml(product(l))}</span><b>x${qty(l)||1}</b></li>`).join(''):'<li class="pmx-no-products">Sin productos</li>'}</ul></div>`;
+    root.className='pmx-preview-body pmx-preview-pro';root.innerHTML=`<div class="pmx-identity"><span class="pmx-document-icon">${PM_ICON.document}</span><div><p class="pmx-id-number">${escapeHtml(p.numero||'Sin número')} · ${escapeHtml(date(p.fecha||modified(p)))}</p></div></div><dl class="pmx-meta"><div>${PM_ICON.person}<span><dt>Cliente</dt><dd>${escapeHtml(p.cliente||'Sin cliente')}</dd></span></div><div>${PM_ICON.store}<span><dt>Tienda</dt><dd>${escapeHtml(p.tienda||'Sin tienda')}</dd></span></div><div>${PM_ICON.person}<span><dt>Comercial</dt><dd>${escapeHtml(p.comercial||'Sin asignar')}</dd></span></div><div>${PM_ICON.package}<span><dt>Productos</dt><dd>${c.count}</dd></span></div></dl><div class="pmx-total"><span>Total</span><strong>${fmt.format(c.total)}</strong></div><div class="pmx-products"><div class="pmx-products-title"><span>Productos <b>(${c.count})</b></span>${r.length>5?`<small>Ver ${r.length} productos</small>`:''}</div><ul>${shown.length?shown.map(l=>`<li><span>${escapeHtml(product(l))}</span><b>x${qty(l)||1}</b></li>`).join(''):'<li class="pmx-no-products">Sin productos</li>'}</ul></div>`;
   }
   function render(){
     syncFilters();markFolder();updateFilterNotice();const all=listAll(),list=filtered(),root=byId('pmList');
     if(byId('pmCount'))byId('pmCount').textContent=`${all.length} ${all.length===1?'guardado':'guardados'}`;
     if(byId('pmVisibleCount'))byId('pmVisibleCount').textContent=`${list.length} visibles`;
     if(!root)return;if(pmSelectedId&&!all.some(p=>idOf(p)===pmSelectedId))pmSelectedId='';
-    if(!list.length){window.HX_PM_SELECTED_ID='';root.innerHTML='<div class="pmx-list-empty"><span>▤</span><strong>No hay presupuestos</strong><small>Cambia la carpeta o los filtros.</small></div>';pmSelectedId='';preview();return}
-    root.innerHTML=list.map(p=>{const c=calc(p),id=idOf(p),sel=id===pmSelectedId;return `<button type="button" class="pmx-row${sel?' is-selected':''}" data-pm-id="${escapeHtml(id)}"><span class="pmx-row-icon">▤</span><span class="pmx-row-main"><strong class="pmx-card-identifier${identifier(p)?'':' is-empty'}">${escapeHtml(identifier(p)||'Sin identificador')}</strong><b class="pmx-card-number">${escapeHtml(p.numero||'Sin número')}</b><small class="pmx-card-client">👤 <span>Cliente:</span> ${escapeHtml(p.cliente||'Sin cliente')}</small><span class="pmx-card-fields"><em>🏪 ${escapeHtml(p.tienda||'Sin tienda')}</em><em>👤 ${escapeHtml(p.comercial||'Sin asignar')}</em><em>📅 ${escapeHtml(date(p.fecha||modified(p)))}</em></span></span><span class="pmx-row-side"><strong>${fmt.format(c.total)}</strong><small>${c.count} productos</small></span></button>`}).join('');
+    if(!list.length){window.HX_PM_SELECTED_ID='';root.innerHTML=`<div class="pmx-list-empty"><span>${PM_ICON.document}</span><strong>No hay presupuestos</strong><small>Cambia la carpeta o los filtros.</small></div>`;pmSelectedId='';preview();return}
+    root.innerHTML=list.map(p=>{const c=calc(p),id=idOf(p),sel=id===pmSelectedId;return `<button type="button" class="pmx-row${sel?' is-selected':''}" data-pm-id="${escapeHtml(id)}"><span class="pmx-row-icon">${PM_ICON.document}</span><span class="pmx-row-main"><strong class="pmx-card-identifier${identifier(p)?'':' is-empty'}">${escapeHtml(identifier(p)||'Sin identificador')}</strong><b class="pmx-card-number">${escapeHtml(p.numero||'Sin número')}</b><small class="pmx-card-client">${PM_ICON.person}<span>Cliente:</span> ${escapeHtml(p.cliente||'Sin cliente')}</small><span class="pmx-card-fields"><em>${PM_ICON.store}${escapeHtml(p.tienda||'')}</em><em>${PM_ICON.person}${escapeHtml(p.comercial||'')}</em><em>${PM_ICON.calendar}${escapeHtml(date(p.fecha||modified(p)))}</em></span></span><span class="pmx-row-side"><strong>${fmt.format(c.total)}</strong><small>${c.count} productos</small></span></button>`}).join('');
     root.querySelectorAll('.pmx-row').forEach(row=>row.addEventListener('click',()=>{
       // En PC selecciona; en móvil abre una vista previa separada antes de recuperar.
       pmSelectedId=row.dataset.pmId||'';
@@ -6140,11 +4966,24 @@ function descripcionPdfCorta(linea){
       }
     }));preview();
   }
+  async function pdfSelected(){
+    const p=selected();
+    if(!p) return;
+    const snapshot=datosPresupuesto();
+    const activeId=window.HX_ACTIVE_BUDGET_ID;
+    try{
+      aplicarPresupuesto(p);
+      await pdf();
+    }finally{
+      aplicarPresupuesto(snapshot);
+      window.HX_ACTIVE_BUDGET_ID=activeId;
+    }
+  }
   async function show(){
     const m=modal();if(!m)return;
     resetManagerView();
     m.classList.remove('hidden');m.setAttribute('aria-hidden','false');
-    try{window.HX_LOADING_SHOW?.('Cargando presupuestos...');await window.HX_RECARGAR_PRESUPUESTOS?.({silencioso:true})}catch(e){}finally{window.HX_LOADING_HIDE?.()}
+    try{window.HX_LOADING_SHOW?.('Cargando presupuestos...');await window.HX_RECARGAR_PRESUPUESTOS?.({silencioso:true,forzar:true})}catch(e){}finally{window.HX_LOADING_HIDE?.()}
     render();
     if(!matchMedia('(max-width:900px)').matches) setTimeout(()=>byId('pmSearch')?.focus(),30);
   }
@@ -6155,7 +4994,7 @@ function descripcionPdfCorta(linea){
     render();
   }
   document.addEventListener('DOMContentLoaded',()=>{
-    byId('btnBudgets')?.addEventListener('click',show);byId('pmClose')?.addEventListener('click',hide);byId('pmBackdrop')?.addEventListener('click',hide);byId('pmBackMobile')?.addEventListener('click',()=>{
+    byId('btnBudgets')?.addEventListener('click',show);byId('pmPdf')?.addEventListener('click',()=>{pdfSelected().catch(error=>{console.error('[Hiper Ajax] PDF guardado:',error);alert('No se pudo generar el PDF del presupuesto.');});});byId('pmClose')?.addEventListener('click',hide);byId('pmBackdrop')?.addEventListener('click',hide);byId('pmBackMobile')?.addEventListener('click',()=>{
       clearSelection();
       const m=modal();
       m?.classList.remove('pm-mobile-preview','pm-has-selection');
@@ -6170,11 +5009,66 @@ function descripcionPdfCorta(linea){
       const s=byId('presupuestosGuardados');if(s)s.value='';
       preview();
     });
-    ['pmSearch','pmFilterStore','pmFilterCommercial','pmSort'].forEach(id=>byId(id)?.addEventListener(id==='pmSearch'?'input':'change',()=>{clearSelection();render();if(matchMedia('(max-width:900px)').matches)modal()?.classList.add('pm-mobile-list')}));
+    // Buscador del gestor:
+    // - PC mantiene búsqueda automática con debounce.
+    // - Móvil NO salta mientras se escribe: el usuario confirma con "Buscar"
+    //   o con Enter. Así puede pensar, corregir y borrar sin que cambie de pantalla.
+    let pmSearchTimer=null;
+    const runMobileSearch=()=>{
+      const q=String(byId('pmSearch')?.value||'').trim();
+      if(q.length<2){
+        updateFilterNotice();
+        byId('pmSearch')?.focus();
+        return;
+      }
+      clearSelection();
+      render();
+      modal()?.classList.add('pm-mobile-list');
+    };
+    byId('pmSearchMobileGo')?.addEventListener('click',runMobileSearch);
+    byId('pmSearch')?.addEventListener('keydown',e=>{
+      if(e.key==='Enter' && matchMedia('(max-width:900px)').matches){
+        e.preventDefault();
+        runMobileSearch();
+      }
+    });
+    byId('pmSearch')?.addEventListener('input',()=>{
+      clearTimeout(pmSearchTimer);
+      const q=String(byId('pmSearch')?.value||'').trim();
+      const mobileSearch=matchMedia('(max-width:900px)').matches;
+      if(mobileSearch){
+        // En móvil escribir nunca navega ni filtra por sí solo.
+        updateFilterNotice();
+        return;
+      }
+      if(q.length===1){updateFilterNotice();return;}
+      if(q.length===0){clearSelection();render();return;}
+      pmSearchTimer=setTimeout(()=>{clearSelection();render();},320);
+    });
+    byId('pmFiltersToggle')?.addEventListener('click',()=>{
+      const panel=byId('pmAdvancedFilters');if(!panel)return;
+      panel.hidden=!panel.hidden;pmSyncFiltersUI();
+    });
+    ['pmFilterStore','pmFilterCommercial','pmSort'].forEach(id=>byId(id)?.addEventListener('change',()=>{
+      clearSelection();render();if(matchMedia('(max-width:900px)').matches) modal()?.classList.add('pm-mobile-list');
+    }));
+    byId('pmFilterDate')?.addEventListener('change',()=>{
+      pmSyncDateRange();clearSelection();render();
+      if(matchMedia('(max-width:900px)').matches && byId('pmFilterDate')?.value!=='custom') modal()?.classList.add('pm-mobile-list');
+    });
+    ['pmDateFrom','pmDateTo'].forEach(id=>byId(id)?.addEventListener('change',()=>{clearSelection();render();if(matchMedia('(max-width:900px)').matches) modal()?.classList.add('pm-mobile-list')}));
+    pmSyncDateRange();pmSyncFiltersUI();
     byId('pmList')?.addEventListener('dblclick',async e=>{if(matchMedia('(max-width:900px)').matches)return;const r=e.target.closest('.pmx-row');if(r){pmSelectedId=r.dataset.pmId||'';const s=byId('presupuestosGuardados');if(s)s.value=pmSelectedId;await window.HX_ABRIR_PRESUPUESTO?.(pmSelectedId);}});
     byId('pmModal')?.addEventListener('click',e=>{const b=e.target.closest('.pmx-folder');if(!b)return;pmView={type:b.dataset.pmView||'all',value:b.dataset.pmValue||''};if(pmView.type==='store'&&byId('pmFilterStore'))byId('pmFilterStore').value='';if(pmView.type==='commercial'&&byId('pmFilterCommercial'))byId('pmFilterCommercial').value='';clearSelection();render();if(matchMedia('(max-width:900px)').matches)modal()?.classList.add('pm-mobile-list')});
     window.addEventListener('hiperajax:presupuestos-importados',render);window.addEventListener('hiperajax:identificador-cambiado',render);
   });
+  // Móvil: volver desde la lista (también cuando una búsqueda no devuelve nada)
+  // debe regresar a la pantalla principal del gestor, no dejar al usuario en
+  // una vista de "Recientes" arrastrando la búsqueda anterior.
+  window.HX_PM_MOBILE_HOME=(options={})=>{
+    resetManagerView(options);
+    render();
+  };
   window.HX_PM_RENDER=render;
 })();
 
@@ -6269,15 +5163,14 @@ function hxEnsureCatalogDiagnosticUI(){
       <div class="modal-card" role="dialog" aria-modal="true" aria-labelledby="catalogDiagnosticTitle">
         <div class="modal-head">
           <div>
-            <h2 id="catalogDiagnosticTitle">Control de precios</h2>
-            <p id="catalogDiagnosticSubtitle">Comprobación del catálogo y presupuestos guardados.</p>
+            <h2 id="catalogDiagnosticTitle">Revisar precios</h2>
+            <p id="catalogDiagnosticSubtitle">Compara el catálogo actual con tus presupuestos.</p>
           </div>
-          <button type="button" class="modal-close" data-catalog-diagnostic-close aria-label="Cerrar">×</button>
+          <button type="button" class="modal-close catalog-diagnostic-close" data-catalog-diagnostic-close aria-label="Cerrar">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
+          </button>
         </div>
         <div id="catalogDiagnosticBody" class="catalog-diagnostic-body"></div>
-        <div class="modal-foot">
-          <button type="button" class="secondary" data-catalog-diagnostic-close>Entendido</button>
-        </div>
       </div>`;
     document.body.appendChild(modal);
     modal.querySelectorAll('[data-catalog-diagnostic-close]').forEach(el=>el.addEventListener('click', hxCloseCatalogDiagnostic));
@@ -6339,7 +5232,37 @@ function hxDiagnosticarCatalogo(opciones={}){
   });
 
   const presupuestoActual = hxCompareLinesWithCatalog(lineas, porRef);
+  const identificadorActual = String(
+    (typeof window.HX_GET_IDENTIFICADOR_ACTUAL === 'function' ? window.HX_GET_IDENTIFICADOR_ACTUAL() : '')
+    || (typeof hxIdentificadorActual !== 'undefined' ? hxIdentificadorActual : '')
+    || ''
+  ).trim();
+
+  function hxLowCostLines(listaLineas){
+    const salida = [];
+    (Array.isArray(listaLineas) ? listaLineas : []).forEach((linea,index)=>{
+      if(!linea || linea.manual || linea.separador) return;
+      const ref = hxCatalogRef(linea.name);
+      const vigente = porRef.get(ref);
+      const coste = hxCatalogMoney(linea.precio_neto_compra || vigente?.producto?.precio_neto_compra);
+      const pvp = hxCatalogMoney(linea.pvp);
+      const dto = Math.max(0,Math.min(100,Number(linea.dto)||0));
+      const precioFinal = pvp * (1-dto/100);
+      if(coste > 0 && precioFinal < coste){
+        salida.push({
+          ref:ref || String(linea.name||''),
+          linea:index+1,
+          pvp,dto,precioFinal,coste,
+          diferencia:precioFinal-coste
+        });
+      }
+    });
+    return salida;
+  }
+
+  const bajoCosteActual = hxLowCostLines(lineas);
   const guardados = [];
+  const guardadosBajoCoste = [];
   const listaGuardada = typeof leerListaPresupuestos === 'function' ? leerListaPresupuestos() : [];
   (Array.isArray(listaGuardada) ? listaGuardada : []).forEach((p,index)=>{
     const diferencias = hxCompareLinesWithCatalog(p?.lineas, porRef);
@@ -6347,8 +5270,19 @@ function hxDiagnosticarCatalogo(opciones={}){
       guardados.push({
         id:String(p?.id || ''),
         etiqueta:hxBudgetLabel(p,index),
+        identificador:String(p?.identificador || '').trim(),
         fecha:String(p?.fecha || p?.guardado || ''),
         diferencias
+      });
+    }
+    const bajoCoste = hxLowCostLines(p?.lineas);
+    if(bajoCoste.length){
+      guardadosBajoCoste.push({
+        id:String(p?.id || ''),
+        etiqueta:hxBudgetLabel(p,index),
+        identificador:String(p?.identificador || '').trim(),
+        fecha:String(p?.fecha || p?.guardado || ''),
+        lineas:bajoCoste
       });
     }
   });
@@ -6359,7 +5293,7 @@ function hxDiagnosticarCatalogo(opciones={}){
   const catalogoCambio = Boolean(anteriorMeta.fingerprint && anteriorMeta.fingerprint !== fingerprint);
   const meta={
     version:HX_CATALOG_DIAG_VERSION,
-    fuente:'catalogo_ajax.csv',
+    fuente:String(window.HX_CATALOGO_ORIGEN || 'catálogo local'),
     fingerprint,
     cargadoEn,
     productos:Array.isArray(productos)?productos.length:0,
@@ -6370,12 +5304,15 @@ function hxDiagnosticarCatalogo(opciones={}){
   hxSaveCatalogMeta(meta);
 
   const lineasGuardadasAfectadas = guardados.reduce((n,p)=>n+p.diferencias.length,0);
-  const totalAvisos = conflictosPrecio.length + presupuestoActual.length + lineasGuardadasAfectadas + (productos.length ? 0 : 1);
+  const lineasGuardadasBajoCoste = guardadosBajoCoste.reduce((n,p)=>n+p.lineas.length,0);
+  const totalAvisos = conflictosPrecio.length + presupuestoActual.length + lineasGuardadasAfectadas + bajoCosteActual.length + lineasGuardadasBajoCoste + (productos.length ? 0 : 1);
   const informe={
     ...meta,
     duplicados,
     conflictosPrecio,
     presupuestoActual,
+    bajoCosteActual,
+    presupuestosGuardadosBajoCoste:guardadosBajoCoste,
     presupuestosGuardados:guardados,
     presupuestosGuardadosAfectados:guardados.length,
     lineasGuardadasAfectadas,
@@ -6402,8 +5339,8 @@ function hxDiagnosticarCatalogo(opciones={}){
     status.tabIndex=0;
   }else if(totalAvisos){
     status.classList.add('is-warn');
-    status.textContent=`⚠ Revisar precios (${totalAvisos})`;
-    status.title='Ver diferencias detectadas';
+    status.textContent=`⚠ Diferencias de precios (${totalAvisos})`;
+    status.title='Ver diferencias de precios y avisos de revisión';
     status.setAttribute('role','button');
     status.tabIndex=0;
   }else{
@@ -6419,7 +5356,7 @@ function hxDiagnosticarCatalogo(opciones={}){
 
   const bloques=[];
   bloques.push(`<section class="catalog-diag-summary ${totalAvisos?'has-warning':'is-clean'}">
-    <strong>${totalAvisos?'Hay precios que conviene revisar':'Catálogo y presupuestos comprobados'}</strong>
+    <strong>${totalAvisos?'Hay PVP y avisos que conviene revisar':'Catálogo y presupuestos comprobados'}</strong>
     <span>${informe.productos} productos · ${informe.referencias} referencias · Fuente: ${escapeHtml(informe.fuente)}</span>
     <small>Cargado: ${escapeHtml(hxCatalogDate(cargadoEn))} · Identificador: ${escapeHtml(fingerprint)}</small>
   </section>`);
@@ -6430,33 +5367,51 @@ function hxDiagnosticarCatalogo(opciones={}){
     </section>`);
   }
   if(conflictosPrecio.length){
-    bloques.push(`<section class="catalog-diag-section"><h3>La misma referencia aparece con dos precios</h3>${conflictosPrecio.map(x=>`
-      <div class="catalog-diag-item is-warning"><b>${escapeHtml(x.ref)}</b><span>${fmt.format(x.anterior)} frente a ${fmt.format(x.nuevo)}</span></div>`).join('')}</section>`);
+    bloques.push(`<section class="catalog-diag-section"><h3>La misma referencia aparece con dos PVP</h3>${conflictosPrecio.map(x=>`
+      <div class="catalog-diag-item is-warning"><b>${escapeHtml(x.ref)}</b><span>PVP ${fmt.format(x.anterior)} → PVP ${fmt.format(x.nuevo)}</span></div>`).join('')}</section>`);
   }
   if(presupuestoActual.length){
-    bloques.push(`<section class="catalog-diag-section"><h3>Presupuesto abierto</h3>${presupuestoActual.map(x=>`
-      <div class="catalog-diag-item is-warning"><b>${escapeHtml(x.ref)}</b><span>Línea ${x.linea}: ${fmt.format(x.guardado)} · Catálogo: ${fmt.format(x.catalogo)}</span></div>`).join('')}
+    bloques.push(`<section class="catalog-diag-section"><h3>Cambios de PVP · presupuesto abierto</h3>
+      ${identificadorActual?`<p class="catalog-diag-help"><b>Identificador:</b> ${escapeHtml(identificadorActual)}</p>`:''}
+      ${presupuestoActual.map(x=>`
+      <div class="catalog-diag-item is-warning"><b>${escapeHtml(x.ref)}</b><span>Línea ${x.linea}: PVP guardado ${fmt.format(x.guardado)} → PVP actual ${fmt.format(x.catalogo)}</span></div>`).join('')}
       <p class="catalog-diag-help">No se cambia ningún precio automáticamente para no alterar un presupuesto sin tu permiso.</p></section>`);
   }
+  if(bajoCosteActual.length){
+    bloques.push(`<section class="catalog-diag-section catalog-diag-lowcost"><h3>Venta bajo coste · presupuesto abierto</h3>
+      ${identificadorActual?`<p class="catalog-diag-help"><b>Identificador:</b> ${escapeHtml(identificadorActual)}</p>`:''}
+      <p><b>${bajoCosteActual.length}</b> línea${bajoCosteActual.length===1?'':'s'} requiere${bajoCosteActual.length===1?'':'n'} revisión por venta bajo coste.</p>
+      ${bajoCosteActual.map(x=>`<div class="catalog-diag-item is-lowcost"><b>${escapeHtml(x.ref)}</b><span>Línea ${x.linea}: Precio final ${fmt.format(x.precioFinal)}</span></div>`).join('')}
+    </section>`);
+  }
+  if(guardadosBajoCoste.length){
+    bloques.push(`<section class="catalog-diag-section catalog-diag-lowcost"><h3>Bajo coste en presupuestos guardados</h3>
+      <p><b>${lineasGuardadasBajoCoste}</b> línea${lineasGuardadasBajoCoste===1?'':'s'} bajo coste en <b>${guardadosBajoCoste.length}</b> presupuesto${guardadosBajoCoste.length===1?'':'s'}.</p>
+      ${guardadosBajoCoste.map(p=>`<details class="catalog-diag-budget"><summary>${escapeHtml(p.etiqueta)}${p.identificador?` · ${escapeHtml(p.identificador)}`:''} <span>${p.lineas.length} aviso${p.lineas.length===1?'':'s'}</span></summary>
+        ${p.lineas.map(x=>`<div class="catalog-diag-item is-lowcost"><b>${escapeHtml(x.ref)}</b><span>Precio final ${fmt.format(x.precioFinal)}</span></div>`).join('')}
+      </details>`).join('')}
+    </section>`);
+  }
+
   if(guardados.length){
-    bloques.push(`<section class="catalog-diag-section"><h3>Presupuestos guardados con precios distintos</h3>
+    bloques.push(`<section class="catalog-diag-section"><h3>Cambios de PVP · presupuestos guardados</h3>
       <p><b>${guardados.length}</b> presupuesto${guardados.length===1?'':'s'} · <b>${lineasGuardadasAfectadas}</b> línea${lineasGuardadasAfectadas===1?'':'s'} para revisar.</p>
-      ${guardados.slice(0,30).map(p=>`<details class="catalog-diag-budget"><summary>${escapeHtml(p.etiqueta)} <span>${p.diferencias.length} diferencia${p.diferencias.length===1?'':'s'}</span></summary>
-        ${p.diferencias.map(x=>`<div class="catalog-diag-item is-warning"><b>${escapeHtml(x.ref)}</b><span>${fmt.format(x.guardado)} → ${fmt.format(x.catalogo)}</span></div>`).join('')}
+      ${guardados.slice(0,30).map(p=>`<details class="catalog-diag-budget"><summary>${escapeHtml(p.etiqueta)}${p.identificador?` · ${escapeHtml(p.identificador)}`:''} <span>${p.diferencias.length} diferencia${p.diferencias.length===1?'':'s'}</span></summary>
+        ${p.diferencias.map(x=>`<div class="catalog-diag-item is-warning"><b>${escapeHtml(x.ref)}</b><span>PVP guardado ${fmt.format(x.guardado)} → PVP actual ${fmt.format(x.catalogo)}</span></div>`).join('')}
       </details>`).join('')}
       ${guardados.length>30?`<p class="catalog-diag-help">Se muestran los primeros 30 presupuestos afectados.</p>`:''}
     </section>`);
   }
   if(duplicados.length && !conflictosPrecio.length){
-    bloques.push(`<section class="catalog-diag-section"><h3>Referencias repetidas</h3><p>${duplicados.length} referencia${duplicados.length===1?'':'s'} repetida${duplicados.length===1?'':'s'}, todas con el mismo precio.</p></section>`);
+    bloques.push(`<section class="catalog-diag-section"><h3>Referencias repetidas</h3><p>${duplicados.length} referencia${duplicados.length===1?'':'s'} repetida${duplicados.length===1?'':'s'}, todas con el mismo PVP.</p></section>`);
   }
   if(!totalAvisos && !duplicados.length){
-    bloques.push(`<section class="catalog-diag-section"><p>No hay diferencias entre el catálogo actual, el presupuesto abierto y los presupuestos guardados.</p></section>`);
+    bloques.push(`<section class="catalog-diag-section"><p>No hay diferencias de PVP entre el catálogo actual, el presupuesto abierto y los presupuestos guardados.</p></section>`);
   }
   body.innerHTML=bloques.join('');
 
   if(totalAvisos && avisarToast){
-    try{ hxToastGlobal(`${totalAvisos} precio${totalAvisos===1?'':'s'} para revisar`, 'error'); }catch(e){}
+    try{ hxToastGlobal(`${totalAvisos} aviso${totalAvisos===1?'':'s'} de precios para revisar`, 'error'); }catch(e){}
   }
   if(totalAvisos && abrirSiHayAvisos) hxOpenCatalogDiagnostic();
   return informe;
@@ -6467,8 +5422,21 @@ function hxDiagnosticarCatalogo(opciones={}){
 const cargarCatalogo_BASE_DIAGNOSTICO = cargarCatalogo;
 cargarCatalogo = async function(){
   const resultado = await cargarCatalogo_BASE_DIAGNOSTICO.apply(this, arguments);
-  // Al arrancar no se abre ningún modal ni toast. Si existen diferencias,
-  // queda visible el enlace ámbar para revisarlas cuando convenga.
+
+  // El control de precios necesita también la lista cloud. Se realiza una sola
+  // carga silenciosa al arrancar para poder avisar en Inicio sin obligar a abrir
+  // primero el gestor de presupuestos. No abre modal ni muestra toast.
+  if(!window.HX_PRICE_CONTROL_CLOUD_LOADED){
+    window.HX_PRICE_CONTROL_CLOUD_LOADED=true;
+    try{
+      if(typeof window.HX_RECARGAR_PRESUPUESTOS === 'function'){
+        await window.HX_RECARGAR_PRESUPUESTOS({silencioso:true});
+      }
+    }catch(error){
+      console.warn('[Hiper Ajax] Control de precios: no se pudo cargar la lista cloud.',error);
+    }
+  }
+
   hxDiagnosticarCatalogo({abrirSiHayAvisos:false,avisarToast:false});
   return resultado;
 };
@@ -6479,7 +5447,7 @@ function hxRefreshPriceControlSoon(){
     if(Array.isArray(productos) && productos.length) hxDiagnosticarCatalogo({abrirSiHayAvisos:false,avisarToast:false});
   },40);
 }
-['hiperajax:presupuestos-importados'].forEach(evt=>window.addEventListener(evt,hxRefreshPriceControlSoon));
+window.addEventListener('hiperajax:presupuestos-importados',hxRefreshPriceControlSoon);
 const aplicarPresupuesto_BASE_DIAGNOSTICO = aplicarPresupuesto;
 aplicarPresupuesto = function(){
   const r=aplicarPresupuesto_BASE_DIAGNOSTICO.apply(this,arguments);
@@ -6494,312 +5462,22 @@ escribirListaPresupuestos = function(){
 };
 
 document.addEventListener('DOMContentLoaded', hxEnsureCatalogDiagnosticUI);
-
-
-/* =====================================================
-   4.0.8 - Orden automático compartido de familias (carga corregida)
-   - Buscador inicial y catálogo: variantes W/B contiguas.
-   - Mantiene la relevancia de cada familia y ordena sus variantes.
-   - Si se busca negro/blanco, prioriza el color solicitado.
-   ===================================================== */
-(function(){
-  const HX_APP_VERSION='4.0.8';
-  function hxFamilyKey407(product){
-    return String((product&&product.name)||'').toUpperCase()
-      .replace(/-(?:W|B)(?=-|$)/g,'')
-      .replace(/--+/g,'-').replace(/-$/,'').trim();
-  }
-  function hxColor407(product,query){
-    const ref=String((product&&product.name)||'').toUpperCase();
-    let order=/-W(?:-|$)/.test(ref)?0:/-B(?:-|$)/.test(ref)?1:2;
-    const q=String(query||'').toLowerCase();
-    if(/\b(?:negro|black)\b/.test(q)) order=/-B(?:-|$)/.test(ref)?0:/-W(?:-|$)/.test(ref)?1:2;
-    return order;
-  }
-  function hxOrderFamilies407(items,query=''){
-    if(!Array.isArray(items)||items.length<2) return items;
-    const groups=new Map();
-    items.forEach((item,pos)=>{
-      const p=item&&item.p?item.p:item;
-      const key=hxFamilyKey407(p);
-      if(!groups.has(key)) groups.set(key,{key,items:[],best:-Infinity,first:pos});
-      const g=groups.get(key);
-      g.items.push({item,p,pos});
-      g.best=Math.max(g.best,Number(item&&item.score)||0);
-    });
-    return [...groups.values()]
-      .sort((a,b)=>(b.best-a.best)||(a.first-b.first)||a.key.localeCompare(b.key,'es',{numeric:true,sensitivity:'base'}))
-      .flatMap(g=>g.items.sort((a,b)=>
-        hxColor407(a.p,query)-hxColor407(b.p,query) ||
-        (Number(b.item&&b.item.score)||0)-(Number(a.item&&a.item.score)||0) ||
-        String(a.p&&a.p.name||'').localeCompare(String(b.p&&b.p.name||''),'es',{numeric:true,sensitivity:'base'})
-      ).map(x=>x.item));
-  }
-
-  if(typeof buscar==='function'){
-    const buscarBase407=buscar;
-    buscar=function(term){ return hxOrderFamilies407(buscarBase407.apply(this,arguments),term); };
-  }
-  if(typeof buscarCatalogo==='function'){
-    const buscarCatalogoBase407=buscarCatalogo;
-    buscarCatalogo=function(term=''){ return hxOrderFamilies407(buscarCatalogoBase407.apply(this,arguments),term); };
-  }
-
-  function setVersion407(){
-    document.querySelectorAll('.creator').forEach(el=>{
-      const versionText=`· Creado por David Corregidor · ${HX_APP_VERSION}`;
-      if(el.textContent !== versionText) el.textContent=versionText;
-    });
-  }
-  document.addEventListener('DOMContentLoaded',()=>{ setVersion407(); setTimeout(setVersion407,120); });
-  const observer407=new MutationObserver(setVersion407);
-  document.addEventListener('DOMContentLoaded',()=>{
-    document.querySelectorAll('.creator').forEach(el=>observer407.observe(el,{childList:true,characterData:true,subtree:true}));
-  });
-  window.HX_APP_VERSION=HX_APP_VERSION;
-  window.HX_ORDER_FAMILIES=hxOrderFamilies407;
-})();
-
-/* =====================================================
-   4.0.9 - Recuperación automática de variantes de familia
-   - Si una referencia coincide, incorpora sus variantes W/B del catálogo.
-   - Funciona en buscador principal y Catálogo.
-   - No usa listas manuales por producto.
-   ===================================================== */
-(function(){
-  const HX_APP_VERSION_409='4.0.9';
-
-  function hxFamilyKey409(product){
-    return String((product&&product.name)||'').toUpperCase()
-      .replace(/-(?:W|B)(?=-|$)/g,'')
-      .replace(/--+/g,'-').replace(/-$/,'').trim();
-  }
-  function hxColorOrder409(product,query=''){
-    const ref=String((product&&product.name)||'').toUpperCase();
-    const q=String(query||'').toLowerCase();
-    if(/\b(?:negro|black)\b/.test(q)) return /-B(?:-|$)/.test(ref)?0:/-W(?:-|$)/.test(ref)?1:2;
-    return /-W(?:-|$)/.test(ref)?0:/-B(?:-|$)/.test(ref)?1:2;
-  }
-  function hxExpandFamilyVariants409(items,query=''){
-    if(!Array.isArray(items)||!items.length||!Array.isArray(productos)) return items;
-
-    const familyIndex=new Map();
-    productos.forEach((p,i)=>{
-      const key=hxFamilyKey409(p);
-      if(!key) return;
-      if(!familyIndex.has(key)) familyIndex.set(key,[]);
-      familyIndex.get(key).push({p,i});
-    });
-
-    const present=new Set();
-    items.forEach(item=>{
-      const p=item&&item.p?item.p:item;
-      const idx=item&&Number.isInteger(item.i)?item.i:productos.indexOf(p);
-      present.add(idx>=0?`i:${idx}`:`n:${String(p&&p.name||'')}`);
-    });
-
-    const expanded=[];
-    const processedFamilies=new Set();
-    items.forEach((item,pos)=>{
-      const p=item&&item.p?item.p:item;
-      const key=hxFamilyKey409(p);
-      if(processedFamilies.has(key)) return;
-      processedFamilies.add(key);
-
-      const originalFamily=items.filter(x=>hxFamilyKey409(x&&x.p?x.p:x)===key);
-      originalFamily.forEach(x=>expanded.push(x));
-
-      const baseScore=Math.max(...originalFamily.map(x=>Number(x&&x.score)||0),0);
-      const variants=(familyIndex.get(key)||[])
-        .filter(v=>!present.has(`i:${v.i}`))
-        .sort((a,b)=>hxColorOrder409(a.p,query)-hxColorOrder409(b.p,query)||String(a.p.name||'').localeCompare(String(b.p.name||''),'es',{numeric:true,sensitivity:'base'}));
-
-      variants.forEach((v,n)=>{
-        expanded.push({p:v.p,i:v.i,score:Math.max(1,baseScore-(n+1)*0.001),familyVariant:true});
-        present.add(`i:${v.i}`);
-      });
-    });
-    return expanded;
-  }
-
-  function hxFinalize409(items,term){
-    const expanded=hxExpandFamilyVariants409(items,term);
-    if(typeof window.HX_ORDER_FAMILIES==='function') return window.HX_ORDER_FAMILIES(expanded,term);
-    return expanded;
-  }
-
-  if(typeof buscar==='function'){
-    const buscarBase409=buscar;
-    buscar=function(term){ return hxFinalize409(buscarBase409.apply(this,arguments),term); };
-  }
-  if(typeof buscarCatalogo==='function'){
-    const buscarCatalogoBase409=buscarCatalogo;
-    buscarCatalogo=function(term=''){ return hxFinalize409(buscarCatalogoBase409.apply(this,arguments),term); };
-  }
-
-  function setVersion409(){
-    document.querySelectorAll('.creator').forEach(el=>{
-      const txt=`· Creado por David Corregidor · ${HX_APP_VERSION_409}`;
-      if(el.textContent!==txt) el.textContent=txt;
-    });
-  }
-  document.addEventListener('DOMContentLoaded',()=>{setVersion409();setTimeout(setVersion409,150);});
-  window.HX_APP_VERSION=HX_APP_VERSION_409;
-})();
-
-/* =====================================================
-   Hiper Ajax 4.0.10 - Revisión global del motor de búsqueda
-   - Las referencias exactas tienen prioridad absoluta.
-   - Una búsqueda de familia/referencia no mezcla familias por fragmentos
-     internos (KEYPADCOMBI ya no arrastra COMBIPROTECT).
-   - Expande automáticamente W/B de la misma referencia base.
-   - Se aplica al buscador principal y al Catálogo.
-   ===================================================== */
-(function(){
-  const HX_APP_VERSION_410='4.0.11';
-
-  function hxNorm410(v){
-    return String(v||'').normalize('NFD').replace(/[\u0300-\u036f]/g,'')
-      .toLowerCase().trim();
-  }
-  function hxCompact410(v){ return hxNorm410(v).replace(/[^a-z0-9]+/g,''); }
-  function hxRef410(p){ return String((p&&p.name)||'').trim(); }
-  function hxFamilyKey410(p){
-    return hxRef410(p).toUpperCase()
-      .replace(/-(?:W|B)(?=-|$)/g,'')
-      .replace(/--+/g,'-').replace(/-$/,'').trim();
-  }
-  function hxColor410(p,q=''){
-    const r=hxRef410(p).toUpperCase(), n=hxNorm410(q);
-    const black=/(^|\s)(negro|black)(\s|$)|-b(?:-|$)/i.test(n);
-    if(black) return /-B(?:-|$)/.test(r)?0:/-W(?:-|$)/.test(r)?1:2;
-    return /-W(?:-|$)/.test(r)?0:/-B(?:-|$)/.test(r)?1:2;
-  }
-  function hxDirectReferenceMatches410(term){
-    const q=hxCompact410(term);
-    if(!q || q.length<4 || !Array.isArray(productos)) return [];
-    const matches=productos.map((p,i)=>{
-      const ref=hxRef410(p), c=hxCompact410(ref);
-      let score=0;
-      if(c===q) score=1000000;
-      else if(c.startsWith(q)) score=800000;
-      else if(c.includes(q)) score=650000;
-      else if(q.startsWith(c) && c.length>=6) score=500000;
-      if(score && /(?:dummy|lens|bracket|holder|cover|case)/i.test(ref) && !/(?:dummy|lens|bracket|holder|cover|case)/i.test(String(term||''))) score-=100000;
-      return {p,i,score};
-    }).filter(x=>x.score>0);
-    // Con una referencia exacta, no añadimos accesorios cuyo nombre solo
-    // empieza igual; las variantes W/B se recuperan después por familia.
-    const exact=matches.filter(x=>x.score===1000000);
-    return (exact.length?exact:matches)
-      .sort((a,b)=>b.score-a.score || hxRef410(a.p).localeCompare(hxRef410(b.p),'es',{numeric:true,sensitivity:'base'}));
-  }
-  function hxLooksReferenceLike410(term,direct){
-    const raw=String(term||'').trim();
-    const q=hxCompact410(raw);
-    if(!direct.length) return false;
-    if(/^aj[-_ ]/i.test(raw)) return true;
-    if(/[0-9]/.test(raw) || /[-_]/.test(raw)) return true;
-    // Nombres comerciales suficientemente específicos: keypadcombi,
-    // motioncamoutdoor, hub2plus, etc.
-    return q.length>=7;
-  }
-  function hxExpandAndOrder410(items,term=''){
-    if(!Array.isArray(items)||!items.length) return [];
-    const byFamily=new Map();
-    productos.forEach((p,i)=>{
-      const k=hxFamilyKey410(p);
-      if(!byFamily.has(k)) byFamily.set(k,[]);
-      byFamily.get(k).push({p,i});
-    });
-    const result=[], seen=new Set(), families=[];
-    items.forEach((x,pos)=>{
-      const p=x&&x.p?x.p:x, i=Number.isInteger(x&&x.i)?x.i:productos.indexOf(p);
-      const k=hxFamilyKey410(p);
-      if(!families.includes(k)) families.push(k);
-      const id=i>=0?'i'+i:'n'+hxRef410(p);
-      if(!seen.has(id)){ result.push({p,i,score:Number(x&&x.score)||0,__pos:pos}); seen.add(id); }
-    });
-    families.forEach(k=>{
-      const base=Math.max(0,...result.filter(x=>hxFamilyKey410(x.p)===k).map(x=>x.score));
-      (byFamily.get(k)||[]).forEach((v,n)=>{
-        const id='i'+v.i;
-        if(!seen.has(id)){ result.push({p:v.p,i:v.i,score:Math.max(1,base-(n+1)/1000),__pos:9999}); seen.add(id); }
-      });
-    });
-    const familyRank=new Map();
-    result.forEach((x,pos)=>{
-      const k=hxFamilyKey410(x.p), s=Number(x.score)||0;
-      const old=familyRank.get(k);
-      if(!old || s>old.score) familyRank.set(k,{score:s,pos});
-    });
-    return result.sort((a,b)=>{
-      const ka=hxFamilyKey410(a.p), kb=hxFamilyKey410(b.p);
-      if(ka!==kb){
-        const ra=familyRank.get(ka), rb=familyRank.get(kb);
-        return rb.score-ra.score || ra.pos-rb.pos || ka.localeCompare(kb,'es',{numeric:true,sensitivity:'base'});
-      }
-      return hxColor410(a.p,term)-hxColor410(b.p,term) ||
-        (Number(b.score)||0)-(Number(a.score)||0) ||
-        hxRef410(a.p).localeCompare(hxRef410(b.p),'es',{numeric:true,sensitivity:'base'});
-    }).map(({__pos,...x})=>x);
-  }
-  function hxFinalizeSearch410(baseFn,ctx,args,term){
-    const direct=hxDirectReferenceMatches410(term);
-    if(hxLooksReferenceLike410(term,direct)) return hxExpandAndOrder410(direct,term);
-    const base=baseFn.apply(ctx,args);
-    // Incluso en búsquedas generales, las coincidencias directas quedan delante.
-    const merged=[];
-    const seen=new Set();
-    [...direct,...(Array.isArray(base)?base:[])].forEach(x=>{
-      const p=x&&x.p?x.p:x, i=Number.isInteger(x&&x.i)?x.i:productos.indexOf(p);
-      const id=i>=0?'i'+i:'n'+hxRef410(p);
-      if(!seen.has(id)){ merged.push(x); seen.add(id); }
-    });
-    return hxExpandAndOrder410(merged,term);
-  }
-
-  if(typeof buscar==='function'){
-    const prev=buscar;
-    buscar=function(term){ return hxFinalizeSearch410(prev,this,arguments,term); };
-  }
-  if(typeof buscarCatalogo==='function'){
-    const prev=buscarCatalogo;
-    buscarCatalogo=function(term=''){
-      if(!String(term||'').trim()) return prev.apply(this,arguments);
-      return hxFinalizeSearch410(prev,this,arguments,term);
-    };
-  }
-
-  function setVersion410(){
-    document.querySelectorAll('.creator').forEach(el=>{
-      const t=`· Creado por David Corregidor · ${HX_APP_VERSION_410}`;
-      if(el.textContent!==t) el.textContent=t;
-    });
-  }
-  document.addEventListener('DOMContentLoaded',()=>{ setVersion410(); setTimeout(setVersion410,200); });
-  window.HX_APP_VERSION=HX_APP_VERSION_410;
-})();
-
-/* =====================================================
-   PATCH v4.0.12 · MongoDB + respaldo local
-   - Nuevo: MongoDB genera _id y número.
-   - Editar: conserva mongoId y número.
-   - Duplicar: genera mongoId y número nuevos.
-   - localStorage se mantiene temporalmente como respaldo.
-   ===================================================== */
 (()=>{
   const HX_MONGO_ENDPOINT = '/.netlify/functions/guardar-presupuesto';
-  const HX_APP_VERSION_MONGO = '4.2.17';
+  const HX_APP_VERSION_MONGO = '4.2.19';
   let hxDuplicadoDePendiente = null;
   let hxIdentificadorDuplicadoPendiente = '';
   let hxGuardandoMongo = false;
+  // Estado persistente del presupuesto abierto en el editor. No depende de la
+  // selección temporal del modal, que se limpia al cerrarlo.
+  window.HX_ACTIVE_BUDGET_ID = String(window.HX_ACTIVE_BUDGET_ID || '');
 
   function hxPresupuestoSeleccionado(){
     const sel = $('#presupuestosGuardados');
-    const id = sel ? String(sel.value || '') : '';
+    const idModal = sel ? String(sel.value || '').trim() : '';
+    const id = idModal || String(window.HX_ACTIVE_BUDGET_ID || '').trim();
     if(!id) return null;
-    return leerListaPresupuestos().find(p => String(p.id) === id) || null;
+    return leerListaPresupuestos().find(p => String(p.id || p.mongoId || p._id || '') === id) || null;
   }
 
   async function hxEnviarPresupuestoMongo(data, opciones={}){
@@ -6853,7 +5531,8 @@ document.addEventListener('DOMContentLoaded', hxEnsureCatalogDiagnosticUI);
 
     hxGuardandoMongo = true;
     const sel = $('#presupuestosGuardados');
-    const selectedId = sel ? String(sel.value || '') : '';
+    const selectedIdModal = sel ? String(sel.value || '').trim() : '';
+    const selectedId = selectedIdModal || String(window.HX_ACTIVE_BUDGET_ID || '').trim();
     const recuperado = hxPresupuestoSeleccionado();
     const duplicadoDe = hxDuplicadoDePendiente || '';
 
@@ -6913,6 +5592,19 @@ document.addEventListener('DOMContentLoaded', hxEnsureCatalogDiagnosticUI);
       if(numeroInput) numeroInput.value = data.numero;
 
       hxGuardarCopiaLocal(data, duplicadoDe ? '' : selectedId);
+      window.HX_ACTIVE_BUDGET_ID = String(resultado.mongoId || data.mongoId || '');
+
+      // Sincronizar la lista cloud/cache que alimenta Mis presupuestos.
+      // MongoDB ya ha guardado correctamente; sin este upsert, la caché de 10 min
+      // podía seguir mostrando la versión anterior del presupuesto actualizado.
+      window.HX_CLOUD_UPSERT_PRESUPUESTO?.({
+        ...data,
+        id: String(resultado.mongoId || data.mongoId || ''),
+        mongoId: String(resultado.mongoId || data.mongoId || ''),
+        numero: resultado.numero || data.numero,
+        updatedAt: resultado.updatedAt || data.updatedAt || new Date().toISOString()
+      });
+
       hxDuplicadoDePendiente = null;
       hxIdentificadorDuplicadoPendiente = '';
       alert(resultado.operacion === 'actualizado'
@@ -6971,6 +5663,7 @@ document.addEventListener('DOMContentLoaded', hxEnsureCatalogDiagnosticUI);
   const hxNuevoPresupuestoBase = nuevoPresupuesto;
   nuevoPresupuesto = function(){
     hxNuevoPresupuestoBase.apply(this, arguments);
+    window.HX_ACTIVE_BUDGET_ID='';
     hxDuplicadoDePendiente = null;
     hxIdentificadorDuplicadoPendiente = '';
     const numeroInput = $('#numero');
@@ -6981,39 +5674,43 @@ document.addEventListener('DOMContentLoaded', hxEnsureCatalogDiagnosticUI);
     const sel = $('#presupuestosGuardados');
     if(sel) sel.value = '';
   };
-
-  function hxVersionMongo(){
-    document.querySelectorAll('.creator').forEach(el=>{
-      el.textContent = `· Creado por David Corregidor · ${HX_APP_VERSION_MONGO}`;
-    });
-  }
-  document.addEventListener('DOMContentLoaded',()=>{
-    hxVersionMongo();
-    setTimeout(hxVersionMongo,250);
-    const numeroInput = $('#numero');
-    const sel = $('#presupuestosGuardados');
-    if(numeroInput && (!sel || !sel.value)){
-      numeroInput.value = '';
-      numeroInput.placeholder = 'Se genera al guardar';
-    }
-  });
-  window.HX_APP_VERSION = HX_APP_VERSION_MONGO;
 })();
 
 
-/* =====================================================
-   PATCH v4.0.13 · Presupuestos Cloud: listar + abrir
-   - MongoDB pasa a ser el origen del gestor de presupuestos.
-   - La lista se precarga al iniciar para reducir la espera.
-   - Abrir siempre recupera el documento completo por mongoId.
-   - localStorage se conserva únicamente como respaldo temporal.
-   ===================================================== */
 (()=>{
-  const HX_APP_VERSION_CLOUD_413 = '4.2.17';
   const HX_LISTAR_ENDPOINT_413 = '/.netlify/functions/listar-presupuestos';
   const HX_LEER_ENDPOINT_413 = '/.netlify/functions/leer-presupuesto';
   let hxCloudLista413 = [];
   let hxCloudCargando413 = null;
+  let hxCloudCargadaEn413 = 0;
+  const HX_CLOUD_LIST_TTL_413 = 10 * 60 * 1000;
+  const HX_CLOUD_SESSION_KEY_413 = 'hx_cloud_presupuestos_v1';
+
+  function hxCloudRestaurarSesion413(){
+    try{
+      const raw=sessionStorage.getItem(HX_CLOUD_SESSION_KEY_413);
+      if(!raw) return false;
+      const data=JSON.parse(raw);
+      const ts=Number(data?.ts)||0;
+      const lista=Array.isArray(data?.lista)?data.lista:[];
+      if(!ts || !lista.length || (Date.now()-ts)>=HX_CLOUD_LIST_TTL_413){
+        sessionStorage.removeItem(HX_CLOUD_SESSION_KEY_413);
+        return false;
+      }
+      hxCloudLista413=lista.map(hxNormalizarResumen413);
+      hxCloudCargadaEn413=ts;
+      return true;
+    }catch(_error){ return false; }
+  }
+
+  function hxCloudGuardarSesion413(){
+    try{
+      sessionStorage.setItem(HX_CLOUD_SESSION_KEY_413,JSON.stringify({
+        ts:hxCloudCargadaEn413||Date.now(),
+        lista:hxCloudLista413
+      }));
+    }catch(_error){}
+  }
 
   function hxNormalizarResumen413(p){
     const mongoId = String(p?.mongoId || p?._id || '').trim();
@@ -7040,7 +5737,19 @@ document.addEventListener('DOMContentLoaded', hxEnsureCatalogDiagnosticUI);
     setTimeout(()=>{el.classList.remove('show');setTimeout(()=>el.remove(),220);},1800);
   }
 
-  async function hxCargarListaCloud413({silencioso=false}={}){
+  async function hxCargarListaCloud413({silencioso=false,forzar=false}={}){
+    if(!hxCloudLista413.length && !forzar) hxCloudRestaurarSesion413();
+    const ahora=Date.now();
+    const cacheValida=!forzar
+      && hxCloudLista413.length
+      && hxCloudCargadaEn413
+      && (ahora-hxCloudCargadaEn413) < HX_CLOUD_LIST_TTL_413;
+
+    if(cacheValida){
+      refrescarPresupuestosGuardados();
+      return hxCloudLista413;
+    }
+
     if(hxCloudCargando413) return hxCloudCargando413;
     hxCloudCargando413=(async()=>{
       try{
@@ -7048,6 +5757,8 @@ document.addEventListener('DOMContentLoaded', hxEnsureCatalogDiagnosticUI);
         const out=await res.json().catch(()=>null);
         if(!res.ok || !out?.ok) throw new Error(out?.mensaje || out?.error || `Error ${res.status}`);
         hxCloudLista413=(Array.isArray(out.presupuestos)?out.presupuestos:[]).map(hxNormalizarResumen413);
+        hxCloudCargadaEn413=Date.now();
+        hxCloudGuardarSesion413();
         refrescarPresupuestosGuardados();
         window.dispatchEvent(new CustomEvent('hiperajax:presupuestos-importados'));
         return hxCloudLista413;
@@ -7083,6 +5794,7 @@ document.addEventListener('DOMContentLoaded', hxEnsureCatalogDiagnosticUI);
       }
 
       aplicarPresupuesto(presupuesto);
+      window.HX_ACTIVE_BUDGET_ID=id;
       const sel=document.getElementById('presupuestosGuardados');
       if(sel) sel.value=id;
       const pos=hxCloudLista413.findIndex(p=>p.mongoId===id);
@@ -7126,14 +5838,7 @@ document.addEventListener('DOMContentLoaded', hxEnsureCatalogDiagnosticUI);
     if(sel) sel.value=id;
     hxAbrirCloud413(id);
   },true);
-
-  document.addEventListener('DOMContentLoaded',()=>{
-    document.querySelectorAll('.creator').forEach(el=>{
-      el.textContent=`· Creado por David Corregidor · ${HX_APP_VERSION_CLOUD_413}`;
-    });
-  });
-
-  window.HX_RECARGAR_PRESUPUESTOS=hxCargarListaCloud413;
+window.HX_RECARGAR_PRESUPUESTOS=hxCargarListaCloud413;
   window.HX_ABRIR_PRESUPUESTO=hxAbrirCloud413;
   window.HX_CLOUD_GET_PRESUPUESTO=id=>hxCloudLista413.find(p=>String(p?.mongoId||p?.id||'')===String(id||''))||null;
   window.HX_CLOUD_UPSERT_PRESUPUESTO=presupuesto=>{
@@ -7141,6 +5846,8 @@ document.addEventListener('DOMContentLoaded', hxEnsureCatalogDiagnosticUI);
     const id=normalizado.mongoId;
     const pos=hxCloudLista413.findIndex(p=>String(p.mongoId)===id);
     if(pos>=0) hxCloudLista413[pos]=normalizado; else hxCloudLista413.unshift(normalizado);
+    hxCloudCargadaEn413=Date.now();
+    hxCloudGuardarSesion413();
     refrescarPresupuestosGuardados();
     window.dispatchEvent(new CustomEvent('hiperajax:presupuestos-importados'));
     return normalizado;
@@ -7148,20 +5855,14 @@ document.addEventListener('DOMContentLoaded', hxEnsureCatalogDiagnosticUI);
   window.HX_CLOUD_REMOVE_PRESUPUESTO=id=>{
     const key=String(id||'');
     hxCloudLista413=hxCloudLista413.filter(p=>String(p?.mongoId||p?.id||'')!==key);
+    hxCloudCargadaEn413=Date.now();
+    hxCloudGuardarSesion413();
     refrescarPresupuestosGuardados();
     window.dispatchEvent(new CustomEvent('hiperajax:presupuestos-importados'));
   };
-  window.HX_APP_VERSION=HX_APP_VERSION_CLOUD_413;
 })();
 
 
-/* =====================================================
-   PATCH v4.0.14 · Identificador + Comercial
-   - Renombrar guarda `identificador` en MongoDB.
-   - Número HA-YYYY-XXXX permanece inmutable.
-   - Tienda y Comercial quedan separados.
-   - Comercial: Sin asignar / Luis / Toño.
-   ===================================================== */
 (()=>{
   const HX_GUARDAR_414='/.netlify/functions/guardar-presupuesto';
 
@@ -7177,7 +5878,7 @@ document.addEventListener('DOMContentLoaded', hxEnsureCatalogDiagnosticUI);
   }
 
   async function hxRenombrarCloud414(){
-    const id=String(document.getElementById('presupuestosGuardados')?.value||'').trim();
+    const id=String(document.getElementById('presupuestosGuardados')?.value||window.HX_ACTIVE_BUDGET_ID||'').trim();
     if(!id){hxToast414('Selecciona un presupuesto.',true);return;}
     try{
       const actualDoc=window.HX_CLOUD_GET_PRESUPUESTO?.(id);
@@ -7203,6 +5904,8 @@ document.addEventListener('DOMContentLoaded', hxEnsureCatalogDiagnosticUI);
     }
   }
 
+  window.HX_RENAME_ACTIVE_BUDGET = hxRenombrarCloud414;
+
   document.addEventListener('click',event=>{
     const btn=event.target.closest?.('#pmRename');
     if(!btn)return;
@@ -7210,22 +5913,9 @@ document.addEventListener('DOMContentLoaded', hxEnsureCatalogDiagnosticUI);
     event.stopImmediatePropagation();
     hxRenombrarCloud414();
   },true);
-
-  document.addEventListener('DOMContentLoaded',()=>{
-    document.querySelectorAll('.creator').forEach(el=>el.textContent='· Creado por David Corregidor · 4.0.14c');
-  });
-  window.HX_APP_VERSION='4.0.14c';
 })();
 
 
-/* =====================================================
-   PATCH v4.0.15 · Duplicar presupuesto en MongoDB
-   - Nuevo _id y nuevo número automático.
-   - Fecha actual local y estado Borrador.
-   - Conserva contenido, tienda, comercial, cliente, teléfono y email.
-   - El identificador queda vacío.
-   - Intercepta tanto el botón principal como el del gestor.
-   ===================================================== */
 (()=>{
   const HX_APP_VERSION_DUP_415='4.2.16';
   const HX_DUP_ENDPOINT_415='/.netlify/functions/guardar-presupuesto';
@@ -7362,24 +6052,10 @@ document.addEventListener('DOMContentLoaded', hxEnsureCatalogDiagnosticUI);
     event.stopImmediatePropagation();
     hxDuplicar415();
   },true);
-
-  document.addEventListener('DOMContentLoaded',()=>{
-    document.querySelectorAll('.creator').forEach(el=>{
-      el.textContent=`· Creado por David Corregidor · ${HX_APP_VERSION_DUP_415}`;
-    });
-  });
-  window.HX_APP_VERSION=HX_APP_VERSION_DUP_415;
 })();
 
-/* =====================================================
-   PATCH v4.0.16 · Borrar MongoDB + identificador visible
-   - Borrado real en MongoDB con confirmación clara.
-   - Refresca el gestor inmediatamente.
-   - Limpia el presupuesto si se elimina el documento abierto.
-   - Muestra identificador en cabecera y mejora las tarjetas.
-   ===================================================== */
+
 (()=>{
-  const HX_VERSION_416='4.1.2';
   const HX_DELETE_416='/.netlify/functions/borrar-presupuesto';
   let hxDeleting416=false;
 
@@ -7388,7 +6064,7 @@ document.addEventListener('DOMContentLoaded', hxEnsureCatalogDiagnosticUI);
     try{ return typeof leerListaPresupuestos==='function' ? (leerListaPresupuestos()||[]) : []; }
     catch(e){ return []; }
   };
-  const hxSelectedId416=()=>String($416('presupuestosGuardados')?.value||'').trim();
+  const hxSelectedId416=()=>String($416('presupuestosGuardados')?.value||window.HX_ACTIVE_BUDGET_ID||'').trim();
   const hxSelected416=()=>hxList416().find(p=>String(p.id||p.mongoId||p._id)===hxSelectedId416())||null;
   const hxIdentifier416=p=>String(p?.identificador||'').trim();
 
@@ -7449,6 +6125,7 @@ document.addEventListener('DOMContentLoaded', hxEnsureCatalogDiagnosticUI);
   }
 
   function hxClearOpen416(){
+    window.HX_ACTIVE_BUDGET_ID='';
     const sel=$416('presupuestosGuardados');
     if(sel) sel.value='';
     try{
@@ -7476,7 +6153,7 @@ document.addEventListener('DOMContentLoaded', hxEnsureCatalogDiagnosticUI);
     hxDeleting416=true;
     window.HX_LOADING_SHOW?.('Eliminando presupuesto...');
     const btn=$416('pmDelete');
-    if(btn) btn.disabled=true;
+    if(btn) 
     try{
       const res=await fetch(HX_DELETE_416,{
         method:'POST',
@@ -7488,6 +6165,12 @@ document.addEventListener('DOMContentLoaded', hxEnsureCatalogDiagnosticUI);
 
       hxClearOpen416();
       window.HX_CLOUD_REMOVE_PRESUPUESTO?.(id);
+      // En móvil, al borrar el presupuesto que ocupa la vista previa no tiene
+      // sentido dejar esa pantalla vacía. Volvemos a la portada del gestor.
+      // En PC conservamos el gestor abierto con la lista visible.
+      if(window.matchMedia('(max-width:900px)').matches && typeof window.HX_PM_MOBILE_HOME==='function'){
+        window.HX_PM_MOBILE_HOME();
+      }
       hxEnhanceCards416();
       hxToast416(`Presupuesto ${numero} eliminado.`);
     }catch(error){
@@ -7520,18 +6203,26 @@ document.addEventListener('DOMContentLoaded', hxEnsureCatalogDiagnosticUI);
   document.addEventListener('DOMContentLoaded',()=>{
     hxEnsureIdentifier416();
     hxRefreshIdentifier416();
-    $416('hxBudgetIdentifier416')?.addEventListener('click',()=>{ if(hxSelectedId416()) $416('pmRename')?.click(); else hxToast416('Guarda o abre primero el presupuesto.',true); });
+    $416('hxBudgetIdentifier416')?.addEventListener('click',()=>{
+      const id=hxSelectedId416();
+      if(!id){hxToast416('Guarda o abre primero el presupuesto.',true);return;}
+      const sel=$416('presupuestosGuardados');
+      if(sel) sel.value=id;
+      // El botón del modal queda deshabilitado al cerrarlo. Llamar a su .click()
+      // no ejecuta nada; el lápiz debe invocar directamente el mismo renombrado.
+      if(typeof window.HX_RENAME_ACTIVE_BUDGET==='function'){
+        window.HX_RENAME_ACTIVE_BUDGET();
+      }else{
+        hxToast416('No se pudo abrir la edición del identificador.',true);
+      }
+    });
     const root=$416('pmList');
     if(root){
       new MutationObserver(()=>hxEnhanceCards416()).observe(root,{childList:true,subtree:true});
     }
-    document.querySelectorAll('.creator').forEach(el=>{
-      el.textContent=`· Creado por David Corregidor · ${HX_VERSION_416}`;
-    });
   });
 
   window.HX_GET_IDENTIFICADOR_ACTUAL=()=>String(hxIdentificadorActual || hxIdentifier416(hxSelected416()) || '').trim();
-  window.HX_APP_VERSION=HX_VERSION_416;
 })();
 
 
@@ -7597,10 +6288,19 @@ document.addEventListener('DOMContentLoaded', hxEnsureCatalogDiagnosticUI);
     const back=e.target.closest?.('#pmMobileBackFilters');
     if(!back)return;
     e.preventDefault();e.stopPropagation();
+    // En móvil Atrás vuelve siempre a la pantalla principal del gestor.
+    // Esto limpia una búsqueda sin resultados y evita caer en la lista de
+    // "Recientes" con el estado anterior todavía activo.
+    if(isMobile()&&typeof window.HX_PM_MOBILE_HOME==='function'){
+      // Volver desde resultados conserva el texto para poder corregirlo y buscar de nuevo.
+      window.HX_PM_MOBILE_HOME({preserveSearch:true});
+      setTimeout(()=>document.getElementById('pmSearch')?.focus(),0);
+      return;
+    }
     modal()?.classList.remove('pm-mobile-list','pm-has-selection');
     const sel=document.getElementById('presupuestosGuardados');if(sel)sel.value='';
     document.querySelectorAll('#pmModal .pmx-row.is-selected').forEach(r=>r.classList.remove('is-selected'));
-    ['pmOpen','pmDuplicate','pmRename','pmDelete'].forEach(id=>{const b=document.getElementById(id);if(b)b.disabled=true});
+    ['pmOpen','pmDuplicate','pmPdf','pmRename','pmDelete'].forEach(id=>{const b=document.getElementById(id);if(b)b.disabled=true});
   },true);
 
   document.addEventListener('dblclick',function(e){
@@ -7619,6 +6319,118 @@ document.addEventListener('DOMContentLoaded', hxEnsureCatalogDiagnosticUI);
     e.preventDefault();
     window.HX_ABRIR_PRESUPUESTO?.(id);
   },false);
+})();
 
-  window.HX_APP_VERSION='4.2.9';
+
+/* v4.2.20 · descripción real del CSV sin alterar PDF ni presupuesto */
+const hxDescripcionProductoBase = descripcionProducto;
+descripcionProducto = function(p){
+  const base = hxDescripcionProductoBase.apply(this, arguments) || {icon:'📦',desc:'',family:'',official:''};
+  const corta = String((p && p.short_description) || '').trim();
+  const real = String((p && p.description) || '').trim();
+  return corta ? {...base, desc:corta} : (real ? {...base, desc:real} : base);
+};
+
+/* =====================================================
+   v4.2.20c · Buscador inicial preciso + miniaturas
+   - Si una palabra de 4+ letras aparece realmente en referencias,
+     elimina coincidencias débiles provocadas por descripciones/subsecuencias.
+   - Añade la misma foto y descripción real al buscador inicial.
+   - No modifica Catálogo, Explorer, presupuesto ni responsive existente.
+   ===================================================== */
+(function(){
+  // El ranking pertenece exclusivamente a search_engine.js.
+  pintarResultados = function(term){
+    const panel = document.querySelector('#resultados');
+    if(!panel) return;
+    const results = hxBuscarComun(term);
+    activeIndex = -1;
+    if(!String(term||'').trim() || !results.length){
+      panel.classList.add('hidden');
+      panel.innerHTML='';
+      panel.dataset.firstIndex='';
+      return;
+    }
+    panel.dataset.firstIndex=String(results[0].i);
+    panel.innerHTML=results.slice(0,80).map((x,k)=>{
+      const d=descripcionProducto(x.p);
+      return `<div class="result-item result-item-pro result-item-visual" data-index="${x.i}" data-ref="${escapeHtml(x.p.name)}" data-pvp="${Number(x.p.pvp)}" data-k="${k}">
+        ${hxProductVisualHtml(x.p,d,'search')}
+        <div class="result-price">${fmt.format(x.p.pvp)}</div>
+      </div>`;
+    }).join('');
+    hxBindProductImages(panel);
+    panel.querySelectorAll('.result-item').forEach(el=>{
+      el.addEventListener('mouseenter',()=>{ activeIndex=Number(el.dataset.k); });
+      el.addEventListener('click',()=>seleccionarProductoSeguro(el.dataset.ref,el.dataset.pvp,true));
+      el.addEventListener('dblclick',()=>{ seleccionarProductoSeguro(el.dataset.ref,el.dataset.pvp,true); addLinea(); });
+    });
+    panel.classList.remove('hidden');
+
+    const resetPanelScroll=()=>{
+      panel.scrollTop=0;
+      try{ panel.scrollTo({top:0,left:0,behavior:'auto'}); }catch(_error){}
+    };
+    resetPanelScroll();
+    requestAnimationFrame(() => {
+      resetPanelScroll();
+      requestAnimationFrame(resetPanelScroll);
+    });
+    setTimeout(resetPanelScroll,60);
+  };
+})();
+
+
+/* =====================================================
+   v4.2.21 · Indicadores de scroll del presupuesto
+   - Solo aparecen si existen filas ocultas arriba/abajo.
+   - No cambian la altura ni la estructura de la tabla.
+   - Clic/tap desplaza una vista de productos suavemente.
+   ===================================================== */
+(function(){
+  function initBudgetScrollHints(){
+    const scroller=document.querySelector('.budget-card .table-scroll');
+    if(!scroller || scroller.dataset.hxScrollHints==='1') return;
+    scroller.dataset.hxScrollHints='1';
+
+    const make=(dir,label)=>{
+      const b=document.createElement('button');
+      b.type='button';
+      b.className=`hx-budget-scroll-hint hx-budget-scroll-${dir}`;
+      b.setAttribute('aria-label',label);
+      b.setAttribute('title',label);
+      b.innerHTML=dir==='up'
+        ? '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6.5 15.5 5.5-5 5.5 5"/><path d="m6.5 10.5 5.5-5 5.5 5"/></svg>'
+        : '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6.5 8.5 5.5 5 5.5-5"/><path d="m6.5 13.5 5.5 5 5.5-5"/></svg>';
+      scroller.appendChild(b);
+      return b;
+    };
+
+    const up=make('up','Ver productos anteriores');
+    const down=make('down','Ver más productos');
+    let raf=0;
+    const update=()=>{
+      cancelAnimationFrame(raf);
+      raf=requestAnimationFrame(()=>{
+        const max=Math.max(0,scroller.scrollHeight-scroller.clientHeight);
+        const overflow=max>6;
+        up.classList.toggle('is-visible',overflow && scroller.scrollTop>6);
+        down.classList.toggle('is-visible',overflow && scroller.scrollTop<max-6);
+      });
+    };
+    const move=dir=>{
+      const amount=Math.max(120,Math.round(scroller.clientHeight*.72));
+      scroller.scrollBy({top:dir*amount,behavior:'smooth'});
+    };
+    up.addEventListener('click',e=>{e.preventDefault();move(-1)});
+    down.addEventListener('click',e=>{e.preventDefault();move(1)});
+    scroller.addEventListener('scroll',update,{passive:true});
+    window.addEventListener('resize',update,{passive:true});
+    const tbody=scroller.querySelector('tbody');
+    if(tbody && window.MutationObserver) new MutationObserver(update).observe(tbody,{childList:true,subtree:true});
+    if(window.ResizeObserver) new ResizeObserver(update).observe(scroller);
+    update();
+  }
+  if(document.readyState==='loading') document.addEventListener('DOMContentLoaded',initBudgetScrollHints,{once:true});
+  else initBudgetScrollHints();
 })();
