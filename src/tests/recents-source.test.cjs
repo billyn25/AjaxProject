@@ -44,7 +44,7 @@ function harness(items, mobile=false) {
 function dataset() {
   // Same visible date pattern as the reported screen, plus two historical dates.
   return ['2026-10-15','2026-10-14','2026-10-07','2026-09-16','2026-09-14','2026-09-01','2026-08-20','2026-08-01']
-    .map((fecha,i)=>Object.freeze({id:String(i),fecha,cliente:'Prueba '+i,tienda:i%2?'B':'A',comercial:'Luis',updatedAt:'2026-10-15T14:00:00Z',lineas:[]}));
+    .map((fecha,i)=>Object.freeze({id:String(i),fecha,cliente:'Prueba-'+i,tienda:i%2?'B':'A',comercial:'Luis',updatedAt:'2026-10-15T14:00:00Z',lineas:[]}));
 }
 function ids(list){return Array.from(list,p=>p.id).sort();}
 
@@ -86,7 +86,7 @@ test('all/store/commercial folders retain older records; search respects the sel
   const {api,elements}=harness(dataset());
   api.setView('store','A');assert.equal(api.filtered().length,4);
   api.setView('commercial','Luis');assert.equal(api.filtered().length,8);
-  elements.pmSearch.value='Prueba 5';api.setView('recent');assert.equal(api.filtered().length,0);
+  elements.pmSearch.value='Prueba-5';api.setView('recent');assert.equal(api.filtered().length,0);
   api.setView('all');assert.deepEqual(ids(api.filtered()),['5']);
 });
 test('explicit date filters still use their real date predicate',()=>{
