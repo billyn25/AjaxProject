@@ -1,6 +1,7 @@
 [build]
   publish = "."
   functions = "functions"
+  command = "node --test tests/pdf-build.test.cjs && node prepare-pdf.cjs"
 
 [functions]
   node_bundler = "esbuild"
@@ -15,3 +16,12 @@
   [headers.values]
     Cache-Control = "public, max-age=0, must-revalidate"
 
+[[headers]]
+  for = "/"
+  [headers.values]
+    Cache-Control = "public, max-age=0, must-revalidate"
+
+[[headers]]
+  for = "/index.html"
+  [headers.values]
+    Cache-Control = "public, max-age=0, must-revalidate"
