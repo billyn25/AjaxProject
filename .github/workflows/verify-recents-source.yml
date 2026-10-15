@@ -1,75 +1,45 @@
-name: Verify direct recent-budget fix
+name: Compare published AjaxCalc source
 on:
   push:
     branches: [fix/recientes-directo-20261015]
 permissions:
-  contents: write
+  contents: read
 jobs:
-  verify:
+  audit:
     runs-on: ubuntu-latest
-    timeout-minutes: 5
+    timeout-minutes: 3
     steps:
       - uses: actions/checkout@v4
         with:
           ref: fix/recientes-directo-20261015
-      - name: Apply existing tested policy directly to source
+      - name: Download public app assets and compare with original GitHub source
         shell: bash
         run: |
-          node --test src/tests/pdf-build.test.cjs src/tests/recents.test.cjs
+          git fetch --depth=1 origin 2b66b242c2eeffce24166d410722600c80320ccf
+          mkdir -p audit
+          git show 2b66b242c2eeffce24166d410722600c80320ccf:src/app.js > audit/original-app.js
           node <<'NODE'
-          const fs = require('node:fs');
-          const assert = require('node:assert/strict');
-          const {transformApp} = require('./src/prepare-recents.cjs');
-          const app = fs.readFileSync('src/app.js', 'utf8');
-          assert.ok(!app.includes('function pmRecentBounds('), 'Already migrated; do not apply twice');
-          fs.writeFileSync('src/app.js', transformApp(app));
-          let html = fs.readFileSync('src/index.html', 'utf8');
-          const tag = '<script src="app.js?v=4.2.33"></script>';
-          assert.equal(html.split(tag).length, 2, 'Exactly one original app script');
-          html = html.replace(tag, '<script src="app.js?v=recientes-30d-20261015-2"></script>');
-          assert.equal(html.split('<span>Recientes</span>').length, 2, 'Exactly one recent folder label');
-          html = html.replace('<span>Recientes</span>', '<span>Últimos 30 días</span>');
-          fs.writeFileSync('src/index.html', html);
-          let config = fs.readFileSync('src/netlify.toml', 'utf8');
-          const oldCommand = 'node --test tests/pdf-build.test.cjs tests/recents.test.cjs && node prepare-pdf.cjs && node prepare-recents.cjs';
-          assert.equal(config.split(oldCommand).length, 2, 'Expected build command');
-          config = config.replace(oldCommand, 'node --test tests/pdf-build.test.cjs tests/recents.test.cjs tests/recents-source.test.cjs && node prepare-pdf.cjs');
-          fs.writeFileSync('src/netlify.toml', config);
+          const fs=require('node:fs');
+          (async()=>{
+            const base='https://ajaxcalc.netlify.app/';
+            const r=await fetch(base,{signal:AbortSignal.timeout(15000)});
+            if(!r.ok)throw new Error('HTML HTTP '+r.status);
+            const html=await r.text();
+            const scripts=[...html.matchAll(/<script\b[^>]*\bsrc=["']([^"']+)["']/g)].map(x=>x[1]);
+            const app=scripts.find(x=>/(?:^|\/)app(?:-recents-[a-f0-9]+)?\.js(?:\?|$)/.test(x));
+            if(!app)throw new Error('No app script');
+            const js=await fetch(new URL(app,base),{signal:AbortSignal.timeout(15000)});
+            if(!js.ok)throw new Error('JS HTTP '+js.status);
+            fs.writeFileSync('audit/live-index.html',html);
+            fs.writeFileSync('audit/live-app.js',await js.text());
+            console.log('Published scripts:',JSON.stringify(scripts));
+          })().catch(e=>{console.error(e);process.exitCode=1;});
           NODE
-      - name: Test actual source and HTML without a generated app
-        shell: bash
-        run: |
-          node --check src/app.js
-          for zone in UTC Europe/Madrid America/Los_Angeles; do
-            echo "Testing actual manager in $zone"
-            TZ="$zone" node --test src/tests/recents-source.test.cjs
-          done
-          git diff --check
-      - name: Read currently published assets (no budget data)
-        continue-on-error: true
-        shell: bash
-        run: |
-          node <<'NODE'
-          (async () => {
-            const base = 'https://ajaxcalc.netlify.app/';
-            const r = await fetch(base, {signal: AbortSignal.timeout(15000)});
-            console.log('Live HTML HTTP', r.status);
-            const html = await r.text();
-            const sources = [...html.matchAll(/<script\b[^>]*\bsrc=["']([^"']+)["']/g)].map(x=>x[1]);
-            const app = sources.find(x=>/(?:^|\/)app(?:-recents-[a-f0-9]+)?\.js(?:\?|$)/.test(x));
-            console.log('Published app script:', app || 'not found');
-            if (app) {
-              const js = await fetch(new URL(app, base), {signal: AbortSignal.timeout(15000)});
-              const text = await js.text();
-              console.log('Live app HTTP', js.status, '30-day predicate:', text.includes('function pmIsRecent('), 'old top-20 rule:', text.includes("if(pmView.type==='recent')list=list.slice(0,20);"));
-            }
-          })().catch(e=>{console.log('Live assets could not be read:', e.message); process.exitCode=1;});
-          NODE
-      - name: Commit verified source only to the repair branch
-        shell: bash
-        run: |
-          git config user.name 'github-actions[bot]'
-          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add src/app.js src/index.html src/netlify.toml
-          git commit -m 'Apply 30-day recent-budget policy directly to app.js'
-          git push origin HEAD:fix/recientes-directo-20261015
+          git diff --no-index --stat audit/original-app.js audit/live-app.js || true
+          git diff --no-index --unified=2 audit/original-app.js audit/live-app.js > audit/live-vs-github.diff || true
+          head -180 audit/live-vs-github.diff
+      - uses: actions/upload-artifact@v4
+        with:
+          name: ajaxcalc-public-source-audit
+          path: audit/
+          retention-days: 1
